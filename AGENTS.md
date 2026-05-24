@@ -24,6 +24,7 @@ Notes are written in Markdown, concise and focused. Each note file covers one to
 - Code examples where relevant
 - Links or references to source material
 - Personal insights or "gotchas" discovered during learning
+- Mathematical formulas should use VitePress Markdown math delimiters: `$...$` for inline math and `$$...$$` for block math. Do not use fenced ```math code blocks for formulas.
 
 ## Language
 
