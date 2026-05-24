@@ -116,11 +116,14 @@ $startMarker = '    // BEGIN GENERATED NOTES SIDEBAR'
 $endMarker = '    // END GENERATED NOTES SIDEBAR'
 $pattern = "(?s)$([regex]::Escape($startMarker)).*?$([regex]::Escape($endMarker))"
 $replacement = "$startMarker`r`n$($sidebarLines -join "`r`n")`r`n$endMarker"
-$newConfig = [regex]::Replace($config, $pattern, $replacement, 1)
 
-if ($newConfig -eq $config) {
+if (-not [regex]::IsMatch($config, $pattern)) {
   throw "Could not find generated sidebar markers in $resolvedConfigPath"
 }
 
-Set-Content -LiteralPath $resolvedConfigPath -Value $newConfig -Encoding UTF8
+$newConfig = [regex]::Replace($config, $pattern, $replacement, 1)
+
+if ($newConfig -ne $config) {
+  Set-Content -LiteralPath $resolvedConfigPath -Value $newConfig -Encoding UTF8
+}
 
