@@ -4,22 +4,15 @@
 
 内容会比较松散，重点不是形成一本完整教材，而是把每次学习中的关键理解保存下来，方便之后回看和继续扩展。
 
-## 当前内容
+## 笔记索引
 
-### 数学
+笔记目录由 [notes/index.md](notes/index.md) 维护，VitePress 侧边栏也会指向同一组内容。
 
-- [现代数学分支思维导图](notes/math-branches-mindmap.md)
-- [当今时代非常有用的数学](notes/useful-math-today.md)
-- [数学学习资源推荐](notes/math-learning-resources.md)
+## 本地预览
 
-## 目录结构
-
-```text
-.
-├── notes/          # 学习笔记
-├── experiments/    # 代码实验，按需创建
-├── README.md
-└── LICENSE.md
+```powershell
+pnpm install
+pnpm docs:dev
 ```
 
 ## 使用说明
@@ -33,4 +26,3 @@
 本仓库内容采用 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](LICENSE.md) 授权。
 
 你可以自由分享和改编这些内容，但需要署名、不得用于商业用途，并且衍生作品需要使用相同协议发布。
-

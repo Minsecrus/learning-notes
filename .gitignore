@@ -1,3 +1,14 @@
 .claude/
 .codex/
 
+node_modules/
+dist/
+.vitepress/cache/
+.vitepress/dist/
+.vitepress/.temp/
+
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
