@@ -1,6 +1,7 @@
+﻿import { withMermaid } from 'vitepress-plugin-mermaid'
 import { defineConfig } from 'vitepress'
 
-export default defineConfig({
+export default withMermaid(defineConfig({
   lang: 'zh-CN',
   title: 'Learning Notes',
   description: '个人学习笔记与资料索引',
@@ -15,6 +16,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '笔记', link: '/notes/' }
     ],
+    // BEGIN GENERATED NOTES SIDEBAR
     sidebar: [
       {
         text: '概览',
@@ -22,27 +24,43 @@ export default defineConfig({
           { text: '首页', link: '/' },
           { text: '笔记索引', link: '/notes/' }
         ]
-      },
-      {
-        text: '2026-05-22',
+      }
+      ,{
+        text: "2026-05-24",
         items: [
-          { text: '手机个人热点属于什么网络', link: '/notes/2026/05/22/networking-personal-hotspot' },
-          { text: '游戏的 P2P 网络是如何实现的', link: '/notes/2026/05/22/game-p2p-networking' }
+          { text: "Frame、MAC、IP 与 ARP：一次网络访问如何找到下一跳", link: "/notes/2026/05/24/networking-frame-mac-ip" },
+          { text: "Socket 与 WebSocket 的区别", link: "/notes/2026/05/24/networking-socket-websocket" },
+          { text: "多局胜制中强者胜率随局数增加而上升", link: "/notes/2026/05/24/best-of-series-stronger-win-rate" },
+          { text: "软件架构层级与 Enterprise Architecture 示例", link: "/notes/2026/05/24/software-architecture-levels-enterprise-examples" }
         ]
-      },
-      {
-        text: '2026-05-19',
+      }
+      ,{
+        text: "2026-05-22",
         items: [
-          { text: '当今时代非常有用的数学', link: '/notes/2026/05/19/useful-math-today' },
-          { text: '数学学习资源推荐', link: '/notes/2026/05/19/math-learning-resources' },
-          { text: '现代数学分支思维导图', link: '/notes/2026/05/19/math-branches-mindmap' }
+          { text: "手机个人热点属于什么网络", link: "/notes/2026/05/22/networking-personal-hotspot" },
+          { text: "游戏的 P2P 网络是如何实现的", link: "/notes/2026/05/22/game-p2p-networking" }
+        ]
+      }
+      ,{
+        text: "2026-05-19",
+        items: [
+          { text: "当今时代非常有用的数学", link: "/notes/2026/05/19/useful-math-today" },
+          { text: "数学学习资源推荐", link: "/notes/2026/05/19/math-learning-resources" },
+          { text: "现代数学分支思维导图", link: "/notes/2026/05/19/math-branches-mindmap" }
         ]
       }
     ],
+    // END GENERATED NOTES SIDEBAR
     footer: {
       message: 'Licensed under CC BY-NC-SA 4.0.',
       copyright: 'Copyright © 2026 Learning Notes'
     },
     socialLinks: []
   }
-})
+}))
+
+
+
+
+
+
