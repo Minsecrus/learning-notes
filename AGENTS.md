@@ -20,6 +20,7 @@ This directory is a personal learning space, not a production project. It serves
 ## Notes Format
 
 Notes are written in Markdown, concise and focused. Each note file covers one topic and includes:
+
 - Key concepts and definitions
 - Code examples where relevant
 - Links or references to source material
@@ -28,4 +29,4 @@ Notes are written in Markdown, concise and focused. Each note file covers one to
 
 ## Language
 
-The user communicates in Chinese. I respond in Chinese unless the topic (e.g. code, technical terms) is better expressed in English. Notes can mix both languages as appropriate.
+The user communicates in Chinese. I respond in Chinese unless the topic (e.g. code, technical terms) is better expressed in English. Notes can mix both languages as appropriate. Do not use the "不是... 而是..." expression.

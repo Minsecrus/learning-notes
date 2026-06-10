@@ -8,6 +8,17 @@
 .\scripts\generate-notes-index.ps1
 ```
 
+## 2026-06-10
+
+- [负二项分布的期望与方差推导](./2026/06/10/negative-binomial-mean-variance.md)
+- [几何分布与指数分布的联系](./2026/06/10/geometric-exponential-connection.md)
+- [泊松分布公式推导与二项分布的联系](./2026/06/10/poisson-distribution-derivation.md)
+- [协方差、相关系数与柯西不等式](./2026/06/10/covariance-correlation-cauchy-vector.md)
+
+## 2026-05-31
+
+- [Network Design Principles：Two-Tier、Three-Tier 与 Spine-Leaf](./2026/05/31/network-design-architectures.md)
+
 ## 2026-05-24
 
 - [Frame、MAC、IP 与 ARP：一次网络访问如何找到下一跳](./2026/05/24/networking-frame-mac-ip.md)

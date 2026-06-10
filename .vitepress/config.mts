@@ -26,6 +26,21 @@ export default withMermaid(defineConfig({
         ]
       }
       ,{
+        text: "2026-06-10",
+        items: [
+          { text: "负二项分布的期望与方差推导", link: "/notes/2026/06/10/negative-binomial-mean-variance" },
+          { text: "几何分布与指数分布的联系", link: "/notes/2026/06/10/geometric-exponential-connection" },
+          { text: "泊松分布公式推导与二项分布的联系", link: "/notes/2026/06/10/poisson-distribution-derivation" },
+          { text: "协方差、相关系数与柯西不等式", link: "/notes/2026/06/10/covariance-correlation-cauchy-vector" }
+        ]
+      }
+      ,{
+        text: "2026-05-31",
+        items: [
+          { text: "Network Design Principles：Two-Tier、Three-Tier 与 Spine-Leaf", link: "/notes/2026/05/31/network-design-architectures" }
+        ]
+      }
+      ,{
         text: "2026-05-24",
         items: [
           { text: "Frame、MAC、IP 与 ARP：一次网络访问如何找到下一跳", link: "/notes/2026/05/24/networking-frame-mac-ip" },
