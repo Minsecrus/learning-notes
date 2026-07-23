@@ -1,4 +1,4 @@
-﻿import { withMermaid } from 'vitepress-plugin-mermaid'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 import { defineConfig } from 'vitepress'
 
 export default withMermaid(defineConfig({
@@ -26,6 +26,12 @@ export default withMermaid(defineConfig({
         ]
       }
       ,{
+        text: "2026-07-23",
+        items: [
+          { text: "MSC2020 数学主题分类中文笔记", link: "/notes/2026/07/23/msc2020-mathematics-subject-classification-zh" }
+        ]
+      }
+      ,{
         text: "2026-06-10",
         items: [
           { text: "负二项分布的期望与方差推导", link: "/notes/2026/06/10/negative-binomial-mean-variance" },
@@ -43,12 +49,12 @@ export default withMermaid(defineConfig({
       ,{
         text: "2026-05-24",
         items: [
+          { text: "多局胜制中强者胜率随局数增加而上升", link: "/notes/2026/05/24/best-of-series-stronger-win-rate" },
+          { text: "软件架构层级与 Enterprise Architecture 示例", link: "/notes/2026/05/24/software-architecture-levels-enterprise-examples" },
           { text: "Frame、MAC、IP 与 ARP：一次网络访问如何找到下一跳", link: "/notes/2026/05/24/networking-frame-mac-ip" },
           { text: "Socket 与 WebSocket 的区别", link: "/notes/2026/05/24/networking-socket-websocket" },
           { text: "Technical Writing 中的 SEO 工具：Trends、Keyword Planner 与 Analytics", link: "/notes/2026/05/24/technical-writing-seo-tools" },
-          { text: "Technical Writing 中的三种 Technical Content", link: "/notes/2026/05/24/technical-writing-content-types" },
-          { text: "多局胜制中强者胜率随局数增加而上升", link: "/notes/2026/05/24/best-of-series-stronger-win-rate" },
-          { text: "软件架构层级与 Enterprise Architecture 示例", link: "/notes/2026/05/24/software-architecture-levels-enterprise-examples" }
+          { text: "Technical Writing 中的三种 Technical Content", link: "/notes/2026/05/24/technical-writing-content-types" }
         ]
       }
       ,{

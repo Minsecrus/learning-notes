@@ -1,4 +1,4 @@
-﻿# 笔记索引
+# 笔记索引
 
 这个文件由脚本生成，用来快速查看 `notes/` 下保存过的学习笔记。笔记正文按日期放在 `YYYY/MM/DD/` 目录中。
 
@@ -7,6 +7,10 @@
 ```powershell
 .\scripts\generate-notes-index.ps1
 ```
+
+## 2026-07-23
+
+- [MSC2020 数学主题分类中文笔记](./2026/07/23/msc2020-mathematics-subject-classification-zh.md)
 
 ## 2026-06-10
 
@@ -21,12 +25,12 @@
 
 ## 2026-05-24
 
+- [多局胜制中强者胜率随局数增加而上升](./2026/05/24/best-of-series-stronger-win-rate.md)
+- [软件架构层级与 Enterprise Architecture 示例](./2026/05/24/software-architecture-levels-enterprise-examples.md)
 - [Frame、MAC、IP 与 ARP：一次网络访问如何找到下一跳](./2026/05/24/networking-frame-mac-ip.md)
 - [Socket 与 WebSocket 的区别](./2026/05/24/networking-socket-websocket.md)
 - [Technical Writing 中的 SEO 工具：Trends、Keyword Planner 与 Analytics](./2026/05/24/technical-writing-seo-tools.md)
 - [Technical Writing 中的三种 Technical Content](./2026/05/24/technical-writing-content-types.md)
-- [多局胜制中强者胜率随局数增加而上升](./2026/05/24/best-of-series-stronger-win-rate.md)
-- [软件架构层级与 Enterprise Architecture 示例](./2026/05/24/software-architecture-levels-enterprise-examples.md)
 
 ## 2026-05-22
 
