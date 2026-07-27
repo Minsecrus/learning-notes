@@ -27,6 +27,9 @@ Notes are written in Markdown, concise and focused. Each note file covers one to
 - Personal insights or "gotchas" discovered during learning
 - Keep each note's first-level title (`# ...`) in plain text because the index and sidebar generators reuse it verbatim. Do not put Markdown, LaTeX formulas, inline code, or other markup in the first-level title; write mathematical expressions as plain text there, for example `dF = 0`.
 - Mathematical formulas should use VitePress Markdown math delimiters: `$...$` for inline math and `$$...$$` for block math. Do not use fenced ```math code blocks for formulas.
+- Use TeX commands supported by the repository's MathJax 4 renderer. Do not assume that arbitrary LaTeX packages or commands are available.
+- After adding or changing formulas, run `pnpm docs:build`. The build includes a generated-output check and must pass without MathJax errors or undefined TeX commands.
+- Put intentional, reusable project-wide math macros in `.vitepress/math.ts`. Do not add renderer workarounds to individual notes.
 
 ## Language
 

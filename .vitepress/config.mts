@@ -1,5 +1,6 @@
 import { withMermaid } from 'vitepress-plugin-mermaid'
 import { defineConfig } from 'vitepress'
+import { configureMathjax, mathjaxStyle } from './math'
 
 export default withMermaid(defineConfig({
   lang: 'zh-CN',
@@ -8,8 +9,18 @@ export default withMermaid(defineConfig({
   base: process.env.BASE_PATH ?? '/',
   cleanUrls: true,
   lastUpdated: true,
+  head: [
+    ['style', { id: 'mathjax-svg-styles' }, mathjaxStyle]
+  ],
   markdown: {
-    math: true
+    config: configureMathjax
+  },
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => tag.startsWith('mjx-')
+      }
+    }
   },
   themeConfig: {
     nav: [
