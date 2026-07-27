@@ -48,7 +48,7 @@ $$
 
    展开 $F^{\mu\nu}$ 和它的对偶张量，逐分量还原四条麦克斯韦方程。
 
-8. [微分形式：用 $\mathrm dF=0$ 表示无源方程](./maxwell/08-differential-forms.md)
+8. [微分形式：用 dF = 0 表示无源方程](./maxwell/08-differential-forms.md)
 
    从外积、外微分和广义斯托克斯定理出发，推导 $\mathrm dF=0$ 与 $\mathrm d\star F=\mu_0\star J$。
 

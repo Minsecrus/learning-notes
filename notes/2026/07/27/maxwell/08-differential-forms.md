@@ -1,4 +1,4 @@
-# 08｜微分形式：用 $\mathrm dF=0$ 表示无源方程
+# 08｜微分形式：用 dF = 0 表示无源方程
 
 [上一篇：电磁场张量](./07-field-tensor.md) · [返回系列目录](../maxwell.md) · [下一篇：几何代数](./09-geometric-algebra.md)
 

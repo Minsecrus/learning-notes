@@ -24,30 +24,35 @@ export default withMermaid(defineConfig({
           { text: '首页', link: '/' },
           { text: '笔记索引', link: '/notes/' }
         ]
-      }
-      ,{
+      },
+      {
         text: "2026-07-27",
         items: [
-          { text: "01｜矢量微积分：场、梯度、散度与旋度", link: "/notes/2026/07/27/maxwell/01-vector-calculus" },
-          { text: "02｜积分定理：高斯定理与斯托克斯定理", link: "/notes/2026/07/27/maxwell/02-integral-theorems" },
-          { text: "03｜电磁学的基本量：电荷、电流、场、通量与势", link: "/notes/2026/07/27/maxwell/03-electromagnetic-quantities" },
-          { text: "04｜四条麦克斯韦方程与电磁波", link: "/notes/2026/07/27/maxwell/04-maxwell-equations" },
-          { text: "05｜线性代数与指标记号", link: "/notes/2026/07/27/maxwell/05-linear-algebra-and-indices" },
-          { text: "06｜狭义相对论：为什么电场和磁场会混合", link: "/notes/2026/07/27/maxwell/06-special-relativity" },
-          { text: "07｜电磁场张量：四条方程如何变成两条", link: "/notes/2026/07/27/maxwell/07-field-tensor" },
-          { text: "08｜微分形式：用 $\\mathrm dF=0$ 表示无源方程", link: "/notes/2026/07/27/maxwell/08-differential-forms" },
-          { text: "09｜几何代数：四条方程如何写成一条", link: "/notes/2026/07/27/maxwell/09-geometric-algebra" },
-          { text: "10｜规范势、拉格朗日量与规范对称性", link: "/notes/2026/07/27/maxwell/10-gauge-and-lagrangian" },
-          { text: "麦克斯韦方程：从四条定律到一条统一方程", link: "/notes/2026/07/27/maxwell" }
+          {
+            text: "麦克斯韦方程：从四条定律到一条统一方程",
+            link: "/notes/2026/07/27/maxwell",
+            items: [
+              { text: "01｜矢量微积分：场、梯度、散度与旋度", link: "/notes/2026/07/27/maxwell/01-vector-calculus" },
+              { text: "02｜积分定理：高斯定理与斯托克斯定理", link: "/notes/2026/07/27/maxwell/02-integral-theorems" },
+              { text: "03｜电磁学的基本量：电荷、电流、场、通量与势", link: "/notes/2026/07/27/maxwell/03-electromagnetic-quantities" },
+              { text: "04｜四条麦克斯韦方程与电磁波", link: "/notes/2026/07/27/maxwell/04-maxwell-equations" },
+              { text: "05｜线性代数与指标记号", link: "/notes/2026/07/27/maxwell/05-linear-algebra-and-indices" },
+              { text: "06｜狭义相对论：为什么电场和磁场会混合", link: "/notes/2026/07/27/maxwell/06-special-relativity" },
+              { text: "07｜电磁场张量：四条方程如何变成两条", link: "/notes/2026/07/27/maxwell/07-field-tensor" },
+              { text: "08｜微分形式：用 dF = 0 表示无源方程", link: "/notes/2026/07/27/maxwell/08-differential-forms" },
+              { text: "09｜几何代数：四条方程如何写成一条", link: "/notes/2026/07/27/maxwell/09-geometric-algebra" },
+              { text: "10｜规范势、拉格朗日量与规范对称性", link: "/notes/2026/07/27/maxwell/10-gauge-and-lagrangian" }
+            ]
+          }
         ]
-      }
-      ,{
+      },
+      {
         text: "2026-07-23",
         items: [
           { text: "MSC2020 数学主题分类中文笔记", link: "/notes/2026/07/23/msc2020-mathematics-subject-classification-zh" }
         ]
-      }
-      ,{
+      },
+      {
         text: "2026-06-10",
         items: [
           { text: "负二项分布的期望与方差推导", link: "/notes/2026/06/10/negative-binomial-mean-variance" },
@@ -55,14 +60,14 @@ export default withMermaid(defineConfig({
           { text: "泊松分布公式推导与二项分布的联系", link: "/notes/2026/06/10/poisson-distribution-derivation" },
           { text: "协方差、相关系数与柯西不等式", link: "/notes/2026/06/10/covariance-correlation-cauchy-vector" }
         ]
-      }
-      ,{
+      },
+      {
         text: "2026-05-31",
         items: [
           { text: "Network Design Principles：Two-Tier、Three-Tier 与 Spine-Leaf", link: "/notes/2026/05/31/network-design-architectures" }
         ]
-      }
-      ,{
+      },
+      {
         text: "2026-05-24",
         items: [
           { text: "多局胜制中强者胜率随局数增加而上升", link: "/notes/2026/05/24/best-of-series-stronger-win-rate" },
@@ -72,15 +77,15 @@ export default withMermaid(defineConfig({
           { text: "Technical Writing 中的 SEO 工具：Trends、Keyword Planner 与 Analytics", link: "/notes/2026/05/24/technical-writing-seo-tools" },
           { text: "Technical Writing 中的三种 Technical Content", link: "/notes/2026/05/24/technical-writing-content-types" }
         ]
-      }
-      ,{
+      },
+      {
         text: "2026-05-22",
         items: [
           { text: "手机个人热点属于什么网络", link: "/notes/2026/05/22/networking-personal-hotspot" },
           { text: "游戏的 P2P 网络是如何实现的", link: "/notes/2026/05/22/game-p2p-networking" }
         ]
-      }
-      ,{
+      },
+      {
         text: "2026-05-19",
         items: [
           { text: "当今时代非常有用的数学", link: "/notes/2026/05/19/useful-math-today" },

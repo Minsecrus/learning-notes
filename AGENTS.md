@@ -25,6 +25,7 @@ Notes are written in Markdown, concise and focused. Each note file covers one to
 - Code examples where relevant
 - Links or references to source material
 - Personal insights or "gotchas" discovered during learning
+- Keep each note's first-level title (`# ...`) in plain text because the index and sidebar generators reuse it verbatim. Do not put Markdown, LaTeX formulas, inline code, or other markup in the first-level title; write mathematical expressions as plain text there, for example `dF = 0`.
 - Mathematical formulas should use VitePress Markdown math delimiters: `$...$` for inline math and `$$...$$` for block math. Do not use fenced ```math code blocks for formulas.
 
 ## Language
