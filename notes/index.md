@@ -8,6 +8,20 @@
 .\scripts\generate-notes-index.ps1
 ```
 
+## 2026-07-27
+
+- [01｜矢量微积分：场、梯度、散度与旋度](./2026/07/27/maxwell/01-vector-calculus.md)
+- [02｜积分定理：高斯定理与斯托克斯定理](./2026/07/27/maxwell/02-integral-theorems.md)
+- [03｜电磁学的基本量：电荷、电流、场、通量与势](./2026/07/27/maxwell/03-electromagnetic-quantities.md)
+- [04｜四条麦克斯韦方程与电磁波](./2026/07/27/maxwell/04-maxwell-equations.md)
+- [05｜线性代数与指标记号](./2026/07/27/maxwell/05-linear-algebra-and-indices.md)
+- [06｜狭义相对论：为什么电场和磁场会混合](./2026/07/27/maxwell/06-special-relativity.md)
+- [07｜电磁场张量：四条方程如何变成两条](./2026/07/27/maxwell/07-field-tensor.md)
+- [08｜微分形式：用 $\mathrm dF=0$ 表示无源方程](./2026/07/27/maxwell/08-differential-forms.md)
+- [09｜几何代数：四条方程如何写成一条](./2026/07/27/maxwell/09-geometric-algebra.md)
+- [10｜规范势、拉格朗日量与规范对称性](./2026/07/27/maxwell/10-gauge-and-lagrangian.md)
+- [麦克斯韦方程：从四条定律到一条统一方程](./2026/07/27/maxwell.md)
+
 ## 2026-07-23
 
 - [MSC2020 数学主题分类中文笔记](./2026/07/23/msc2020-mathematics-subject-classification-zh.md)

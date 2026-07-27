@@ -26,6 +26,22 @@ export default withMermaid(defineConfig({
         ]
       }
       ,{
+        text: "2026-07-27",
+        items: [
+          { text: "01｜矢量微积分：场、梯度、散度与旋度", link: "/notes/2026/07/27/maxwell/01-vector-calculus" },
+          { text: "02｜积分定理：高斯定理与斯托克斯定理", link: "/notes/2026/07/27/maxwell/02-integral-theorems" },
+          { text: "03｜电磁学的基本量：电荷、电流、场、通量与势", link: "/notes/2026/07/27/maxwell/03-electromagnetic-quantities" },
+          { text: "04｜四条麦克斯韦方程与电磁波", link: "/notes/2026/07/27/maxwell/04-maxwell-equations" },
+          { text: "05｜线性代数与指标记号", link: "/notes/2026/07/27/maxwell/05-linear-algebra-and-indices" },
+          { text: "06｜狭义相对论：为什么电场和磁场会混合", link: "/notes/2026/07/27/maxwell/06-special-relativity" },
+          { text: "07｜电磁场张量：四条方程如何变成两条", link: "/notes/2026/07/27/maxwell/07-field-tensor" },
+          { text: "08｜微分形式：用 $\\mathrm dF=0$ 表示无源方程", link: "/notes/2026/07/27/maxwell/08-differential-forms" },
+          { text: "09｜几何代数：四条方程如何写成一条", link: "/notes/2026/07/27/maxwell/09-geometric-algebra" },
+          { text: "10｜规范势、拉格朗日量与规范对称性", link: "/notes/2026/07/27/maxwell/10-gauge-and-lagrangian" },
+          { text: "麦克斯韦方程：从四条定律到一条统一方程", link: "/notes/2026/07/27/maxwell" }
+        ]
+      }
+      ,{
         text: "2026-07-23",
         items: [
           { text: "MSC2020 数学主题分类中文笔记", link: "/notes/2026/07/23/msc2020-mathematics-subject-classification-zh" }
@@ -81,4 +97,3 @@ export default withMermaid(defineConfig({
     socialLinks: []
   }
 }))
-
