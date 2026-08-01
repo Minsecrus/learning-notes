@@ -8,12 +8,27 @@ importers:
 
   .:
     devDependencies:
+      '@braintree/sanitize-url':
+        specifier: 7.1.2
+        version: 7.1.2
       '@mathjax/mathjax-tex-font':
         specifier: 4.1.3
         version: 4.1.3
       '@mdit/plugin-mathjax':
         specifier: 1.1.0
         version: 1.1.0(markdown-it@14.3.0)
+      cytoscape:
+        specifier: 3.33.4
+        version: 3.33.4
+      cytoscape-cose-bilkent:
+        specifier: 4.1.0
+        version: 4.1.0(cytoscape@3.33.4)
+      dayjs:
+        specifier: 1.11.20
+        version: 1.11.20
+      debug:
+        specifier: 4.4.1
+        version: 4.4.1
       mermaid:
         specifier: ^11.15.0
         version: 11.15.0
@@ -957,6 +972,15 @@ packages:
   dayjs@1.11.20:
     resolution: {integrity: sha512-YbwwqR/uYpeoP4pu043q+LTDLFBLApUP6VxRihdfNTqu4ubqMlGDLd6ErXhEgsyvY0K6nCs7nggYumAN+9uEuQ==}
 
+  debug@4.4.1:
+    resolution: {integrity: sha512-KcKCqiftBJcZr++7ykoDIEwSa3XWowTfNPo92BYxjXiyYEVrUQh2aLyhxBCwww+heortUFxEJYcRzosstTEBYQ==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
   delaunator@5.1.0:
     resolution: {integrity: sha512-AGrQ4QSgssa1NGmWmLPqN5NY2KajF5MqxetNEO+o0n3ZwZZeTmt7bBnvzHWrmkZFxGgr4HdyFgelzgi06otLuQ==}
 
@@ -1175,6 +1199,9 @@ packages:
 
   mj-context-menu@1.0.0:
     resolution: {integrity: sha512-OSgBFQRCVhrZwRa9lhqnKcJU92dd/YXgBjup0uyeuj9bOaVsf4myOyrjU4PfhYkdDk6AqVUTov7v5uFMvIbduA==}
+
+  ms@2.1.3:
+    resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
   nanoid@3.3.12:
     resolution: {integrity: sha512-ZB9RH/39qpq5Vu6Y+NmUaFhQR6pp+M2Xt76XBnEwDaGcVAqhlvxrl3B2bKS5D3NH3QR76v3aSrKaF/Kiy7lEtQ==}
@@ -2387,6 +2414,10 @@ snapshots:
 
   dayjs@1.11.20: {}
 
+  debug@4.4.1:
+    dependencies:
+      ms: 2.1.3
+
   delaunator@5.1.0:
     dependencies:
       robust-predicates: 3.0.3
@@ -2683,6 +2714,8 @@ snapshots:
   mj-context-menu@1.0.0:
     dependencies:
       rimraf: 6.1.3
+
+  ms@2.1.3: {}
 
   nanoid@3.3.12: {}
 

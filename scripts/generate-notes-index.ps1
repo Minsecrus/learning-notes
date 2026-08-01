@@ -85,7 +85,11 @@ function Get-LevelEntries {
       Title = $entryTitle
       RelativePath = if ($pairedNote) { $pairedNote.RelativePath } else { $null }
       DirectoryPath = $childDirectoryPath
-      SortKey = $entryTitle
+      SortKey = if ([string]::IsNullOrEmpty($DirectoryPath)) {
+        $entryTitle
+      } else {
+        $childDirectoryName
+      }
     }
   }
 
@@ -99,7 +103,11 @@ function Get-LevelEntries {
       Title = $item.Title
       RelativePath = $item.RelativePath
       DirectoryPath = $null
-      SortKey = $item.Title
+      SortKey = if ([string]::IsNullOrEmpty($DirectoryPath)) {
+        $item.Title
+      } else {
+        $item.BaseName
+      }
     }
   }
 
@@ -162,6 +170,7 @@ function Get-SidebarEntryLines {
     "$indentText  link: $(ConvertTo-TsStringLiteral -Value $link),"
   }
 
+  "$indentText  collapsed: true,"
   "$indentText  items: ["
 
   $childEntries = @(

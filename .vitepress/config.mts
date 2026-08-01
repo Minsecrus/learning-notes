@@ -1,6 +1,13 @@
 import { withMermaid } from 'vitepress-plugin-mermaid'
 import { defineConfig } from 'vitepress'
+import { createRequire } from 'node:module'
+import { dirname, resolve } from 'node:path'
 import { configureMathjax, mathjaxStyle } from './math'
+
+const require = createRequire(import.meta.url)
+const mermaidEntry = require.resolve('mermaid')
+const dayjsEntry = require.resolve('dayjs', { paths: [dirname(mermaidEntry)] })
+const dayjsEsmEntry = resolve(dirname(dayjsEntry), 'esm/index.js')
 
 export default withMermaid(defineConfig({
   lang: 'zh-CN',
@@ -22,6 +29,13 @@ export default withMermaid(defineConfig({
       }
     }
   },
+  vite: {
+    resolve: {
+      alias: [
+        { find: /^dayjs$/, replacement: dayjsEsmEntry }
+      ]
+    }
+  },
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
@@ -37,11 +51,35 @@ export default withMermaid(defineConfig({
         ]
       },
       {
+        text: "2026-08-01",
+        items: [
+          {
+            text: "CS 188 人工智能导论教程",
+            link: "/notes/2026/08/01/cs188-introduction-to-ai",
+            collapsed: true,
+            items: [
+              { text: "第一章 搜索", link: "/notes/2026/08/01/cs188-introduction-to-ai/01-search" },
+              { text: "第二章 约束满足问题", link: "/notes/2026/08/01/cs188-introduction-to-ai/02-constraint-satisfaction-problems" },
+              { text: "第三章 博弈", link: "/notes/2026/08/01/cs188-introduction-to-ai/03-games" },
+              { text: "第四章 马尔可夫决策过程", link: "/notes/2026/08/01/cs188-introduction-to-ai/04-markov-decision-processes" },
+              { text: "第五章 强化学习", link: "/notes/2026/08/01/cs188-introduction-to-ai/05-reinforcement-learning" },
+              { text: "第六章 贝叶斯网络", link: "/notes/2026/08/01/cs188-introduction-to-ai/06-bayesian-networks" },
+              { text: "第七章 决策网络与完美信息价值", link: "/notes/2026/08/01/cs188-introduction-to-ai/07-decision-networks-and-vpi" },
+              { text: "第八章 隐马尔可夫模型", link: "/notes/2026/08/01/cs188-introduction-to-ai/08-hidden-markov-models" },
+              { text: "第九章 机器学习", link: "/notes/2026/08/01/cs188-introduction-to-ai/09-machine-learning" },
+              { text: "第十章 逻辑", link: "/notes/2026/08/01/cs188-introduction-to-ai/10-logic" }
+            ]
+          },
+          { text: "PEAS 在现代 Coding Harness 中的映射", link: "/notes/2026/08/01/peas-in-modern-coding-harness" }
+        ]
+      },
+      {
         text: "2026-07-27",
         items: [
           {
             text: "麦克斯韦方程：从四条定律到一条统一方程",
             link: "/notes/2026/07/27/maxwell",
+            collapsed: true,
             items: [
               { text: "01｜矢量微积分：场、梯度、散度与旋度", link: "/notes/2026/07/27/maxwell/01-vector-calculus" },
               { text: "02｜积分定理：高斯定理与斯托克斯定理", link: "/notes/2026/07/27/maxwell/02-integral-theorems" },

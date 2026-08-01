@@ -8,6 +8,21 @@
 .\scripts\generate-notes-index.ps1
 ```
 
+## 2026-08-01
+
+- [CS 188 人工智能导论教程](./2026/08/01/cs188-introduction-to-ai.md)
+  - [第一章 搜索](./2026/08/01/cs188-introduction-to-ai/01-search.md)
+  - [第二章 约束满足问题](./2026/08/01/cs188-introduction-to-ai/02-constraint-satisfaction-problems.md)
+  - [第三章 博弈](./2026/08/01/cs188-introduction-to-ai/03-games.md)
+  - [第四章 马尔可夫决策过程](./2026/08/01/cs188-introduction-to-ai/04-markov-decision-processes.md)
+  - [第五章 强化学习](./2026/08/01/cs188-introduction-to-ai/05-reinforcement-learning.md)
+  - [第六章 贝叶斯网络](./2026/08/01/cs188-introduction-to-ai/06-bayesian-networks.md)
+  - [第七章 决策网络与完美信息价值](./2026/08/01/cs188-introduction-to-ai/07-decision-networks-and-vpi.md)
+  - [第八章 隐马尔可夫模型](./2026/08/01/cs188-introduction-to-ai/08-hidden-markov-models.md)
+  - [第九章 机器学习](./2026/08/01/cs188-introduction-to-ai/09-machine-learning.md)
+  - [第十章 逻辑](./2026/08/01/cs188-introduction-to-ai/10-logic.md)
+- [PEAS 在现代 Coding Harness 中的映射](./2026/08/01/peas-in-modern-coding-harness.md)
+
 ## 2026-07-27
 
 - [麦克斯韦方程：从四条定律到一条统一方程](./2026/07/27/maxwell.md)
