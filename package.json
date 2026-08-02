@@ -6,7 +6,7 @@
   "packageManager": "pnpm@10.20.0",
   "scripts": {
     "docs:dev": "vitepress dev .",
-    "docs:build": "vitepress build . && pnpm docs:check-math",
+    "docs:build": "node --max-old-space-size=8192 ./node_modules/vitepress/bin/vitepress.js build . && pnpm docs:check-math",
     "docs:check-math": "node scripts/check-math-rendering.mjs",
     "docs:preview": "vitepress preview ."
   },

@@ -1,0 +1,1458 @@
+# 中英术语索引
+
+[返回系列目录](../spacetime-and-geometry.md) · [上一篇：参考文献](./bibliography.md)
+
+本索引按原书英文词条顺序排列。每项先给出中文译名，再在括号内保留英文原词；“见（See）”与“另见（See also）”关系及全部原印刷页码均照录。
+
+<!-- source: PDF 514; printed: 501 -->
+
+- 加速度（Acceleration）
+  - 早期宇宙中的暴胀（inflation in early universe），368
+  - Newton 理论（Newton’s theory），1，151
+  - 测地线之间的相对加速度（relative between geodesics），145
+  - 狭义相对论中（in SR (special relativity)），11
+  - 从无穷远处观察（viewed from infinity），246–247
+- 非时序集（Achronal set），79
+- 作用量（Action）
+  - 经典场论（classical field theory），37
+  - Hilbert 作用量（Hilbert），161
+- ADM 能量（Arnowitt、Deser 与 Misner）（ADM energy (Arnowitt, Deser, and Misner)），252–253
+- AdS/CFT 对应（AdS/CFT correspondence），328，421
+- 仿射参数（Affine parameter），109
+- 角（Angle）
+  - 偏折角（deflection），352
+  - Einstein 角（Einstein），351
+- 角直径距离（Angular diameter distance），348–349
+- 引力透镜中的角分离（Angular separation, gravitational lensing），351
+- 旋转黑洞的角速度（Angular velocity, rotating black holes），266
+- 湮灭／产生算符（Annihilation/creation operators），383，397
+- 形式集合的零化子（Annihilator, set of forms），441
+- 人择原理（Anthropic principle），359
+- 反 de Sitter 空间（Anti-de Sitter space），326–328，335
+- 反物质（Antimatter），365
+- 事件视界面积定理（Area theorem, event horizons），243–244
+- 反对称张量（Antisymmetric tensors），26
+- 反对称性（Antisymmetry）
+  - 流形上的积分（manifolds, integration），88–89
+  - Kronecker delta 的乘积（product of Kronecker deltas），83–84
+  - Riemann 张量的反对称性（of Riemann tensor），126–127
+  - 方括号（square brackets），27
+- 渐近平直性（Asymptotic flatness），197，249–253
+- 轴子（Axions），359
+
+- 重子物质（Baryonic matter），358，364–365
+- 基模（Basis modes），397
+- 基向量（Basis vectors），16–17，74，483
+- BBN：见大爆炸核合成（BBN. See Big Bang Nucleosynthesis）
+- Bekenstein 广义第二定律（Bekenstein generalized second law），272
+- Jocelyn Bell（Bell, Jocelyn），235
+- Bianchi 恒等式（Bianchi identity），128–129
+- 大爆炸（Big Bang）
+  - 描述（described），76，340
+  - 与较重元素（heavier elements and），364
+  - 遗留辐射（leftover radiation），356
+  - 奇点（singularity），76，340
+- 大爆炸核合成（BBN）（Big Bang Nucleosynthesis (BBN)），363
+- 双脉冲星（Binary pulsar），218
+- Birkhoff 定理（Birkhoff’s theorem），197–204
+- 黑洞（Black holes）
+  - 带电黑洞（Reissner–Nordström）（charged (Reissner–Nordström)），254–261
+  - 形成（creation of），230，234
+  - 描述（described），238–239
+  - 熵（entropy），271，417
+  - 事件视界（event horizons），205，222，239–244
+  - Hawking 温度（Hawking temperature），376，414，416
+  - Killing 视界（Killing horizons），244–248
+  - 质量由电荷平衡（mass balanced by charge），259
+  - 质量、电荷与自旋（mass, charge, and spin），248–254
+  - 参数与热力学量的正比关系（parameters, proportionality to thermodynamics），416–417
+  - 辐射（radiation from），412–421
+  - 旋转黑洞（Kerr）（rotating (Kerr)），244，261–267
+  - Schwarzschild 解（Schwarzschild solution），193，218–222，229–236
+  - 超大质量黑洞的演化（supermassive, evolution of），320
+  - 热力学与 Penrose 过程（thermodynamics and Penrose process），267–272
+- Bogoliubov 变换（Bogolubov transformations），398–399，408
+- 推动（Boosts），12
+- Boulware 真空（Boulware vacuum），414–415
+- 边界（Boundary）
+  - 黑洞（black hole），239
+  - 带边界流形（manifold with），451–452
+  - 与区域的关系（of region and），421
+  - Stokes 定理（Stokes’s Theorem），455
+- Boyer–Lindquist 坐标（Boyer–Lindquist coordinates），262
+- 源亮度（Brightness, source），354
+- Buchdahl 定理（Buchdahl’s theorem），234
+
+- 正则对易关系（Canonical commutation relations），381，389，395
+- Cartan 结构方程（Cartan structure equations），488–489
+- Carter–Penrose 图：见共形图（Carter–Penrose diagrams. See conformal diagrams）
+- Cauchy 视界（Cauchy horizon），79–81
+- Cauchy 曲面（Cauchy surface）
+  - 因果性（causality），80
+  - 黑洞熵（entropy, black hole），418
+- 因果性（Causality）
+  - 非时序性（achronal），79
+  - Cauchy 视界（Cauchy horizon），80–81
+  - 时序未来（chronological future），79
+  - 因果曲线的定义（curve, defining），79
+  - 未来（future），79–80
+  - 初值问题（initial-value problems），78
+  - 光锥（light cones），4–5，9
+
+<!-- source: PDF 515; printed: 502 -->
+
+- 因果性（续）（Causality (continued)）
+  - Misner 空间（Misner space），81
+  - 部分 Cauchy 曲面（partial Cauchy surface），80
+  - 奇点（singularities），81–82
+- CDM（冷暗物质）（CDM (cold dark matter)），359
+- 链式法则（Chain rule），62，64–65，152
+- Chandrasekhar 极限（Chandrasekhar limit），235，355
+- 电荷密度（Charge density），305
+- 带电黑洞：见 Reissner–Nordström 黑洞（Charged black holes. See Reissner–Nordström black holes）
+- Christoffel 联络（Christoffel connection），99–100，101，108，489
+- Christoffel 符号（Christoffel symbol）
+  - 共形变换（conformal transformation），468–469
+  - 定义（defined），93，99
+  - 膨胀宇宙度规中的计算（expanding-universe metric, calculating），113–115
+  - 消失及其与 Riemann 张量的关系（vanishing, Riemann tensor and），126
+- 时序未来（Chronological future），79
+- 圆轨道（Circular orbits），305
+- 经典场论（Classical field theory）
+  - 作用量（action），37–38，159
+  - 弯曲时空（curved spacetime），159–160
+  - d’Alembert 算符（d’Alembertian），41，160，360
+  - 有效场论（effective field theory），45，180，189
+  - 能量-动量张量（energy-momentum tensor），44，164–165
+  - Euler–Lagrange 方程（Euler–Lagrange equations），37，39，40，160
+  - 规范不变性与规范变换（gauge invariance and transformation），42
+  - Klein–Gordon 方程（Klein–Gordon equation），42
+  - Lagrangian 密度（Lagrange density），38，44–45，159–160
+  - 自然单位（natural units），38
+  - 标量场（scalar field），40，160，164，360，369
+  - 用 Stokes 定理转换表面项（surface term, converting by Stokes’s theorem），39–40
+  - 向量势（vector potential），42–43
+- 时钟同步（Clocks, synchronizing），7
+- 闭宇宙（Closed universe），330，337，343
+- 闭形式（Closed forms），85，441–442
+- 闭合类时曲线（Closed timelike curves），80–81，266
+
+- CMB：见宇宙微波背景（CMB. See Cosmic Microwave Background）
+- Codazzi 方程（Codacci’s equation），451
+- 余维数（Codimension），439
+- 巧合问题（Coincidence problem），359
+- “逗号变分号”规则（“Comma-Goes-to-Semicolon” rule），152
+- 向量的对易子（Commutator, vector），67
+- 共动坐标（Comoving coordinates），329
+- 共形紧化（Compactification, conformal），475–476
+- 分量（Components）
+  - 对偶向量（dual vector），19，68–69
+  - 非坐标基（noncoordinate basis），483–486
+  - 向量（vector），17，65–66
+  - 张量（tensor），21–22，69
+- 光锥：见光锥（Cones, light. See light cones）
+- 共形耦合（Conformal coupling），395
+- 共形图（Conformal diagrams）
+  - 反 de Sitter（anti de Sitter），327
+  - 渐近平直（asymptotically flat），240
+  - 坍缩恒星（collapsing star），230
+  - de Sitter（de Sitter），325
+  - 定义（defined），471–478
+  - 蒸发黑洞（evaporating black hole），419
+  - Kerr（Kerr），265
+  - Minkowski（Minkowski），475
+  - Reissner–Nordström（Reissner–Nordström），257–259
+  - Robertson–Walker（Robertson–Walker），478
+  - Schwarzschild（Schwarzschild），229
+- 共形标架（Conformal frame），468
+- 共形无穷远（Conformal infinity），475–476
+- 共形张量：见 Weyl 张量（Conformal tensor. See Weyl tensor）
+- 共形变换（Conformal transformations），467–469
+- 测地线丛（Congruence），459–465
+- 共轭动量（Conjugate momentum），395
+- 联络（Connection）
+  - 协变导数（covariant derivatives），95–96，99–100
+  - 曲率的体现（curvature, manifesting），93
+  - 自旋联络（spin），486
+  - 涉及挠率张量（torsion tensor involving），128–129
+- 守恒（Conservation）
+  - 能量-动量守恒定律（energy-momentum, law of），35，118，153
+  - 相空间密度的 Liouville 定理（phase-space density, Liouville’s theorem of），353
+- 守恒能量（Conserved energy），137–138，344
+- 映射的连续性（Continuity of a map），58
+- 张量缩并（Contraction, tensor）
+  - 构成 Ricci 张量（forming Ricci），129
+  - 运算（manipulating），25
+- 逆变向量（Contravariant vectors），19
+- 会聚透镜势（Convergence lensing potential），352–253
+- 坐标基（Coordinate basis），65–66
+- 坐标（Coordinates）
+  - Boyer–Lindquist（Boyer–Lindquist），262
+  - 坐标改变时的变换定律（changes in, transformation law），66–67，69，429–430，486
+  - 共动坐标（comoving），329
+  - Gaussian 法坐标（Gaussian normal），445
+  - Kruskal 坐标（Kruskal），225–226
+  - 局部惯性坐标（locally inertial），74–76，112
+  - Riemann 法坐标（Riemann normal），112–113
+  - 把 Boyer–Lindquist 化为 Schwarzschild 坐标（Schwarzschild, reducing Boyer–Lindquist to），262
+  - 时空坐标的记号（spacetime, denoting），8
+  - 坐标变换（transformation），66，68–69，429–430
+- Copernicus 原理（Copernican principle），323
+- 核坍缩（Core collapse），319
+- 宇宙审查猜想（Cosmic censorship conjecture），243
+- 宇宙微波背景（CMB）（Cosmic microwave background (CMB)）
+  - 各向异性（anisotropy），329，337，357–358，365，371–374
+  - 能量密度（energy density），356
+  - 与宇宙几何（and geometry of the universe），337，358
+  - 引力波（gravitational waves），320，373–374
+  - 视界问题（horizon problem），368
+  - 各向同性（isotropy），323
+  - 偏振（polarization），320，373–374
+  - 复合（recombination），364，368
+  - 温度（temperature），361，371
+- 宇宙学红移（Cosmological redshift），116–117，344–345
+- 宇宙学常数：见真空能（Cosmological constant. See vacuum energy）
+- 宇宙学（Cosmology）
+  - Friedmann 方程（Friedmann equation），333–337
+  - 引力透镜（gravitational lensing），349–355
+  - 暴胀（inflation），365–374
+
+<!-- source: PDF 516; printed: 503 -->
+
+- 宇宙学（续）（Cosmology (continued)）
+  - 最大对称宇宙（maximally symmetric universes），323–329
+  - 非平凡 Lorentz 几何的例子（nontrivial Lorentzian geometry example），76
+  - 平行移动（parallel transport），104
+  - 红移与距离（redshifts and distances），344–349
+  - Robertson–Walker 度规（Robinson–Walker metrics），329–333
+  - 尺度因子的演化（scale factor, evolution of），338–344
+  - 当前与遥远过去的宇宙（universe, currently and in distant past），355–365
+- 余切丛（Cotangent bundle），19
+- 余切空间（Cotangent space），18–19
+- Coulomb 规范（Coulomb gauge），283
+- 协变导数（Covariant derivatives）
+  - 联络系数（connection coefficients），95–96
+  - 唯一确定联络（connection, defining unique），98–99，486–487
+  - 弯曲空间（curved space），101
+  - 定义（defining），94–95，98，486
+  - 一般表达式（general expression），97
+  - 度规相容联络（metric-compatible connection），99–100
+  - 一形式的协变导数（of one-forms），96–97
+  - 平行移动（parallel transport），105
+  - 把偏导数转换为协变导数（partial derivatives, converting to），101–102
+  - 分号记号（semicolon notation），97
+  - 自旋联络（spin connection），486
+- 协变向量（Covariant vectors），19
+- 产生／湮灭算符（Creation/annihilation operators），383，389–390，397
+- 临界密度（Critical density），337
+- 电流四维向量（Current 4-vector），29–30
+- 曲率（Curvature）
+  - Christoffel 联络消失（Christoffel connection, vanishing），101
+  - Christoffel 符号（Christoffel symbol），93
+  - 协变导数（covariant derivatives），94–102
+  - 描述（described），93–94
+  - Einstein 等效原理（EEP）（Einstein Equivalence Principle (EEP)），50，151
+  - 膨胀宇宙（expanding universe），113–120
+  - 外曲率（extrinsic），449–450
+  - 与平直空间的对比（flat space versus），103
+  - 引力作为曲率（gravity as），1–2，50–54，153–154，156–158
+  - 超曲面（hypersurface），451
+  - 积分曲线（integral curves），430
+  - 物理定律的推广（laws of physics, generalizing），152–153
+  - 最大对称空间（maximally symmetric spaces），139–144
+  - 欧几里得空间中的直线概念：见测地线（notion of a straight line in Euclidean space. See geodesics）
+  - 开、平直与闭（open, flat, and closed），330
+  - 平行公设（parallel postulate），144
+  - 平行移动与测地线（parallel transport and geodesics），102–108
+  - Riemann 张量（Riemann tensor），121–133
+  - 对称性与 Killing 向量（symmetries and killing vectors），133–139
+  - 二形式（two-form），488–489
+- 曲率标量（Curvature scalar），129–130
+- 曲率张量：见 Riemann 张量（Curvature tensor. See Riemann tensor）
+- 弯曲时空（Curved spacetime）
+  - Einstein 等效原理（EEP）（Einstein Equivalence Principle (EEP)），53–54
+  - 引力（gravitation），151–155
+  - 其中的 Taylor 展开（Taylor expansion in），107
+
+- d’Alembert 算符（d’Alembertian operator）
+  - 共形变换（conformal transformation），469
+  - 定义（defined），41
+  - Green 函数（Green function），301–302
+- 黑暗时代（Dark ages），365
+- 暗能量（Dark energy），360
+- DEC：见主导能量条件（DEC. See Dominant Energy Condition）
+- 减速参数（Deceleration parameter），337
+- 偏折角（Deflection angle），290–292，352
+- 自由度（Degrees of freedom）
+  - 与区域边界（boundary of region and），421
+  - 相对论性自由度的有效数目（effective number of relativistic），361
+  - 平直时空（flat spacetime），387
+  - 引力自由度（gravitational），279–286
+- Delta 函数（Delta function），47，191，302
+- 密度：另见能量密度（Density. See also energy density）
+  - 均方根（RMS）涨落（root-mean-square (RMS) fluctuation），371
+  - 张量密度（tensor），82–84
+  - 宇宙中的变化（universes, variations in），323
+- 密度参数（Density parameter），337
+- 未来依赖域（Dependence, future domain of），79
+
+- de Sitter 空间（De Sitter space）
+  - 描述（described），324–326
+  - 正曲率最大对称时空（positively curved maximally symmetric spacetime），144
+  - 真空主导宇宙（vacuum-dominated universe），335
+- 测地线偏离（Deviation, geodesic），144
+- 微分同胚（Diffeomorphisms），59，276–278，429–431
+- 可微流形：见流形（Differentiable manifolds. See manifolds）
+- 微分形式（Differential forms）
+  - 闭形式（closed），85
+  - 曲率（curvature），488–489
+  - 定义（defined），84
+  - 上同调空间的维数（dimensionality of cohomology），85–86
+  - 恰当形式（exact），85
+  - 外微分（exterior derivative），84–85
+  - Hodge 对偶（Hodge duality），86，87
+  - Levi–Civita（Levi–Civita），86
+  - 自旋联络（spin connection），488
+  - 挠率（torsion），488
+  - 真空 Maxwell 方程（vacuum Maxwell’s equations），87
+  - 向量势（vector potential），87
+  - 楔积（wedge product），84
+- 微分（Differentiation）
+  - 协变微分（covariant），94–99，486
+  - 协变外微分（covariant exterior），489
+  - 外微分（exterior），84
+  - Lie 微分（Lie），429
+  - 偏微分（partial），20，29
+- 膨胀子（Dilaton），189，300
+- 维数（Dimension），17，54–55，59–60
+- Dirac 量子化条件（Dirac’s quantization condition），87
+- 方向协变导数（Directional covariant derivative），105
+- 方向导数（Directional derivatives），63–64
+- 主导能量条件（Dominant Energy Condition），175–177
+- Doppler 效应（Doppler effect），52–53，329
+- 点积：见内积（Dot product. See inner product）
+- 对偶向量（Dual vectors）
+  - 作用（action），19–20
+  - 余切空间（cotangent space），18–19
+  - 协变／逆变向量（covariant/contravariant vectors），19
+  - 协变导数（covariant derivatives），96–97
+
+<!-- source: PDF 517; printed: 504 -->
+
+- 对偶向量（续）（Dual vectors (continued)）
+  - 标量函数的梯度（gradient of a scalar function），20
+  - 正交归一（orthonormal），484
+  - 拉回算符（pullback operator），425–426
+  - 生成曲面的（surface-forming），441
+  - 变换定律（transformation law），20，68–69
+- 哑指标（Dummy indices），9
+- 尘埃（Dust）
+  - 表现为尘埃的物质（matter behaving like），119，334
+  - 粒子数通量四维向量（number-flux four-vector），33–34
+  - 静态引力的建模（static gravitating forces, modeling），286–287
+- Dyson 公式（Dyson’s Formula），481
+
+- Sir Arthur Eddington（Eddington, Sir Arthur），292
+- EEP：见 Einstein 等效原理（EEP. See Einstein Equivalence Principle）
+- 有效场论（Effective field theory），45，180，189
+- 相对论性自由度的有效数目（Effective number of relativistic degrees of freedom），361
+- 能量本征态（Eigenstates, energy），381–382
+- Einstein（Einstein）
+  - 广义相对论方程：见 Einstein 方程（equation of general relativity. See Einstein’s equation）
+  - 空间、时间与引力理论：见广义相对论（GR）（theory of space, time, and gravitation. See general relativity (GR)）
+  - 对太阳偏折光线的看法（view of deflection of light by sun），291–292
+  - 对弱等效原理（WEP）的推广（Weak Equivalence Principle (WEP), generalizing），48–50
+- Einstein 角（Einstein angle），351，352
+- Einstein–de Sitter 模型（Einstein–de Sitter model），340
+- Einstein 等效原理（EEP）（Einstein Equivalence Principle (EEP)）
+  - 与时空曲率（curvature of spacetime and），50
+  - 引力红移（gravitational redshift），52–53
+  - 引力作为时空曲率的表现（gravity as manifestation of curvature of spacetime），48–54，151–153
+- Einstein 标架（Einstein frame），184–189
+- Einstein–Hilbert 作用量（Einstein–Hilbert action），161，299
+- Einstein 半径（Einstein radius），351
+- Einstein 环（Einstein ring），351
+- Einstein 方程（Einstein’s equation）
+  - 推导（derived），155–165，299
+  - 性质（properties），164–171
+  - 微扰形式（perturbed），275–276，281–285，307–308
+  - 横向规范（transverse gauge），287
+- Einstein 空间（Einstein space），328
+- Einstein 静态宇宙（Einstein static universe），325–327，344，474–475
+- Einstein 张量（Einstein tensor）
+  - 自由度（degrees of freedom），282–283
+  - Riemann 张量（Riemann tensor），130–131
+- 电磁辐射（Electromagnetic radiation），315
+- 电磁学（Electromagnetism）
+  - 黑洞（black holes），238–239
+  - 经典场论（classical field theory），42
+  - Coulomb 规范（Coulomb gauge），283
+  - 弯曲时空（curved spacetime），178
+  - 能量-动量张量（energy-momentum tensor），44，254
+  - 场强（field strength），24–25
+  - 规范不变性（gauge invariance），278
+  - Maxwell 方程（Maxwell’s equation），29–30
+  - 量子电动力学（QED）（quantum electrodynamics (QED)），87
+  - Stokes 定理（Stokes’s theorem），456
+  - 张量与微分形式（tensors, differential forms），86–87
+  - 向量势（vector potential），87
+- 电子复合（Electron recombination），364
+- 嵌入子流形（Embedded submanifold），439
+- Whitney 嵌入定理（Embedding theorem, Whitney’s），60
+- 能量：另见能量-动量张量（Energy. See also energy-momentum tensor）
+  - ADM 能量（ADM energy），252–253
+  - 膨胀宇宙（expanding universe），120
+  - 从旋转黑洞提取（extracting from rotating black hole），267–272
+  - Komar 积分（Komar integral），249–251
+  - 引力辐射中的损失率（loss rate in gravitational radiation），307–315
+  - 质量作为能量的表现（mass as manifestation of），49
+  - 动量四维向量（momentum four-vector），31–32
+  - 正能量定理（Schoen 与 Yau）（positive energy theorem (Shoen and Yau)），253
+  - 静态时空（static spacetime），137
+  - 真空：见真空能（vacuum. See vacuum energy）
+- 能量条件（Energy conditions），174–177
+- 能量密度（Energy density）
+  - 定义（defined），33–37
+  - Friedmann 方程（Friedmann equation），338，340
+  - 引力波（gravitational waves），304
+  - 物质中（in matter），119，334–335
+  - 负能量密度（negative），339–340
+  - 辐射（radiation），119，335
+  - 真空（vacuum），35，119，171–174，335，341–344，358
+- 能量本征态（Energy eigenstates），381–382
+- 能量-动量张量（Energy-momentum tensor）
+  - 经典场论（classical field theory），44
+  - 守恒方程（conservation equation），35，118，153，435–436
+  - 定义（defined），33，164–165
+  - 尘埃（dust），34
+  - 电磁学（electromagnetism），44，254
+  - 能量密度（energy density），33–37
+  - 流体（fluid），33
+  - 推广到弯曲时空（generalizing to curved spacetime），153，164–165
+  - 引力（gravitation），307–310
+  - Minkowski 时空（Minkowski spacetime），30–31
+  - 粒子数通量四维向量（number-flux four-vector），33–34
+  - 完美流体（perfect fluid），34–37
+  - 压强（pressure），33
+  - 标量场（scalar field），44
+  - 对称性（symmetry），33
+  - 真空（vacuum），35，171–172
+  - 正能量定理（Schoen 与 Yau）（positive energy theorem (Shoen and Yau)），253
+  - 静态时空（static spacetime），137
+  - 真空：见真空能（vacuum. See vacuum energy）
+- 熵（Entropy），272，417–418
+- 状态方程参数（Equation-of-state parameter），175–176，334–335，338–340
+- 平衡分布函数（Equilibrium distribution function），361
+- 等效原理（Equivalence principle）
+  - 与弯曲时空（and curved spacetime），48–54，151–153
+  - Einstein 等效原理（EEP）（Einstein (EEP)），50
+  - 引力红移（gravitational redshift），52–53
+  - 解释（interpretation），177–181
+  - 强等效原理（SEP）（strong (SEP)），50
+  - 弱等效原理（WEP）（weak (WEP)），48–50
+- 能层（Ergosphere），264，268
+- 能层面：见静止极限面（Ergosurface. See stationary limit surface）
+
+<!-- source: PDF 518; printed: 505 -->
+
+- 欧几里得几何（Euclidean geometry）
+  - 等距映射（isometries），139–140
+  - 最大对称空间（maximally symmetric space），141–143
+  - 度规（metric），13
+  - 度规张量（metric tensor），73
+  - 正交变换（orthogonal transformations），485
+  - 平行公设（parallel postulate），144
+- Euler 方程（Euler equation），37
+- Euler–Lagrange 方程（Euler–Lagrange equation）
+  - 经典场论（classical field theory），37，39，40
+  - 弯曲时空（curved spacetime），159–160
+  - 测地线（geodesics），107
+  - 向量势（vector potential），42–43
+- 黑洞蒸发（Evaporation, black hole），239，412–422
+- 事件（Event），4
+- 事件视界（Event horizons）
+  - 面积定理（Hawking）（area theorem (Hawking)），243–244
+  - 已蒸发黑洞（black holes, evaporated），418
+  - 定义（defined），222，239–240
+  - 寻找（finding），241–242
+  - 未来（future），241
+  - 作为类光超曲面（as null hypersurface），240–241
+  - 奇点（singularities），242–243
+- 膨胀（Expansion）
+  - 减速参数（deceleration parameter），337
+  - 测地线丛（geodesic congruence），460，464
+  - Hubble 参数（Hubble parameter），336
+  - 宇宙的例子（universe, example），76–78，113–120，476–478，490–492
+- 指数映射（Exponential map），111
+- 微分形式的外微分（Exterior derivative of differential form），84–85
+- 额外维（Extra dimension），60，181，186–189，374–375
+- 外曲率（Extrinsic curvature），449–450
+
+- Fermat 最短时间原理（Fermat’s principle of least time），293
+- 费米子（Fermions），44，235，361
+- Feynman 图（Feynman diagrams），166–167，416
+- 纤维丛（Fiber bundle），16，493–494
+- 场（Field）
+  - 经典场：见经典场论（classical, see classical field theory）
+  - 对偶向量场（dual vector），19
+  - 电磁场：见电磁学（electromagnetic, see electromagnetism）
+  - 量子场：见量子场论（quantum, see quantum field theory）
+  - 标量场（scalar），19，40–42，160，164，360，369，386–411
+  - 张量场（tensor），23
+  - 向量场（vector），16
+- 超曲面的第一基本形式（First fundamental form, hypersurface），449
+- 平直宇宙（Flat universe），76–78，113–120，330，337，343
+- 平直空间：见欧几里得几何、Minkowski 时空（Flat space. See Euclidean geometry, Minkowski space）
+- 流体（Fluids）
+  - 宇宙学流体（cosmological），334
+  - 能量与动量（energy and momentum），33，34–37
+  - 膨胀宇宙度规（expanding universe metric），118–119
+  - 完美流体（perfect），34
+- Fock 基（Fock basis），390–393，396–397
+- Fourier 变换（Fourier transform），283–284，303–304
+- 四维向量：见向量（Four-vector. See vector）
+- 标架（Frame）
+  - 共形标架（conformal），468
+  - 惯性标架（inertial），6–7
+  - 局部惯性标架（locally inertial），50–51
+- 自由度：见自由度（Freedom, degrees of. See degrees of freedom）
+- 自由粒子（Free particle）
+  - 沿测地线运动（geodesics, moving along），152–153
+  - 对时空曲率的响应（response to spacetime curvature），2
+  - 测试粒子（test particles），108
+- Hubble 摩擦（Friction, Hubble），360–361
+- Friedmann 方程（Friedmann equation）
+  - 宇宙学（cosmology），333–337
+  - 能量密度（energy density），338，340
+  - 平直性问题（flatness problem），366
+  - 寻找静态解（static solutions, finding），343
+- Friedmann–Robertson–Walker 宇宙：见 FRW 宇宙（Friedmann–Robertson–Walker universes. See FRW universes）
+- Frobenius 定理（Frobenius’s theorem），198，440–442，445
+- FRW（Friedman–Robertson–Walker）宇宙（FRW (Friedman–Robertson–Walker) universes），336
+- 未来（Future），79–80
+
+- 规范场（Gauge fields），44
+- 规范不变性（Gauge invariance），42，276–277，493
+- 规范变换（Gauge transformation）
+  - 场强张量的性质（field strength tensor property），42，300–301，493
+  - 微扰理论（perturbation theory），274–278
+- Gauss–Bonnet 定理（Gauss–Bonnet theorem），143
+- Gaussian 法坐标（Gaussian normal coordinates）
+  - 超曲面（hypersurfaces），445–447
+  - 作为同步规范（synchronous gauge as），284
+- Gauss 方程（Gauss’s equation），451，456
+- 一般坐标变换（General coordinate transformations），486
+- 广义相对论（GR）：另见因果性、Einstein 方程（General relativity (GR). See also causality, Einstein’s equation）
+  - 作为经典场论（as classical field theory），37，159–165
+  - 理论所基于的联络（connection on which based），99–100
+  - 描述（described），1–3
+  - 引力（gravitation），151–192
+  - Mercury 近日点进动（Mercury’s perihelion, precession of），291–292
+  - 自旋（spin），253–254
+  - 与对称性（symmetry and），133–134
+  - 渐近平直时空的总能量（total energy of asymptotically flat spacetime），249–253
+- 生成元（Generator）
+  - 微分同胚（diffeomorphism），431
+  - 超曲面（hypersurface），443–444
+- 一般条件（Generic condition），242–243
+- 测地线偏离（Geodesic deviation），144–146
+- 测地线（Geodesics）
+  - Christoffel 联络（Christoffel connection），108
+  - 测地线丛（congruences），459–465
+  - 定义（defined），2，105–106
+  - 方程（equation），106–113
+  - Euler–Lagrange 方程（Euler–Lagrange equations），107
+  - 指数映射（exponential map），111
+  - Gaussian 法坐标（Gaussian normal coordinates），445–447
+  - 局部惯性坐标（locally inertial coordinates），112
+
+<!-- source: PDF 519; printed: 506 -->
+
+- 测地线（续）（Geodesics (continued)）
+  - 固有时的极大值（as maxima of proper time），110–111
+  - Kerr 度规中的运动（movement along in Kerr metric），267
+  - 类光路径（null paths），109–110
+  - 参数化（parameterization），109
+  - 微扰形式（perturbed），288–293
+  - 测地线之间的相对加速度（relative acceleration between），145
+  - Riemann 法坐标（Riemann normal coordinates），112–113
+  - Schwarzschild 解（Schwarzschild solution），205–212
+  - 最短距离定义（shortest-distance definition），106–107
+  - 流形中的奇点（singularities in manifold），111–112
+  - 测试粒子（test particle），108，152
+  - 类时路径方程的写法（timelike paths, writing equation），109
+  - 不变的特征（unchanging character），110
+- 几何时间延迟（Geometric time delay），292–293
+- 几何：另见曲率（Geometry. See also curvature）
+  - 定义为对 Pythagoras 定理的偏离（defined as deviating from Pythagorean theorem），2，71–76
+  - 引力作为几何（gravity as），48–54
+- Gibbons–Hawking 温度（Gibbons–Hawking temperature），371
+- GR：见广义相对论（GR. See general relativity）
+- 梯度（Gradient）
+  - 微分形式的外微分（exterior derivative of differential form），84–85
+  - 标量函数的梯度（of a scalar function），20
+- 引力：另见广义相对论（Gravitation. See also general relativity）
+  - 替代理论（alternative theories），181–190
+  - 弯曲时空（curved spacetime），53–54，151–155
+  - Einstein 方程（Einstein’s equation），155–159，164–171
+  - 能量条件（energy conditions），174–177
+  - 能量-动量（energy-momentum），307–310
+  - 等效原理（equivalence principle），177–181
+  - Lagrangian 表述（Lagrangian formulation），159–165
+  - 局部惯性标架（locally inertial frames），50
+  - Newton 引力定律（Newton’s law of gravity），48–49
+  - 标量-张量理论（scalar-tensor theories），181–184
+  - 与匀加速的区分（uniform acceleration, distinguishing），49
+- 引力坍缩（Gravitational collapse），230，234–236，415
+- Newton 引力常数（Gravitational constant, Newton’s），151
+- 引力透镜（Gravitational lensing），349–355
+- 引力辐射：另见引力波（Gravitational radiation. See also gravitational waves）
+  - 能量损失率（energy loss rate），307–315
+  - 微扰理论（perturbation theory），274–322
+- 引力红移（Gravitational redshift），52–53，216–218
+- 引力时间延迟（Gravitational time delay），292
+- 引力波（Gravitational waves）
+  - Fourier 变换（Fourier transform），303–304
+  - 规范变换（gauge transformation），300–301
+  - Lorenz 规范（Lorenz gauge），301
+  - 度规微扰（metric perturbation），306–307
+  - 观测站（observatory），316–319
+  - 四极矩张量与公式（quadrupole moment tensor and formula），304–306
+  - 解（solutions）
+    - 描述（described），293
+    - 频率（frequency），295
+    - 平面波解（plane wave solution），294，295
+    - 偏振态（polarization states），298–299
+    - 光速传播（speed of light propagation），295
+    - 弦理论线索（string theory, clues to），299–300
+    - 测试粒子（test particles），296–298
+    - 横向无迹规范（transverse traceless gauge），293–294
+- 重力：见引力（Gravity. See gravitation）
+- Green 函数（Green function），301–302
+
+- Hadamard 态（Hadamard state），401
+- 半平面几何（Half-plane geometry），141–142
+- 谐和规范（Harmonic gauge），284–285，301，321
+- 谐振子（Harmonic oscillator）
+  - 经典（classical），41–42，379
+  - 量子（quantum），381–385
+- Hartle–Hawking 真空（Hartle–Hawking vacuum），414
+- Hawking（Hawking）
+  - 面积定理（area theorem），243–244
+  - 效应与黑洞蒸发（effect and black hole evaporation），412–422
+  - 稳恒黑洞的事件视界（event horizon of stationary black hole），244–245
+  - 辐射（radiation），239，412–422
+  - 奇点定理（singularity theorems），242
+  - 温度（temperature），376，413–414
+- Heisenberg 运动方程（Heisenberg equation of motion），384
+- Heisenberg 图景（Heisenberg picture），380，383–384
+- Higgs 场（Higgs fields），44
+- Hilbert 作用量（Hilbert action），161，299
+- Hilbert 空间（Hilbert space），380，390，435
+- Hodge 对偶（Hodge duality），86，87
+- 全息原理（Holographic principle），421
+- 回路的完整群（Holonomy of loop），481
+- 均匀性（Homogeneity），323–324，366，369
+- 视界问题（Horizon problem），366
+- Hubble 常数（Hubble constant），336，355–356
+- Hubble 定律（Hubble law），346
+- Hubble 长度（Hubble length），336–337
+- Hubble 参数（Hubble parameter）
+  - 定义（defined），336
+  - 膨胀率下降（expansion rate, decreasing），339
+  - 作为摩擦项（as friction term），360–361
+  - 慢滚（slow-roll），369–370
+- Hubble 时间（Hubble time），337
+- 流体静力平衡方程：见 Tolman–Oppenheimer–Volkoff 方程（Hydrostatic equilibrium, equation of. See Tolman–Oppenheimer–Volkoff equation）
+- 超曲面（Hypersurface）
+  - 黑洞边界（boundary of black holes），239
+  - 超曲面丛（congruence），462
+  - 外曲率（extrinsic curvature），449–451
+  - 第一基本形式（first fundamental form），449
+  - Gaussian 法坐标（Gaussian normal coordinates），445–447
+  - 生成元（generator），443–444
+  - 诱导度规（induced metric），427，447
+  - 性质（properties），443–452
+  - 第二基本形式（second fundamental form），450
+  - Stokes 定理（Stokes’s Theorem），455
+
+- 恒等映射（Identity map），23，96，485
+- 浸入子流形（Immersed submanifold），439
+- Riemann 张量的独立分量（Independent components, Riemann tensor），127–128
+
+<!-- source: PDF 520; printed: 507 -->
+
+- 指标（Indices）
+  - 反对称化（antisymmetry），26–28
+  - 基向量（basis vectors），17
+  - 缩并（contraction），25，28
+  - 哑指标（dummy），9
+  - 次序（order），22
+  - 正交归一（平直）（orthonormal (flat)），483–486
+  - 升降指标（raising and lowering），25
+  - 空间指标（spatial），8
+  - 求和约定（summation convention），8–9
+  - 对称化（symmetry），26–28
+- 子流形的诱导度规（Induced metric, submanifold），427，447–448
+- 惯性坐标：另见局部惯性坐标（Inertial coordinates. See also locally inertial coordinates）
+  - Minkowski 时空（Minkowski space），6–8
+  - 其中的时钟同步（synchronizing clocks in），7
+- 惯性标架：见惯性坐标（Inertial frame. See inertial coordinates）
+- 无限红移面（Infinite redshift surface），247
+- 无穷远（Infinity）
+  - 从无穷远观察到的加速度（acceleration viewed from），246–247
+  - 反 de Sitter 空间（anti-de Sitter space），327–328
+  - 渐近平直性（asymptotic flatness），197，249–253
+  - 共形无穷远（conformal），475–476
+- 暴胀（Inflation），320，365–374，369，377
+- 信息丢失悖论（Information loss paradox），418–420
+- 初值问题（Initial-value problems），78
+- 内积（Inner product），23
+- 瞬时物理距离（Instantaneous physical distance），345
+- 积分曲线（Integral curves），430
+- 积分子流形（Integral submanifold），440
+- 流形上的积分（Integration on manifolds），88–90，453–457
+- 干涉仪（Interferometers），317–318
+- 间隔（Interval）
+  - 固有时（proper time），9
+  - 时空间隔（spacetime），7
+- 逆映射（Inverse map），58
+- 逆度规张量（Inverse metric tensor），23–24，71
+- 可逆映射（Invertible map），58
+- 黑洞的不可约质量（Irreducible mass of black hole），270
+- 孤立磁荷（磁单极子）（Isolated magnetic charges (monopoles)），255
+
+- 等距映射（Isometries），134–139，436–437
+- 各向同性（Isotropy），323–324，366
+
+- 映射的 Jacobian（Jacobian of map），62
+- Jordan 标架（Jordan frame），184
+
+- Kerr（旋转）黑洞（Kerr (rotating) black holes）
+  - 角速度（angular velocity），266
+  - Boyer–Lindquist 坐标（Boyer–Lindquist coordinates），262
+  - 能层（ergosphere），264
+  - Killing 张量（Killing tensor），263
+  - 度规（metrics），262–263
+  - 奇点（singularity），265
+  - 对称性（symmetry），261
+- Killing 视界（Killing horizon）
+  - 从无穷远观察到的加速度（acceleration viewed from infinity），246–247
+  - 定义（defined），244
+  - 与事件视界的比较（event horizon versus），244–245
+  - Minkowski 时空（Minkowski space），245，405
+  - 稳恒而非静态的时空（stationary, nonstatic spacetime），247–248
+  - 表面引力（surface gravity），245–246
+- Killing 方程（Killing’s equation），136，437
+- Killing 张量（Killing tensor），136–137，263，344
+- Killing 向量（Killing vectors）
+  - 共形（conformal），495
+  - 守恒能量（conserved energy），137–138，344
+  - 定义（defined），135–137，436–437
+  - 欧几里得空间（Euclidean space），138–139
+  - Komar 积分（Komar integral），251–252
+  - 最大对称空间（maximally symmetric space），140
+  - Minkowski 时空（Minkowski space），149，245，405
+  - 与 Riemann 张量相关的导数（Riemann tensor, relating derivatives），137
+  - Schwarzschild 度规（Schwarzschild metric），206–208
+  - 球对称（spherical symmetry），138–139，149，197–198
+  - 自旋（spin），253–254
+- Klein 瓶（Klein bottle），60
+- Klein–Gordon 方程（Klein–Gordon equation），42，160，360，386–389
+- Komar 积分（Komar integral），251–252
+- Kronecker delta（Kronecker delta），23，83–84
+- Kruskal 坐标与图（Kruskal coordinates and diagram），225–226
+
+- Lagrangian 密度（Lagrange density），38，159–160
+- GR 的 Lagrangian 表述（Lagrangian formulation of GR），159–165
+- Lagrangian（Lagrangian），37
+- 激光干涉仪（Laser interferometers），317–318
+- 正交归一基中的拉丁指标（Latin index, orthonormal bases），483
+- Leibniz 法则（Leibniz rule），67
+- 透镜方程（Lens equation），351
+- Lense–Thirring 效应（Lense–Thirring effect），320
+- 透镜效应（Lensing）
+  - 宇宙学透镜（cosmological），349–355
+  - Minkowski 背景（Minkowski background），288–293
+  - 势（potential），352–353
+  - 强透镜（strong），355
+  - 弱透镜（weak），355
+- 轻子（Leptons），44，363
+- Levi–Civita 联络：见 Christoffel 联络（Levi–Civita connection. See Christoffel connection）
+- Levi–Civita 张量（Levi–Civita tensor），24，82–83，86，90，448
+- Lie 括号（Lie bracket），67，433
+- Lie 导数（Lie derivatives），429–437
+- 光：另见类光测地线（Light. See also null geodesics）
+  - 太阳造成的偏折（deflection by sun），291–292
+  - 光线的会聚（rays, convergence），353
+  - 光速（speed of），7–8
+- 光锥（Light cones）
+  - 共形变换（conformal transformations），471
+  - 弯曲几何中的定义（curved geometry, defining），76–77
+  - 定义（defined），4–5，9
+  - 从大爆炸奇点开始膨胀的宇宙中（in universe expanding from Big Bang singularity），367
+  - Lorentz 变换下的不变性（invariance under Lorentz transformation），15
+- 类光：见类光路径、类光分离（Lightlike (null). See Null paths, Null separated）
+- 线性化引力（Linearized gravity），274–286
+- 线元（Line element），11，71
+- Liouville 定理（Liouville’s theorem），353
+- 局部惯性坐标（Locally inertial coordinates），73–76，111–113
+- 局部惯性标架（Locally inertial frames），50–51，73–74，483–486
+- 回望时间（Lookback time），349
+- 回路的完整群（Loop, holonomy of），481
+- Lorentz 力（Lorentz force），32–33
+
+<!-- source: PDF 521; printed: 508 -->
+
+- Lorentz 型或伪 Riemann 型度规张量（Lorentzian or pseudo-Riemannian metric tensor），73
+- Lorentz 变换（Lorentz transformation）
+  - 基向量（basis vectors），18
+  - 定义（defined），12–15
+  - 对偶向量（dual vector），20
+  - Fock 基（Fock basis），390–393
+  - 逆变换（inverse），18
+  - 局部变换（local），486
+  - 张量（tensor），22
+  - 向量（vectors），17
+- Lorenz 规范（Lorenz gauge），284–285，301，321
+- 光度（Luminosity），346–348，355
+
+- 孤立磁荷（Magnetic charges, isolated），255
+- 放大率（Magnification），354
+- 放大率张量（Magnification tensor），353–354
+- 流形（Manifolds）
+  - 基底以及与向量空间的并（base, union with vector spaces），16，493–494
+  - 带边界（with boundary），451–452
+  - 因果性（causality），78–82
+  - 覆盖流形的坐标图（chart, covering），60–62
+  - 共形图（conformal diagrams），471–478
+  - 曲率的描述（curvature, describing），72
+  - 描述（described），3，54–62
+  - 微分同胚与 Lie 导数（diffeomorphisms and lie derivatives），429–437
+  - 微分形式（differential forms），84–87
+  - 额外维流形的尺度（extra-dimensional, size of），189
+  - 四维 Minkowski 时空（four-dimensional Minkowski space），9
+  - 引力作为几何（gravity as geometry），48–54
+  - 积分（integration），88–90，453–458
+  - 流形之间的映射（maps between），423–427
+  - 最大对称空间（maximally symmetric space），140–144，323–329
+  - 度规张量（metric tensor），71–76
+  - 非坐标基（noncoordinate bases），483–495
+  - 不属于流形的对象（objects that are not），56–57
+  - 把切空间映射到流形区域（region, mapping tangent space to），111
+  - Riemann 张量（Riemann tensor），124–125
+  - 奇点（singularities），111–112，204–205
+  - Stokes 定理（Stokes’s Theorem），453–458
+  - 子流形（submanifolds），439–452
+- 映射（Mapping）
+  - 流形（manifold），57，423–427
+  - 切空间与流形区域（tangent space manifold region），111
+- 质量（Mass）
+  - Newton 理论中的加速度（acceleration, according to Newton），1
+  - 渐近平直时空（asymptotically flat spacetime），249–253
+  - 黑洞（black holes），248–254，259，270
+  - 狭义相对论（SR）（special relativity (SR)），49–50
+- 物质（Matter）
+  - 不对称性（asymmetry），365
+  - 暗物质（dark），359
+  - 作为尘埃（as dust），33，119–120，334
+  - 能量密度（energy density），119–120，334–335，338–343，356
+  - 普通物质（ordinary），358–359
+  - 对时空曲率的响应（response to spacetime curvature），2
+  - 物质主导宇宙（universe dominated by），76，334，340，365
+- 最大延拓的 Schwarzschild 解（Maximally extended Schwarzschild solution），222–229
+- 最大对称空间（Maximally symmetric space）
+  - 欧几里得空间（Euclidean），140
+  - 等距映射（isometries），139–140
+  - Minkowski 时空（Minkowski space），144
+  - Poincaré 半平面（Poincaré half-plane），141–142
+  - Riemann 张量（Riemann tensor），140–141，324
+  - 时空（spacetimes），323–329
+  - 球面（spheres），140
+- Maxwell 方程（Maxwell’s equations）
+  - 弯曲时空（curved spacetime），178
+  - 平直时空（flat spacetime），29–30
+  - 微分形式（differential forms），86–87
+- Mercator 投影（Mercator projection），61
+- Mercury 近日点进动（Mercury’s perihelion, precession of），291–292
+- 度规（Metric）
+  - 相容联络（compatible connection），99–100
+  - 定义（defined），8
+  - 诱导度规（induced），427–447
+  - 局部惯性坐标（locally inertial coordinates），73–74
+  - 对能量与动量的响应：见 Einstein 方程（response to energy and momentum. See Einstein’s equation）
+  - 符号约定（sign convention），8
+    - 标准形（canonical form），73
+  - 不定型（Lorentz 型或伪 Riemann 型）（indefinite (Lorentzian or pseudo-Riemannian)），73
+  - 正定型（欧几里得型或 Riemann 型）（positive (Euclidean or Riemannian)），73
+  - 性质（properties），71–75
+  - 号差（signature），73
+  - 作用于两个向量（内积）（on two vectors (inner product)），23
+- 度规微扰：见弱场极限（Metric perturbation. See Weak-field limit）
+- 微引力透镜（Microlensing），352
+- Milne 宇宙（Milne universe），341
+- 最小耦合原理（Minimal-coupling principle），152–153，179–181，395
+- Minkowski 时空（Minkowski space）
+  - 经典场论（classical field theory），37–45
+  - 共形图（conformal diagrams），471–476
+  - 描述（described），4–11
+  - 对偶向量（dual vectors），18–20
+  - 电磁学（electromagnetism），29–30
+  - 能量与动量（energy and momentum），30–37
+  - 惯性坐标（inertial coordinates），6–8
+  - 等距映射（isometries），134，149，245，405
+  - Killing 视界（Killing horizon），245，405
+  - Lorentz 变换（Lorentz transformations），12–15
+  - 最大对称时空（maximally symmetric spacetime），144
+  - 点粒子电荷（point particle charge），457
+  - 量子场论（quantum field theory），385–394，402–412
+  - 时空图（spacetime diagram），9
+  - 张量（tensors），21–29
+  - 拓扑（topology of），85–86
+  - Unruh 效应（Unruh effect），402–412
+  - 向量（vectors），15–18
+- Misner 空间（Misner space），81
+- 动量四维向量：另见能量-动量张量（Momentum four-vector），31–32，109；另见能量-动量张量（See also energy-momentum tensor）
+- 磁单极子（Monopoles），255
+
+- 裸奇点（Naked singularity），243，256–257
+- 自然单位（Natural units），38
+- NEC：见类光能量条件（NEC. See Null Energy Condition）
+- 负曲率宇宙：见开宇宙（Negatively curved universe. See open universe）
+- 中性微子（Neutralinos），359
+- 中微子（Neutrinos），363–364
+
+<!-- source: PDF 522; printed: 509 -->
+
+- 中子星（Neutron star）
+  - 形成（creation），235
+  - 发出的引力辐射（gravitational radiation from），319
+  - 真空态（vacuum state），415
+- Newton 理论（Newton’s theories）
+  - 加速度（acceleration），1，151
+  - 引力常数（gravitational constant），151
+  - 引力理论（of gravity），1，48–49，153–154
+  - 作为 GR 的极限（as limit of GR），153–154，157–158，286–293
+  - 第二定律（Second Law），1，32–33
+- 无毛定理（No-hair theorem），238–239
+- 引力波观测站噪声（Noise, gravitational-wave observatories），318
+- 非重子暗物质（Nonbaryonic dark matter），359
+- 非坐标基（Noncoordinate bases），74，483–495
+- 向量的范数（Norm of a vector），23
+- $n$ 维球面（n-sphere），55
+- $n$ 维环面（n-torus），55
+- 核子与核结合能（Nucleon, nuclear binding energy），363
+- 核合成（Nucleosynthesis），364
+- 类光能量条件（Null Energy Condition），175–176
+- 类光超曲面（Null hypersurface），240–241，244–245，443–445
+- 类光路径（Null paths）
+  - 定义（defined），31
+  - 测地线（geodesics），109–110
+  - 作为超曲面生成元（as hypersurface generators），443–445
+- 类光分离（Null separated），9
+- 粒子数密度（Number density），33–34，335
+- 粒子数通量四维向量（Number-flux four-vector），33–34
+- 粒子数算符（Number operator），382–383，390，397，410–411
+
+- 一形式：见对偶向量（One-forms. See dual vectors）
+- 一一映射（One-to-one map），57
+- 开球／开集（Open ball/set），59
+- 开宇宙（Open universe），330，337，343
+- Oppenheimer–Volkoff 极限（Oppenheimer–Volkoff limit），235
+- 普通物质（Ordinary matter），358–359
+- 正交变换（Orthogonal transformations），13，485
+- 正交向量（Orthogonal vectors），23
+- 正交归一基（Orthonormal basis），483–484
+
+- Palatini 形式体系（Palatini formalism），191
+- 平行公设（Parallel postulate），144
+- 平行传播子（Parallel propagator），479–481
+- 平行移动（Parallel transport）
+  - 描述（described），103–104
+  - 方向协变导数（directional covariant derivative），105
+  - 传播子（propagator），479–481
+  - Riemann 曲率张量（Riemann curvature tensor），122
+  - 直线（straight line），106
+- 部分 Cauchy 曲面（Partial Cauchy surface），80
+- 偏导数（Partial derivatives）
+  - 可交换性（commuting），29
+  - 转换为协变导数（covariant derivatives, converting to），101–102
+  - 梯度（gradient），20
+  - 张量（tensors），28，70
+- 粒子加速器（Particle accelerator），393
+- 粒子（Particles）
+  - 探测（detecting），398，399
+  - 能量与动量（energy and momentum），32，47
+  - 平直时空（flat spacetime），386
+  - Minkowski 真空态中（in Minkowski vacuum state），412
+  - 测试粒子（test），108
+  - Unruh 效应（Unruh effect），402
+- 路径（Path）
+  - 穿过时空的轨迹（locus through spacetime），4–5
+  - 最短可能距离：见测地线（of shortest possible distance. See geodesics）
+  - 沿其移动并保持向量不变：见平行移动（vector, moving along and keeping constant. See parallel transport）
+- 路径排序符号（Path-ordering symbol），480–481
+- Peccei–Quinn 对称性（Peccei–Quinn symmetry），359
+- Penrose（Penrose）
+  - 图（diagrams），471–478
+  - 黑洞过程（process for black holes），267–272
+  - 奇点定理（singularity theorems），242
+- Mercury 近日点进动（Perihelion, precession of Mercury’s），291–292
+- 微扰理论（Perturbation theory）
+  - 引力辐射造成的能量损失（energy loss due to gravitation radiation），307–315
+  - 自由度（freedom, degrees of），279–286
+  - 引力波（gravitational waves）
+    - 探测（detecting），315–320
+    - 产生（producing），300–307
+    - 解（solutions），293–300
+  - 与暴胀（inflation and），377
+  - 线性化引力与规范变换（linearized gravity and gauge transformations），274–278
+  - Newton 极限（Newtonian limit），153–154，157–158，286–293
+  - 弦理论（string theory），143–144
+- 相空间密度的 Liouville 守恒定理（Phase-space density, Liouville’s conservation theorem），353
+- 光子（Photons）
+  - 作为辐射的成分（as component of radiation），356
+  - 产生（creation），349
+  - 能量（energy），110
+  - 类光测地线（null geodesics），109–110
+  - 粒子数密度（number density），335
+  - 静态 Newton 场中的路径（path of in static Newtonian field），288–289
+  - 散粒噪声（shot noise），318
+  - 速度（speed），7–8
+  - 微扰理论中的轨迹（trajectories in perturbation theory），286–293
+  - 波长与频率成反比：见红移（wavelength inverse to frequency. See redshift）
+- Planck 谱（Planck spectrum），411
+- 平面波（Plane waves），294，295，387–388
+- Poincaré（Poincaré）
+  - 变换（transformations），14
+  - 半平面（half-plane），141–142
+- 时空中的单个点：见事件（Point, individual in spacetime. See event）
+- 点质量（Point mass）
+  - 偏折角的计算（deflection angle, evaluating），291
+  - 引力透镜（gravitational lensing），351
+- 点粒子电荷（Point particle charge），457
+- Poisson 方程（Poisson equation）
+  - 从 GR 推导（derived from GR），158，287–288
+  - 被 Einstein 方程取代（Einstein’s equation superseding），155
+  - Newton 引力（Newtonian gravity），1，151
+- 偏振（Polarization）
+  - CMB（CMB），373–374
+  - 引力波解（gravitational wave solutions），298–299
+- 正能量定理（Schoen 与 Yau）（Positive energy theorem (Shoen and Yau)），253
+- 正曲率宇宙：见闭宇宙（Positively curved universe. See Closed universe）
+- 原像（Preimage），58
+- 压强：另见能量-动量张量、状态方程参数（Pressure. See also energy-momentum tensors, equation-of-state parameter）
+
+<!-- source: PDF 523; printed: 510 -->
+
+- 压强（续）（Pressure (continued)）
+  - 定义（defined），33–37
+  - 能量条件（energy conditions），174–177
+  - 物质（尘埃）（matter (dust)），85，234
+  - 完美流体（perfect fluid），34
+  - 辐射（radiation），35，335–336
+  - 第二 Friedmann 方程中（in second Friedmann equation），336
+  - 真空（vacuum），35，335–336
+- 等效原理：见等效原理（Principle of Equivalence. See Equivalence principle）
+- Mercator 投影（Projection, Mercator），61
+- 投影张量（Projection tensor），36，312，449–451，460，463–465
+- 固有运动距离（Proper motion distance），348
+- 固有时（Proper time）
+  - 作为仿射参数（as affine parameter），109
+  - 测地线给出极大值（geodesics as maxima of），106–108，110–111
+  - 时空间隔（spacetime interval），9
+- 质子（Protons），358，363–365
+- 拉回（Pullback），423，425–426
+- 脉冲星（Pulsars），235
+- 推前（Pushforward），424–425
+
+- 四极矩（Quadrupole moment），304–306，312–314
+- 量子色动力学（QCD）（Quantum chromodynamics (QCD)），167，363
+- 量子电动力学（QED）（Quantum electrodynamics (QED)），87，166–167
+- 量子场论（QFT）（Quantum field theory (QFT)）
+  - 黑洞的蒸发与消失（black holes, evaporation and disappearance of），239，412–422
+  - 弯曲时空（curved spacetime），394–402
+  - 有效场论（effective field theory），45，180，189
+  - Feynman 图（Feynman diagrams），166–167，416
+  - 平直时空（flat spacetime），385–394
+  - 平行移动（parallel transport），479
+  - Unruh 效应（Unruh effect），402–412
+- 量子引力理论（Quantum theory of gravity），166–167，170–171，299–300，376，418–421
+- 夸克（Quarks），44，362–363
+
+- 辐射（Radiation）
+  - 大爆炸遗留辐射（Big Bang, leftover from），356–358
+  - 能量密度（energy density），335，356
+  - 状态方程（equation of state），119，334–335
+  - Hawking 辐射（Hawking），239，412–422
+  - 辐射主导的宇宙（universe dominated by）
+    - 成分（components），356
+    - 早期（early period），365
+    - 膨胀（expansion），76，340
+- Radion（Radion），189
+- 半径（Radius）
+  - Einstein 半径（Einstein），351
+  - Schwarzschild 半径（Schwarzschild），413–414
+  - 球面半径（of sphere），132–133
+- Raychaudhuri 方程（Raychaudhuri’s equation），149，167–168，191–192，375，461–462
+- 实向量空间（Real vector space），16
+- 退行速度（Recession velocity），346
+- 再坍缩（Recollapse），342–343
+- 复合（Recombination），364，367–368
+- 红移（Redshift）
+  - 宇宙学红移（cosmological），116–117，344–349
+  - 因子（factor），246，411–412
+  - 引力红移（gravitational），52–54，216–218
+  - 辐射密度（radiation density），335
+- 约化透镜角（Reduced lensing angle），350
+- 约化四极矩（Reduced quadrupole moment），313
+- Reissner–Nordström 黑洞（Reissner–Nordström black holes），254–261
+- 测地线之间的相对加速度（Relative acceleration between geodesics），145
+- 相对论：见广义相对论、狭义相对论（Relativity. See general relativity, special relativity）
+- Ricci 标量（Ricci scalar），129–130
+- Ricci 张量（Ricci tensor）
+  - 共形变换（conformal transformation），468
+  - 定义（defined），129
+  - 最大对称空间（maximally symmetric space），328
+  - 取迹（tracing），129–130
+- Riemann 法坐标（Riemann normal coordinates），112–113
+- Riemann 曲面（Riemann surfaces），55–56，143–144
+- Riemann 张量（Riemann tensor）
+  - Cartan 结构方程（Cartan structure equations），488–489
+  - 刻画曲率（characterizing curvature），124–126
+  - 协变导数的对易子（commutator of covariant derivatives），122–123
+  - 共形变换（conformal transformation），468
+  - 缩并（contraction），129–131
+  - 定义（defined），122
+  - 测地线偏离（geodesic deviation），144
+  - 独立分量（independent components），127–128
+  - 最大对称流形（maximally symmetric manifold），141，324
+  - 沿回路的平行移动（parallel transport around a loop），121，148
+  - 非坐标基（noncoordinate bases），488–489
+  - 与 Killing 向量的导数关系（relating derivatives of Killing vectors），137
+  - 无迹部分由 Weyl 张量捕捉（trace-free parts, capturing (Weyl tensor)），130
+  - Ricci 张量的迹反转版本，即 Einstein 张量（trace-reversed version of Ricci tensor (Einstein tensor)），130–131
+- Rindler 观察者（Rindler observer），404–405，407–408
+- Rindler 空间（Rindler space），404，407–408，410–411
+- 旋转（Kerr）黑洞的环奇点（Ring singularity, rotating (Kerr) black holes），265
+- RMS（均方根）密度涨落（RMS (root-mean-square) density fluctuation），371
+- Robertson–Walker 度规：另见宇宙学（Robertson–Walker metric. See also Cosmology）
+  - 共形图（conformal diagram），478
+  - 描述（described），329–333
+  - 平直宇宙中（in flat universe），76，78，113–120
+  - Gaussian 法坐标（Gaussian normal coordinates），447
+- 旋转黑洞：见 Kerr 黑洞（Rotating black holes. See Kerr black holes）
+- 旋转（Rotations）
+  - 测地线丛（geodesic congruence），461，464
+  - 旋转不变性（各向同性）（invariance under (isotropy)），324
+  - Lorentz 变换（Lorentz transformation），12
+- 圆球面（Round sphere），132–133
+- 圆括号／方括号（Round/square brackets），27
+
+<!-- source: PDF 524; printed: 511 -->
+
+- 卫星引力波观测站（Satellite gravitational-wave observatories），318，319–320
+- 标量场：见场，标量（Scalar field. See Field, scalar）
+- 标量函数（Scalar function），19–20，28
+- 标量积：见内积（Scalar product. See inner product）
+- 标量-张量理论（Scalar-tensor theories），181–184，300
+- 尺度因子（Scale factor），76–78，113–120，329，338–344
+- Schrödinger 图景（Schrödinger picture），380，383–384
+- Schwarzschild 几何（Schwarzschild geometry）
+  - Birkhoff 定理（Birkhoff’s theorem），197–204
+  - 圆轨道（circular orbits），211–212
+  - 共形图（conformal diagram），229
+  - 守恒量（conserved quantities），206–208
+  - Eddington–Finkelstein 坐标（Eddington–Finkelstein coordinates），220–221
+  - 事件视界（event horizon），222，241–242
+  - 测地线（geodesics），205–212
+  - 引力红移（gravitational redshift），216–218
+  - Killing 视界（Killing horizon），247–248
+  - Killing 向量（Killing vectors），197–198，203–204，207
+  - Kruskal（最大）延拓（Kruskal (maximal) extension），222–228
+  - 质量（mass），193，196，251–252
+  - 度规（metric），193–197
+  - 近日点进动（precession of perihelia），213–216
+  - Schwarzschild 半径（Schwarzschild radius），196，205，222
+  - 奇点（singularities），204–205
+  - 表面引力（surface gravity），247–248
+  - 乌龟坐标（tortoise coordinate），220
+  - 白洞（white hole），227
+  - 虫洞（wormhole），227–228
+- 子流形的第二基本形式（Second fundamental form of submanifolds），450
+- 地震噪声（Seismic noise），318
+- 自伴算符（Self-adjoint operators），380
+- 分号（Semicolon）
+  - “逗号变分号”规则（“Comma-Goes-to-Semicolon” rule），152
+  - 协变导数（covariant derivatives），97
+- SEP：见强等效原理（SEP. See Strong Equivalence Principle）
+- 集合（Set），15–16
+- Shapiro 时间延迟（Shapiro time delay），218，292–293
+
+- 剪切（Shear）
+  - 测地线丛（geodesic congruence），460–461，464
+  - 引力透镜（gravitational lensing），354
+- 散粒噪声（Shot noise），318
+- 度规号差（Signature metric），73
+- 奇点（Singularities）
+  - 大爆炸（Big Bang），76，340
+  - 因果性（causality），81–82
+  - 宇宙审查（cosmic censorship），243
+  - 坐标奇点（coordinate），204
+  - Kerr（Kerr），264–265
+  - 流形中的奇点（测地线不完备）（in manifold (geodesically incomplete)），111–112
+  - 裸奇点（naked），243，256–257
+  - Reissner–Nordström（Reissner–Nordström），256–259
+  - Schwarzschild（Schwarzschild），204–205
+- 奇点定理（Singularity theorems），242–243，376，461–462
+- 慢滚参数（Slow-roll parameters），369–370
+- S 矩阵（S-matrix），385
+- 光滑映射（Smooth maps），58
+- 类空分离（Spacelike separated），9
+- 时空（Spacetime）
+  - 因果性（causality），4–5，9，78–82
+  - 坐标记号（coordinates, denoting），8
+  - 曲率：见曲率（curvature. See Curvature）
+  - 定义（defined），4
+  - 对偶向量（一形式）（dual vectors (one-forms)），18–20，68
+  - 能量与动量（energy and momentum），30–37
+  - 引力作为时空曲率（gravity as curvature of），1–2，50–54，153–154，156–158
+  - Lorentz 变换（Lorentz transformations），12–15
+  - 所列最大对称性（maximal symmetry, listed），328
+  - Newton 时空（Newtonian），3–4
+  - 张量（tensors），21–29，68–70
+  - 向量（vectors），15–18，63–67
+- 弯曲时空：见曲率、广义相对论、时空（Spacetime, curved. See Curvature, General relativity, Spacetime）
+- 时空间隔（Spacetime interval），7
+- 时空图（Spacetime diagram），9
+- 狭义相对论（SR）（Special relativity (SR)）
+  - 加速度（acceleration），11
+  - 背景（background），1–3
+  - 描述（described），3–11
+  - 能量与动量（energy and momentum），30–37
+  - 惯性标架（inertial frame），6–7
+  - Minkowski 时空（Minkowski space），8
+- 光速：见光，光速（Speed of light. See Light, speed of）
+- 球面（Sphere），55，60–62，132–133，139，141
+- 球对称（Spherical symmetry），139，149，194，197–201
+- 自旋（Spin）
+  - 黑洞（black holes），248–254
+  - 联络（connection），486
+  - 引力波解（gravitational wave solutions），299
+- 自旋量（Spinor），44
+- SR：见狭义相对论（SR. See Special relativity）
+- 粒子物理标准模型（Standard Model of particle physics），44，359
+- 状态方程：另见状态方程参数（State, equation of），33；另见状态方程参数（See also equation-of-state parameter）
+- 静态引力的建模（Static gravitating forces, modeling），286–287
+- 静态度规（Static metric），191–192，203–204，244–248
+- 静止极限面（Stationary limit surface），247
+- 稳恒度规（Stationary metric），203–204，238，244–248
+- 恒星内部解（Stellar interior solutions），229–235
+- Stokes 定理（Stokes’s theorem），39–40，453–458
+- 应力-能量张量：见能量-动量张量（Stress-energy tensor. See energy-momentum tensor）
+- 弦标架（String frame），184
+- 弦理论（String theory）
+  - AdS/CFT 对应（AdS/CFT correspondence），328，421
+  - 与黑洞熵（and black hole entropy），419–420
+  - 引力波线索（gravitational wave clues），299–300
+  - 全息原理（holographic principle），421
+  - 其中的微扰理论（perturbation theory in），143–144
+  - 作为量子引力理论（as quantum theory of gravity），171
+- 强能量条件（Strong Energy Condition），175–176，462
+- 强等效原理（SEP）（Strong Equivalence Principle (SEP)），50
+- 子流形（Submanifolds）
+  - 定义（defined），439–440
+  - 超曲面（hypersurfaces），443–452
+- 求和约定（Summation convention），9
+- 太阳造成的光偏折（Sun, light deflection by），291–292
+
+<!-- source: PDF 525; printed: 512 -->
+
+- 超新星（Supernovae），319，355–356
+- 生成曲面的一形式（Surface-forming one-forms），441
+- 表面引力（Surface gravity），245–248，271，413
+- 用 Stokes 定理转换表面项（Surface term, converting by Stokes’s theorem），39–40，160，162
+- 对称张量（Symmetric tensors），26
+- 对称性：另见 Killing 向量（Symmetry. See also Killing vectors）
+  - 反物质与物质（antimatter and matter），365
+  - 守恒量（conserved quantities），133–139
+  - 用圆括号／方括号表示（denoting with round/square brackets），27
+  - 微分同胚不变性（diffeomorphism invariance），434–436
+  - 与广义相对论（GR）（general relativity (GR) and），133–134
+  - 等距映射（isometries），134–139，436–437
+  - 建模：见共形图（modeling. See conformal diagrams）
+  - 使 Riemann 张量分量消失或彼此相关（Riemann tensor components, vanishing or related by），133
+  - 旋转黑洞（rotating black holes），261
+  - 球对称（spherical），238
+  - 张量运算（tensors, manipulating），27
+- 时钟同步（Synchronizing clocks），7
+- 同步规范（Synchronous gauge），284，447
+
+- 切丛（Tangent bundle），16
+- 切向量（Tangent vector），15–16，63，64–65
+- 弯曲时空中的 Taylor 展开（Taylor expansion in curved spacetime），107
+- 温度（Temperature）
+  - 加速宇宙的温度（Gibbons–Hawking）（of accelerating universe (Gibbons–Hawking)），371
+  - 黑洞温度（Hawking）（of a black hole (Hawking)），376，414
+  - CMB（CMB），357，361
+  - 膨胀宇宙（of expanding universe），361–362
+  - 量子色动力学（QCD）（quantum chromodynamics (QCD)），363
+  - 加速观察者所见（Unruh 效应）（seen by accelerating observer (Unruh effect)），411
+- 张量积（Tensor product），21
+- 张量（Tensors）
+  - 定义（defined），21
+  - 密度（densities）
+    - Kronecker delta 的反对称乘积（antisymmetrical product of Kronecker deltas），83–84
+    - Levi–Civita 符号（Levi–Civita symbol），82–83
+    - 权重（Jacobian 的幂次）（weight (Jacobian, power raised to)），83
+  - 微分形式（differential forms）
+    - 闭形式（closed），85
+    - 定义（defined），84
+    - 上同调空间的维数（dimensionality of cohomology spaces），85–86
+    - 恰当形式（exact），85
+    - 外微分（exterior derivative），84–85
+    - Hodge 对偶（Hodge duality），86，87
+    - Levi–Civita（Levi–Civita），86
+    - 楔积（wedge product），84
+  - 对偶向量（dual vectors），18–19，68–69
+  - 电磁场强（electromagnetic field strength），24–25
+  - 逆度规（inverse metric），23–24，71
+  - Levi–Civita 符号（Levi–Civita symbol），24
+  - Levi–Civita 张量（Levi–Civita tensor），83–84
+  - 沿向量场的 Lie 导数（Lie derivative along vector field），431–433
+  - Lorentz 变换（Lorentz transformation），22，486
+  - 流形（manifolds），68–70
+  - 运算（manipulating）
+    - 反对称（antisymmetric），26
+    - 缩并（contraction），25
+    - 升降指标（indices, raise and lower），25–26
+    - 偏导数（partial derivatives），28
+    - 对称（symmetric），26，27
+    - 取迹（trace），28
+  - 度规（metric）
+    - 标准形（canonical form），73
+    - 坐标（coordinates），71–72，74–76
+    - 定义（defining），8，71
+    - 不定型（Lorentz 型或伪 Riemann 型）（indefinite (Lorentzian or pseudo-Riemannian)），73
+    - 正定型（欧几里得型或 Riemann 型）（positive (Euclidean or Riemannian)），73
+    - 号差（signature），73
+    - 作用于两个向量（内积）（on two vectors (inner product)），23
+  - 平行移动（parallel-transporting），102–105，479–481
+  - 变换定律（transformation law），22，69，429–430，486
+
+- 地面引力波观测站（Terrestrial gravitational-wave observatory），316–319
+- 测试粒子（Test particles）
+  - 测地线（geodesics），108
+  - 引力波解（gravitational wave solutions），296–298
+- 四脚架（Tetrad），483，487
+- 黑洞热力学（Thermodynamics, black hole），267–272，416–417
+- 时间（Time）
+  - 共形时间（conformal），477
+  - 引力延迟（gravitational delay），292
+  - Hubble 时间（Hubble），336–337
+  - 固有时（proper），9，11
+- 类时路径（Timelike paths），109
+- 类时分离（Timelike separated），9
+- 时间平移不变性（Time-translation invariance），120
+- Tolman–Oppenheimer–Volkoff 方程（Tolman–Oppenheimer–Volkoff equation），233
+- 挠率张量（Torsion tensor）
+  - 涉及它的联络（connection involving），128–129
+  - 定义（defined），98
+  - 一形式（one-form），488–489
+- 环面（Torus），55，131–132
+- 渐近平直时空的总能量（Total energy of asymptotically flat spacetime），249–253
+- 迹（Trace）
+  - 无迹部分由 Weyl 张量捕捉（parts free of, capturing (Weyl tensor)），130
+  - Ricci 张量的迹反转版本（reversed version of Ricci tensor），130–131
+  - 张量运算（tensors, manipulating），28
+- 变换：另见 Lorentz 变换（Transformation. See also Lorentz transformation）
+  - Bogoliubov 变换（Bogolubov），398–399，408
+  - 共形变换（conformal），467–469
+  - 坐标变换（coordinate），66–67，69，429–430，486
+  - Fourier 变换（Fourier），283–284
+  - 规范变换（gauge），42，274–278，300–301，493
+  - 一般坐标变换（general coordinate），486
+  - 回路的完整群（holonomy of loop），481
+  - Poincaré 变换（Poincaré），12–14
+  - 连续变换的集合（set of continuous），56
+- 平移（Translations），12，134–135，324
+- 移动：见平行移动（Transport. See parallel transport）
+- 横向规范（Transverse gauge），283，287
+
+<!-- source: PDF 526; printed: 513 -->
+
+- 横向无迹规范（Transverse traceless gauge），293–294
+- 陷获面（Trapped surface），242
+- 双生子悖论（Twin paradox），10
+- 二维球面：见球面（Two-sphere. See Sphere.）
+
+- 宇宙：见宇宙学（Universe. See Cosmology）
+- Unruh 效应（Unruh effect），402–412
+- Unruh 真空（Unruh vacuum），414
+
+- 真空：另见真空能（Vacuum. See also vacuum energy）
+  - Boulware 真空（Boulware vacuum），414
+  - Hadamard 条件（Hadamard condition），401
+  - Hartle–Hawking 真空（Hartle–Hawking vacuum），414
+  - 暴胀（inflation），371–374
+  - 最大对称时空（maximally symmetric spacetimes），323–329
+  - 量子真空（quantum），382，390–391，396–401
+  - Unruh 效应（Unruh effect），407–412
+  - Unruh 真空（Unruh vacuum），414
+- 真空能（Vacuum energy）
+  - 巧合问题（coincidence problem），359
+  - 宇宙学常数（cosmological constant），171–174，359
+  - 宇宙学效应（cosmological effects），335，338–344，355–356
+  - 能量-动量张量（energy-momentum tensor），35，171–172
+  - 演化（evolution），119–120，338，341
+  - 期望值（expected value），172–174，190，393–394
+  - 暴胀（inflation），368
+  - 测量值（measured），174，343，355–356，358–361
+  - 量子场论（quantum field theory），173，393–394，400–401
+- 向量（Vector）
+  - 可以相加并乘以实数的集合（collection that can be added and multiplied by real numbers），16
+  - 对易子（commutator），67
+  - 分量（components），17
+  - 坐标基（coordinate basis），65–66
+  - 微分同胚（diffeomorphisms），430
+  - 维数（dimension），17
+  - 作为方向导数（as directional derivatives），63–64
+  - 散度与边界上数值的关系（Stokes 定理）（divergence to value on boundary (Stokes’s Theorem)），455
+  - 对偶向量（一形式）（dual (one-forms)），18–20
+  - 四维向量（four-vectors）（four-dimensional (four-vectors)），15
+  - 沿场的 Lie 导数（Lie derivative along field），431–433
+  - Lorentz 变换（Lorentz transformation），17–18，66
+  - 非坐标基（noncoordinate basis），483–486
+  - 势（potential），42，87
+  - 推前（pushforward），424–425
+  - 切空间（tangent space），63–65
+  - 坐标改变时的变换定律（transformation law under changes in coordinates），66–67
+- 速度（Velocity）
+  - 旋转（Kerr）黑洞的角速度（angular, rotating (Kerr) black holes），266
+  - Lorentz 变换中的恒速度向量（constant velocity vector, Lorentz transformation），12
+  - 宇宙学（cosmology），345–346
+  - 光速（of light），7–8
+- Vielbein（Vielbein），483，484–485，487
+- 流形体积积分（Volume, integrating manifolds），89–90
+
+- 波动方程（Wave equation），396
+- 弱能量条件（Weak Energy Condition），174–176
+- 弱等效原理（WEP）（Weak Equivalence Principle (WEP)），48–50
+- 弱场极限（Weak field limit），153–154，157–158，274–286
+- WEC：见弱能量条件（WEC. See Weak Energy Condition）
+- 楔积（Wedge product），84
+- 张量密度的权重（Weight, tensor densities），83
+- WEP：见弱等效原理（WEP. See Weak Equivalence Principle）
+- Weyl 张量（Weyl tensor），130，169–170
+- 白矮星（White dwarf），235
+- 白洞（White hole），227
+- Whitney 嵌入定理（Whitney’s embedding theorem），60
+- 世界线（Worldline），4
+
+- 用 X 射线探测黑洞（X-rays, detecting black holes by），235–236
+
+- 零点能（Zero-point energy），173，382；另见真空能（See also vacuum energy）
+
+---
+
+[返回系列目录](../spacetime-and-geometry.md) · [上一篇：参考文献](./bibliography.md)
