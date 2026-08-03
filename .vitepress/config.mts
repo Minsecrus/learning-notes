@@ -204,6 +204,7 @@ export default withMermaid(defineConfig({
             link: "/notes/2026/08/01/cs188-introduction-to-ai",
             collapsed: true,
             items: [
+              { text: "CS188：人工智能导论", link: "/notes/2026/08/01/cs188-introduction-to-ai/00-front-matter" },
               { text: "第一章 搜索", link: "/notes/2026/08/01/cs188-introduction-to-ai/01-search" },
               { text: "第二章 约束满足问题", link: "/notes/2026/08/01/cs188-introduction-to-ai/02-constraint-satisfaction-problems" },
               { text: "第三章 博弈", link: "/notes/2026/08/01/cs188-introduction-to-ai/03-games" },

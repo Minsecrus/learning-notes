@@ -89,6 +89,7 @@
 ## 2026-08-01
 
 - [CS 188 人工智能导论教程](./2026/08/01/cs188-introduction-to-ai.md)
+  - [CS188：人工智能导论](./2026/08/01/cs188-introduction-to-ai/00-front-matter.md)
   - [第一章 搜索](./2026/08/01/cs188-introduction-to-ai/01-search.md)
   - [第二章 约束满足问题](./2026/08/01/cs188-introduction-to-ai/02-constraint-satisfaction-problems.md)
   - [第三章 博弈](./2026/08/01/cs188-introduction-to-ai/03-games.md)

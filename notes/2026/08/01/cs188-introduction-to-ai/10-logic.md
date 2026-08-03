@@ -1,793 +1,482 @@
 # 第十章 逻辑
 
-## 本章解决什么问题
+作者：Henry Zhu
 
-概率模型表示不确定信念，机器学习从数据估计预测函数。逻辑（logic）提供另一种能力：用符号句子表示知识，并通过明确规则推出必然结论。
+编辑：Peyrin Kao、Danial Toktarbayev、Wesley Zheng
 
-逻辑智能体通常维护知识库（Knowledge Base，KB）：
+部分内容改编自《人工智能：一种现代方法》（*Artificial Intelligence: A Modern Approach*）。
+
+最后更新：2024 年 9 月
+
+## 10.1 基于知识的智能体
+
+想象一个充满熔岩的危险世界，远处有一片安全的绿洲。我们希望智能体能够从当前位置安全地走到绿洲。
+
+在强化学习中，我们通常假设能够提供给智能体的唯一指导是奖励函数。奖励函数像“冷或热”游戏一样，把智能体逐渐推向正确方向。智能体探索世界并收集更多观测后，会逐渐学会把某些行动与未来的正奖励联系起来，把另一些行动与令人不快的灼热死亡联系起来。这样，它可能学会识别世界中的某些线索并据此行动。例如，如果它感觉空气变热，就应该转向另一个方向。
+
+还可以考虑另一种策略：直接告诉智能体一些关于世界的事实，让它根据手头的信息进行推理。如果告诉智能体熔岩坑附近的空气又热又朦胧，水体附近的空气清新凉爽，那么智能体就可以根据大气读数合理地推断哪些区域危险、哪些区域安全。
+
+这种智能体称为基于知识的智能体（knowledge-based agent）。它维护一个知识库（knowledge base），知识库是逻辑句子的集合，用来编码我们告诉智能体的内容以及智能体自己观察到的内容。智能体还能够进行逻辑推理，从已有信息中得出新的结论。
+
+## 10.2 逻辑语言
+
+和其他语言一样，逻辑句子也要使用特殊语法书写。每个逻辑句子都编码了关于某个世界的命题，而这个命题可能为真，也可能为假。例如，“地板是熔岩”在智能体所在的世界中可能为真，但在我们的世界中大概为假。把简单句子用逻辑连接词连接起来，就可以构造复杂句子，例如“从 Big C 可以看到整个校园，并且徒步是学习之余的健康休息”。
+
+逻辑语言有五种连接词：
+
+- **否定 $\neg$**：$\neg P$ 当且仅当（iff）$P$ 为假时为真。原子句 $P$ 和 $\neg P$ 称为文字（literal）。
+- **合取 $\land$**：$A\land B$ 当且仅当 $A$ 和 $B$ 都为真时为真。这样的句子称为合取式，组成它的命题称为合取项。
+- **析取 $\lor$**：$A\lor B$ 当且仅当 $A$ 或 $B$ 为真时为真。这样的句子称为析取式，组成它的命题称为析取项。
+- **蕴含 $\Rightarrow$**：$A\Rightarrow B$ 除了 $A$ 为真且 $B$ 为假以外都为真。
+- **双条件 $\Leftrightarrow$**：$A\Leftrightarrow B$ 当且仅当 $A$ 与 $B$ 同时为真，或者同时为假时为真。
+
+![逻辑连接词真值表（第 170 页原始图像）](./assets/p170-image-01.png)
+
+## 10.3 命题逻辑
+
+逻辑和其他语言一样有多种方言。本章介绍命题逻辑和一阶逻辑两种。命题逻辑的句子由命题符号组成，命题符号之间可以用逻辑连接词连接。命题符号通常用一个大写字母表示，每个符号代表关于世界的一个原子命题。
+
+一个模型是给所有命题符号分配真或假的结果，也可以把它理解成一个“可能世界”。例如，令
+
+- $A$ 表示“今天下雨”；
+- $B$ 表示“我忘带雨伞”。
+
+所有可能模型为：
+
+1. $\{A=\text{真},B=\text{真}\}$：“今天下雨并且我忘带了雨伞。”
+2. $\{A=\text{真},B=\text{假}\}$：“今天下雨，但我没有忘带雨伞。”
+3. $\{A=\text{假},B=\text{真}\}$：“今天没有下雨，但我忘带了雨伞。”
+4. $\{A=\text{假},B=\text{假}\}$：“今天没有下雨，我也没有忘带雨伞。”
+
+一般来说，如果有 $N$ 个符号，就有 $2^N$ 个可能模型。如果一个句子在所有模型中都为真，则称它是有效的（valid），例如句子 True；如果至少有一个模型使它为真，则称它是可满足的（satisfiable）；如果没有任何模型使它为真，则称它是不可满足的（unsatisfiable）。
+
+例如，$A\land B$ 在模型 1 中为真，因此可满足；但它在模型 2、3、4 中为假，所以不是有效的。另一方面，$\neg A\land A$ 在任何模型中都不可能为真，因此不可满足。
+
+下面的逻辑等价式可以把句子化简为更容易处理和推理的形式。
+
+![逻辑等价式（第 172 页原始图像）](./assets/p172-image-01.png)
+
+命题逻辑中一个特别有用的句法是合取范式（conjunctive normal form，CNF）。CNF 是若干子句的合取，每个子句是文字的析取。一般形式是
+
+$$
+(P_1\lor\cdots\lor P_i)\land\cdots\land(P_j\lor\cdots\lor P_n)，
+$$
+
+也就是一个“或”的合取。后面会看到，这种形式很适合进行一些分析。
+
+重要的是，每个逻辑句子都有逻辑等价的 CNF。这意味着知识库中的所有信息（知识库本身就是不同句子的合取）都可以转写成一个大的 CNF 句子，再把这些 CNF 用“与”连接起来。
+
+### CNF 转换例子
+
+假设句子为 $A\Leftrightarrow(B\lor C)$，希望把它转为 CNF。推导依据图中的逻辑等价规则：
+
+1. 消去 $\Leftrightarrow$：
+
+   $$
+   (A\Rightarrow(B\lor C))\land((B\lor C)\Rightarrow A)。
+   $$
+
+2. 消去 $\Rightarrow$：
+
+   $$
+   (\neg A\lor B\lor C)\land(\neg(B\lor C)\lor A)。
+   $$
+
+3. 在 CNF 中，否定符号只能出现在文字上。使用德摩根定律：
+
+   $$
+   (\neg A\lor B\lor C)\land((\neg B\land\neg C)\lor A)。
+   $$
+
+4. 最后应用分配律：
+
+   $$
+   (\neg A\lor B\lor C)\land(\neg B\lor A)\land(\neg C\lor A)。
+   $$
+
+最终表达式是三个“或”子句的合取，因此处于 CNF。
+
+## 10.4 命题逻辑推理
+
+逻辑之所以有用且强大，是因为它能让我们从已知信息得出新的结论。先定义推理问题中的术语。
+
+如果在所有 $A$ 为真的模型中 $B$ 也为真，就说句子 $A$ 蕴含句子 $B$，记作
+
+$$
+A\models B。
+$$
+
+如果 $A\models B$，则 $A$ 的模型集合是 $B$ 的模型集合的子集，即 $M(A)\subseteq M(B)$。推理问题可以表述为判断
+
+$$
+KB\models q，
+$$
+
+其中 $KB$ 是逻辑句子组成的知识库，$q$ 是查询。
+
+可以利用以下两个定理判断蕴含：
+
+1. $A\models B$ 当且仅当 $A\Rightarrow B$ 有效。通过证明 $A\Rightarrow B$ 有效来证明蕴含，称为直接证明。
+2. $A\models B$ 当且仅当 $A\land\neg B$ 不可满足。通过证明 $A\land\neg B$ 不可满足来证明蕴含，称为反证法。
+
+### 10.4.1 模型检查
+
+判断 $KB\models q$ 的一个简单算法是枚举所有可能模型，检查其中所有使 $KB$ 为真的模型是否也使 $q$ 为真。这种方法称为模型检查。命题符号数量适中时，可以直接画真值表完成枚举。
+
+命题逻辑有 $N$ 个符号时，需要检查 $2^N$ 个模型，因此时间复杂度为 $O(2^N)$。一阶逻辑的模型数量则可能是无限的。命题蕴含问题实际上是 co-NP 完全问题。最坏情况下运行时间不可避免地随问题规模指数增长，但有些算法在实践中可以快得多。本节讨论两个命题逻辑模型检查算法。
+
+第一个算法由 Davis、Putnam、Logemann 和 Loveland 提出，简称 DPLL。它本质上是在可能模型上的深度优先回溯搜索，并使用三个技巧减少过多的回溯。DPLL 旨在解决可满足性问题：给定一个句子，寻找所有符号的一个可行赋值。蕴含问题可以归约为可满足性问题，即证明 $A\land\neg B$ 不可满足；DPLL 接收的输入通常是 CNF。
+
+可把可满足性写成约束满足问题：变量（节点）是符号，约束是 CNF 施加的逻辑限制。DPLL 持续给符号赋真值，直到找到满足模型，或者某个符号无法在不违反逻辑约束的情况下赋值，此时回溯到上一个可行赋值。
+
+DPLL 比普通回溯搜索多了三个改进：
+
+1. **提前终止**：一个子句只要有一个符号为真就为真，因此在所有符号都赋值前，就可能知道整个句子为真；一个子句只要为假，整个合取句子就为假。尽早判断整个句子已经为真或为假，可以避免无意义地搜索子树。
+2. **纯符号启发式**：如果一个符号在整个句子中只以正形式出现，或者只以负形式出现，就称它为纯符号。纯符号可以立刻赋为真或假。例如在
+
+   $$
+   (A\lor B)\land(\neg B\lor C)\land(\neg C\lor A)
+   $$
+
+   中，$A$ 是唯一的纯符号，可以立即令 $A=\text{真}$，把问题简化为寻找 $(\neg B\lor C)$ 的满足赋值。
+3. **单元子句启发式**：单元子句只有一个文字，或者说除了一个文字外其他文字都已经为假。单元子句中的文字只有一种有效赋值。例如，要让
+
+   $$
+   (B\lor\text{假}\lor\cdots\lor\text{假})
+   $$
+
+   为真，必须令 $B=\text{真}$。
+
+![DPLL 算法（第 174 页原始图像）](./assets/p174-image-01.png)
+
+### 10.4.2 DPLL 示例
+
+考虑以下 CNF 句子：
+
+$$
+\begin{aligned}
+&(\neg N\lor\neg S)\land(M\lor Q\lor N)\land(L\lor\neg M)\land(L\lor\neg Q)\\
+&\quad\land(\neg L\lor\neg P)\land(R\lor P\lor N)\land(\neg R\lor\neg L)\land(S)。
+\end{aligned}
+$$
+
+要用 DPLL 判断它是否可满足。假设变量顺序固定为字母顺序，取值顺序固定为先尝试真再尝试假。
+
+每次递归调用 DPLL 都记录三项：
+
+- `model`：已经赋值的符号及其取值；
+- `symbols`：还没有赋值的符号；
+- `clauses`：本次调用或后续递归调用还需要处理的 CNF 子句。
+
+初始调用为：
 
 ```text
-感知世界
-→ 把新事实加入知识库
-→ 根据规则推理
-→ 查询应该采取的行动
-→ 执行动作并继续更新知识
+model:   {}
+symbols: [L, M, N, P, Q, R, S]
+clauses: (¬N ∨ ¬S) ∧ (M ∨ Q ∨ N) ∧ (L ∨ ¬M) ∧ (L ∨ ¬Q)
+         ∧ (¬L ∨ ¬P) ∧ (R ∨ P ∨ N) ∧ (¬R ∨ ¬L) ∧ (S)
 ```
 
-本章从命题逻辑开始，介绍模型检查、DPLL、归结、前向链式推理，再扩展到一阶逻辑。
-
-## Knowledge-Based Agent
-
-知识库是一组关于世界的句子：
-
-$$
-KB=\{\alpha_1,\alpha_2,\ldots,\alpha_n\}
-$$
-
-智能体需要两种基本操作：
-
-- $\operatorname{TELL}(KB,\alpha)$：把句子 $\alpha$ 加入知识库。
-- $\operatorname{ASK}(KB,q)$：查询知识库是否支持结论 $q$。
-
-一个通用循环为：
+首先检查提前终止。当前模型没有给任何符号赋值，因此还不能判断某个子句为真或为假。然后检查纯文字：没有符号只以正形式或只以负形式出现。接着检查单元子句，发现 $(S)$。要让整个句子为真，$S$ 必须为真，因此递归调用时加入 $S=\text{真}$，并从未赋值符号列表中删除 $S$：
 
 ```text
-KB-AGENT(percept):
-    TELL(KB, 当前时刻的 percept)
-    action = ASK(KB, 当前应该执行什么行动)
-    TELL(KB, 自己将执行 action)
-    return action
+model:   {S: T}
+symbols: [L, M, N, P, Q, R]
 ```
 
-知识与推理机制分离后，可以修改知识库而无需重写整个控制程序。
+把 $S=\text{真}$ 代入并化简（$\neg S=\text{假}$）：
 
-## 逻辑语言的三个层次
+$$
+(\neg N\lor\text{假})\land\cdots\land(\text{真})
+\quad\Longrightarrow\quad
+(\neg N)\land(M\lor Q\lor N)\land(L\lor\neg M)\land(L\lor\neg Q)
+\land(\neg L\lor\neg P)\land(R\lor P\lor N)\land(\neg R\lor\neg L)。
+$$
 
-### Syntax
-
-语法规定哪些符号序列是合法句子。
-
-### Semantics
-
-语义规定一个句子在某个世界或模型中何时为真。
-
-### Inference
-
-推理算法根据已有句子产生新句子。
+现在没有提前终止条件，也没有纯文字，但有单元子句 $(\neg N)$，所以必须令 $N=\text{假}$。第二次递归之后进入第三次调用：
 
 ```text
-Syntax：能不能这样写
-Semantics：这样写表达什么、何时为真
-Inference：怎样从已知句子得到结论
+model:   {S: T, N: F}
+symbols: [L, M, P, Q, R]
 ```
 
-## Model 与 Entailment
-
-模型（model）是对世界的一种完整解释。在命题逻辑中，它为每个命题符号分配真或假。
-
-$M(\alpha)$ 表示使句子 $\alpha$ 为真的模型集合。
-
-知识库蕴含结论 $\alpha$，写作：
+把 $N=\text{假}$ 代入，得到
 
 $$
-KB\models\alpha
+(M\lor Q)\land(L\lor\neg M)\land(L\lor\neg Q)\land(\neg L\lor\neg P)
+\land(R\lor P)\land(\neg R\lor\neg L)。
 $$
 
-含义是：在每一个满足 $KB$ 的模型中，$\alpha$ 都为真。
+没有提前终止条件、纯文字或单元子句，因此根据固定变量顺序尝试 $M=\text{真}$。
+
+#### 分支 $M=\text{真}$
+
+加入赋值并代入后：
 
 $$
-M(KB)\subseteq M(\alpha)
+(L)\land(L\lor\neg Q)\land(\neg L\lor\neg P)\land(R\lor P)\land(\neg R\lor\neg L)。
 $$
 
-蕴含是语义关系，描述“结论是否必然成立”。推导符号：
+此时 $\neg Q$ 是纯文字，因此令 $Q=\text{假}$。继续化简得到
 
 $$
-KB\vdash_i\alpha
+(L)\land(\neg L\lor\neg P)\land(R\lor P)\land(\neg R\lor\neg L)。
 $$
 
-表示推理算法 $i$ 能从 $KB$ 导出 $\alpha$。
-
-## Soundness 与 Completeness
-
-### Soundness
-
-若算法导出的所有结论都被知识库蕴含：
+单元子句 $(L)$ 要求 $L=\text{真}$，代入得到
 
 $$
-KB\vdash_i\alpha
-\Longrightarrow
-KB\models\alpha
+(\neg P)\land(R\lor P)\land(\neg R)。
 $$
 
-则算法是可靠的（sound）。它不会证明错误结论。
-
-### Completeness
-
-若知识库蕴含的每个结论都能被算法导出：
+单元子句 $(\neg P)$ 要求 $P=\text{假}$，于是剩下
 
 $$
-KB\models\alpha
-\Longrightarrow
-KB\vdash_i\alpha
+(R)\land(\neg R)，
 $$
 
-则算法是完备的（complete）。它不会漏掉任何逻辑上必然成立的结论。
+同时要求 $R$ 为真和为假，矛盾。因此 $M=\text{真}$ 的分支不可满足，需要回溯到给 $M$ 赋值之前。
 
-可靠性与完备性是推理算法的两个独立目标。
+#### 分支 $M=\text{假}$
 
-## 命题逻辑
+代入 $M=\text{假}$ 后得到
 
-命题逻辑（Propositional Logic）使用原子命题和逻辑连接词构造句子。
+$$
+(Q)\land(L\lor\neg Q)\land(\neg L\lor\neg P)\land(R\lor P)\land(\neg R\lor\neg L)。
+$$
 
-### 命题符号
+单元子句 $(Q)$ 要求 $Q=\text{真}$，再代入得到
 
-例如：
+$$
+(L)\land(\neg L\lor\neg P)\land(R\lor P)\land(\neg R\lor\neg L)。
+$$
+
+单元子句 $(L)$ 要求 $L=\text{真}$，代入后得到
+
+$$
+(\neg P)\land(R\lor P)\land(\neg R)。
+$$
+
+此时有两个单元子句 $(\neg P)$ 和 $(\neg R)$。按变量顺序先处理 $P$，令 $P=\text{假}$，得到
+
+$$
+(R)\land(\neg R)，
+$$
+
+仍然矛盾。因此 $M=\text{假}$ 的分支也不可满足。
+
+由于 $M$ 的真、假两个分支都不可满足，原始 CNF 句子不可满足，DPLL 结束。
+
+## 10.5 定理证明
+
+另一种方法是对知识库应用推理规则，直接证明 $KB\models q$。例如，若知识库包含 $A$ 和 $A\Rightarrow B$，就可以推出 $B$；这条规则称为肯定前件（Modus Ponens）。前面两个算法利用的是第二个定理：把 $A\land\neg B$ 写成 CNF，再证明它可满足或不可满足。
+
+还可以使用以下推理规则：
+
+1. 知识库包含 $A$ 和 $A\Rightarrow B$ 时，可以推出 $B$（肯定前件）。
+2. 知识库包含 $A\land B$ 时，可以推出 $A$，也可以推出 $B$（合取消去）。
+3. 知识库包含 $A$ 和 $B$ 时，可以推出 $A\land B$（合取引入；原文此处标为 Resolution）。
+
+最后一条规则构成归结算法的基础。归结算法反复对知识库及新推出的句子应用规则，直到推出 $q$，此时证明了 $KB\models q$；或者再也推不出新句子，此时 $KB\not\models q$。
+
+但在一种特殊情形下，知识库只包含文字和蕴含式：
+
+$$
+(P_1\land\cdots\land P_n\Rightarrow Q)
+\equiv(\neg P_1\lor\cdots\lor\neg P_n\lor Q)。
+$$
+
+此时可以在线性于知识库大小的时间内证明蕴含。前向链算法遍历那些前提（左侧）已经被证明为真的蕴含式，把结论（右侧）加入已知事实列表。重复这一过程，直到 $q$ 被加入已知事实，或者再也推不出新内容。
+
+![前向链算法（第 179 页原始图像）](./assets/p179-image-01.png)
+
+## 10.6 前向链
+
+前向链算法遍历前提已经为真的蕴含式，把结论加入已知事实列表。
+
+### 10.6.1 前向链示例
+
+考虑以下知识库：
+
+1. $A\Rightarrow B$
+2. $A\Rightarrow C$
+3. $B\land C\Rightarrow D$
+4. $D\land E\Rightarrow Q$
+5. $A\land D\Rightarrow Q$
+6. $A$
+
+希望用前向链判断 $Q$ 为真还是为假。
+
+算法首先初始化 `count` 列表。列表中的第 $i$ 个数字表示第 $i$ 个子句前提中还剩多少个符号。例如第三条 $B\land C\Rightarrow D$ 有两个前提符号 $B,C$，所以第三个数字是 $2$。第六条 $A$ 的前提中有零个符号，因为它等价于 $\text{真}\Rightarrow A$。
+
+接着初始化 `inferred`，它把每个符号映射到真或假，表示哪些符号已经证明为真。开始时还没有证明任何符号，所以全部为假。
+
+最后初始化符号列表 `agenda`，其中的符号已经可以证明为真，但其影响还没有传播出去。开始时只有直接已知为真的符号 $A$，所以 `agenda` 从前提数量为零的子句开始。
+
+初始状态：
 
 ```text
-R：今天下雨
-U：我带了伞
-W：衣服湿了
+count:    [1, 1, 2, 2, 2, 0]
+inferred: {A: F, B: F, C: F, D: F, E: F, Q: F}
+agenda:   [A]
 ```
 
-每个符号在一个模型中只能是真或假。
+#### 迭代 0：处理 $A$
 
-### 连接词
+从 `agenda` 取出 $A$。它不是查询 $Q$，因此算法还没有结束。虽然 `inferred` 中此前把 $A$ 记为假，但既然它从 `agenda` 中取出，就把它设为真。
 
-| 符号 | 名称 | 含义 |
-| --- | --- | --- |
-| $\neg A$ | NOT | A 为假 |
-| $A\wedge B$ | AND | A、B 都真 |
-| $A\vee B$ | OR | 至少一个为真 |
-| $A\Rightarrow B$ | Implication | 若 A 真，则 B 真 |
-| $A\Leftrightarrow B$ | Biconditional | A 与 B 真值相同 |
-
-蕴含 $A\Rightarrow B$ 只有在 $A$ 真而 $B$ 假时为假。
-
-## Valid、Satisfiable 与 Unsatisfiable
-
-### Valid
-
-句子在所有模型中都为真：
-
-$$
-\models\alpha
-$$
-
-例如 $A\vee\neg A$。
-
-### Satisfiable
-
-至少存在一个模型使句子为真。例如 $A\wedge B$。
-
-### Unsatisfiable
-
-没有任何模型使句子为真。例如：
-
-$$
-A\wedge\neg A
-$$
-
-三者关系：
-
-$$
-\alpha\text{ valid}
-\Longleftrightarrow
-\neg\alpha\text{ unsatisfiable}
-$$
-
-## 常用逻辑等价式
-
-双重否定：
-
-$$
-\neg\neg A\equiv A
-$$
-
-Implication elimination：
-
-$$
-A\Rightarrow B
-\equiv
-\neg A\vee B
-$$
-
-Biconditional elimination：
-
-$$
-A\Leftrightarrow B
-\equiv
-(A\Rightarrow B)\wedge(B\Rightarrow A)
-$$
-
-De Morgan：
-
-$$
-\neg(A\wedge B)
-\equiv
-\neg A\vee\neg B
-$$
-
-$$
-\neg(A\vee B)
-\equiv
-\neg A\wedge\neg B
-$$
-
-Distributivity：
-
-$$
-A\vee(B\wedge C)
-\equiv
-(A\vee B)\wedge(A\vee C)
-$$
-
-$$
-A\wedge(B\vee C)
-\equiv
-(A\wedge B)\vee(A\wedge C)
-$$
-
-## Conjunctive Normal Form
-
-合取范式（Conjunctive Normal Form，CNF）是若干 clause 的合取，每个 clause 是若干 literal 的析取。
+接着传播 $A$ 为真的后果。第 1、2、5 条子句的前提中包含 $A$，因此把 `count` 的第 1、2、5 项各减一。第 1、2 条的计数达到零，说明它们的全部前提已经满足，结论 $B,C$ 可以加入 `agenda`。
 
 ```text
-literal：A 或 ¬A
-clause：A ∨ ¬B ∨ C
-CNF：(A ∨ ¬B) ∧ (C ∨ D) ∧ (¬A ∨ D)
+count:    [0, 0, 2, 2, 1, 0]
+inferred: {A: T, B: F, C: F, D: F, E: F, Q: F}
+agenda:   [B, C]
 ```
 
-### 转换到 CNF
+#### 迭代 1：处理 $B$
 
-1. 消除 $\Leftrightarrow$。
-2. 消除 $\Rightarrow$。
-3. 用 De Morgan 和双重否定把 $\neg$ 推到原子命题前。
-4. 用分配律把 $\vee$ 分配到 $\wedge$ 上。
-5. 展平并清理重复 literal 或恒真 clause。
-
-例如：
-
-$$
-A\Rightarrow(B\wedge C)
-$$
-
-先消除蕴含：
-
-$$
-\neg A\vee(B\wedge C)
-$$
-
-再分配：
-
-$$
-(\neg A\vee B)\wedge(\neg A\vee C)
-$$
-
-## Model Checking
-
-要判断：
-
-$$
-KB\models\alpha
-$$
-
-可以枚举所有命题模型，并检查每个满足 $KB$ 的模型是否也满足 $\alpha$。
-
-若有 $n$ 个命题符号，共有：
-
-$$
-2^n
-$$
-
-个模型。真值表枚举是可靠且完备的，但时间复杂度指数增长。
-
-另一种等价方法是检查：
-
-$$
-KB\wedge\neg\alpha
-$$
-
-是否不可满足。若不可满足，就不存在“知识库为真但结论为假”的反例模型，因此 $KB\models\alpha$。
-
-## SAT 与 DPLL
-
-SAT 问题询问一个命题逻辑句子是否可满足。DPLL 是针对 CNF 的回溯搜索算法。
-
-### 基本搜索
-
-1. 选择一个尚未赋值的命题符号。
-2. 尝试 true 或 false。
-3. 简化 clauses。
-4. 若所有 clauses 已满足，返回 satisfiable。
-5. 若某个 clause 中所有 literals 都为假，回溯。
-
-### Early Termination
-
-- 一个 clause 中只要有一个 literal 为真，该 clause 已满足。
-- CNF 中所有 clauses 都满足时，可以立即成功。
-- 任意 clause 已经不可能为真时，可以立即失败。
-
-### Pure Symbol
-
-若未满足 clauses 中某个符号只以正形式出现，可以将它设为 true；若只以负形式出现，可以设为 false。这样不会破坏任何尚未满足 clause。
-
-### Unit Clause
-
-若一个 clause 只剩一个未赋值 literal，为使 clause 成立，该 literal 的取值被强制确定。
-
-例如：
-
-$$
-(A\vee B),\qquad A=false
-$$
-
-则必须令 $B=true$。
-
-反复传播 unit clauses 通常能显著缩小搜索空间。
-
-### DPLL 框架
+取出 $B$，把它标记为真。包含 $B$ 前提的只有第 3 条，因此其计数减一，但没有新的计数达到零：
 
 ```text
-DPLL(clauses, model):
-    if 所有 clauses 已满足:
-        return true
-    if 某个 clause 已失败:
-        return false
-
-    if 存在 pure symbol:
-        用满足方向扩展 model，并递归
-
-    if 存在 unit clause:
-        用强制取值扩展 model，并递归
-
-    选择一个未赋值 symbol P
-    return DPLL(P=true) or DPLL(P=false)
+count:    [0, 0, 1, 2, 1, 0]
+inferred: {A: T, B: T, C: F, D: F, E: F, Q: F}
+agenda:   [C]
 ```
 
-DPLL 最坏时间仍为指数级，但传播、分支启发式和 clause learning 能让现代 SAT solver 处理很多大型实例。
+#### 迭代 2：处理 $C$
 
-## 推理规则
-
-推理规则从某种形式的前提产生结论。
-
-### Modus Ponens
-
-$$
-A,\quad A\Rightarrow B
-\quad\vdash\quad B
-$$
-
-### And-Elimination
-
-$$
-A\wedge B
-\quad\vdash\quad A
-$$
-
-也可以推出 $B$。
-
-### And-Introduction
-
-$$
-A,\quad B
-\quad\vdash\quad A\wedge B
-$$
-
-### Resolution
-
-$$
-A\vee B,quad \neg B\vee C
-\quad\vdash\quad A\vee C
-$$
-
-$B$ 与 $\neg B$ 被消去，得到 resolvent。
-
-## Resolution Theorem Proving
-
-要证明 $KB\models\alpha$：
-
-1. 构造 $KB\wedge\neg\alpha$。
-2. 转换为 CNF clauses。
-3. 不断对含互补 literals 的 clauses 应用 resolution。
-4. 若推出空 clause $\square$，说明产生矛盾。
-
-空 clause 无法在任何模型中满足，因此：
-
-$$
-KB\wedge\neg\alpha\text{ unsatisfiable}
-$$
-
-从而：
-
-$$
-KB\models\alpha
-$$
-
-### 一个简单例子
-
-已知：
-
-$$
-A\Rightarrow B,qquad A
-$$
-
-要证明 $B$。加入 $\neg B$ 后，clauses 为：
-
-$$
-\neg A\vee B
-$$
-
-$$
-A
-$$
-
-$$
-\neg B
-$$
-
-前两个 resolution 得到 $B$；再与 $\neg B$ resolution 得到空 clause，证明完成。
-
-命题逻辑中的 resolution refutation 是可靠且完备的。
-
-## Horn Clauses
-
-Horn clause 至多包含一个正 literal。它常写成规则：
-
-$$
-P_1\wedge P_2\wedge\cdots\wedge P_k
-\Rightarrow Q
-$$
-
-- $P_i$：前提或 premise。
-- $Q$：结论或 head。
-
-没有前提的 $Q$ 表示已知事实。
-
-Horn 知识库具有高效的线性时间推理算法，也是规则系统和逻辑编程的重要基础。
-
-## Forward Chaining
-
-Forward Chaining 是数据驱动推理：从已知事实出发，反复触发前提全部成立的规则。
+取出 $C$ 并标记为真。第 3 条的计数减为零，结论 $D$ 加入 `agenda`：
 
 ```text
-已知事实集合 agenda
-
-while agenda 非空:
-    取出新事实 p
-    若 p 就是查询，成功
-    对每条包含 p 的规则:
-        将未满足前提数减一
-        若某条规则前提全部满足:
-            把它的结论加入 agenda
+count:    [0, 0, 0, 2, 1, 0]
+inferred: {A: T, B: T, C: T, D: F, E: F, Q: F}
+agenda:   [D]
 ```
 
-### 示例
+#### 迭代 3：处理 $D$
 
-$$
-Rain\Rightarrow Wet
-$$
-
-$$
-Wet\wedge Cold\Rightarrow Slippery
-$$
-
-已知 $Rain$ 与 $Cold$：
+取出 $D$ 并标记为真。第 4、5 条的前提中包含 $D$，所以相应计数减一。第 5 条计数达到零，结论 $Q$ 加入 `agenda`：
 
 ```text
-Rain → 推出 Wet
-Wet + Cold → 推出 Slippery
+count:    [0, 0, 0, 1, 0, 0]
+inferred: {A: T, B: T, C: T, D: T, E: F, Q: F}
+agenda:   [Q]
 ```
 
-Forward Chaining 对 definite Horn clauses 是可靠且完备的。
+#### 迭代 4：处理 $Q$
 
-### Forward 与 Backward
+从 `agenda` 取出查询符号 $Q$，说明它已经被证明为真。因此算法返回：$Q$ 为真。
 
-- Forward Chaining 从事实向所有可得结论传播，适合持续到来的数据。
-- Backward Chaining 从查询倒推需要哪些前提，适合目标明确、知识库很大但相关规则较少的场景。
+## 10.7 一阶逻辑
 
-## 命题逻辑的表达限制
+第二种逻辑方言是一阶逻辑（first-order logic，FOL）。它比命题逻辑表达能力更强，以对象作为基本组成部分，可以描述对象之间的关系，也可以对对象应用函数。
 
-若要表达“所有学生都学习”，命题逻辑需要为每个具体学生写一个单独命题。它缺少对象、变量、关系和量词。
+- 每个对象由常量符号表示；
+- 每种关系由谓词符号表示；
+- 每个函数由函数符号表示。
 
-一阶逻辑（First-Order Logic，FOL）增加这些结构。
+![一阶逻辑语法（第 183 页原始图像）](./assets/p183-image-01.png)
 
-## 一阶逻辑的元素
+一阶逻辑中的项是指向对象的逻辑表达式。最简单的项是常量符号。但我们不希望为每个可能对象都定义一个不同的常量符号。例如，要指代 John 的左腿和 Richard 的左腿，可以使用 `LeftLeg(John)` 和 `LeftLeg(Richard)` 这样的函数符号。函数符号只是另一种命名对象的方式，它们在这里并不代表实际计算函数。
 
-### 常量
+一阶逻辑中的原子句描述对象之间的关系，当这种关系成立时原子句为真。例如 `Brother(John, Richard)` 由一个谓词符号和括号中的项列表构成。
 
-表示具体对象：
+一阶逻辑的复杂句子与命题逻辑类似：原子句通过逻辑连接词连接。为了描述整个对象集合，还需要量词：全称量词 $\forall$ 表示“对所有”，存在量词 $\exists$ 表示“存在”。
 
-```text
-Alice, Berkeley, Room101
-```
-
-### 变量
-
-```text
-x, y, z
-```
-
-### Predicate
-
-表示对象的性质或关系：
+例如，如果世界中的对象集合是所有辩论，
 
 $$
-Student(Alice)
+\forall a\;TwoSides(a)
 $$
 
-$$
-Likes(Alice,Bob)
-$$
-
-### Function
-
-把对象映射到对象：
+可以翻译为“每场辩论都有两方”。如果对象集合是人，
 
 $$
-MotherOf(Alice)
+\forall x\;\exists y\;SoulMate(x,y)
 $$
 
-### Term
+表示“对每个人来说，都存在某个对象是他的灵魂伴侣”。匿名变量 $a,x,y$ 是对象的占位符，可以替换为实际对象；把第二个例子中的 $x$ 替换为 Laura，就得到“Laura 有某个灵魂伴侣”。
 
-常量、变量或函数作用于 terms 的结果都是 term。
+全称量词和存在量词分别是对所有对象作合取和析取的简写，因此也遵守德摩根定律：全称量词的否定对应存在量词，存在量词的否定对应全称量词。
 
-### Atomic Sentence
-
-谓词作用于 terms：
+最后，等号表示两个符号指向同一个对象。例如下面这个句子为真：
 
 $$
-Knows(Alice,MotherOf(Bob))
+Wife(Einstein)=FirstCousin(Einstein)\land
+Wife(Einstein)=SecondCousin(Einstein)。
 $$
 
-再使用 $\neg,\wedge,\vee,\Rightarrow,\Leftrightarrow$ 组合复杂句子。
+命题逻辑中的模型是给所有命题符号赋真值；一阶逻辑中的模型则把常量符号映射到对象，把谓词符号映射到对象之间的关系，把函数符号映射到对象上的函数。若句子描述的关系在这个映射下成立，则该句子在模型下为真。
 
-## Quantifiers
+命题逻辑模型数量总是有限，而当对象数量不受限制时，一阶逻辑可能有无限多个模型。
 
-### Universal Quantifier
+![量词（第 183 页原始图像）](./assets/p183-image-02.png)
 
-$$
-\forall x\ Student(x)\Rightarrow Learns(x)
-$$
+这两种逻辑以不同方式描述和思考世界。命题逻辑把世界表示为一组真或假的符号。在这种假设下，可以用一个向量表示可能世界，每个符号对应一个 $1$ 或 $0$，这种二元视图称为因子化表示（factored representation）。一阶逻辑把世界表示为相互关联的对象，这种面向对象的视图称为结构化表示（structured representation），表达能力更强，也更接近自然语言描述世界的方式。
 
-表示每个学生都学习。
+## 10.8 一阶逻辑推理
 
-全称量词常与 implication 一起使用。若写成：
+一阶逻辑中的推理问题与命题逻辑完全相同：要判断 $KB\models q$，即 $q$ 是否在所有使 $KB$ 为真的模型中都为真。
 
-$$
-\forall x\ Student(x)\wedge Learns(x)
-$$
+一种方法是命题化（propositionalization），把问题转换为命题逻辑，再使用已经介绍的技术。全称量词句子可以转换为合取：对变量可能替换的每个对象生成一个子句；存在量词句子可以转换为析取。然后可以使用 DPLL 或 Walk-SAT 等 SAT 求解器，判断 $KB\land\neg q$ 是否可满足。
 
-就声称世界中的每个对象都是学生且都学习，语义通常过强。
-
-### Existential Quantifier
+这种方法有一个问题：因为没有限制函数可以对符号应用多少次，所以可能有无限多种替换。例如，可以无限次嵌套
 
 $$
-\exists x\ Student(x)\wedge Likes(x,AI)
+Classmate(Classmate(Classmate(Austen)))
 $$
 
-表示至少存在一个喜欢 AI 的学生。
+直到引用整个学校。幸运的是，Jacques Herbrand 在 1930 年证明：如果知识库蕴含一个句子，那么这个证明只涉及命题化知识库的某个有限子集。因此可以遍历有限子集，具体来说对嵌套函数应用进行迭代加深搜索：先搜索只用常量符号的替换，再搜索使用 `Classmate(Austen)` 的替换，再搜索使用 `Classmate(Classmate(Austen))` 的替换，依此类推。
 
-存在量词常与 conjunction 一起使用。若写成 implication，非学生对象可能让句子轻易成立，无法表达期望含义。
-
-### 量词否定
+另一种方法是直接使用一阶逻辑推理，称为提升推理（lifted inference）。例如给定
 
 $$
-\neg\forall x\ P(x)
-\equiv
-\exists x\ \neg P(x)
+(\forall x\;HasAbsolutePower(x)\land Person(x)\Rightarrow Corrupt(x))
+\land Person(John)\land HasAbsolutePower(John)，
 $$
 
-$$
-\neg\exists x\ P(x)
-\equiv
-\forall x\ \neg P(x)
-$$
-
-量词顺序也很重要：
+即“绝对的权力导致绝对的腐败”，把 $x$ 替换为 John，就可以推出
 
 $$
-\forall x\exists y\ Loves(x,y)
+Corrupt(John)。
 $$
 
-表示每个人都爱某个人，不要求所有人爱同一个对象。
+这条规则称为广义肯定前件（Generalized Modus Ponens）。一阶逻辑中的前向链算法反复应用广义肯定前件和替换，直到推出 $q$，或者确认无法推出 $q$。
+
+## 10.9 逻辑智能体
+
+现在已经知道如何表达知识并进行推理，接下来讨论如何把演绎能力加入智能体。智能体应该具备的一项明显能力，是根据观测历史以及关于世界的知识，判断自己处于哪个状态，这称为状态估计（state estimation）。例如，如果告诉智能体熔岩池附近的空气会开始闪烁，而它观测到面前的空气正在闪烁，那么它就可以推断附近有危险。
+
+为了把过去的观测纳入当前状态估计，智能体需要表示时间以及状态之间的转移。随时间变化的状态属性称为 fluent，可以用时间下标表示，例如 $Hot_t$ 表示时刻 $t$ 的空气是热的。
+
+如果某件事使空气在时刻 $t$ 变热，或者空气在前一时刻已经很热且没有行动使它变凉，那么时刻 $t$ 的空气应该是热的。可以用以下一般形式的后继状态公理表达：
 
 $$
-\exists y\forall x\ Loves(x,y)
+F_{t+1}\Leftrightarrow ActionCausesF_t\lor
+(F_t\land\neg ActionCausesNotF_t)。
 $$
 
-表示存在一个被所有人爱的人。
-
-## Substitution 与 Unification
-
-替换 $\theta$ 把变量映射到 term：
+在熔岩世界中，可以写成
 
 $$
-\theta=\{x/Alice,\ y/MotherOf(Bob)\}
+Hot_{t+1}\Leftrightarrow StepCloseToLava_t\lor
+(Hot_t\land\neg StepAwayFromLava_t)。
 $$
 
-把替换应用于表达式 $\alpha$，写成：
+把世界规则写成逻辑以后，就可以通过检查逻辑命题的可满足性来进行规划。构造一个同时包含初始状态、状态转移（后继状态公理）和目标的句子。例如，
 
 $$
-\operatorname{SUBST}(\theta,\alpha)
+InOasis_T\land Alive_T
 $$
 
-Unification 寻找一个替换，使两个表达式相同。
+编码了“在时刻 $T$ 前活着到达绿洲”的目标。如果世界规则表达正确，那么为所有变量找到一个满足赋值，就能提取出一系列把智能体带到目标的行动。
 
-例如：
+## 10.10 小结
 
-$$
-Knows(x,MotherOf(y))
-$$
+本章介绍了逻辑，以及基于知识的智能体如何使用逻辑推理世界并作出决策。我们介绍了逻辑语言、语法和标准逻辑等价式。
 
-与：
+命题逻辑是建立在命题符号和逻辑连接词上的简单语言。一阶逻辑的表达能力比命题逻辑更强；它在命题逻辑语法的基础上使用项表示对象，并用全称量词和存在量词作出断言。
 
-$$
-Knows(Alice,MotherOf(Bob))
-$$
+我们还介绍了用于检查命题逻辑可满足性（SAT 问题）的 DPLL 算法。它以深度优先方式枚举可能模型，并使用提前终止、纯符号启发式和单元子句启发式提高性能。当知识库只由命题逻辑中的文字和蕴含式组成时，可以使用前向链进行推理。
 
-可由：
-
-$$
-\theta=\{x/Alice,y/Bob\}
-$$
-
-统一。
-
-### Most General Unifier
-
-最一般统一器（MGU）只施加使表达式匹配所需的最少约束，其他统一器可以在它基础上继续替换。
-
-### Occurs Check
-
-变量不能被绑定到包含自身的 term，例如：
-
-$$
-x=f(x)
-$$
-
-在标准一阶项语义下不允许。Occurs check 用于阻止这种循环替换。
-
-### Standardizing Apart
-
-来自不同规则的局部变量应先重命名，避免同名变量被误认为同一个对象。
-
-## Generalized Modus Ponens
-
-若知识库中有事实：
-
-$$
-P_1',P_2',\ldots,P_n'
-$$
-
-以及规则：
-
-$$
-P_1\wedge P_2\wedge\cdots\wedge P_n
-\Rightarrow Q
-$$
-
-并存在替换 $\theta$ 使：
-
-$$
-\operatorname{SUBST}(\theta,P_i)
-=
-\operatorname{SUBST}(\theta,P_i')
-$$
-
-则可以推出：
-
-$$
-\operatorname{SUBST}(\theta,Q)
-$$
-
-这把命题逻辑的 Modus Ponens 扩展到含变量的规则。
-
-## 一阶逻辑推理
-
-### Grounding
-
-若对象集合有限，可以把全称规则对每个常量实例化，再使用命题逻辑推理。
-
-缺点是实例数量可能巨大，若存在函数符号，可能产生无限多个 ground terms。
-
-### First-Order Forward Chaining
-
-对每条规则，通过 unification 找到能让所有前提匹配已知事实的替换，再加入实例化结论。
-
-### First-Order Resolution
-
-把句子转成一阶 CNF，并在 resolution 前统一互补 literals。通常还需要：
-
-- 消除 implication
-- 推动否定
-- 标准化变量
-- Skolemization 消除 existential quantifiers
-- 删除隐含的 universal quantifiers
-
-一阶逻辑推理比命题 SAT 更复杂。一般的一阶逻辑有效性是半可判定的：若结论确实被蕴含，完备证明过程最终可以找到证明；若没有被蕴含，搜索可能永不终止。
-
-## Logical Agent 的状态更新
-
-逻辑智能体必须表示时间，否则事实会冲突。例如：
-
-```text
-At(Pacman, A, t=1)
-Move(East, t=1)
-At(Pacman, B, t=2)
-```
-
-常见规则包括：
-
-- successor-state axioms：某事实在下一时刻何时成立
-- action preconditions：某行动何时合法
-- action effects：行动会改变哪些事实
-- frame knowledge：哪些事实在行动后保持不变
-
-若只写行动造成的变化，却没有处理其他事实保持不变的问题，就会遇到 frame problem。
-
-## 逻辑与概率的边界
-
-逻辑适合表达：
-
-- 必然规则
-- 组合结构
-- 可追踪证明
-- 明确约束
-
-概率模型适合表达：
-
-- 传感器噪声
-- 不确定因果关系
-- 统计规律
-- 多种可能世界的信念权重
-
-现代系统经常组合两者：逻辑约束限定合法世界，概率或学习模型在合法选择之间排序。
-
-## 常见误区
-
-### $A\Rightarrow B$ 不表示因果
-
-它只规定真值关系：排除 $A$ 真、$B$ 假的模型。因果方向需要额外语义或因果模型。
-
-### Entailment 与 Inference 要区分
-
-$KB\models\alpha$ 是语义事实；$KB\vdash_i\alpha$ 是某个算法能否找到证明。算法不完备时，推不出来并不表示结论不被蕴含。
-
-### And-Introduction 与 Resolution 是不同规则
-
-从 $A$ 和 $B$ 得到 $A\wedge B$ 是 And-Introduction。Resolution 消去两个 clauses 中互补的 literals。
-
-### 全称量词与存在量词的连接词习惯不同
-
-```text
-forall 常配 implication
-exists 常配 conjunction
-```
-
-这源于两种量词的语义，写反后常得到过强或几乎总为真的句子。
-
-### Closed-World Assumption 需要明确
-
-经典逻辑中，知识库没有证明 $P$，不自动意味着 $\neg P$。某些数据库和规则系统采用“未知即假”的 closed-world assumption，它是额外假设。
-
-## 本章速记
-
-```text
-Syntax：合法表达式
-Semantics：模型中的真假
-Inference：从知识推出结论
-
-KB |= alpha：每个满足 KB 的模型也满足 alpha
-Sound：推出的都正确
-Complete：正确的都能推出
-
-CNF：clauses 的 conjunction
-DPLL：回溯 + pure symbol + unit propagation
-Resolution：消去互补 literals
-Forward Chaining：从事实触发 Horn rules
-
-FOL = 对象 + 关系 + 函数 + 变量 + 量词
-Unification：寻找让表达式匹配的替换
-```
-
-[上一章：机器学习](./09-machine-learning.md) · [返回合集](../cs188-introduction-to-ai.md)
+一阶逻辑推理可以直接使用广义肯定前件等规则完成，也可以先命题化，把问题转换为命题逻辑，再使用 SAT 求解器得出结论。
