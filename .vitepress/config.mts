@@ -51,6 +51,122 @@ export default withMermaid(defineConfig({
         ]
       },
       {
+        text: "2026-08-04",
+        items: [
+          {
+            text: "TCP 从入门到抓包诊断",
+            link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics",
+            collapsed: true,
+            items: [
+              { text: "导读 怎样学习和实验 TCP", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/00-guide" },
+              {
+                text: "第一篇 TCP 基础直觉与通信模型",
+                link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/01-foundations",
+                collapsed: true,
+                items: [
+                  { text: "第1章 一次网络请求是怎样发生的", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/01-foundations/01-network-request" },
+                  { text: "第2章 TCP 提供怎样的通信能力", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/01-foundations/02-tcp-capabilities" },
+                  { text: "第3章 TCP 是字节流", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/01-foundations/03-byte-stream" }
+                ]
+              },
+              {
+                text: "第二篇 认识一条 TCP 连接",
+                link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/02-connection",
+                collapsed: true,
+                items: [
+                  { text: "第4章 Socket、地址、端口和四元组", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/02-connection/01-socket-address-port-four-tuple" },
+                  { text: "第5章 用一个最小程序建立 TCP 连接", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/02-connection/02-minimal-program" },
+                  { text: "第6章 第一次抓包", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/02-connection/03-first-capture" }
+                ]
+              },
+              {
+                text: "第三篇 逐字段看懂 TCP 报文头",
+                link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/03-header",
+                collapsed: true,
+                items: [
+                  { text: "第7章 网络包的分层结构", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/03-header/01-layered-packet" },
+                  { text: "第8章 TCP 首部总览", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/03-header/02-tcp-header-overview" },
+                  { text: "第9章 源端口和目标端口", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/03-header/03-source-destination-ports" },
+                  { text: "第10章 Sequence Number：给字节编号", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/03-header/04-sequence-number" },
+                  { text: "第11章 Acknowledgment Number：累计确认", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/03-header/05-acknowledgment-number" },
+                  { text: "第12章 TCP 标志位", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/03-header/06-flags" },
+                  { text: "第13章 Data Offset、Window、Checksum 和 Urgent Pointer", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/03-header/07-fixed-fields" },
+                  { text: "第14章 TCP Options", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/03-header/08-options" }
+                ]
+              },
+              {
+                text: "第四篇 TCP 连接的建立、状态和关闭",
+                link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/04-lifecycle",
+                collapsed: true,
+                items: [
+                  { text: "第15章 三次握手", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/04-lifecycle/01-three-way-handshake" },
+                  { text: "第16章 TCP 连接状态机", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/04-lifecycle/02-state-machine" },
+                  { text: "第17章 连接关闭与半关闭", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/04-lifecycle/03-close-half-close" },
+                  { text: "第18章 TIME_WAIT、CLOSE_WAIT 和连接释放", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/04-lifecycle/04-time-wait-close-wait" },
+                  { text: "第19章 RST、异常断开和半开连接", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/04-lifecycle/05-rst-half-open" }
+                ]
+              },
+              {
+                text: "第五篇 TCP 如何可靠而高效地传输数据",
+                link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/05-reliability-performance",
+                collapsed: true,
+                items: [
+                  { text: "第20章 确认、丢包检测和重传", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/05-reliability-performance/01-ack-loss-retransmission" },
+                  { text: "第21章 乱序、重复数据和 SACK", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/05-reliability-performance/02-reordering-duplicates-sack" },
+                  { text: "第22章 流量控制", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/05-reliability-performance/03-flow-control" },
+                  { text: "第23章 拥塞控制", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/05-reliability-performance/04-congestion-control" },
+                  { text: "第24章 延迟、吞吐量和带宽时延积", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/05-reliability-performance/05-latency-throughput-bdp" }
+                ]
+              },
+              {
+                text: "第六篇 开发者如何正确使用 TCP",
+                link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/06-application-development",
+                collapsed: true,
+                items: [
+                  { text: "第25章 Socket API 的正确使用", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/06-application-development/01-socket-api" },
+                  { text: "第26章 如何设计应用层协议", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/06-application-development/02-application-protocol" },
+                  { text: "第27章 超时、重试和幂等性", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/06-application-development/03-timeouts-retries-idempotency" },
+                  { text: "第28章 并发、缓冲区和背压", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/06-application-development/04-concurrency-buffers-backpressure" },
+                  { text: "第29章 常用 Socket 选项", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/06-application-development/05-socket-options" },
+                  { text: "第30章 TLS、HTTP 与 TCP 的关系", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/06-application-development/06-tls-http-tcp" }
+                ]
+              },
+              {
+                text: "第七篇 抓包诊断、性能分析与进阶环境",
+                link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/07-diagnostics-environments",
+                collapsed: true,
+                items: [
+                  { text: "第31章 系统化阅读一份 TCP 抓包", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/07-diagnostics-environments/01-systematic-pcap-reading" },
+                  { text: "第32章 常见抓包假象", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/07-diagnostics-environments/02-capture-artifacts" },
+                  { text: "第33章 常见故障案例", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/07-diagnostics-environments/03-common-failures" },
+                  { text: "第34章 TCP 性能调优的边界", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/07-diagnostics-environments/04-performance-tuning-boundaries" },
+                  { text: "第35章 IPv4、IPv6、MTU 和分片", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/07-diagnostics-environments/05-ipv4-ipv6-mtu-fragmentation" },
+                  { text: "第36章 NAT、防火墙和负载均衡", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/07-diagnostics-environments/06-nat-firewall-load-balancing" },
+                  { text: "第37章 TCP Keepalive 与应用层心跳", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/07-diagnostics-environments/07-keepalive-heartbeat" },
+                  { text: "第38章 TCP 安全基础", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/07-diagnostics-environments/08-security" },
+                  { text: "第39章 TCP、UDP 和 QUIC 的对比", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/07-diagnostics-environments/09-tcp-udp-quic" }
+                ]
+              },
+              {
+                text: "TCP 速查与规范阅读",
+                link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices",
+                collapsed: true,
+                items: [
+                  { text: "TCP 字段速查表", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/a-header-fields" },
+                  { text: "TCP 状态速查表", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/b-states" },
+                  { text: "Wireshark 过滤器速查", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/c-wireshark-filters" },
+                  { text: "常用网络命令", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/d-network-commands" },
+                  { text: "TCP 术语表", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/e-glossary" },
+                  { text: "RFC 阅读路线", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/f-rfc-roadmap" },
+                  { text: "RFC 9293：传输控制协议（TCP）", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/g-rfc-9293-tcp-zh" }
+                ]
+              }
+            ]
+          },
+          { text: "TCP 从入门到抓包诊断完整教程精修大纲", link: "/notes/2026/08/04/tcp-complete-tutorial-refined-outline" }
+        ]
+      },
+      {
         text: "2026-08-02",
         items: [
           {
