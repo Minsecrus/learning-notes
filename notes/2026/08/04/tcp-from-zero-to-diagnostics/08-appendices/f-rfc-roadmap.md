@@ -1,209 +1,209 @@
 # RFC 阅读路线
 
-TCP 的基础规范、扩展选项、丢包恢复和拥塞控制分布在多份 RFC 中。高效阅读从一个具体问题开始：先用程序或抓包描述现象，再进入对应 RFC 查字段定义、状态条件和规范要求。
+TCP 的基础规范、扩展选项、丢包恢复以及拥塞控制机制，分散在多份 RFC 文档中。想要高效阅读，最好从具体问题切入：先通过写代码或抓包还原现象，再带着问题去相应的 RFC 里查找字段定义、状态机条件和规范细节。
 
-本页以2026年8月的 RFC Editor 文档状态为基准。RFC 的状态、更新关系和勘误会继续演进，实际使用前打开文档的 Info 页面复核。
+本页内容以 2026 年 8 月 RFC Editor 上的文档状态为准。由于 RFC 的状态、更新关系和勘误会不断演进，建议你在实际参考前，先打开文档的 Info 页面复核最新状态。
 
 ## 先理解 RFC 文档状态
 
 | 标记 | 含义 | 阅读方式 |
 | --- | --- | --- |
-| Internet Standard | 成熟的互联网标准 | 作为核心互操作要求的优先基线 |
-| Standards Track | IETF 标准轨道文档 | 结合当前状态、更新关系与实现支持阅读 |
-| BCP | Best Current Practice | 描述当前社区认可的最佳实践 |
-| Informational | 信息性文档 | 提供路线、背景、经验或非规范设计说明 |
-| Experimental | 实验性机制 | 关注部署条件、后续替代和实验范围 |
-| Historic | 历史文档 | 用于理解演进，当前实现基线由更新文档给出 |
-| Updates | 新文档修改旧文档的一部分 | 两份文档需要一起解释对应机制 |
-| Obsoletes | 新文档取代旧文档 | 学习当前行为优先阅读新文档，旧文档保留历史价值 |
+| Internet Standard | 成熟的互联网标准 | 作为核心互操作基准优先参考 |
+| Standards Track | IETF 标准轨道文档 | 需结合当前状态、更新关系及各家实现的支持程度来阅读 |
+| BCP | Best Current Practice (最佳当前实践) | 描述当前社区认可的最佳实践 |
+| Informational | 信息性文档 | 提供路线图、背景知识、经验分享或非标准的设计说明 |
+| Experimental | 实验性机制 | 阅读时需重点关注其部署条件、后续的替代方案以及实验范围 |
+| Historic | 历史文档 | 主要用于了解技术演进历史，当前的实现基准请参考更新的文档 |
+| Updates | 新文档修改旧文档的一部分 | 阅读新旧文档时需结合起来，才能完整理解对应机制 |
+| Obsoletes | 新文档取代旧文档 | 想了解当前标准，优先阅读新文档；旧文档仅保留历史参考价值 |
 
-RFC 中的大写 `MUST`、`SHOULD`、`MAY` 等词按照 BCP 14 解释。它们表达互操作要求、推荐与可选能力。普通小写文字承担解释、背景和例子，仍需结合上下文阅读。
+RFC 中的大写关键词（如 `MUST`、`SHOULD`、`MAY` 等）均按照 BCP 14 的定义进行解释。它们分别代表强制互操作要求、推荐做法和可选能力。普通的常规大小写段落多用于解释背景和列举示例，阅读时需要结合上下文来理解。
 
 ## 第一站：核心 TCP
 
 ### RFC 9293
 
-[RFC 9293: Transmission Control Protocol (TCP)](https://www.rfc-editor.org/rfc/rfc9293.html) 是当前核心基线，属于 Internet Standard（STD 7）。它汇总并更新长期分散的 TCP 基础规范，取代 RFC 793 以及多份早期更新。
+[RFC 9293: Transmission Control Protocol (TCP)](https://www.rfc-editor.org/rfc/rfc9293.html) 是当前 TCP 的核心基准，属于 Internet Standard（STD 7）。它汇总并更新了长期分散的 TCP 基础规范，正式取代了 RFC 793 以及多份早期的更新文档。
 
-完整中文译文见[附录G RFC 9293：传输控制协议](./g-rfc-9293-tcp-zh.md)。
+本文档的完整中文译文（已按章节拆分），请参考[附录 G：RFC 9293 传输控制协议](./rfc9293/index.md)。
 
-优先阅读：
+建议优先阅读以下章节：
 
-1. 第2.2节：TCP 提供的服务与关键概念；
-2. 第3.1节：首部格式；
-3. 第3.3节：连接状态变量与序列空间；
-4. 第3.5节：连接建立与关闭；
-5. 第3.10节：状态处理；
-6. 第4节：术语表；
-7. 附录B：实现要求汇总。
+1. 第 2.2 节：TCP 提供的服务与关键概念；
+2. 第 3.1 节：首部格式（Header Format）；
+3. 第 3.3 节：连接状态变量与序列号空间（Sequence Number Space）；
+4. 第 3.5 节：连接的建立与关闭；
+5. 第 3.10 节：状态处理机（State Processing）；
+6. 第 4 节：术语表（Glossary）；
+7. 附录 B：实现要求汇总。
 
-它能回答：字段怎样解释、Seq/Ack 怎样工作、状态如何迁移、RST 与 FIN 在什么条件下处理、TCP 与应用接口之间有哪些要求。
+读完这些内容，你就能明白：各个字段究竟代表什么、Seq/Ack 机制是如何运转的、状态机如何流转、在什么条件下会触发 RST 和 FIN，以及 TCP 对上层应用程序接口提出了哪些要求。
 
-RFC 9293 已经吸收初始序列号安全更新 RFC 6528 的核心要求，并对 RFC 5961 做了小幅更新。看到旧教材引用 RFC 793 或 RFC 6528 时，可以沿 RFC Editor 的更新关系转到 RFC 9293。
+此外，RFC 9293 已经吸收了有关初始序列号（ISN）安全的 RFC 6528 核心要求，同时对 RFC 5961 做了小幅更新。如果在旧教材中看到引用 RFC 793 或 RFC 6528 的地方，你可以直接沿着 RFC Editor 的更新关系，跳转到 RFC 9293 查阅最新规范。
 
 ### RFC 1122
 
-[RFC 1122: Requirements for Internet Hosts — Communication Layers](https://www.rfc-editor.org/rfc/rfc1122.html) 是主机通信层的经典要求文档。TCP 相关基础要求已经由 RFC 9293 更新，Delayed ACK、Keepalive 历史语境和主机行为讨论仍有学习价值。
+[RFC 1122: Requirements for Internet Hosts — Communication Layers](https://www.rfc-editor.org/rfc/rfc1122.html) 是定义主机通信层要求的经典文档。虽然 TCP 相关的基础要求已被 RFC 9293 覆盖和更新，但里面关于延迟确认（Delayed ACK）、保活机制（Keepalive）的历史背景和主机行为的讨论，依然极具学习价值。
 
-推荐在第20章、第29章和第37章之后阅读相关段落，并始终与 RFC 9293 的当前要求对照。
+推荐你在学完教程的第 20 章、29 章和 37 章后，回过头来阅读相关的段落，并且在阅读时，始终记得与 RFC 9293 的最新要求进行对照。
 
 ## 第二站：窗口、时间戳与 SACK
 
 | 文档 | 状态与关系 | 主题 | 对应章节 |
 | --- | --- | --- | --- |
-| [RFC 7323](https://www.rfc-editor.org/rfc/rfc7323.html) | Proposed Standard，取代 RFC 1323 | Window Scale、Timestamp、PAWS 与高带宽时延积路径 | 第14、22、24章 |
-| [RFC 2018](https://www.rfc-editor.org/rfc/rfc2018.html) | Proposed Standard，取代 RFC 1072 | SACK Permitted 与 SACK 选项格式 | 第14、21章 |
-| [RFC 6675](https://www.rfc-editor.org/rfc/rfc6675.html) | Proposed Standard，取代 RFC 3517 | 基于 SACK 的保守丢包恢复算法 | 第20、21章 |
+| [RFC 7323](https://www.rfc-editor.org/rfc/rfc7323.html) | Proposed Standard，取代 RFC 1323 | 窗口缩放（Window Scale）、时间戳（Timestamp）、PAWS 与高带宽时延积路径 | 第 14、22、24 章 |
+| [RFC 2018](https://www.rfc-editor.org/rfc/rfc2018.html) | Proposed Standard，取代 RFC 1072 | 允许 SACK（SACK Permitted）与 SACK 选项格式 | 第 14、21 章 |
+| [RFC 6675](https://www.rfc-editor.org/rfc/rfc6675.html) | Proposed Standard，取代 RFC 3517 | 基于 SACK 的保守丢包恢复算法 | 第 20、21 章 |
 
-阅读 RFC 7323 时先抓住三个问题：缩放因子在何时协商、每个方向如何独立使用、Timestamp 怎样参与 RTT 测量和旧重复报文识别。
+阅读 RFC 7323 时，可以先带着这三个问题去读：窗口缩放因子在什么时候协商？通信双方如何在各自的传输方向上独立使用它？时间戳（Timestamp）又是如何参与到 RTT 测量以及防回绕序列号（PAWS）的识别中的？
 
-阅读 RFC 2018 时画一条序列轴，把累计 Ack 左侧标成连续已收区域，把 SACK Blocks 标成缺口右侧的已收区域。图形会直接对应选项中的 Left Edge 与 Right Edge。
+在阅读 RFC 2018 时，建议你在纸上画一条序列号数轴。将累计 Ack（Cumulative Ack）左侧标记为“连续已接收区域”，把 SACK Blocks 标记为“缺口右侧的已接收区域”。画出来的图形刚好能和 SACK 选项里的左边界（Left Edge）和右边界（Right Edge）一一对应。
 
 ## 第三站：RTT、RTO 与丢包恢复
 
 ### RFC 6298
 
-[RFC 6298: Computing TCP's Retransmission Timer](https://www.rfc-editor.org/rfc/rfc6298.html) 是 Proposed Standard，取代 RFC 2988 并更新 RFC 1122，给出 SRTT、RTTVAR 和 RTO 的标准计算规则。
+[RFC 6298: Computing TCP's Retransmission Timer](https://www.rfc-editor.org/rfc/rfc6298.html) 是 Proposed Standard 级别的文档。它取代了 RFC 2988，更新了 RFC 1122，给出了平滑 RTT（SRTT）、RTT 变异值（RTTVAR）和重传超时时间（RTO）的标准计算法则。
 
-适合带着下面的问题阅读：
+建议带着以下问题进行阅读：
 
-- 第一个 RTT 样本怎样初始化估计值；
-- 新样本怎样更新平滑值和变化量；
-- 重传歧义为什么影响 RTT 采样；
-- 超时后怎样指数退避；
-- 新数据成功确认后怎样恢复计时。
+- 收到第一个 RTT 样本时，如何初始化估计值？
+- 收到新样本时，如何更新平滑值（SRTT）和变化量（RTTVAR）？
+- 重传引发的歧义，为什么会影响 RTT 采样？
+- 发生超时后，如何进行指数退避（Exponential Backoff）？
+- 新的数据被成功确认后，计时器如何恢复工作？
 
 ### RFC 8985
 
-[RFC 8985: The RACK-TLP Loss Detection Algorithm for TCP](https://www.rfc-editor.org/rfc/rfc8985.html) 描述现代的时间型丢包检测与尾部探测。RACK 使用每段发送时间与 ACK/SACK 反馈推断较早数据的交付状态，TLP 在尾部缺少反馈时主动触发一次探测。
+[RFC 8985: The RACK-TLP Loss Detection Algorithm for TCP](https://www.rfc-editor.org/rfc/rfc8985.html) 详细描述了现代 TCP 中基于时间的丢包检测（RACK）与尾部丢失探测（TLP）机制。RACK 利用每个 Segment（报文段）的发送时间和 ACK/SACK 反馈，来推断较早发送的数据是否已经成功交付；而 TLP 则会在发送尾部数据但迟迟收不到反馈时，主动触发一次探测。
 
-推荐顺序：先掌握经典 DupACK、SACK 和 RTO，再读第3节高层设计，最后进入定时器和重排窗口细节。
+推荐的阅读顺序是：先掌握经典的重复确认（DupACK）、SACK 和 RTO 机制，接着阅读该文档第 3 节的高层设计，最后再去啃定时器逻辑和乱序窗口（Reordering Window）的设计细节。
 
 ### RFC 9937
 
-[RFC 9937: Proportional Rate Reduction (PRR)](https://www.rfc-editor.org/rfc/rfc9937.html) 于2025年发布为 Standards Track，并取代实验性的 RFC 6937。PRR 控制快速恢复期间可发送的数据量，使恢复结束时的在途量接近拥塞算法给出的 `ssthresh`。
+[RFC 9937: Proportional Rate Reduction (PRR)](https://www.rfc-editor.org/rfc/rfc9937.html) 于 2025 年正式成为 Standards Track，取代了原本作为实验性 RFC 的 6937。PRR 算法主要用来控制快速恢复（Fast Recovery）期间允许发送的数据量，从而确保在恢复结束时，网络中的在途数据量（Flight Size）能平滑地逼近拥塞控制算法设定的慢启动阈值（ssthresh）。
 
-它承担“检测到丢包以后怎样平稳减少在途量”的问题，RACK-TLP 承担“怎样检测丢包”的问题。两个机制可以配合使用。
+如果说 RACK-TLP 解决的是“怎样检测丢包”的问题，那么 PRR 解决的就是“检测到丢包后，怎样平稳地减少在途数据量”的问题。这两种机制在现代 TCP 栈中通常是配合使用的。
 
 ## 第四站：拥塞控制
 
 | 文档 | 主题 | 阅读目标 |
 | --- | --- | --- |
-| [RFC 5681](https://www.rfc-editor.org/rfc/rfc5681.html) | Draft Standard，取代 RFC 2581；定义经典慢启动、拥塞避免、快速重传与快速恢复 | 建立 Reno 风格基础模型 |
-| [RFC 9438](https://www.rfc-editor.org/rfc/rfc9438.html) | Proposed Standard；CUBIC | 理解三次函数窗口增长与 Reno 友好区域；该文档取代 RFC 8312 并更新 RFC 5681 |
-| [RFC 9406](https://www.rfc-editor.org/rfc/rfc9406.html) | Proposed Standard；HyStart++ | 理解在传统丢包点之前退出慢启动的启发式方法 |
-| [RFC 9743](https://www.rfc-editor.org/rfc/rfc9743.html) | BCP 133，新拥塞控制算法的规范方法；取代 RFC 5033 | 理解安全性、竞争公平和实验评估要求 |
-| [RFC 9937](https://www.rfc-editor.org/rfc/rfc9937.html) | Proposed Standard；PRR，取代 RFC 6937 | 理解恢复阶段怎样调节实际发送量 |
+| [RFC 5681](https://www.rfc-editor.org/rfc/rfc5681.html) | Draft Standard，取代 RFC 2581；定义经典慢启动（Slow Start）、拥塞避免（Congestion Avoidance）、快速重传（Fast Retransmit）与快速恢复（Fast Recovery） | 建立 Reno 风格的基础拥塞控制模型 |
+| [RFC 9438](https://www.rfc-editor.org/rfc/rfc9438.html) | Proposed Standard；CUBIC 算法 | 理解三次函数窗口增长曲线与 Reno 友好区域；该文档取代了 RFC 8312 并更新了 RFC 5681 |
+| [RFC 9406](https://www.rfc-editor.org/rfc/rfc9406.html) | Proposed Standard；HyStart++ 算法 | 学习如何在传统的丢包事件发生前，通过启发式方法提前退出慢启动 |
+| [RFC 9743](https://www.rfc-editor.org/rfc/rfc9743.html) | BCP 133，新拥塞控制算法的规范评估方法；取代 RFC 5033 | 了解引入新算法时的安全性考量、竞争公平性原则以及实验评估要求 |
+| [RFC 9937](https://www.rfc-editor.org/rfc/rfc9937.html) | Proposed Standard；PRR 算法，取代 RFC 6937 | 理解在丢包恢复阶段，如何精准地调节实际发送量 |
 
-建议先用 RFC 5681 建立 `cwnd`、`ssthresh`、FlightSize 和 ACK clock，再读 CUBIC。这样可以清楚看到 CUBIC主要修改拥塞避免阶段的窗口增长函数，同时继续遵循互联网拥塞控制的安全原则。
+建议先通过 RFC 5681 建立起 `cwnd`（拥塞窗口）、`ssthresh`、`FlightSize`（在途数据量）和 `ACK clock`（ACK 时钟）的概念基础，然后再去读 CUBIC 的规范。有了基础后，你能更清晰地看出，CUBIC 其实主要就是修改了拥塞避免阶段的窗口增长函数，而在其他方面依然坚守着互联网拥塞控制的基本安全准则。
 
-BBR 的学习需要同时查看算法论文、当前实现文档和操作系统版本。其公开规范和实现继续演进，教程正文只建立“根据带宽与往返传播时间建模路径”的核心思路。
+BBR 拥塞控制算法仍在不断演进中。学习 BBR 时，不能只看规范，还需要结合它的算法论文、最新的内核实现以及不同操作系统的版本来综合理解。本教程正文只聚焦于建立它的核心思路——“根据带宽（BtlBw）与往返传播时间（RTprop）来为网络路径建模”。
 
 ## 第五站：ECN 与 AccECN
 
 ### Classic ECN
 
-[RFC 3168: The Addition of Explicit Congestion Notification (ECN) to IP](https://www.rfc-editor.org/rfc/rfc3168.html) 是 Proposed Standard，取代 RFC 2481，并由 RFC 9768 等后续文档更新。它描述 Classic ECN：IP 首部携带 ECT/CE 码点，TCP 使用 ECE 与 CWR 完成能力协商和拥塞反馈。
+[RFC 3168: The Addition of Explicit Congestion Notification (ECN) to IP](https://www.rfc-editor.org/rfc/rfc3168.html) 是 Proposed Standard。它取代了 RFC 2481，并被 RFC 9768 等后续文档持续更新。这篇文档描述了传统的 ECN（Classic ECN）机制：IP 首部携带 ECT/CE 码点，TCP 则利用 ECE 和 CWR 标志位来完成能力协商以及拥塞反馈。
 
-阅读时分开追踪：
+阅读时可以把重点拆解为三步追踪：
 
-1. IP 层怎样标记拥塞；
-2. 接收端怎样把 CE 反馈给发送端；
-3. 发送端怎样响应并表明已经采取拥塞动作。
+1. IP 层是如何将数据包标记为拥塞（CE）的？
+2. 接收端在收到 CE 标记后，如何将这一情况反馈给发送端？
+3. 发送端收到拥塞反馈后应该作何响应，又该如何向对方表明自己已经采取了降速动作？
 
 ### Accurate ECN
 
-[RFC 9768: More Accurate Explicit Congestion Notification (AccECN) Feedback in TCP](https://www.rfc-editor.org/rfc/rfc9768.html) 于2026年发布为 Proposed Standard，并更新 RFC 3168。它把曾经的 NS 位重新定义为 AE，并提供更精确的 ECN 反馈编码。
+[RFC 9768: More Accurate Explicit Congestion Notification (AccECN) Feedback in TCP](https://www.rfc-editor.org/rfc/rfc9768.html) 于 2026 年发布为 Proposed Standard，对 RFC 3168 进行了更新。它将 TCP 首部中早先定义的 NS 标志位重新定义为 AE（Accurate ECN），从而提供了一种颗粒度更细的 ECN 反馈编码方案。
 
-初学阶段掌握 AE、ECE、CWR 的协商与反馈用途即可。位组合、计数器回绕和 AccECN Option 适合在理解 Classic ECN 后继续阅读。
+在初学阶段，你只要弄懂 AE、ECE 和 CWR 这三个标志位是如何进行协商和反馈的即可。至于具体的位组合逻辑、计数器回绕处理以及 AccECN 选项的具体细节，建议在你彻底吃透 Classic ECN 之后再来深入研究。
 
 ## 第六站：超时、重置与安全
 
 | 文档 | 主题 | 对应问题 |
 | --- | --- | --- |
-| [RFC 5482](https://www.rfc-editor.org/rfc/rfc5482.html) | TCP User Timeout Option | 已发送数据持续缺少确认时，连接可以容忍多长时间 |
-| [RFC 5961](https://www.rfc-editor.org/rfc/rfc5961.html) | 针对盲注入的 TCP 安全增强 | RST、SYN 与 ACK 校验怎样提高连接抗注入能力 |
-| [RFC 9293](https://www.rfc-editor.org/rfc/rfc9293.html) | 当前 ISN 与基础 RST 处理 | 初始序列号生成要求与状态机基线 |
+| [RFC 5482](https://www.rfc-editor.org/rfc/rfc5482.html) | TCP User Timeout Option | 在已发送数据持续收不到确认的情况下，连接最长能容忍多久不被断开 |
+| [RFC 5961](https://www.rfc-editor.org/rfc/rfc5961.html) | 针对盲注攻击的 TCP 安全增强 | 如何通过严格校验 RST、SYN 和 ACK，提高 TCP 连接抵抗伪造攻击的能力 |
+| [RFC 9293](https://www.rfc-editor.org/rfc/rfc9293.html) | 初始序列号与基础 RST 处理 | ISN 的生成要求，以及状态机响应异常报文的基准逻辑 |
 
-操作系统提供的本地 `TCP_USER_TIMEOUT` 选项与 RFC 5482 的协议选项共享“用户超时”概念，API 能力和是否在线上发送 UTO 需要按平台文档区分。
+许多操作系统在 Socket API 层级提供了 `TCP_USER_TIMEOUT` 选项，这与 RFC 5482 中定义的协议选项共享同一个“用户超时”概念。不过，本地 API 的具体能力，以及系统是否会真正将 UTO（User Timeout Option）随 TCP 报文发送到线上，需要根据不同操作系统的文档加以区分。
 
-安全阅读还应结合 TLS 以及应用层的鉴权、长度校验、资源上限和重放控制。TCP 序列号与校验和提供传输机制，密码学身份和内容保护由 TLS 等安全协议承担。
+想要全面理解安全防御体系，不能只看 TCP，还应该结合 TLS 以及应用层的鉴权、长度校验、资源上限控制和防重放攻击机制一起看。TCP 的序列号和校验和仅仅提供了传输层的抗扰动机制，而真正的密码学身份认证和数据隐私保护，则必须由 TLS 等上层安全协议来承担。
 
 ## 第七站：IPv4、IPv6 与路径 MTU
 
 | 文档 | 状态与关系 | 主题 |
 | --- | --- | --- |
-| [RFC 1191](https://www.rfc-editor.org/rfc/rfc1191.html) | Draft Standard，取代 RFC 1063 | IPv4 Path MTU Discovery |
-| [RFC 8200](https://www.rfc-editor.org/rfc/rfc8200.html) | Internet Standard，取代 RFC 2460；后续由 RFC 9673 更新 | IPv6 基础规范与端点分片规则 |
-| [RFC 8201](https://www.rfc-editor.org/rfc/rfc8201.html) | Internet Standard，取代 RFC 1981 | IPv6 Path MTU Discovery |
-| [RFC 4821](https://www.rfc-editor.org/rfc/rfc4821.html) | Proposed Standard，后续由 RFC 8899 更新 | Packetization Layer PMTUD，包含 TCP 探测方法 |
-| [RFC 8899](https://www.rfc-editor.org/rfc/rfc8899.html) | Proposed Standard，更新 RFC 4821 | 面向数据报传输的 DPLPMTUD 与通用原则 |
+| [RFC 1191](https://www.rfc-editor.org/rfc/rfc1191.html) | Draft Standard，取代 RFC 1063 | IPv4 路径 MTU 发现（Path MTU Discovery） |
+| [RFC 8200](https://www.rfc-editor.org/rfc/rfc8200.html) | Internet Standard，取代 RFC 2460；后续被 RFC 9673 更新 | IPv6 基础规范及端点分片规则 |
+| [RFC 8201](https://www.rfc-editor.org/rfc/rfc8201.html) | Internet Standard，取代 RFC 1981 | IPv6 路径 MTU 发现 |
+| [RFC 4821](https://www.rfc-editor.org/rfc/rfc4821.html) | Proposed Standard，后续被 RFC 8899 更新 | 封包层路径 MTU 发现（PLPMTUD），包含 TCP 特有的探测方法 |
+| [RFC 8899](https://www.rfc-editor.org/rfc/rfc8899.html) | Proposed Standard，更新了 RFC 4821 | 面向数据报（Datagram）传输的 DPLPMTUD 机制与通用原则 |
 
-TCP 学习重点放在 RFC 9293 的分段建议、RFC 1191/8201 的 ICMP 型 PMTUD，以及 RFC 4821 的 TCP PLPMTUD。QUIC、UDP 和 SCTP 的数据报型探测继续阅读 RFC 8899 与各协议更新。
+对于 TCP 而言，学习的重点应该放在 RFC 9293 中关于 MSS（最大报文段长度）分段的建议、RFC 1191/8201 介绍的基于 ICMP 报错的经典 PMTUD 机制，以及 RFC 4821 介绍的基于 TCP 探测机制的 PLPMTUD 上。至于 QUIC、UDP 和 SCTP 这类数据报协议的 MTU 探测，你可以继续去查阅 RFC 8899 以及各协议对应的专门规范。
 
 ## 第八站：TLS、HTTP 与 QUIC
 
 | 文档 | 主题 | 在本教程中的位置 |
 | --- | --- | --- |
-| [RFC 9846](https://www.rfc-editor.org/rfc/rfc9846.html) | TLS 1.3 当前规范，取代 RFC 8446 等早期文档 | TCP 上的加密、身份认证与记录保护 |
-| [RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) | HTTP Semantics | 请求、响应、方法、状态码和业务语义 |
-| [RFC 9112](https://www.rfc-editor.org/rfc/rfc9112.html) | HTTP/1.1 | 文本消息在 TCP 字节流上的格式与边界 |
-| [RFC 9113](https://www.rfc-editor.org/rfc/rfc9113.html) | HTTP/2 | 一条 TCP 连接上的帧与多路复用流 |
-| [RFC 9000](https://www.rfc-editor.org/rfc/rfc9000.html) | QUIC Transport | UDP 之上的安全连接、多流和迁移 |
-| [RFC 9002](https://www.rfc-editor.org/rfc/rfc9002.html) | QUIC Loss Detection and Congestion Control | QUIC 的确认、丢包检测与拥塞控制基线 |
-| [RFC 9114](https://www.rfc-editor.org/rfc/rfc9114.html) | HTTP/3 | HTTP 语义到 QUIC 流的映射 |
+| [RFC 9846](https://www.rfc-editor.org/rfc/rfc9846.html) | TLS 1.3 当前规范，取代了 RFC 8446 等早期文档 | 基于 TCP 的加密、身份认证与记录协议（Record Layer）保护 |
+| [RFC 9110](https://www.rfc-editor.org/rfc/rfc9110.html) | HTTP 语义（HTTP Semantics） | 定义了 HTTP 请求、响应、方法、状态码和业务语义 |
+| [RFC 9112](https://www.rfc-editor.org/rfc/rfc9112.html) | HTTP/1.1 规范 | 文本消息在 TCP 字节流之上的传输格式与边界界定 |
+| [RFC 9113](https://www.rfc-editor.org/rfc/rfc9113.html) | HTTP/2 规范 | 在单条 TCP 连接上实现帧（Frame）传输与多路复用流（Stream）机制 |
+| [RFC 9000](https://www.rfc-editor.org/rfc/rfc9000.html) | QUIC 传输层协议 | 建立在 UDP 之上的安全连接、多路复用流和连接迁移机制 |
+| [RFC 9002](https://www.rfc-editor.org/rfc/rfc9002.html) | QUIC 的丢包检测与拥塞控制 | QUIC 如何完成 ACK 确认、丢包检测以及基础拥塞控制 |
+| [RFC 9114](https://www.rfc-editor.org/rfc/rfc9114.html) | HTTP/3 规范 | HTTP 语义如何映射并承载于 QUIC 流（QUIC Stream）之上 |
 
-[RFC 9931](https://www.rfc-editor.org/rfc/rfc9931.html) 更新了 RFC 9112，补充 HTTP/1.1 乐观协议切换的安全要求。[RFC 9673](https://www.rfc-editor.org/rfc/rfc9673.html) 更新了 RFC 8200 中逐跳选项的处理流程；排查含 IPv6 扩展首部的路径时可以继续阅读。
+需要注意的是，[RFC 9931](https://www.rfc-editor.org/rfc/rfc9931.html) 在 RFC 9112 的基础上做了更新，补充了关于 HTTP/1.1 乐观协议切换时的安全要求。另外，[RFC 9673](https://www.rfc-editor.org/rfc/rfc9673.html) 更新了 RFC 8200 中关于 IPv6 逐跳选项（Hop-by-Hop Options）的处理流程，如果在排查网络路径时遇到了带 IPv6 扩展首部的特殊包，可以一并阅读。
 
-推荐用同一个 HTTP 请求做三次分层练习：
+推荐你使用同一个 HTTP 请求，分别进行三次分层抓包练习：
 
-1. HTTP/1.1：识别应用消息、TLS Record 与 TCP Segment；
-2. HTTP/2：识别 HTTP/2 Stream、Frame 与底层 TCP 字节流；
-3. HTTP/3：识别 HTTP/3 Frame、QUIC Stream、QUIC Packet 与 UDP Datagram。
+1. HTTP/1.1：练习如何区分应用层消息、TLS Record 和底层的 TCP Segment；
+2. HTTP/2：练习如何区分 HTTP/2 的 Stream、Frame，以及它们在底层 TCP 字节流中的排布；
+3. HTTP/3：练习如何区分 HTTP/3 的 Frame、QUIC 的 Stream、QUIC 的 Packet 以及最底层的 UDP Datagram。
 
 ## RFC 7414 的使用方式
 
-[RFC 7414: A Roadmap for Transmission Control Protocol Specification Documents](https://www.rfc-editor.org/rfc/rfc7414.html) 是2015年的信息性 TCP 文档地图，取代早期的 RFC 4614。它适合了解大量扩展之间的分类和历史关系。[RFC 7805](https://www.rfc-editor.org/rfc/rfc7805.html) 随后更新这份地图，并把一批已经停用的 TCP 扩展调整为 Historic 或 Informational。
+[RFC 7414: A Roadmap for Transmission Control Protocol Specification Documents](https://www.rfc-editor.org/rfc/rfc7414.html) 发布于 2015 年，是一份信息性的“TCP 文档导航地图”。它取代了早期的 RFC 4614，非常适合用来理清各种 TCP 扩展机制的分类以及它们之间的历史渊源。随后发布的 [RFC 7805](https://www.rfc-editor.org/rfc/rfc7805.html) 对这份地图做了进一步更新，将一批已经被弃用的 TCP 扩展文档打上了 Historic 或 Informational 的标签。
 
-2015年以后发布的 RFC 9293、8985、9406、9438、9768、9846、9937 等文档需要单独补入路线。使用 RFC 7414 时打开每份目标 RFC 的 Info 页面，继续追踪 `Updated by` 与 `Obsoleted by`。
+不过，由于 RFC 7414 年代较早，2015 年之后发布的诸如 RFC 9293、8985、9406、9438、9768、9846、9937 等重量级规范并没有包含在这张地图中。因此，在使用 RFC 7414 时，务必要打开每份目标 RFC 的 Info 页面，沿着 `Updated by` 和 `Obsoleted by` 顺藤摸瓜，追踪到最新的规范。
 
 ## 按教程章节查 RFC
 
-| 学习问题 | 首读 | 继续阅读 |
+| 学习问题 | 首读推荐 | 延伸阅读 |
 | --- | --- | --- |
-| TCP 提供什么服务 | RFC 9293 第2.2节 | RFC 1122 历史背景 |
-| 首部字段、Seq、Ack、Flags | RFC 9293 第3.1—3.4节 | RFC 5961、RFC 9768 |
-| 握手、关闭与状态机 | RFC 9293 第3.5、3.6、3.10节 | RFC 5961 |
-| Window Scale、Timestamp | RFC 7323 | RFC 9293 高性能扩展引用 |
-| SACK 与缺口恢复 | RFC 2018 | RFC 6675、RFC 8985 |
-| RTT 与 RTO | RFC 6298 | RFC 7323、RFC 8985 |
-| 经典拥塞控制 | RFC 5681 | RFC 9406、RFC 9937 |
-| CUBIC | RFC 9438 | RFC 9743 |
-| ECN | RFC 3168 | RFC 9768 |
-| User Timeout | RFC 5482 | 操作系统 Socket API 文档 |
-| PMTU 与大包停滞 | RFC 1191、RFC 8201 | RFC 4821、RFC 8899 |
-| TLS/HTTP/TCP 边界 | RFC 9846、RFC 9110、RFC 9112 | RFC 9113、RFC 9931 |
-| QUIC 与 HTTP/3 | RFC 9000、RFC 9114 | RFC 9002、RFC 8899 |
+| TCP 提供哪些服务保障？ | RFC 9293 第 2.2 节 | RFC 1122 历史背景 |
+| 报文首部字段、Seq、Ack、Flags 是什么？ | RFC 9293 第 3.1—3.4 节 | RFC 5961、RFC 9768 |
+| 如何完成三次握手、四次挥手及状态机流转？ | RFC 9293 第 3.5、3.6、3.10 节 | RFC 5961 |
+| 窗口缩放（Window Scale）、时间戳（Timestamp）机制 | RFC 7323 | RFC 9293 关于高性能扩展的引用 |
+| SACK 选项与缺口恢复算法 | RFC 2018 | RFC 6675、RFC 8985 |
+| RTT 测量与 RTO 超时重传 | RFC 6298 | RFC 7323、RFC 8985 |
+| 经典的慢启动与拥塞控制 | RFC 5681 | RFC 9406、RFC 9937 |
+| CUBIC 拥塞控制算法 | RFC 9438 | RFC 9743 |
+| 显式拥塞通知（ECN）机制 | RFC 3168 | RFC 9768 |
+| TCP 连接的用户超时断开机制（User Timeout） | RFC 5482 | 对应操作系统的 Socket API 文档 |
+| 路径 MTU 发现与大包黑洞（Blackhole）停滞 | RFC 1191、RFC 8201 | RFC 4821、RFC 8899 |
+| TLS 层、HTTP 应用层与 TCP 传输层的分界 | RFC 9846、RFC 9110、RFC 9112 | RFC 9113、RFC 9931 |
+| QUIC 协议基础与 HTTP/3 机制 | RFC 9000、RFC 9114 | RFC 9002、RFC 8899 |
 
 ## 一次规范阅读记录
 
-阅读时记录下面信息：
+建议在阅读具体的 RFC 时，顺手记录下以下关键信息：
 
 ```text
-问题：
+所探究的问题：
 RFC 编号与标题：
-Info 页面状态：
+文档当前状态（来自 Info 页面）：
 发布年份：
-Updates / Updated by：
-Obsoletes / Obsoleted by：
-相关勘误：
-阅读章节：
-规范要求编号或关键段落：
-它直接回答的内容：
-实现仍需查证的内容：
-对应抓包帧或程序实验：
+更新链条（Updates / Updated by）：
+废弃链条（Obsoletes / Obsoleted by）：
+是否有相关勘误（Errata）：
+重点阅读的章节：
+规范要求编号或关键段落原话：
+该段落直接回答的疑问：
+在具体实现中仍需进一步查证的细节：
+对应哪份抓包文件或哪段测试代码：
 ```
 
-这份记录让规范文字、实现行为和实验结果保持可追溯关系。
+坚持做这样的阅读记录，能够将枯燥的规范文字、真实的内核实现行为以及代码实验结果紧密串联起来，让你学到的每一个知识点都可验证、可追溯。
 
-[上一页：TCP 术语表](./e-glossary.md) · [返回附录目录](../08-appendices.md) · [下一页：RFC 9293 中文译文](./g-rfc-9293-tcp-zh.md) · [返回教程总览](../../tcp-from-zero-to-diagnostics.md)
+[上一页：TCP 术语表](./e-glossary.md) · [返回附录目录](../08-appendices.md) · [下一页：RFC 9293 中文译文](./rfc9293/index.md) · [返回教程总览](../../tcp-from-zero-to-diagnostics.md)

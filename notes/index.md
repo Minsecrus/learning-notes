@@ -10,7 +10,7 @@
 
 ## 2026-08-04
 
-- [TCP 从入门到抓包诊断](./2026/08/04/tcp-from-zero-to-diagnostics.md)
+- [TCP 从入门到抓包](./2026/08/04/tcp-from-zero-to-diagnostics.md)
   - [导读 怎样学习和实验 TCP](./2026/08/04/tcp-from-zero-to-diagnostics/00-guide.md)
   - [第一篇 TCP 基础直觉与通信模型](./2026/08/04/tcp-from-zero-to-diagnostics/01-foundations.md)
     - [第1章 一次网络请求是怎样发生的](./2026/08/04/tcp-from-zero-to-diagnostics/01-foundations/01-network-request.md)
@@ -65,8 +65,7 @@
     - [常用网络命令](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/d-network-commands.md)
     - [TCP 术语表](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/e-glossary.md)
     - [RFC 阅读路线](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/f-rfc-roadmap.md)
-    - [RFC 9293：传输控制协议（TCP）](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/g-rfc-9293-tcp-zh.md)
-- [TCP 从入门到抓包诊断完整教程精修大纲](./2026/08/04/tcp-complete-tutorial-refined-outline.md)
+    - [RFC 9293：传输控制协议（TCP）](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/index.md)
 
 ## 2026-08-02
 
