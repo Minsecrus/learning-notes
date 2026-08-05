@@ -72,7 +72,13 @@ Resolve-DnsName example.com -Type A
 Resolve-DnsName example.com -Type AAAA
 ```
 
-查询结果会显示 DNS 记录类型、解析到的 IP 地址、TTL（生存时间）以及响应查询的 DNS 服务器。由于本地缓存、DNS 负载均衡或 GeoDNS 等机制，不同时间或不同机器解析出来的结果可能会有所不同。
+查询结果会显示 DNS 记录类型、解析到的 IP 地址、TTL（生存时间）以及响应查询的 DNS 服务器。由于本地缓存、DNS 负载均衡或 *GeoDNS* 等机制，不同时间或不同机器解析出来的结果可能会有所不同。
+
+::: details GeoDNS 是什么？
+GeoDNS 是依据查询来源的大致地理位置、网络运营商或策略返回不同 DNS 答案的调度方式，常用于把用户导向较近的 CDN 或区域入口。
+
+递归 DNS 的出口位置、EDNS Client Subnet 支持和缓存都会影响定位结果，因此客户端真实位置与最终返回区域可能存在偏差。
+:::
 
 ### 查看 IP 地址、路由表与邻居缓存（ARP表）
 

@@ -70,7 +70,13 @@ HTTP/3 则彻底换了地基，把 HTTP Stream 直接映射到了 QUIC Stream �
 
 ### DNS
 
-传统的 DNS 绝大部分时间都在使用极度精简的 UDP 报文进行一问一答，只有在遇到响应报文过大被截断（Truncated）、或者进行区域传送（Zone Transfer）时，才会降级到 TCP。而随着安全意识的觉醒，现代 DNS 正在积极拥抱 DoT（DNS over TLS）、DoH（DNS over HTTPS）甚至 DoQ（DNS over QUIC）。到底用哪种，往往取决于你对响应体积、隐私保护、连接复用效率以及基础设施兼容性的综合考量。
+传统的 DNS 绝大部分时间都在使用极度精简的 UDP 报文进行一问一答，只有在遇到响应报文过大被截断（Truncated）、或者进行区域传送（Zone Transfer）时，才会切换到 TCP。而现代 DNS 也在使用 DoT（DNS over TLS）、DoH（DNS over HTTPS）甚至 *DoQ（DNS over QUIC）*。到底用哪种，往往取决于你对响应体积、隐私保护、连接复用效率以及基础设施兼容性的综合考量。
+
+::: details DoQ 是什么？
+DoQ（DNS over QUIC）在 QUIC 连接中传输加密 DNS 查询。它利用 QUIC 的安全握手、流复用和独立丢包恢复，避免同一连接上一条查询丢包阻塞所有其他查询。
+
+DoQ 与 DoH 都能加密 DNS 内容，承载协议、端口和基础设施集成方式不同。
+:::
 
 ### 实时音视频与在线游戏
 
