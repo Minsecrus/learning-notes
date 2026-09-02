@@ -51,6 +51,36 @@ export default withMermaid(defineConfig({
         ]
       },
       {
+        text: "未归档",
+        items: [
+          {
+            text: "2026",
+            collapsed: true,
+            items: [
+              {
+                text: "_pending_09",
+                collapsed: true,
+                items: [
+                  {
+                    text: "02",
+                    collapsed: true,
+                    items: [
+                      { text: "史上最伟大的 100 位数学家", link: "/notes/2026/_pending_09/02/100-greatest-mathematicians" }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        text: "2026-08-09",
+        items: [
+          { text: "The Pragmatic Programmer 100 条原则", link: "/notes/2026/08/09/the-pragmatic-programmer-100-principles" }
+        ]
+      },
+      {
         text: "2026-08-04",
         items: [
           {
@@ -58,7 +88,7 @@ export default withMermaid(defineConfig({
             link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics",
             collapsed: true,
             items: [
-              { text: "导读 怎样学习和实验 TCP", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/00-guide" },
+              { text: "导读：如何学习与实验 TCP", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/00-guide" },
               {
                 text: "第一篇 TCP 基础直觉与通信模型",
                 link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/01-foundations",
@@ -115,7 +145,7 @@ export default withMermaid(defineConfig({
                   { text: "第21章 乱序、重复数据和 SACK", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/05-reliability-performance/02-reordering-duplicates-sack" },
                   { text: "第22章 流量控制", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/05-reliability-performance/03-flow-control" },
                   { text: "第23章 拥塞控制", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/05-reliability-performance/04-congestion-control" },
-                  { text: "第24章 延迟、吞吐量和带宽时延积", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/05-reliability-performance/05-latency-throughput-bdp" }
+                  { text: "第24章 延迟、吞吐量和带宽时延积（BDP）", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/05-reliability-performance/05-latency-throughput-bdp" }
                 ]
               },
               {
@@ -159,38 +189,32 @@ export default withMermaid(defineConfig({
                   { text: "TCP 术语表", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/e-glossary" },
                   { text: "RFC 阅读路线", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/f-rfc-roadmap" },
                   {
-                    text: "RFC 9293：传输控制协议（TCP）",
-                    link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/",
+                    text: "rfc9293",
                     collapsed: true,
                     items: [
                       { text: "1. 目的与范围", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/01-purpose-and-scope" },
                       { text: "2. 引言", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/02-introduction" },
-                      {
-                        text: "3. 功能规范",
-                        link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-functional-specification",
-                        collapsed: true,
-                        items: [
-                          { text: "3.1. 首部格式", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-01-header-format" },
-                          { text: "3.2. 特定选项定义", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-02-specific-options" },
-                          { text: "3.3. TCP 术语概览", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-03-terminology" },
-                          { text: "3.4. 序列号", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-04-sequence-numbers" },
-                          { text: "3.5. 建立连接", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-05-establishing-a-connection" },
-                          { text: "3.6. 关闭连接", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-06-closing-a-connection" },
-                          { text: "3.7. 分段", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-07-segmentation" },
-                          { text: "3.8. 数据通信", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-08-data-communication" },
-                          { text: "3.9. 接口", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-09-interfaces" },
-                          { text: "3.10. 事件处理", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-10-event-processing" }
-                        ]
-                      },
+                      { text: "3.1. 首部格式", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-01-header-format" },
+                      { text: "3.2. 特定选项定义", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-02-specific-options" },
+                      { text: "3.3. TCP 术语概览", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-03-terminology" },
+                      { text: "3.4. 序列号", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-04-sequence-numbers" },
+                      { text: "3.5. 建立连接", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-05-establishing-a-connection" },
+                      { text: "3.6. 关闭连接", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-06-closing-a-connection" },
+                      { text: "3.7. 分段", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-07-segmentation" },
+                      { text: "3.8. 数据通信", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-08-data-communication" },
+                      { text: "3.9. 接口", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-09-interfaces" },
+                      { text: "3.10. 事件处理", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-10-event-processing" },
+                      { text: "3. 功能规范", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-functional-specification" },
                       { text: "4. 术语表", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/04-glossary" },
                       { text: "5. 相对于 RFC 793 的变更", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/05-changes-from-rfc-793" },
                       { text: "6. IANA 注意事项", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/06-iana-considerations" },
                       { text: "7. 安全与隐私注意事项", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/07-security-and-privacy" },
                       { text: "8. 参考文献", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/08-references" },
+                      { text: "致谢", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/acknowledgments" },
                       { text: "附录 A：其他实现说明", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/appendix-a" },
                       { text: "附录 B：TCP 需求汇总", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/appendix-b" },
-                      { text: "致谢", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/acknowledgments" },
-                      { text: "作者地址", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/authors-address" }
+                      { text: "作者地址", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/authors-address" },
+                      { text: "RFC 9293：传输控制协议（TCP）", link: "/notes/2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/index" }
                     ]
                   }
                 ]

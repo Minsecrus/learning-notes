@@ -8,10 +8,21 @@
 .\scripts\generate-notes-index.ps1
 ```
 
+## 未归档
+
+- 2026
+  - _pending_09
+    - 02
+      - [史上最伟大的 100 位数学家](./2026/_pending_09/02/100-greatest-mathematicians.md)
+
+## 2026-08-09
+
+- [The Pragmatic Programmer 100 条原则](./2026/08/09/the-pragmatic-programmer-100-principles.md)
+
 ## 2026-08-04
 
 - [TCP 从入门到抓包](./2026/08/04/tcp-from-zero-to-diagnostics.md)
-  - [导读 怎样学习和实验 TCP](./2026/08/04/tcp-from-zero-to-diagnostics/00-guide.md)
+  - [导读：如何学习与实验 TCP](./2026/08/04/tcp-from-zero-to-diagnostics/00-guide.md)
   - [第一篇 TCP 基础直觉与通信模型](./2026/08/04/tcp-from-zero-to-diagnostics/01-foundations.md)
     - [第1章 一次网络请求是怎样发生的](./2026/08/04/tcp-from-zero-to-diagnostics/01-foundations/01-network-request.md)
     - [第2章 TCP 提供怎样的通信能力](./2026/08/04/tcp-from-zero-to-diagnostics/01-foundations/02-tcp-capabilities.md)
@@ -40,7 +51,7 @@
     - [第21章 乱序、重复数据和 SACK](./2026/08/04/tcp-from-zero-to-diagnostics/05-reliability-performance/02-reordering-duplicates-sack.md)
     - [第22章 流量控制](./2026/08/04/tcp-from-zero-to-diagnostics/05-reliability-performance/03-flow-control.md)
     - [第23章 拥塞控制](./2026/08/04/tcp-from-zero-to-diagnostics/05-reliability-performance/04-congestion-control.md)
-    - [第24章 延迟、吞吐量和带宽时延积](./2026/08/04/tcp-from-zero-to-diagnostics/05-reliability-performance/05-latency-throughput-bdp.md)
+    - [第24章 延迟、吞吐量和带宽时延积（BDP）](./2026/08/04/tcp-from-zero-to-diagnostics/05-reliability-performance/05-latency-throughput-bdp.md)
   - [第六篇 开发者如何正确使用 TCP](./2026/08/04/tcp-from-zero-to-diagnostics/06-application-development.md)
     - [第25章 Socket API 的正确使用](./2026/08/04/tcp-from-zero-to-diagnostics/06-application-development/01-socket-api.md)
     - [第26章 如何设计应用层协议](./2026/08/04/tcp-from-zero-to-diagnostics/06-application-development/02-application-protocol.md)
@@ -65,7 +76,30 @@
     - [常用网络命令](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/d-network-commands.md)
     - [TCP 术语表](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/e-glossary.md)
     - [RFC 阅读路线](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/f-rfc-roadmap.md)
-    - [RFC 9293：传输控制协议（TCP）](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/index.md)
+    - rfc9293
+      - [1. 目的与范围](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/01-purpose-and-scope.md)
+      - [2. 引言](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/02-introduction.md)
+      - [3.1. 首部格式](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-01-header-format.md)
+      - [3.2. 特定选项定义](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-02-specific-options.md)
+      - [3.3. TCP 术语概览](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-03-terminology.md)
+      - [3.4. 序列号](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-04-sequence-numbers.md)
+      - [3.5. 建立连接](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-05-establishing-a-connection.md)
+      - [3.6. 关闭连接](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-06-closing-a-connection.md)
+      - [3.7. 分段](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-07-segmentation.md)
+      - [3.8. 数据通信](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-08-data-communication.md)
+      - [3.9. 接口](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-09-interfaces.md)
+      - [3.10. 事件处理](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-10-event-processing.md)
+      - [3. 功能规范](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/03-functional-specification.md)
+      - [4. 术语表](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/04-glossary.md)
+      - [5. 相对于 RFC 793 的变更](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/05-changes-from-rfc-793.md)
+      - [6. IANA 注意事项](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/06-iana-considerations.md)
+      - [7. 安全与隐私注意事项](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/07-security-and-privacy.md)
+      - [8. 参考文献](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/08-references.md)
+      - [致谢](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/acknowledgments.md)
+      - [附录 A：其他实现说明](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/appendix-a.md)
+      - [附录 B：TCP 需求汇总](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/appendix-b.md)
+      - [作者地址](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/authors-address.md)
+      - [RFC 9293：传输控制协议（TCP）](./2026/08/04/tcp-from-zero-to-diagnostics/08-appendices/rfc9293/index.md)
 
 ## 2026-08-02
 
