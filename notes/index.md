@@ -8,12 +8,9 @@
 .\scripts\generate-notes-index.ps1
 ```
 
-## 未归档
+## 2026-09-02
 
-- 2026
-  - _pending_09
-    - 02
-      - [史上最伟大的 100 位数学家](./2026/_pending_09/02/100-greatest-mathematicians.md)
+- [史上最伟大的 100 位数学家](./2026/09/02/100-greatest-mathematicians.md)
 
 ## 2026-08-09
 

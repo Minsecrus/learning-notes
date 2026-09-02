@@ -51,27 +51,9 @@ export default withMermaid(defineConfig({
         ]
       },
       {
-        text: "未归档",
+        text: "2026-09-02",
         items: [
-          {
-            text: "2026",
-            collapsed: true,
-            items: [
-              {
-                text: "_pending_09",
-                collapsed: true,
-                items: [
-                  {
-                    text: "02",
-                    collapsed: true,
-                    items: [
-                      { text: "史上最伟大的 100 位数学家", link: "/notes/2026/_pending_09/02/100-greatest-mathematicians" }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
+          { text: "史上最伟大的 100 位数学家", link: "/notes/2026/09/02/100-greatest-mathematicians" }
         ]
       },
       {
