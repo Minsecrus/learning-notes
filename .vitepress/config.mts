@@ -51,6 +51,43 @@ export default withMermaid(defineConfig({
         ]
       },
       {
+        text: "2026-09-15",
+        items: [
+          {
+            text: "信息检索导论中文译文",
+            link: "/notes/2026/09/15/introduction-to-information-retrieval",
+            collapsed: true,
+            items: [
+              { text: "扉页、目录、符号表与前言", link: "/notes/2026/09/15/introduction-to-information-retrieval/00-front-matter-and-preface" },
+              { text: "第 1 章 布尔检索", link: "/notes/2026/09/15/introduction-to-information-retrieval/01-boolean-retrieval" },
+              { text: "第 2 章 词项词汇表与倒排记录表", link: "/notes/2026/09/15/introduction-to-information-retrieval/02-term-vocabulary-and-postings-lists" },
+              { text: "第 3 章 词典与容错检索", link: "/notes/2026/09/15/introduction-to-information-retrieval/03-dictionaries-and-tolerant-retrieval" },
+              { text: "第 4 章 索引构建", link: "/notes/2026/09/15/introduction-to-information-retrieval/04-index-construction" },
+              { text: "第 5 章 索引压缩", link: "/notes/2026/09/15/introduction-to-information-retrieval/05-index-compression" },
+              { text: "第 6 章 评分、词项加权与向量空间模型", link: "/notes/2026/09/15/introduction-to-information-retrieval/06-scoring-term-weighting-and-vector-space-model" },
+              { text: "第 7 章 完整搜索系统中的评分计算", link: "/notes/2026/09/15/introduction-to-information-retrieval/07-computing-scores-in-a-complete-search-system" },
+              { text: "第 8 章 信息检索的评估", link: "/notes/2026/09/15/introduction-to-information-retrieval/08-evaluation-in-information-retrieval" },
+              { text: "第 9 章 相关反馈与查询扩展", link: "/notes/2026/09/15/introduction-to-information-retrieval/09-relevance-feedback-and-query-expansion" },
+              { text: "第 10 章 XML 检索", link: "/notes/2026/09/15/introduction-to-information-retrieval/10-xml-retrieval" },
+              { text: "第 11 章 概率信息检索", link: "/notes/2026/09/15/introduction-to-information-retrieval/11-probabilistic-information-retrieval" },
+              { text: "第 12 章 用于信息检索的语言模型", link: "/notes/2026/09/15/introduction-to-information-retrieval/12-language-models-for-information-retrieval" },
+              { text: "第 13 章 文本分类与朴素贝叶斯", link: "/notes/2026/09/15/introduction-to-information-retrieval/13-text-classification-and-naive-bayes" },
+              { text: "第 14 章 向量空间分类", link: "/notes/2026/09/15/introduction-to-information-retrieval/14-vector-space-classification" },
+              { text: "第 15 章 支持向量机与文档机器学习", link: "/notes/2026/09/15/introduction-to-information-retrieval/15-support-vector-machines-and-machine-learning" },
+              { text: "第 16 章 平面聚类", link: "/notes/2026/09/15/introduction-to-information-retrieval/16-flat-clustering" },
+              { text: "第 17 章 层次聚类", link: "/notes/2026/09/15/introduction-to-information-retrieval/17-hierarchical-clustering" },
+              { text: "第 18 章 矩阵分解与潜在语义索引", link: "/notes/2026/09/15/introduction-to-information-retrieval/18-matrix-decompositions-and-latent-semantic-indexing" },
+              { text: "第 19 章 Web 搜索基础", link: "/notes/2026/09/15/introduction-to-information-retrieval/19-web-search-basics" },
+              { text: "第 20 章 Web 爬取与索引", link: "/notes/2026/09/15/introduction-to-information-retrieval/20-web-crawling-and-indexes" },
+              { text: "第 21 章 链接分析", link: "/notes/2026/09/15/introduction-to-information-retrieval/21-link-analysis" },
+              { text: "参考文献", link: "/notes/2026/09/15/introduction-to-information-retrieval/22-bibliography" },
+              { text: "作者索引", link: "/notes/2026/09/15/introduction-to-information-retrieval/23-author-index" },
+              { text: "中英术语索引", link: "/notes/2026/09/15/introduction-to-information-retrieval/24-subject-index" }
+            ]
+          }
+        ]
+      },
+      {
         text: "2026-09-02",
         items: [
           { text: "史上最伟大的 100 位数学家", link: "/notes/2026/09/02/100-greatest-mathematicians" }

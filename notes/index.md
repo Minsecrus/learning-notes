@@ -8,6 +8,35 @@
 .\scripts\generate-notes-index.ps1
 ```
 
+## 2026-09-15
+
+- [信息检索导论中文译文](./2026/09/15/introduction-to-information-retrieval.md)
+  - [扉页、目录、符号表与前言](./2026/09/15/introduction-to-information-retrieval/00-front-matter-and-preface.md)
+  - [第 1 章 布尔检索](./2026/09/15/introduction-to-information-retrieval/01-boolean-retrieval.md)
+  - [第 2 章 词项词汇表与倒排记录表](./2026/09/15/introduction-to-information-retrieval/02-term-vocabulary-and-postings-lists.md)
+  - [第 3 章 词典与容错检索](./2026/09/15/introduction-to-information-retrieval/03-dictionaries-and-tolerant-retrieval.md)
+  - [第 4 章 索引构建](./2026/09/15/introduction-to-information-retrieval/04-index-construction.md)
+  - [第 5 章 索引压缩](./2026/09/15/introduction-to-information-retrieval/05-index-compression.md)
+  - [第 6 章 评分、词项加权与向量空间模型](./2026/09/15/introduction-to-information-retrieval/06-scoring-term-weighting-and-vector-space-model.md)
+  - [第 7 章 完整搜索系统中的评分计算](./2026/09/15/introduction-to-information-retrieval/07-computing-scores-in-a-complete-search-system.md)
+  - [第 8 章 信息检索的评估](./2026/09/15/introduction-to-information-retrieval/08-evaluation-in-information-retrieval.md)
+  - [第 9 章 相关反馈与查询扩展](./2026/09/15/introduction-to-information-retrieval/09-relevance-feedback-and-query-expansion.md)
+  - [第 10 章 XML 检索](./2026/09/15/introduction-to-information-retrieval/10-xml-retrieval.md)
+  - [第 11 章 概率信息检索](./2026/09/15/introduction-to-information-retrieval/11-probabilistic-information-retrieval.md)
+  - [第 12 章 用于信息检索的语言模型](./2026/09/15/introduction-to-information-retrieval/12-language-models-for-information-retrieval.md)
+  - [第 13 章 文本分类与朴素贝叶斯](./2026/09/15/introduction-to-information-retrieval/13-text-classification-and-naive-bayes.md)
+  - [第 14 章 向量空间分类](./2026/09/15/introduction-to-information-retrieval/14-vector-space-classification.md)
+  - [第 15 章 支持向量机与文档机器学习](./2026/09/15/introduction-to-information-retrieval/15-support-vector-machines-and-machine-learning.md)
+  - [第 16 章 平面聚类](./2026/09/15/introduction-to-information-retrieval/16-flat-clustering.md)
+  - [第 17 章 层次聚类](./2026/09/15/introduction-to-information-retrieval/17-hierarchical-clustering.md)
+  - [第 18 章 矩阵分解与潜在语义索引](./2026/09/15/introduction-to-information-retrieval/18-matrix-decompositions-and-latent-semantic-indexing.md)
+  - [第 19 章 Web 搜索基础](./2026/09/15/introduction-to-information-retrieval/19-web-search-basics.md)
+  - [第 20 章 Web 爬取与索引](./2026/09/15/introduction-to-information-retrieval/20-web-crawling-and-indexes.md)
+  - [第 21 章 链接分析](./2026/09/15/introduction-to-information-retrieval/21-link-analysis.md)
+  - [参考文献](./2026/09/15/introduction-to-information-retrieval/22-bibliography.md)
+  - [作者索引](./2026/09/15/introduction-to-information-retrieval/23-author-index.md)
+  - [中英术语索引](./2026/09/15/introduction-to-information-retrieval/24-subject-index.md)
+
 ## 2026-09-02
 
 - [史上最伟大的 100 位数学家](./2026/09/02/100-greatest-mathematicians.md)

@@ -1,0 +1,4843 @@
+{
+  "title": "Introduction to Information Retrieval",
+  "authors": [
+    "Christopher D. Manning",
+    "Prabhakar Raghavan",
+    "Hinrich Schütze"
+  ],
+  "edition": "Online draft, April 1, 2009",
+  "source_sha256": "ab67ad67d89309a3d03de219173cfdea471e856a5083c83e49b11be8c01581ea",
+  "source_pdf_pages": 581,
+  "printed_page_offset": 37,
+  "complete": true,
+  "translation_method": "AI-assisted full translation with source-page images and text; structural and rendering checks; not a claim of manual proofreading of every sentence.",
+  "pages": [
+    {
+      "pdf_page": 1,
+      "printed_page": "i",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 101,
+      "translated_chars": 19,
+      "figures": []
+    },
+    {
+      "pdf_page": 2,
+      "printed_page": "ii",
+      "file": "00-front-matter-and-preface.md",
+      "blank": true
+    },
+    {
+      "pdf_page": 3,
+      "printed_page": "iii",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 182,
+      "translated_chars": 80,
+      "figures": []
+    },
+    {
+      "pdf_page": 4,
+      "printed_page": "iv",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 352,
+      "translated_chars": 208,
+      "figures": []
+    },
+    {
+      "pdf_page": 5,
+      "printed_page": "v",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 918,
+      "translated_chars": 367,
+      "figures": []
+    },
+    {
+      "pdf_page": 6,
+      "printed_page": "vi",
+      "file": "00-front-matter-and-preface.md",
+      "blank": true
+    },
+    {
+      "pdf_page": 7,
+      "printed_page": "vii",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 1059,
+      "translated_chars": 414,
+      "figures": []
+    },
+    {
+      "pdf_page": 8,
+      "printed_page": "viii",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 1451,
+      "translated_chars": 671,
+      "figures": []
+    },
+    {
+      "pdf_page": 9,
+      "printed_page": "ix",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 1551,
+      "translated_chars": 711,
+      "figures": []
+    },
+    {
+      "pdf_page": 10,
+      "printed_page": "x",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 1705,
+      "translated_chars": 782,
+      "figures": []
+    },
+    {
+      "pdf_page": 11,
+      "printed_page": "xi",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 1743,
+      "translated_chars": 774,
+      "figures": []
+    },
+    {
+      "pdf_page": 12,
+      "printed_page": "xii",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 1526,
+      "translated_chars": 693,
+      "figures": []
+    },
+    {
+      "pdf_page": 13,
+      "printed_page": "xiii",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 1091,
+      "translated_chars": 601,
+      "figures": []
+    },
+    {
+      "pdf_page": 14,
+      "printed_page": "xiv",
+      "file": "00-front-matter-and-preface.md",
+      "blank": true
+    },
+    {
+      "pdf_page": 15,
+      "printed_page": "xv",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 1660,
+      "translated_chars": 745,
+      "figures": []
+    },
+    {
+      "pdf_page": 16,
+      "printed_page": "xvi",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 1920,
+      "translated_chars": 1077,
+      "figures": []
+    },
+    {
+      "pdf_page": 17,
+      "printed_page": "xvii",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 1312,
+      "translated_chars": 894,
+      "figures": []
+    },
+    {
+      "pdf_page": 18,
+      "printed_page": "xviii",
+      "file": "00-front-matter-and-preface.md",
+      "blank": true
+    },
+    {
+      "pdf_page": 19,
+      "printed_page": "xix",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 1513,
+      "translated_chars": 771,
+      "figures": []
+    },
+    {
+      "pdf_page": 20,
+      "printed_page": "xx",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 1851,
+      "translated_chars": 1378,
+      "figures": []
+    },
+    {
+      "pdf_page": 21,
+      "printed_page": "xxi",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 1939,
+      "translated_chars": 1123,
+      "figures": []
+    },
+    {
+      "pdf_page": 22,
+      "printed_page": "xxii",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 1961,
+      "translated_chars": 1134,
+      "figures": []
+    },
+    {
+      "pdf_page": 23,
+      "printed_page": "xxiii",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 2130,
+      "translated_chars": 1193,
+      "figures": []
+    },
+    {
+      "pdf_page": 24,
+      "printed_page": "xxiv",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 1914,
+      "translated_chars": 1208,
+      "figures": []
+    },
+    {
+      "pdf_page": 25,
+      "printed_page": "xxv",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 227,
+      "translated_chars": 179,
+      "figures": []
+    },
+    {
+      "pdf_page": 26,
+      "printed_page": "xxvi",
+      "file": "00-front-matter-and-preface.md",
+      "blank": true
+    },
+    {
+      "pdf_page": 27,
+      "printed_page": "xxvii",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 1108,
+      "translated_chars": 783,
+      "figures": []
+    },
+    {
+      "pdf_page": 28,
+      "printed_page": "xxviii",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 1446,
+      "translated_chars": 1046,
+      "figures": []
+    },
+    {
+      "pdf_page": 29,
+      "printed_page": "xxix",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 1509,
+      "translated_chars": 1114,
+      "figures": []
+    },
+    {
+      "pdf_page": 30,
+      "printed_page": "xxx",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 215,
+      "translated_chars": 238,
+      "figures": []
+    },
+    {
+      "pdf_page": 31,
+      "printed_page": "xxxi",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 2357,
+      "translated_chars": 682,
+      "figures": []
+    },
+    {
+      "pdf_page": 32,
+      "printed_page": "xxxii",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 2993,
+      "translated_chars": 826,
+      "figures": []
+    },
+    {
+      "pdf_page": 33,
+      "printed_page": "xxxiii",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 3117,
+      "translated_chars": 992,
+      "figures": []
+    },
+    {
+      "pdf_page": 34,
+      "printed_page": "xxxiv",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 2361,
+      "translated_chars": 1511,
+      "figures": []
+    },
+    {
+      "pdf_page": 35,
+      "printed_page": "xxxv",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 2520,
+      "translated_chars": 910,
+      "figures": []
+    },
+    {
+      "pdf_page": 36,
+      "printed_page": "xxxvi",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 3097,
+      "translated_chars": 2145,
+      "figures": []
+    },
+    {
+      "pdf_page": 37,
+      "printed_page": "xxxvii",
+      "file": "00-front-matter-and-preface.md",
+      "source_chars": 949,
+      "translated_chars": 325,
+      "figures": []
+    },
+    {
+      "pdf_page": 38,
+      "printed_page": "1",
+      "file": "01-boolean-retrieval.md",
+      "source_chars": 2227,
+      "translated_chars": 793,
+      "figures": []
+    },
+    {
+      "pdf_page": 39,
+      "printed_page": "2",
+      "file": "01-boolean-retrieval.md",
+      "source_chars": 3239,
+      "translated_chars": 1115,
+      "figures": []
+    },
+    {
+      "pdf_page": 40,
+      "printed_page": "3",
+      "file": "01-boolean-retrieval.md",
+      "source_chars": 2748,
+      "translated_chars": 1051,
+      "figures": []
+    },
+    {
+      "pdf_page": 41,
+      "printed_page": "4",
+      "file": "01-boolean-retrieval.md",
+      "source_chars": 2106,
+      "translated_chars": 1211,
+      "figures": []
+    },
+    {
+      "pdf_page": 42,
+      "printed_page": "5",
+      "file": "01-boolean-retrieval.md",
+      "source_chars": 2444,
+      "translated_chars": 1280,
+      "figures": []
+    },
+    {
+      "pdf_page": 43,
+      "printed_page": "6",
+      "file": "01-boolean-retrieval.md",
+      "source_chars": 2804,
+      "translated_chars": 1283,
+      "figures": []
+    },
+    {
+      "pdf_page": 44,
+      "printed_page": "7",
+      "file": "01-boolean-retrieval.md",
+      "source_chars": 2296,
+      "translated_chars": 1381,
+      "figures": []
+    },
+    {
+      "pdf_page": 45,
+      "printed_page": "8",
+      "file": "01-boolean-retrieval.md",
+      "source_chars": 1780,
+      "translated_chars": 4355,
+      "figures": []
+    },
+    {
+      "pdf_page": 46,
+      "printed_page": "9",
+      "file": "01-boolean-retrieval.md",
+      "source_chars": 2589,
+      "translated_chars": 1122,
+      "figures": []
+    },
+    {
+      "pdf_page": 47,
+      "printed_page": "10",
+      "file": "01-boolean-retrieval.md",
+      "source_chars": 1662,
+      "translated_chars": 877,
+      "figures": [
+        "figure-1.5"
+      ]
+    },
+    {
+      "pdf_page": 48,
+      "printed_page": "11",
+      "file": "01-boolean-retrieval.md",
+      "source_chars": 2174,
+      "translated_chars": 1165,
+      "figures": []
+    },
+    {
+      "pdf_page": 49,
+      "printed_page": "12",
+      "file": "01-boolean-retrieval.md",
+      "source_chars": 2378,
+      "translated_chars": 1019,
+      "figures": []
+    },
+    {
+      "pdf_page": 50,
+      "printed_page": "13",
+      "file": "01-boolean-retrieval.md",
+      "source_chars": 2063,
+      "translated_chars": 909,
+      "figures": []
+    },
+    {
+      "pdf_page": 51,
+      "printed_page": "14",
+      "file": "01-boolean-retrieval.md",
+      "source_chars": 2175,
+      "translated_chars": 972,
+      "figures": []
+    },
+    {
+      "pdf_page": 52,
+      "printed_page": "15",
+      "file": "01-boolean-retrieval.md",
+      "source_chars": 3582,
+      "translated_chars": 1434,
+      "figures": []
+    },
+    {
+      "pdf_page": 53,
+      "printed_page": "16",
+      "file": "01-boolean-retrieval.md",
+      "source_chars": 2763,
+      "translated_chars": 950,
+      "figures": []
+    },
+    {
+      "pdf_page": 54,
+      "printed_page": "17",
+      "file": "01-boolean-retrieval.md",
+      "source_chars": 2667,
+      "translated_chars": 1137,
+      "figures": []
+    },
+    {
+      "pdf_page": 55,
+      "printed_page": "18",
+      "file": "01-boolean-retrieval.md",
+      "source_chars": 539,
+      "translated_chars": 235,
+      "figures": []
+    },
+    {
+      "pdf_page": 56,
+      "printed_page": "19",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 1741,
+      "translated_chars": 569,
+      "figures": []
+    },
+    {
+      "pdf_page": 57,
+      "printed_page": "20",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 3024,
+      "translated_chars": 1064,
+      "figures": []
+    },
+    {
+      "pdf_page": 58,
+      "printed_page": "21",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 2816,
+      "translated_chars": 1205,
+      "figures": [
+        "figure-2.1",
+        "figure-2.2"
+      ]
+    },
+    {
+      "pdf_page": 59,
+      "printed_page": "22",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 2735,
+      "translated_chars": 1099,
+      "figures": []
+    },
+    {
+      "pdf_page": 60,
+      "printed_page": "23",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 2207,
+      "translated_chars": 1196,
+      "figures": []
+    },
+    {
+      "pdf_page": 61,
+      "printed_page": "24",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 3209,
+      "translated_chars": 1289,
+      "figures": []
+    },
+    {
+      "pdf_page": 62,
+      "printed_page": "25",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 3363,
+      "translated_chars": 1373,
+      "figures": []
+    },
+    {
+      "pdf_page": 63,
+      "printed_page": "26",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 2140,
+      "translated_chars": 1470,
+      "figures": []
+    },
+    {
+      "pdf_page": 64,
+      "printed_page": "27",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 2925,
+      "translated_chars": 1150,
+      "figures": []
+    },
+    {
+      "pdf_page": 65,
+      "printed_page": "28",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 2829,
+      "translated_chars": 1184,
+      "figures": []
+    },
+    {
+      "pdf_page": 66,
+      "printed_page": "29",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 3020,
+      "translated_chars": 1143,
+      "figures": []
+    },
+    {
+      "pdf_page": 67,
+      "printed_page": "30",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 2942,
+      "translated_chars": 1231,
+      "figures": []
+    },
+    {
+      "pdf_page": 68,
+      "printed_page": "31",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 3087,
+      "translated_chars": 1159,
+      "figures": [
+        "figure-2.7"
+      ]
+    },
+    {
+      "pdf_page": 69,
+      "printed_page": "32",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 2611,
+      "translated_chars": 1092,
+      "figures": []
+    },
+    {
+      "pdf_page": 70,
+      "printed_page": "33",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 2403,
+      "translated_chars": 1330,
+      "figures": []
+    },
+    {
+      "pdf_page": 71,
+      "printed_page": "34",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 2356,
+      "translated_chars": 1611,
+      "figures": []
+    },
+    {
+      "pdf_page": 72,
+      "printed_page": "35",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 1269,
+      "translated_chars": 809,
+      "figures": []
+    },
+    {
+      "pdf_page": 73,
+      "printed_page": "36",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 2056,
+      "translated_chars": 811,
+      "figures": [
+        "figure-2.9"
+      ]
+    },
+    {
+      "pdf_page": 74,
+      "printed_page": "37",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 2209,
+      "translated_chars": 1301,
+      "figures": []
+    },
+    {
+      "pdf_page": 75,
+      "printed_page": "38",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 1503,
+      "translated_chars": 798,
+      "figures": [
+        "figure-ex-2.7"
+      ]
+    },
+    {
+      "pdf_page": 76,
+      "printed_page": "39",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 2613,
+      "translated_chars": 1128,
+      "figures": []
+    },
+    {
+      "pdf_page": 77,
+      "printed_page": "40",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 2485,
+      "translated_chars": 998,
+      "figures": []
+    },
+    {
+      "pdf_page": 78,
+      "printed_page": "41",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 2160,
+      "translated_chars": 1044,
+      "figures": []
+    },
+    {
+      "pdf_page": 79,
+      "printed_page": "42",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 1465,
+      "translated_chars": 1198,
+      "figures": []
+    },
+    {
+      "pdf_page": 80,
+      "printed_page": "43",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 2729,
+      "translated_chars": 1062,
+      "figures": []
+    },
+    {
+      "pdf_page": 81,
+      "printed_page": "44",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 2343,
+      "translated_chars": 1517,
+      "figures": []
+    },
+    {
+      "pdf_page": 82,
+      "printed_page": "45",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 2850,
+      "translated_chars": 1036,
+      "figures": []
+    },
+    {
+      "pdf_page": 83,
+      "printed_page": "46",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 3209,
+      "translated_chars": 1451,
+      "figures": []
+    },
+    {
+      "pdf_page": 84,
+      "printed_page": "47",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "source_chars": 1078,
+      "translated_chars": 458,
+      "figures": []
+    },
+    {
+      "pdf_page": 85,
+      "printed_page": "48",
+      "file": "02-term-vocabulary-and-postings-lists.md",
+      "blank": true
+    },
+    {
+      "pdf_page": 86,
+      "printed_page": "49",
+      "file": "03-dictionaries-and-tolerant-retrieval.md",
+      "source_chars": 2168,
+      "translated_chars": 762,
+      "figures": []
+    },
+    {
+      "pdf_page": 87,
+      "printed_page": "50",
+      "file": "03-dictionaries-and-tolerant-retrieval.md",
+      "source_chars": 3227,
+      "translated_chars": 1105,
+      "figures": []
+    },
+    {
+      "pdf_page": 88,
+      "printed_page": "51",
+      "file": "03-dictionaries-and-tolerant-retrieval.md",
+      "source_chars": 1343,
+      "translated_chars": 639,
+      "figures": [
+        "figure-3.1"
+      ]
+    },
+    {
+      "pdf_page": 89,
+      "printed_page": "52",
+      "file": "03-dictionaries-and-tolerant-retrieval.md",
+      "source_chars": 2142,
+      "translated_chars": 925,
+      "figures": [
+        "figure-3.2"
+      ]
+    },
+    {
+      "pdf_page": 90,
+      "printed_page": "53",
+      "file": "03-dictionaries-and-tolerant-retrieval.md",
+      "source_chars": 2694,
+      "translated_chars": 1145,
+      "figures": []
+    },
+    {
+      "pdf_page": 91,
+      "printed_page": "54",
+      "file": "03-dictionaries-and-tolerant-retrieval.md",
+      "source_chars": 1493,
+      "translated_chars": 739,
+      "figures": [
+        "figure-3.3"
+      ]
+    },
+    {
+      "pdf_page": 92,
+      "printed_page": "55",
+      "file": "03-dictionaries-and-tolerant-retrieval.md",
+      "source_chars": 2668,
+      "translated_chars": 1174,
+      "figures": [
+        "figure-3.4"
+      ]
+    },
+    {
+      "pdf_page": 93,
+      "printed_page": "56",
+      "file": "03-dictionaries-and-tolerant-retrieval.md",
+      "source_chars": 2052,
+      "translated_chars": 859,
+      "figures": []
+    },
+    {
+      "pdf_page": 94,
+      "printed_page": "57",
+      "file": "03-dictionaries-and-tolerant-retrieval.md",
+      "source_chars": 2396,
+      "translated_chars": 986,
+      "figures": []
+    },
+    {
+      "pdf_page": 95,
+      "printed_page": "58",
+      "file": "03-dictionaries-and-tolerant-retrieval.md",
+      "source_chars": 2936,
+      "translated_chars": 1224,
+      "figures": []
+    },
+    {
+      "pdf_page": 96,
+      "printed_page": "59",
+      "file": "03-dictionaries-and-tolerant-retrieval.md",
+      "source_chars": 1447,
+      "translated_chars": 894,
+      "figures": [
+        "figure-3.6"
+      ]
+    },
+    {
+      "pdf_page": 97,
+      "printed_page": "60",
+      "file": "03-dictionaries-and-tolerant-retrieval.md",
+      "source_chars": 2913,
+      "translated_chars": 1164,
+      "figures": []
+    },
+    {
+      "pdf_page": 98,
+      "printed_page": "61",
+      "file": "03-dictionaries-and-tolerant-retrieval.md",
+      "source_chars": 2186,
+      "translated_chars": 1122,
+      "figures": [
+        "figure-3.7"
+      ]
+    },
+    {
+      "pdf_page": 99,
+      "printed_page": "62",
+      "file": "03-dictionaries-and-tolerant-retrieval.md",
+      "source_chars": 2720,
+      "translated_chars": 1161,
+      "figures": []
+    },
+    {
+      "pdf_page": 100,
+      "printed_page": "63",
+      "file": "03-dictionaries-and-tolerant-retrieval.md",
+      "source_chars": 2677,
+      "translated_chars": 1009,
+      "figures": []
+    },
+    {
+      "pdf_page": 101,
+      "printed_page": "64",
+      "file": "03-dictionaries-and-tolerant-retrieval.md",
+      "source_chars": 1740,
+      "translated_chars": 746,
+      "figures": []
+    },
+    {
+      "pdf_page": 102,
+      "printed_page": "65",
+      "file": "03-dictionaries-and-tolerant-retrieval.md",
+      "source_chars": 2329,
+      "translated_chars": 1080,
+      "figures": []
+    },
+    {
+      "pdf_page": 103,
+      "printed_page": "66",
+      "file": "03-dictionaries-and-tolerant-retrieval.md",
+      "blank": true
+    },
+    {
+      "pdf_page": 104,
+      "printed_page": "67",
+      "file": "04-index-construction.md",
+      "source_chars": 2193,
+      "translated_chars": 833,
+      "figures": []
+    },
+    {
+      "pdf_page": 105,
+      "printed_page": "68",
+      "file": "04-index-construction.md",
+      "source_chars": 2259,
+      "translated_chars": 1249,
+      "figures": []
+    },
+    {
+      "pdf_page": 106,
+      "printed_page": "69",
+      "file": "04-index-construction.md",
+      "source_chars": 2640,
+      "translated_chars": 938,
+      "figures": []
+    },
+    {
+      "pdf_page": 107,
+      "printed_page": "70",
+      "file": "04-index-construction.md",
+      "source_chars": 2335,
+      "translated_chars": 1997,
+      "figures": [
+        "figure-4.1"
+      ]
+    },
+    {
+      "pdf_page": 108,
+      "printed_page": "71",
+      "file": "04-index-construction.md",
+      "source_chars": 2636,
+      "translated_chars": 1296,
+      "figures": []
+    },
+    {
+      "pdf_page": 109,
+      "printed_page": "72",
+      "file": "04-index-construction.md",
+      "source_chars": 1742,
+      "translated_chars": 818,
+      "figures": [
+        "figure-4.3"
+      ]
+    },
+    {
+      "pdf_page": 110,
+      "printed_page": "73",
+      "file": "04-index-construction.md",
+      "source_chars": 2329,
+      "translated_chars": 1284,
+      "figures": []
+    },
+    {
+      "pdf_page": 111,
+      "printed_page": "74",
+      "file": "04-index-construction.md",
+      "source_chars": 2959,
+      "translated_chars": 1061,
+      "figures": []
+    },
+    {
+      "pdf_page": 112,
+      "printed_page": "75",
+      "file": "04-index-construction.md",
+      "source_chars": 3145,
+      "translated_chars": 1175,
+      "figures": []
+    },
+    {
+      "pdf_page": 113,
+      "printed_page": "76",
+      "file": "04-index-construction.md",
+      "source_chars": 2009,
+      "translated_chars": 900,
+      "figures": [
+        "figure-4.5"
+      ]
+    },
+    {
+      "pdf_page": 114,
+      "printed_page": "77",
+      "file": "04-index-construction.md",
+      "source_chars": 2913,
+      "translated_chars": 1917,
+      "figures": []
+    },
+    {
+      "pdf_page": 115,
+      "printed_page": "78",
+      "file": "04-index-construction.md",
+      "source_chars": 2708,
+      "translated_chars": 977,
+      "figures": []
+    },
+    {
+      "pdf_page": 116,
+      "printed_page": "79",
+      "file": "04-index-construction.md",
+      "source_chars": 1970,
+      "translated_chars": 1452,
+      "figures": []
+    },
+    {
+      "pdf_page": 117,
+      "printed_page": "80",
+      "file": "04-index-construction.md",
+      "source_chars": 2487,
+      "translated_chars": 1067,
+      "figures": []
+    },
+    {
+      "pdf_page": 118,
+      "printed_page": "81",
+      "file": "04-index-construction.md",
+      "source_chars": 2584,
+      "translated_chars": 1032,
+      "figures": [
+        "figure-4.8"
+      ]
+    },
+    {
+      "pdf_page": 119,
+      "printed_page": "82",
+      "file": "04-index-construction.md",
+      "source_chars": 1895,
+      "translated_chars": 895,
+      "figures": []
+    },
+    {
+      "pdf_page": 120,
+      "printed_page": "83",
+      "file": "04-index-construction.md",
+      "source_chars": 2815,
+      "translated_chars": 1301,
+      "figures": []
+    },
+    {
+      "pdf_page": 121,
+      "printed_page": "84",
+      "file": "04-index-construction.md",
+      "source_chars": 1474,
+      "translated_chars": 756,
+      "figures": []
+    },
+    {
+      "pdf_page": 122,
+      "printed_page": "85",
+      "file": "05-index-compression.md",
+      "source_chars": 2263,
+      "translated_chars": 757,
+      "figures": []
+    },
+    {
+      "pdf_page": 123,
+      "printed_page": "86",
+      "file": "05-index-compression.md",
+      "source_chars": 2951,
+      "translated_chars": 1224,
+      "figures": []
+    },
+    {
+      "pdf_page": 124,
+      "printed_page": "87",
+      "file": "05-index-compression.md",
+      "source_chars": 2854,
+      "translated_chars": 1537,
+      "figures": []
+    },
+    {
+      "pdf_page": 125,
+      "printed_page": "88",
+      "file": "05-index-compression.md",
+      "source_chars": 1177,
+      "translated_chars": 796,
+      "figures": [
+        "figure-5.1"
+      ]
+    },
+    {
+      "pdf_page": 126,
+      "printed_page": "89",
+      "file": "05-index-compression.md",
+      "source_chars": 2574,
+      "translated_chars": 1107,
+      "figures": []
+    },
+    {
+      "pdf_page": 127,
+      "printed_page": "90",
+      "file": "05-index-compression.md",
+      "source_chars": 1285,
+      "translated_chars": 535,
+      "figures": [
+        "figure-5.2"
+      ]
+    },
+    {
+      "pdf_page": 128,
+      "printed_page": "91",
+      "file": "05-index-compression.md",
+      "source_chars": 2468,
+      "translated_chars": 1147,
+      "figures": []
+    },
+    {
+      "pdf_page": 129,
+      "printed_page": "92",
+      "file": "05-index-compression.md",
+      "source_chars": 1681,
+      "translated_chars": 1626,
+      "figures": []
+    },
+    {
+      "pdf_page": 130,
+      "printed_page": "93",
+      "file": "05-index-compression.md",
+      "source_chars": 1993,
+      "translated_chars": 1119,
+      "figures": [
+        "figure-5.5"
+      ]
+    },
+    {
+      "pdf_page": 131,
+      "printed_page": "94",
+      "file": "05-index-compression.md",
+      "source_chars": 641,
+      "translated_chars": 454,
+      "figures": [
+        "figure-5.6"
+      ]
+    },
+    {
+      "pdf_page": 132,
+      "printed_page": "95",
+      "file": "05-index-compression.md",
+      "source_chars": 2182,
+      "translated_chars": 966,
+      "figures": []
+    },
+    {
+      "pdf_page": 133,
+      "printed_page": "96",
+      "file": "05-index-compression.md",
+      "source_chars": 2501,
+      "translated_chars": 1403,
+      "figures": []
+    },
+    {
+      "pdf_page": 134,
+      "printed_page": "97",
+      "file": "05-index-compression.md",
+      "source_chars": 1198,
+      "translated_chars": 980,
+      "figures": []
+    },
+    {
+      "pdf_page": 135,
+      "printed_page": "98",
+      "file": "05-index-compression.md",
+      "source_chars": 2087,
+      "translated_chars": 1221,
+      "figures": []
+    },
+    {
+      "pdf_page": 136,
+      "printed_page": "99",
+      "file": "05-index-compression.md",
+      "source_chars": 2989,
+      "translated_chars": 1465,
+      "figures": []
+    },
+    {
+      "pdf_page": 137,
+      "printed_page": "100",
+      "file": "05-index-compression.md",
+      "source_chars": 1623,
+      "translated_chars": 841,
+      "figures": [
+        "figure-5.9"
+      ]
+    },
+    {
+      "pdf_page": 138,
+      "printed_page": "101",
+      "file": "05-index-compression.md",
+      "source_chars": 1988,
+      "translated_chars": 1165,
+      "figures": []
+    },
+    {
+      "pdf_page": 139,
+      "printed_page": "102",
+      "file": "05-index-compression.md",
+      "source_chars": 1441,
+      "translated_chars": 944,
+      "figures": []
+    },
+    {
+      "pdf_page": 140,
+      "printed_page": "103",
+      "file": "05-index-compression.md",
+      "source_chars": 2378,
+      "translated_chars": 1225,
+      "figures": []
+    },
+    {
+      "pdf_page": 141,
+      "printed_page": "104",
+      "file": "05-index-compression.md",
+      "source_chars": 2984,
+      "translated_chars": 1356,
+      "figures": []
+    },
+    {
+      "pdf_page": 142,
+      "printed_page": "105",
+      "file": "05-index-compression.md",
+      "source_chars": 2684,
+      "translated_chars": 1333,
+      "figures": []
+    },
+    {
+      "pdf_page": 143,
+      "printed_page": "106",
+      "file": "05-index-compression.md",
+      "source_chars": 3142,
+      "translated_chars": 1432,
+      "figures": []
+    },
+    {
+      "pdf_page": 144,
+      "printed_page": "107",
+      "file": "05-index-compression.md",
+      "source_chars": 2455,
+      "translated_chars": 1018,
+      "figures": []
+    },
+    {
+      "pdf_page": 145,
+      "printed_page": "108",
+      "file": "05-index-compression.md",
+      "blank": true
+    },
+    {
+      "pdf_page": 146,
+      "printed_page": "109",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 2181,
+      "translated_chars": 786,
+      "figures": []
+    },
+    {
+      "pdf_page": 147,
+      "printed_page": "110",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 2924,
+      "translated_chars": 1225,
+      "figures": []
+    },
+    {
+      "pdf_page": 148,
+      "printed_page": "111",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 590,
+      "translated_chars": 1323,
+      "figures": [
+        "figure-6.1",
+        "figure-6.2",
+        "figure-6.3"
+      ]
+    },
+    {
+      "pdf_page": 149,
+      "printed_page": "112",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 2824,
+      "translated_chars": 1173,
+      "figures": []
+    },
+    {
+      "pdf_page": 150,
+      "printed_page": "113",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 1980,
+      "translated_chars": 1028,
+      "figures": []
+    },
+    {
+      "pdf_page": 151,
+      "printed_page": "114",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 2485,
+      "translated_chars": 1218,
+      "figures": []
+    },
+    {
+      "pdf_page": 152,
+      "printed_page": "115",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 1647,
+      "translated_chars": 1196,
+      "figures": []
+    },
+    {
+      "pdf_page": 153,
+      "printed_page": "116",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 1556,
+      "translated_chars": 818,
+      "figures": []
+    },
+    {
+      "pdf_page": 154,
+      "printed_page": "117",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 2919,
+      "translated_chars": 1072,
+      "figures": []
+    },
+    {
+      "pdf_page": 155,
+      "printed_page": "118",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 2443,
+      "translated_chars": 1021,
+      "figures": []
+    },
+    {
+      "pdf_page": 156,
+      "printed_page": "119",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 1806,
+      "translated_chars": 975,
+      "figures": []
+    },
+    {
+      "pdf_page": 157,
+      "printed_page": "120",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 1963,
+      "translated_chars": 829,
+      "figures": []
+    },
+    {
+      "pdf_page": 158,
+      "printed_page": "121",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 1843,
+      "translated_chars": 1162,
+      "figures": [
+        "figure-6.10"
+      ]
+    },
+    {
+      "pdf_page": 159,
+      "printed_page": "122",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 2050,
+      "translated_chars": 1364,
+      "figures": []
+    },
+    {
+      "pdf_page": 160,
+      "printed_page": "123",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 2488,
+      "translated_chars": 1229,
+      "figures": []
+    },
+    {
+      "pdf_page": 161,
+      "printed_page": "124",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 2602,
+      "translated_chars": 1327,
+      "figures": []
+    },
+    {
+      "pdf_page": 162,
+      "printed_page": "125",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 2549,
+      "translated_chars": 1200,
+      "figures": []
+    },
+    {
+      "pdf_page": 163,
+      "printed_page": "126",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 2319,
+      "translated_chars": 883,
+      "figures": []
+    },
+    {
+      "pdf_page": 164,
+      "printed_page": "127",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 2246,
+      "translated_chars": 1271,
+      "figures": []
+    },
+    {
+      "pdf_page": 165,
+      "printed_page": "128",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 2137,
+      "translated_chars": 1407,
+      "figures": []
+    },
+    {
+      "pdf_page": 166,
+      "printed_page": "129",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 3171,
+      "translated_chars": 1059,
+      "figures": []
+    },
+    {
+      "pdf_page": 167,
+      "printed_page": "130",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 1516,
+      "translated_chars": 727,
+      "figures": [
+        "figure-6.16"
+      ]
+    },
+    {
+      "pdf_page": 168,
+      "printed_page": "131",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 1201,
+      "translated_chars": 706,
+      "figures": [
+        "figure-6.17"
+      ]
+    },
+    {
+      "pdf_page": 169,
+      "printed_page": "132",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 2089,
+      "translated_chars": 1163,
+      "figures": []
+    },
+    {
+      "pdf_page": 170,
+      "printed_page": "133",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "source_chars": 2547,
+      "translated_chars": 1298,
+      "figures": []
+    },
+    {
+      "pdf_page": 171,
+      "printed_page": "134",
+      "file": "06-scoring-term-weighting-and-vector-space-model.md",
+      "blank": true
+    },
+    {
+      "pdf_page": 172,
+      "printed_page": "135",
+      "file": "07-computing-scores-in-a-complete-search-system.md",
+      "source_chars": 1987,
+      "translated_chars": 719,
+      "figures": []
+    },
+    {
+      "pdf_page": 173,
+      "printed_page": "136",
+      "file": "07-computing-scores-in-a-complete-search-system.md",
+      "source_chars": 2029,
+      "translated_chars": 1073,
+      "figures": []
+    },
+    {
+      "pdf_page": 174,
+      "printed_page": "137",
+      "file": "07-computing-scores-in-a-complete-search-system.md",
+      "source_chars": 2655,
+      "translated_chars": 918,
+      "figures": []
+    },
+    {
+      "pdf_page": 175,
+      "printed_page": "138",
+      "file": "07-computing-scores-in-a-complete-search-system.md",
+      "source_chars": 2850,
+      "translated_chars": 1087,
+      "figures": []
+    },
+    {
+      "pdf_page": 176,
+      "printed_page": "139",
+      "file": "07-computing-scores-in-a-complete-search-system.md",
+      "source_chars": 1783,
+      "translated_chars": 911,
+      "figures": [
+        "figure-7.2"
+      ]
+    },
+    {
+      "pdf_page": 177,
+      "printed_page": "140",
+      "file": "07-computing-scores-in-a-complete-search-system.md",
+      "source_chars": 3124,
+      "translated_chars": 1159,
+      "figures": []
+    },
+    {
+      "pdf_page": 178,
+      "printed_page": "141",
+      "file": "07-computing-scores-in-a-complete-search-system.md",
+      "source_chars": 2599,
+      "translated_chars": 980,
+      "figures": []
+    },
+    {
+      "pdf_page": 179,
+      "printed_page": "142",
+      "file": "07-computing-scores-in-a-complete-search-system.md",
+      "source_chars": 1281,
+      "translated_chars": 591,
+      "figures": [
+        "figure-7.3"
+      ]
+    },
+    {
+      "pdf_page": 180,
+      "printed_page": "143",
+      "file": "07-computing-scores-in-a-complete-search-system.md",
+      "source_chars": 2722,
+      "translated_chars": 1104,
+      "figures": []
+    },
+    {
+      "pdf_page": 181,
+      "printed_page": "144",
+      "file": "07-computing-scores-in-a-complete-search-system.md",
+      "source_chars": 584,
+      "translated_chars": 416,
+      "figures": [
+        "figure-7.4"
+      ]
+    },
+    {
+      "pdf_page": 182,
+      "printed_page": "145",
+      "file": "07-computing-scores-in-a-complete-search-system.md",
+      "source_chars": 2838,
+      "translated_chars": 1148,
+      "figures": []
+    },
+    {
+      "pdf_page": 183,
+      "printed_page": "146",
+      "file": "07-computing-scores-in-a-complete-search-system.md",
+      "source_chars": 2971,
+      "translated_chars": 897,
+      "figures": []
+    },
+    {
+      "pdf_page": 184,
+      "printed_page": "147",
+      "file": "07-computing-scores-in-a-complete-search-system.md",
+      "source_chars": 1389,
+      "translated_chars": 979,
+      "figures": [
+        "figure-7.5"
+      ]
+    },
+    {
+      "pdf_page": 185,
+      "printed_page": "148",
+      "file": "07-computing-scores-in-a-complete-search-system.md",
+      "source_chars": 2780,
+      "translated_chars": 937,
+      "figures": []
+    },
+    {
+      "pdf_page": 186,
+      "printed_page": "149",
+      "file": "07-computing-scores-in-a-complete-search-system.md",
+      "source_chars": 2712,
+      "translated_chars": 1195,
+      "figures": []
+    },
+    {
+      "pdf_page": 187,
+      "printed_page": "150",
+      "file": "07-computing-scores-in-a-complete-search-system.md",
+      "source_chars": 316,
+      "translated_chars": 152,
+      "figures": []
+    },
+    {
+      "pdf_page": 188,
+      "printed_page": "151",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 2339,
+      "translated_chars": 685,
+      "figures": []
+    },
+    {
+      "pdf_page": 189,
+      "printed_page": "152",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 2603,
+      "translated_chars": 957,
+      "figures": []
+    },
+    {
+      "pdf_page": 190,
+      "printed_page": "153",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 2812,
+      "translated_chars": 920,
+      "figures": []
+    },
+    {
+      "pdf_page": 191,
+      "printed_page": "154",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 2524,
+      "translated_chars": 973,
+      "figures": []
+    },
+    {
+      "pdf_page": 192,
+      "printed_page": "155",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 2136,
+      "translated_chars": 1288,
+      "figures": []
+    },
+    {
+      "pdf_page": 193,
+      "printed_page": "156",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 2747,
+      "translated_chars": 1216,
+      "figures": []
+    },
+    {
+      "pdf_page": 194,
+      "printed_page": "157",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 1552,
+      "translated_chars": 660,
+      "figures": [
+        "figure-8.1"
+      ]
+    },
+    {
+      "pdf_page": 195,
+      "printed_page": "158",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 1408,
+      "translated_chars": 665,
+      "figures": [
+        "figure-8.2"
+      ]
+    },
+    {
+      "pdf_page": 196,
+      "printed_page": "159",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 2088,
+      "translated_chars": 990,
+      "figures": []
+    },
+    {
+      "pdf_page": 197,
+      "printed_page": "160",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 1418,
+      "translated_chars": 724,
+      "figures": [
+        "figure-8.3"
+      ]
+    },
+    {
+      "pdf_page": 198,
+      "printed_page": "161",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 3355,
+      "translated_chars": 1179,
+      "figures": []
+    },
+    {
+      "pdf_page": 199,
+      "printed_page": "162",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 1973,
+      "translated_chars": 923,
+      "figures": [
+        "figure-8.4"
+      ]
+    },
+    {
+      "pdf_page": 200,
+      "printed_page": "163",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 1884,
+      "translated_chars": 1117,
+      "figures": []
+    },
+    {
+      "pdf_page": 201,
+      "printed_page": "164",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 2635,
+      "translated_chars": 985,
+      "figures": []
+    },
+    {
+      "pdf_page": 202,
+      "printed_page": "165",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 2063,
+      "translated_chars": 1117,
+      "figures": []
+    },
+    {
+      "pdf_page": 203,
+      "printed_page": "166",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 3087,
+      "translated_chars": 961,
+      "figures": []
+    },
+    {
+      "pdf_page": 204,
+      "printed_page": "167",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 2994,
+      "translated_chars": 975,
+      "figures": []
+    },
+    {
+      "pdf_page": 205,
+      "printed_page": "168",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 1661,
+      "translated_chars": 742,
+      "figures": []
+    },
+    {
+      "pdf_page": 206,
+      "printed_page": "169",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 2764,
+      "translated_chars": 802,
+      "figures": []
+    },
+    {
+      "pdf_page": 207,
+      "printed_page": "170",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 2945,
+      "translated_chars": 985,
+      "figures": []
+    },
+    {
+      "pdf_page": 208,
+      "printed_page": "171",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 3204,
+      "translated_chars": 1010,
+      "figures": []
+    },
+    {
+      "pdf_page": 209,
+      "printed_page": "172",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 2950,
+      "translated_chars": 1903,
+      "figures": []
+    },
+    {
+      "pdf_page": 210,
+      "printed_page": "173",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 2847,
+      "translated_chars": 1060,
+      "figures": []
+    },
+    {
+      "pdf_page": 211,
+      "printed_page": "174",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 3117,
+      "translated_chars": 1438,
+      "figures": []
+    },
+    {
+      "pdf_page": 212,
+      "printed_page": "175",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "source_chars": 792,
+      "translated_chars": 349,
+      "figures": []
+    },
+    {
+      "pdf_page": 213,
+      "printed_page": "176",
+      "file": "08-evaluation-in-information-retrieval.md",
+      "blank": true
+    },
+    {
+      "pdf_page": 214,
+      "printed_page": "177",
+      "file": "09-relevance-feedback-and-query-expansion.md",
+      "source_chars": 1861,
+      "translated_chars": 730,
+      "figures": []
+    },
+    {
+      "pdf_page": 215,
+      "printed_page": "178",
+      "file": "09-relevance-feedback-and-query-expansion.md",
+      "source_chars": 2342,
+      "translated_chars": 796,
+      "figures": []
+    },
+    {
+      "pdf_page": 216,
+      "printed_page": "179",
+      "file": "09-relevance-feedback-and-query-expansion.md",
+      "source_chars": 511,
+      "translated_chars": 331,
+      "figures": [
+        "figure-9.1"
+      ]
+    },
+    {
+      "pdf_page": 217,
+      "printed_page": "180",
+      "file": "09-relevance-feedback-and-query-expansion.md",
+      "source_chars": 2057,
+      "translated_chars": 2800,
+      "figures": []
+    },
+    {
+      "pdf_page": 218,
+      "printed_page": "181",
+      "file": "09-relevance-feedback-and-query-expansion.md",
+      "source_chars": 1300,
+      "translated_chars": 946,
+      "figures": [
+        "figure-9.3"
+      ]
+    },
+    {
+      "pdf_page": 219,
+      "printed_page": "182",
+      "file": "09-relevance-feedback-and-query-expansion.md",
+      "source_chars": 1590,
+      "translated_chars": 946,
+      "figures": [
+        "figure-9.4"
+      ]
+    },
+    {
+      "pdf_page": 220,
+      "printed_page": "183",
+      "file": "09-relevance-feedback-and-query-expansion.md",
+      "source_chars": 2785,
+      "translated_chars": 1075,
+      "figures": []
+    },
+    {
+      "pdf_page": 221,
+      "printed_page": "184",
+      "file": "09-relevance-feedback-and-query-expansion.md",
+      "source_chars": 2628,
+      "translated_chars": 1007,
+      "figures": []
+    },
+    {
+      "pdf_page": 222,
+      "printed_page": "185",
+      "file": "09-relevance-feedback-and-query-expansion.md",
+      "source_chars": 2930,
+      "translated_chars": 971,
+      "figures": []
+    },
+    {
+      "pdf_page": 223,
+      "printed_page": "186",
+      "file": "09-relevance-feedback-and-query-expansion.md",
+      "source_chars": 2811,
+      "translated_chars": 891,
+      "figures": []
+    },
+    {
+      "pdf_page": 224,
+      "printed_page": "187",
+      "file": "09-relevance-feedback-and-query-expansion.md",
+      "source_chars": 2443,
+      "translated_chars": 947,
+      "figures": []
+    },
+    {
+      "pdf_page": 225,
+      "printed_page": "188",
+      "file": "09-relevance-feedback-and-query-expansion.md",
+      "source_chars": 2430,
+      "translated_chars": 906,
+      "figures": []
+    },
+    {
+      "pdf_page": 226,
+      "printed_page": "189",
+      "file": "09-relevance-feedback-and-query-expansion.md",
+      "source_chars": 2356,
+      "translated_chars": 1031,
+      "figures": []
+    },
+    {
+      "pdf_page": 227,
+      "printed_page": "190",
+      "file": "09-relevance-feedback-and-query-expansion.md",
+      "source_chars": 3561,
+      "translated_chars": 847,
+      "figures": [
+        "figure-9.6"
+      ]
+    },
+    {
+      "pdf_page": 228,
+      "printed_page": "191",
+      "file": "09-relevance-feedback-and-query-expansion.md",
+      "source_chars": 2233,
+      "translated_chars": 1153,
+      "figures": []
+    },
+    {
+      "pdf_page": 229,
+      "printed_page": "192",
+      "file": "09-relevance-feedback-and-query-expansion.md",
+      "source_chars": 2532,
+      "translated_chars": 1388,
+      "figures": []
+    },
+    {
+      "pdf_page": 230,
+      "printed_page": "193",
+      "file": "09-relevance-feedback-and-query-expansion.md",
+      "source_chars": 2850,
+      "translated_chars": 1083,
+      "figures": []
+    },
+    {
+      "pdf_page": 231,
+      "printed_page": "194",
+      "file": "09-relevance-feedback-and-query-expansion.md",
+      "source_chars": 929,
+      "translated_chars": 500,
+      "figures": []
+    },
+    {
+      "pdf_page": 232,
+      "printed_page": "195",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 2312,
+      "translated_chars": 946,
+      "figures": []
+    },
+    {
+      "pdf_page": 233,
+      "printed_page": "196",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 2869,
+      "translated_chars": 1247,
+      "figures": []
+    },
+    {
+      "pdf_page": 234,
+      "printed_page": "197",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 2908,
+      "translated_chars": 1174,
+      "figures": []
+    },
+    {
+      "pdf_page": 235,
+      "printed_page": "198",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 580,
+      "translated_chars": 518,
+      "figures": [
+        "figure-10.2"
+      ]
+    },
+    {
+      "pdf_page": 236,
+      "printed_page": "199",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 2243,
+      "translated_chars": 1100,
+      "figures": [
+        "figure-10.3"
+      ]
+    },
+    {
+      "pdf_page": 237,
+      "printed_page": "200",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 2206,
+      "translated_chars": 1179,
+      "figures": [
+        "figure-10.4"
+      ]
+    },
+    {
+      "pdf_page": 238,
+      "printed_page": "201",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 2958,
+      "translated_chars": 1236,
+      "figures": []
+    },
+    {
+      "pdf_page": 239,
+      "printed_page": "202",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 2128,
+      "translated_chars": 1080,
+      "figures": [
+        "figure-10.5"
+      ]
+    },
+    {
+      "pdf_page": 240,
+      "printed_page": "203",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 2761,
+      "translated_chars": 937,
+      "figures": []
+    },
+    {
+      "pdf_page": 241,
+      "printed_page": "204",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 1976,
+      "translated_chars": 978,
+      "figures": [
+        "figure-10.6"
+      ]
+    },
+    {
+      "pdf_page": 242,
+      "printed_page": "205",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 3006,
+      "translated_chars": 1070,
+      "figures": []
+    },
+    {
+      "pdf_page": 243,
+      "printed_page": "206",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 1850,
+      "translated_chars": 806,
+      "figures": [
+        "figure-10.7"
+      ]
+    },
+    {
+      "pdf_page": 244,
+      "printed_page": "207",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 1830,
+      "translated_chars": 799,
+      "figures": [
+        "figure-10.8"
+      ]
+    },
+    {
+      "pdf_page": 245,
+      "printed_page": "208",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 2612,
+      "translated_chars": 1877,
+      "figures": []
+    },
+    {
+      "pdf_page": 246,
+      "printed_page": "209",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 1474,
+      "translated_chars": 990,
+      "figures": [
+        "figure-10.10"
+      ]
+    },
+    {
+      "pdf_page": 247,
+      "printed_page": "210",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 2570,
+      "translated_chars": 1388,
+      "figures": []
+    },
+    {
+      "pdf_page": 248,
+      "printed_page": "211",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 1401,
+      "translated_chars": 1174,
+      "figures": [
+        "figure-10.11"
+      ]
+    },
+    {
+      "pdf_page": 249,
+      "printed_page": "212",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 2534,
+      "translated_chars": 1219,
+      "figures": []
+    },
+    {
+      "pdf_page": 250,
+      "printed_page": "213",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 2568,
+      "translated_chars": 1063,
+      "figures": []
+    },
+    {
+      "pdf_page": 251,
+      "printed_page": "214",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 2628,
+      "translated_chars": 1249,
+      "figures": []
+    },
+    {
+      "pdf_page": 252,
+      "printed_page": "215",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 2700,
+      "translated_chars": 1016,
+      "figures": []
+    },
+    {
+      "pdf_page": 253,
+      "printed_page": "216",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 2990,
+      "translated_chars": 1628,
+      "figures": []
+    },
+    {
+      "pdf_page": 254,
+      "printed_page": "217",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 2931,
+      "translated_chars": 1512,
+      "figures": []
+    },
+    {
+      "pdf_page": 255,
+      "printed_page": "218",
+      "file": "10-xml-retrieval.md",
+      "source_chars": 1713,
+      "translated_chars": 789,
+      "figures": []
+    },
+    {
+      "pdf_page": 256,
+      "printed_page": "219",
+      "file": "11-probabilistic-information-retrieval.md",
+      "source_chars": 2378,
+      "translated_chars": 789,
+      "figures": []
+    },
+    {
+      "pdf_page": 257,
+      "printed_page": "220",
+      "file": "11-probabilistic-information-retrieval.md",
+      "source_chars": 2303,
+      "translated_chars": 1076,
+      "figures": []
+    },
+    {
+      "pdf_page": 258,
+      "printed_page": "221",
+      "file": "11-probabilistic-information-retrieval.md",
+      "source_chars": 2604,
+      "translated_chars": 1026,
+      "figures": []
+    },
+    {
+      "pdf_page": 259,
+      "printed_page": "222",
+      "file": "11-probabilistic-information-retrieval.md",
+      "source_chars": 2625,
+      "translated_chars": 1266,
+      "figures": []
+    },
+    {
+      "pdf_page": 260,
+      "printed_page": "223",
+      "file": "11-probabilistic-information-retrieval.md",
+      "source_chars": 2663,
+      "translated_chars": 1392,
+      "figures": []
+    },
+    {
+      "pdf_page": 261,
+      "printed_page": "224",
+      "file": "11-probabilistic-information-retrieval.md",
+      "source_chars": 2272,
+      "translated_chars": 1655,
+      "figures": []
+    },
+    {
+      "pdf_page": 262,
+      "printed_page": "225",
+      "file": "11-probabilistic-information-retrieval.md",
+      "source_chars": 2571,
+      "translated_chars": 1432,
+      "figures": []
+    },
+    {
+      "pdf_page": 263,
+      "printed_page": "226",
+      "file": "11-probabilistic-information-retrieval.md",
+      "source_chars": 2540,
+      "translated_chars": 1406,
+      "figures": []
+    },
+    {
+      "pdf_page": 264,
+      "printed_page": "227",
+      "file": "11-probabilistic-information-retrieval.md",
+      "source_chars": 2608,
+      "translated_chars": 1118,
+      "figures": []
+    },
+    {
+      "pdf_page": 265,
+      "printed_page": "228",
+      "file": "11-probabilistic-information-retrieval.md",
+      "source_chars": 2062,
+      "translated_chars": 1008,
+      "figures": []
+    },
+    {
+      "pdf_page": 266,
+      "printed_page": "229",
+      "file": "11-probabilistic-information-retrieval.md",
+      "source_chars": 2189,
+      "translated_chars": 931,
+      "figures": []
+    },
+    {
+      "pdf_page": 267,
+      "printed_page": "230",
+      "file": "11-probabilistic-information-retrieval.md",
+      "source_chars": 2018,
+      "translated_chars": 1011,
+      "figures": []
+    },
+    {
+      "pdf_page": 268,
+      "printed_page": "231",
+      "file": "11-probabilistic-information-retrieval.md",
+      "source_chars": 2634,
+      "translated_chars": 1108,
+      "figures": []
+    },
+    {
+      "pdf_page": 269,
+      "printed_page": "232",
+      "file": "11-probabilistic-information-retrieval.md",
+      "source_chars": 1505,
+      "translated_chars": 815,
+      "figures": [
+        "figure-11.1"
+      ]
+    },
+    {
+      "pdf_page": 270,
+      "printed_page": "233",
+      "file": "11-probabilistic-information-retrieval.md",
+      "source_chars": 2666,
+      "translated_chars": 1404,
+      "figures": []
+    },
+    {
+      "pdf_page": 271,
+      "printed_page": "234",
+      "file": "11-probabilistic-information-retrieval.md",
+      "source_chars": 2729,
+      "translated_chars": 1045,
+      "figures": []
+    },
+    {
+      "pdf_page": 272,
+      "printed_page": "235",
+      "file": "11-probabilistic-information-retrieval.md",
+      "source_chars": 2586,
+      "translated_chars": 1204,
+      "figures": []
+    },
+    {
+      "pdf_page": 273,
+      "printed_page": "236",
+      "file": "11-probabilistic-information-retrieval.md",
+      "blank": true
+    },
+    {
+      "pdf_page": 274,
+      "printed_page": "237",
+      "file": "12-language-models-for-information-retrieval.md",
+      "source_chars": 1982,
+      "translated_chars": 732,
+      "figures": []
+    },
+    {
+      "pdf_page": 275,
+      "printed_page": "238",
+      "file": "12-language-models-for-information-retrieval.md",
+      "source_chars": 1796,
+      "translated_chars": 1049,
+      "figures": [
+        "figure-12.1",
+        "figure-12.2"
+      ]
+    },
+    {
+      "pdf_page": 276,
+      "printed_page": "239",
+      "file": "12-language-models-for-information-retrieval.md",
+      "source_chars": 2377,
+      "translated_chars": 1368,
+      "figures": []
+    },
+    {
+      "pdf_page": 277,
+      "printed_page": "240",
+      "file": "12-language-models-for-information-retrieval.md",
+      "source_chars": 2279,
+      "translated_chars": 1210,
+      "figures": []
+    },
+    {
+      "pdf_page": 278,
+      "printed_page": "241",
+      "file": "12-language-models-for-information-retrieval.md",
+      "source_chars": 2914,
+      "translated_chars": 1186,
+      "figures": []
+    },
+    {
+      "pdf_page": 279,
+      "printed_page": "242",
+      "file": "12-language-models-for-information-retrieval.md",
+      "source_chars": 2434,
+      "translated_chars": 932,
+      "figures": []
+    },
+    {
+      "pdf_page": 280,
+      "printed_page": "243",
+      "file": "12-language-models-for-information-retrieval.md",
+      "source_chars": 2446,
+      "translated_chars": 961,
+      "figures": []
+    },
+    {
+      "pdf_page": 281,
+      "printed_page": "244",
+      "file": "12-language-models-for-information-retrieval.md",
+      "source_chars": 2864,
+      "translated_chars": 1031,
+      "figures": []
+    },
+    {
+      "pdf_page": 282,
+      "printed_page": "245",
+      "file": "12-language-models-for-information-retrieval.md",
+      "source_chars": 2786,
+      "translated_chars": 1175,
+      "figures": []
+    },
+    {
+      "pdf_page": 283,
+      "printed_page": "246",
+      "file": "12-language-models-for-information-retrieval.md",
+      "source_chars": 2162,
+      "translated_chars": 1178,
+      "figures": []
+    },
+    {
+      "pdf_page": 284,
+      "printed_page": "247",
+      "file": "12-language-models-for-information-retrieval.md",
+      "source_chars": 1845,
+      "translated_chars": 1220,
+      "figures": []
+    },
+    {
+      "pdf_page": 285,
+      "printed_page": "248",
+      "file": "12-language-models-for-information-retrieval.md",
+      "source_chars": 2190,
+      "translated_chars": 1182,
+      "figures": []
+    },
+    {
+      "pdf_page": 286,
+      "printed_page": "249",
+      "file": "12-language-models-for-information-retrieval.md",
+      "source_chars": 3234,
+      "translated_chars": 1019,
+      "figures": []
+    },
+    {
+      "pdf_page": 287,
+      "printed_page": "250",
+      "file": "12-language-models-for-information-retrieval.md",
+      "source_chars": 2094,
+      "translated_chars": 880,
+      "figures": [
+        "figure-12.5"
+      ]
+    },
+    {
+      "pdf_page": 288,
+      "printed_page": "251",
+      "file": "12-language-models-for-information-retrieval.md",
+      "source_chars": 2765,
+      "translated_chars": 1141,
+      "figures": []
+    },
+    {
+      "pdf_page": 289,
+      "printed_page": "252",
+      "file": "12-language-models-for-information-retrieval.md",
+      "source_chars": 2846,
+      "translated_chars": 1207,
+      "figures": []
+    },
+    {
+      "pdf_page": 290,
+      "printed_page": "253",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2532,
+      "translated_chars": 1097,
+      "figures": []
+    },
+    {
+      "pdf_page": 291,
+      "printed_page": "254",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2676,
+      "translated_chars": 1081,
+      "figures": []
+    },
+    {
+      "pdf_page": 292,
+      "printed_page": "255",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 3205,
+      "translated_chars": 1085,
+      "figures": []
+    },
+    {
+      "pdf_page": 293,
+      "printed_page": "256",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2721,
+      "translated_chars": 1510,
+      "figures": []
+    },
+    {
+      "pdf_page": 294,
+      "printed_page": "257",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2074,
+      "translated_chars": 1268,
+      "figures": [
+        "figure-13.1"
+      ]
+    },
+    {
+      "pdf_page": 295,
+      "printed_page": "258",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2383,
+      "translated_chars": 1409,
+      "figures": []
+    },
+    {
+      "pdf_page": 296,
+      "printed_page": "259",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2435,
+      "translated_chars": 1227,
+      "figures": []
+    },
+    {
+      "pdf_page": 297,
+      "printed_page": "260",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 1710,
+      "translated_chars": 1137,
+      "figures": []
+    },
+    {
+      "pdf_page": 298,
+      "printed_page": "261",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 1923,
+      "translated_chars": 1645,
+      "figures": []
+    },
+    {
+      "pdf_page": 299,
+      "printed_page": "262",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2497,
+      "translated_chars": 1340,
+      "figures": []
+    },
+    {
+      "pdf_page": 300,
+      "printed_page": "263",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 1816,
+      "translated_chars": 1098,
+      "figures": []
+    },
+    {
+      "pdf_page": 301,
+      "printed_page": "264",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2412,
+      "translated_chars": 1855,
+      "figures": []
+    },
+    {
+      "pdf_page": 302,
+      "printed_page": "265",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2245,
+      "translated_chars": 1379,
+      "figures": []
+    },
+    {
+      "pdf_page": 303,
+      "printed_page": "266",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 1974,
+      "translated_chars": 1228,
+      "figures": [
+        "figure-13.4"
+      ]
+    },
+    {
+      "pdf_page": 304,
+      "printed_page": "267",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2193,
+      "translated_chars": 1224,
+      "figures": [
+        "figure-13.5"
+      ]
+    },
+    {
+      "pdf_page": 305,
+      "printed_page": "268",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2650,
+      "translated_chars": 2094,
+      "figures": []
+    },
+    {
+      "pdf_page": 306,
+      "printed_page": "269",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2829,
+      "translated_chars": 1256,
+      "figures": []
+    },
+    {
+      "pdf_page": 307,
+      "printed_page": "270",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2347,
+      "translated_chars": 1325,
+      "figures": []
+    },
+    {
+      "pdf_page": 308,
+      "printed_page": "271",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2161,
+      "translated_chars": 945,
+      "figures": []
+    },
+    {
+      "pdf_page": 309,
+      "printed_page": "272",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2595,
+      "translated_chars": 1512,
+      "figures": []
+    },
+    {
+      "pdf_page": 310,
+      "printed_page": "273",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2290,
+      "translated_chars": 1491,
+      "figures": []
+    },
+    {
+      "pdf_page": 311,
+      "printed_page": "274",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2161,
+      "translated_chars": 1768,
+      "figures": []
+    },
+    {
+      "pdf_page": 312,
+      "printed_page": "275",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 1363,
+      "translated_chars": 861,
+      "figures": [
+        "figure-13.8"
+      ]
+    },
+    {
+      "pdf_page": 313,
+      "printed_page": "276",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 1995,
+      "translated_chars": 1807,
+      "figures": []
+    },
+    {
+      "pdf_page": 314,
+      "printed_page": "277",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2373,
+      "translated_chars": 969,
+      "figures": []
+    },
+    {
+      "pdf_page": 315,
+      "printed_page": "278",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2732,
+      "translated_chars": 993,
+      "figures": []
+    },
+    {
+      "pdf_page": 316,
+      "printed_page": "279",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2467,
+      "translated_chars": 1196,
+      "figures": []
+    },
+    {
+      "pdf_page": 317,
+      "printed_page": "280",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2783,
+      "translated_chars": 1245,
+      "figures": []
+    },
+    {
+      "pdf_page": 318,
+      "printed_page": "281",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2455,
+      "translated_chars": 1866,
+      "figures": []
+    },
+    {
+      "pdf_page": 319,
+      "printed_page": "282",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 1749,
+      "translated_chars": 1522,
+      "figures": []
+    },
+    {
+      "pdf_page": 320,
+      "printed_page": "283",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 3326,
+      "translated_chars": 1065,
+      "figures": []
+    },
+    {
+      "pdf_page": 321,
+      "printed_page": "284",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2207,
+      "translated_chars": 1040,
+      "figures": []
+    },
+    {
+      "pdf_page": 322,
+      "printed_page": "285",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 2530,
+      "translated_chars": 1397,
+      "figures": []
+    },
+    {
+      "pdf_page": 323,
+      "printed_page": "286",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 3246,
+      "translated_chars": 1569,
+      "figures": []
+    },
+    {
+      "pdf_page": 324,
+      "printed_page": "287",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "source_chars": 333,
+      "translated_chars": 156,
+      "figures": []
+    },
+    {
+      "pdf_page": 325,
+      "printed_page": "288",
+      "file": "13-text-classification-and-naive-bayes.md",
+      "blank": true
+    },
+    {
+      "pdf_page": 326,
+      "printed_page": "289",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 2327,
+      "translated_chars": 892,
+      "figures": []
+    },
+    {
+      "pdf_page": 327,
+      "printed_page": "290",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 1689,
+      "translated_chars": 785,
+      "figures": [
+        "figure-14.1"
+      ]
+    },
+    {
+      "pdf_page": 328,
+      "printed_page": "291",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 2000,
+      "translated_chars": 968,
+      "figures": [
+        "figure-14.2"
+      ]
+    },
+    {
+      "pdf_page": 329,
+      "printed_page": "292",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 2700,
+      "translated_chars": 1171,
+      "figures": []
+    },
+    {
+      "pdf_page": 330,
+      "printed_page": "293",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 1438,
+      "translated_chars": 864,
+      "figures": [
+        "figure-14.3"
+      ]
+    },
+    {
+      "pdf_page": 331,
+      "printed_page": "294",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 2183,
+      "translated_chars": 1824,
+      "figures": []
+    },
+    {
+      "pdf_page": 332,
+      "printed_page": "295",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 1334,
+      "translated_chars": 706,
+      "figures": [
+        "figure-14.5"
+      ]
+    },
+    {
+      "pdf_page": 333,
+      "printed_page": "296",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 2517,
+      "translated_chars": 1309,
+      "figures": []
+    },
+    {
+      "pdf_page": 334,
+      "printed_page": "297",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 1615,
+      "translated_chars": 734,
+      "figures": [
+        "figure-14.6"
+      ]
+    },
+    {
+      "pdf_page": 335,
+      "printed_page": "298",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 2328,
+      "translated_chars": 1184,
+      "figures": []
+    },
+    {
+      "pdf_page": 336,
+      "printed_page": "299",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 2259,
+      "translated_chars": 1426,
+      "figures": []
+    },
+    {
+      "pdf_page": 337,
+      "printed_page": "300",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 3303,
+      "translated_chars": 1327,
+      "figures": []
+    },
+    {
+      "pdf_page": 338,
+      "printed_page": "301",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 1821,
+      "translated_chars": 773,
+      "figures": [
+        "figure-14.8"
+      ]
+    },
+    {
+      "pdf_page": 339,
+      "printed_page": "302",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 2069,
+      "translated_chars": 1284,
+      "figures": []
+    },
+    {
+      "pdf_page": 340,
+      "printed_page": "303",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 2611,
+      "translated_chars": 1629,
+      "figures": []
+    },
+    {
+      "pdf_page": 341,
+      "printed_page": "304",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 1528,
+      "translated_chars": 676,
+      "figures": [
+        "figure-14.10"
+      ]
+    },
+    {
+      "pdf_page": 342,
+      "printed_page": "305",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 1270,
+      "translated_chars": 588,
+      "figures": [
+        "figure-14.11"
+      ]
+    },
+    {
+      "pdf_page": 343,
+      "printed_page": "306",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 2952,
+      "translated_chars": 1158,
+      "figures": []
+    },
+    {
+      "pdf_page": 344,
+      "printed_page": "307",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 1614,
+      "translated_chars": 713,
+      "figures": [
+        "figure-14.12"
+      ]
+    },
+    {
+      "pdf_page": 345,
+      "printed_page": "308",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 2395,
+      "translated_chars": 1150,
+      "figures": []
+    },
+    {
+      "pdf_page": 346,
+      "printed_page": "309",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 2895,
+      "translated_chars": 1301,
+      "figures": []
+    },
+    {
+      "pdf_page": 347,
+      "printed_page": "310",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 1678,
+      "translated_chars": 1751,
+      "figures": []
+    },
+    {
+      "pdf_page": 348,
+      "printed_page": "311",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 3047,
+      "translated_chars": 1507,
+      "figures": []
+    },
+    {
+      "pdf_page": 349,
+      "printed_page": "312",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 3303,
+      "translated_chars": 1110,
+      "figures": []
+    },
+    {
+      "pdf_page": 350,
+      "printed_page": "313",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 2901,
+      "translated_chars": 915,
+      "figures": []
+    },
+    {
+      "pdf_page": 351,
+      "printed_page": "314",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 2993,
+      "translated_chars": 1319,
+      "figures": []
+    },
+    {
+      "pdf_page": 352,
+      "printed_page": "315",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 2851,
+      "translated_chars": 1423,
+      "figures": []
+    },
+    {
+      "pdf_page": 353,
+      "printed_page": "316",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 1492,
+      "translated_chars": 901,
+      "figures": [
+        "figure-14.14"
+      ]
+    },
+    {
+      "pdf_page": 354,
+      "printed_page": "317",
+      "file": "14-vector-space-classification.md",
+      "source_chars": 1802,
+      "translated_chars": 914,
+      "figures": [
+        "figure-14.15"
+      ]
+    },
+    {
+      "pdf_page": 355,
+      "printed_page": "318",
+      "file": "14-vector-space-classification.md",
+      "blank": true
+    },
+    {
+      "pdf_page": 356,
+      "printed_page": "319",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 2072,
+      "translated_chars": 711,
+      "figures": []
+    },
+    {
+      "pdf_page": 357,
+      "printed_page": "320",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 1675,
+      "translated_chars": 640,
+      "figures": [
+        "figure-15.1"
+      ]
+    },
+    {
+      "pdf_page": 358,
+      "printed_page": "321",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 1533,
+      "translated_chars": 538,
+      "figures": [
+        "figure-15.2"
+      ]
+    },
+    {
+      "pdf_page": 359,
+      "printed_page": "322",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 2987,
+      "translated_chars": 1414,
+      "figures": []
+    },
+    {
+      "pdf_page": 360,
+      "printed_page": "323",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 1213,
+      "translated_chars": 732,
+      "figures": [
+        "figure-15.3"
+      ]
+    },
+    {
+      "pdf_page": 361,
+      "printed_page": "324",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 2225,
+      "translated_chars": 1278,
+      "figures": []
+    },
+    {
+      "pdf_page": 362,
+      "printed_page": "325",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 2175,
+      "translated_chars": 1093,
+      "figures": [
+        "figure-15.4"
+      ]
+    },
+    {
+      "pdf_page": 363,
+      "printed_page": "326",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 2041,
+      "translated_chars": 1096,
+      "figures": []
+    },
+    {
+      "pdf_page": 364,
+      "printed_page": "327",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 1330,
+      "translated_chars": 732,
+      "figures": [
+        "figure-15.5"
+      ]
+    },
+    {
+      "pdf_page": 365,
+      "printed_page": "328",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 2601,
+      "translated_chars": 1375,
+      "figures": []
+    },
+    {
+      "pdf_page": 366,
+      "printed_page": "329",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 2192,
+      "translated_chars": 1759,
+      "figures": []
+    },
+    {
+      "pdf_page": 367,
+      "printed_page": "330",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 2841,
+      "translated_chars": 1097,
+      "figures": []
+    },
+    {
+      "pdf_page": 368,
+      "printed_page": "331",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 1043,
+      "translated_chars": 441,
+      "figures": [
+        "figure-15.6"
+      ]
+    },
+    {
+      "pdf_page": 369,
+      "printed_page": "332",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 2438,
+      "translated_chars": 1808,
+      "figures": []
+    },
+    {
+      "pdf_page": 370,
+      "printed_page": "333",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 2697,
+      "translated_chars": 995,
+      "figures": []
+    },
+    {
+      "pdf_page": 371,
+      "printed_page": "334",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 2594,
+      "translated_chars": 1630,
+      "figures": []
+    },
+    {
+      "pdf_page": 372,
+      "printed_page": "335",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 2996,
+      "translated_chars": 1087,
+      "figures": []
+    },
+    {
+      "pdf_page": 373,
+      "printed_page": "336",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 3326,
+      "translated_chars": 1120,
+      "figures": []
+    },
+    {
+      "pdf_page": 374,
+      "printed_page": "337",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 2937,
+      "translated_chars": 974,
+      "figures": []
+    },
+    {
+      "pdf_page": 375,
+      "printed_page": "338",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 3066,
+      "translated_chars": 934,
+      "figures": []
+    },
+    {
+      "pdf_page": 376,
+      "printed_page": "339",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 2984,
+      "translated_chars": 1071,
+      "figures": []
+    },
+    {
+      "pdf_page": 377,
+      "printed_page": "340",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 3084,
+      "translated_chars": 959,
+      "figures": []
+    },
+    {
+      "pdf_page": 378,
+      "printed_page": "341",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 2541,
+      "translated_chars": 962,
+      "figures": []
+    },
+    {
+      "pdf_page": 379,
+      "printed_page": "342",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 2568,
+      "translated_chars": 1489,
+      "figures": []
+    },
+    {
+      "pdf_page": 380,
+      "printed_page": "343",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 1527,
+      "translated_chars": 797,
+      "figures": [
+        "figure-15.7"
+      ]
+    },
+    {
+      "pdf_page": 381,
+      "printed_page": "344",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 3125,
+      "translated_chars": 1059,
+      "figures": []
+    },
+    {
+      "pdf_page": 382,
+      "printed_page": "345",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 2551,
+      "translated_chars": 1298,
+      "figures": []
+    },
+    {
+      "pdf_page": 383,
+      "printed_page": "346",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 2546,
+      "translated_chars": 979,
+      "figures": []
+    },
+    {
+      "pdf_page": 384,
+      "printed_page": "347",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 3034,
+      "translated_chars": 1451,
+      "figures": []
+    },
+    {
+      "pdf_page": 385,
+      "printed_page": "348",
+      "file": "15-support-vector-machines-and-machine-learning.md",
+      "source_chars": 1807,
+      "translated_chars": 833,
+      "figures": []
+    },
+    {
+      "pdf_page": 386,
+      "printed_page": "349",
+      "file": "16-flat-clustering.md",
+      "source_chars": 1475,
+      "translated_chars": 453,
+      "figures": [
+        "figure-16.1"
+      ]
+    },
+    {
+      "pdf_page": 387,
+      "printed_page": "350",
+      "file": "16-flat-clustering.md",
+      "source_chars": 2794,
+      "translated_chars": 919,
+      "figures": []
+    },
+    {
+      "pdf_page": 388,
+      "printed_page": "351",
+      "file": "16-flat-clustering.md",
+      "source_chars": 2648,
+      "translated_chars": 1269,
+      "figures": []
+    },
+    {
+      "pdf_page": 389,
+      "printed_page": "352",
+      "file": "16-flat-clustering.md",
+      "source_chars": 1513,
+      "translated_chars": 720,
+      "figures": [
+        "figure-16.2"
+      ]
+    },
+    {
+      "pdf_page": 390,
+      "printed_page": "353",
+      "file": "16-flat-clustering.md",
+      "source_chars": 1369,
+      "translated_chars": 1007,
+      "figures": [
+        "figure-16.3"
+      ]
+    },
+    {
+      "pdf_page": 391,
+      "printed_page": "354",
+      "file": "16-flat-clustering.md",
+      "source_chars": 2791,
+      "translated_chars": 980,
+      "figures": []
+    },
+    {
+      "pdf_page": 392,
+      "printed_page": "355",
+      "file": "16-flat-clustering.md",
+      "source_chars": 2851,
+      "translated_chars": 988,
+      "figures": []
+    },
+    {
+      "pdf_page": 393,
+      "printed_page": "356",
+      "file": "16-flat-clustering.md",
+      "source_chars": 2959,
+      "translated_chars": 1175,
+      "figures": []
+    },
+    {
+      "pdf_page": 394,
+      "printed_page": "357",
+      "file": "16-flat-clustering.md",
+      "source_chars": 1715,
+      "translated_chars": 1135,
+      "figures": [
+        "figure-16.4"
+      ]
+    },
+    {
+      "pdf_page": 395,
+      "printed_page": "358",
+      "file": "16-flat-clustering.md",
+      "source_chars": 2178,
+      "translated_chars": 1339,
+      "figures": []
+    },
+    {
+      "pdf_page": 396,
+      "printed_page": "359",
+      "file": "16-flat-clustering.md",
+      "source_chars": 2020,
+      "translated_chars": 1346,
+      "figures": []
+    },
+    {
+      "pdf_page": 397,
+      "printed_page": "360",
+      "file": "16-flat-clustering.md",
+      "source_chars": 2263,
+      "translated_chars": 1085,
+      "figures": []
+    },
+    {
+      "pdf_page": 398,
+      "printed_page": "361",
+      "file": "16-flat-clustering.md",
+      "source_chars": 2013,
+      "translated_chars": 989,
+      "figures": []
+    },
+    {
+      "pdf_page": 399,
+      "printed_page": "362",
+      "file": "16-flat-clustering.md",
+      "source_chars": 911,
+      "translated_chars": 478,
+      "figures": [
+        "figure-16.6"
+      ]
+    },
+    {
+      "pdf_page": 400,
+      "printed_page": "363",
+      "file": "16-flat-clustering.md",
+      "source_chars": 2381,
+      "translated_chars": 1145,
+      "figures": []
+    },
+    {
+      "pdf_page": 401,
+      "printed_page": "364",
+      "file": "16-flat-clustering.md",
+      "source_chars": 2360,
+      "translated_chars": 1002,
+      "figures": [
+        "figure-16.7"
+      ]
+    },
+    {
+      "pdf_page": 402,
+      "printed_page": "365",
+      "file": "16-flat-clustering.md",
+      "source_chars": 2788,
+      "translated_chars": 1154,
+      "figures": []
+    },
+    {
+      "pdf_page": 403,
+      "printed_page": "366",
+      "file": "16-flat-clustering.md",
+      "source_chars": 1504,
+      "translated_chars": 783,
+      "figures": [
+        "figure-16.8"
+      ]
+    },
+    {
+      "pdf_page": 404,
+      "printed_page": "367",
+      "file": "16-flat-clustering.md",
+      "source_chars": 2753,
+      "translated_chars": 1226,
+      "figures": []
+    },
+    {
+      "pdf_page": 405,
+      "printed_page": "368",
+      "file": "16-flat-clustering.md",
+      "source_chars": 2477,
+      "translated_chars": 1079,
+      "figures": []
+    },
+    {
+      "pdf_page": 406,
+      "printed_page": "369",
+      "file": "16-flat-clustering.md",
+      "source_chars": 2586,
+      "translated_chars": 1426,
+      "figures": []
+    },
+    {
+      "pdf_page": 407,
+      "printed_page": "370",
+      "file": "16-flat-clustering.md",
+      "source_chars": 2631,
+      "translated_chars": 1435,
+      "figures": []
+    },
+    {
+      "pdf_page": 408,
+      "printed_page": "371",
+      "file": "16-flat-clustering.md",
+      "source_chars": 1896,
+      "translated_chars": 2330,
+      "figures": []
+    },
+    {
+      "pdf_page": 409,
+      "printed_page": "372",
+      "file": "16-flat-clustering.md",
+      "source_chars": 2799,
+      "translated_chars": 1339,
+      "figures": []
+    },
+    {
+      "pdf_page": 410,
+      "printed_page": "373",
+      "file": "16-flat-clustering.md",
+      "source_chars": 3223,
+      "translated_chars": 1858,
+      "figures": []
+    },
+    {
+      "pdf_page": 411,
+      "printed_page": "374",
+      "file": "16-flat-clustering.md",
+      "source_chars": 2442,
+      "translated_chars": 1274,
+      "figures": []
+    },
+    {
+      "pdf_page": 412,
+      "printed_page": "375",
+      "file": "16-flat-clustering.md",
+      "source_chars": 2065,
+      "translated_chars": 1163,
+      "figures": []
+    },
+    {
+      "pdf_page": 413,
+      "printed_page": "376",
+      "file": "16-flat-clustering.md",
+      "blank": true
+    },
+    {
+      "pdf_page": 414,
+      "printed_page": "377",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 2494,
+      "translated_chars": 849,
+      "figures": []
+    },
+    {
+      "pdf_page": 415,
+      "printed_page": "378",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 3040,
+      "translated_chars": 1120,
+      "figures": []
+    },
+    {
+      "pdf_page": 416,
+      "printed_page": "379",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 1029,
+      "translated_chars": 1314,
+      "figures": [
+        "figure-17.1"
+      ]
+    },
+    {
+      "pdf_page": 417,
+      "printed_page": "380",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 2544,
+      "translated_chars": 1126,
+      "figures": []
+    },
+    {
+      "pdf_page": 418,
+      "printed_page": "381",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 909,
+      "translated_chars": 760,
+      "figures": [
+        "figure-17.3"
+      ]
+    },
+    {
+      "pdf_page": 419,
+      "printed_page": "382",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 2402,
+      "translated_chars": 882,
+      "figures": [
+        "figure-17.4"
+      ]
+    },
+    {
+      "pdf_page": 420,
+      "printed_page": "383",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 981,
+      "translated_chars": 1217,
+      "figures": [
+        "figure-17.5"
+      ]
+    },
+    {
+      "pdf_page": 421,
+      "printed_page": "384",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 2647,
+      "translated_chars": 1091,
+      "figures": [
+        "figure-17.6"
+      ]
+    },
+    {
+      "pdf_page": 422,
+      "printed_page": "385",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 2447,
+      "translated_chars": 1190,
+      "figures": [
+        "figure-17.7"
+      ]
+    },
+    {
+      "pdf_page": 423,
+      "printed_page": "386",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 1283,
+      "translated_chars": 1553,
+      "figures": []
+    },
+    {
+      "pdf_page": 424,
+      "printed_page": "387",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 2047,
+      "translated_chars": 1470,
+      "figures": []
+    },
+    {
+      "pdf_page": 425,
+      "printed_page": "388",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 2427,
+      "translated_chars": 1151,
+      "figures": [
+        "figure-17.10"
+      ]
+    },
+    {
+      "pdf_page": 426,
+      "printed_page": "389",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 2471,
+      "translated_chars": 1671,
+      "figures": []
+    },
+    {
+      "pdf_page": 427,
+      "printed_page": "390",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 2381,
+      "translated_chars": 1207,
+      "figures": []
+    },
+    {
+      "pdf_page": 428,
+      "printed_page": "391",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 1585,
+      "translated_chars": 1079,
+      "figures": [
+        "figure-17.11"
+      ]
+    },
+    {
+      "pdf_page": 429,
+      "printed_page": "392",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 1983,
+      "translated_chars": 869,
+      "figures": [
+        "figure-17.12"
+      ]
+    },
+    {
+      "pdf_page": 430,
+      "printed_page": "393",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 2347,
+      "translated_chars": 1622,
+      "figures": []
+    },
+    {
+      "pdf_page": 431,
+      "printed_page": "394",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 2562,
+      "translated_chars": 1616,
+      "figures": [
+        "figure-431.1"
+      ]
+    },
+    {
+      "pdf_page": 432,
+      "printed_page": "395",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 2497,
+      "translated_chars": 1182,
+      "figures": []
+    },
+    {
+      "pdf_page": 433,
+      "printed_page": "396",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 2951,
+      "translated_chars": 1134,
+      "figures": []
+    },
+    {
+      "pdf_page": 434,
+      "printed_page": "397",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 2629,
+      "translated_chars": 1459,
+      "figures": []
+    },
+    {
+      "pdf_page": 435,
+      "printed_page": "398",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 2872,
+      "translated_chars": 1078,
+      "figures": []
+    },
+    {
+      "pdf_page": 436,
+      "printed_page": "399",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 2913,
+      "translated_chars": 1294,
+      "figures": []
+    },
+    {
+      "pdf_page": 437,
+      "printed_page": "400",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 2996,
+      "translated_chars": 1343,
+      "figures": []
+    },
+    {
+      "pdf_page": 438,
+      "printed_page": "401",
+      "file": "17-hierarchical-clustering.md",
+      "source_chars": 2330,
+      "translated_chars": 1059,
+      "figures": []
+    },
+    {
+      "pdf_page": 439,
+      "printed_page": "402",
+      "file": "17-hierarchical-clustering.md",
+      "blank": true
+    },
+    {
+      "pdf_page": 440,
+      "printed_page": "403",
+      "file": "18-matrix-decompositions-and-latent-semantic-indexing.md",
+      "source_chars": 2122,
+      "translated_chars": 844,
+      "figures": []
+    },
+    {
+      "pdf_page": 441,
+      "printed_page": "404",
+      "file": "18-matrix-decompositions-and-latent-semantic-indexing.md",
+      "source_chars": 1931,
+      "translated_chars": 1391,
+      "figures": []
+    },
+    {
+      "pdf_page": 442,
+      "printed_page": "405",
+      "file": "18-matrix-decompositions-and-latent-semantic-indexing.md",
+      "source_chars": 1836,
+      "translated_chars": 1118,
+      "figures": []
+    },
+    {
+      "pdf_page": 443,
+      "printed_page": "406",
+      "file": "18-matrix-decompositions-and-latent-semantic-indexing.md",
+      "source_chars": 1934,
+      "translated_chars": 1121,
+      "figures": []
+    },
+    {
+      "pdf_page": 444,
+      "printed_page": "407",
+      "file": "18-matrix-decompositions-and-latent-semantic-indexing.md",
+      "source_chars": 1891,
+      "translated_chars": 931,
+      "figures": []
+    },
+    {
+      "pdf_page": 445,
+      "printed_page": "408",
+      "file": "18-matrix-decompositions-and-latent-semantic-indexing.md",
+      "source_chars": 2563,
+      "translated_chars": 1230,
+      "figures": []
+    },
+    {
+      "pdf_page": 446,
+      "printed_page": "409",
+      "file": "18-matrix-decompositions-and-latent-semantic-indexing.md",
+      "source_chars": 1598,
+      "translated_chars": 906,
+      "figures": [
+        "figure-18.1"
+      ]
+    },
+    {
+      "pdf_page": 447,
+      "printed_page": "410",
+      "file": "18-matrix-decompositions-and-latent-semantic-indexing.md",
+      "source_chars": 1954,
+      "translated_chars": 1133,
+      "figures": []
+    },
+    {
+      "pdf_page": 448,
+      "printed_page": "411",
+      "file": "18-matrix-decompositions-and-latent-semantic-indexing.md",
+      "source_chars": 1786,
+      "translated_chars": 988,
+      "figures": [
+        "figure-18.2"
+      ]
+    },
+    {
+      "pdf_page": 449,
+      "printed_page": "412",
+      "file": "18-matrix-decompositions-and-latent-semantic-indexing.md",
+      "source_chars": 2145,
+      "translated_chars": 1335,
+      "figures": []
+    },
+    {
+      "pdf_page": 450,
+      "printed_page": "413",
+      "file": "18-matrix-decompositions-and-latent-semantic-indexing.md",
+      "source_chars": 3074,
+      "translated_chars": 1189,
+      "figures": []
+    },
+    {
+      "pdf_page": 451,
+      "printed_page": "414",
+      "file": "18-matrix-decompositions-and-latent-semantic-indexing.md",
+      "source_chars": 2131,
+      "translated_chars": 1370,
+      "figures": []
+    },
+    {
+      "pdf_page": 452,
+      "printed_page": "415",
+      "file": "18-matrix-decompositions-and-latent-semantic-indexing.md",
+      "source_chars": 1945,
+      "translated_chars": 1635,
+      "figures": []
+    },
+    {
+      "pdf_page": 453,
+      "printed_page": "416",
+      "file": "18-matrix-decompositions-and-latent-semantic-indexing.md",
+      "source_chars": 1370,
+      "translated_chars": 615,
+      "figures": [
+        "figure-18.3"
+      ]
+    },
+    {
+      "pdf_page": 454,
+      "printed_page": "417",
+      "file": "18-matrix-decompositions-and-latent-semantic-indexing.md",
+      "source_chars": 2749,
+      "translated_chars": 1154,
+      "figures": []
+    },
+    {
+      "pdf_page": 455,
+      "printed_page": "418",
+      "file": "18-matrix-decompositions-and-latent-semantic-indexing.md",
+      "source_chars": 1818,
+      "translated_chars": 1008,
+      "figures": []
+    },
+    {
+      "pdf_page": 456,
+      "printed_page": "419",
+      "file": "18-matrix-decompositions-and-latent-semantic-indexing.md",
+      "source_chars": 358,
+      "translated_chars": 164,
+      "figures": []
+    },
+    {
+      "pdf_page": 457,
+      "printed_page": "420",
+      "file": "18-matrix-decompositions-and-latent-semantic-indexing.md",
+      "blank": true
+    },
+    {
+      "pdf_page": 458,
+      "printed_page": "421",
+      "file": "19-web-search-basics.md",
+      "source_chars": 2158,
+      "translated_chars": 772,
+      "figures": []
+    },
+    {
+      "pdf_page": 459,
+      "printed_page": "422",
+      "file": "19-web-search-basics.md",
+      "source_chars": 3198,
+      "translated_chars": 1216,
+      "figures": []
+    },
+    {
+      "pdf_page": 460,
+      "printed_page": "423",
+      "file": "19-web-search-basics.md",
+      "source_chars": 2946,
+      "translated_chars": 939,
+      "figures": []
+    },
+    {
+      "pdf_page": 461,
+      "printed_page": "424",
+      "file": "19-web-search-basics.md",
+      "source_chars": 3063,
+      "translated_chars": 1052,
+      "figures": []
+    },
+    {
+      "pdf_page": 462,
+      "printed_page": "425",
+      "file": "19-web-search-basics.md",
+      "source_chars": 1641,
+      "translated_chars": 814,
+      "figures": [
+        "figure-19.1",
+        "figure-19.2"
+      ]
+    },
+    {
+      "pdf_page": 463,
+      "printed_page": "426",
+      "file": "19-web-search-basics.md",
+      "source_chars": 1595,
+      "translated_chars": 719,
+      "figures": [
+        "figure-19.3"
+      ]
+    },
+    {
+      "pdf_page": 464,
+      "printed_page": "427",
+      "file": "19-web-search-basics.md",
+      "source_chars": 1620,
+      "translated_chars": 690,
+      "figures": [
+        "figure-19.4"
+      ]
+    },
+    {
+      "pdf_page": 465,
+      "printed_page": "428",
+      "file": "19-web-search-basics.md",
+      "source_chars": 2315,
+      "translated_chars": 952,
+      "figures": [
+        "figure-19.5"
+      ]
+    },
+    {
+      "pdf_page": 466,
+      "printed_page": "429",
+      "file": "19-web-search-basics.md",
+      "source_chars": 2805,
+      "translated_chars": 1057,
+      "figures": []
+    },
+    {
+      "pdf_page": 467,
+      "printed_page": "430",
+      "file": "19-web-search-basics.md",
+      "source_chars": 3309,
+      "translated_chars": 1120,
+      "figures": []
+    },
+    {
+      "pdf_page": 468,
+      "printed_page": "431",
+      "file": "19-web-search-basics.md",
+      "source_chars": 2342,
+      "translated_chars": 1000,
+      "figures": [
+        "figure-19.6"
+      ]
+    },
+    {
+      "pdf_page": 469,
+      "printed_page": "432",
+      "file": "19-web-search-basics.md",
+      "source_chars": 2896,
+      "translated_chars": 1062,
+      "figures": []
+    },
+    {
+      "pdf_page": 470,
+      "printed_page": "433",
+      "file": "19-web-search-basics.md",
+      "source_chars": 2901,
+      "translated_chars": 893,
+      "figures": []
+    },
+    {
+      "pdf_page": 471,
+      "printed_page": "434",
+      "file": "19-web-search-basics.md",
+      "source_chars": 1652,
+      "translated_chars": 659,
+      "figures": [
+        "figure-19.7"
+      ]
+    },
+    {
+      "pdf_page": 472,
+      "printed_page": "435",
+      "file": "19-web-search-basics.md",
+      "source_chars": 2693,
+      "translated_chars": 1120,
+      "figures": []
+    },
+    {
+      "pdf_page": 473,
+      "printed_page": "436",
+      "file": "19-web-search-basics.md",
+      "source_chars": 2967,
+      "translated_chars": 1002,
+      "figures": []
+    },
+    {
+      "pdf_page": 474,
+      "printed_page": "437",
+      "file": "19-web-search-basics.md",
+      "source_chars": 2663,
+      "translated_chars": 956,
+      "figures": []
+    },
+    {
+      "pdf_page": 475,
+      "printed_page": "438",
+      "file": "19-web-search-basics.md",
+      "source_chars": 2976,
+      "translated_chars": 1370,
+      "figures": []
+    },
+    {
+      "pdf_page": 476,
+      "printed_page": "439",
+      "file": "19-web-search-basics.md",
+      "source_chars": 1839,
+      "translated_chars": 949,
+      "figures": [
+        "figure-19.8"
+      ]
+    },
+    {
+      "pdf_page": 477,
+      "printed_page": "440",
+      "file": "19-web-search-basics.md",
+      "source_chars": 2163,
+      "translated_chars": 1178,
+      "figures": []
+    },
+    {
+      "pdf_page": 478,
+      "printed_page": "441",
+      "file": "19-web-search-basics.md",
+      "source_chars": 2995,
+      "translated_chars": 1325,
+      "figures": []
+    },
+    {
+      "pdf_page": 479,
+      "printed_page": "442",
+      "file": "19-web-search-basics.md",
+      "source_chars": 1002,
+      "translated_chars": 576,
+      "figures": []
+    },
+    {
+      "pdf_page": 480,
+      "printed_page": "443",
+      "file": "20-web-crawling-and-indexes.md",
+      "source_chars": 1948,
+      "translated_chars": 662,
+      "figures": []
+    },
+    {
+      "pdf_page": 481,
+      "printed_page": "444",
+      "file": "20-web-crawling-and-indexes.md",
+      "source_chars": 2311,
+      "translated_chars": 839,
+      "figures": []
+    },
+    {
+      "pdf_page": 482,
+      "printed_page": "445",
+      "file": "20-web-crawling-and-indexes.md",
+      "source_chars": 2183,
+      "translated_chars": 732,
+      "figures": []
+    },
+    {
+      "pdf_page": 483,
+      "printed_page": "446",
+      "file": "20-web-crawling-and-indexes.md",
+      "source_chars": 1899,
+      "translated_chars": 863,
+      "figures": [
+        "figure-20.1"
+      ]
+    },
+    {
+      "pdf_page": 484,
+      "printed_page": "447",
+      "file": "20-web-crawling-and-indexes.md",
+      "source_chars": 2693,
+      "translated_chars": 1101,
+      "figures": []
+    },
+    {
+      "pdf_page": 485,
+      "printed_page": "448",
+      "file": "20-web-crawling-and-indexes.md",
+      "source_chars": 2951,
+      "translated_chars": 1137,
+      "figures": []
+    },
+    {
+      "pdf_page": 486,
+      "printed_page": "449",
+      "file": "20-web-crawling-and-indexes.md",
+      "source_chars": 1454,
+      "translated_chars": 768,
+      "figures": [
+        "figure-20.2"
+      ]
+    },
+    {
+      "pdf_page": 487,
+      "printed_page": "450",
+      "file": "20-web-crawling-and-indexes.md",
+      "source_chars": 2883,
+      "translated_chars": 1023,
+      "figures": []
+    },
+    {
+      "pdf_page": 488,
+      "printed_page": "451",
+      "file": "20-web-crawling-and-indexes.md",
+      "source_chars": 3034,
+      "translated_chars": 1145,
+      "figures": []
+    },
+    {
+      "pdf_page": 489,
+      "printed_page": "452",
+      "file": "20-web-crawling-and-indexes.md",
+      "source_chars": 851,
+      "translated_chars": 408,
+      "figures": [
+        "figure-20.3"
+      ]
+    },
+    {
+      "pdf_page": 490,
+      "printed_page": "453",
+      "file": "20-web-crawling-and-indexes.md",
+      "source_chars": 2467,
+      "translated_chars": 970,
+      "figures": []
+    },
+    {
+      "pdf_page": 491,
+      "printed_page": "454",
+      "file": "20-web-crawling-and-indexes.md",
+      "source_chars": 2867,
+      "translated_chars": 1018,
+      "figures": []
+    },
+    {
+      "pdf_page": 492,
+      "printed_page": "455",
+      "file": "20-web-crawling-and-indexes.md",
+      "source_chars": 2796,
+      "translated_chars": 1106,
+      "figures": []
+    },
+    {
+      "pdf_page": 493,
+      "printed_page": "456",
+      "file": "20-web-crawling-and-indexes.md",
+      "source_chars": 2283,
+      "translated_chars": 1040,
+      "figures": []
+    },
+    {
+      "pdf_page": 494,
+      "printed_page": "457",
+      "file": "20-web-crawling-and-indexes.md",
+      "source_chars": 2798,
+      "translated_chars": 965,
+      "figures": []
+    },
+    {
+      "pdf_page": 495,
+      "printed_page": "458",
+      "file": "20-web-crawling-and-indexes.md",
+      "source_chars": 2800,
+      "translated_chars": 1226,
+      "figures": []
+    },
+    {
+      "pdf_page": 496,
+      "printed_page": "459",
+      "file": "20-web-crawling-and-indexes.md",
+      "source_chars": 667,
+      "translated_chars": 270,
+      "figures": []
+    },
+    {
+      "pdf_page": 497,
+      "printed_page": "460",
+      "file": "20-web-crawling-and-indexes.md",
+      "blank": true
+    },
+    {
+      "pdf_page": 498,
+      "printed_page": "461",
+      "file": "21-link-analysis.md",
+      "source_chars": 2121,
+      "translated_chars": 701,
+      "figures": []
+    },
+    {
+      "pdf_page": 499,
+      "printed_page": "462",
+      "file": "21-link-analysis.md",
+      "source_chars": 2555,
+      "translated_chars": 1021,
+      "figures": []
+    },
+    {
+      "pdf_page": 500,
+      "printed_page": "463",
+      "file": "21-link-analysis.md",
+      "source_chars": 2780,
+      "translated_chars": 1082,
+      "figures": []
+    },
+    {
+      "pdf_page": 501,
+      "printed_page": "464",
+      "file": "21-link-analysis.md",
+      "source_chars": 2065,
+      "translated_chars": 877,
+      "figures": [
+        "figure-21.1"
+      ]
+    },
+    {
+      "pdf_page": 502,
+      "printed_page": "465",
+      "file": "21-link-analysis.md",
+      "source_chars": 2543,
+      "translated_chars": 1248,
+      "figures": []
+    },
+    {
+      "pdf_page": 503,
+      "printed_page": "466",
+      "file": "21-link-analysis.md",
+      "source_chars": 1972,
+      "translated_chars": 874,
+      "figures": [
+        "figure-21.2"
+      ]
+    },
+    {
+      "pdf_page": 504,
+      "printed_page": "467",
+      "file": "21-link-analysis.md",
+      "source_chars": 2534,
+      "translated_chars": 1059,
+      "figures": []
+    },
+    {
+      "pdf_page": 505,
+      "printed_page": "468",
+      "file": "21-link-analysis.md",
+      "source_chars": 2359,
+      "translated_chars": 1218,
+      "figures": []
+    },
+    {
+      "pdf_page": 506,
+      "printed_page": "469",
+      "file": "21-link-analysis.md",
+      "source_chars": 1800,
+      "translated_chars": 1117,
+      "figures": []
+    },
+    {
+      "pdf_page": 507,
+      "printed_page": "470",
+      "file": "21-link-analysis.md",
+      "source_chars": 1002,
+      "translated_chars": 1012,
+      "figures": [
+        "figure-21.4"
+      ]
+    },
+    {
+      "pdf_page": 508,
+      "printed_page": "471",
+      "file": "21-link-analysis.md",
+      "source_chars": 3102,
+      "translated_chars": 1122,
+      "figures": []
+    },
+    {
+      "pdf_page": 509,
+      "printed_page": "472",
+      "file": "21-link-analysis.md",
+      "source_chars": 1096,
+      "translated_chars": 598,
+      "figures": [
+        "figure-21.5"
+      ]
+    },
+    {
+      "pdf_page": 510,
+      "printed_page": "473",
+      "file": "21-link-analysis.md",
+      "source_chars": 2318,
+      "translated_chars": 1002,
+      "figures": []
+    },
+    {
+      "pdf_page": 511,
+      "printed_page": "474",
+      "file": "21-link-analysis.md",
+      "source_chars": 2449,
+      "translated_chars": 1076,
+      "figures": []
+    },
+    {
+      "pdf_page": 512,
+      "printed_page": "475",
+      "file": "21-link-analysis.md",
+      "source_chars": 2708,
+      "translated_chars": 1121,
+      "figures": []
+    },
+    {
+      "pdf_page": 513,
+      "printed_page": "476",
+      "file": "21-link-analysis.md",
+      "source_chars": 1907,
+      "translated_chars": 1063,
+      "figures": []
+    },
+    {
+      "pdf_page": 514,
+      "printed_page": "477",
+      "file": "21-link-analysis.md",
+      "source_chars": 1873,
+      "translated_chars": 1073,
+      "figures": []
+    },
+    {
+      "pdf_page": 515,
+      "printed_page": "478",
+      "file": "21-link-analysis.md",
+      "source_chars": 2722,
+      "translated_chars": 894,
+      "figures": []
+    },
+    {
+      "pdf_page": 516,
+      "printed_page": "479",
+      "file": "21-link-analysis.md",
+      "source_chars": 1352,
+      "translated_chars": 540,
+      "figures": [
+        "figure-21.6"
+      ]
+    },
+    {
+      "pdf_page": 517,
+      "printed_page": "480",
+      "file": "21-link-analysis.md",
+      "source_chars": 1679,
+      "translated_chars": 836,
+      "figures": [
+        "figure-21.7"
+      ]
+    },
+    {
+      "pdf_page": 518,
+      "printed_page": "481",
+      "file": "21-link-analysis.md",
+      "source_chars": 2072,
+      "translated_chars": 978,
+      "figures": []
+    },
+    {
+      "pdf_page": 519,
+      "printed_page": "482",
+      "file": "21-link-analysis.md",
+      "blank": true
+    },
+    {
+      "pdf_page": 520,
+      "printed_page": "483",
+      "file": "22-bibliography.md",
+      "source_chars": 1639,
+      "translated_chars": 1837,
+      "figures": []
+    },
+    {
+      "pdf_page": 521,
+      "printed_page": "484",
+      "file": "22-bibliography.md",
+      "source_chars": 2750,
+      "translated_chars": 3095,
+      "figures": []
+    },
+    {
+      "pdf_page": 522,
+      "printed_page": "485",
+      "file": "22-bibliography.md",
+      "source_chars": 2930,
+      "translated_chars": 3204,
+      "figures": []
+    },
+    {
+      "pdf_page": 523,
+      "printed_page": "486",
+      "file": "22-bibliography.md",
+      "source_chars": 2812,
+      "translated_chars": 3069,
+      "figures": []
+    },
+    {
+      "pdf_page": 524,
+      "printed_page": "487",
+      "file": "22-bibliography.md",
+      "source_chars": 2921,
+      "translated_chars": 3173,
+      "figures": []
+    },
+    {
+      "pdf_page": 525,
+      "printed_page": "488",
+      "file": "22-bibliography.md",
+      "source_chars": 2889,
+      "translated_chars": 3136,
+      "figures": []
+    },
+    {
+      "pdf_page": 526,
+      "printed_page": "489",
+      "file": "22-bibliography.md",
+      "source_chars": 2951,
+      "translated_chars": 3226,
+      "figures": []
+    },
+    {
+      "pdf_page": 527,
+      "printed_page": "490",
+      "file": "22-bibliography.md",
+      "source_chars": 3125,
+      "translated_chars": 3379,
+      "figures": []
+    },
+    {
+      "pdf_page": 528,
+      "printed_page": "491",
+      "file": "22-bibliography.md",
+      "source_chars": 2805,
+      "translated_chars": 3079,
+      "figures": []
+    },
+    {
+      "pdf_page": 529,
+      "printed_page": "492",
+      "file": "22-bibliography.md",
+      "source_chars": 2815,
+      "translated_chars": 3116,
+      "figures": []
+    },
+    {
+      "pdf_page": 530,
+      "printed_page": "493",
+      "file": "22-bibliography.md",
+      "source_chars": 2832,
+      "translated_chars": 3109,
+      "figures": []
+    },
+    {
+      "pdf_page": 531,
+      "printed_page": "494",
+      "file": "22-bibliography.md",
+      "source_chars": 2924,
+      "translated_chars": 3222,
+      "figures": []
+    },
+    {
+      "pdf_page": 532,
+      "printed_page": "495",
+      "file": "22-bibliography.md",
+      "source_chars": 2772,
+      "translated_chars": 3110,
+      "figures": []
+    },
+    {
+      "pdf_page": 533,
+      "printed_page": "496",
+      "file": "22-bibliography.md",
+      "source_chars": 2867,
+      "translated_chars": 3102,
+      "figures": []
+    },
+    {
+      "pdf_page": 534,
+      "printed_page": "497",
+      "file": "22-bibliography.md",
+      "source_chars": 2792,
+      "translated_chars": 3078,
+      "figures": []
+    },
+    {
+      "pdf_page": 535,
+      "printed_page": "498",
+      "file": "22-bibliography.md",
+      "source_chars": 3101,
+      "translated_chars": 3423,
+      "figures": []
+    },
+    {
+      "pdf_page": 536,
+      "printed_page": "499",
+      "file": "22-bibliography.md",
+      "source_chars": 2863,
+      "translated_chars": 3141,
+      "figures": []
+    },
+    {
+      "pdf_page": 537,
+      "printed_page": "500",
+      "file": "22-bibliography.md",
+      "source_chars": 2666,
+      "translated_chars": 2959,
+      "figures": []
+    },
+    {
+      "pdf_page": 538,
+      "printed_page": "501",
+      "file": "22-bibliography.md",
+      "source_chars": 2891,
+      "translated_chars": 3168,
+      "figures": []
+    },
+    {
+      "pdf_page": 539,
+      "printed_page": "502",
+      "file": "22-bibliography.md",
+      "source_chars": 2917,
+      "translated_chars": 3219,
+      "figures": []
+    },
+    {
+      "pdf_page": 540,
+      "printed_page": "503",
+      "file": "22-bibliography.md",
+      "source_chars": 2929,
+      "translated_chars": 3148,
+      "figures": []
+    },
+    {
+      "pdf_page": 541,
+      "printed_page": "504",
+      "file": "22-bibliography.md",
+      "source_chars": 2891,
+      "translated_chars": 3198,
+      "figures": []
+    },
+    {
+      "pdf_page": 542,
+      "printed_page": "505",
+      "file": "22-bibliography.md",
+      "source_chars": 2892,
+      "translated_chars": 3112,
+      "figures": []
+    },
+    {
+      "pdf_page": 543,
+      "printed_page": "506",
+      "file": "22-bibliography.md",
+      "source_chars": 2905,
+      "translated_chars": 3155,
+      "figures": []
+    },
+    {
+      "pdf_page": 544,
+      "printed_page": "507",
+      "file": "22-bibliography.md",
+      "source_chars": 2779,
+      "translated_chars": 3055,
+      "figures": []
+    },
+    {
+      "pdf_page": 545,
+      "printed_page": "508",
+      "file": "22-bibliography.md",
+      "source_chars": 2870,
+      "translated_chars": 3085,
+      "figures": []
+    },
+    {
+      "pdf_page": 546,
+      "printed_page": "509",
+      "file": "22-bibliography.md",
+      "source_chars": 2814,
+      "translated_chars": 3130,
+      "figures": []
+    },
+    {
+      "pdf_page": 547,
+      "printed_page": "510",
+      "file": "22-bibliography.md",
+      "source_chars": 2752,
+      "translated_chars": 2983,
+      "figures": []
+    },
+    {
+      "pdf_page": 548,
+      "printed_page": "511",
+      "file": "22-bibliography.md",
+      "source_chars": 2808,
+      "translated_chars": 3076,
+      "figures": []
+    },
+    {
+      "pdf_page": 549,
+      "printed_page": "512",
+      "file": "22-bibliography.md",
+      "source_chars": 2919,
+      "translated_chars": 3249,
+      "figures": []
+    },
+    {
+      "pdf_page": 550,
+      "printed_page": "513",
+      "file": "22-bibliography.md",
+      "source_chars": 2717,
+      "translated_chars": 2975,
+      "figures": []
+    },
+    {
+      "pdf_page": 551,
+      "printed_page": "514",
+      "file": "22-bibliography.md",
+      "source_chars": 2778,
+      "translated_chars": 3007,
+      "figures": []
+    },
+    {
+      "pdf_page": 552,
+      "printed_page": "515",
+      "file": "22-bibliography.md",
+      "source_chars": 2854,
+      "translated_chars": 3109,
+      "figures": []
+    },
+    {
+      "pdf_page": 553,
+      "printed_page": "516",
+      "file": "22-bibliography.md",
+      "source_chars": 2995,
+      "translated_chars": 3321,
+      "figures": []
+    },
+    {
+      "pdf_page": 554,
+      "printed_page": "517",
+      "file": "22-bibliography.md",
+      "source_chars": 2768,
+      "translated_chars": 3061,
+      "figures": []
+    },
+    {
+      "pdf_page": 555,
+      "printed_page": "518",
+      "file": "22-bibliography.md",
+      "source_chars": 2740,
+      "translated_chars": 3047,
+      "figures": []
+    },
+    {
+      "pdf_page": 556,
+      "printed_page": "519",
+      "file": "22-bibliography.md",
+      "source_chars": 2857,
+      "translated_chars": 3081,
+      "figures": []
+    },
+    {
+      "pdf_page": 557,
+      "printed_page": "520",
+      "file": "22-bibliography.md",
+      "source_chars": 1247,
+      "translated_chars": 1297,
+      "figures": []
+    },
+    {
+      "pdf_page": 558,
+      "printed_page": "521",
+      "file": "23-author-index.md",
+      "source_chars": 1926,
+      "translated_chars": 1917,
+      "figures": []
+    },
+    {
+      "pdf_page": 559,
+      "printed_page": "522",
+      "file": "23-author-index.md",
+      "source_chars": 2729,
+      "translated_chars": 2722,
+      "figures": []
+    },
+    {
+      "pdf_page": 560,
+      "printed_page": "523",
+      "file": "23-author-index.md",
+      "source_chars": 2694,
+      "translated_chars": 2692,
+      "figures": []
+    },
+    {
+      "pdf_page": 561,
+      "printed_page": "524",
+      "file": "23-author-index.md",
+      "source_chars": 2591,
+      "translated_chars": 2595,
+      "figures": []
+    },
+    {
+      "pdf_page": 562,
+      "printed_page": "525",
+      "file": "23-author-index.md",
+      "source_chars": 2579,
+      "translated_chars": 2706,
+      "figures": []
+    },
+    {
+      "pdf_page": 563,
+      "printed_page": "526",
+      "file": "23-author-index.md",
+      "source_chars": 2542,
+      "translated_chars": 2666,
+      "figures": []
+    },
+    {
+      "pdf_page": 564,
+      "printed_page": "527",
+      "file": "23-author-index.md",
+      "source_chars": 2583,
+      "translated_chars": 2708,
+      "figures": []
+    },
+    {
+      "pdf_page": 565,
+      "printed_page": "528",
+      "file": "23-author-index.md",
+      "source_chars": 2686,
+      "translated_chars": 2813,
+      "figures": []
+    },
+    {
+      "pdf_page": 566,
+      "printed_page": "529",
+      "file": "23-author-index.md",
+      "source_chars": 2611,
+      "translated_chars": 2610,
+      "figures": []
+    },
+    {
+      "pdf_page": 567,
+      "printed_page": "530",
+      "file": "23-author-index.md",
+      "source_chars": 2682,
+      "translated_chars": 2688,
+      "figures": []
+    },
+    {
+      "pdf_page": 568,
+      "printed_page": "531",
+      "file": "23-author-index.md",
+      "source_chars": 2740,
+      "translated_chars": 2738,
+      "figures": []
+    },
+    {
+      "pdf_page": 569,
+      "printed_page": "532",
+      "file": "23-author-index.md",
+      "source_chars": 2625,
+      "translated_chars": 2619,
+      "figures": []
+    },
+    {
+      "pdf_page": 570,
+      "printed_page": "533",
+      "file": "23-author-index.md",
+      "source_chars": 2687,
+      "translated_chars": 2752,
+      "figures": []
+    },
+    {
+      "pdf_page": 571,
+      "printed_page": "534",
+      "file": "23-author-index.md",
+      "source_chars": 2642,
+      "translated_chars": 2714,
+      "figures": []
+    },
+    {
+      "pdf_page": 572,
+      "printed_page": "535",
+      "file": "23-author-index.md",
+      "source_chars": 2295,
+      "translated_chars": 2356,
+      "figures": []
+    },
+    {
+      "pdf_page": 573,
+      "printed_page": "536",
+      "file": "23-author-index.md",
+      "blank": true
+    },
+    {
+      "pdf_page": 574,
+      "printed_page": "537",
+      "file": "24-subject-index.md",
+      "source_chars": 1497,
+      "translated_chars": 2125,
+      "figures": []
+    },
+    {
+      "pdf_page": 575,
+      "printed_page": "538",
+      "file": "24-subject-index.md",
+      "source_chars": 2105,
+      "translated_chars": 2792,
+      "figures": []
+    },
+    {
+      "pdf_page": 576,
+      "printed_page": "539",
+      "file": "24-subject-index.md",
+      "source_chars": 2058,
+      "translated_chars": 2695,
+      "figures": []
+    },
+    {
+      "pdf_page": 577,
+      "printed_page": "540",
+      "file": "24-subject-index.md",
+      "source_chars": 1998,
+      "translated_chars": 2699,
+      "figures": []
+    },
+    {
+      "pdf_page": 578,
+      "printed_page": "541",
+      "file": "24-subject-index.md",
+      "source_chars": 2169,
+      "translated_chars": 2841,
+      "figures": []
+    },
+    {
+      "pdf_page": 579,
+      "printed_page": "542",
+      "file": "24-subject-index.md",
+      "source_chars": 2003,
+      "translated_chars": 2738,
+      "figures": []
+    },
+    {
+      "pdf_page": 580,
+      "printed_page": "543",
+      "file": "24-subject-index.md",
+      "source_chars": 1959,
+      "translated_chars": 2680,
+      "figures": []
+    },
+    {
+      "pdf_page": 581,
+      "printed_page": "544",
+      "file": "24-subject-index.md",
+      "source_chars": 1099,
+      "translated_chars": 1473,
+      "figures": []
+    }
+  ]
+}

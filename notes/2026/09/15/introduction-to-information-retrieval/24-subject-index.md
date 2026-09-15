@@ -1,0 +1,694 @@
+# 中英术语索引
+
+[返回系列目录](../introduction-to-information-retrieval.md) · [上一篇：作者索引](./23-author-index.md)
+
+原书印刷页 537–544；PDF 第 574–581 页。
+
+<!-- source: PDF 574; printed: 537 -->
+
+- $L_2$ 距离（$L_2$ distance）, 131
+- $\chi^2$ 特征选择（$\chi^2$ feature selection）, 275
+- $\delta$ 编码（$\delta$ codes）, 104
+- $\gamma$ 编码（$\gamma$ encoding）, 99
+- $k$ 近邻分类（$k$ nearest neighbor classification）, 297
+- $k$-gram 索引（$k$-gram index）, 54, 60
+- 1/0 损失（1/0 loss）, 221
+- 11 点插值平均查准率（11-point interpolated average precision）, 159
+- 20 Newsgroups 数据集（20 Newsgroups）, 154
+
+- A/B 测试（A/B test）, 170
+- 访问控制列表（access control lists）, 81
+- 累加器（accumulator）, 113, 125
+- 准确率（accuracy）, 155
+- 主动学习（active learning）, 336
+- 特设检索（ad hoc retrieval）, 5, 253
+- 加一平滑（add-one smoothing）, 260
+- 邻接表（adjacency table）, 455
+- 对抗性信息检索（adversarial information retrieval）, 429
+- 赤池信息量准则（Akaike Information Criterion）, 367
+- 算法搜索（algorithmic search）, 430
+- 锚文本（anchor text）, 425
+- any-of 分类 / 多标签分类（any-of classification）, 257, 306
+- 权威评分（authority score）, 474
+- 辅助索引（auxiliary index）, 78
+- 平均链接聚类（average-link clustering）, 389
+
+- B 树（B-tree）, 50
+- 词袋（bag of words）, 117, 267
+- 词袋（bag-of-words）, 269
+- 平衡 F 测量值（balanced F measure）, 156
+- 贝叶斯错误率（Bayes error rate）, 300
+- 贝叶斯最优决策规则（Bayes Optimal Decision Rule）, 222
+- 贝叶斯风险（Bayes risk）, 222
+- 贝叶斯法则（Bayes' Rule）, 220
+- 贝叶斯网络（Bayesian networks）, 234
+- 贝叶斯先验（Bayesian prior）, 226
+- 伯努利模型（Bernoulli model）, 263
+- 最佳合并持久性（best-merge persistence）, 388
+- 偏差（bias）, 311
+- 偏差-方差权衡（bias-variance tradeoff）, 241, 312, 321
+- 双聚类（biclustering）, 374
+- 二元语言模型（bigram language model）, 240
+- 二值独立模型（Binary Independence Model）, 222
+- 二叉树（binary tree）, 50, 377
+- 双词索引（biword index）, 39, 43
+- 盲相关反馈（blind relevance feedback）, 见 pseudo relevance feedback (伪相关反馈)
+- 基于块的排序索引算法（blocked sort-based indexing algorithm）, 71
+- 分块存储（blocked storage）, 92
+- 博客（blog）, 195
+- BM25 权重（BM25 weights）, 232
+- 提升方法（boosting）, 286
+- 自底向上聚类（bottom-up clustering）, 见 hierarchical agglomerative clustering (层次凝聚聚类)
+- 领结结构（bowtie）, 426
+- 查准率-召回率平衡（break-even）, 334
+- 查准率-召回率平衡点（break-even point）, 161
+- BSBI, 71
+- Buckshot 算法（Buckshot algorithm）, 399
+- 缓冲区（buffer）, 69
+
+- 缓存（caching）, 9, 68, 146, 447, 450
+- 捕获-重新捕获方法（capture-recapture method）, 435
+- 基数（cardinality）
+  - 在聚类中（in clustering）, 355
+- CAS 主题（CAS topics）, 211
+- 大小写折叠（case-folding）, 30
+
+<!-- source: PDF 575; printed: 538 -->
+
+- 类别（category）, 256
+- 质心（centroid）, 292, 360
+  - 在相关反馈中（in relevance feedback）, 181
+- 基于质心的分类（centroid-based classification）, 314
+- 链式法则（chain rule）, 220
+- 链式效应（chaining）
+  - 在聚类中（in clustering）, 385
+- 优胜者表（champion lists）, 143
+- 类边界（class boundary）, 303
+- 分类（classification）, 253, 344
+- 分类函数（classification function）, 256
+- 分类器（classifier）, 183
+- CLEF, 154
+- 点击作弊（click spam）, 431
+- 点击流挖掘（clickstream mining）, 170, 188
+- 点击日志分析（clickthrough log analysis）, 170
+- 团（clique）, 384
+- 簇（cluster）, 74, 349
+  - 在相关反馈中（in relevance feedback）, 184
+- 聚类假设（cluster hypothesis）, 350
+- 基于聚类的分类（cluster-based classification）, 314
+- 簇内标签（cluster-internal labeling）, 396
+- CO 主题（CO topics）, 211
+- 协同聚类（co-clustering）, 374
+- 文档集（collection）, 4
+- 文档集频率（collection frequency）, 27
+- 组合相似度（combination similarity）, 378, 384, 393
+- 全链接聚类（complete-link clustering）, 382
+- 全链接聚类（complete-linkage clustering）, 见 complete-link clustering (全链接聚类)
+- 组件覆盖率（component coverage）, 212
+- 复合词拆分器（compound-splitter）, 25
+- 复合词（compounds）, 25
+- 概念漂移（concept drift）, 269, 283, 286, 336
+- 条件独立性假设（conditional independence assumption）, 224, 266
+- 混淆矩阵（confusion matrix）, 307
+- 连通分量（connected component）, 384
+- 连通性查询（connectivity queries）, 455
+- 连通性服务器（connectivity server）, 455
+- 内容管理系统（content management system）, 84
+- 上下文（context）
+  - XML, 199
+- 上下文相似度（context resemblance）, 208
+- 邻近性假设（contiguity hypothesis）, 289
+- 延续位（continuation bit）, 96
+
+- 语料库（corpus）, 4
+- 余弦相似度（cosine similarity）, 121, 372
+- CPC, 430
+- CPM, 430
+- Cranfield, 153
+- 交叉熵（cross-entropy）, 251
+- 跨语言信息检索（cross-language information retrieval）, 154, 417
+- 累计收益（cumulative gain）, 162
+
+- 以数据为中心的 XML（data-centric XML）, 196, 214
+- 数据库（database）
+  - 关系型（relational）, 1, 195, 214
+- 决策边界（decision boundary）, 292, 303
+- 决策超平面（decision hyperplane）, 290, 302
+- 决策树（decision trees）, 282, 286
+- 树状图（dendrogram）, 378
+- 开发集（development set）, 283
+- 开发测试文档集（development test collection）, 153
+- Dice 系数（Dice coefficient）, 163
+- 词典（dictionary）, 6, 7
+- 差异性簇标签（differential cluster labeling）, 396
+- 数字图书馆（digital libraries）, 195
+- 失真（distortion）, 366
+- 分布式索引（distributed index）, 74, 458
+- 分布式索引构建（distributed indexing）, 74
+- 分布式信息检索（distributed information retrieval）, 见 distributed crawling (分布式抓取), 458
+- 分裂式聚类（divisive clustering）, 395
+- DNS 解析（DNS resolution）, 450
+- DNS 服务器（DNS server）, 450
+- 文档 ID（docID）, 7
+- 文档（document）, 4, 20
+- 文档集（document collection）, 见 collection (文档集)
+- 文档频率（document frequency）, 7, 118
+- 文档似然模型（document likelihood model）, 250
+- 文档划分（document partitioning）, 454
+- 文档空间（document space）, 256
+- 文档向量（document vector）, 119, 120
+- 每次一篇文档（document-at-a-time）, 126, 140
+- 按文档划分的索引（document-partitioned index）, 75
+- 点积（dot product）, 121
+
+- 东亚语言（East Asian languages）, 45
+- 编辑距离（edit distance）, 58
+- 有效性（effectiveness）, 5, 280
+- 特征分解（eigen decomposition）, 406
+
+<!-- source: PDF 576; printed: 539 -->
+
+- 特征值（eigenvalue）, 404
+- EM 算法（EM algorithm）, 369
+- 电子邮件排序（email sorting）, 254
+- 企业资源规划（enterprise resource planning）, 84
+- 企业搜索（enterprise search）, 67
+- 熵（entropy）, 99, 106, 358
+- 等价类（equivalence classes）, 28
+- 遍历马尔可夫链（Ergodic Markov Chain）, 467
+- 欧几里得距离（Euclidean distance）, 131, 372
+- 欧几里得长度（Euclidean length）, 121
+- 证据积累（evidence accumulation）, 146
+- 互斥聚类（exclusive clustering）, 355
+- 穷举聚类（exhaustive clustering）, 355
+- 期望步（expectation step）, 370
+- 期望最大化算法（Expectation-Maximization algorithm）, 336, 369
+- 期望边密度（expected edge density）, 373
+- 扩展查询（extended query）, 205
+- 可扩展标记语言（Extensible Markup Language）, 196
+- 外部质量标准（external criterion of quality）, 356
+- 外部排序算法（external sorting algorithm）, 70
+
+- F 测量值（F measure）, 156, 173
+  - 作为聚类中的评估指标（as an evaluation measure in clustering）, 359
+- 假阴性（false negative）, 359
+- 假阳性（false positive）, 359
+- 特征工程（feature engineering）, 338
+- 特征选择（feature selection）, 271
+- 字段（field）, 110
+- 过滤（filtering）, 253, 314
+- 首篇报道检测（first story detection）, 395, 399
+- 平面聚类（flat clustering）, 350
+- 聚焦检索（focused retrieval）, 217
+- 自由文本（free text）, 109, 148
+- 自由文本查询（free text query）, 见 query, free text (查询，自由文本), 124, 145, 196
+- 基于频率的特征选择（frequency-based feature selection）, 277
+- Frobenius 范数（Frobenius norm）, 410
+- 前端编码（front coding）, 93
+- 函数间隔（functional margin）, 322
+
+- GAAC, 388
+- 生成模型（generative model）, 237, 309, 311
+- 几何间隔（geometric margin）, 323
+- 黄金标准（gold standard）, 152
+- Golomb 编码（Golomb codes）, 106
+- GOV2, 154
+- 贪心特征选择（greedy feature selection）, 279
+- grep, 3
+- 基准真相（ground truth）, 152
+- 组平均凝聚聚类（group-average agglomerative clustering）, 388
+- 组平均聚类（group-average clustering）, 389
+
+- HAC, 378
+- 硬分配（hard assignment）, 350
+- 硬聚类（hard clustering）, 350, 355
+- 调和数（harmonic number）, 101
+- Heaps 定律（Heaps' law）, 88
+- 留出（held-out）, 298
+- 留出数据（held-out data）, 283
+- 层次聚类（hierarchic clustering）, 377
+- 层次凝聚聚类（hierarchical agglomerative clustering）, 378
+- 层次分类（hierarchical classification）, 337, 347
+- 层次聚类（hierarchical clustering）, 350, 377
+- 层次狄利克雷过程（Hierarchical Dirichlet Processes）, 418
+- 层次结构（hierarchy）
+  - 在聚类中（in clustering）, 377
+- 高亮显示（highlighting）, 203
+- HITS, 477
+- HTML, 421
+- http, 421
+- 枢纽评分（hub score）, 474
+- 连字符（hyphens）, 24
+
+- 独立同分布（i.i.d.）, 283, 见 independent and identically distributed (独立同分布)
+- Ide dec-hi, 183
+- idf, 83, 204, 227, 232
+- 独立同分布（iid）, 见 independent and identically distributed (独立同分布)
+- 影响（impact）, 81
+- 隐式相关反馈（implicit relevance feedback）, 187
+- 入链（in-links）, 425, 461
+- 关联矩阵（incidence matrix）, 3, 408
+- 独立性（independence）, 275
+- 独立同分布（independent and identically distributed）, 283
+  - 在聚类中（in clustering）, 367
+- 索引（index）, 3, 见 permuterm index (轮排索引), 另见 parametric index (参数化索引), zone index (域索引)
+- 索引构建（index construction）, 67
+
+<!-- source: PDF 577; printed: 540 -->
+
+- 索引器（indexer）, 67
+- 索引构建（indexing）, 67
+  - 基于排序的（sort-based）, 7
+- 索引粒度（indexing granularity）, 21
+- 索引单元（indexing unit）, 201
+- INEX, 210
+- 信息增益（information gain）, 285
+- 信息需求（information need）, 5, 152
+- 信息检索（information retrieval）, 1
+- 信息型查询（informational queries）, 432
+- 内积（inner product）, 121
+- 基于实例的学习（instance-based learning）, 300
+- 簇间相似度（inter-similarity）, 381
+- 内部质量标准（internal criterion of quality）, 356
+- 插值查准率（interpolated precision）, 158
+- 交集（intersection）
+  - 倒排记录表（postings list）, 10
+- 逆文档频率（inverse document frequency）, 118, 125
+- 倒排（inversion）, 71, 378, 391
+- 倒排文件（inverted file）, 见 inverted index (倒排索引)
+- 倒排索引（inverted index）, 6
+- 倒排表（inverted list）, 见 postings list (倒排记录表)
+- 倒排器（inverter）, 76
+- IP 地址（IP address）, 449
+
+- Jaccard 系数（Jaccard coefficient）, 61, 438
+
+- K-中心点（K-medoids）, 365
+- kappa 统计量（kappa statistic）, 165, 174, 373
+- 核（kernel）, 332
+- 核函数（kernel function）, 332
+- 核技巧（kernel trick）, 331
+- 键值对（key-value pairs）, 75
+- 上下文中的关键字（keyword-in-context）, 171
+- kNN 分类（kNN classification）, 297
+- Kruskal 算法（Kruskal's algorithm）, 399
+- Kullback-Leibler 散度（Kullback-Leibler divergence）, 251, 317, 372
+- KWIC, 见 keyword-in-context (上下文中的关键字)
+
+- 标签（label）, 256
+- 打标签（labeling）, 255
+- 语言（language）, 237
+- 语言识别（language identification）, 24, 46
+- 语言模型（language model）, 238
+- 拉普拉斯平滑（Laplace smoothing）, 260
+- 潜在狄利克雷分配（Latent Dirichlet Allocation）, 418
+- 潜在语义索引（latent semantic indexing）, 192, 413
+- LDA, 418
+- 学习算法（learning algorithm）, 256
+- 学习误差（learning error）, 310
+- 学习方法（learning method）, 256
+- 词形（lemma）, 32
+- 词形还原（lemmatization）, 32
+- 词形还原器（lemmatizer）, 33
+- 长度归一化（length-normalization）, 121
+- Levenshtein 距离（Levenshtein distance）, 58
+- 词汇化子树（lexicalized subtree）, 206
+- 词典（lexicon）, 6
+- 似然（likelihood）, 221
+- 似然比（likelihood ratio）, 239
+- 线性分类器（linear classifier）, 301, 343
+- 线性问题（linear problem）, 303
+- 线性可分性（linear separability）, 304
+- 链接农场（link farms）, 481
+- 链接作弊（link spam）, 429, 461
+- LM, 243
+- 对数合并（logarithmic merging）, 79
+- 无损（lossless）, 87
+- 有损压缩（lossy compression）, 87
+- 低秩近似（low-rank approximation）, 410
+- LSA, 413
+- 作为软聚类的 LSI（LSI as soft clustering）, 417
+
+- 机器翻译（machine translation）, 240, 243, 251
+- 机器学习相关性（machine-learned relevance）, 113, 342
+- 宏平均（macroaveraging）, 280
+- MAP, 159, 227, 258
+- map 阶段（map phase）, 75
+- MapReduce, 75
+- 间隔（margin）, 320
+- 边际相关性（marginal relevance）, 167
+- 边缘统计量（marginal statistic）, 165
+- 主节点（master node）, 75
+- 矩阵分解（matrix decomposition）, 406
+- 最大化步（maximization step）, 370
+- 最大后验（maximum a posteriori）, 227, 265
+- 最大后验类（maximum a posteriori class）, 258
+- 最大似然估计（maximum likelihood estimate）, 226, 259
+- 最大似然估计（maximum likelihood estimation）, 244
+- 平均查准率均值（Mean Average Precision）, 见 MAP
+- 中心点（medoid）, 365
+- 记忆容量（memory capacity）, 312
+
+<!-- source: PDF 578; printed: 541 -->
+
+- 基于记忆的学习（memory-based learning）, 300
+- Mercator, 445
+- Mercer 核（Mercer kernel）, 332
+- 合并（merge）
+  - 倒排记录（postings）, 10
+- 合并算法（merge algorithm）, 10
+- 元数据（metadata）, 24, 110, 171, 197, 373, 428
+- 微平均（microaveraging）, 280
+- 最小生成树（minimum spanning tree）, 399, 401
+- 最小方差聚类（minimum variance clustering）, 399
+- MLE，见 最大似然估计（maximum likelihood estimate）
+- ModApte 划分（ModApte split）, 279, 286
+- 模型复杂度（model complexity）, 312, 366
+- 基于模型的聚类（model-based clustering）, 368
+- 单调性（monotonicity）, 378
+- 多类分类（multiclass classification）, 306
+- 多类支持向量机（multiclass SVM）, 347
+- 多标签分类（multilabel classification）, 306
+- 多峰类（multimodal class）, 296
+- 多项式分类（multinomial classification）, 306
+- 多项式分布（multinomial distribution）, 241
+- 多项式模型（multinomial model）, 263, 270
+- 多项式朴素贝叶斯（multinomial Naive Bayes）, 258
+- multinomial NB，见 多项式朴素贝叶斯（multinomial Naive Bayes）
+- 多值分类（multivalue classification）, 306
+- 多变量伯努利模型（multivariate Bernoulli model）, 263
+- 互信息（mutual information）, 272, 358
+
+- 朴素贝叶斯假设（Naive Bayes assumption）, 224
+- 命名实体标注（named entity tagging）, 195, 339
+- 美国国家标准与技术研究院（National Institute of Standards and Technology）, 153
+- 自然语言处理（natural language processing）, xxxiv, 33, 171, 217, 249, 372
+- 导航型查询（navigational queries）, 432
+- NDCG, 163
+- 嵌套元素（nested elements）, 203
+- NEXI, 200
+- 下一词索引（next word index）, 44
+- 半字节（nibble）, 98
+- NLP，见 自然语言处理（natural language processing）
+- NMI, 358
+- 噪声文档（noise document）, 303
+- 噪声特征（noise feature）, 271
+- 非线性分类器（nonlinear classifier）, 305
+
+- 非线性问题（nonlinear problem）, 305
+- 法向量（normal vector）, 293
+- 归一化折损累计收益（normalized discounted cumulative gain）, 163
+- 归一化互信息（normalized mutual information）, 358
+- 新颖性检测（novelty detection）, 395
+- NTCIR, 154, 174
+
+- 目标函数（objective function）, 354, 360
+- 几率（odds）, 221
+- 几率比（odds ratio）, 225
+- Okapi 权重计算（Okapi weighting）, 232
+- 单值分类（one-of classification）, 257, 284, 306
+- 最优分类器（optimal classifier）, 270, 310
+- 最优聚类（optimal clustering）, 393
+- 最优学习方法（optimal learning method）, 310
+- 序数回归（ordinal regression）, 344
+- 出链（out-links）, 425
+- 离群点（outlier）, 363
+- 过拟合（overfitting）, 271, 312
+
+- PageRank, 464
+- 付费收录（paid inclusion）, 428
+- 参数调优（parameter tuning）, 153, 314, 315, 348
+- 参数绑定（parameter tying）, 340
+- 无参数压缩（parameter-free compression）, 100
+- 参数化压缩（parameterized compression）, 106
+- 参数化索引（parametric index）, 110
+- 参数化搜索（parametric search）, 197
+- 解析器（parser）, 75
+- 划分规则（partition rule）, 220
+- 划分聚类（partitional clustering）, 355
+- 段落检索（passage retrieval）, 217
+- 专利数据库（patent databases）, 195
+- 感知机算法（perceptron algorithm）, 286, 315
+- 性能（performance）, 280
+- 轮排索引（permuterm index）, 53
+- 个性化 PageRank（personalized PageRank）, 471
+- 短语索引（phrase index）, 40
+- 短语查询（phrase queries）, 39, 47
+- 短语搜索（phrase search）, 15
+- 枢轴文档长度归一化（pivoted document length normalization）, 129
+- 逐点互信息（pointwise mutual information）, 286
+- 多类的（polychotomous）, 306
+- 多类分类（polytomous classification）, 306
+- 多胞体（polytope）, 298
+
+<!-- source: PDF 579; printed: 542 -->
+
+- 池化（pooling）, 164, 174
+- 色情过滤（pornography filtering）, 338
+- Porter 词干提取器（Porter stemmer）, 33
+- 位置独立性（positional independence）, 267
+- 位置索引（positional index）, 41
+- 后验概率（posterior probability）, 220
+- 倒排记录（posting）, 6, 7, 71, 86
+- 倒排记录表（postings list）, 6
+- 幂律（power law）, 89, 426
+- 查准率（precision）, 5, 155
+- 前 $k$ 个结果的查准率（precision at $k$）, 161
+- 查准率-召回率曲线（precision-recall curve）, 158
+- 无前缀码（prefix-free code）, 100
+- 主方向分裂划分（principal direction divisive partitioning）, 400
+- 主左特征向量（principal left eigenvector）, 465
+- 先验概率（prior probability）, 220
+- 概率排序原理（Probability Ranking Principle）, 221
+- 概率向量（probability vector）, 466
+- 原型（prototype）, 290
+- 邻近操作符（proximity operator）, 14
+- 邻近权重计算（proximity weighting）, 145
+- 伪相关反馈（pseudo relevance feedback）, 187
+- 伪计数（pseudocounts）, 226
+- 拉模型（pull model）, 314
+- 纯度（purity）, 356
+- 推模型（push model）, 314
+
+- 二次规划（Quadratic Programming）, 324
+- 查询（query）, 5
+  - 自由文本（free text）, 14, 16, 117
+  - 简单合取（simple conjunctive）, 10
+- 查询扩展（query expansion）, 189
+- 查询似然模型（query likelihood model）, 242
+- 查询优化（query optimization）, 11
+- 样例查询（query-by-example）, 201, 249
+
+- R-查准率（R-precision）, 161, 174
+- Rand 指数（Rand index）, 359
+  - 调整后的（adjusted）, 373
+- 随机变量（random variable）, 220
+- 随机变量 $C$（random variable $C$）, 268
+- 随机变量 $U$（random variable $U$）, 266
+- 随机变量 $X$（random variable $X$）, 266
+- 秩（rank）, 403
+- 排序布尔检索（Ranked Boolean retrieval）, 112
+- 排序检索（ranked retrieval）, 81, 107
+  - 模型（model）, 14
+- 排序支持向量机（ranking SVM）, 345
+- 召回率（recall）, 5, 155
+- 归约阶段（reduce phase）, 75
+- 降维 SVD（reduced SVD）, 409, 412
+- 回归（regression）, 344
+- 正则表达式（regular expressions）, 3, 18
+- 正则化（regularization）, 328
+- 关系数据库（relational database）, 195, 214
+- 相对频率（relative frequency）, 226
+- 相关性（relevance）, 5, 152
+- 相关反馈（relevance feedback）, 178
+- 残差平方和（residual sum of squares）, 360
+- 结果摘要（results snippets）, 146
+- 检索模型（retrieval model）
+  - 布尔（Boolean）, 4
+- 检索状态值（Retrieval Status Value）, 225
+- 检索系统（retrieval systems）, 81
+- Reuters-21578, 154
+- Reuters-RCV1, 69, 154
+- RF, 178
+- 机器人排除协议（Robots Exclusion Protocol）, 447
+- ROC 曲线（ROC curve）, 162
+- Rocchio 算法（Rocchio algorithm）, 181
+- Rocchio 分类（Rocchio classification）, 292
+- 路由（routing）, 253, 314
+- RSS, 360
+- 30 规则（rule of 30）, 86
+- 文本分类中的规则（rules in text classification）, 255
+
+- 散布-聚集（Scatter-Gather）, 351
+- 模式（schema）, 199
+- 模式多样性（schema diversity）, 204
+- 模式异构性（schema heterogeneity）, 204
+- 搜索广告（search advertising）, 430
+- 搜索引擎营销（search engine marketing）, 431
+- 搜索引擎优化者（Search Engine Optimizers）, 429
+- 搜索结果聚类（search result clustering）, 351
+- 搜索结果（search results）, 351
+- 安全性（security）, 81
+- 种子（seed）, 361
+- 寻道时间（seek time）, 68
+- 段文件（segment file）, 75
+- 半监督学习（semi-supervised learning）, 336
+- 半结构化查询（semistructured query）, 197
+- 半结构化检索（semistructured retrieval）, 2, 197
+- 敏感度（sensitivity）, 162
+
+<!-- source: PDF 580; printed: 543 -->
+
+- 情感检测（sentiment detection）, 254
+- 序列模型（sequence model）, 267
+- 连续词组（shingling）, 438
+- 单标签分类（single-label classification）, 306
+- 单链接聚类（single-link clustering）, 382
+- single-linkage clustering，见 单链接聚类（single-link clustering）
+- 单遍内存索引（single-pass in-memory indexing）, 73
+- 单元素（singleton）, 378
+- 单元素簇（singleton cluster）, 363
+- 奇异值分解（singular value decomposition）, 407
+- 跳表（skip list）, 36, 46
+- 松弛变量（slack variables）, 327
+- SMART, 182
+- 平滑（smoothing）, 127, 226
+  - 加 $\alpha$（add $\alpha$）, 226
+  - 加 $\frac{1}{2}$（add $\frac{1}{2}$）, 232
+  - 加 $\frac{1}{2}$（add $\frac{1}{2}$）, 226–229, 262
+  - 贝叶斯先验（Bayesian prior）, 226, 228, 245
+  - 线性插值（linear interpolation）, 245
+- 摘要（snippet）, 170
+- 软分配（soft assignment）, 350
+- 软聚类（soft clustering）, 350, 355, 377
+- 排序（sorting）
+  - 在索引构建中（in index construction）, 7
+- soundex, 63
+- 垃圾信息（spam）, 338, 427
+  - 电子邮件（email）, 254
+  - 网页（web）, 254
+- 稀疏性（sparseness）, 241, 244, 260
+- 特异性（specificity）, 162
+- 谱聚类（spectral clustering）, 400
+- 语音识别（speech recognition）, 240
+- 拼写纠错（spelling correction）, 147, 240, 242
+- 蜘蛛（spider）, 443
+- 蜘蛛陷阱（spider traps）, 433
+- SPIMI, 73
+- 划分（splits）, 75
+- 赞助商搜索（sponsored search）, 430
+- 持续查询（standing query）, 253
+- 静态质量评分（static quality scores）, 138
+- 静态网页（static web pages）, 424
+- 统计显著性（statistical significance）, 276
+- 统计文本分类（statistical text classification）, 255
+- 稳态（steady-state）, 467, 468
+- 词干提取（stemming）, 32, 46
+
+- 随机矩阵（stochastic matrix）, 465
+- 停用词（stop words）, 117
+- 停用词表（stop list）, 27
+  - 停用词（stop words）, 117
+- 停用词（stop words）, 23, 27, 45, 127
+- 结构化支持向量机（structural SVM）, 345
+- 结构化支持向量机（structural SVMs）, 330
+- 结构化词项（structural term）, 207
+- 结构化文档检索原理（structured document retrieval principle）, 201
+- 结构化查询（structured query）, 197
+- 结构化检索（structured retrieval）, 195, 197
+- 摘要生成（summarization）, 400
+- 摘要（summary）
+  - 动态（dynamic）, 171
+  - 静态（static）, 171
+- 监督学习（supervised learning）, 256
+- 支持向量（support vector）, 320
+- 支持向量机（support vector machine）, 319, 346
+  - 多类（multiclass）, 330
+- SVD, 373, 400, 408
+- SVM，见 支持向量机（support vector machine）
+- 对称对角分解（symmetric diagonal decomposition）, 407, 408
+- 同义词（synonymy）, 177
+
+- 随机跳转（teleport）, 464
+- 词项（term）, 3, 19, 22
+- 词项频率（term frequency）, 16, 117
+- 词项归一化（term normalization）, 28
+- 词项划分（term partitioning）, 454
+- 每次一个词项（term-at-a-time）, 125, 140
+- 词项-文档矩阵（term-document matrix）, 123
+- 按词项划分的索引（term-partitioned index）, 74
+- 词项 ID（termID）, 69
+- 测试数据（test data）, 256
+- 测试集（test set）, 256, 283
+- 文本分类（text categorization）, 253
+- 文本分类（text classification）, 253
+- 文本摘要（text summarization）, 171
+- 以文本为中心的 XML（text-centric XML）, 214
+- tf，见 词项频率（term frequency）
+- tf-idf, 119
+- 分层索引（tiered indexes）, 143
+- 词元（token）, 19, 22
+- 词元归一化（token normalization）, 28
+- 顶级文档（top docs）, 149
+
+<!-- source: PDF 581; printed: 544 -->
+
+- 自顶向下聚类（top-down clustering）, 395
+- 主题（topic）, 153, 253
+  - 在 XML 检索中（in XML retrieval）, 211
+- 主题分类（topic classification）, 253
+- 主题识别（topic spotting）, 253
+- 特定主题的 PageRank（topic-specific PageRank）, 471
+- 主题相关性（topical relevance）, 212
+- 训练集（training set）, 256, 283
+- 事务型查询（transactional query）, 433
+- 直推式支持向量机（transductive SVMs）, 336
+- 翻译模型（translation model）, 251
+- TREC, 153, 314
+- trec_eval, 174
+- 真实大小写恢复（truecasing）, 30, 46
+- 截断 SVD（truncated SVD）, 409, 412, 415
+- 二类分类器（two-class classifier）, 279
+- 词型（type）, 22
+
+- 一元码（unary code）, 99
+- 一元语言模型（unigram language model）, 240
+- 并查集算法（union-find algorithm）, 395, 440
+- 通用码（universal code）, 100
+- 无监督学习（unsupervised learning）, 349
+- URL, 422
+- URL 归一化（URL normalization）, 447
+- 效用度量（utility measure）, 286
+
+- 可变字节编码（variable byte encoding）, 96
+- 方差（variance）, 311
+- 向量空间模型（vector space model）, 120
+- 垂直搜索引擎（vertical search engine）, 254
+- 词汇表（vocabulary）, 6
+- Voronoi 镶嵌（Voronoi tessellation）, 297
+
+- Ward 方法（Ward's method）, 399
+- 网络爬虫（web crawler）, 443
+- 权重向量（weight vector）, 322
+- 加权域评分（weighted zone scoring）, 110
+- 维基百科（Wikipedia）, 211
+- 通配符查询（wildcard query）, 3, 49, 52
+- 点内散度（within-point scatter）, 375
+- 分词（word segmentation）, 25
+
+- XML, 20, 196
+- XML 属性（XML attribute）, 197
+- XML DOM, 197
+- XML DTD, 199
+- XML 元素（XML element）, 197
+- XML 片段（XML fragment）, 216
+- XML Schema, 199
+- XML 标签（XML tag）, 197
+- XPath, 199
+
+- Zipf 定律（Zipf's law）, 89
+- 域（zone）, 110, 337, 339, 340
+- 域索引（zone index）, 110
+- 域搜索（zone search）, 197
+
+[返回系列目录](../introduction-to-information-retrieval.md) · [上一篇：作者索引](./23-author-index.md)
