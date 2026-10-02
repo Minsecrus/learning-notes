@@ -59,12 +59,18 @@ const texOptions: MathJaxTexInputOptions & {
     // Carroll's source uses the pound sign for the Lie derivative.
     pounds: '\\textsterling',
     // Preserve plain TeX's zero-width, left-overlapping equation layout.
-    lefteqn: ['\\rlap{\\displaystyle #1}', 1]
+    lefteqn: ['\\rlap{\\displaystyle #1}', 1],
+    // Paragraph fill has no elastic width inside a standalone SVG formula.
+    // Preserve a regular gap before proof-ending symbols used in the notes.
+    hfill: '\\qquad',
+    // Annotated dashed maps occur in commuting diagrams in the lectures.
+    xdashrightarrow: ['\\mathrel{\\overset{#1}{\\dashrightarrow}}', 1]
   }
 }
 
 const mathjaxInstance = createMathjaxInstance({
   a11y: true,
+  allowInlineWithSpace: true,
   delimiters: 'dollars',
   mathFence: false,
   output: 'svg',
@@ -75,11 +81,19 @@ const mathjaxInstance = createMathjaxInstance({
     fontData: MathJaxTexFont
   },
   transformer: (content, displayMode) => {
+    // MathJax uses an ASCII space in mjx-break to supply operator spacing and
+    // permit inline wrapping. Vue removes a whitespace-only element child;
+    // an explicit text interpolation keeps the original space in SSR and DOM.
+    const rendered = content.replace(
+      /(<mjx-break\b[^>]*>) (?=<\/mjx-break>)/g,
+      "$1{{ ' ' }}"
+    )
+
     if (!displayMode) {
-      return content
+      return rendered
     }
 
-    return content.replace(
+    return rendered.replace(
       /^<mjx-container /,
       '<mjx-container tabindex="0" '
     )

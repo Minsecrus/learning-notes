@@ -39,6 +39,14 @@ function decodeHtmlAttribute(value) {
 function findMathRenderingIssues(html) {
   const issues = new Set()
 
+  if (/<mjx-break\b[^>]*><\/mjx-break>/.test(html)) {
+    issues.add('MathJax inline operator spacing was lost (empty mjx-break)')
+  }
+
+  if (/<mjx-break\b[^>]*>\{\{\s*' '\s*\}\}<\/mjx-break>/.test(html)) {
+    issues.add('MathJax inline spacing interpolation was not compiled')
+  }
+
   for (const match of html.matchAll(/\bdata-mjx-error="([^"]+)"/g)) {
     issues.add(`MathJax error: ${decodeHtmlAttribute(match[1])}`)
   }

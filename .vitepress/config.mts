@@ -1,8 +1,10 @@
 import { withMermaid } from 'vitepress-plugin-mermaid'
+import footnote from 'markdown-it-footnote'
 import { defineConfig } from 'vitepress'
 import { createRequire } from 'node:module'
 import { dirname, resolve } from 'node:path'
 import { configureMathjax, mathjaxStyle } from './math'
+import { createMathStaticTransform } from './math-static'
 
 const require = createRequire(import.meta.url)
 const mermaidEntry = require.resolve('mermaid')
@@ -20,12 +22,16 @@ export default withMermaid(defineConfig({
     ['style', { id: 'mathjax-svg-styles' }, mathjaxStyle]
   ],
   markdown: {
-    config: configureMathjax
+    config: (md) => {
+      md.use(footnote)
+      configureMathjax(md)
+    }
   },
   vue: {
     template: {
       compilerOptions: {
-        isCustomElement: (tag) => tag.startsWith('mjx-')
+        isCustomElement: (tag) => tag.startsWith('mjx-'),
+        nodeTransforms: [createMathStaticTransform()]
       }
     }
   },
@@ -41,6 +47,28 @@ export default withMermaid(defineConfig({
       { text: '首页', link: '/' },
       { text: '笔记', link: '/notes/' }
     ],
+    search: {
+      provider: 'local',
+      options: {
+        miniSearch: {
+          options: {
+            tokenize: (text) => Array.from(
+              new Intl.Segmenter('zh-CN', { granularity: 'word' }).segment(text)
+            ).filter((part) => part.isWordLike).map((part) => part.segment)
+          }
+        },
+        translations: {
+          button: { buttonText: '搜索', buttonAriaLabel: '搜索笔记与讲义' },
+          modal: {
+            displayDetails: '显示详细结果',
+            resetButtonTitle: '清空搜索',
+            backButtonTitle: '返回搜索',
+            noResultsText: '没有找到相关内容',
+            footer: { selectText: '选择', navigateText: '切换', closeText: '关闭' }
+          }
+        }
+      }
+    },
     // BEGIN GENERATED NOTES SIDEBAR
     sidebar: [
       {
@@ -48,6 +76,425 @@ export default withMermaid(defineConfig({
         items: [
           { text: '首页', link: '/' },
           { text: '笔记索引', link: '/notes/' }
+        ]
+      },
+      {
+        text: "2026-10-02",
+        items: [
+          {
+            text: "数学分析课程讲义（丘成桐数学英才班）",
+            link: "/notes/2026/10/02/math-analysis-lecture-notes",
+            collapsed: true,
+            items: [
+              {
+                text: "数学分析 1",
+                link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i",
+                collapsed: true,
+                items: [
+                  { text: "数学分析一课程简介", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/00-09-course-overview" },
+                  { text: "1 实数的公理化描述", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/01-real-number-axioms" },
+                  { text: "2 区间套、确界与距离空间", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/02-nested-intervals" },
+                  {
+                    text: "3 Dedekind 分割与实数构造",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/03-dedekind-cuts",
+                    collapsed: true,
+                    items: [
+                      { text: "Dedekind 分割与实数构造", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/03-dedekind-cuts/03-01-p0030-0035" },
+                      { text: "3.1 作业:可数与不可数,Schroeder-Bernstein定理", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/03-dedekind-cuts/03-03-p0036-0039" }
+                    ]
+                  },
+                  { text: "4 极限、级数与 Cauchy 列", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/04-limits" },
+                  { text: "5 收敛判别与常数 e", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/05-convergence-tests" },
+                  {
+                    text: "6 指数函数与三角函数",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/06-exponential-trigonometric",
+                    collapsed: true,
+                    items: [
+                      { text: "指数函数与三角函数", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/06-exponential-trigonometric/06-01-p0059-0064" },
+                      { text: "6.1 作业:Riemann重排,Cesàro求和,Banach-Mazur游戏", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/06-exponential-trigonometric/06-03-p0065-0070" }
+                    ]
+                  },
+                  {
+                    text: "7 级数判别、完备空间与不动点",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/07-complete-spaces",
+                    collapsed: true,
+                    items: [
+                      { text: "级数判别、完备空间与不动点", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/07-complete-spaces/07-01-p0071-0080" },
+                      { text: "7.1 作业:素数的倒数和,Basel问题的Euler“证明”", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/07-complete-spaces/07-03-p0081-0085" }
+                    ]
+                  },
+                  { text: "8 函数的连续性", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/08-continuity" },
+                  { text: "9 连续映射与介值定理", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/09-continuous-maps" },
+                  {
+                    text: "10 开闭集、紧集与连续性",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/10-topology",
+                    collapsed: true,
+                    items: [
+                      { text: "开闭集、紧集与连续性", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/10-topology/10-01-p0102-0106" },
+                      { text: "10.1 数学分析一作业4", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/10-topology/10-02-p0107-0110" }
+                    ]
+                  },
+                  { text: "11 紧性、一致连续与一致收敛", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/11-compactness" },
+                  {
+                    text: "12 连续函数的构造与完备化",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/12-continuous-functions",
+                    collapsed: true,
+                    items: [
+                      { text: "连续函数的构造与完备化", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/12-continuous-functions/12-01-p0119-0125" },
+                      { text: "12.1 作业:有无穷多素数的拓扑证明", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/12-continuous-functions/12-03-p0126-0131" },
+                      { text: "12.2 期中考试:连续函数环的极大理想", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/12-continuous-functions/12-05-p0132-0135" }
+                    ]
+                  },
+                  { text: "13 导数与初等函数", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/13-derivatives" },
+                  { text: "14 导数公式与中值定理", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/14-mean-value-theorems" },
+                  {
+                    text: "15 中值定理、微分方程与圆周率",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/15-derivative-applications",
+                    collapsed: true,
+                    items: [
+                      { text: "中值定理、微分方程与圆周率", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/15-derivative-applications/15-01-p0151-0157" },
+                      { text: "15.1 作业:高木贞治函数", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/15-derivative-applications/15-03-p0158-0165" }
+                    ]
+                  },
+                  { text: "16 空间填充曲线、L’Hôpital 法则与 Taylor 展开", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/16-lhopital-taylor" },
+                  {
+                    text: "17 凸函数与 Jensen 不等式",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/17-convexity",
+                    collapsed: true,
+                    items: [
+                      { text: "凸函数与 Jensen 不等式", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/17-convexity/17-01-p0175-0182" },
+                      { text: "17.1 作业:Émile Borel引理,Peano的证明", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/17-convexity/17-03-p0183-0188" }
+                    ]
+                  },
+                  { text: "18 Riemann 积分的定义", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/18-riemann-integral" },
+                  {
+                    text: "19 Riemann 和与 Darboux 上下和",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/19-darboux-sums",
+                    collapsed: true,
+                    items: [
+                      { text: "Riemann 和与 Darboux 上下和", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/19-darboux-sums/19-01-p0199-0203" },
+                      { text: "19.1 作业:Sturm-Louville理论的一个例子", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/19-darboux-sums/19-02-p0204-0209" }
+                    ]
+                  },
+                  {
+                    text: "20 Newton-Leibniz 公式与积分计算",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/20-fundamental-theorem",
+                    collapsed: true,
+                    items: [
+                      { text: "Newton-Leibniz 公式与积分计算", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/20-fundamental-theorem/20-01-p0210-0218" },
+                      { text: "20.1 作业:Dini定理,多项式逼近与Weierstrass-Stone定理", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/20-fundamental-theorem/20-03-p0219-0223" }
+                    ]
+                  },
+                  { text: "21 振幅、零测集与 Lebesgue 定理", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/21-lebesgue-criterion" },
+                  { text: "22 反常积分、Euler 常数与 Stirling 公式", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/22-improper-integrals" },
+                  {
+                    text: "23 微积分历史与含参积分",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/23-parameter-integrals",
+                    collapsed: true,
+                    items: [
+                      { text: "微积分历史与含参积分", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/23-parameter-integrals/23-01-p0239-0245" },
+                      { text: "23.1 作业：ζ(2) 的无理性", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/23-parameter-integrals/23-03-p0246-0249" }
+                    ]
+                  },
+                  { text: "24 常微分方程、Kepler 定律与变分法", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/24-ode-variation" },
+                  {
+                    text: "25 最速降线与积分第一中值定理",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/25-brachistochrone",
+                    collapsed: true,
+                    items: [
+                      { text: "最速降线与积分第一中值定理", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/25-brachistochrone/25-01-p0262-0266" },
+                      { text: "25.1 作业:可写成两个完全平方数的和的整数的密度", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/25-brachistochrone/25-02-p0267-0274" }
+                    ]
+                  },
+                  { text: "26 第二积分中值定理与 Stieltjes 积分", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/26-stieltjes-integral" },
+                  {
+                    text: "27 Stieltjes 积分的中值定理",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/27-stieltjes-mean-value",
+                    collapsed: true,
+                    items: [
+                      { text: "Stieltjes 积分的中值定理", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/27-stieltjes-mean-value/27-01-p0283-0289" },
+                      { text: "27.1 作业:振荡积分", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295" }
+                    ]
+                  },
+                  { text: "28 Baire 纲定理与 Liouville 定理", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/28-baire-liouville" },
+                  {
+                    text: "29 振荡与衰减、期末考试与寒假作业",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/29-oscillation-decay",
+                    collapsed: true,
+                    items: [
+                      { text: "振荡与衰减、期末考试与寒假作业", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/29-oscillation-decay/29-01-p0306-0312" },
+                      { text: "29.1–29.2 建议阅读与数学分析一期末考试", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/29-oscillation-decay/29-03-p0313-0319" },
+                      { text: "29.3 寒假作业", link: "/notes/2026/10/02/math-analysis-lecture-notes/01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333" }
+                    ]
+                  }
+                ]
+              },
+              {
+                text: "数学分析 2",
+                link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii",
+                collapsed: true,
+                items: [
+                  { text: "数学分析二课程简介", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/30-00-course-overview" },
+                  { text: "30 方向导数、偏导数与微分", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/30-multivariable-derivatives" },
+                  {
+                    text: "31 映射的微分与 Jacobi 矩阵",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/31-differential-maps",
+                    collapsed: true,
+                    items: [
+                      { text: "映射的微分与 Jacobi 矩阵", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/31-differential-maps/31-01-p0344-0351" },
+                      { text: "31.1 作业:齐次函数与Euler公式", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/31-differential-maps/31-03-p0352-0356" }
+                    ]
+                  },
+                  { text: "32 坐标变换、多元 Taylor 展开与子流形", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/32-coordinate-changes" },
+                  {
+                    text: "33 子流形与反函数定理",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/33-inverse-function",
+                    collapsed: true,
+                    items: [
+                      { text: "子流形与反函数定理", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/33-inverse-function/33-01-p0368-0374" },
+                      { text: "33.1 习题课:拓扑空间", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/33-inverse-function/33-03-p0375-0377" },
+                      { text: "33.2 作业:反函数和隐函数定理", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/33-inverse-function/33-04-p0378-0383" }
+                    ]
+                  },
+                  { text: "34 隐函数定理与子流形参数化", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/34-implicit-function" },
+                  {
+                    text: "35 原像定理、切空间与法向量",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/35-tangent-spaces",
+                    collapsed: true,
+                    items: [
+                      { text: "原像定理、切空间与法向量", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/35-tangent-spaces/35-01-p0394-0400" },
+                      { text: "35.1 作业:隐函数与反函数定理,隐函数定理在多项式和矩阵上的一个重要应用,经典群的子流形结构", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/35-tangent-spaces/35-03-p0401-0405" }
+                    ]
+                  },
+                  { text: "36 切丛与 Lagrange 乘子法", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/36-tangent-bundles" },
+                  {
+                    text: "37 Hesse 矩阵、极值与凸函数",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/37-hessian-convexity",
+                    collapsed: true,
+                    items: [
+                      { text: "Hesse 矩阵、极值与凸函数", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/37-hessian-convexity/37-01-p0418-0424" },
+                      { text: "37.1 习题课:球极投影", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/37-hessian-convexity/37-03-p0425-0427" },
+                      { text: "37.2 作业:Lagrange乘子法,Morse引理,横截相交性", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/37-hessian-convexity/37-04-p0428-0432" }
+                    ]
+                  },
+                  { text: "38 σ-代数与可测映射", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/38-measurability" },
+                  { text: "39 测度与 Carathéodory 扩张定理", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/39-measure-extension" },
+                  { text: "40 Lebesgue 测度与测度空间的完备化", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/40-lebesgue-measure" },
+                  {
+                    text: "41 抽象积分与 Beppo Levi 定理",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/41-abstract-integrals",
+                    collapsed: true,
+                    items: [
+                      { text: "抽象积分与 Beppo Levi 定理", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/41-abstract-integrals/41-01-p0470-0477" },
+                      { text: "41.1 作业:子流形与零测集,Stieltjies 测度的构造,Borel-Cantelli 定理和无理数的逼近", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/41-abstract-integrals/41-03-p0478-0483" }
+                    ]
+                  },
+                  { text: "42 Lebesgue 积分与控制收敛定理", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/42-dominated-convergence" },
+                  {
+                    text: "43 积分与求导交换、乘积测度",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/43-product-measures",
+                    collapsed: true,
+                    items: [
+                      { text: "积分与求导交换、乘积测度", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/43-product-measures/43-01-p0496-0502" },
+                      { text: "43.1 作业:Lebesgue 控制收敛,十进制小数的研究", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/43-product-measures/43-03-p0503-0508" },
+                      { text: "43.2 习题课:硬币空间的测度理论", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/43-product-measures/43-05-p0509-0511" }
+                    ]
+                  },
+                  {
+                    text: "44 Fubini 定理与积分降维",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/44-fubini",
+                    collapsed: true,
+                    items: [
+                      { text: "Fubini 定理与积分降维", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/44-fubini/44-01-p0512-0519" },
+                      { text: "44.1 作业:Archimedes对抛物线面积的计算,Gauss积分", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/44-fubini/44-03-p0520-0523" }
+                    ]
+                  },
+                  { text: "45 换元积分公式", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/45-change-of-variables" },
+                  {
+                    text: "46 常用换元与子流形上的积分",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/46-submanifold-integrals",
+                    collapsed: true,
+                    items: [
+                      { text: "常用换元与子流形上的积分", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/46-submanifold-integrals/46-01-p0537-0546" },
+                      { text: "46.1 期中考试:非Borel集的构造", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/46-submanifold-integrals/46-03-p0547-0552" }
+                    ]
+                  },
+                  { text: "47 球体积与 Stokes 公式的第一个证明", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/47-stokes-first-proof" },
+                  {
+                    text: "48 Sard 型引理与 Stokes 公式",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/48-stokes-topological-proof",
+                    collapsed: true,
+                    items: [
+                      { text: "Sard 型引理与 Stokes 公式", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/48-stokes-topological-proof/48-01-p0565-0572" },
+                      { text: "48.1 作业:曲面曲线积分的计算", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/48-stokes-topological-proof/48-03-p0573-0577" },
+                      { text: "48.2 习题课:Riemann积分的定义1", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/48-stokes-topological-proof/48-04-p0578-0584" }
+                    ]
+                  },
+                  { text: "49 散度定理与 Green 公式", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/49-vector-calculus" },
+                  { text: "50 Brouwer 不动点定理与 Hilbert 空间", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/50-hilbert-spaces" },
+                  {
+                    text: "51 函数空间、连续算子与卷积逼近",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/51-convolution-approximation",
+                    collapsed: true,
+                    items: [
+                      { text: "函数空间、连续算子与卷积逼近", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/51-convolution-approximation/51-01-p0602-0611" },
+                      { text: "51.1 作业:Stokes公式的应用", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/51-convolution-approximation/51-03-p0612-0617" },
+                      { text: "51.2 习题课:Riemann积分的定义2", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/51-convolution-approximation/51-05-p0618-0622" }
+                    ]
+                  },
+                  { text: "52 Hilbert 基与 Fourier 级数", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/52-fourier-series" },
+                  {
+                    text: "53 Fourier 级数的 L2 理论",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/53-fourier-l2",
+                    collapsed: true,
+                    items: [
+                      { text: "Fourier 级数的 L2 理论", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/53-fourier-l2/53-01-p0632-0639" },
+                      { text: "53.1 作业:波动方程的局部能量估计", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/53-fourier-l2/53-03-p0640-0643" },
+                      { text: "53.2 习题课:Riemann积分的定义3", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/53-fourier-l2/53-04-p0644-0646" }
+                    ]
+                  },
+                  { text: "54 光滑性、Dirichlet 核与 Fejer 核", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/54-fourier-kernels" },
+                  {
+                    text: "55 Fourier 级数的收敛理论",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/55-fourier-convergence",
+                    collapsed: true,
+                    items: [
+                      { text: "Fourier 级数的收敛理论", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/55-fourier-convergence/55-01-p0660-0666" },
+                      { text: "55.1 作业:Fourier级数的计算,三角函数与球谐函数", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/55-fourier-convergence/55-03-p0667-0673" }
+                    ]
+                  },
+                  { text: "56 Bernstein 定理与等分布", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/56-bernstein-equidistribution" },
+                  {
+                    text: "57 Roth 定理与数学分析二期末考试",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/57-roth-theorem",
+                    collapsed: true,
+                    items: [
+                      { text: "Roth 定理与数学分析二期末考试", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/57-roth-theorem/57-01-p0684-0697" },
+                      { text: "57.1 作业:Fourier级数几乎处处发散的L1-函数", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/57-roth-theorem/57-04-p0698-0703" },
+                      { text: "57.2 期末考试:Maass波函数的展开", link: "/notes/2026/10/02/math-analysis-lecture-notes/02-math-analysis-ii/57-roth-theorem/57-06-p0704-0708" }
+                    ]
+                  }
+                ]
+              },
+              {
+                text: "数学分析 3",
+                link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii",
+                collapsed: true,
+                items: [
+                  { text: "数学分析三课程简介", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/58-00-course-overview" },
+                  { text: "58 分布的定义与基本例子", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/58-distributions" },
+                  { text: "59 分布的操作与 Stokes 公式", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/59-distribution-operations" },
+                  { text: "60 跳跃公式、Cauchy 积分与单位分解", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/60-jump-cauchy" },
+                  {
+                    text: "61 分布的局部刻画与支集",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/61-distribution-support",
+                    collapsed: true,
+                    items: [
+                      { text: "分布的局部刻画与支集", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/61-distribution-support/61-01-p0735-0741" },
+                      { text: "61.1 作业:齐次分布,Hadamard有限部分,分布除以多项式", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/61-distribution-support/61-03-p0742-0746" }
+                    ]
+                  },
+                  { text: "62 分布的卷积", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/62-distribution-convolution" },
+                  {
+                    text: "63 基本解与椭圆正则性",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/63-fundamental-solutions",
+                    collapsed: true,
+                    items: [
+                      { text: "基本解与椭圆正则性", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/63-fundamental-solutions/63-01-p0756-0764" },
+                      { text: "63.1 作业:分布的例子,Laplace算子、位势方程与分布", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/63-fundamental-solutions/63-03-p0765-0771" }
+                    ]
+                  },
+                  { text: "64 可卷集与三维波动方程", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/64-wave-equation" },
+                  {
+                    text: "65 复分析选读与 L1 Fourier 变换",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/65-complex-fourier",
+                    collapsed: true,
+                    items: [
+                      { text: "复分析选读与 L1 Fourier 变换", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/65-complex-fourier/65-01-p0781-0789" },
+                      { text: "65.1 L1 Fourier 变换与逆变换", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/65-complex-fourier/65-03-p0790-0797" }
+                    ]
+                  },
+                  {
+                    text: "66 L2 Fourier 变换、Schwartz 空间与缓增分布",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/66-schwartz-tempered",
+                    collapsed: true,
+                    items: [
+                      { text: "L2 Fourier 变换、Schwartz 空间与缓增分布", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/66-schwartz-tempered/66-01-p0798-0804" },
+                      { text: "66.1 作业:Fourier逆变换的另一个计算,一个分布扩张的问题,分布的张量积", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/66-schwartz-tempered/66-03-p0805-0810" }
+                    ]
+                  },
+                  { text: "67 缓增分布的 Fourier 变换", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/67-tempered-fourier" },
+                  { text: "68 缓增分布的 Fourier 变换与卷积", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/68-fourier-convolution" },
+                  { text: "69 数学物理方程与 Sobolev 空间", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/69-sobolev-introduction" },
+                  {
+                    text: "70 Sobolev 空间性质与嵌入定理",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/70-sobolev-embedding",
+                    collapsed: true,
+                    items: [
+                      { text: "Sobolev 空间性质与嵌入定理", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/70-sobolev-embedding/70-01-p0830-0836" },
+                      { text: "70.1 作业:Fourier变换的计算,Heisenberg测不准原理,分数次Sobolev空间的物理空间刻画,1维的等", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/70-sobolev-embedding/70-03-p0837-0841" }
+                    ]
+                  },
+                  { text: "71 Riesz 表示、Sobolev 对偶与迹定理", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/71-riesz-duality" },
+                  {
+                    text: "72 有界区域的 Sobolev 空间与 Poincare 不等式",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/72-bounded-sobolev",
+                    collapsed: true,
+                    items: [
+                      { text: "有界区域的 Sobolev 空间与 Poincare 不等式", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/72-bounded-sobolev/72-01-p0851-0857" },
+                      { text: "72.1 期中测验", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/72-bounded-sobolev/72-03-p0858-0858" }
+                    ]
+                  },
+                  { text: "73 Dirichlet 问题与半空间扩张", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/73-dirichlet" },
+                  { text: "74 半空间的迹定理与限制正合列", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/74-trace-theorem" },
+                  {
+                    text: "75 Sobolev 扩张、局部刻画与曲面上的空间",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/75-sobolev-extension",
+                    collapsed: true,
+                    items: [
+                      { text: "Sobolev 扩张、局部刻画与曲面上的空间", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/75-sobolev-extension/75-01-p0876-0884" },
+                      { text: "75.1 作业:二维波动方程的基本解,Airy函数与线性KdV方程", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/75-sobolev-extension/75-03-p0885-0888" }
+                    ]
+                  },
+                  {
+                    text: "76 子流形的 Sobolev 空间与椭圆边值问题",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/76-elliptic-boundary",
+                    collapsed: true,
+                    items: [
+                      { text: "子流形的 Sobolev 空间与椭圆边值问题", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/76-elliptic-boundary/76-01-p0889-0898" },
+                      { text: "76.1 习题(利用变分与Riesz表示定理解微分方程):一个弹性力学的模型", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/76-elliptic-boundary/76-03-p0899-0899" }
+                    ]
+                  },
+                  { text: "77 紧算子、自伴算子与弱收敛", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/77-compact-operators" },
+                  { text: "78 紧算子谱理论与 Laplace 算子", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/78-spectral-decomposition" },
+                  { text: "79 特征函数、变分原理与特征值增长", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/79-spectral-asymptotics" },
+                  { text: "80 边界正则性与热核的谱构造", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/80-heat-kernel-spectral" },
+                  { text: "81 热核、极大值原理与比较定理", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/81-heat-kernel-pde" },
+                  { text: "82 热核渐近、Weyl 公式与波前集", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/82-weyl-wavefront" },
+                  { text: "83 波前集与非驻相法", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/83-wavefront" },
+                  { text: "84 微局部椭圆正则性与奇性传播", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/84-microlocal-ellipticity" },
+                  { text: "85 奇性传播定理的证明", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/85-propagation" },
+                  {
+                    text: "86 分布理论期末复习题",
+                    link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/86-revision",
+                    collapsed: true,
+                    items: [
+                      { text: "86.1 分布理论期末复习题第一套", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/86-revision/86-01-p0988-0991" },
+                      { text: "86.2 分布理论期末复习题第二套", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/86-revision/86-02-p0992-0993" },
+                      { text: "86.3 分布理论期末复习题第三套", link: "/notes/2026/10/02/math-analysis-lecture-notes/03-math-analysis-iii/86-revision/86-03-p0994-1001" }
+                    ]
+                  }
+                ]
+              },
+              { text: "数学分析讲义勘误与未决问题", link: "/notes/2026/10/02/math-analysis-lecture-notes/errata" }
+            ]
+          }
+        ]
+      },
+      {
+        text: "2026-09-27",
+        items: [
+          { text: "周易八个纯卦的大象与人格姿态", link: "/notes/2026/09/27/zhouyi-eight-pure-hexagrams-daxiang" }
         ]
       },
       {
