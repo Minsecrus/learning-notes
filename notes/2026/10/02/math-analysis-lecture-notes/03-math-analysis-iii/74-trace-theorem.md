@@ -1,11 +1,12 @@
-# 74 半空间的迹定理与限制正合列
+# 74：半空间的迹定理与限制正合列
 
 [返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../03-math-analysis-iii.md) · [校勘记录](../errata.md) · [上一篇：Dirichlet 问题与半空间扩张](73-dirichlet.md) · [下一篇：Sobolev 扩张、局部刻画与曲面上的空间](75-sobolev-extension/75-01-p0876-0884.md)
 
 <!-- source: PDF 869; printed: 869; transcription: first-pass; proofreading: applied -->
 
-## 74 限制（迹）定理的连续性，半空间上 Sobolev 空间的限制（迹）定理，限制的正合列
 
+
+## 向量值连续函数与缓增分布
 
 我们下面说明 $C^0_b \left( \mathbb{R}, H^s(\mathbb{R}^{n-1}) \right)$ 中元素可以被视作是缓增的分布，实际上，我们有嵌入
 $$C^0_b \left( \mathbb{R}, H^s(\mathbb{R}^{n-1}) \right) \hookrightarrow \mathcal{S}'(\mathbb{R}^n).$$
@@ -45,6 +46,8 @@ $$u(x_n) \overset{H^s(\mathbb{R}^{n-1})}{=} 0.$$
 
 再利用 $u$ 对 $x_n$ 的连续性，我们就证明了 $u \overset{C^0_b(\mathbb{R}, H^s(\mathbb{R}^{n-1}))}{=} 0$。
 
+## 全空间限制映射的连续性
+
 我们之前已经证明了，对于 $n \geqslant 1, s > \frac{1}{2}$，通过对 $\mathcal{S}(\mathbb{R}^n)$ 上定义的函数进行扩张，我们可以得到有界的限制映射
 $$\text{Res} : H^s(\mathbb{R}^n) \longrightarrow H^{s-\frac{1}{2}}(\mathbb{R}^{n-1}_{x_n=0}).$$
 
@@ -54,7 +57,7 @@ $$\|\text{Res}(u)\|_{H^{s-\frac{1}{2}}(\mathbb{R}^{n-1}_{x_n=t})} \leqslant C \|
 这个 $\text{Res}(u)$ 和 $x_n = t$ 相关，我们把它记做是 $\left. u \right|_{x_n=t}$，于是，我们得到了有界的映射
 $$u : \mathbb{R} \rightarrow H^{s-\frac{1}{2}}(\mathbb{R}^{n-1}), \quad t \mapsto \left. u \right|_{x_n=t}.$$
 
-<span id="ma-theorem-500" class="lecture-anchor"></span>**定理 500**. 设 $s>\frac12$。对任意的 $u \in H^s(\mathbb{R}^n)$，映射
+<span id="ma-theorem-500" class="lecture-anchor"></span>**定理 500**。设 $s>\frac12$。对任意的 $u \in H^s(\mathbb{R}^n)$，映射
 $$u : \mathbb{R} \rightarrow H^{s-\frac{1}{2}}(\mathbb{R}^{n-1}), \quad t \mapsto \left. u \right|_{x_n=t}$$
 是连续的，换而言之，我们有如下的连续嵌入
 $$\iota : H^s(\mathbb{R}^n) \hookrightarrow C^0_b \left( \mathbb{R}, H^{s-\frac{1}{2}}(\mathbb{R}^{n-1}) \right), \; u \mapsto \left( t \mapsto \left. u \right|_{x_n=t} \right).$$
@@ -62,7 +65,7 @@ $$\iota : H^s(\mathbb{R}^n) \hookrightarrow C^0_b \left( \mathbb{R}, H^{s-\frac{
 特别地，存在常数 $C$，使得对任意的 $u \in H^s(\mathbb{R}^n)$，我们有
 $$|||\iota(u)|||_{s-\frac{1}{2}} \leqslant C \|u\|_{H^s(\mathbb{R}^n)}.$$
 
-**证明**: 根据之前已有的结论，我们只需要证明
+**证明**：根据之前已有的结论，我们只需要证明
 $$u : \mathbb{R} \rightarrow H^{s-\frac{1}{2}}(\mathbb{R}^{n-1}), \quad t \mapsto \left. u \right|_{x_n=t}$$
 对 $t$ 的连续性。仿照之前在 $x_n = 0$ 上的限制定理的证明，我们有（我们可以将下面的计算理解为对 Schwartz 函数来做的，一般的情况需要利用逼近来得到，因为这只是例行公事，所以我们不再给出细节）：
 $$\mathcal{F}'(u(x', t))(\xi') = \frac{1}{2\pi} \int_{\mathbb{R}} \widehat{u}(\xi', \tau) e^{it\tau} d\tau,$$
@@ -104,6 +107,8 @@ $$\|u(x', t_1) - u(x', t_2)\|^2_{H^{s-\frac{1}{2}}(\mathbb{R}^{n-1})} \leqslant 
 
 <!-- source: PDF 872; printed: 872; transcription: first-pass; proofreading: applied -->
 
+## 半空间的迹与限制正合列
+
 我们现在可以完整地陈述并证明如下的限制性定理
 $$\text{Res} : H^1(\mathbb{H}^n) \rightarrow H^{\frac{1}{2}}(\partial(\mathbb{H}^n)).$$
 
@@ -127,13 +132,13 @@ $$\text{Res}(u) = \lim_{t \rightarrow 0^+} \left. u \right|_{x_n=t}.$$
 $$\left. \text{Ext}_{\text{Sym}}(u) \right|_{x_n=t} = \left. u \right|_{x_n=t},$$
 我们注意到这个等式对于满足 $u = \left. U \right|_{\mathbb{H}^n}$ 是成立的，其中 $U \in C^\infty(\mathbb{R}^n)$。由于这样的函数在 $H^1(\mathbb{H}^n)$ 中是稠密的并且要证明的等式对于 $u \in H^1(\mathbb{H}^n)$ 也是连续的，所以根据连续性，这个等式对于所有 $u \in H^1(\mathbb{H}^n)$ 成立。
 
-<span id="ma-theorem-501" class="lecture-anchor"></span>**定理 501**. 迹映射
+<span id="ma-theorem-501" class="lecture-anchor"></span>**定理 501**。迹映射
 $$\text{Res} : H^1(\mathbb{H}^n) \rightarrow H^{\frac{1}{2}}(\partial(\mathbb{H}^n)),$$
 是连续线性映射。进一步，我们有正合列
 $$0 \rightarrow H^1_0(\mathbb{H}^n) \xrightarrow{\iota} H^1(\mathbb{H}^n) \xrightarrow{\text{Res}} H^{\frac{1}{2}}(\partial(\mathbb{H}^n)) \rightarrow 0,$$
 也就是说 $\text{Res}$ 是满射并且对任意的 $u \in H^1(\mathbb{H}^n)$，$\text{Res}(u) = 0$ 当且仅当 $u \in H^1_0(\mathbb{H}^n)$。
 
-**证明**: 首先证明 $\text{Res}$ 的连续性。实际上，根据
+**证明**：首先证明 $\text{Res}$ 的连续性。实际上，根据
 $$\text{Res}(u) = \lim_{t \rightarrow 0^+} \left. u \right|_{x_n=t},$$
 
 <!-- source: PDF 873; printed: 873; transcription: first-pass; proofreading: applied -->
@@ -205,7 +210,7 @@ $$ \partial_k \tilde{\varphi}_p \to a\left(\frac{2x_n}{\delta}\right) \partial_k
 后一项为 $0$，因为 $a'\left(\frac{2x_n}{\delta}\right)$ 在 $x_n\geqslant\delta$ 时为 $0$，而 $u_\delta$ 在 $x_n\leqslant\delta$ 时为 $0$（几乎处处）。所以，
 $$ \tilde{\varphi}_p \xrightarrow{H^1(\mathbb{R}^n)} u_\delta, \quad p \to \infty. $$
 
-从而，(看支集)
+从而，（看支集）
 $$ H_0^1(\mathbb{H}^n) \ni \tilde{\varphi}_p \xrightarrow{H^1(\mathbb{H}^n)} v_\delta, \quad p \to \infty. $$
 
 这就说明了 $\mathrm{Res}(u) = 0$ 当且仅当 $u \in H_0^1(\mathbb{H}^n)$。

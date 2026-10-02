@@ -1,13 +1,12 @@
-# 81 热核、极大值原理与比较定理
+# 81：热核、极大值原理与比较定理
 
 [返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../03-math-analysis-iii.md) · [校勘记录](../errata.md) · [上一篇：边界正则性与热核的谱构造](80-heat-kernel-spectral.md) · [下一篇：热核渐近、Weyl 公式与波前集](82-weyl-wavefront.md)
 
 <!-- source: PDF 936; printed: 936; transcription: first-pass; proofreading: applied -->
 
-## 81 利用热方程刻画热核（物理空间的观点），热方程的极大值原理，热核的正性与对称性，区域上热核与全空间热核的比较定理
 
 
-### 热核解线性热方程
+## 热核解线性热方程
 
 利用热核，我们可以解热方程：
 $$
@@ -18,7 +17,7 @@ u \vert_{t=0} = u_0.
 \tag{2}
 $$
 
-**注记**. 这个基本的想法很可能就是 Fourier 本人的观点：我们把 $u_0$ 分解为最基本的波函数的组合：
+**注记**。这个基本的想法很可能就是 Fourier 本人的观点：我们把 $u_0$ 分解为最基本的波函数的组合：
 $$
 u_0 = \sum_{k=1}^{\infty} c_k \varphi_k(x).
 $$
@@ -151,7 +150,7 @@ $$
 \sum_{k=1}^{\infty} \lambda_k^m |c_k|^2 < \infty.
 $$
 
-**注记**. 如果假设 $\Omega$ 是光滑的，那么，对任意的 $t \geqslant 0$，我们都有
+**注记**。如果假设 $\Omega$ 是光滑的，那么，对任意的 $t \geqslant 0$，我们都有
 $$
 u(t, x) \in H^m(\Omega)
 $$
@@ -274,9 +273,11 @@ $$
 
 并且 $u(t, x) \in C^\infty ((0, \infty) \times \Omega) \cap C^0 ([0, \infty) \times \overline{\Omega})$。所以，当 $p(t, x, y)$ 与试验函数 $u_0(y)$ 配对之后，我们得到的函数就有了物理空间上的描述。我们要利用这个方程来了解 $p(t, x, y)$，这就是对热核在物理空间上进行描述的基本想法。
 
+### 极大值原理与解的唯一性
+
 我们试举一例来说明这个基本的想法并借此机会引入关于热传导方程极大值原理
 
-<span id="ma-proposition-534" class="lecture-anchor"></span>**命题 534**. 假设 $u(t, x) \in C^\infty ((0, \infty) \times \Omega) \cap C^0 ([0, \infty) \times \overline{\Omega})$ 并且 $u$ 在 $(0, \infty) \times \Omega$ 中满足热方程型的不等式：
+<span id="ma-proposition-534" class="lecture-anchor"></span>**命题 534**。假设 $u(t, x) \in C^\infty ((0, \infty) \times \Omega) \cap C^0 ([0, \infty) \times \overline{\Omega})$ 并且 $u$ 在 $(0, \infty) \times \Omega$ 中满足热方程型的不等式：
 
 $$
 \partial_t u - \Delta u \leqslant 0.
@@ -286,7 +287,7 @@ $$
 
 如果 $u \big|_{\partial ([0, \infty) \times \overline{\Omega})} \leqslant 0$，那么，在 $[0, \infty) \times \overline{\Omega}$ 上，$u(t, x) \leqslant 0$。
 
-**证明:** 我们考虑 $u$ 的一个扰动：
+**证明：** 我们考虑 $u$ 的一个扰动：
 
 $$
 u_\varepsilon(t, x) = u(t, x) + \varepsilon (|x-a|^2-M),\quad M>\max_{x\in\overline{\Omega}}|x-a|^2.
@@ -316,7 +317,7 @@ $$
 
 类似地，我们有
 
-<span id="ma-corollary-535" class="lecture-anchor"></span>**推论 535**. 假设 $u(t, x) \in C^\infty ((0, \infty) \times \Omega) \cap C^0 ([0, \infty) \times \overline{\Omega})$ 并且 $u$ 在 $(0, \infty) \times \Omega$ 中满足热方程型的不等式：
+<span id="ma-corollary-535" class="lecture-anchor"></span>**推论 535**。假设 $u(t, x) \in C^\infty ((0, \infty) \times \Omega) \cap C^0 ([0, \infty) \times \overline{\Omega})$ 并且 $u$ 在 $(0, \infty) \times \Omega$ 中满足热方程型的不等式：
 
 $$
 \partial_t u - \Delta u \geqslant 0.
@@ -324,7 +325,7 @@ $$
 
 如果 $u \big|_{\partial ([0, \infty) \times \overline{\Omega})} \geqslant 0$，那么，在 $[0, \infty) \times \overline{\Omega}$ 上，$u(t, x) \geqslant 0$。
 
-<span id="ma-corollary-536" class="lecture-anchor"></span>**推论 536**. 假设 $u(t, x) \in C^\infty ((0, \infty) \times \Omega) \cap C^0 ([0, \infty) \times \overline{\Omega})$ 并且 $u$ 在 $(0, \infty) \times \Omega$ 中满足热方程：
+<span id="ma-corollary-536" class="lecture-anchor"></span>**推论 536**。假设 $u(t, x) \in C^\infty ((0, \infty) \times \Omega) \cap C^0 ([0, \infty) \times \overline{\Omega})$ 并且 $u$ 在 $(0, \infty) \times \Omega$ 中满足热方程：
 
 $$
 \partial_t u - \Delta u = 0.
@@ -332,7 +333,7 @@ $$
 
 如果 $u \big|_{\partial ([0, \infty) \times \overline{\Omega})} = 0$，那么，$u(t, x) \equiv 0$。
 
-**注记**. 假设 $u(t, x) \in C^\infty ((0, \infty) \times \Omega) \cap C^0 ([0, \infty) \times \overline{\Omega})$，那么，用同样的证明，我们可以说明
+**注记**。假设 $u(t, x) \in C^\infty ((0, \infty) \times \Omega) \cap C^0 ([0, \infty) \times \overline{\Omega})$，那么，用同样的证明，我们可以说明
 
 1) 如果 $u$ 在 $(0, \infty) \times \Omega$ 上满足
 
@@ -375,6 +376,8 @@ $$
 \end{aligned}
 $$
 
+### 热核的正性、对称性与唯一性
+
 我们现在选取 $u_0(x) \geqslant 0$ 为处处非负的光滑的有紧支集的函数，我们并且假设 $\Omega$ 的边界是光滑的。那么，我们所构造的热方程的解 $u(t, x)$ 落在 $C^\infty ((0, \infty) \times \Omega) \cap C^0 ([0, \infty) \times \overline{\Omega})$ 中，并且在 $t = 0$ 处是非负的，在 $\partial \Omega$ 上一直取 $0$。根据上面的极值原理，我们知道
 
 $$
@@ -389,7 +392,7 @@ $$
 
 我们固定 $(t, x) \in (0, \infty) \times \Omega$，那么，由于 $p(t, x, y)$ 对于 $y \in \Omega$ 是连续的，所以，上面的等式意味着 $p(t, x, y) \geqslant 0$，这就给出了热核的正性。特别的，$p(t, x, y)$ 是实值的。
 
-**注记**. 我们也可以从代数的角度来证明这个结论：我们要说明，总是可以把 $\varphi_k(x)$ 选做实函数。对任意的特征值 $\lambda$，我们考虑 $-\Delta$ 的特征子空间 $E_\lambda \subset L^2(\Omega)$。这是一个有限维的特征子空间，如果 $\varphi \in E_\lambda$，那么，
+**注记**。我们也可以从代数的角度来证明这个结论：我们要说明，总是可以把 $\varphi_k(x)$ 选做实函数。对任意的特征值 $\lambda$，我们考虑 $-\Delta$ 的特征子空间 $E_\lambda \subset L^2(\Omega)$。这是一个有限维的特征子空间，如果 $\varphi \in E_\lambda$，那么，
 
 $$
 -\Delta \varphi = \lambda \varphi \implies -\Delta \overline{\varphi} = \lambda \overline{\varphi}.
@@ -433,11 +436,13 @@ $$
 
 综上所述，我们证明了
 
-<span id="ma-proposition-537" class="lecture-anchor"></span>**命题 537**. 热核 $p(t, x, y)$ 的构造不依赖于具体的由 $-\Delta$ 的特征函数所给出的 $L^2(\Omega)$ Hilbert 基的选取。进一步，我们有
+<span id="ma-proposition-537" class="lecture-anchor"></span>**命题 537**。热核 $p(t, x, y)$ 的构造不依赖于具体的由 $-\Delta$ 的特征函数所给出的 $L^2(\Omega)$ Hilbert 基的选取。进一步，我们有
 
 1) 正性：对任意的 $(t, x, y) \in (0, +\infty) \times \Omega \times \Omega$，$p(t, x, y) \geqslant 0$；
 
 2) 对称性：对任意的 $(t, x, y) \in (0, +\infty) \times \Omega \times \Omega$，$p(t, x, y) = p(t, y, x)$。
+
+### 区域热核与全空间热核的比较
 
 我们现在将热核与全空间 $\mathbb{R}^n$ 上的热核进行比较。在 $\mathbb{R}^n$ 上，我们已经构造了（物理空间上描述的）热核：
 
@@ -478,11 +483,11 @@ $$
 v(t,x) \geqslant 0, \quad \text{对任意的 } (t,x) \in [0,\infty) \times \bar{\Omega}.
 $$
 
-此时，$u(t,x)$ 也解热方程并且 $u$ 与 $v$ 在 $t=0$ 处的初始值是一样的。这两个函数的不同之处可能在于对任意的 $t > 0$, $u(t,\cdot)|_{\partial\Omega} = 0$。特别的，如果我们定义
+此时，$u(t,x)$ 也解热方程并且 $u$ 与 $v$ 在 $t=0$ 处的初始值是一样的。这两个函数的不同之处可能在于对任意的 $t > 0$，$u(t,\cdot)|_{\partial\Omega} = 0$。特别的，如果我们定义
 $$
 U(t,x) = v(t,x) - u(t,x),
 $$
-那么，$U\in C^\infty((0,\infty)\times\Omega) \cap C^0([0,\infty)\times\bar{\Omega})$, $U(t,x)$ 在 $(0,\infty)\times\Omega$ 中解热方程并且 $U(t,x)|_{\partial([0,\infty)\times\Omega)} \geqslant 0$。所以，对任意的 $(t,x) \in (0,\infty) \times \Omega$，我们都有 $U(t,x) \geqslant 0$，从而，
+那么，$U\in C^\infty((0,\infty)\times\Omega) \cap C^0([0,\infty)\times\bar{\Omega})$，$U(t,x)$ 在 $(0,\infty)\times\Omega$ 中解热方程并且 $U(t,x)|_{\partial([0,\infty)\times\Omega)} \geqslant 0$。所以，对任意的 $(t,x) \in (0,\infty) \times \Omega$，我们都有 $U(t,x) \geqslant 0$，从而，
 $$
 u_0 \in C_0^\infty(\Omega), \ u_0 \geqslant 0 \implies \int_\Omega (E(t,x,y) - p(t,x,y)) u_0(y) dy \geqslant 0.
 $$
@@ -491,7 +496,7 @@ $$
 0 \leqslant p(t,x,y) \leqslant E(t,x,y).
 $$
 
-**练习.** 假设 $\Omega_1 \subset \Omega_2$ 是两个光滑的有界带边光滑区域，我们用 $p_1(t,x,y)$ 和 $p_2(t,x,y)$ 分别代表它们的热核。那么，对于任意的 $(t,x,y) \in (0,\infty) \times \Omega_1 \times \Omega_1$，我们有
+**练习。** 假设 $\Omega_1 \subset \Omega_2$ 是两个光滑的有界带边光滑区域，我们用 $p_1(t,x,y)$ 和 $p_2(t,x,y)$ 分别代表它们的热核。那么，对于任意的 $(t,x,y) \in (0,\infty) \times \Omega_1 \times \Omega_1$，我们有
 $$
 0 \leqslant p_1(t,x,y) \leqslant p_2(t,x,y).
 $$
@@ -525,7 +530,7 @@ $$
 u_0 \in C_0^\infty(\Omega), \ u_0 \geqslant 0 \implies \int_\Omega (E(t,x,y) - p(t,x,y)) u_0(y) dy \leqslant \begin{cases} \frac{e^{-\frac{d_0^2}{4t}}}{(4\pi t)^{\frac{n}{2}}} \int_\Omega u_0(y) dy, & \text{若 } t \leqslant \frac{d_0^2}{2n}; \\ \frac{e^{-\frac{d_0^2}{4t_0}}}{(4\pi t_0)^{\frac{n}{2}}} \int_\Omega u_0(y) dy, & \text{若 } t \geqslant \frac{d_0^2}{2n}. \end{cases}
 $$
 
-对任意的 $x_0, y_0 \in \Omega$ 固定，我们选取 $\chi(x)$ 使得 $\chi \geqslant 0$, $\|\chi\|_{L^1} = 1$ 并且 $\operatorname{supp}(\chi)$ 落在原点处半径为 $1$ 的球中。令 $u_0(y) = \chi_\varepsilon(y - y_0)$。当 $\varepsilon \to 0$ 时，我们显然有
+对任意的 $x_0, y_0 \in \Omega$ 固定，我们选取 $\chi(x)$ 使得 $\chi \geqslant 0$，$\|\chi\|_{L^1} = 1$ 并且 $\operatorname{supp}(\chi)$ 落在原点处半径为 $1$ 的球中。令 $u_0(y) = \chi_\varepsilon(y - y_0)$。当 $\varepsilon \to 0$ 时，我们显然有
 $$
 d(\operatorname{supp}(u_0), \partial\Omega) = d(y_0, \partial\Omega) + O(\varepsilon).
 $$
@@ -535,7 +540,7 @@ $$
 $$
 所以，我们就有（把 $(x_0, y_0)$ 换成 $(x,y)$），我们就证明了如下的结论
 
-<span id="ma-theorem-538" class="lecture-anchor"></span>**定理 538.** 假设 $\Omega \subset \mathbb{R}^n$ 是光滑的有界带边区域。那么，对任意的 $(t,x,y) \in (0,+\infty) \times \Omega \times \Omega$，我们有如下的热核比较公式：
+<span id="ma-theorem-538" class="lecture-anchor"></span>**定理 538。** 假设 $\Omega \subset \mathbb{R}^n$ 是光滑的有界带边区域。那么，对任意的 $(t,x,y) \in (0,+\infty) \times \Omega \times \Omega$，我们有如下的热核比较公式：
 $$
 0 \leqslant E(t,x,y) - p(t,x,y) \leqslant \begin{cases} \frac{1}{(4\pi t)^{\frac{n}{2}}} e^{-\frac{d(y,\partial\Omega)^2}{4t}}, & \text{若 } t \leqslant \frac{d(y,\partial\Omega)^2}{2n}; \\ \frac{1}{(4\pi t_0(y))^{\frac{n}{2}}} e^{-\frac{d(y,\partial\Omega)^2}{4t_0(y)}}, & \text{若 } t \geqslant \frac{d(y,\partial\Omega)^2}{2n}, \end{cases}
 $$

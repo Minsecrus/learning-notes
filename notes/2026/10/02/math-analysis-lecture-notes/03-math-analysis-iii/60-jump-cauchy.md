@@ -1,11 +1,12 @@
-# 60 跳跃公式、Cauchy 积分与单位分解
+# 60：跳跃公式、Cauchy 积分与单位分解
 
 [返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../03-math-analysis-iii.md) · [校勘记录](../errata.md) · [上一篇：分布的操作与 Stokes 公式](59-distribution-operations.md) · [下一篇：分布的局部刻画与支集](61-distribution-support/61-01-p0735-0741.md)
 
 <!-- source: PDF 726; printed: 726; transcription: first-pass; proofreading: applied -->
 
-## 60 1 维的跳跃公式，Cauchy 积分公式，Cauchy-Riemann 算子的基本解，单位分解
 
+
+## 一维原函数与跳跃公式
 
 上次课的最后利用 Fubini 定理，我们证明了：对于 $f(x) \in L^1((a, b))$，我们定义其原函数为
 
@@ -15,13 +16,13 @@ $$F(x) = \int_a^x f(y)dy.$$
 
 $$F(x)' \overset{\mathcal{D}'}{=} f(x).$$
 
-<span id="ma-lemma-399" class="lecture-anchor"></span>**引理 399**. 给定分布 $u \in \mathcal{D}'((a, b))$，如果在分布的意义下 $u' = 0$，那么，在分布的意义下，$u$ 为常数，即存在 $c \in \mathbb{C}$，使得
+<span id="ma-lemma-399" class="lecture-anchor"></span>**引理 399**。给定分布 $u \in \mathcal{D}'((a, b))$，如果在分布的意义下 $u' = 0$，那么，在分布的意义下，$u$ 为常数，即存在 $c \in \mathbb{C}$，使得
 
 $$u \overset{\mathcal{D}'}{=} c.$$
 
-**注记**. 请参考第一学期第 15 次课的[推论 94](../01-math-analysis-i/15-derivative-applications/15-01-p0151-0157.md#ma-corollary-94)。
+**注记**。请参考第一学期第 15 次课的[推论 94](../01-math-analysis-i/15-derivative-applications/15-01-p0151-0157.md#ma-corollary-94)。
 
-**证明**: 我们任意选定一个 $\chi \in C_0^\infty((a, b))$，使得 $\int_a^b \chi(x)dx = 1$。令 $c = \langle u, \chi \rangle$。
+**证明**：我们任意选定一个 $\chi \in C_0^\infty((a, b))$，使得 $\int_a^b \chi(x)dx = 1$。令 $c = \langle u, \chi \rangle$。
 
 对于任意一个试验函数 $\varphi \in \mathcal{D}((a, b))$，我们定义
 
@@ -52,7 +53,7 @@ $$\langle u, \varphi \rangle = \int_{\mathbb{R}} c \cdot \varphi(x)dx = \langle 
 
 <!-- source: PDF 727; printed: 727; transcription: first-pass; proofreading: applied -->
 
-<span id="ma-proposition-400" class="lecture-anchor"></span>**命题 400**. 假定 $f \in L^1((a, b))$，那么关于分布的常微分方程
+<span id="ma-proposition-400" class="lecture-anchor"></span>**命题 400**。假定 $f \in L^1((a, b))$，那么关于分布的常微分方程
 
 $$u' = f$$
 
@@ -64,11 +65,11 @@ $$u = c + \int_a^x f(y)dy,$$
 
 我们现在来证明所谓的跳跃公式：
 
-<span id="ma-theorem-401" class="lecture-anchor"></span>**定理 401** (跳跃公式). 给定连续函数 $g \in C(\mathbb{R})$，我们假设它的分布导数 $g' \in L^1_{\text{loc}}(\mathbb{R})$。那么，对任意的 $-\infty < a < b < +\infty$，在分布的意义下，我们有
+<span id="ma-theorem-401" class="lecture-anchor"></span>**定理 401**（跳跃公式）。给定连续函数 $g \in C(\mathbb{R})$，我们假设它的分布导数 $g' \in L^1_{\text{loc}}(\mathbb{R})$。那么，对任意的 $-\infty < a < b < +\infty$，在分布的意义下，我们有
 
 $$\frac{d}{dx}\left( g(x)\mathbf{1}_{(a,b)}(x) \right) \overset{\mathcal{D}'}{=} g'(x)\mathbf{1}_{(a,b)}(x) - g(b)\delta_b + g(a)\delta_a.$$
 
-**证明**: 根据上一个命题，我们有（作为分布或者连续函数）
+**证明**：根据上一个命题，我们有（作为分布或者连续函数）
 
 $$g(x) = g(a) + \int_a^x g'(y)dy.$$
 
@@ -85,11 +86,13 @@ $$\begin{aligned}
 
 ## 分布与 Stokes 理论的第一个应用：Cauchy 积分公式
 
+### 复解析函数与柯西黎曼方程
+
 考虑复平面 $\mathbb{C}$ 上的开区域 $\Omega$。函数（映射）$F$ 在 $\Omega$ 上定义并且在 $\mathbb{C}$ 中取值：
 
 $$F : \Omega \to \mathbb{C}$$
 
-我们假设 $F$ 连续可微的 ($C^1$)。
+我们假设 $F$ 连续可微的（$C^1$）。
 
 如果把 $F$ 视作是从 $\Omega$ 到 $\mathbb{R}^2$ 的映射，我们通常将它写作
 
@@ -111,11 +114,11 @@ $$F'(z_0) = \lim_{z \to z_0} \frac{F(z) - F(z_0)}{z - z_0}.$$
 
 其中，$z_0 \in \Omega$ 是给定的一点。
 
-<span id="ma-definition-402" class="lecture-anchor"></span>**定义 402**. 如果 $F'(z)$ 在 $\Omega$ 上处处有定义并且是连续函数，我们就称 $F$ 为 $\Omega$ 上的**复解析函数**。
+<span id="ma-definition-402" class="lecture-anchor"></span>**定义 402**。如果 $F'(z)$ 在 $\Omega$ 上处处有定义并且是连续函数，我们就称 $F$ 为 $\Omega$ 上的**复解析函数**。
 
 我们现在证明
 
-<span id="ma-theorem-403" class="lecture-anchor"></span>**定理 403**. 函数 $F : \Omega \to \mathbb{C}$ 是复解析函数当且仅当 $\bar{\partial}F = 0$。特别地，$F(x, y) = f(x, y) + ig(x, y)$ 在 $\Omega$ 上是复解析的当且仅当如下的偏微分方程组在 $\Omega$ 上成立
+<span id="ma-theorem-403" class="lecture-anchor"></span>**定理 403**。函数 $F : \Omega \to \mathbb{C}$ 是复解析函数当且仅当 $\bar{\partial}F = 0$。特别地，$F(x, y) = f(x, y) + ig(x, y)$ 在 $\Omega$ 上是复解析的当且仅当如下的偏微分方程组在 $\Omega$ 上成立
 
 $$\begin{cases}
 \frac{\partial f}{\partial x} - \frac{\partial g}{\partial y} = 0; \\
@@ -124,7 +127,7 @@ $$\begin{cases}
 
 这个方程组是所谓的 Cauchy-Riemann 方程。
 
-**证明**: 假设 $F$ 在 $z_0$ 处的复解析导数可定义，我们令它为
+**证明**：假设 $F$ 在 $z_0$ 处的复解析导数可定义，我们令它为
 
 $$F'(z_0) = \lim_{z \to z_0} \frac{F(z) - F(z_0)}{z - z_0} = a + bi.$$
 
@@ -136,7 +139,7 @@ $$F(z) - F(z_0) - F'(z_0)(z - z_0) = o(|z - z_0|)$$
 
 $$F(x, y) - F(x_0, y_0) - \begin{pmatrix} a & -b \\ b & a \end{pmatrix} \begin{pmatrix} x - x_0 \\ y - y_0 \end{pmatrix} = o(|x - x_0| + |y - y_0|),$$
 
-其中 $z = x + y\sqrt{-1}$, $z_0 = x_0 + y_0\sqrt{-1}$。这表明矩阵 $\begin{pmatrix} a & -b \\ b & a \end{pmatrix}$ 是映射 $F$ 在 $(x_0, y_0)$ 处的微分，从而是这个映射在这个点处的 Jacobi 矩阵。所以，
+其中 $z = x + y\sqrt{-1}$，$z_0 = x_0 + y_0\sqrt{-1}$。这表明矩阵 $\begin{pmatrix} a & -b \\ b & a \end{pmatrix}$ 是映射 $F$ 在 $(x_0, y_0)$ 处的微分，从而是这个映射在这个点处的 Jacobi 矩阵。所以，
 
 $$\begin{pmatrix} a & -b \\ b & a \end{pmatrix} = \text{Jacobi 矩阵} = \begin{pmatrix} \frac{\partial f}{\partial x} & \frac{\partial f}{\partial y} \\ \frac{\partial g}{\partial x} & \frac{\partial g}{\partial y} \end{pmatrix}.$$
 
@@ -158,6 +161,8 @@ $$\lim_{z \to z_0} \frac{F(z) - F(z_0)}{z - z_0}$$
 
 的取值即可。 \hfill $\square$
 
+### 柯西黎曼算子的基本解
+
 我们现在研究 Cauchy-Riemann 方程的基本解，关于基本解这个概念我们后面会进一步阐明。我们考虑在 $\mathbb{C}$ 上几乎处处定义的映射
 
 $$\mathbb{C} - \{0\}, \quad z \mapsto \frac{1}{z}.$$
@@ -166,7 +171,7 @@ $$\mathbb{C} - \{0\}, \quad z \mapsto \frac{1}{z}.$$
 
 $$\frac{1}{z} \in L^1_{\text{loc}}(\mathbb{C}).$$
 
-<span id="ma-lemma-404" class="lecture-anchor"></span>**引理 404**. 将 $\frac{1}{z}$ 视作是 $\mathbb{C} = \mathbb{R}^2$ 上的分布。那么，在分布的意义下，我们有
+<span id="ma-lemma-404" class="lecture-anchor"></span>**引理 404**。将 $\frac{1}{z}$ 视作是 $\mathbb{C} = \mathbb{R}^2$ 上的分布。那么，在分布的意义下，我们有
 
 $$\bar{\partial}\left( \frac{1}{\pi z} \right) \overset{\mathcal{D}'}{=} \delta_0.$$
 
@@ -262,7 +267,7 @@ $$\int_\gamma F(z) dz = -\int_{\gamma^{-1}} F(z) dz.$$
 
 <!-- source: PDF 732; printed: 732; transcription: first-pass; proofreading: applied -->
 
-**例子**. 作为例子，我们来计算
+**例子**。作为例子，我们来计算
 $$\frac{1}{2\pi i} \int_{|z|=r_0} z^k dz, \quad k \in \mathbb{Z}, r_0 > 0.$$
 
 我们用
@@ -274,6 +279,8 @@ $$\begin{aligned}
 &= \frac{1}{2\pi} \int_0^{2\pi} (r_0)^{k+1} e^{i(k+1)\vartheta} d\vartheta \\
 &= \begin{cases} 1, & k = -1; \\ 0, & k \neq -1. \end{cases}
 \end{aligned}$$
+
+### 柯西积分公式的推导
 
 我们可以对一个复函数用 Green 公式。假定紧集 $\Omega$ 的边界是 $\gamma$，其中我们是按照逆时针或者顺时针来标记其方向的，但是要求区域要在这个切向量的左手边。
 
@@ -289,7 +296,7 @@ $$\begin{aligned}
 
 我们现在来证明 Cauchy 积分公式：
 
-<span id="ma-theorem-405" class="lecture-anchor"></span>**定理 405** (Cauchy 积分公式). 假设 $\Omega \subset \mathbb{C}$ 是开集，$K \subset \Omega$ 是有界带边区域（特别地，$K$ 是紧的），其边界 $\gamma = \partial K$ 是 $C^1$ 曲线（可以有多个连通分支）。$F(z)$ 是 $\Omega$ 上的复解析函数。那么，对于 $z_0 \in \mathring{K}$（$K$ 的内部），我们有
+<span id="ma-theorem-405" class="lecture-anchor"></span>**定理 405**（Cauchy 积分公式）。假设 $\Omega \subset \mathbb{C}$ 是开集，$K \subset \Omega$ 是有界带边区域（特别地，$K$ 是紧的），其边界 $\gamma = \partial K$ 是 $C^1$ 曲线（可以有多个连通分支）。$F(z)$ 是 $\Omega$ 上的复解析函数。那么，对于 $z_0 \in \mathring{K}$（$K$ 的内部），我们有
 $$F(z_0) = \frac{1}{2\pi i} \int_\gamma \frac{F(z)}{z - z_0} dz.$$
 
 <!-- source: PDF 733; printed: 733; transcription: first-pass; proofreading: applied -->
@@ -309,11 +316,11 @@ $$\begin{aligned}
 
 这就给出了证明。 $\square$
 
-### 分布的局部刻画
+## 分布的局部刻画
 
 我们来说明分布是局部上可定义的数学对象。为此，我们先回忆一下所谓的单位分解。
 
-<span id="ma-theorem-406" class="lecture-anchor"></span>**定理 406** (单位分解). 任意给定 $\mathbb{R}^n$ 中的紧集 $K$，假设 $K$ 被有限个开集 $\{U_1, \dots, U_N\}$ 所覆盖。那么，对每个 $j \leqslant N$，存在光滑函数 $\chi_j \in C_0^\infty(U_j)$，满足
+<span id="ma-theorem-406" class="lecture-anchor"></span>**定理 406**（单位分解）。任意给定 $\mathbb{R}^n$ 中的紧集 $K$，假设 $K$ 被有限个开集 $\{U_1, \dots, U_N\}$ 所覆盖。那么，对每个 $j \leqslant N$，存在光滑函数 $\chi_j \in C_0^\infty(U_j)$，满足
 
 1) 对任意 $x \in \mathbb{R}^n$，有 $0 \leqslant \chi_j(x) \leqslant 1$；
 
@@ -322,17 +329,17 @@ $$\chi_1(x) + \dots + \chi_N(x) = 1.$$
 
 为了证明单位分解定理，我们先证明如下的引理：
 
-<span id="ma-lemma-407" class="lecture-anchor"></span>**引理 407**. 假设 $\Omega \subset \mathbb{R}^n$ 是开集，$K \subset \Omega$ 是紧集，那么，存在 $\varphi \in C_0^\infty(\Omega)$ 和开集 $V$，使得
+<span id="ma-lemma-407" class="lecture-anchor"></span>**引理 407**。假设 $\Omega \subset \mathbb{R}^n$ 是开集，$K \subset \Omega$ 是紧集，那么，存在 $\varphi \in C_0^\infty(\Omega)$ 和开集 $V$，使得
 
-1) $K \subset V \subset \Omega$;
+1) $K \subset V \subset \Omega$；
 
-2) 对任意的 $x \in \Omega$，$0 \leqslant \varphi(x) \leqslant 1$;
+2) 对任意的 $x \in \Omega$，$0 \leqslant \varphi(x) \leqslant 1$；
 
 3) $\varphi|_V \equiv 1$。
 
 <!-- source: PDF 734; printed: 734; transcription: first-pass; proofreading: applied -->
 
-证明梗概. 首先，我们可以选取 $\delta > 0$，使得
+证明梗概。首先，我们可以选取 $\delta > 0$，使得
 $$
 K_{3\delta} = \{x \in \mathbb{R}^n \mid |x - k| < 3\delta, \text{存在 } k \in K\} \subset \Omega.
 $$
@@ -346,7 +353,7 @@ $$
 $$
 其中 $\varepsilon < \delta$。证明的细节留作作业。 \hfill $\square$
 
-单位分解的证明梗概. 对于每个开集 $U_i$，我们可以选取紧集 $K_i \subset U_i$，使得 $\bigcup_{i \leqslant N} K_i$ 仍然包含 $K$。
+单位分解的证明梗概。对于每个开集 $U_i$，我们可以选取紧集 $K_i \subset U_i$，使得 $\bigcup_{i \leqslant N} K_i$ 仍然包含 $K$。
 此时，我们对每个 $K_i \subset U_i$ 运用上面的引理，那么，我们可以找到 $\varphi_i \in C_0^\infty(U_i)$ 和开集 $V_i$，使得 $K_i \subset V_i \subset U_i$，$\varphi_i$ 的值域落在 $[0, 1]$ 中并且 $\varphi_i|_{V_i} \equiv 1$。
 
 最终，对每个 $i \leqslant N$，我们令
@@ -355,6 +362,6 @@ $$
 $$
 即可。证明的细节留作作业。 \hfill $\square$
 
-**注记.** 单位分解的证明并没有任何启发性的意义，我们只要能够运用该结论即可。
+**注记。** 单位分解的证明并没有任何启发性的意义，我们只要能够运用该结论即可。
 
 [返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../03-math-analysis-iii.md) · [校勘记录](../errata.md) · [上一篇：分布的操作与 Stokes 公式](59-distribution-operations.md) · [下一篇：分布的局部刻画与支集](61-distribution-support/61-01-p0735-0741.md)

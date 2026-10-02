@@ -1,15 +1,16 @@
-# 52 Hilbert 基与 Fourier 级数
+# 52：Hilbert 基与 Fourier 级数
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../02-math-analysis-ii.md) · [校勘记录](../errata.md) · [上一篇：51.2 习题课:Riemann积分的定义2](51-convolution-approximation/51-05-p0618-0622.md) · [下一篇：Fourier 级数的 L2 理论](53-fourier-l2/53-01-p0632-0639.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../02-math-analysis-ii.md) · [校勘记录](../errata.md) · [上一篇：51.2：习题课：Riemann积分的定义2](51-convolution-approximation/51-05-p0618-0622.md) · [下一篇：Fourier 级数的 L2 理论](53-fourier-l2/53-01-p0632-0639.md)
 
 <!-- source: PDF 623; printed: 623; transcription: first-pass; proofreading: applied -->
 
-## 52 用光滑函数的逼近 $L^1$ 函数，可分的 Hilbert 空间，Hilbert 基，Fourier 级数的定义，Fourier 级数的 $L^2$ 理论
 
+
+## 光滑函数的积分范数逼近
 
 我们先证明一个经常用到的简单事实：
 
-<span id="ma-lemma-341" class="lecture-anchor"></span>**引理 341**. 假设 $(X, \mathcal{A}, \mu)$ 是有限测度空间，即 $\mu(X) < \infty$，那么，我们有
+<span id="ma-lemma-341" class="lecture-anchor"></span>**引理 341**。假设 $(X, \mathcal{A}, \mu)$ 是有限测度空间，即 $\mu(X) < \infty$，那么，我们有
 $$L^2(X, \mathcal{A}, \mu) \subset L^1(X, \mathcal{A}, \mu).$$
 
 **证明：** 这是 Cauchy-Schwarz 定理的标准应用：对任意的 $f \in L^2(X, \mathcal{A}, \mu)$，我们有
@@ -40,7 +41,7 @@ $$\int_{\mathbb{R}^n} \chi_\varepsilon(x) dx = 1.$$
 
 <!-- source: PDF 624; printed: 624; transcription: first-pass; proofreading: applied -->
 
-<span id="ma-lemma-342" class="lecture-anchor"></span>**引理 342**. 对任意的 $f \in L^1(\mathbb{R}^n)$，当 $\varepsilon \to 0$，我们有
+<span id="ma-lemma-342" class="lecture-anchor"></span>**引理 342**。对任意的 $f \in L^1(\mathbb{R}^n)$，当 $\varepsilon \to 0$，我们有
 $$\chi_\varepsilon * f \xrightarrow{L^1} f,$$
 即
 $$\lim_{\varepsilon \to 0} \|\chi_\varepsilon * f - f\|_{L^1(\mathbb{R}^n)} = 0.$$
@@ -84,7 +85,7 @@ $$\lim_{N \to \infty} m(\{x \notin K \mid d(x, K) \leqslant 2\sqrt n\cdot 2^{-N}
 $$\|h - \mathbf{1}_K\|_{L^1} < \varepsilon.$$
 还需验证卷积逼近：对上述 $h\in C_0^\infty$，一致连续性及卷积支集落在固定紧集保证 $\|\chi_\varepsilon*h-h\|_{L^1}\to0$。由卷积范数估计及三角不等式，$\limsup_{\varepsilon\to0}\|\chi_\varepsilon*\mathbf1_K-\mathbf1_K\|_{L^1}\le2\|h-\mathbf1_K\|_{L^1}$。右侧可任意小，故得到示性函数的卷积逼近，再由前面的线性与稠密性论证得到命题。 $\quad \square$
 
-<span id="ma-corollary-343" class="lecture-anchor"></span>**推论 343**. $C_0^\infty(\mathbb{R}^n) \subset L^1(\mathbb{R}^n)$ 是稠密子空间。
+<span id="ma-corollary-343" class="lecture-anchor"></span>**推论 343**。$C_0^\infty(\mathbb{R}^n) \subset L^1(\mathbb{R}^n)$ 是稠密子空间。
 
 **证明：** 给定函数 $f \in L^1(\mathbb{R}^n)$。对任意的 $\delta > 0$，存在 $R > 0$，使得
 $$\|f - f \cdot \mathbf{1}_{|x| \leqslant R}\|_{L^1} \leqslant \frac{1}{2} \delta.$$
@@ -99,15 +100,15 @@ $$\|\chi_\varepsilon * (f \cdot \mathbf{1}_{|x| \leqslant R}) - f\|_{L^1} \leqsl
 
 最终，我们观察到 $\chi_\varepsilon * (f \cdot \mathbf{1}_{|x| \leqslant R})$ 的支集是紧的，这是因为 $f \cdot \mathbf{1}_{|x| \leqslant R}$ 的支集是紧的，而卷积可以看成局部上用 $\chi_\varepsilon$ 来做平均。命题得证。 $\quad \square$
 
-**注记**. 我们还可以证明 $C_0^\infty(\mathbb{R}^n) \subset L^2(\mathbb{R}^n)$ 是稠密的；$C^\infty(\mathbb{R}^n) \cap L^\infty(\mathbb{R}^n)$ 是 $C(\mathbb{R}^n) \cap L^\infty(\mathbb{R}^n)$ 的稠密子空间。然而，$C(\mathbb{R}^n)\cap L^\infty(\mathbb{R}^n)$ 在 $L^\infty(\mathbb{R}^n)$ 中不稠密。我们将在作业中完成它们的证明。
+**注记**。我们还可以证明 $C_0^\infty(\mathbb{R}^n) \subset L^2(\mathbb{R}^n)$ 是稠密的；$C^\infty(\mathbb{R}^n) \cap L^\infty(\mathbb{R}^n)$ 是 $C(\mathbb{R}^n) \cap L^\infty(\mathbb{R}^n)$ 的稠密子空间。然而，$C(\mathbb{R}^n)\cap L^\infty(\mathbb{R}^n)$ 在 $L^\infty(\mathbb{R}^n)$ 中不稠密。我们将在作业中完成它们的证明。
 
 由此可见，逼近的意义下，光滑函数可以用来描述这些空间，所以我们很多理论都致力于光滑函数的研究。
 
 <!-- source: PDF 626; printed: 626; transcription: first-pass; proofreading: applied -->
 
-### Hilbert 空间的基
+## Hilbert 空间的基
 
-<span id="ma-proposition-344" class="lecture-anchor"></span>**命题 344**. 假设 $(H, \langle \cdot, \cdot \rangle)$ 是 Hilbert 空间（完备的内积空间）。如果 $\{x_k\}_{k \geqslant 1} \subset H$ 是一族两两正交的向量，即对任意的 $i, j \geqslant 1, i \neq j$，都有 $\langle x_i, x_j \rangle = 0$，那么级数 $\sum_{k=1}^\infty x_k$ 在 $H$ 中收敛等价于 $\sum_{k=1}^\infty \|x_k\|^2$ 收敛。
+<span id="ma-proposition-344" class="lecture-anchor"></span>**命题 344**。假设 $(H, \langle \cdot, \cdot \rangle)$ 是 Hilbert 空间（完备的内积空间）。如果 $\{x_k\}_{k \geqslant 1} \subset H$ 是一族两两正交的向量，即对任意的 $i, j \geqslant 1, i \neq j$，都有 $\langle x_i, x_j \rangle = 0$，那么级数 $\sum_{k=1}^\infty x_k$ 在 $H$ 中收敛等价于 $\sum_{k=1}^\infty \|x_k\|^2$ 收敛。
 
 **证明：** 令 $S_n = \sum_{k=1}^n x_k$。$\sum_{k=1}^\infty x_k$ 在 $H$ 中收敛等价于 $\{S_n\}_{n \geqslant 1}$ 在 $H$ 中收敛，这等价于对任意的 $\varepsilon > 0$，存在 $N > 0$，使得对任意的 $n > m \geqslant N, \|S_n - S_m\| < \varepsilon$。这个不等式等价于
 $$\langle x_{m+1} + \cdots + x_n, x_{m+1} + \cdots + x_n \rangle < \varepsilon^2.$$
@@ -116,15 +117,15 @@ $$\langle x_{m+1} + \cdots + x_n, x_{m+1} + \cdots + x_n \rangle < \varepsilon^2
 $$\langle x_{m+1}, x_{m+1} \rangle + \cdots + \langle x_n, x_n \rangle = \|x_{m+1}\|^2 + \cdots + \|x_n\|^2 < \varepsilon^2.$$
 这自然是 $\sum_{k=1}^\infty \|x_k\|^2$ 收敛的等价条件。 $\quad \square$
 
-<span id="ma-definition-345" class="lecture-anchor"></span>**定义 345**. 给定完备的内积空间 $(H, \langle \cdot, \cdot \rangle)$。如果 $A \subset H$ 是子集，如果它所张成的线性空间（有限个 $A$ 中元素的线性组合）在 $H$ 中是稠密的，即 $\overline{\operatorname{span}(A)} = H$，我们就说 $A$ 在 Hilbert 的意义下张成 $H$。如果 $H$ 可被某个可数（可以有限）子集张成，我们就称 $H$ 是可分的 Hilbert 空间。如果 $A = \{e_k\}_{k \geqslant 1}$（可数）可以张成 $H$，并且对任意的 $i, j \geqslant 1$，我们有 $\langle e_i, e_j \rangle = \delta_{ij}$（Kronecker 符号），我们就称 $\{e_k\}_{k \geqslant 1}$ 是 $H$ 的一个 Hilbert 基。
+<span id="ma-definition-345" class="lecture-anchor"></span>**定义 345**。给定完备的内积空间 $(H, \langle \cdot, \cdot \rangle)$。如果 $A \subset H$ 是子集，如果它所张成的线性空间（有限个 $A$ 中元素的线性组合）在 $H$ 中是稠密的，即 $\overline{\operatorname{span}(A)} = H$，我们就说 $A$ 在 Hilbert 的意义下张成 $H$。如果 $H$ 可被某个可数（可以有限）子集张成，我们就称 $H$ 是可分的 Hilbert 空间。如果 $A = \{e_k\}_{k \geqslant 1}$（可数）可以张成 $H$，并且对任意的 $i, j \geqslant 1$，我们有 $\langle e_i, e_j \rangle = \delta_{ij}$（Kronecker 符号），我们就称 $\{e_k\}_{k \geqslant 1}$ 是 $H$ 的一个 Hilbert 基。
 
-**注记**. 请区分，Hilbert 基一般不是 $H$ 作为线性空间的基。若基有限，以下基向量的求和按有限指标进行。
+**注记**。请区分，Hilbert 基一般不是 $H$ 作为线性空间的基。若基有限，以下基向量的求和按有限指标进行。
 
-<span id="ma-theorem-346" class="lecture-anchor"></span>**定理 346**. 每个可分的 Hilbert 空间都有 Hilbert 基。
+<span id="ma-theorem-346" class="lecture-anchor"></span>**定理 346**。每个可分的 Hilbert 空间都有 Hilbert 基。
 
 **证明：** 假定 $A = \{x_k\}_{k \geqslant 1}$ 张成 $H$。我们可以跳过零向量及已被前面向量张成的项，对 $x_1, x_2, \cdots, x_n, \cdots$ 依次做 Gram-Schmidt 正交化（每一步涉及到有限个 $x_k$，从而这和有限维线性空间的理论是一样的），这样，我们就依次得到了 $e_1, e_2, \cdots, e_n, \cdots$。很明显，这是 Hilbert 基，因为它们张成的空间包含了 $A$。 $\quad \square$
 
-<span id="ma-lemma-347" class="lecture-anchor"></span>**引理 347**. $L^2(\mathbb{R}^n)$ 是可分的。
+<span id="ma-lemma-347" class="lecture-anchor"></span>**引理 347**。$L^2(\mathbb{R}^n)$ 是可分的。
 
 **证明：** 我们来构造 $L^2(\mathbb{R}^n)$ 的一个可数集合
 $$Y = \{ \mathbf{1}_Q \mid Q \text{ 为顶点均为有理数坐标的正方体} \}.$$
@@ -133,16 +134,18 @@ $$Y = \{ \mathbf{1}_Q \mid Q \text{ 为顶点均为有理数坐标的正方体} 
 
 <!-- source: PDF 627; printed: 627; transcription: first-pass; proofreading: applied -->
 
-**注记.** 通过对上述定理中 $Y$ 中的函数做 Gram-Schmidt 正交化，我们可以得到 $L^2(\mathbb{R}^n)$ 的一个 Hilbert 基。然而，通过这种比较随意的方式得到的 Hilbert 基可能不具有好的性质。分析学的一个很重要的话题就是如何对特定的函数空间构造一个具有特殊性质的基，这样的问题在几何和物理中举足轻重。比如说，通过对调和振动的研究，我们可以构造 $L^2(\mathbb{R}^n)$ 的一个好的 Hilbert 基，这个构造的背后既有有意思的分析，还包含了 Lie 代数表示的想法（我们在作业中将研究这个问题?）。再比如说，我们的 Fourier 级数就是周期的 $L^2$ 函数空间上基，它们是自由振动的特征函数。
+**注记。** 通过对上述定理中 $Y$ 中的函数做 Gram-Schmidt 正交化，我们可以得到 $L^2(\mathbb{R}^n)$ 的一个 Hilbert 基。然而，通过这种比较随意的方式得到的 Hilbert 基可能不具有好的性质。分析学的一个很重要的话题就是如何对特定的函数空间构造一个具有特殊性质的基，这样的问题在几何和物理中举足轻重。比如说，通过对调和振动的研究，我们可以构造 $L^2(\mathbb{R}^n)$ 的一个好的 Hilbert 基，这个构造的背后既有有意思的分析，还包含了 Lie 代数表示的想法（我们在作业中将研究这个问题？）。再比如说，我们的 Fourier 级数就是周期的 $L^2$ 函数空间上基，它们是自由振动的特征函数。
 
-<span id="ma-theorem-348" class="lecture-anchor"></span>**定理 348.** $(H, \langle\cdot, \cdot\rangle)$ 是可分的 Hilbert 空间，$\{e_k\}_{k \geqslant 1}$ 是它一个 Hilbert 基。那么，任意的 $x \in H$ 都可以唯一地写成级数的形式：
+### 正交展开与帕塞瓦尔等式
+
+<span id="ma-theorem-348" class="lecture-anchor"></span>**定理 348。** $(H, \langle\cdot, \cdot\rangle)$ 是可分的 Hilbert 空间，$\{e_k\}_{k \geqslant 1}$ 是它一个 Hilbert 基。那么，任意的 $x \in H$ 都可以唯一地写成级数的形式：
 $$x = \sum_{k=1}^\infty c_k e_k = c_1 e_1 + c_2 e_2 + \cdots,$$
 其中 $c_i \in \mathbb{C}$。进一步，我们有 $c_k = \langle x, e_k \rangle$ 以及 Bessel-Parseval 等式（勾股定理）：
 $$\|x\|^2 = \sum_{k=1}^\infty |c_k|^2.$$
 
 在证明之前，我们先证明一个简单的引理：
 
-<span id="ma-lemma-349" class="lecture-anchor"></span>**引理 349.** $(H, \langle\cdot, \cdot\rangle)$ 是 Hilbert 空间。给定 $v \in H$，我们定义映射
+<span id="ma-lemma-349" class="lecture-anchor"></span>**引理 349。** $(H, \langle\cdot, \cdot\rangle)$ 是 Hilbert 空间。给定 $v \in H$，我们定义映射
 $$L_v : H \to \mathbb{C}, \quad x \mapsto \langle x, v \rangle.$$
 那么，$L_v$ 是连续线性泛函（从 $H$ 到 $\mathbb{C}$ 的线性映射被称作是线性泛函）。
 
@@ -150,7 +153,7 @@ $$L_v : H \to \mathbb{C}, \quad x \mapsto \langle x, v \rangle.$$
 $$|L_v(x)| = |\langle v, x \rangle| \leqslant \|v\| \|x\|.$$
 这就完成了证明。 $\square$
 
-**注记.** 在泛函分析的课程中，我们将证明 $H$ 上的每个连续线性泛函都形如 $L_v$，其中 $v \in H$。这是所谓的 Riesz 表示定理。
+**注记。** 在泛函分析的课程中，我们将证明 $H$ 上的每个连续线性泛函都形如 $L_v$，其中 $v \in H$。这是所谓的 Riesz 表示定理。
 
 **证明：** 假设我们有 $x = \sum_{k=1}^\infty c_k e_k$。对任意的 $l$，通过与 $e_l$ 做内积（此时，连续性保证了内积与求和可交换），我们有
 $$\begin{aligned}
@@ -195,7 +198,7 @@ $$\begin{aligned}
 
 上面的证明还蕴涵了如下简单的引理：
 
-<span id="ma-lemma-350" class="lecture-anchor"></span>**引理 350** (稠密性的判断). $(H, \langle\cdot, \cdot\rangle)$ 是 Hilbert 空间，$V \subset H$ 是线性子空间。那么，$V \subset H$ 稠密当且仅当对任意的 $x \in H$，如果 $x \perp V$（即对任意的 $v \in V$，$\langle v, x \rangle = 0$），那么 $x = 0$。
+<span id="ma-lemma-350" class="lecture-anchor"></span>**引理 350**（稠密性的判断）。$(H, \langle\cdot, \cdot\rangle)$ 是 Hilbert 空间，$V \subset H$ 是线性子空间。那么，$V \subset H$ 稠密当且仅当对任意的 $x \in H$，如果 $x \perp V$（即对任意的 $v \in V$，$\langle v, x \rangle = 0$），那么 $x = 0$。
 
 <!-- source: PDF 629; printed: 629; transcription: first-pass; proofreading: applied -->
 
@@ -222,7 +225,7 @@ $$q^* : C(\mathbf{T}) \longrightarrow C_{\text{per}, 2\pi}(\mathbb{R}), \quad \m
 $$\mathring{f}(e^{i\theta}) = f(\theta)$$
 即可，其中 $\theta \in [0, 2\pi]$。很容易看出 $\mathring{f}$ 是 $\mathbf{T}$ 上良好定义的连续函数并且 $q^*(\mathring{f}) = f$。
 
-<span id="ma-proposition-351" class="lecture-anchor"></span>**命题 351.** 映射
+<span id="ma-proposition-351" class="lecture-anchor"></span>**命题 351。** 映射
 $$q^* : C(\mathbf{T}) \longrightarrow C_{\text{per}, 2\pi}(\mathbb{R})$$
 是 $\mathbb{C}$-代数的同构，即这是两个 $\mathbb{C}$-线性空间之间的同构并且对任意的 $\mathring{f}, \mathring{g} \in C(\mathbf{T})$，我们有
 $$q^*\left(\mathring{f} \cdot \mathring{g}\right) = q^*\left(\mathring{f}\right) \cdot q^*(\mathring{g}).$$
@@ -235,7 +238,7 @@ $$[0, 2\pi) \to \mathbf{T}, \quad \theta \mapsto e^{i\theta}.$$
 
 类似地，我们可以考虑 $\mathbb{R}$ 以 $2\pi$ 为周期的连续可微函数，以 $2\pi$ 为周期的光滑函数，以 $2\pi$ 为周期的并且在每个周期上可积的函数、以 $2\pi$ 为周期的并且在每个周期上平方可积的函数和以 $2\pi$ 为周期的 $L^\infty$ 的函数，这些空间分别对应到 $\mathbf{T}$ 上的空间 $C^1(\mathbf{T})$、$C^\infty(\mathbf{T})$、$L^1(\mathbf{T})$、$L^2(\mathbf{T})$ 和 $L^\infty(\mathbf{T})$。
 
-<span id="ma-lemma-352" class="lecture-anchor"></span>**引理 352.** 对任意的 $p = 1$ 或 $2$，$C^\infty(\mathbf{T}) \subset L^p(\mathbf{T})$ 是稠密的子空间。
+<span id="ma-lemma-352" class="lecture-anchor"></span>**引理 352。** 对任意的 $p = 1$ 或 $2$，$C^\infty(\mathbf{T}) \subset L^p(\mathbf{T})$ 是稠密的子空间。
 
 **证明：** 有很多可能的证明，我们采取一个从概念上最简单最直接的证明方法：将卷积推广到 $\mathbf{T}$ 上。我们注意到对于 $\mathbf{T}$ 上的参数化的 $\theta \in [0, 2\pi)$（即 $e^{i\theta} \in \mathbf{T}$），我们可以定义他们之间的加法或者减法（用更几何的话说，$\mathbf{T}$ 是一个拓扑群）。首先，我们注意到 $\theta_1 + \theta_2 \in [0, 4\pi)$，据此，我们定义
 $$\theta_1 \oplus \theta_2 = \begin{cases} \theta_1 + \theta_2, & \theta_1 + \theta_2 < 2\pi, \\ \theta_1 + \theta_2 - 2\pi, & \theta_1 + \theta_2 \geqslant 2\pi. \end{cases}$$
@@ -252,20 +255,22 @@ $$\kappa_\varepsilon * f(\theta) = \int_0^{2\pi} \kappa_\varepsilon(\theta - \et
 
 我们正式地开始 Fourier 级数的研究。首先，由于在相差一个零测集的情况下，积分理论没有变化，所以，为了研究 $L^2(\mathbf{T})$，我们只要研究 $L^2([0, 2\pi])$ 即可（这是一个区间的情形）。
 
-<span id="ma-theorem-353" class="lecture-anchor"></span>**定理 353.** 在 $L^2\left([0, 2\pi], \frac{\mathrm{d}x}{2\pi}\right)$ 中，内积 $\langle\cdot, \cdot\rangle$ 的定义为
+### 三角函数系的完备性
+
+<span id="ma-theorem-353" class="lecture-anchor"></span>**定理 353。** 在 $L^2\left([0, 2\pi], \frac{\mathrm{d}x}{2\pi}\right)$ 中，内积 $\langle\cdot, \cdot\rangle$ 的定义为
 $$\langle f, g \rangle = \int_0^{2\pi} f(x) \overline{g(x)} \frac{\mathrm{d}x}{2\pi}.$$
 函数 $\{e^{ik \cdot x}\}_{k \in \mathbb{Z}}$ 是 Hilbert 基。
 
 <!-- source: PDF 631; printed: 631; transcription: first-pass; proofreading: applied -->
 
-**证明:** 首先, 通过直接计算可以说明 $\{e^{ik\cdot x}\}_{k\in\mathbb{Z}}$ 由两两正交的单位向量所构成:
+**证明：** 首先，通过直接计算可以说明 $\{e^{ik\cdot x}\}_{k\in\mathbb{Z}}$ 由两两正交的单位向量所构成：
 $$
 \langle e^{ik\cdot x}, e^{il\cdot x}\rangle = \frac{1}{2\pi}\int_0^{2\pi} e^{i(k-l)\cdot x} dx = \delta_k^l.
 $$
 
-令 $V = \operatorname{span}(\{e^{ik\cdot x}\}_{k\in\mathbb{Z}})$, 根据我们证明的稠密性判定的引理, 为了说明 $V \subset L^2([0, 2\pi])$ 稠密, 只需证明对任意的 $f \in L^2([0, 2\pi])$, 如果 $f \perp V$, 即对任意的 $k \in \mathbb{Z}$, $\langle f, e^{ik\cdot x}\rangle = 0$, 那么 $f = 0$ (作为 $L^2$ 中的函数为 $0$)。
+令 $V = \operatorname{span}(\{e^{ik\cdot x}\}_{k\in\mathbb{Z}})$，根据我们证明的稠密性判定的引理，为了说明 $V \subset L^2([0, 2\pi])$ 稠密，只需证明对任意的 $f \in L^2([0, 2\pi])$，如果 $f \perp V$，即对任意的 $k \in \mathbb{Z}$，$\langle f, e^{ik\cdot x}\rangle = 0$，那么 $f = 0$（作为 $L^2$ 中的函数为 $0$）。
 
-实际上, 对任何形如 $\sum_{|k|\leqslant N} c_k e^{ik\cdot x}$ 的函数, $f$ 都和它垂直。根据 Weierstrass-Stone 定理, 对任意的连续函数 $\varphi : [0, 2\pi] \to \mathbb{C}$, 如果 $\varphi(0) = \varphi(2\pi)$, 那么对任意的 $\varepsilon > 0$, 存在形如 $\sum_{|k|\leqslant N} c_k e^{ik\cdot x}$ 三角级数 $S(x)$, 使得
+实际上，对任何形如 $\sum_{|k|\leqslant N} c_k e^{ik\cdot x}$ 的函数，$f$ 都和它垂直。根据 Weierstrass-Stone 定理，对任意的连续函数 $\varphi : [0, 2\pi] \to \mathbb{C}$，如果 $\varphi(0) = \varphi(2\pi)$，那么对任意的 $\varepsilon > 0$，存在形如 $\sum_{|k|\leqslant N} c_k e^{ik\cdot x}$ 三角级数 $S(x)$，使得
 $$
 \|S(x) - \varphi(x)\|_{L^\infty} \leqslant \varepsilon.
 $$
@@ -279,9 +284,9 @@ $$
 \end{aligned}
 $$
 
-令 $\varepsilon \to 0$, 这表明对任意的 $\varphi \in C(\mathbf T)$, $\langle f, \varphi \rangle = 0$, 即 $f \perp C(\mathbf T)$。然而, $C(\mathbf T)$ 在 $L^2([0, 2\pi])$ 是稠密的, 所以 $f = 0$。 \hfill $\square$
+令 $\varepsilon \to 0$，这表明对任意的 $\varphi \in C(\mathbf T)$，$\langle f, \varphi \rangle = 0$，即 $f \perp C(\mathbf T)$。然而，$C(\mathbf T)$ 在 $L^2([0, 2\pi])$ 是稠密的，所以 $f = 0$。 \hfill $\square$
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../02-math-analysis-ii.md) · [校勘记录](../errata.md) · [上一篇：51.2 习题课:Riemann积分的定义2](51-convolution-approximation/51-05-p0618-0622.md) · [下一篇：Fourier 级数的 L2 理论](53-fourier-l2/53-01-p0632-0639.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../02-math-analysis-ii.md) · [校勘记录](../errata.md) · [上一篇：51.2：习题课：Riemann积分的定义2](51-convolution-approximation/51-05-p0618-0622.md) · [下一篇：Fourier 级数的 L2 理论](53-fourier-l2/53-01-p0632-0639.md)
 
 [^p0624-15]: 我们已经证明了如下的定理：
     我们在 $\mathbb{R}^n$ 上的 Borel-代数 $\mathcal{B}(\mathbb{R}^n)$ 上给定满足如下条件的测度 $\mu$：

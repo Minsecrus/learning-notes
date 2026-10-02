@@ -1,11 +1,12 @@
-# 11 紧性、一致连续与一致收敛
+# 11：紧性、一致连续与一致收敛
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：10.1 数学分析一作业4](10-topology/10-02-p0107-0110.md) · [下一篇：连续函数的构造与完备化](12-continuous-functions/12-01-p0119-0125.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：10.1：数学分析一作业4](10-topology/10-02-p0107-0110.md) · [下一篇：连续函数的构造与完备化](12-continuous-functions/12-01-p0119-0125.md)
 
 <!-- source: PDF 111; printed: 111; transcription: first-pass; proofreading: applied -->
 
-## 11 紧性与开覆盖，Heine-Borel 定理，Lebesgue 数，一致连续，函数列的逐点收敛与一致收敛，闭区间上连续函数空间 $(C([a, b]), \|\cdot\|_\infty)$。
 
+
+## 多元函数的连续性
 
 我们先来回顾一个例子：对多元函数 $f(x) = f(x_1, \cdots, x_n)$，如果将 $x_2, \cdots, x_n$ 固定而将 $f$ 视作是 $x_1$ 的函数，$f$ 此时对 $x_1$ 连续，类似地，$f$ 对其它变量也连续的，但是这样不能推导出 $f$ 做为多元函数 $\mathbb{R}^n \to \mathbb{R}$ 是连续的。我们考察了函数：
 
@@ -31,6 +32,8 @@ $$
 
 我们强调过，尽管习惯如此，但是我们不愿意将 $f$ 写成 $f()$ 的形式，因为坐标系只是对这个对象 $f$ 的一种描述方式，而这个 $f$ 的连续性是不依赖于坐标系选择的（只依赖于定义域和值域上的距离的定义）。
 
+## 开闭集与开覆盖
+
 在第四次作业中，我们已经将开集和闭集的概念推广到了一般的距离空间，特别地，我们可以在 $\mathbb{R}^n$ 讨论开集和闭集的概念。我们做一下简单的回顾：$(X, d)$ 是距离空间。对任意的点 $x \in X$，$r > 0$，我们称 $B(x, r) = \{y \in X | d(y, x) < r\}$ 为以 $x$ 为中心以 $r$ 为半径的开球。如果 $U \subset X$ 是若干开球的并，即 $U = \bigcup_{\alpha \in A} B(x_\alpha, r_\alpha)$（指标集 $A$ 是任意的），就称 $X$ 是距离空间 $(X, d)$ 中的开集。证明，$U \subset X$ 是开集当且仅当对任意的 $x \in U$，存在 $\delta_x > 0$，使得 $B(x, \delta_x) \subset U$。我们用 $\mathcal{T}$ 表示距离空间 $(X, d)$ 上的开集的全体，并且强行规定 $\emptyset$ 和 $X$ 都是开集。$\mathcal{T}$ 满足（请比较命题 59）：
 
 1) $\emptyset \in \mathcal{T}$，$X \in \mathcal{T}$。
@@ -43,11 +46,11 @@ $$
 
 如果 $F \subset X$ 的补集是开集，我们就称 $F$ 是闭集。类似于 $\mathbb{R}$ 的情况，$F$ 是闭集当且仅当对任意点列 $\{x_n\}_{n \geqslant 1} \subset F$，如果 $\lim_{n \to \infty} x_n = x$，那么 $x \in F$。我们还知道，任意多闭集的交集还是闭集，有限个闭集的并集还是闭集。特别地，两个距离空间 $(X, d_X)$ 和 $(Y, d_Y)$ 之间的映射 $f : X \to Y$ 是连续的当且仅当对任意 $Y$ 中的开集 $U$，其逆像 $f^{-1}(U)$ 为 $X$ 中的开集。
 
-**练习.** $(X, d)$ 是距离空间，证明，一个点所构成的集合是紧集。
+**练习。** $(X, d)$ 是距离空间，证明，一个点所构成的集合是紧集。
 
 我们现在引入紧集的概念：
 
-<span id="ma-definition-64" class="lecture-anchor"></span>**定义 64** (开覆盖与紧性). $(X, d)$ 是距离空间，$S \subset X$ 是子集。如果 $(X, d)$ 中开集的集合 $\mathcal{U} = \{U_\alpha\}_{\alpha \in A}$ 满足 $S \subset \bigcup_{\alpha \in A} U_\alpha$，我们就把 $\mathcal{U} = \{U_\alpha\}_{\alpha \in A}$ 称作是 $S$ 的一个开覆盖。
+<span id="ma-definition-64" class="lecture-anchor"></span>**定义 64**（开覆盖与紧性）。$(X, d)$ 是距离空间，$S \subset X$ 是子集。如果 $(X, d)$ 中开集的集合 $\mathcal{U} = \{U_\alpha\}_{\alpha \in A}$ 满足 $S \subset \bigcup_{\alpha \in A} U_\alpha$，我们就把 $\mathcal{U} = \{U_\alpha\}_{\alpha \in A}$ 称作是 $S$ 的一个开覆盖。
 
 我们考虑 $\mathcal{U}$ 的子集 $\mathcal{U}'$，即 $\mathcal{U}' = \{U_{\alpha'}\}_{\alpha' \in A'}$，其中 $A' \subset A$。如果 $S \subset \bigcup_{\alpha' \in A'} U_{\alpha'}$，我们就把 $\mathcal{U}' = \{U_{\alpha'}\}_{\alpha' \in A'}$ 称作是 $\mathcal{U} = \{U_\alpha\}_{\alpha \in A}$ 的一个子覆盖。
 
@@ -55,15 +58,17 @@ $K \subset X$ 是子集，如果对 $K$ 的任意开覆盖 $\mathcal{U} = \{U_\a
 
 我们最关心的例子自然是 $\mathbb{R}$（和 $\mathbb{R}^n$）上的紧集，我们将证明，有界的闭区间 $[a, b]$ 是紧集（这是一个大定理）。
 
-<span id="ma-proposition-65" class="lecture-anchor"></span>**命题 65.** 紧集在连续映射下被保持，即若 $f : (X, d_X) \to (Y, d_Y)$ 是距离空间之间的连续映射，如果 $K \subset X$ 是紧集，那么 $f(K) \subset Y$ 也是紧集。
+<span id="ma-proposition-65" class="lecture-anchor"></span>**命题 65。** 紧集在连续映射下被保持，即若 $f : (X, d_X) \to (Y, d_Y)$ 是距离空间之间的连续映射，如果 $K \subset X$ 是紧集，那么 $f(K) \subset Y$ 也是紧集。
 
 **证明：** 考虑 $\mathcal{U} = \{U_\alpha\}_{\alpha \in A}$ 是 $Y$ 中 $f(K)$ 的开覆盖，那么根据 $K \subset f^{-1}(f(K))$，$f^{-1}(\mathcal{U}) = \{f^{-1}(U_\alpha)\}_{\alpha \in A}$ 是 $X$ 中 $K$ 的开覆盖，从而有有限的子覆盖 $\{f^{-1}(U_{\alpha'})\}_{\alpha' \in A'}$，从而 $\{U_{\alpha'}\}_{\alpha' \in A'}$ 覆盖了 $f(K)$，证毕。 $\square$
 
-**注记.** 我们知道开集和闭集在连续映射的逆下被保持，但是通常不被连续映射保持，请举出反例。
+**注记。** 我们知道开集和闭集在连续映射的逆下被保持，但是通常不被连续映射保持，请举出反例。
 
 为了刻画 $\mathbb{R}$ 和 $\mathbb{R}^n$ 上的紧集，我们先证明引理：
 
-<span id="ma-proposition-66" class="lecture-anchor"></span>**命题 66** (Lebesgue 数). 假设 $K \subset \mathbb{R}$ 是有界闭集，$\mathcal{U} = \{U_\alpha\}_{\alpha \in A}$ 是 $K$ 的开覆盖。那么，存在 $\delta > 0$（习惯上被称作是开覆盖 $\mathcal{U}$ 的一个 Lebesgue 数），使得对任意的 $x, y \in K$，如果 $|x - y| < \delta$，那么存在 $\alpha \in A$，使得 $[x, y] \cap K \subset U_\alpha$。
+### 实数中的紧性
+
+<span id="ma-proposition-66" class="lecture-anchor"></span>**命题 66**（Lebesgue 数）。假设 $K \subset \mathbb{R}$ 是有界闭集，$\mathcal{U} = \{U_\alpha\}_{\alpha \in A}$ 是 $K$ 的开覆盖。那么，存在 $\delta > 0$（习惯上被称作是开覆盖 $\mathcal{U}$ 的一个 Lebesgue 数），使得对任意的 $x, y \in K$，如果 $|x - y| < \delta$，那么存在 $\alpha \in A$，使得 $[x, y] \cap K \subset U_\alpha$。
 
 **证明：** 我们利用反证法：如果不然，那么对每个 $\delta = \frac{1}{n}$，存在 $x_n, y_n \in K$（不妨假设 $x_n < y_n$），使得 $|x_n - y_n| \leqslant \frac{1}{n}$（特别地，$\lim_{n \to \infty} |x_n - y_n| = 0$），但是对任意的 $\alpha \in A$，$U_\alpha$ 不能完整的覆盖住 $[x_n, y_n] \cap K$，即 $[x_n, y_n] \cap K \not\subset U_\alpha$。
 
@@ -73,11 +78,11 @@ $K \subset X$ 是子集，如果对 $K$ 的任意开覆盖 $\mathcal{U} = \{U_\a
 
 由于 $\mathcal{U}$ 是 $K$ 的开覆盖，$x \in K$，所以存在 $U_\alpha \in \mathcal{U}$，使得 $x \in U_\alpha$。根据 $U_\alpha$ 是开集，那么存在开区间 $(x - \varepsilon, x + \varepsilon) \subset U_\alpha$，此时，根据 $x_n \to x$，$y_n \to x$，选取很大的 $N$，使得 $[x_N, y_N] \subset U_\alpha$，所以 $[x_N, y_N] \cap K \subset U_\alpha$，矛盾。 $\square$
 
-<span id="ma-theorem-67" class="lecture-anchor"></span>**定理 67** (Heine-Borel). 假设 $K \subset \mathbb{R}$。那么，$K$ 是紧集当且仅当 $K$ 是有界闭集。
+<span id="ma-theorem-67" class="lecture-anchor"></span>**定理 67**（Heine-Borel）。假设 $K \subset \mathbb{R}$。那么，$K$ 是紧集当且仅当 $K$ 是有界闭集。
 
-<span id="ma-corollary-68" class="lecture-anchor"></span>**推论 68.** 闭区间 $[a, b]$ 是紧集。特别地，任意选取 $[a, b]$ 的一个开区间覆盖 $\mathcal{U} = \{I_\alpha\}_{\alpha \in A}$，其中 $I_\alpha = (a_\alpha, b_\alpha)$ 是开区间，$[a, b] \subset \bigcup_{\alpha \in A} I_\alpha$，我们都能找到有限个开区间 $I_k = (a_k, b_k) (k = 1, 2, \cdots, N)$，使得 $[a, b] \subset \bigcup_{k=1}^N I_k$。
+<span id="ma-corollary-68" class="lecture-anchor"></span>**推论 68。** 闭区间 $[a, b]$ 是紧集。特别地，任意选取 $[a, b]$ 的一个开区间覆盖 $\mathcal{U} = \{I_\alpha\}_{\alpha \in A}$，其中 $I_\alpha = (a_\alpha, b_\alpha)$ 是开区间，$[a, b] \subset \bigcup_{\alpha \in A} I_\alpha$，我们都能找到有限个开区间 $I_k = (a_k, b_k) (k = 1, 2, \cdots, N)$，使得 $[a, b] \subset \bigcup_{k=1}^N I_k$。
 
-*Heine-Borel 定理的证明.* 首先假设 $K$ 是紧集，我们分两步证明 $K$ 是有界闭集。
+*Heine-Borel 定理的证明。* 首先假设 $K$ 是紧集，我们分两步证明 $K$ 是有界闭集。
 
 - $K$ 是有界的：由于 $\bigcup_{n=1}^\infty (-n, n) = \mathbb{R}$，所以 $\bigcup_{n=1}^\infty (-n, n) \supset K$，据此，我们有 $K$ 的开覆盖 $\mathcal{U} = \{(-n, n) | n = 1, 2, \cdots\}$。根据 $K$ 的紧性，可以找到有限个的开区间 $(-n_1, n_1), \cdots, (-n_k, n_k)$，使得它们的并集包含 $K$。不妨假设 $n_1 < n_2 < \cdots < n_k$。很明显，$K \subset (-n_k, n_k)$，所以有界。
 
@@ -89,7 +94,7 @@ $K \subset X$ 是子集，如果对 $K$ 的任意开覆盖 $\mathcal{U} = \{U_\a
 
 任意给定 $K$ 的开覆盖 $\mathcal{U} = \{U_\alpha\}_{\alpha \in A}$，根据前一命题，我们可以选取该覆盖的一个 Lebesgue 数 $\delta$，通过将 $\delta$ 适当缩小，我们不妨假设 $\delta = \frac{1}{N}$，其中 $N \in \mathbb{Z}_{>0}$。我们将 $K$ 砍成若干长度不超过 $\frac{1}{N}$ 小段 $K = \bigcup_{k \in \mathbb{Z}} K_k$，其中 $K_k = K \cap [\frac{k}{N}, \frac{k+1}{N}]$。根据有界性，只有有限个 $K_k$ 是非空的，所以我们有 $K = \bigcup_{|k| \leqslant k_0} K_k$。利用 Lebesgue 数的定义，对每个 $|k| \leqslant k_0$，存在 $U_k \in \mathcal{U}$，使得 $K_k \subset U_k$，所以 $K \subset \bigcup_{|k| \leqslant k_0} U_k$，这就给出了有限的子覆盖。 $\square$
 
-<span id="ma-corollary-69" class="lecture-anchor"></span>**推论 69** (紧性和列紧性的等价性). $K \subset \mathbb{R}$ 是子集，如果对任意 $K$ 中的序列 $\{x_k\}_{k \geqslant 1} \subset K$，都存在收敛的子序列 $\{x_{k_j}\}_{j \geqslant 1}$，使得 $\lim_{j \to \infty} x_{k_j} \in K$，我们就称 $K$ 是列紧的。
+<span id="ma-corollary-69" class="lecture-anchor"></span>**推论 69**（紧性和列紧性的等价性）。$K \subset \mathbb{R}$ 是子集，如果对任意 $K$ 中的序列 $\{x_k\}_{k \geqslant 1} \subset K$，都存在收敛的子序列 $\{x_{k_j}\}_{j \geqslant 1}$，使得 $\lim_{j \to \infty} x_{k_j} \in K$，我们就称 $K$ 是列紧的。
 
 那么，$K$ 是紧集当且仅当 $K$ 是列紧的。
 
@@ -98,6 +103,8 @@ $K \subset X$ 是子集，如果对 $K$ 的任意开覆盖 $\mathcal{U} = \{U_\a
 **证明：** 假设 $K$ 是紧集，那么它是有界的，所以对任意的 $K$ 中的子序列 $\{x_k\}_{k \geqslant 1} \subset K$，存在收敛的子序列 $\{x_{k_j}\}_{j \geqslant 1}$，又因为 $K$ 是闭集，所以这个极限仍然在 $K$ 中，从而 $K$ 是列紧的。
 
 假设 $K$ 是列紧的，一个重要的观察是上面关于 Lebesgue 数的证明仍然成立（只用到了列紧性），据此，我们可以原封不动地重复 Heine-Borel 定理中第二步关于 $K$ 是紧集的证明即可。（细节留给不放心的同学揣摩） $\square$
+
+### 一般度量空间的紧性
 
 我们可以讲上面的推理加以简单的改造从而得到关于距离空间上紧性的若干结论，但是我们需要先预警一下，不是每个结论都可以推广，比如说在一般的距离空间上，紧性可以推出有界闭性，但是两者不等价。我们将这些命题整理为如下几条，其中 $(X, d)$ 是距离空间：
 
@@ -136,7 +143,7 @@ $K \subset X$ 是子集，如果对 $K$ 的任意开覆盖 $\mathcal{U} = \{U_\a
 
 我们用反证法：如果 $\{x_k\}_{k \geqslant 1}$ 没有收敛子列，那么对任意的 $x \in X - \{x_k\}_{k \geqslant 1}$，存在 $\delta > 0$，使得 $B(x, \delta) \cap \{x_k\}_{k \geqslant 1} = \emptyset$，这表明 $\{x_k\}_{k \geqslant 1}$ 是 $X$ 中的一个闭集。同样的推理表明，$\{x_k\}_{k \geqslant m}$ 也是 $X$ 中的闭集，所以 $U_m = X - \{x_k\}_{k \geqslant m}$ 是一族开集。很明显，$\bigcup_{m \geqslant 1} U_m = X$，利用紧性，我们有 $\bigcup_{m \leqslant m_0} U_m = X$，这表明 $\{x_k\}_{k \geqslant 1}$ 是有限的点集，自然收敛。
 
-<span id="ma-corollary-70" class="lecture-anchor"></span>**推论 70** (Heine-Borel). 假设 $K \subset \mathbb{R}^n$。那么，$K$ 是紧集当且仅当 $K$ 是有界闭集。
+<span id="ma-corollary-70" class="lecture-anchor"></span>**推论 70**（Heine-Borel）。假设 $K \subset \mathbb{R}^n$。那么，$K$ 是紧集当且仅当 $K$ 是有界闭集。
 
 **证明：** 首先，假设 $K$ 是紧集，在一般的距离中我们已经证明了 $K$ 是有界闭集。
 
@@ -148,9 +155,11 @@ $K \subset X$ 是子集，如果对 $K$ 的任意开覆盖 $\mathcal{U} = \{U_\a
 
 ## 一致连续性与一致收敛
 
-<span id="ma-definition-71" class="lecture-anchor"></span>**定义 71 (一致连续性).** 假设 $f : X \to \mathbb{R}$ 是连续函数，如果对任意的 $\varepsilon > 0$，存在 $\delta > 0$，使得对任意的 $x, y \in X$，只要 $d(x, y) < \delta$，就有 $|f(x) - f(y)| < \varepsilon$，我们就称 $f$ 在 $X$ 上**一致连续**。
+### 一致连续性
 
-**例子.** 考虑 $(0, 1)$ 上的函数 $f(x) = \frac{1}{x}$，我们希望研究 $f(x)$ 在 $x_0$ 处的连续性。
+<span id="ma-definition-71" class="lecture-anchor"></span>**定义 71（一致连续性）。** 假设 $f : X \to \mathbb{R}$ 是连续函数，如果对任意的 $\varepsilon > 0$，存在 $\delta > 0$，使得对任意的 $x, y \in X$，只要 $d(x, y) < \delta$，就有 $|f(x) - f(y)| < \varepsilon$，我们就称 $f$ 在 $X$ 上**一致连续**。
+
+**例子。** 考虑 $(0, 1)$ 上的函数 $f(x) = \frac{1}{x}$，我们希望研究 $f(x)$ 在 $x_0$ 处的连续性。
 按照定义，$f$ 在 $x_0$ 处连续，指的是：对任意的 $\varepsilon > 0$，存在 $\delta > 0$（注意到，这个 $\delta$ 可能依赖 $x_0$），使得当 $|x - x_0| < \delta$ 时，我们就有 $|f(x) - f(x_0)| < \varepsilon$。
 对于 $f(x) = \frac{1}{x}$，我们不妨先假设 $x$ 已经离着 $x_0$ 很近：$\frac{1}{2}x_0 \leqslant x \leqslant 2x_0$，那么
 
@@ -158,11 +167,11 @@ $$
 \varepsilon > \left| \frac{1}{x} - \frac{1}{x_0} \right| = \frac{|x - x_0|}{x_0 x} \geqslant \frac{|x - x_0|}{2(x_0)^2}.
 $$
 
-所以，要想 $|f(x) - f(x_0)| < \varepsilon$，我们需要 $\delta < 2(x_0)^2\varepsilon$。由此可见，$x_0$ 越小，需要选取的 $\delta$ 就越小，这就给出了 $\delta$ 对 $x_0$ 的依赖性。然而，在一致连续的概念中，$\delta$ 的选取不依赖于 $x_0$，所以 $(0, 1)$ 区间上定义的 $\frac{1}{x}$ 不是一致连续的。([0.1, 1] 区间上定义的 $\frac{1}{x}$ 是一致连续的!)
+所以，要想 $|f(x) - f(x_0)| < \varepsilon$，我们需要 $\delta < 2(x_0)^2\varepsilon$。由此可见，$x_0$ 越小，需要选取的 $\delta$ 就越小，这就给出了 $\delta$ 对 $x_0$ 的依赖性。然而，在一致连续的概念中，$\delta$ 的选取不依赖于 $x_0$，所以 $(0, 1)$ 区间上定义的 $\frac{1}{x}$ 不是一致连续的。（[0.1, 1] 区间上定义的 $\frac{1}{x}$ 是一致连续的！）
 
 在作业题中，我们会见到很多连续和一致连续的例子。
 
-<span id="ma-theorem-72" class="lecture-anchor"></span>**定理 72.** $I = [a, b]$ 是有界闭区间，每个 $f \in C(I)$ 都是一致连续的函数。
+<span id="ma-theorem-72" class="lecture-anchor"></span>**定理 72。** $I = [a, b]$ 是有界闭区间，每个 $f \in C(I)$ 都是一致连续的函数。
 
 **证明：** 给定 $f \in C(I)$，通过定义
 
@@ -178,15 +187,17 @@ $$
 
 我们得到 $I$ 一个开覆盖 $\{I_x\}_{x \in I}$。令 $\delta$ 为这个开覆盖的 Lebesgue 数，对于 $|x - y| < \delta$，按照 Lebesgue 数的定义，$x$ 和 $y$ 落在同一个 $I_{x_i}$ 里面，从而 $|f(x) - f(y)| < \varepsilon$。这就证明了一致连续性。 $\square$
 
+### 逐点收敛与一致收敛
+
 我们现在引入关于函数的两种收敛的概念：$(X, d)$ 是距离空间，$\{f_n : I \to \mathbb{R}\}_{n \geqslant 1}$ 和 $f : I \to \mathbb{R}$ 是函数的序列。我们定义：
 
-- **逐点收敛**. 如果对每个点 $x \in X$，函数值 $f_n(x) \to f(x)$，即 $\lim_{n \to \infty} |f_n(x) - f(x)| = 0$，我们就称 $f_n$ 在 $X$ 上逐点收敛到 $f$。
+- **逐点收敛**。如果对每个点 $x \in X$，函数值 $f_n(x) \to f(x)$，即 $\lim_{n \to \infty} |f_n(x) - f(x)| = 0$，我们就称 $f_n$ 在 $X$ 上逐点收敛到 $f$。
 
-- **一致收敛**. 如果 $\lim_{n \to \infty} \sup_{x \in X} |f_n(x) - f(x)| = 0$，我们就称 $f_n$ 在 $X$ 上一致收敛到 $f$。
+- **一致收敛**。如果 $\lim_{n \to \infty} \sup_{x \in X} |f_n(x) - f(x)| = 0$，我们就称 $f_n$ 在 $X$ 上一致收敛到 $f$。
 
 <!-- source: PDF 117; printed: 117; transcription: first-pass; proofreading: applied -->
 
-**注记.** 逐点收敛指的是对任意的 $x \in I$，对任意的 $\varepsilon > 0$，存在 $N$（可能依赖于 $\varepsilon$ 和 $x$），使得当 $n \geqslant N$ 时，我们有 $|f_n(x) - f(x)| < \varepsilon$。
+**注记。** 逐点收敛指的是对任意的 $x \in I$，对任意的 $\varepsilon > 0$，存在 $N$（可能依赖于 $\varepsilon$ 和 $x$），使得当 $n \geqslant N$ 时，我们有 $|f_n(x) - f(x)| < \varepsilon$。
 一致收敛指的是对任意的 $\varepsilon$，存在 $N$（只依赖于 $\varepsilon$ 不依赖于点 $x$），使得当 $n \geqslant N$ 时，对任意的 $x \in I$，我们都有 $|f_n(x) - f(x)| < \varepsilon$。换句话说，$N$ 的选取对于 $x$ 是一致的（即不依赖于 $x$）。
 特别地，函数列的一致收敛能推出逐点收敛。
 
@@ -202,6 +213,8 @@ $$
 $f_n$ 逐点收敛到函数 $f(x) = \begin{cases} -1, & x < 0; \\ 0, & x = 0; \\ 1, & x > 0. \end{cases}$ 我们注意到极限函数并不连续。不难看出，$f_n$ 并
 不一致收敛。
 
+### 连续函数空间的完备性
+
 有了以上的准备工作，我们现在研究闭区间上实数（或者复数）值连续函数空间 $C([a, b])$，其中 $a < b$（否则不是很有意思）。这是一个无限维的 $\mathbb{R}$-线性空间。我们在 $C([a, b])$ 上定义一个范数
 
 $$
@@ -213,9 +226,9 @@ $$
 我们应该将 $\left( C([a, b]), +, \cdot, \| \cdot \|_\infty \right)$ 和实数 $(\mathbb{R}, +, \cdot, |\cdot|)$ 做类比。
 另外，在一致收敛的概念中，我们要求 $\lim_{n \to \infty} \sup_{x \in X} |f_n(x) - f(x)| = 0$，也就是说，$f_n$ 是按照距离函数 $d_\infty$ 在距离空间 $\left( C([a, b]), d_\infty \right)$ 里收敛。所以，把函数视为点，所谓一致收敛的概念变成了我们熟悉的点列收敛的概念。
 
-<span id="ma-theorem-73" class="lecture-anchor"></span>**定理 73.** $\left( C([a, b]), \| \cdot \|_\infty \right)$ 是完备赋范线性空间，即 $\left( C([a, b]), d_\infty \right)$ 是完备的距离空间。
+<span id="ma-theorem-73" class="lecture-anchor"></span>**定理 73。** $\left( C([a, b]), \| \cdot \|_\infty \right)$ 是完备赋范线性空间，即 $\left( C([a, b]), d_\infty \right)$ 是完备的距离空间。
 
-**注记.** $C(I)$ 的完备性是关于连续函数最重要的性质之一。另外，我们强调这个性质和之前关于连续函数看法完全不同：这不是关于一个函数的性质而是关于一族（或者所有）连续函数的性质。
+**注记。** $C(I)$ 的完备性是关于连续函数最重要的性质之一。另外，我们强调这个性质和之前关于连续函数看法完全不同：这不是关于一个函数的性质而是关于一族（或者所有）连续函数的性质。
 从证明的角度而言，一致连续性将起重要的作用，而逐点地考虑这个问题是徒劳的，因为有无限多个点。由于一致连续性的证明依赖于紧性，我们可以理解为什么函数所定义的空间的紧性（几何性质）非常关键：这个概念提供了从无限到有限的途径！
 
 <!-- source: PDF 118; printed: 118; transcription: first-pass; proofreading: applied -->
@@ -261,4 +274,4 @@ $$
 
 由于 $I_{x_1}, \cdots, I_{x_\ell}$ 覆盖了 $[a, b]$，我们知道 $d_\infty(f_n, f) < \varepsilon$。 $\square$
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：10.1 数学分析一作业4](10-topology/10-02-p0107-0110.md) · [下一篇：连续函数的构造与完备化](12-continuous-functions/12-01-p0119-0125.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：10.1：数学分析一作业4](10-topology/10-02-p0107-0110.md) · [下一篇：连续函数的构造与完备化](12-continuous-functions/12-01-p0119-0125.md)

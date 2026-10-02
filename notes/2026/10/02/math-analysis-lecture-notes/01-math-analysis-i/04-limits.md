@@ -1,13 +1,12 @@
-# 4 极限、级数与 Cauchy 列
+# 4：极限、级数与 Cauchy 列
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：3.1 作业:可数与不可数,Schroeder-Bernstein定理](03-dedekind-cuts/03-03-p0036-0039.md) · [下一篇：收敛判别与常数 e](05-convergence-tests.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：3.1：作业：可数与不可数，Schroeder-Bernstein定理](03-dedekind-cuts/03-03-p0036-0039.md) · [下一篇：收敛判别与常数 e](05-convergence-tests.md)
 
 <!-- source: PDF 40; printed: 40; transcription: first-pass; proofreading: applied -->
 
-## 4 极限，级数，Cauchy 列，距离空间中的收敛
 
 
-### 数列和点列的极限
+## 数列和点列的极限
 
 我们通常用 $\{x_n\}_{n\geqslant 1}$ 来表示一列数（有顺序）$x_1, x_2, \cdots, x_m, \cdots$ 并且将它称为是**数列**。一个数列实际上就是一个映射
 $$
@@ -19,13 +18,13 @@ f : \mathbb{Z}_{\geqslant 1} \to X, \ \ k \mapsto f(k) = x_k,
 $$
 其中 $(X, d)$ 是一个距离空间，我们就得到了距离空间中的一个**点列**。如果把 $\mathbb{R}$ 看成是距离空间的话（我们之前已经这样做了），那么数列只是点列的一个特殊情况。
 
-<span id="ma-definition-10" class="lecture-anchor"></span>**定义 10** (极限的定义，$\varepsilon - N$ 语言). 假设 $\{x_n\}_{n\geqslant 1}$ 是实数序列。如果存在 $x \in \mathbb{R}$，使得对任意的 $\varepsilon > 0$，总存在 $N \geqslant 1$，使得对任意的 $n \geqslant N$，我们都有
+<span id="ma-definition-10" class="lecture-anchor"></span>**定义 10**（极限的定义，$\varepsilon - N$ 语言）。假设 $\{x_n\}_{n\geqslant 1}$ 是实数序列。如果存在 $x \in \mathbb{R}$，使得对任意的 $\varepsilon > 0$，总存在 $N \geqslant 1$，使得对任意的 $n \geqslant N$，我们都有
 $$
 |x_n - x| < \varepsilon,
 $$
 那么，我们就说数列 $\{x_n\}_{n\geqslant 1}$ **有极限**并把 $x$ 称作是数列 $\{x_n\}$ 的**极限**，记作 $\lim_{n\to\infty} x_n = x$。如果数列 $\{x_n\}$ 有极限，我们还说它是**收敛**的。
 
-**注记**. 我们直观上总是认为 $\varepsilon$ 是非常小的数，$N$ 是非常大的数
+**注记**。我们直观上总是认为 $\varepsilon$ 是非常小的数，$N$ 是非常大的数
 
 1) 上述定义中的 $N$ 是在 $\varepsilon$（任意的）选定之后再选择的，它通常依赖于 $\varepsilon$ 的大小，我们有时候也写成 $N = N(\varepsilon)$ 来表示这种依赖性。
 
@@ -33,7 +32,7 @@ $$
 
 把数列的极限的概念推广到距离空间是轻而易举的事情：
 
-<span id="ma-definition-11" class="lecture-anchor"></span>**定义 11** (度量空间中点列的极限). $\{x_n\}_{n\geqslant 1}$ 是度量空间 $(X, d)$ 中点的序列，如果存在 $x \in X$，使得对任意的 $\varepsilon > 0$，总存在 $N \geqslant 1$，使得对任意的 $n \geqslant N$，我们都有
+<span id="ma-definition-11" class="lecture-anchor"></span>**定义 11**（度量空间中点列的极限）。$\{x_n\}_{n\geqslant 1}$ 是度量空间 $(X, d)$ 中点的序列，如果存在 $x \in X$，使得对任意的 $\varepsilon > 0$，总存在 $N \geqslant 1$，使得对任意的 $n \geqslant N$，我们都有
 $$
 d(x_n, x) < \varepsilon,
 $$
@@ -41,7 +40,7 @@ $$
 
 为了了解极限的概念，我们从一些重要的例子入手：
 
-**例子**. 1) 这是一个反面的例子。极限是否存在将是我们的核心课题，下面的例子可以表明这个问题的重要性与困难之处：我们考虑实数数列 $\{x_n\}_{n\geqslant 1}$，其中
+**例子**。1) 这是一个反面的例子。极限是否存在将是我们的核心课题，下面的例子可以表明这个问题的重要性与困难之处：我们考虑实数数列 $\{x_n\}_{n\geqslant 1}$，其中
 $$
 x_n = 1 - \frac{1}{3} + \frac{1}{5} - \cdots + \frac{(-1)^{n-1}}{2n - 1},
 $$
@@ -85,13 +84,15 @@ $$
 
 有了极限，我们可以定义无限个数求和这一个概念，这也就是级数的概念。不夸张地说，这是极限最重要的一个应用，因为几乎所有有意义的数和函数都是通过级数的方式来构造的。另外，我们还可以仿照极限的定义方式，研究极限是 $+\infty$ 或者 $-\infty$ 的数列。为此，我们对极限的定义进行扩充
 
-<span id="ma-definition-12" class="lecture-anchor"></span>**定义 12** (极限定义的补充). 我们假定 $\{x_n\}_{n\geqslant 1}$ 是实数的序列。
+## 无穷极限与级数
+
+<span id="ma-definition-12" class="lecture-anchor"></span>**定义 12**（极限定义的补充）。我们假定 $\{x_n\}_{n\geqslant 1}$ 是实数的序列。
 
 1) 如果对任意的 $M > 0$（很大），总存在 $N > 0$，使得对任意的 $n \geqslant N$，都有 $x_n > M$，我们就称 $x_n$ **收敛到正无穷**，记作 $\lim_{n\to\infty} x_n = +\infty$。类似地，如果对任意的 $M > 0$，总存在 $N > 0$，使得对任意的 $n \geqslant N$，都有 $x_n < -M$，我们就称 $x_n$ **收敛到负无穷**，记作 $\lim_{n\to\infty} x_n = -\infty$。如果上述之一发生，我们就称 $x_n$ 是**发散**的。
 
 2) $a_1, a_2, \cdots$ 是一列实数，令 $x_n = \sum_{i=1}^n a_i$，如果 $\{x_n\}_{n\geqslant 1}$ 有极限，我们就说级数 $a_1 + a_2 + a_3 + \cdots$ **收敛**并把它的极限 $\lim_{n\to\infty} x_n$ 记作 $\sum_{i=1}^\infty a_i$；如果 $\{x_n\}_{n\geqslant 1}$ 是发散的，我们就称级数 $a_1 + a_2 + a_3 + \cdots$ **发散**。根据之前的定义，我们可以想当然地定义 $\sum_{i=1}^\infty a_i = +\infty$ 或者 $\sum_{i=1}^\infty a_i = -\infty$ 并称这个级数是收敛到正无穷或者负无穷的。
 
-**注记**. 为了理解这几个定义，我们再给出几个简单的例子：
+**注记**。为了理解这几个定义，我们再给出几个简单的例子：
 
 1) 一个数列既没有极限也不发散，比如说 $\{x_n\}_{n\geqslant 1}$，其中 $x_n = (-1)^{n-1}$。这个数列是没有极限的：如若不然，假设它的极限是 $x$。根据定义，对于 $\varepsilon = 0.1$（因为对于任意的 $\varepsilon$ 都成立，特别地，我们就取这个数），存在 $N_0$，使得当 $n \geqslant N_0$ 时，$|x_n - x| < 0.1$。所以，根据三角不等式，
    $$
@@ -118,9 +119,11 @@ $$
 
 我们发现证明从技术上仍然和庄子的二分法相似，究其根本，是因为二分之后求和变得容易计算。可计算性将在很多数学问题中都是头等重要的事情，我们后面会数次遇到类似的事情。
 
+## 极限的基本性质
+
 我们收集与极限定义相关的一些简单性质，我们对距离空间 $(X, d)$ 中的点列来陈述这些性质，它们自然地对实数的序列也成立：
 
-<span id="ma-proposition-13" class="lecture-anchor"></span>**命题 13.** 给定距离空间 $(X, d)$，$\{x_n\}_{n\geqslant 1}$ 是 $X$ 中点的序列，我们有
+<span id="ma-proposition-13" class="lecture-anchor"></span>**命题 13。** 给定距离空间 $(X, d)$，$\{x_n\}_{n\geqslant 1}$ 是 $X$ 中点的序列，我们有
 
 1) 如果 $\{x_n\}_{n\geqslant 1}$ 收敛，那么它的极限唯一，即若 $\lim_{n\to\infty} x_n = x$ 并且 $\lim_{n\to\infty} x_n = y$，那么 $x = y$。
 
@@ -152,13 +155,15 @@ $$d(y_n, x) = d(x_n, x) < \varepsilon.$$
 
 最后一个命题 5) 是基本的（但是别扭）逻辑。 $\square$
 
-**注记.** 对于 4)，我们注意到如果一个数列是有界的，那么它不一定是收敛的，比如说 $x_n = (-1)^n$ 所给出的数列。但是，（后面会证明）如果一个数列是有界的，那么它一定包含着收敛的子列。
+**注记。** 对于 4)，我们注意到如果一个数列是有界的，那么它不一定是收敛的，比如说 $x_n = (-1)^n$ 所给出的数列。但是，（后面会证明）如果一个数列是有界的，那么它一定包含着收敛的子列。
 
 极限是我们在高等数学学习中所最先接触的几个数学对象之一。在数学中，对于每一个数学对象（例如极限），我们会例行公事般地考虑它的一些常见的性质。比如说，这个对象最基本的例子是什么，这种对象是否存在，如果存在的话它是否具有唯一性，它的子对象和商对象（如果有的话）都具有什么性质（比如说遗传了原来的对象的什么性质），这个对象的可计算性以及在特定映射下的行为等等。作为例子，我们刚刚见到一个点列的子对象（即子列）遗传了点列的收敛性（和有界性）。尽管这是一种八股文一般的讨论方式（Bourbaki 学派是这种方式最忠实的实践者），但是是非常有效率的一种学习和记忆方式，我们在课程上会尽量地按照这种习惯来学习。特别要强调的是，每一个定义大家都应该搞清楚最基本的例子是什么。
 
+### 极限的运算与序关系
+
 在实数 $\mathbb{R}$ 上，我们有四则运算和序关系，我们自然要研究它们与极限的关系
 
-<span id="ma-proposition-14" class="lecture-anchor"></span>**命题 14** (四则运算与序关系的交换性). 假设 $\{x_n\}_{n\geqslant 1}$ 和 $\{y_n\}_{n\geqslant 1}$ 是收敛的实数数列，那么我们有
+<span id="ma-proposition-14" class="lecture-anchor"></span>**命题 14**（四则运算与序关系的交换性）。假设 $\{x_n\}_{n\geqslant 1}$ 和 $\{y_n\}_{n\geqslant 1}$ 是收敛的实数数列，那么我们有
 
 1) 数列 $\{x_n + y_n\}_{n\geqslant 1}$ 收敛并且 $\lim_{n\to\infty} (x_n + y_n) = \lim_{n\to\infty} x_n + \lim_{n\to\infty} y_n$。
 
@@ -205,7 +210,7 @@ $$x_n = (x_n - x) + x > x - \varepsilon = \frac{x + y}{2}, \quad y_n = (y_n - y)
 
 从而，我们得到 $x_n > y_n$，矛盾！ $\square$
 
-**注记.** 我们对命题本身稍加解释：
+**注记。** 我们对命题本身稍加解释：
 
 a) 在命题的 5) 中出现的“对足够大的 $n$”的讲法，指的是“存在 $N$，使得 $n \geqslant N$ 时”，我们将经常使用这种分析中的“黑话”。
 
@@ -226,9 +231,11 @@ $$
 \end{aligned}
 $$
 
+## 极限存在性的判别
+
 我们现在回到最本质的一个问题：极限的存在性。我们有一种内蕴的方式来判断极限的存在性：
 
-<span id="ma-theorem-15" class="lecture-anchor"></span>**定理 15** (Cauchy 列与 Cauchy 判别准则). 假设 $\{x_n\}_{n\geqslant 1}$ 是实数的数列，那么如下命题等价：
+<span id="ma-theorem-15" class="lecture-anchor"></span>**定理 15**（Cauchy 列与 Cauchy 判别准则）。假设 $\{x_n\}_{n\geqslant 1}$ 是实数的数列，那么如下命题等价：
 
 1) $\{x_n\}_{n\geqslant 1}$ 收敛；
 
@@ -238,7 +245,7 @@ $$
 
 为了证明这个重要的定理，我们先做一些准备工作。如果实数数列 $\{x_n\}_{n\geqslant 1}$ 满足 $x_1 \leqslant x_2 \leqslant x_3 \leqslant \cdots$，就称之为**单调上升的**或者**递增的**；如果它满足 $x_1 < x_2 < x_3 < \cdots$，就称之为**严格单调上升的**或者**严格递增的**。类似地可定义（严格）**单调下降的**或者（严格）**递减的**的序列。
 
-<span id="ma-theorem-16" class="lecture-anchor"></span>**定理 16.** 如果单调上升的实数序列 $\{x_n\}_{n\geqslant 1}$ 是有界的，那么 $\{x_n\}_{n\geqslant 1}$ 收敛并且 $\lim_{n\to\infty} x_n = \sup_{n\geqslant 1} x_n$。（单调下降的序列也满足类似的结论）
+<span id="ma-theorem-16" class="lecture-anchor"></span>**定理 16。** 如果单调上升的实数序列 $\{x_n\}_{n\geqslant 1}$ 是有界的，那么 $\{x_n\}_{n\geqslant 1}$ 收敛并且 $\lim_{n\to\infty} x_n = \sup_{n\geqslant 1} x_n$。（单调下降的序列也满足类似的结论）
 
 <!-- source: PDF 47; printed: 47; transcription: first-pass; proofreading: applied -->
 
@@ -248,7 +255,7 @@ $$
 
 作为应用，我们证明级数 $\sum_{k=1}^{\infty} \frac{1}{k^2}$ 是收敛的：
 
-**例子.** 级数 $\frac{1}{1^2} + \frac{1}{2^2} + \frac{1}{3^2} + \frac{1}{4^2} + \cdots$ 是收敛的。我们定义部分和 $x_n = \sum_{k=1}^n \frac{1}{k^2}$，所谓的级数收敛指的就是 $\{x_n\}_{n\geqslant 1}$ 这个数列有极限。这是一个单调上升的数列，根据上面的定理，我们只需要说明 $\{x_n\}_{n\geqslant 1}$ 有界即可：
+**例子。** 级数 $\frac{1}{1^2} + \frac{1}{2^2} + \frac{1}{3^2} + \frac{1}{4^2} + \cdots$ 是收敛的。我们定义部分和 $x_n = \sum_{k=1}^n \frac{1}{k^2}$，所谓的级数收敛指的就是 $\{x_n\}_{n\geqslant 1}$ 这个数列有极限。这是一个单调上升的数列，根据上面的定理，我们只需要说明 $\{x_n\}_{n\geqslant 1}$ 有界即可：
 
 $$
 \begin{aligned}
@@ -259,4 +266,4 @@ $$
 \end{aligned}
 $$
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：3.1 作业:可数与不可数,Schroeder-Bernstein定理](03-dedekind-cuts/03-03-p0036-0039.md) · [下一篇：收敛判别与常数 e](05-convergence-tests.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：3.1：作业：可数与不可数，Schroeder-Bernstein定理](03-dedekind-cuts/03-03-p0036-0039.md) · [下一篇：收敛判别与常数 e](05-convergence-tests.md)

@@ -1,13 +1,12 @@
-# 59 分布的操作与 Stokes 公式
+# 59：分布的操作与 Stokes 公式
 
 [返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../03-math-analysis-iii.md) · [校勘记录](../errata.md) · [上一篇：分布的定义与基本例子](58-distributions.md) · [下一篇：跳跃公式、Cauchy 积分与单位分解](60-jump-cauchy.md)
 
 <!-- source: PDF 717; printed: 717; transcription: first-pass; proofreading: applied -->
 
-## 59 分布的操作：限制，求导数，与微分同胚复合，链式法则。Stokes 公式的分布形式。
 
 
-### 分布的操作
+## 分布的操作
 
 在微积分的学习中，我们可以对一个函数做特定的操作，比如可以把一个函数限制到比较小的定义域上、可以对一个函数求导数、两个函数可以相乘等等。我们现在讨论如何对分布做一些特定的操作。
 
@@ -36,13 +35,13 @@ $$\begin{aligned}
 
 $$\langle u', \varphi \rangle := -\langle u, \varphi' \rangle.$$
 
-<span id="ma-definition-394" class="lecture-anchor"></span>**定义 394**. 假设 $\Omega \subset \mathbb{R}^n$ 是有界开集，给定 $u \in \mathcal{D}'(\Omega)$，对于任意的多重指标 $\alpha$，我们定义
+<span id="ma-definition-394" class="lecture-anchor"></span>**定义 394**。假设 $\Omega \subset \mathbb{R}^n$ 是有界开集，给定 $u \in \mathcal{D}'(\Omega)$，对于任意的多重指标 $\alpha$，我们定义
 
 $$\langle \partial^\alpha u, \varphi \rangle = (-1)^{|\alpha|}\langle u, \partial^\alpha \varphi \rangle.$$
 
 <!-- source: PDF 718; printed: 718; transcription: first-pass; proofreading: applied -->
 
-我们必须说明 $\partial^\alpha u$ 定义了 $\Omega$ 上的分布：根据分布的定义，对任意的紧集 $K \subset \Omega$，存在非负整数 $p$ 和正常数 $C$ ($p$ 和 $C$ 依赖于 $K$)，使得对任意的 $\varphi \in C_K^\infty(\Omega)$，都有
+我们必须说明 $\partial^\alpha u$ 定义了 $\Omega$ 上的分布：根据分布的定义，对任意的紧集 $K \subset \Omega$，存在非负整数 $p$ 和正常数 $C$（$p$ 和 $C$ 依赖于 $K$），使得对任意的 $\varphi \in C_K^\infty(\Omega)$，都有
 
 $$\begin{aligned}
 |\langle \partial^\alpha u, \varphi \rangle| &= |\langle u, \partial^\alpha \varphi \rangle| \\
@@ -56,7 +55,7 @@ $$\partial^\alpha : \mathcal{D}'(\Omega) \to \mathcal{D}'(\Omega).$$
 
 我们研究两个经典的例子：
 
-**例子** (Heaviside 函数). 我们定义 Heaviside 函数
+**例子**（Heaviside 函数）。我们定义 Heaviside 函数
 
 $$H(x) = \mathbf{1}_{x \geqslant 0}.$$
 
@@ -74,7 +73,7 @@ $$\begin{aligned}
 &= \langle \delta_0, \varphi \rangle.
 \end{aligned}$$
 
-**例子**. 我们考虑 $\mathbb{R}$ 上的 $\log$ 函数，注意到
+**例子**。我们考虑 $\mathbb{R}$ 上的 $\log$ 函数，注意到
 
 $$\log |x| \in L_{\text{loc}}^1(\mathbb{R}).$$
 
@@ -106,7 +105,7 @@ $$\begin{aligned}
 &= \langle \operatorname{vp}\frac{1}{x}, \varphi \rangle.
 \end{aligned}$$
 
-**例子**. 我们计算 $\mathbb{R}$ 上的 Dirac 函数 $\delta_a$ 的导数，其中 $a \in \mathbb{R}$。任给 $\varphi \in \mathcal{D}(\mathbb{R})$，我们有
+**例子**。我们计算 $\mathbb{R}$ 上的 Dirac 函数 $\delta_a$ 的导数，其中 $a \in \mathbb{R}$。任给 $\varphi \in \mathcal{D}(\mathbb{R})$，我们有
 
 $$\langle \delta'_a, \varphi \rangle = -\langle \delta_a, \varphi' \rangle = -\varphi'(a).$$
 
@@ -116,7 +115,7 @@ $$\langle \delta'_a, \varphi \rangle = -\langle \delta_a, \varphi' \rangle = -\v
 
 $$\langle f \cdot u, \varphi \rangle := \langle u, f\varphi \rangle.$$
 
-其中，$\varphi$ 是试验函数。由于 $f\varphi$ 仍然是 $\mathcal{D}(\Omega)$ 中的函数，所以上面的等式是良好定义的。为了说明 $f \cdot u \in \mathcal{D}'(\Omega)$，要对 $u$ 来用分布的定义：对任意的紧集 $K \subset \Omega$，存在非负整数 $p$ 和正常数 $C$ ($p$ 和 $C$ 依赖于 $K$)，使得对任意的 $\varphi \in C_K^\infty(\Omega)$，都有
+其中，$\varphi$ 是试验函数。由于 $f\varphi$ 仍然是 $\mathcal{D}(\Omega)$ 中的函数，所以上面的等式是良好定义的。为了说明 $f \cdot u \in \mathcal{D}'(\Omega)$，要对 $u$ 来用分布的定义：对任意的紧集 $K \subset \Omega$，存在非负整数 $p$ 和正常数 $C$（$p$ 和 $C$ 依赖于 $K$），使得对任意的 $\varphi \in C_K^\infty(\Omega)$，都有
 
 $$|\langle f \cdot u, \varphi \rangle| \leqslant C \sup_{|\alpha| \leqslant p} \|\partial^\alpha(f \cdot \varphi)\|_{L^\infty(K)}.$$
 
@@ -135,7 +134,7 @@ $$\begin{aligned}
 
 <!-- source: PDF 720; printed: 720; transcription: first-pass; proofreading: applied -->
 
-**例子**. 我们有
+**例子**。我们有
 
 $$x \cdot \operatorname{vp}\frac{1}{x} = 1.$$
 
@@ -147,7 +146,7 @@ $$=\int_{\mathbb{R}} \frac{1}{x} \cdot x\varphi(x) dx = \int_{\mathbb{R}} 1 \cdo
 
 这就证明了命题。
 
-### 分布的平移和变量替换
+### 分布的平移
 
 对于 $x_0 \in \mathbb{R}^n$，我们有如下的平移变换：
 
@@ -172,11 +171,11 @@ $$\langle \tau_{x_0}u, \varphi \rangle := \langle u, \varphi(x - x_0) \rangle.$$
 
 下面的命题给出了在分布意义下方向导数的另一个（直观）刻画：
 
-<span id="ma-proposition-395" class="lecture-anchor"></span>**命题 395**. 给定分布 $u \in \mathcal{D}'(\mathbb{R}^n)$，给定向量 $v = (v_1, \dots, v_n) \in \mathbb{R}^n$，在分布意义下，我们有
+<span id="ma-proposition-395" class="lecture-anchor"></span>**命题 395**。给定分布 $u \in \mathcal{D}'(\mathbb{R}^n)$，给定向量 $v = (v_1, \dots, v_n) \in \mathbb{R}^n$，在分布意义下，我们有
 
 $$\lim_{t \to 0} \frac{\tau_{tv}u - u}{t} \overset{\mathcal{D}'}{=} \sum_{j=1}^n v_j \partial_j u.$$
 
-**证明:** 按照定义，我们有
+**证明：** 按照定义，我们有
 
 $$\langle \frac{\tau_{tv}u - u}{t} - \sum_{j=1}^n v_j \partial_j u, \varphi \rangle = \langle u, \underbrace{\frac{\varphi(x - tv) - \varphi(x)}{t} + \sum_{j=1}^n v_j \partial_j \varphi(x)}_{\varphi_t} \rangle.$$
 
@@ -196,6 +195,8 @@ $$
 $$
 
 其中，最后一步利用沿线段的 Newton-Leibniz 公式。右边是一个固定常数乘以 $|t|$，所以当 $t\to0$ 时趋于 $0$。命题得证。
+
+### 微分同胚与分布的拉回
 
 给定 $\mathbb{R}^n$ 的两个开集 $\Omega_1$ 和 $\Omega_2$，我们假定
 $$
@@ -231,14 +232,14 @@ $$
 |\langle \Phi^* u, \varphi \rangle| \leqslant C' \sup_{|\alpha| \leqslant p} \|\partial^\alpha \varphi\|_{L^\infty(K)}.
 $$
 
-**注记** (记号). 因为在光滑函数情况下，$\Phi^* u$ 就是函数的复合，我们还把上面的拉回映射写成
+**注记**（记号）。因为在光滑函数情况下，$\Phi^* u$ 就是函数的复合，我们还把上面的拉回映射写成
 $$
 u \circ \Phi = \Phi^* u.
 $$
 
 给定微分同胚 $\Phi : \Omega_1 \to \Omega_2$，它把 $\Omega_2$ 上的 Dirac 函数拉回，得到 $\Omega_1$ 上的 Dirac 函数，这给出了 Jacobi 行列式的一个精确的解释：这是一点处体积的变化。
 
-**例子**. 假设 $x_0 \in \Omega_1$, $y_0 \in \Omega_2$ 并且 $\Phi(x_0) = y_0$。那么，我们有
+**例子**。假设 $x_0 \in \Omega_1$，$y_0 \in \Omega_2$ 并且 $\Phi(x_0) = y_0$。那么，我们有
 $$
 \Phi^* \delta_{y_0} = \frac{1}{|J_\Phi(x_0)|}\delta_{x_0}.
 $$
@@ -297,7 +298,7 @@ $$
 
 我们用分布的语言来表述 Stokes 公式。我们上个学期证明了：
 
-<span id="ma-theorem-396" class="lecture-anchor"></span>**定理 396** (Stokes 公式). 假设 $\Omega$ 是一个有界带边光滑区域，$\nu(x) = (\nu_1(x), \cdots, \nu_n(x))$ 为 $\partial\Omega$ 的单位外法向量，$d\sigma$ 为 $\partial\Omega$ 上的曲面测度。对任意的 $\varphi \in C^1(\mathbb{R}^n, \mathbb{C})$，我们有
+<span id="ma-theorem-396" class="lecture-anchor"></span>**定理 396**（Stokes 公式）。假设 $\Omega$ 是一个有界带边光滑区域，$\nu(x) = (\nu_1(x), \cdots, \nu_n(x))$ 为 $\partial\Omega$ 的单位外法向量，$d\sigma$ 为 $\partial\Omega$ 上的曲面测度。对任意的 $\varphi \in C^1(\mathbb{R}^n, \mathbb{C})$，我们有
 $$
 \int_\Omega \frac{\partial \varphi}{\partial x_i}(x) dx = \int_{\partial\Omega} \varphi(x)\nu_i(x) d\sigma.
 $$
@@ -320,7 +321,7 @@ $$
 $$
 所以，用分布的语言来写，我们有
 
-<span id="ma-theorem-397" class="lecture-anchor"></span>**定理 397** (Stokes 公式). 假设 $\Omega$ 是一个有界带边光滑区域，$\nu(x) = (\nu_1(x), \cdots, \nu_n(x))$ 为 $\partial\Omega$ 的单位外法向量，$d\sigma$ 为 $\partial\Omega$ 上的曲面测度，作为分布，我们有等式
+<span id="ma-theorem-397" class="lecture-anchor"></span>**定理 397**（Stokes 公式）。假设 $\Omega$ 是一个有界带边光滑区域，$\nu(x) = (\nu_1(x), \cdots, \nu_n(x))$ 为 $\partial\Omega$ 的单位外法向量，$d\sigma$ 为 $\partial\Omega$ 上的曲面测度，作为分布，我们有等式
 $$
 \partial_i 1_\Omega \overset{\mathcal{D}'(\mathbb{R}^n)}{=} -\nu_i d\sigma.
 $$
@@ -329,9 +330,11 @@ $$
 \nabla 1_\Omega \overset{\mathcal{D}'(\mathbb{R}^n)}{=} -\nu d\sigma.
 $$
 
+### 一维原函数与分布导数
+
 我们现在回到 1 维的情形，此时的 Stokes 公式就是 Newton-Leibniz 公式。
 
-<span id="ma-lemma-398" class="lecture-anchor"></span>**引理 398**. 对于 $f(x) \in L^1((a, b))$，我们定义其原函数为
+<span id="ma-lemma-398" class="lecture-anchor"></span>**引理 398**。对于 $f(x) \in L^1((a, b))$，我们定义其原函数为
 $$
 F(x) = \int_a^x f(y)dy.
 $$
@@ -340,7 +343,7 @@ $$
 F(x)' \overset{\mathcal{D}'}{=} f(x).
 $$
 
-**证明**: 为了证明 $F$ 是连续的，我们把它写成
+**证明**：为了证明 $F$ 是连续的，我们把它写成
 $$
 F(x) = \int_{[a,b]} f \cdot 1_{(a,x]} d\mu,
 $$

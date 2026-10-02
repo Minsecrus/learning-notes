@@ -1,17 +1,16 @@
-# 2 区间套、确界与距离空间
+# 2：区间套、确界与距离空间
 
 [返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：实数的公理化描述](01-real-number-axioms.md) · [下一篇：Dedekind 分割与实数构造](03-dedekind-cuts/03-01-p0030-0035.md)
 
 <!-- source: PDF 25; printed: 25; transcription: first-pass; proofreading: applied -->
 
-## 2 区间套公理与确界原理，距离空间
 
 
-### 实数的基本性质
+## 实数的基本性质
 
 假设存在 $(\mathbb{R}, +, \cdot, \leqslant)$ 满足 **(F)**，**(O)**，**(A)**，**(I)** 四套公理，除了上次课练习题中已证明的结论，实数还有许多为人们所“熟知的”性质。我们强调的是这些性质需要在以上公理化的体系下被证明。我们补充几个这样的性质，它们证明比较简单，我们仍以课堂习题的方式给出，细节留给同学在整理笔记的时候给出：
 
-**练习.** 1) $x \leqslant y$ 和 $y < z$ 可以推出 $x < z$；$x < y$ 和 $y \leqslant z$ 可以推出 $x < z$。
+**练习。** 1) $x \leqslant y$ 和 $y < z$ 可以推出 $x < z$；$x < y$ 和 $y \leqslant z$ 可以推出 $x < z$。
 
 2) $\mathbb{R}$ 的非空有限子集都有唯一的最大元和唯一的最小元（我们约定集合中的两个元素是不同的）。特别地，如果 $A \subset \mathbb{R}$ 是有限子集，$n = |A|$，那么可以将 $A$ 中的元素排序，使得
 
@@ -25,7 +24,7 @@
 
 关于实数有一个重要（但是简单）的事实：*存在充分大的正数，也存在充分小的正数*，这将是数学分析中反复使用的事实。这个命题的精确说法如下（这是我们第一次用到 $\varepsilon-\delta$ 语言）：
 
-<span id="ma-lemma-3" class="lecture-anchor"></span>**引理 3.** 对任意的正实数 $A$，总存在 $M$，使得 $M > A$；对任意的正实数 $a$，总存在正实数 $\varepsilon$，使得 $\varepsilon < a$。
+<span id="ma-lemma-3" class="lecture-anchor"></span>**引理 3。** 对任意的正实数 $A$，总存在 $M$，使得 $M > A$；对任意的正实数 $a$，总存在正实数 $\varepsilon$，使得 $\varepsilon < a$。
 
 **证明：** 我们可以选取 $M = A + 1$，$\varepsilon = \frac{a}{2}$。证明的要点在于说明 $\frac{1}{2} < 1$。 $\square$
 
@@ -33,9 +32,9 @@
 
 $$x \mapsto |x| = \begin{cases} x, & \text{如果} x \geqslant 0; \\ -x, & \text{如果} x < 0. \end{cases}$$
 
-**练习.** $a$ 是非负实数。证明，$|x| \leqslant a$ 当且仅当 $-a \leqslant x \leqslant a$。特别地，$x = 0$ 当且仅当 $|x| = 0$。
+**练习。** $a$ 是非负实数。证明，$|x| \leqslant a$ 当且仅当 $-a \leqslant x \leqslant a$。特别地，$x = 0$ 当且仅当 $|x| = 0$。
 
-<span id="ma-lemma-4" class="lecture-anchor"></span>**引理 4.** 绝对值函数 $|\cdot| : \mathbb{R} \to \mathbb{R}_{\geqslant 0}$ 满足下面的性质：
+<span id="ma-lemma-4" class="lecture-anchor"></span>**引理 4。** 绝对值函数 $|\cdot| : \mathbb{R} \to \mathbb{R}_{\geqslant 0}$ 满足下面的性质：
 
 1) 假设 $a \in \mathbb{R}_{\geqslant 0}$。证明，$|x| \leqslant a$ 当且仅当 $-a \leqslant x \leqslant a$。特别地，$x = 0$ 当且仅当 $|x| = 0$。
 
@@ -55,11 +54,13 @@ $$x \mapsto |x| = \begin{cases} x, & \text{如果} x \geqslant 0; \\ -x, & \text
 这种形象的看法使得在很多场合下的推理和计算变得容易操作和叙述。然而必须强调的是，在证明或者计算的过程中上述图像只起辅助的作用，一切结论都是严格根据从实数公理出发的所得到的结论通过正确推理而来。（这一如平面几何中画图对证明所起到的作用）
 分析学会进一步深化这种几何化的看法：我们倾向于**几何地**考虑问题。比如说，我们会将尽量多的数学对象想象成空间的点并发展相应的理论使得于几何的直观在应用的时候是严格的。
 
+## 确界原理
+
 我们注意到，迄今为止，我们还未使用公理 **(I)**（区间套原理），上次课的最后也提到过，如果只用前三套公理体系，那么这种“实数”可能只包含有理数，这自然不是我们想要的实数理论。下面要证明的**确界原理**就依赖于区间套原理。
 
 $X \subset \mathbb{R}$ 是实数的集合，$a, A \in \mathbb{R}$。如果对任意 $x \in X$，都有 $x \leqslant A$，就称 $A$ 是 $X$ 的一个**上界**；如果对任意 $x \in X$，都有 $x \geqslant a$，我们就称 $a$ 是 $X$ 的一个**下界**。如果 $X$ 既有上界又有下界，我们就说 $X$ 是**有界的**。$X$ 有界等价于存在（大的）正实数 $M$，使得对任意 $x \in X$，我们都有 $|x| \leqslant M$。
 
-<span id="ma-theorem-5" class="lecture-anchor"></span>**定理 5** (确界原理). 假设 $X \subset \mathbb{R}$ 是非空的并且 $X$ 有上界。令 $\overline{M} = \{ \overline{M} \in \mathbb{R} \mid \overline{M} \text{ 是 } X \text{ 的上界} \}$，则 $\overline{M}$ 有（唯一的）最小元，即存在 $\overline{M_0} \in \overline{M}$，使得任意的 $\overline{M} \in \overline{M}$，都有 $\overline{M_0} \leqslant \overline{M}$。
+<span id="ma-theorem-5" class="lecture-anchor"></span>**定理 5**（确界原理）。假设 $X \subset \mathbb{R}$ 是非空的并且 $X$ 有上界。令 $\overline{M} = \{ \overline{M} \in \mathbb{R} \mid \overline{M} \text{ 是 } X \text{ 的上界} \}$，则 $\overline{M}$ 有（唯一的）最小元，即存在 $\overline{M_0} \in \overline{M}$，使得任意的 $\overline{M} \in \overline{M}$，都有 $\overline{M_0} \leqslant \overline{M}$。
 
 我们称 $\overline{M_0}$ 为 $X$ 的**上确界**，记作 $\sup X$。
 
@@ -95,7 +96,7 @@ b) $I_n \supset I_{n+1}$。
 
 综上所述，命题得证。 $\square$
 
-**注记.** 关于确界，我们有下面几个补充，第三个尤为重要：
+**注记。** 关于确界，我们有下面几个补充，第三个尤为重要：
 
 1) 对偶的命题：假设 $X \neq \emptyset$ 有下界，令 $\underline{M} = \{ \underline{M} \in \mathbb{R} \mid \underline{M} \text{ 是 } X \text{ 的下界} \}$。那么，$\underline{M}$ 有（唯一的）最大元，即存在 $\underline{M_0} \in \underline{M}$，使得任意的 $\underline{M} \in \underline{M}$，都有 $\underline{M_0} \geqslant \underline{M}$。我们称 $\underline{M_0}$ 为 $X$ 的**下确界**，记作 $\inf X$。
 
@@ -114,11 +115,11 @@ b) $I_n \supset I_{n+1}$。
 
     对任意的闭区间套序列 $\{I_n = [a_n, b_n]\}_{n=1,2,\cdots}$，其中对任意的 $n$，有 $a_n \leqslant a_{n+1}$，$b_{n+1} \leqslant b_n$。很明显，集合 $A = \{a_n\}_{n \geqslant 1}$ 是有上界的（取 $b_1$ 为上界），根据确界原理，我们令 $a = \sup A$，那么 $a \leqslant b_n$（因为每个 $b_n$ 都是上界而上确界是最小的上界）；$B = \{b_n\}_{n \geqslant 1}$ 是有下界的（取 $a$ 为下界），根据确界定理，我们令 $b = \inf B$，所以，$a \leqslant b$。那么，$\bigcap_{n \geqslant 1} I_n \supset [a, b] \neq \emptyset$。
 
-### 空间的概念
+## 空间的概念
 
 我们引入度量/距离空间的概念。我们已经讲过，所谓的空间，就是一个集合加上一些附加的结构：
 
-<span id="ma-definition-6" class="lecture-anchor"></span>**定义 6.** $X$ 是集合。如果存在 $d : X \times X \to \mathbb{R}_{\geqslant 0}$ 是 $X$ 上双变量的函数，满足如下三条性质：
+<span id="ma-definition-6" class="lecture-anchor"></span>**定义 6。** $X$ 是集合。如果存在 $d : X \times X \to \mathbb{R}_{\geqslant 0}$ 是 $X$ 上双变量的函数，满足如下三条性质：
 
 *a)* 对任意的 $x$ 和 $y$，$d(x, y) \geqslant 0$ 并且取等号当且仅当 $x = y$；
 
@@ -128,7 +129,7 @@ b) $I_n \supset I_{n+1}$。
 
 我们就称二元组 $(X, d)$ 是一个**距离空间**或者**度量空间**。函数 $d$ 被称作该距离空间上的**距离函数**。
 
-**注记.** 直观上，$d(x, y)$ 衡量空间 $X$ 中两点 $x$ 和 $y$ 的远近（我们可以形象地将 $X$ 想成是中学所熟悉的平面）。
+**注记。** 直观上，$d(x, y)$ 衡量空间 $X$ 中两点 $x$ 和 $y$ 的远近（我们可以形象地将 $X$ 想成是中学所熟悉的平面）。
 
 1) 在距离空间的定义中，我们已经用到了实数 $\mathbb{R}$ 的概念。
 
@@ -156,13 +157,15 @@ $$
 
 我们之后会经常用到稠密性的概念。给定度量空间 $(X, d)$，$Y \subset X$ 是子集。如果对任意的 $x \in X$ 和任意（小）的 $\varepsilon > 0$，都存在 $y \in Y$，使得 $d(y, x) < \varepsilon$，我们就称 $Y$ 在 $X$ 中是**稠密的**。直观上，$Y$ 在 $X$ 中稠密说的是对于 $X$ 的每个点都有一个 $Y$ 中的点和它离得要多近就有多近。对这个概念的理解有助于学习 $\varepsilon-\delta$ 语言。我们有如下经典的习题：
 
-**练习.** 证明，有理数和无理数在实数（这是一个度量空间）中都是稠密的。
+**练习。** 证明，有理数和无理数在实数（这是一个度量空间）中都是稠密的。
 
 我们还可以引入其他的几何概念，比如说区间的长度（高维数时称为面积/体积或者测度）的概念：对于区间 $I = [a, b]$ 或者 $(a, b)$ 或者相应的半开半闭的形式，定义 $I$ 的长度为 $|I| = |b - a|$。我们不系统地引入所有和几何相关的概念，而是这个概念真的必要时再进行讨论。
 
+## 线性空间
+
 最终，我们引用线性/向量空间的概念，作为另一个例子来阐述所谓的空间的概念：
 
-<span id="ma-definition-7" class="lecture-anchor"></span>**定义 7.** $\mathbb{F} = \mathbb{R}$ 是实数域（可以是别的域，比如说有理数或者复数），$V$ 是集合。我们假设存在两种运算：
+<span id="ma-definition-7" class="lecture-anchor"></span>**定义 7。** $\mathbb{F} = \mathbb{R}$ 是实数域（可以是别的域，比如说有理数或者复数），$V$ 是集合。我们假设存在两种运算：
 
 - 加法运算。$+ : V \times V \to V, \quad (v, w) \mapsto v + w$；
 
@@ -188,6 +191,6 @@ $$
 
 我们就称三元组 $(V, +, \cdot)$ 是 $\mathbb{F}$ 上的一个**线性空间**或者**向量空间**，或者称作 $\mathbb{F}$-**线性空间**。
 
-**练习.** 试在 $\mathbb{R}^n$ 定义 $+$ 和 $\cdot$ 的结构使得它成为一个 $\mathbb{R}$-线性空间。
+**练习。** 试在 $\mathbb{R}^n$ 定义 $+$ 和 $\cdot$ 的结构使得它成为一个 $\mathbb{R}$-线性空间。
 
 [返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：实数的公理化描述](01-real-number-axioms.md) · [下一篇：Dedekind 分割与实数构造](03-dedekind-cuts/03-01-p0030-0035.md)

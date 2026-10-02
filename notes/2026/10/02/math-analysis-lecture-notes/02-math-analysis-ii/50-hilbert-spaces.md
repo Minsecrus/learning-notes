@@ -1,17 +1,16 @@
-# 50 Brouwer 不动点定理与 Hilbert 空间
+# 50：Brouwer 不动点定理与 Hilbert 空间
 
 [返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../02-math-analysis-ii.md) · [校勘记录](../errata.md) · [上一篇：散度定理与 Green 公式](49-vector-calculus.md) · [下一篇：函数空间、连续算子与卷积逼近](51-convolution-approximation/51-01-p0602-0611.md)
 
 <!-- source: PDF 595; printed: 595; transcription: first-pass; proofreading: applied -->
 
-## 50 二维的 Brouwer 不动点定理的证明，Hilbert 空间，赋范线性空间完备性的级数判定，Fischer-Riesz 定理
 
 
-### 多元微积分的应用举例：二维的 Brouwer 不动点定理
+## 多元微积分的应用举例：二维的 Brouwer 不动点定理
 
 我们回顾一下所谓的 Green 公式：
 
-如果 $\Omega \subset \mathbb{R}^2$ 是有界光滑带边区域，那么对任意的 $\mathbb{R}^2$ 上的光滑 ($C^1$) $P$ 和 $Q$，我们有
+如果 $\Omega \subset \mathbb{R}^2$ 是有界光滑带边区域，那么对任意的 $\mathbb{R}^2$ 上的光滑（$C^1$）$P$ 和 $Q$，我们有
 $$ \int_{\Omega} \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dxdy = \oint_{\partial \Omega} Pdx + Qdy. $$
 
 我们现在要来证明 2 维情形的 Brouwer 不动点定理。我们用 $D$ 表示 $\mathbb{R}^2$ 上的单位圆盘：
@@ -19,7 +18,7 @@ $$ D = \{ (x, y) \in \mathbb{R}^2 \mid x^2 + y^2 \leqslant 1 \}. $$
 
 它的边界是单位圆周：$\partial D = \mathbf{S}^1$。
 
-<span id="ma-theorem-327" class="lecture-anchor"></span>**定理 327** (Brouwer). 假设 $f : D \to D$ 是连续映射，那么一定存在某个点 $x \in D$，使得 $f(x) = x$。
+<span id="ma-theorem-327" class="lecture-anchor"></span>**定理 327**（Brouwer）。假设 $f : D \to D$ 是连续映射，那么一定存在某个点 $x \in D$，使得 $f(x) = x$。
 
 ![Brouwer 不动点定理示意图](../assets/p0595-figure-1.webp)
 
@@ -61,9 +60,11 @@ $$ \begin{aligned} I &= \oint_{\partial D} (uv_x - vu_x)dx + (uv_y - vu_y)dy \\ 
 
 <!-- source: PDF 597; printed: 597; transcription: first-pass; proofreading: applied -->
 
-## Fourier 级数理论
+## 赋范空间与函数空间
 
 为了学习 Fourier 级数，我们首先复习／学习几个基本的函数空间，我们下个学期也会把这几个空间上的分析作为重点。
+
+### 赋范线性空间与内积空间
 
 首先回忆两个抽象的空间的概念：
 
@@ -91,13 +92,15 @@ $$\langle x, x \rangle \geqslant 0$$
 $$\|\cdot\| : X \to \mathbb{R}_{\geqslant 0}, \quad x \mapsto \sqrt{\langle x, x \rangle}$$
 是一个范数（由内积定义的范数），从而，内积空间一定是赋范线性空间。我们把完备的内积空间称作是 **Hilbert 空间**。
 
-**注记**. 我们注意到，在内积空间中，对任意的 $x, y \in X$，我们都有
+**注记**。我们注意到，在内积空间中，对任意的 $x, y \in X$，我们都有
 $$|\langle x, y \rangle| \leqslant \|x\| \|y\|$$
 最简单的证明就是注意到把内积限制到由 $x$ 和 $y$ 生成的有限维线性空间上也得到内积空间，从而可以用有限维的结论。
 
 <!-- source: PDF 598; printed: 598; transcription: first-pass; proofreading: applied -->
 
-在 Lebesgue 积分的理论框架下，有三个最基本的函数空间：$L^1(X, \mathcal{A}, \mu)$, $L^2(X, \mathcal{A}, \mu)$ 和 $L^\infty(X, \mathcal{A}, \mu)$。我们现在引入它们的概念并证明它们的完备性。
+### 常用函数空间
+
+在 Lebesgue 积分的理论框架下，有三个最基本的函数空间：$L^1(X, \mathcal{A}, \mu)$，$L^2(X, \mathcal{A}, \mu)$ 和 $L^\infty(X, \mathcal{A}, \mu)$。我们现在引入它们的概念并证明它们的完备性。
 
 首先，给定测度空间 $(X, \mathcal{A}, \mu)$，它上面的可积函数全体为 $\mathcal{L}^1(X, \mathcal{A}, \mu)$，这是一个 $\mathbb{C}$-线性空间（在 Fourier 级数的学习中，我们不得不研究在复数域中取值的函数）。我们把几乎处处为零的函数记作
 $$N = \{ f \in \mathcal{L}^1(X, \mathcal{A}, \mu) \mid f \text{ 几乎处处为零} \}.$$
@@ -128,9 +131,11 @@ $$L^\infty(X, \mathcal{A}, \mu) = \mathcal{L}^\infty(X, \mathcal{A}, \mu) / N.$$
 我们在 $L^\infty(X, \mathcal{A}, \mu)$ 定义范数 $\|\cdot\|_{L^\infty}$，其中，$[f] \in L^\infty(X, \mathcal{A}, \mu)$ 是函数的等价类而 $f$ 是其代表元：
 $$\|[f]\|_{L^\infty(X, \mathcal{A}, \mu)} = \|f\|_{L^\infty} = \inf_{\substack{M \in \mathbb{R}_{\geqslant 0}, \\ |f(x)| \leqslant M \text{ 几乎处处}}} M.$$
 
+### 完备性的级数判据与里斯定理
+
 为了证明上述空间都是完备的，我们需要一个技术性引理：
 
-<span id="ma-lemma-328" class="lecture-anchor"></span>**引理 328** (完备性的级数判定). 假设 $(X, \|\cdot\|)$ 是赋范线性空间，那么，我们有
+<span id="ma-lemma-328" class="lecture-anchor"></span>**引理 328**（完备性的级数判定）。假设 $(X, \|\cdot\|)$ 是赋范线性空间，那么，我们有
 
 1) 如果 $(X, \|\cdot\|)$ 是完备的，那么绝对收敛的级数一定收敛，即给定级数 $\sum_{i=1}^\infty x_i$，其中 $x_i \in X$，如果
 $$\sum_{i=1}^\infty \|x_i\| < \infty,$$
@@ -138,7 +143,7 @@ $$\sum_{i=1}^\infty \|x_i\| < \infty,$$
 
 2) 如果每个绝对收敛的级数均收敛，那么 $(X, \|\cdot\|)$ 是完备的。
 
-**证明**: 1) 是平凡的：如果令 $S_n = \sum_{i \leqslant n} x_i$，那么，对任意的 $n \geqslant m$，我们有
+**证明**：1) 是平凡的：如果令 $S_n = \sum_{i \leqslant n} x_i$，那么，对任意的 $n \geqslant m$，我们有
 $$\|S_n - S_m\| \leqslant \sum_{k=m+1}^n \|x_k\|.$$
 根据 $\sum_{i=1}^\infty \|x_i\|$ 收敛，我们知道对任意的 $\varepsilon > 0$，存在 $N \geqslant 1$，使得当 $n \geqslant m \geqslant N$ 时，我们有
 $$\sum_{k=m+1}^n \|x_k\| < \varepsilon.$$
@@ -154,9 +159,9 @@ $$(x_{N_p} - x_{N_{p-1}}) + (x_{N_{p-1}} - x_{N_{p-2}}) + \cdots + (x_{N_1} - x_
 
 我们先证明 $L^1$ 空间的完备性：
 
-<span id="ma-theorem-329" class="lecture-anchor"></span>**定理 329** (Fischer-Riesz). 对任意的测度空间 $(X, \mathcal{A}, \mu)$，$L^1(X, \mathcal{A}, \mu)$ 是完备的赋范线性空间。
+<span id="ma-theorem-329" class="lecture-anchor"></span>**定理 329**（Fischer-Riesz）。对任意的测度空间 $(X, \mathcal{A}, \mu)$，$L^1(X, \mathcal{A}, \mu)$ 是完备的赋范线性空间。
 
-**证明**: 根据上述引理，只须证明绝对收敛的级数 $\sum_{i=1}^\infty f_i$ 是收敛的，其中 $f_i \in L^1(X, \mathcal{A}, \mu)$。为此，我们首先定义函数（的等价类）
+**证明**：根据上述引理，只须证明绝对收敛的级数 $\sum_{i=1}^\infty f_i$ 是收敛的，其中 $f_i \in L^1(X, \mathcal{A}, \mu)$。为此，我们首先定义函数（的等价类）
 $$F : X \to [0,+\infty], \quad x \mapsto F(x) = \sum_{i=1}^\infty |f_i(x)|.$$
 这显然是良好定义的函数（除去一个零测集）。根据 Beppo Levi 定理，我们有
 $$\int_X F(x) d\mu = \sum_{i=1}^\infty \int_X |f_i(x)| d\mu = \sum_{i=1}^\infty \|f_i\|_{L^1} < \infty.$$
@@ -168,7 +173,7 @@ $$\lim_{N \to \infty} \left\| \sum_{i=1}^N f_i(x) - f(x) \right\|_{L^1} = \lim_{
 
 Fischer-Riesz 定理的证明还可以给出一个很有意义的推论：
 
-<span id="ma-corollary-330" class="lecture-anchor"></span>**推论 330**. 给定 $L^1(X, \mathcal{A}, \mu)$ 中的函数序列 $\{f_i\}_{i \geqslant 1}$，我们假设它们在 $L^1$ 范数下收敛到 $f$，即
+<span id="ma-corollary-330" class="lecture-anchor"></span>**推论 330**。给定 $L^1(X, \mathcal{A}, \mu)$ 中的函数序列 $\{f_i\}_{i \geqslant 1}$，我们假设它们在 $L^1$ 范数下收敛到 $f$，即
 $$f_i \xrightarrow{L^1(X, \mathcal{A}, \mu)} f, \quad i \to \infty.$$
 那么，存在子函数序列 $\{f_{i_p}\}_{p \geqslant 1}$，使得对几乎处处的 $x \in X$，我们都有
 $$\lim_{p \to \infty} f_{i_p}(x) = f(x)$$

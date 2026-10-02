@@ -1,15 +1,16 @@
-# 71 Riesz 表示、Sobolev 对偶与迹定理
+# 71：Riesz 表示、Sobolev 对偶与迹定理
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../03-math-analysis-iii.md) · [校勘记录](../errata.md) · [上一篇：70.1 作业:Fourier变换的计算,Heisenberg测不准原理,分数次Sobolev空间的物理空间刻画,1维的等](70-sobolev-embedding/70-03-p0837-0841.md) · [下一篇：有界区域的 Sobolev 空间与 Poincare 不等式](72-bounded-sobolev/72-01-p0851-0857.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../03-math-analysis-iii.md) · [校勘记录](../errata.md) · [上一篇：70.1：作业：Fourier变换的计算，Heisenberg测不准原理，分数次Sobolev空间的物理空间刻画，1维的等](70-sobolev-embedding/70-03-p0837-0841.md) · [下一篇：有界区域的 Sobolev 空间与 Poincare 不等式](72-bounded-sobolev/72-01-p0851-0857.md)
 
 <!-- source: PDF 842; printed: 842; transcription: first-pass; proofreading: applied -->
 
-## 71 Riesz 表示定理，Hilbert 空间中的正交投影，Sobolev 空间的对偶性，Sobolev 空间的限制定理（迹定理）
 
+
+## 正交投影与正交分解
 
 最后我们来证明 Sobolev 空间之间的对偶性，为此，我们需要证明关于完备的内积空间的 Riesz 表示定理。我们之后还会运用这个定理来求解偏微分方程。
 
-<span id="ma-lemma-482" class="lecture-anchor"></span>**引理 482** (向闭子空间的正交投影). 给定完备的内积空间 $(H, (\cdot, \cdot))$, $F \subset H$ 是闭线性子空间。那么，存在唯一的连续的线性映射
+<span id="ma-lemma-482" class="lecture-anchor"></span>**引理 482**（向闭子空间的正交投影）。给定完备的内积空间 $(H, (\cdot, \cdot))$，$F \subset H$ 是闭线性子空间。那么，存在唯一的连续的线性映射
 $$
 \pi : H \to F,
 $$
@@ -29,7 +30,7 @@ $$
 $$
 （我们经常把这样的一个序列称作是 $\inf_{y \in F} \|x - y\|$ 的一个极小化子序列。）
 
-![由向量 x, y_k, y_l, y_k+y_l-x 构成的平行四边形](../assets/p0842-figure-1.webp)
+![由向量 x，y_k，y_l，y_k+y_l-x 构成的平行四边形](../assets/p0842-figure-1.webp)
 
 我们回忆平面几何中的平行四边形等式：一个平行四边形的对角线的平方和等于四条边的平方和。
 现在考虑由 $x, y_k, y_\ell$ 和 $y_k + y_\ell - x$ 所组成的平行四边形，我们有
@@ -71,7 +72,7 @@ $$
 $$
 这就证明了对任意 $z \in F$，$x - y \perp z$，从而完成了证明。 $\square$
 
-**注记.** 我们注意到，$F$ 中满足 $x - y \perp F$ 的向量是唯一的，就是 $\pi(x)$：实际上，如果 $y \in F$ 是另一个这样的向量，那么，
+**注记。** 我们注意到，$F$ 中满足 $x - y \perp F$ 的向量是唯一的，就是 $\pi(x)$：实际上，如果 $y \in F$ 是另一个这样的向量，那么，
 $$
 y - \pi(x) = (x - \pi(x)) - (x - y)
 $$
@@ -85,6 +86,8 @@ x = x_F + x_\perp,
 $$
 其中，$x_F \in F$，$x_\perp \perp F$。这被称作是 $x$ 对于 $F$ 的正交分解。
 
+## 里斯表示定理与希尔伯特空间对偶
+
 假设 $H$ 是完备的内积空间，我们用 $H^*$ 表示 $H$ 上的连续线性泛函所构成的空间并把它称作是 $H$ 在 Hilbert 空间的意义下的对偶：
 $$
 H^* = \{ \text{线性映射 } \ell : H \to \mathbb{C} \mid \ell \text{ 连续（有界）的} \}.
@@ -93,7 +96,7 @@ $$
 
 <!-- source: PDF 844; printed: 844; transcription: first-pass; proofreading: applied -->
 
-**例子.** 对任意的 $v \in H$，我们考虑如下的线性泛函：
+**例子。** 对任意的 $v \in H$，我们考虑如下的线性泛函：
 $$
 \ell_v : H \to \mathbb{C}, \quad x \mapsto (x, v).
 $$
@@ -105,7 +108,7 @@ $$
 
 我们现在来证明，上述的例子给出了所有的 $H^*$ 的元素。
 
-<span id="ma-theorem-483" class="lecture-anchor"></span>**定理 483** (Riesz 表示定理). 完备内积空间 $(H, (\cdot, \cdot))$ 上的连续线性泛函都可以用内积来实现，即对每个 $\ell \in H^*$，存在唯一的 $v \in H$，使得 $\ell = \ell_v$。换而言之，
+<span id="ma-theorem-483" class="lecture-anchor"></span>**定理 483**（Riesz 表示定理）。完备内积空间 $(H, (\cdot, \cdot))$ 上的连续线性泛函都可以用内积来实现，即对每个 $\ell \in H^*$，存在唯一的 $v \in H$，使得 $\ell = \ell_v$。换而言之，
 $$
 H \longrightarrow H^*, \quad v \mapsto \ell_v,
 $$
@@ -132,6 +135,8 @@ $$
 \ell_v(x) = (x_F, v) + (\lambda v, v) = \lambda \ell(v) = \ell(x_F + \lambda v).
 $$
 证毕。 $\square$
+
+## 索伯列夫空间的对偶性
 
 利用 Riesz 表示定理，我们来证明 $H^{-s}(\mathbb{R}^n)$ 与 $H^s(\mathbb{R}^n)$ 之间的对偶性。
 
@@ -168,7 +173,7 @@ $$
 (H^s(\mathbb{R}^n))^* = \{ u \in \mathcal{S}'(\mathbb{R}^n) \mid \text{存在常数 } C, \text{对任意 } \varphi \in \mathcal{D}(\mathbb{R}^n), \text{有 } |\langle u, \varphi \rangle| \le C \|\varphi\|_{H^s} \}.
 $$
 
-<span id="ma-proposition-484" class="lecture-anchor"></span>**命题 484** ($H^{-s}$ 与 $H^s$ 的对偶). 对任意的 Sobolev 指标 $s \in \mathbb{R}$，我们有
+<span id="ma-proposition-484" class="lecture-anchor"></span>**命题 484**（$H^{-s}$ 与 $H^s$ 的对偶）。对任意的 Sobolev 指标 $s \in \mathbb{R}$，我们有
 $$
 \begin{aligned}
 H^{-s}(\mathbb{R}^n) &= \{ u \in \mathcal{D}'(\mathbb{R}^n) \mid \text{存在常数 } C, \text{对任意 } \varphi \in \mathcal{D}(\mathbb{R}^n), \text{有 } |\langle u, \varphi \rangle| \le C \|\varphi\|_{H^s} \} \\
@@ -235,7 +240,7 @@ $$\langle \widehat{v}, \varphi \rangle = \int_{\mathbb{R}^n} \varphi(\xi) f(\xi)
 $$\widehat{v} \overset{\mathcal{D}'}{=} f.$$
 根据 $L^1_{\text{loc}}(\mathbb{R}^n) \hookrightarrow \mathcal{D}'(\mathbb{R}^n)$ 是单射，我们知道 $\widehat{v}(\xi) = f(\xi)$ 几乎处处成立，命题得证。 $\square$
 
-**注记.** 根据上面的描述，从 $H^{-s}(\mathbb{R}^n)$ 到 $(H^s(\mathbb{R}^n))^*$ 的同构可以如下的构造：
+**注记。** 根据上面的描述，从 $H^{-s}(\mathbb{R}^n)$ 到 $(H^s(\mathbb{R}^n))^*$ 的同构可以如下的构造：
 $$
 \begin{aligned}
 H^{-s}(\mathbb{R}^n) \longrightarrow (H^s(\mathbb{R}^n))^*, \quad u &\mapsto l_u : H^s(\mathbb{R}^n) \to \mathbb{C}, \\
@@ -245,13 +250,13 @@ $$
 
 <!-- source: PDF 847; printed: 847; transcription: first-pass; proofreading: applied -->
 
-### Sobolev 空间的物理空间描述
+## Sobolev 空间的物理空间描述
 
 当 Sobolev 指标 $0 < s < 1$ 时，假设 $u \in L^2(\mathbb{R}^n)$。我们可以证明 $u \in H^s(\mathbb{R}^n)$ 当且仅当
 $$\iint_{\mathbb{R}^n \times \mathbb{R}^n} \frac{|u(x) - u(y)|^2}{|x - y|^{n+2s}} dx dy < \infty.$$
 这就直接在物理空间刻画了 $H^s(\mathbb{R}^n)$。这个命题的证明请参考第四次作业。
 
-### Sobolev 空间的限制性定理
+## Sobolev 空间的限制性定理
 
 这一部分我们证明一个令人惊讶的结果。给定函数 $u \in H^s(\mathbb{R}^n)$，其中，$s > 0$。考虑 $\Sigma \subset \mathbb{R}^n$ 为一个超平面（余维数是 $1$ 的线性子空间）。由于 $u \in L^2(\mathbb{R}^n)$，所以，$u$ 只是几乎处处定义的。特别地，在一个零测集上改变 $u$ 的取值不会改变 $u \in H^s(\mathbb{R}^n)$。所以，我们可以任意地改变 $u$ 在 $\Sigma$ 上的值（因为 $\Sigma$ 是一个零测集）。然而，我们将证明，当 $s > \frac{1}{2}$ 时，我们可以把 $u$ “限制”到 $\Sigma$ 上来得到一个落在 $H^{s-\frac{1}{2}}(\mathbb{R}^{n-1})$ 的函数。当然，我们也可以这么想象这个结果，当 $s$ 足够大的时候（大于空间的维数的一半），此时，根据 Sobolev 嵌入定理，$u$ 是连续函数，自然可以在 $\Sigma$ 上限制。
 
@@ -282,7 +287,7 @@ $$\|\operatorname{Res}(\varphi)\|_{H^{s-\frac{1}{2}}(\mathbb{R}^{n-1})} \leqslan
 $$\operatorname{Res} : H^s(\mathbb{R}^n) \longrightarrow H^{s-\frac{1}{2}}(\mathbb{R}^{n-1}).$$
 这就给出了 $\operatorname{Res}$ 的含义。
 
-<span id="ma-theorem-485" class="lecture-anchor"></span>**定理 485**. 假设 $n \geqslant 1$ 并且 Sobolev 指标 $s > \frac{1}{2}$。限制映射
+<span id="ma-theorem-485" class="lecture-anchor"></span>**定理 485**。假设 $n \geqslant 1$ 并且 Sobolev 指标 $s > \frac{1}{2}$。限制映射
 $$\operatorname{Res} : \mathcal{S}(\mathbb{R}^n) \longrightarrow H^{s-\frac{1}{2}}(\mathbb{R}^{n-1})$$
 可以唯一地延拓成连续线性映射
 $$\operatorname{Res} : H^s(\mathbb{R}^n) \longrightarrow H^{s-\frac{1}{2}}(\mathbb{R}^{n-1})$$
@@ -299,9 +304,9 @@ $$
 特别地，存在常数 $C > 0$，对任意的 $u \in H^s(\mathbb{R}^n)$，我们有
 $$\|\operatorname{Res}(u)\|_{H^{s-\frac{1}{2}}(\mathbb{R}^{n-1})} \leqslant C \|u\|_{H^s(\mathbb{R}^n)}.$$
 
-**注记.** 习惯上，对于 $u \in H^s(\mathbb{R}^n)$，我们把 $\operatorname{Res}(u)$ 写成 $u(x', 0)$。
+**注记。** 习惯上，对于 $u \in H^s(\mathbb{R}^n)$，我们把 $\operatorname{Res}(u)$ 写成 $u(x', 0)$。
 
-**证明:** 根据之前的讨论，我们只要对 $\varphi \in \mathcal{S}(\mathbb{R}^n)$，证明
+**证明：** 根据之前的讨论，我们只要对 $\varphi \in \mathcal{S}(\mathbb{R}^n)$，证明
 $$\|\varphi(x', 0)\|_{H^{s-\frac{1}{2}}(\mathbb{R}^{n-1})} \leqslant C \|\varphi\|_{H^s(\mathbb{R}^n)}$$
 即可，其中 $C$ 是一个待定的常数（不依赖于 $\varphi$ 的选取）。
 
@@ -344,9 +349,9 @@ $$\int_{\mathbb{R}^{n-1}} (1 + |\xi'|^2)^{s-\frac{1}{2}} \left| \mathcal{F}'(\va
 $$\|\varphi(x', 0)\|_{H^{s-\frac{1}{2}}(\mathbb{R}^{n-1})}^2 \leqslant \frac{C_s}{4\pi^2} \|\varphi\|_{H^s(\mathbb{R}^n)}^2.$$
 命题得证。 $\square$
 
-**注记.** 我们通常说一个 $H^s$ 的函数限制到余 $1$ 维的子流形上会丢失 $\frac{1}{2}$ 个导数。
+**注记。** 我们通常说一个 $H^s$ 的函数限制到余 $1$ 维的子流形上会丢失 $\frac{1}{2}$ 个导数。
 
-**注记.** 上面的证明实际上表明了限制映射
+**注记。** 上面的证明实际上表明了限制映射
 $$\operatorname{Res} : H^s(\mathbb{R}^n) \twoheadrightarrow H^{s-\frac{1}{2}}(\mathbb{R}^{n-1})$$
 是满射。
 
@@ -385,4 +390,4 @@ $$
 
 这就完成了证明。
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../03-math-analysis-iii.md) · [校勘记录](../errata.md) · [上一篇：70.1 作业:Fourier变换的计算,Heisenberg测不准原理,分数次Sobolev空间的物理空间刻画,1维的等](70-sobolev-embedding/70-03-p0837-0841.md) · [下一篇：有界区域的 Sobolev 空间与 Poincare 不等式](72-bounded-sobolev/72-01-p0851-0857.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../03-math-analysis-iii.md) · [校勘记录](../errata.md) · [上一篇：70.1：作业：Fourier变换的计算，Heisenberg测不准原理，分数次Sobolev空间的物理空间刻画，1维的等](70-sobolev-embedding/70-03-p0837-0841.md) · [下一篇：有界区域的 Sobolev 空间与 Poincare 不等式](72-bounded-sobolev/72-01-p0851-0857.md)

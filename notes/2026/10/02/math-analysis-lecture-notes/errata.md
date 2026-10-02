@@ -6,7 +6,7 @@
 
 ### 1 实数的公理化描述
 
-[相关正文：实数的公理化描述](./01-math-analysis-i/01-real-number-axioms.md)
+[相关正文：1：实数的公理化描述](./01-math-analysis-i/01-real-number-axioms.md)
 
 #### 数学修正
 
@@ -20,7 +20,7 @@
 
 **理由：** [实数的公理化描述](./01-math-analysis-i/01-real-number-axioms.md)原图末行“x非零乘法逆元”确漏结构助词，补的字明确所属关系，练习假设及乘法逆元唯一性不变。
 
-[相关正文：实数的公理化描述](./01-math-analysis-i/01-real-number-axioms.md)
+[相关正文：1：实数的公理化描述](./01-math-analysis-i/01-real-number-axioms.md)
 
 #### 数学修正
 
@@ -72,7 +72,7 @@
 
 **理由：** [实数的公理化描述](./01-math-analysis-i/01-real-number-axioms.md)原图该段没有非零底数限制；负幂使用F8仅对非零底数定义的逆元。加法恒等式对任意实数成立，需保留；幂的乘法律遇到负指数及x^n x^{-n}必须在非零底数条件下使用。n=0时原约定也允许x=0，但“当x非零时成立”仍正确且不把原有效情形改成错误命题。
 
-[相关正文：实数的公理化描述](./01-math-analysis-i/01-real-number-axioms.md)
+[相关正文：1：实数的公理化描述](./01-math-analysis-i/01-real-number-axioms.md)
 
 #### 数学修正
 
@@ -86,7 +86,7 @@
 
 **理由：** 已对照[实数的公理化描述](./01-math-analysis-i/01-real-number-axioms.md)原图，负数句印x>0，同段正数条件也是x>0，后文R_<0明确为负实数。因此负数条件必须为x<0，符号映射才一致。
 
-[相关正文：实数的公理化描述](./01-math-analysis-i/01-real-number-axioms.md)
+[相关正文：1：实数的公理化描述](./01-math-analysis-i/01-real-number-axioms.md)
 
 #### 数学修正
 
@@ -119,7 +119,7 @@
 
 **理由：** 已查看[实数的公理化描述](./01-math-analysis-i/01-real-number-axioms.md)原图，第二支条件确印n>0，与第一支重叠且缺少n=0。[实数的公理化描述](./01-math-analysis-i/01-real-number-axioms.md)加法单位元、[实数的公理化描述](./01-math-analysis-i/01-real-number-axioms.md)iota(n)从正负整数的重复和构造，唯一确定零分支为n=0。canonical已经正确录为n=0，不虚构替换候选。
 
-[相关正文：实数的公理化描述](./01-math-analysis-i/01-real-number-axioms.md)
+[相关正文：1：实数的公理化描述](./01-math-analysis-i/01-real-number-axioms.md)
 
 #### 数学修正
 
@@ -165,7 +165,7 @@
 
 **问题：** 原稿中重复写了两次 $n \cdot x = nx$，可能是笔误，意图可能是 $x \cdot n = nx$ 或 $(-n) \cdot x = -nx$，但无法唯一确定。
 
-[相关正文：实数的公理化描述](./01-math-analysis-i/01-real-number-axioms.md)
+[相关正文：1：实数的公理化描述](./01-math-analysis-i/01-real-number-axioms.md)
 
 #### 数学修正
 
@@ -181,7 +181,7 @@
 
 ### 2 区间套、确界与距离空间
 
-[相关正文：区间套、确界与距离空间](./01-math-analysis-i/02-nested-intervals.md)
+[相关正文：2：区间套、确界与距离空间](./01-math-analysis-i/02-nested-intervals.md)
 
 #### 数学修正
 
@@ -205,7 +205,7 @@
 
 **理由：** [区间套、确界与距离空间](./01-math-analysis-i/02-nested-intervals.md)原图只印“有限子集”，但空集也是有限子集且没有元素，不能拥有最大元或最小元；同段随后写A={a_1,...,a_n}并比较a_1和a_n，只有n>=1适用。补入非空是极值存在结论必需的最小条件，不添加练习解答。
 
-[相关正文：区间套、确界与距离空间](./01-math-analysis-i/02-nested-intervals.md)
+[相关正文：2：区间套、确界与距离空间](./01-math-analysis-i/02-nested-intervals.md)
 
 #### 数学修正
 
@@ -229,7 +229,7 @@
 
 **理由：** 源图实际印“之前”，属于source_typo；实直线上区间表示两端点之间的点，校正为之间。
 
-[相关正文：区间套、确界与距离空间](./01-math-analysis-i/02-nested-intervals.md)
+[相关正文：2：区间套、确界与距离空间](./01-math-analysis-i/02-nested-intervals.md)
 
 #### 数学修正
 
@@ -275,7 +275,7 @@
 
 **理由：** 原图错印第二个加数y；同段2^{-n}<y-M0、b_n-M0<=2^{-n}唯一推出现Markdown不等式。保留第一遍已有正确修复，拒绝恢复印刷错误。
 
-[相关正文：区间套、确界与距离空间](./01-math-analysis-i/02-nested-intervals.md)
+[相关正文：2：区间套、确界与距离空间](./01-math-analysis-i/02-nested-intervals.md)
 
 #### 数学修正
 
@@ -299,7 +299,7 @@
 
 **理由：** 源图区间套右端点误印≥。由I_{n+1}⊂I_n且b_{n+1}∈I_n必得b_{n+1}≤b_n，与[实数的公理化描述](./01-math-analysis-i/01-real-number-axioms.md)相同错。
 
-[相关正文：区间套、确界与距离空间](./01-math-analysis-i/02-nested-intervals.md)
+[相关正文：2：区间套、确界与距离空间](./01-math-analysis-i/02-nested-intervals.md)
 
 #### 数学修正
 
@@ -481,7 +481,7 @@
 
 **理由：** [Dedekind 分割与实数构造](./01-math-analysis-i/03-dedekind-cuts/03-01-p0030-0035.md)原图最后一句确有“将会在”，canonical漏录“会”。v2复合候选同时强改花体R为黑板R，复合候选拒绝后仅恢复这个独立漏字。
 
-[相关正文：3.1 作业:可数与不可数,Schroeder-Bernstein定理](./01-math-analysis-i/03-dedekind-cuts/03-03-p0036-0039.md)
+[相关正文：3.1：作业：可数与不可数，Schroeder-Bernstein定理](./01-math-analysis-i/03-dedekind-cuts/03-03-p0036-0039.md)
 
 #### 数学修正
 
@@ -493,7 +493,7 @@
 
 > B7-1) $J \subset \mathbb{R}$ 是闭区间并且它的长度 $|J| > 0$。证明，对任意的 $x \in \mathbb{R}$，总存在闭区间 $I$，使得 $I \subset J$，$|I| > 0$ 且 $x \notin I$。
 
-**理由：** [3.1 作业:可数与不可数,Schroeder-Bernstein定理](./01-math-analysis-i/03-dedekind-cuts/03-03-p0036-0039.md)原图B7-1后续立即使用区间I⊂J与|I|，前面“总存在闭区间”漏变量I。只补区间名称，不改变题设或添加解答。
+**理由：** [3.1：作业：可数与不可数，Schroeder-Bernstein定理](./01-math-analysis-i/03-dedekind-cuts/03-03-p0036-0039.md)原图B7-1后续立即使用区间I⊂J与|I|，前面“总存在闭区间”漏变量I。只补区间名称，不改变题设或添加解答。
 
 **原文：**
 
@@ -503,11 +503,11 @@
 
 > 如果 $X$ 是非空可数集，那么我们总可以将 $X$ 写成
 
-**理由：** [3.1 作业:可数与不可数,Schroeder-Bernstein定理](./01-math-analysis-i/03-dedekind-cuts/03-03-p0036-0039.md)本段按存在单射到N定义可数集，故空集也可数；B3所写{x1,x2,...}至少含x1，不能表示空集。补入非空使有限非空集合也可用重复尾项列出，与本页B1及定义一致；未添加练习解答。
+**理由：** [3.1：作业：可数与不可数，Schroeder-Bernstein定理](./01-math-analysis-i/03-dedekind-cuts/03-03-p0036-0039.md)本段按存在单射到N定义可数集，故空集也可数；B3所写{x1,x2,...}至少含x1，不能表示空集。补入非空使有限非空集合也可用重复尾项列出，与本页B1及定义一致；未添加练习解答。
 
 ### 4 极限、级数与 Cauchy 列
 
-[相关正文：极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)
+[相关正文：4：极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)
 
 #### 数学修正
 
@@ -521,7 +521,7 @@
 
 **理由：** [极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)原图定义11末句“有极限”三字使用同样粗体字，canonical仅“极限”粗体；补完整术语加粗符合源图，公式/量词无变动。
 
-[相关正文：极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)
+[相关正文：4：极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)
 
 #### 数学修正
 
@@ -555,7 +555,7 @@
 
 **理由：** [极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)原图在n>=N条件下写1/n<1/N，但n=N时相等。选N>1/epsilon保证第二个严格不等式正确，首个应为<=，不影响极限证明。
 
-[相关正文：极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)
+[相关正文：4：极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)
 
 #### 数学修正
 
@@ -589,7 +589,7 @@
 
 **理由：** [极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)原图在n>=N条件下写lambda^{-n}<lambda^{-N}，n=N时两者相等。lambda>1保证递减，只能给首个<=；N已选lambda^N>1/epsilon，第二个<epsilon正确。
 
-[相关正文：极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)
+[相关正文：4：极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)
 
 #### 数学修正
 
@@ -663,7 +663,7 @@
 
 **理由：** [极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)原图首个不等号实为<，所以模型声称源图<=不正确；但数学修复<=是必需的三角不等式。取x=y=x_n即得0<=0而0<0错误。接受改动、kind应source_typo并以此独立来源说明。
 
-[相关正文：极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)
+[相关正文：4：极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)
 
 #### 数学修正
 
@@ -687,7 +687,7 @@
 
 **理由：** [极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)原图题设漏收敛条件，却断言和差积商收敛，取x_n=n、y_n=0即可否证第一条。[极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)证明1)开头明确令lim x_n=x、lim y_n=y，随后应用两列的极限定义，证明唯一确定前提为两实数数列收敛。补“收敛的”恢复证明实际使用的条件。
 
-[相关正文：极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)
+[相关正文：4：极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)
 
 #### 数学修正
 
@@ -701,7 +701,7 @@
 
 **理由：** [极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)源图y序列的epsilon/2阈值命名N2，适用条件却写n>=N1；N1来自x序列而不能控制y。换为n>=N2与下一句N=max(N1,N2)同时满足两列估计的构造吻合。
 
-[相关正文：极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)
+[相关正文：4：极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)
 
 #### 数学修正
 
@@ -725,7 +725,7 @@
 
 **理由：** [极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)原图标题第二个Caucy漏h，同一标题第一个Cauchy及下文均为Cauchy，补h恢复统一人名术语。
 
-[相关正文：极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)
+[相关正文：4：极限、级数与 Cauchy 列](./01-math-analysis-i/04-limits.md)
 
 #### 数学修正
 
@@ -741,7 +741,7 @@
 
 ### 5 收敛判别与常数 e
 
-[相关正文：收敛判别与常数 e](./01-math-analysis-i/05-convergence-tests.md)
+[相关正文：5：收敛判别与常数 e](./01-math-analysis-i/05-convergence-tests.md)
 
 #### 数学修正
 
@@ -755,7 +755,7 @@
 
 **理由：** 源图倒数极限分母求和下标印n，变量却为Bk。此极限对Bk取k→∞，修复未绑定指标，且其非零假设在前段已给出。
 
-[相关正文：收敛判别与常数 e](./01-math-analysis-i/05-convergence-tests.md)
+[相关正文：5：收敛判别与常数 e](./01-math-analysis-i/05-convergence-tests.md)
 
 #### 数学修正
 
@@ -807,7 +807,7 @@
 
 **问题：** 峰值集合是值而非位置，常数列X={1}有限却无峰值以外点，有限分支失效。应以峰值指标集合分类，需同步多处结构修复，尚不强改。
 
-[相关正文：收敛判别与常数 e](./01-math-analysis-i/05-convergence-tests.md)
+[相关正文：5：收敛判别与常数 e](./01-math-analysis-i/05-convergence-tests.md)
 
 #### 数学修正
 
@@ -867,7 +867,7 @@
 
 **问题：** 证明将k>N1、i_k≥N1混用且N2用>而结论≥；固定k应同时k>N1及i_k>N2，当前任意k≥N1不够。三角公式canonical已正确。
 
-[相关正文：收敛判别与常数 e](./01-math-analysis-i/05-convergence-tests.md)
+[相关正文：5：收敛判别与常数 e](./01-math-analysis-i/05-convergence-tests.md)
 
 #### 数学修正
 
@@ -883,7 +883,7 @@
 
 **理由：** [收敛判别与常数 e](./01-math-analysis-i/05-convergence-tests.md)原图注记第3项显示R^n为数学上标公式；canonical裸写TeX命令，缺少$定界会以文本输出。仅补数学环境恢复同一公式，未改变命题或TeX符号。
 
-[相关正文：收敛判别与常数 e](./01-math-analysis-i/05-convergence-tests.md)
+[相关正文：5：收敛判别与常数 e](./01-math-analysis-i/05-convergence-tests.md)
 
 #### 数学修正
 
@@ -971,7 +971,7 @@
 
 > 假设对任意的正整数 $m$ 和 $n$，都有 $x_{m+n} \leqslant x_m + x_n$
 
-**理由：** [指数函数与三角函数](./01-math-analysis-i/06-exponential-trigonometric/06-01-p0059-0064.md)原图数列指标n>=1，课程[3.1 作业:可数与不可数,Schroeder-Bernstein定理](./01-math-analysis-i/03-dedekind-cuts/03-03-p0036-0039.md)约定自然数含0，因此本句对任意自然数会引用尚未定义x_0。次可加性条件实际只需正整数m,n；证明对r=0的余项可以另约定x_0=0安全扩展。此处修正量词域。
+**理由：** [指数函数与三角函数](./01-math-analysis-i/06-exponential-trigonometric/06-01-p0059-0064.md)原图数列指标n>=1，课程[3.1：作业：可数与不可数，Schroeder-Bernstein定理](./01-math-analysis-i/03-dedekind-cuts/03-03-p0036-0039.md)约定自然数含0，因此本句对任意自然数会引用尚未定义x_0。次可加性条件实际只需正整数m,n；证明对r=0的余项可以另约定x_0=0安全扩展。此处修正量词域。
 
 **原文：**
 
@@ -1127,7 +1127,7 @@
 
 **理由：** 源图注记首项1)、下一项单独3且没有第二项；此处应顺序2)，修正源编号误印。
 
-[相关正文：6.1 作业:Riemann重排,Cesàro求和,Banach-Mazur游戏](./01-math-analysis-i/06-exponential-trigonometric/06-03-p0065-0070.md)
+[相关正文：6.1：作业：Riemann重排，Cesàro求和，Banach-Mazur游戏](./01-math-analysis-i/06-exponential-trigonometric/06-03-p0065-0070.md)
 
 #### 数学修正
 
@@ -1153,7 +1153,7 @@
 
 > I1) 对任意 $s = \{s_n\}_{n \geqslant 0} \in \mathcal{S}$，我们定义数列
 
-**理由：** 源图I1印n≥1，而同页集合S定义n≥0且[6.1 作业:Riemann重排,Cesàro求和,Banach-Mazur游戏](./01-math-analysis-i/06-exponential-trigonometric/06-03-p0065-0070.md)用s0，属于source_typo。统一序列从0起，仍需另补公式漏s0，不能仅改范围就声称全部练习正确。
+**理由：** 源图I1印n≥1，而同页集合S定义n≥0且[6.1：作业：Riemann重排，Cesàro求和，Banach-Mazur游戏](./01-math-analysis-i/06-exponential-trigonometric/06-03-p0065-0070.md)用s0，属于source_typo。统一序列从0起，仍需另补公式漏s0，不能仅改范围就声称全部练习正确。
 
 **原文：**
 
@@ -1167,9 +1167,9 @@
 > c_n = \sum_{k=0}^n \frac{s_0 s_1 s_2 \cdots s_k}{2^k}.
 > $$
 
-**理由：** 源图分子漏s0。原空乘积1导致c0=1、极限独立s0只能在[0,2]，与[-2,2]满射及[6.1 作业:Riemann重排,Cesàro求和,Banach-Mazur游戏](./01-math-analysis-i/06-exponential-trigonometric/06-03-p0065-0070.md)根式前因子s0矛盾。补s0后c0=s0，半角递推恰给I3根式。
+**理由：** 源图分子漏s0。原空乘积1导致c0=1、极限独立s0只能在[0,2]，与[-2,2]满射及[6.1：作业：Riemann重排，Cesàro求和，Banach-Mazur游戏](./01-math-analysis-i/06-exponential-trigonometric/06-03-p0065-0070.md)根式前因子s0矛盾。补s0后c0=s0，半角递推恰给I3根式。
 
-[相关正文：6.1 作业:Riemann重排,Cesàro求和,Banach-Mazur游戏](./01-math-analysis-i/06-exponential-trigonometric/06-03-p0065-0070.md)
+[相关正文：6.1：作业：Riemann重排，Cesàro求和，Banach-Mazur游戏](./01-math-analysis-i/06-exponential-trigonometric/06-03-p0065-0070.md)
 
 #### 数学修正
 
@@ -1563,7 +1563,7 @@
 
 **问题：** 矩阵幂范数C^(k−1)||A||^k仅k≥1，k=0时||I||≤1/C一般不成立。应单列||I||从k=1求和，一般范数下所列总界也需相应常数。
 
-[相关正文：7.1 作业:素数的倒数和,Basel问题的Euler“证明”](./01-math-analysis-i/07-complete-spaces/07-03-p0081-0085.md)
+[相关正文：7.1：作业：素数的倒数和，Basel问题的Euler“证明”](./01-math-analysis-i/07-complete-spaces/07-03-p0081-0085.md)
 
 #### 数学修正
 
@@ -1577,7 +1577,7 @@
 
 **理由：** 源图第3项左括号实际缺失，属于source_typo；恢复成同组(3)编号，不改变级数。
 
-[相关正文：7.1 作业:素数的倒数和,Basel问题的Euler“证明”](./01-math-analysis-i/07-complete-spaces/07-03-p0081-0085.md)
+[相关正文：7.1：作业：素数的倒数和，Basel问题的Euler“证明”](./01-math-analysis-i/07-complete-spaces/07-03-p0081-0085.md)
 
 #### 数学修正
 
@@ -1593,7 +1593,7 @@
 
 ### 8 函数的连续性
 
-[相关正文：函数的连续性](./01-math-analysis-i/08-continuity.md)
+[相关正文：8：函数的连续性](./01-math-analysis-i/08-continuity.md)
 
 #### 数学修正
 
@@ -1617,7 +1617,7 @@
 
 **理由：** 源图确印ε0，属于source_typo。该正向论证从任意ε>0开始，δ和N为此ε而取；只有|f(xn)−f(x0)|<ε才能得任意精度收敛。ε0仅下一段反证另设，不能用在本段。
 
-[相关正文：函数的连续性](./01-math-analysis-i/08-continuity.md)
+[相关正文：8：函数的连续性](./01-math-analysis-i/08-continuity.md)
 
 #### 数学修正
 
@@ -1641,7 +1641,7 @@
 
 **理由：** 源图实际印x0，属于source_typo。此段正在给任意x定义f(x)=fk(x)，需在同一点x属于Ij∩Ik处检查兼容性；x0未绑定。
 
-[相关正文：函数的连续性](./01-math-analysis-i/08-continuity.md)
+[相关正文：8：函数的连续性](./01-math-analysis-i/08-continuity.md)
 
 #### 数学修正
 
@@ -1693,7 +1693,7 @@
 
 **问题：** 原印本中例子第 2 条完整重复了第 1 条的内容。由于无法唯一推断作者原本想写的内容（如将 1 拆分为常值函数与恒等映射，或直接删除第 2 条），故保持 Markdown 与原印本一致并列入不确定项。
 
-[相关正文：函数的连续性](./01-math-analysis-i/08-continuity.md)
+[相关正文：8：函数的连续性](./01-math-analysis-i/08-continuity.md)
 
 #### 数学修正
 
@@ -1755,7 +1755,7 @@
 
 ### 9 连续映射与介值定理
 
-[相关正文：连续映射与介值定理](./01-math-analysis-i/09-continuous-maps.md)
+[相关正文：9：连续映射与介值定理](./01-math-analysis-i/09-continuous-maps.md)
 
 #### 数学修正
 
@@ -1789,7 +1789,7 @@
 
 **理由：** 源图实际印f′和d2，属于source_typo。已定义限制映射f|X′，目标度量在该页开头定义dY；恢复已经给定的限制及目标度量变量，不是导数。
 
-[相关正文：连续映射与介值定理](./01-math-analysis-i/09-continuous-maps.md)
+[相关正文：9：连续映射与介值定理](./01-math-analysis-i/09-continuous-maps.md)
 
 #### 数学修正
 
@@ -1813,7 +1813,7 @@
 
 **理由：** 源图确印任和与问号后句号，属于source_typo。恢复“任何”与单个问号，保留存在性练习不加解答。
 
-[相关正文：连续映射与介值定理](./01-math-analysis-i/09-continuous-maps.md)
+[相关正文：9：连续映射与介值定理](./01-math-analysis-i/09-continuous-maps.md)
 
 #### 数学修正
 
@@ -1827,7 +1827,7 @@
 
 **理由：** 源图印x0，属于source_typo。此段遍历不连续点y∈Y，左右极限须在各y取；只讨论固定x0不能对Y中全部跳跃构造区间。
 
-[相关正文：连续映射与介值定理](./01-math-analysis-i/09-continuous-maps.md)
+[相关正文：9：连续映射与介值定理](./01-math-analysis-i/09-continuous-maps.md)
 
 #### 数学修正
 
@@ -1841,7 +1841,7 @@
 
 **理由：** 源图两处第二分支实际都>0。保持左端函数值负、右端正的不变量，右半区间的中点值必须<0；二分迭代同理，替换唯一吻合不变量。
 
-[相关正文：连续映射与介值定理](./01-math-analysis-i/09-continuous-maps.md)
+[相关正文：9：连续映射与介值定理](./01-math-analysis-i/09-continuous-maps.md)
 
 #### 数学修正
 
@@ -1855,7 +1855,7 @@
 
 **理由：** 源图F(1)确印≤1，属于source_typo。F(1)=f(1)−1且f(1)≤1，推出F(1)≤0，这才与F(0)≥0用介值定理得到零点。
 
-[相关正文：连续映射与介值定理](./01-math-analysis-i/09-continuous-maps.md)
+[相关正文：9：连续映射与介值定理](./01-math-analysis-i/09-continuous-maps.md)
 
 #### 数学修正
 
@@ -1879,7 +1879,7 @@
 
 **理由：** 源图也重复“的”，属于source_typo；删重字保持严格递增练习。
 
-[相关正文：连续映射与介值定理](./01-math-analysis-i/09-continuous-maps.md)
+[相关正文：9：连续映射与介值定理](./01-math-analysis-i/09-continuous-maps.md)
 
 #### 数学修正
 
@@ -2049,7 +2049,7 @@
 
 **理由：** 源图也重复任意，属于source_typo；删冗字量词不变。
 
-[相关正文：10.1 数学分析一作业4](./01-math-analysis-i/10-topology/10-02-p0107-0110.md)
+[相关正文：10.1：数学分析一作业4](./01-math-analysis-i/10-topology/10-02-p0107-0110.md)
 
 #### 数学修正
 
@@ -2063,7 +2063,7 @@
 
 **理由：** 源图称X，属于source_typo。开集定义对象为球的并U，之后也是证明U开条件，故统一为U。
 
-[相关正文：10.1 数学分析一作业4](./01-math-analysis-i/10-topology/10-02-p0107-0110.md)
+[相关正文：10.1：数学分析一作业4](./01-math-analysis-i/10-topology/10-02-p0107-0110.md)
 
 #### 数学修正
 
@@ -2077,7 +2077,7 @@
 
 **理由：** 源图重复编号2)，属于source_typo。三条等价陈述依次1、2、3，闭集逆像为第三项。
 
-[相关正文：10.1 数学分析一作业4](./01-math-analysis-i/10-topology/10-02-p0107-0110.md)
+[相关正文：10.1：数学分析一作业4](./01-math-analysis-i/10-topology/10-02-p0107-0110.md)
 
 #### 数学修正
 
@@ -2093,7 +2093,7 @@
 
 ### 11 紧性、一致连续与一致收敛
 
-[相关正文：紧性、一致连续与一致收敛](./01-math-analysis-i/11-compactness.md)
+[相关正文：11：紧性、一致连续与一致收敛](./01-math-analysis-i/11-compactness.md)
 
 #### 数学修正
 
@@ -2107,7 +2107,7 @@
 
 **理由：** 源图“讲”误字，属于source_typo；改将即用极坐标表达该函数，不改数学。
 
-[相关正文：紧性、一致连续与一致收敛](./01-math-analysis-i/11-compactness.md)
+[相关正文：11：紧性、一致连续与一致收敛](./01-math-analysis-i/11-compactness.md)
 
 #### 数学修正
 
@@ -2141,7 +2141,7 @@
 
 **理由：** 源图缺对且误用⊂，属于source_typo。所选xn,yn为K中的两个点须∈K；δ=1/n遍历正整数，补介词。
 
-[相关正文：紧性、一致连续与一致收敛](./01-math-analysis-i/11-compactness.md)
+[相关正文：11：紧性、一致连续与一致收敛](./01-math-analysis-i/11-compactness.md)
 
 #### 数学修正
 
@@ -2165,7 +2165,7 @@
 
 **理由：** 源图确“子序列”及X，属于source_typo。列紧是K中任意序列有子序列极限仍在K；须称K列紧，X未定义。
 
-[相关正文：紧性、一致连续与一致收敛](./01-math-analysis-i/11-compactness.md)
+[相关正文：11：紧性、一致连续与一致收敛](./01-math-analysis-i/11-compactness.md)
 
 #### 数学修正
 
@@ -2199,7 +2199,7 @@
 
 **理由：** 源图也缺是，属于source_typo；补系词为假设(X,d)列紧，与本项结论相符。
 
-[相关正文：紧性、一致连续与一致收敛](./01-math-analysis-i/11-compactness.md)
+[相关正文：11：紧性、一致连续与一致收敛](./01-math-analysis-i/11-compactness.md)
 
 #### 数学修正
 
@@ -2231,7 +2231,7 @@
 
 **问题：** 方体数量(2M/N)^n可非整数，边长1/N的n维直径sqrt(n)/N超Lebesgue数。应选整数L>sqrt(n)N，边长1/L、数量(2ML)^n，需较长段落修补。
 
-[相关正文：紧性、一致连续与一致收敛](./01-math-analysis-i/11-compactness.md)
+[相关正文：11：紧性、一致连续与一致收敛](./01-math-analysis-i/11-compactness.md)
 
 #### 数学修正
 
@@ -2245,7 +2245,7 @@
 
 **理由：** 源图标题也是一致收敛性，属于source_typo。定义单个函数的ε−δ对全部x,y统一，正是一致连续，未涉及函数列；恢复标题。
 
-[相关正文：紧性、一致连续与一致收敛](./01-math-analysis-i/11-compactness.md)
+[相关正文：11：紧性、一致连续与一致收敛](./01-math-analysis-i/11-compactness.md)
 
 #### 数学修正
 
@@ -2261,7 +2261,7 @@
 
 **理由：** 源图确有悬空的“对任意的”，属于source_typo。其后sup为值无量词对象，删冗词仍陈述每个n对应上确界∞，不改函数列。
 
-[相关正文：紧性、一致连续与一致收敛](./01-math-analysis-i/11-compactness.md)
+[相关正文：11：紧性、一致连续与一致收敛](./01-math-analysis-i/11-compactness.md)
 
 #### 数学修正
 
@@ -2353,7 +2353,7 @@
 
 **理由：** 源图重复称作是，属于source_typo；删重复谓语以称所构造空间为完备化。
 
-[相关正文：12.1 作业:有无穷多素数的拓扑证明](./01-math-analysis-i/12-continuous-functions/12-03-p0126-0131.md)
+[相关正文：12.1：作业：有无穷多素数的拓扑证明](./01-math-analysis-i/12-continuous-functions/12-03-p0126-0131.md)
 
 #### 数学修正
 
@@ -2377,7 +2377,7 @@
 
 **理由：** 源图缺在、式自，属于source_typo；恢复局部有界的地点介词与式子名词，不加练习解答。
 
-[相关正文：12.1 作业:有无穷多素数的拓扑证明](./01-math-analysis-i/12-continuous-functions/12-03-p0126-0131.md)
+[相关正文：12.1：作业：有无穷多素数的拓扑证明](./01-math-analysis-i/12-continuous-functions/12-03-p0126-0131.md)
 
 #### 数学修正
 
@@ -2399,7 +2399,7 @@
 
 **问题：** 印本此处写为“是在拓扑 $\mathcal{T}$ 下的）闭集”，存在未匹配的右括号“）”。可能意图为修正“在”字为前括号“（”（即“是（拓扑 $\mathcal{T}$ 下的）闭集”，与上文“（拓扑 $\mathcal{T}$ 下的）开集”对应），亦可能意图为删去右括号（即“是在拓扑 $\mathcal{T}$ 下的闭集”）。由于存在两种可行的数学与语法修饰方式，无法唯一确定原作者意图。
 
-[相关正文：12.2 期中考试:连续函数环的极大理想](./01-math-analysis-i/12-continuous-functions/12-05-p0132-0135.md)
+[相关正文：12.2：期中考试：连续函数环的极大理想](./01-math-analysis-i/12-continuous-functions/12-05-p0132-0135.md)
 
 #### 数学修正
 
@@ -2413,7 +2413,7 @@
 
 **理由：** 源图重复函数，属于source_typo；删冗余第一次函数。
 
-[相关正文：12.2 期中考试:连续函数环的极大理想](./01-math-analysis-i/12-continuous-functions/12-05-p0132-0135.md)
+[相关正文：12.2：期中考试：连续函数环的极大理想](./01-math-analysis-i/12-continuous-functions/12-05-p0132-0135.md)
 
 #### 数学修正
 
@@ -2429,7 +2429,7 @@
 
 ### 13 导数与初等函数
 
-[相关正文：导数与初等函数](./01-math-analysis-i/13-derivatives.md)
+[相关正文：13：导数与初等函数](./01-math-analysis-i/13-derivatives.md)
 
 #### 数学修正
 
@@ -2457,7 +2457,7 @@
 
 **理由：** 源图极限实际为x→x0而canonical录x→0，此项应extraction_error。由h=x−x0→0等价x→x0，且函数在指定点取导数，修复有数学依据。
 
-[相关正文：导数与初等函数](./01-math-analysis-i/13-derivatives.md)
+[相关正文：13：导数与初等函数](./01-math-analysis-i/13-derivatives.md)
 
 #### 数学修正
 
@@ -2471,7 +2471,7 @@
 
 **理由：** 源图可维错字，导数存在的性质为可微，恢复术语。
 
-[相关正文：导数与初等函数](./01-math-analysis-i/13-derivatives.md)
+[相关正文：13：导数与初等函数](./01-math-analysis-i/13-derivatives.md)
 
 #### 数学修正
 
@@ -2509,7 +2509,7 @@
 
 **理由：** 源图链式余项漏因子，canonical已补，ℓ/h→f′有界乘μ→0。
 
-[相关正文：导数与初等函数](./01-math-analysis-i/13-derivatives.md)
+[相关正文：13：导数与初等函数](./01-math-analysis-i/13-derivatives.md)
 
 #### 数学修正
 
@@ -2523,7 +2523,7 @@
 
 **理由：** 源图称反函数在x0求导，反函数定义域J，实际应在f(x0)∈J，与所列(f逆)′(f(x0))吻合。
 
-[相关正文：导数与初等函数](./01-math-analysis-i/13-derivatives.md)
+[相关正文：13：导数与初等函数](./01-math-analysis-i/13-derivatives.md)
 
 #### 数学修正
 
@@ -2551,7 +2551,7 @@
 
 ### 14 导数公式与中值定理
 
-[相关正文：导数公式与中值定理](./01-math-analysis-i/14-mean-value-theorems.md)
+[相关正文：14：导数公式与中值定理](./01-math-analysis-i/14-mean-value-theorems.md)
 
 #### 数学修正
 
@@ -2593,7 +2593,7 @@
 
 **理由：** 源图Leibniz归纳缺括号，积求导两项必须同在求和且乘binom(n,k)，否则第二项k未绑定并漏系数。
 
-[相关正文：导数公式与中值定理](./01-math-analysis-i/14-mean-value-theorems.md)
+[相关正文：14：导数公式与中值定理](./01-math-analysis-i/14-mean-value-theorems.md)
 
 #### 数学修正
 
@@ -2631,7 +2631,7 @@
 
 **问题：** E2/E1可能未定义（线性f时E1恒0）；有符号比也未必+∞。源第二分母h给有限极限f′−a，不能仅补括号修复。可以用E1=o(h),E2/h→f′−a≠0表达优劣，需要重组而非唯一小片段。
 
-[相关正文：导数公式与中值定理](./01-math-analysis-i/14-mean-value-theorems.md)
+[相关正文：14：导数公式与中值定理](./01-math-analysis-i/14-mean-value-theorems.md)
 
 #### 数学修正
 
@@ -2649,7 +2649,7 @@
 
 **理由：** 源图也写x，属于source_typo。这里只假定在x0导数存在，结论只能在x0各分量导数，不能称全部x都可微。
 
-[相关正文：导数公式与中值定理](./01-math-analysis-i/14-mean-value-theorems.md)
+[相关正文：14：导数公式与中值定理](./01-math-analysis-i/14-mean-value-theorems.md)
 
 #### 数学修正
 
@@ -2673,7 +2673,7 @@
 
 **理由：** 源图可谓错字，属于source_typo；可微函数复合可微，恢复术语。
 
-[相关正文：导数公式与中值定理](./01-math-analysis-i/14-mean-value-theorems.md)
+[相关正文：14：导数公式与中值定理](./01-math-analysis-i/14-mean-value-theorems.md)
 
 #### 数学修正
 
@@ -2697,7 +2697,7 @@
 
 **理由：** 源图下标确印q但q未定义，序列一般正整数n≥1，下段构造zn、yn对每个正整数n，统一起点。
 
-[相关正文：导数公式与中值定理](./01-math-analysis-i/14-mean-value-theorems.md)
+[相关正文：14：导数公式与中值定理](./01-math-analysis-i/14-mean-value-theorems.md)
 
 #### 数学修正
 
@@ -2950,7 +2950,7 @@
 
 **理由：** 源图S被canonical误录f，恢复已定义函数。
 
-[相关正文：15.1 作业:高木贞治函数](./01-math-analysis-i/15-derivative-applications/15-03-p0158-0165.md)
+[相关正文：15.1：作业：高木贞治函数](./01-math-analysis-i/15-derivative-applications/15-03-p0158-0165.md)
 
 #### 数学修正
 
@@ -2968,7 +2968,7 @@
 
 **理由：** 源图写x，但题目只假定在x0可导，各分量导数也只在x0；限定已假设的点避免无条件全域可微。
 
-[相关正文：15.1 作业:高木贞治函数](./01-math-analysis-i/15-derivative-applications/15-03-p0158-0165.md)
+[相关正文：15.1：作业：高木贞治函数](./01-math-analysis-i/15-derivative-applications/15-03-p0158-0165.md)
 
 #### 数学修正
 
@@ -2982,7 +2982,7 @@
 
 **理由：** 源图领域字误，同句后半使用邻域，修复同一数学术语。
 
-[相关正文：15.1 作业:高木贞治函数](./01-math-analysis-i/15-derivative-applications/15-03-p0158-0165.md)
+[相关正文：15.1：作业：高木贞治函数](./01-math-analysis-i/15-derivative-applications/15-03-p0158-0165.md)
 
 #### 数学修正
 
@@ -3016,7 +3016,7 @@
 
 **问题：** a实数b>0，在[-1,1]定义x^a sin(x^-b)，负x一般无实幂定义，a=1/2反例。可改绝对值幂或半轴单侧版本，原意不唯一，保留疑点不加练习解答。
 
-[相关正文：15.1 作业:高木贞治函数](./01-math-analysis-i/15-derivative-applications/15-03-p0158-0165.md)
+[相关正文：15.1：作业：高木贞治函数](./01-math-analysis-i/15-derivative-applications/15-03-p0158-0165.md)
 
 #### 数学修正
 
@@ -3040,7 +3040,7 @@
 
 ### 16 空间填充曲线、L’Hôpital 法则与 Taylor 展开
 
-[相关正文：空间填充曲线、L’Hôpital 法则与 Taylor 展开](./01-math-analysis-i/16-lhopital-taylor.md)
+[相关正文：16：空间填充曲线、L’Hôpital 法则与 Taylor 展开](./01-math-analysis-i/16-lhopital-taylor.md)
 
 #### 未决数学问题
 
@@ -3050,7 +3050,7 @@
 
 **问题：** 原文印刷为“类似地，我们定义 $(0, \frac{1}{a})$ 上的函数 $\tilde{g} = g \circ \varphi$ 是。”，句末多出“是”字，可能是拟稿时的遗留用词。由于修改方式（删除“是”或改动动词“定义”）未在上下文中获得唯一证明，故保留原文并在此记录。
 
-[相关正文：空间填充曲线、L’Hôpital 法则与 Taylor 展开](./01-math-analysis-i/16-lhopital-taylor.md)
+[相关正文：16：空间填充曲线、L’Hôpital 法则与 Taylor 展开](./01-math-analysis-i/16-lhopital-taylor.md)
 
 #### 数学修正
 
@@ -3072,7 +3072,7 @@
 
 **问题：** [空间填充曲线、L’Hôpital 法则与 Taylor 展开](./01-math-analysis-i/16-lhopital-taylor.md)例2原图与canonical均有三重冲突：cos x/x²实际趋+∞、第一微分写-2cos x sin x/x却对应cos²原函数且分母缺2、末值-1/2不等于倒数第二式-2。可重建(cos x-1)/x²的经典例或其他平方例，多处源错不能唯一小改，标uncertain等待独立复核。
 
-[相关正文：空间填充曲线、L’Hôpital 法则与 Taylor 展开](./01-math-analysis-i/16-lhopital-taylor.md)
+[相关正文：16：空间填充曲线、L’Hôpital 法则与 Taylor 展开](./01-math-analysis-i/16-lhopital-taylor.md)
 
 #### 数学修正
 
@@ -3106,7 +3106,7 @@
 
 **理由：** [空间填充曲线、L’Hôpital 法则与 Taylor 展开](./01-math-analysis-i/16-lhopital-taylor.md)原图Cauchy余项分母确印(n+1)!。取H(t)=f(x)-Σ_{k=0}^n f^(k)(t)(x-t)^k/k!，直接微分得H′(t)=-f^(n+1)(t)(x-t)^n/n!，Cauchy中值定理给余项f^(n+1)(ξ)(x-ξ)^n(x-a)/n!。原分母会差因子n+1，属于源笔误。
 
-[相关正文：空间填充曲线、L’Hôpital 法则与 Taylor 展开](./01-math-analysis-i/16-lhopital-taylor.md)
+[相关正文：16：空间填充曲线、L’Hôpital 法则与 Taylor 展开](./01-math-analysis-i/16-lhopital-taylor.md)
 
 #### 未决数学问题
 
@@ -3116,7 +3116,7 @@
 
 **问题：** 引理 105 叙述中设存在性变量为 $x_0 \in (a, b)$，但结论处写为 $f^{(n+1)}(c) = 0$，而后文证明结尾给出“选取 $x_0 = x_{n+1}$ 即可”。因无法唯一确定应将结论中的 $c$ 修改为 $x_0$ 还是将条件及证明结尾的 $x_0$ 修改为 $c$，故保留原文并作不确定记录。
 
-[相关正文：空间填充曲线、L’Hôpital 法则与 Taylor 展开](./01-math-analysis-i/16-lhopital-taylor.md)
+[相关正文：16：空间填充曲线、L’Hôpital 法则与 Taylor 展开](./01-math-analysis-i/16-lhopital-taylor.md)
 
 #### 数学修正
 
@@ -3236,7 +3236,7 @@
 
 **理由：** [凸函数与 Jensen 不等式](./01-math-analysis-i/17-convexity/17-01-p0175-0182.md)源图范数定义漏绝对值，前面Minkowski只对非负ai,bi证明，推到任意Rn须取绝对值。p=1、x=(-1)原值-1不满足非负性，非整数p还可能不定义；绝对值恢复所有p≥1有效范数。
 
-[相关正文：17.1 作业:Émile Borel引理,Peano的证明](./01-math-analysis-i/17-convexity/17-03-p0183-0188.md)
+[相关正文：17.1：作业：Émile Borel引理，Peano的证明](./01-math-analysis-i/17-convexity/17-03-p0183-0188.md)
 
 #### 数学修正
 
@@ -3248,9 +3248,9 @@
 
 > A2)（Taylor 展开式的唯一性，Peano 余项）。假设 $f$ 是 $x_0$ 附近的函数，并且当 $x \to x_0$ 时，满足
 
-**理由：** 已查看[17.1 作业:Émile Borel引理,Peano的证明](./01-math-analysis-i/17-convexity/17-03-p0183-0188.md)原图，该注记原句确有“在”代系词及“是”代时间条件的错字。有限可微阶与无限可微阶两种情况的数学结论保持，修正为“是”“时”恢复原句意思，属于源笔误。
+**理由：** 已查看[17.1：作业：Émile Borel引理，Peano的证明](./01-math-analysis-i/17-convexity/17-03-p0183-0188.md)原图，该注记原句确有“在”代系词及“是”代时间条件的错字。有限可微阶与无限可微阶两种情况的数学结论保持，修正为“是”“时”恢复原句意思，属于源笔误。
 
-[相关正文：17.1 作业:Émile Borel引理,Peano的证明](./01-math-analysis-i/17-convexity/17-03-p0183-0188.md)
+[相关正文：17.1：作业：Émile Borel引理，Peano的证明](./01-math-analysis-i/17-convexity/17-03-p0183-0188.md)
 
 #### 数学修正
 
@@ -3262,9 +3262,9 @@
 
 > $$f'(x) = \begin{cases} > 0, & \text{对所有的} \ x \in (x_0 - \delta, x_0); \\ < 0, & \text{对所有的} \ x \in (x_0, x_0 + \delta). \end{cases}$$
 
-**理由：** [17.1 作业:Émile Borel引理,Peano的证明](./01-math-analysis-i/17-convexity/17-03-p0183-0188.md)定理描述极大值而原图给左侧f′<0右侧f′>0。中值定理表明极大值的充分符号条件是左侧递增f′>0、右侧递减f′<0；原条件给局部极小值，如x²。故两符号必须一起互换，属于源笔误。
+**理由：** [17.1：作业：Émile Borel引理，Peano的证明](./01-math-analysis-i/17-convexity/17-03-p0183-0188.md)定理描述极大值而原图给左侧f′<0右侧f′>0。中值定理表明极大值的充分符号条件是左侧递增f′>0、右侧递减f′<0；原条件给局部极小值，如x²。故两符号必须一起互换，属于源笔误。
 
-[相关正文：17.1 作业:Émile Borel引理,Peano的证明](./01-math-analysis-i/17-convexity/17-03-p0183-0188.md)
+[相关正文：17.1：作业：Émile Borel引理，Peano的证明](./01-math-analysis-i/17-convexity/17-03-p0183-0188.md)
 
 #### 数学修正
 
@@ -3276,9 +3276,9 @@
 
 > $\psi\big|_{\{x\,|\,|x|\geqslant 2\}} \equiv 0$
 
-**理由：** [17.1 作业:Émile Borel引理,Peano的证明](./01-math-analysis-i/17-convexity/17-03-p0183-0188.md)原图多维截断函数ψ的第二条件却写χ，χ为上文一维截断函数且定义域R，不能作用于一般Rn变量x。该条件对应同一ψ:Rn→[0,1]，故恢复ψ为源笔误。
+**理由：** [17.1：作业：Émile Borel引理，Peano的证明](./01-math-analysis-i/17-convexity/17-03-p0183-0188.md)原图多维截断函数ψ的第二条件却写χ，χ为上文一维截断函数且定义域R，不能作用于一般Rn变量x。该条件对应同一ψ:Rn→[0,1]，故恢复ψ为源笔误。
 
-[相关正文：17.1 作业:Émile Borel引理,Peano的证明](./01-math-analysis-i/17-convexity/17-03-p0183-0188.md)
+[相关正文：17.1：作业：Émile Borel引理，Peano的证明](./01-math-analysis-i/17-convexity/17-03-p0183-0188.md)
 
 #### 数学修正
 
@@ -3290,9 +3290,9 @@
 
 > F8) 对任意给定的正数 $t_k > 0$，试计算函数 $f_k(x) = \dfrac{a_k}{k!} x^k \chi(t_k x)$ 在 $x = 0$ 处的任意阶导数（包括零阶）。
 
-**理由：** [17.1 作业:Émile Borel引理,Peano的证明](./01-math-analysis-i/17-convexity/17-03-p0183-0188.md)原图练习式用tk(x-x0)^k但条件写λk>0，λk未出现于级数。约束已在式中使用的参数tk恢复变量绑定，不增加练习解答，属于源笔误。
+**理由：** [17.1：作业：Émile Borel引理，Peano的证明](./01-math-analysis-i/17-convexity/17-03-p0183-0188.md)原图练习式用tk(x-x0)^k但条件写λk>0，λk未出现于级数。约束已在式中使用的参数tk恢复变量绑定，不增加练习解答，属于源笔误。
 
-[相关正文：17.1 作业:Émile Borel引理,Peano的证明](./01-math-analysis-i/17-convexity/17-03-p0183-0188.md)
+[相关正文：17.1：作业：Émile Borel引理，Peano的证明](./01-math-analysis-i/17-convexity/17-03-p0183-0188.md)
 
 #### 数学修正
 
@@ -3304,11 +3304,11 @@
 
 > $$\frac{f^{(n)}(0)}{n!} = c_n + \sum_{j=1}^{\lfloor n/2 \rfloor} (-1)^j c_{n-2j} b_{n-2j}^j.$$
 
-**理由：** [17.1 作业:Émile Borel引理,Peano的证明](./01-math-analysis-i/17-convexity/17-03-p0183-0188.md)原图级数系数为ck，展开各项ck x^k/(1+bkx²)的最低次幂x^k系数就是ck。n阶系数含cn以及k=n-2j产生的低阶贡献，原dn未定义，故应cn，属于源笔误。
+**理由：** [17.1：作业：Émile Borel引理，Peano的证明](./01-math-analysis-i/17-convexity/17-03-p0183-0188.md)原图级数系数为ck，展开各项ck x^k/(1+bkx²)的最低次幂x^k系数就是ck。n阶系数含cn以及k=n-2j产生的低阶贡献，原dn未定义，故应cn，属于源笔误。
 
 ### 18 Riemann 积分的定义
 
-[相关正文：Riemann 积分的定义](./01-math-analysis-i/18-riemann-integral.md)
+[相关正文：18：Riemann 积分的定义](./01-math-analysis-i/18-riemann-integral.md)
 
 #### 数学修正
 
@@ -3332,7 +3332,7 @@
 
 **理由：** [Riemann 积分的定义](./01-math-analysis-i/18-riemann-integral.md)原图第3条量词两次写σ，结论却用σ′。取两个任意分划的公共加细需分别量化σ、σ′，以分割点并集即可核验存在，恢复第二个撇号属于源笔误。
 
-[相关正文：Riemann 积分的定义](./01-math-analysis-i/18-riemann-integral.md)
+[相关正文：18：Riemann 积分的定义](./01-math-analysis-i/18-riemann-integral.md)
 
 #### 数学修正
 
@@ -3346,7 +3346,7 @@
 
 **理由：** [Riemann 积分的定义](./01-math-analysis-i/18-riemann-integral.md)先给φ:V→V′，性质2需要将连续线性映射φ作用于积分，Vφ不是已定义映射或乘积。原图确多出V，删去后Σφ(fk)Δa=φ(ΣfkΔa)，由线性直接验证，属于源笔误。
 
-[相关正文：Riemann 积分的定义](./01-math-analysis-i/18-riemann-integral.md)
+[相关正文：18：Riemann 积分的定义](./01-math-analysis-i/18-riemann-integral.md)
 
 #### 数学修正
 
@@ -3360,7 +3360,7 @@
 
 **理由：** [Riemann 积分的定义](./01-math-analysis-i/18-riemann-integral.md)原图确重复“图像像”，删除重复字恢复名词“图像”，不改逼近函数与图示说明，属于源笔误。
 
-[相关正文：Riemann 积分的定义](./01-math-analysis-i/18-riemann-integral.md)
+[相关正文：18：Riemann 积分的定义](./01-math-analysis-i/18-riemann-integral.md)
 
 #### 数学修正
 
@@ -3374,7 +3374,7 @@
 
 **理由：** [Riemann 积分的定义](./01-math-analysis-i/18-riemann-integral.md)原图右侧把∫fm错误嵌进绝对值。线性后应为|∫(fn-fm)|≤∫|fn-fm|，再以ψn+ψm控制。原式fn=fm=1、区间长度2时反而给右侧2，不能提供趋零的Cauchy控制，恢复差的积分为源笔误。
 
-[相关正文：Riemann 积分的定义](./01-math-analysis-i/18-riemann-integral.md)
+[相关正文：18：Riemann 积分的定义](./01-math-analysis-i/18-riemann-integral.md)
 
 #### 数学修正
 
@@ -3438,7 +3438,7 @@
 
 **理由：** [Riemann 积分的定义](./01-math-analysis-i/18-riemann-integral.md)源图在误差控制函数Ψ后误加下标x，未定义Ψx；已定义Ψ(x)恒ε/(b-a)，积分Ψ才等于ε。
 
-[相关正文：Riemann 积分的定义](./01-math-analysis-i/18-riemann-integral.md)
+[相关正文：18：Riemann 积分的定义](./01-math-analysis-i/18-riemann-integral.md)
 
 #### 数学修正
 
@@ -3460,7 +3460,7 @@
 
 > 上的限制都是 Riemann 可积函数，并且
 
-**理由：** [Riemann 积分的定义](./01-math-analysis-i/18-riemann-integral.md)原图把可积函数的限制误称阶梯；f(x)=x是连续可积函数而任意非退化限制都非阶梯。可加性仅需要两段Riemann可积，须与同样错误的[20.1 作业:Dini定理,多项式逼近与Weierstrass-Stone定理](./01-math-analysis-i/20-fundamental-theorem/20-03-p0219-0223.md)练习一起修。
+**理由：** [Riemann 积分的定义](./01-math-analysis-i/18-riemann-integral.md)原图把可积函数的限制误称阶梯；f(x)=x是连续可积函数而任意非退化限制都非阶梯。可加性仅需要两段Riemann可积，须与同样错误的[20.1：作业：Dini定理，多项式逼近与Weierstrass-Stone定理](./01-math-analysis-i/20-fundamental-theorem/20-03-p0219-0223.md)练习一起修。
 
 #### 未决数学问题
 
@@ -3518,7 +3518,7 @@
 
 **问题：** 原书图像中此处公式打印为 $\overline{S}(f; \sigma) \leqslant \overline{S}(f; \sigma'), \quad \underline{S}(f; \sigma') \leqslant \overline{S}(f; \sigma)$，且后续段落中关于细分 $\sigma \prec \sigma'$ 与上下和单调性的符号表达存在前后不一致，无法 uniquely 判定原作者对符号 $\prec$ 的定义及该处的具体修改意图。
 
-[相关正文：19.1 作业:Sturm-Louville理论的一个例子](./01-math-analysis-i/19-darboux-sums/19-02-p0204-0209.md)
+[相关正文：19.1：作业：Sturm-Louville理论的一个例子](./01-math-analysis-i/19-darboux-sums/19-02-p0204-0209.md)
 
 #### 数学修正
 
@@ -3530,9 +3530,9 @@
 
 > ；D4) $f(x) = x^{\frac{1}{3}}(1-x)^{\frac{2}{3}}$
 
-**理由：** [19.1 作业:Sturm-Louville理论的一个例子](./01-math-analysis-i/19-darboux-sums/19-02-p0204-0209.md)源图习题D3重复，两项函数不同，下一项D5，故第二D3应D4，恢复顺序编号不增加练习答案，属于源笔误。
+**理由：** [19.1：作业：Sturm-Louville理论的一个例子](./01-math-analysis-i/19-darboux-sums/19-02-p0204-0209.md)源图习题D3重复，两项函数不同，下一项D5，故第二D3应D4，恢复顺序编号不增加练习答案，属于源笔误。
 
-[相关正文：19.1 作业:Sturm-Louville理论的一个例子](./01-math-analysis-i/19-darboux-sums/19-02-p0204-0209.md)
+[相关正文：19.1：作业：Sturm-Louville理论的一个例子](./01-math-analysis-i/19-darboux-sums/19-02-p0204-0209.md)
 
 #### 数学修正
 
@@ -3544,9 +3544,9 @@
 
 > 证明：$M_1^2 \leqslant 4M_0 M_2$。
 
-**理由：** [19.1 作业:Sturm-Louville理论的一个例子](./01-math-analysis-i/19-darboux-sums/19-02-p0204-0209.md)源图向量值Landau练习确漏M1平方。标量练习有M1²≤4M0M2；向量情形取任意x处导数方向的单位向量投影，标量估计给||f′(x)||²≤4M0M2，取sup仍成立。把f乘小常数会使原一次M1与二次右侧尺度不一致，平方是必要的源笔误修正。
+**理由：** [19.1：作业：Sturm-Louville理论的一个例子](./01-math-analysis-i/19-darboux-sums/19-02-p0204-0209.md)源图向量值Landau练习确漏M1平方。标量练习有M1²≤4M0M2；向量情形取任意x处导数方向的单位向量投影，标量估计给||f′(x)||²≤4M0M2，取sup仍成立。把f乘小常数会使原一次M1与二次右侧尺度不一致，平方是必要的源笔误修正。
 
-[相关正文：19.1 作业:Sturm-Louville理论的一个例子](./01-math-analysis-i/19-darboux-sums/19-02-p0204-0209.md)
+[相关正文：19.1：作业：Sturm-Louville理论的一个例子](./01-math-analysis-i/19-darboux-sums/19-02-p0204-0209.md)
 
 #### 数学修正
 
@@ -3558,7 +3558,7 @@
 
 > - 如果 $t'_1$ 和 $t'_2$ 是 $x'$ 的两个相邻的零点，那么存在唯一的 $t'_3 \in [t'_1, t'_2]$，使得 $x(t'_3) = 0$。
 
-**理由：** [19.1 作业:Sturm-Louville理论的一个例子](./01-math-analysis-i/19-darboux-sums/19-02-p0204-0209.md)源图第二项两个相邻零点是x′的t1′、t2′，结论区间却写第一项x零点的t1,t2。该存在唯一性命题应在已选相邻导数零点之间讨论x的零点，两个端点补撇号绑定当前量词，属于源笔误。
+**理由：** [19.1：作业：Sturm-Louville理论的一个例子](./01-math-analysis-i/19-darboux-sums/19-02-p0204-0209.md)源图第二项两个相邻零点是x′的t1′、t2′，结论区间却写第一项x零点的t1,t2。该存在唯一性命题应在已选相邻导数零点之间讨论x的零点，两个端点补撇号绑定当前量词，属于源笔误。
 
 ### 20 Newton-Leibniz 公式与积分计算
 
@@ -3794,7 +3794,7 @@
 
 **问题：** 印刷原版中此处印有 `= \frac{1}{3} - \frac{1}{3} + \frac{1}{3} = 1.`。算术上 $\frac{1}{3} - \frac{1}{3} + \frac{1}{3} = \frac{1}{3}$，但考虑到例2中分段积分上下限与具体数值前文推导存在多处不一致，无法单凭局部算术推导唯一确定原作者意图，故保持 Markdown 原样并提出不确定性。
 
-[相关正文：20.1 作业:Dini定理,多项式逼近与Weierstrass-Stone定理](./01-math-analysis-i/20-fundamental-theorem/20-03-p0219-0223.md)
+[相关正文：20.1：作业：Dini定理，多项式逼近与Weierstrass-Stone定理](./01-math-analysis-i/20-fundamental-theorem/20-03-p0219-0223.md)
 
 #### 数学修正
 
@@ -3806,9 +3806,9 @@
 
 > 我们有 $f$ 在 $[a, c]$ 和 $[c, b]$ 上的限制都是 Riemann 可积函数，并且
 
-**理由：** [20.1 作业:Dini定理,多项式逼近与Weierstrass-Stone定理](./01-math-analysis-i/20-fundamental-theorem/20-03-p0219-0223.md)原图确误称任意Riemann可积f的两段限制是阶梯函数。反例f(x)=x在任意非退化段都非阶梯，但可积；局部积分可加性应声称两段仍Riemann可积，属于源笔误。
+**理由：** [20.1：作业：Dini定理，多项式逼近与Weierstrass-Stone定理](./01-math-analysis-i/20-fundamental-theorem/20-03-p0219-0223.md)原图确误称任意Riemann可积f的两段限制是阶梯函数。反例f(x)=x在任意非退化段都非阶梯，但可积；局部积分可加性应声称两段仍Riemann可积，属于源笔误。
 
-[相关正文：20.1 作业:Dini定理,多项式逼近与Weierstrass-Stone定理](./01-math-analysis-i/20-fundamental-theorem/20-03-p0219-0223.md)
+[相关正文：20.1：作业：Dini定理，多项式逼近与Weierstrass-Stone定理](./01-math-analysis-i/20-fundamental-theorem/20-03-p0219-0223.md)
 
 #### 数学修正
 
@@ -3820,9 +3820,9 @@
 
 > $\mu_x = \sum_{k=0}^{n} \binom{n}{k} x^k (1-x)^{n-k} \delta_{\frac{k}{n}}$
 
-**理由：** [20.1 作业:Dini定理,多项式逼近与Weierstrass-Stone定理](./01-math-analysis-i/20-fundamental-theorem/20-03-p0219-0223.md)源图Bernstein权重二项式下标确误印j，而求和及x幂和Dirac点均以k为指标。修成n choose k，权重由二项式定理总和1，并对应此前W4定义pn,k，属于源笔误。
+**理由：** [20.1：作业：Dini定理，多项式逼近与Weierstrass-Stone定理](./01-math-analysis-i/20-fundamental-theorem/20-03-p0219-0223.md)源图Bernstein权重二项式下标确误印j，而求和及x幂和Dirac点均以k为指标。修成n choose k，权重由二项式定理总和1，并对应此前W4定义pn,k，属于源笔误。
 
-[相关正文：20.1 作业:Dini定理,多项式逼近与Weierstrass-Stone定理](./01-math-analysis-i/20-fundamental-theorem/20-03-p0219-0223.md)
+[相关正文：20.1：作业：Dini定理，多项式逼近与Weierstrass-Stone定理](./01-math-analysis-i/20-fundamental-theorem/20-03-p0219-0223.md)
 
 #### 未决数学问题
 
@@ -3834,7 +3834,7 @@
 
 ### 21 振幅、零测集与 Lebesgue 定理
 
-[相关正文：振幅、零测集与 Lebesgue 定理](./01-math-analysis-i/21-lebesgue-criterion.md)
+[相关正文：21：振幅、零测集与 Lebesgue 定理](./01-math-analysis-i/21-lebesgue-criterion.md)
 
 #### 数学修正
 
@@ -3888,7 +3888,7 @@
 
 **理由：** [振幅、零测集与 Lebesgue 定理](./01-math-analysis-i/21-lebesgue-criterion.md)源图严格界错用于上确界：开球内任意两像点距离<2ε只能得直径≤2ε，可能上确界等于2ε（实数开球恒等映射）。弱不等式仍足以令ε任意推出振幅0。
 
-[相关正文：振幅、零测集与 Lebesgue 定理](./01-math-analysis-i/21-lebesgue-criterion.md)
+[相关正文：21：振幅、零测集与 Lebesgue 定理](./01-math-analysis-i/21-lebesgue-criterion.md)
 
 #### 数学修正
 
@@ -3902,7 +3902,7 @@
 
 **理由：** [振幅、零测集与 Lebesgue 定理](./01-math-analysis-i/21-lebesgue-criterion.md)原图末句确有overline Ik，前面已把开区间Ik构造为放大后的闭区间Kk，覆盖应使用开区间Ik。bar Ik为其闭包，与“开区间”冲突；删上划线属于源笔误。
 
-[相关正文：振幅、零测集与 Lebesgue 定理](./01-math-analysis-i/21-lebesgue-criterion.md)
+[相关正文：21：振幅、零测集与 Lebesgue 定理](./01-math-analysis-i/21-lebesgue-criterion.md)
 
 #### 未决数学问题
 
@@ -3912,7 +3912,7 @@
 
 **问题：** 引理 135 针对 $f \in \mathcal{R}([a,b])$ 讨论，定义集合应为 $\{ x \in [a,b] \mid \omega(f,x) \geqslant \varepsilon \}$（[振幅、零测集与 Lebesgue 定理](./01-math-analysis-i/21-lebesgue-criterion.md)即写作 $x \in [a,b]$）。源码图像中此处打印为 $x \in X$，Markdown 忠实保留了印刷文本，鉴于属于源码印错且无直接修改证据，保留为不确定项。
 
-[相关正文：振幅、零测集与 Lebesgue 定理](./01-math-analysis-i/21-lebesgue-criterion.md)
+[相关正文：21：振幅、零测集与 Lebesgue 定理](./01-math-analysis-i/21-lebesgue-criterion.md)
 
 #### 数学修正
 
@@ -3936,7 +3936,7 @@
 
 ### 22 反常积分、Euler 常数与 Stirling 公式
 
-[相关正文：反常积分、Euler 常数与 Stirling 公式](./01-math-analysis-i/22-improper-integrals.md)
+[相关正文：22：反常积分、Euler 常数与 Stirling 公式](./01-math-analysis-i/22-improper-integrals.md)
 
 #### 数学修正
 
@@ -3960,7 +3960,7 @@
 
 **理由：** [反常积分、Euler 常数与 Stirling 公式](./01-math-analysis-i/22-improper-integrals.md)原图括号确在正负无穷后，恢复整段a,b可为无穷的注解范围是提取纠错。
 
-[相关正文：反常积分、Euler 常数与 Stirling 公式](./01-math-analysis-i/22-improper-integrals.md)
+[相关正文：22：反常积分、Euler 常数与 Stirling 公式](./01-math-analysis-i/22-improper-integrals.md)
 
 #### 数学修正
 
@@ -4016,7 +4016,7 @@
 
 **问题：** [反常积分、Euler 常数与 Stirling 公式](./01-math-analysis-i/22-improper-integrals.md)例1、2源图与canonical被积函数1/x^α，而原函数、排除α=-1、判别α<-1/α>-1均属于x^α。若保留被积函数则应系统改原函数为1-α并改临界值1，若保留整个推导則把四处被积函数改x^α。两种数学正确意图都可，标uncertain不能随意选择。
 
-[相关正文：反常积分、Euler 常数与 Stirling 公式](./01-math-analysis-i/22-improper-integrals.md)
+[相关正文：22：反常积分、Euler 常数与 Stirling 公式](./01-math-analysis-i/22-improper-integrals.md)
 
 #### 数学修正
 
@@ -4038,7 +4038,7 @@
 
 **问题：** [反常积分、Euler 常数与 Stirling 公式](./01-math-analysis-i/22-improper-integrals.md)面积法的闭区间指示函数在整数内点重复相加，f≡1时underline f(k)=2>f，原点态下上夹逼错误。积分本身不受有限点影响。可改半开区间并定义端点值或将不等式限于非整数点，需统一两函数及后文pointwise声称，不能只盲改一个括号。
 
-[相关正文：反常积分、Euler 常数与 Stirling 公式](./01-math-analysis-i/22-improper-integrals.md)
+[相关正文：22：反常积分、Euler 常数与 Stirling 公式](./01-math-analysis-i/22-improper-integrals.md)
 
 #### 数学修正
 
@@ -4070,7 +4070,7 @@
 
 **问题：** [反常积分、Euler 常数与 Stirling 公式](./01-math-analysis-i/22-improper-integrals.md)所谓下界后的“这表明”仍写≤正差，不能由紧前正确的下界推出；缺少分母与负号也使意图不唯一。已修前式∑≥1+∫1N后可直接得差≥1完成下界，原此行应重建或删除，但不自动改写数学证明。
 
-[相关正文：反常积分、Euler 常数与 Stirling 公式](./01-math-analysis-i/22-improper-integrals.md)
+[相关正文：22：反常积分、Euler 常数与 Stirling 公式](./01-math-analysis-i/22-improper-integrals.md)
 
 #### 数学修正
 
@@ -4276,7 +4276,7 @@
 
 **问题：** [微积分历史与含参积分](./01-math-analysis-i/23-parameter-integrals/23-01-p0239-0245.md)将紧区间上的微分积分交换直接推广无穷区间，只以一致连续为理由，条件不足。对本例x^n exp(-tx)在t∈[1/2,3/2]可另用可积支配x^n exp(-x/2)严格证，但此为证明补充，先标结构疑点。Gauss F(t)在t=0亦不能用所述同一理由逐点微分，需端点限制t>0。
 
-[相关正文：23.1 作业：ζ(2) 的无理性](./01-math-analysis-i/23-parameter-integrals/23-03-p0246-0249.md)
+[相关正文：23.1：作业：ζ(2) 的无理性](./01-math-analysis-i/23-parameter-integrals/23-03-p0246-0249.md)
 
 #### 数学修正
 
@@ -4288,11 +4288,11 @@
 
 > **第一部分：数列 $\left\{\displaystyle\sum_{k=1}^n \dfrac{1}{k^p}\right\}_{n \geqslant 1}$**
 
-**理由：** [23.1 作业：ζ(2) 的无理性](./01-math-analysis-i/23-parameter-integrals/23-03-p0246-0249.md)原图下标确漏n，只写≥1，序列元素表达式使用上限n，需要n≥1量化序列指标。补入n为源笔误，不添加习题答案。
+**理由：** [23.1：作业：ζ(2) 的无理性](./01-math-analysis-i/23-parameter-integrals/23-03-p0246-0249.md)原图下标确漏n，只写≥1，序列元素表达式使用上限n，需要n≥1量化序列指标。补入n为源笔误，不添加习题答案。
 
 ### 24 常微分方程、Kepler 定律与变分法
 
-[相关正文：常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)
+[相关正文：24：常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)
 
 #### 未决数学问题
 
@@ -4302,7 +4302,7 @@
 
 **问题：** 影印页在此处打印为 $\leqslant C \sup_{x \in [t_0 - \delta, t_0 + \delta]} \int_{t_0}^{t} d\tau$，漏写了被积分/求上确界的项 $|x(\tau) - y(\tau)|$，且上确界下标变量写作 $x$（应为积分变量 $\tau$）。因纠正方式有多种表达（例如补全 $|x(\tau)-y(\tau)|$ 或直接简化为范数 $d_\infty(x, y)$），改动缺乏唯一确定性，故保持 Markdown 对印本的忠实记录。
 
-[相关正文：常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)
+[相关正文：24：常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)
 
 #### 数学修正
 
@@ -4326,7 +4326,7 @@
 
 **理由：** [常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)二阶改一阶仍写标量f(X,t)，原f输入(x′,x,t)，X′为二维向量。按X=(x,x′)逐坐标微分唯一得到F((u,v),t)=(v,f(v,u,t))，补必要向量场定义修复现有转换，不给练习解答。
 
-[相关正文：常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)
+[相关正文：24：常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)
 
 #### 数学修正
 
@@ -4350,7 +4350,7 @@
 
 **理由：** [常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)原句多的字，删除孤立字保持理想假设。
 
-[相关正文：常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)
+[相关正文：24：常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)
 
 #### 数学修正
 
@@ -4434,7 +4434,7 @@
 
 **理由：** [常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)二阶θ导数分母d²θ错误，应dθ²，两处统一，与下页dot表示θ导数一致。
 
-[相关正文：常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)
+[相关正文：24：常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)
 
 #### 数学修正
 
@@ -4458,7 +4458,7 @@
 
 **理由：** [常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)数学操作代入误写带入，校正术语。
 
-[相关正文：常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)
+[相关正文：24：常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)
 
 #### 数学修正
 
@@ -4482,7 +4482,7 @@
 
 **理由：** [常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)扫一圈面积πab、面积速度c/2，故T=2πab/c。利用b²=aℓ、c²=GMℓ得T²=4π²a³/(GM)，与页内第三定律一致；原T少2。
 
-[相关正文：常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)
+[相关正文：24：常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)
 
 #### 数学修正
 
@@ -4506,7 +4506,7 @@
 
 **理由：** [常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)源图小角公式少1/2；sin u~u取u=α/2，正确≈α/2，与同页最末重复关系一致。
 
-[相关正文：常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)
+[相关正文：24：常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)
 
 #### 数学修正
 
@@ -4550,7 +4550,7 @@
 
 **理由：** [常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)源句多和字，删除不改连续曲线说明。
 
-[相关正文：常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)
+[相关正文：24：常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)
 
 #### 数学修正
 
@@ -4584,7 +4584,7 @@
 
 **理由：** [常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)源圆半径任意R，两处周长结果遗漏R，应四倍πR/2=2πR，与前一弧长一致。
 
-[相关正文：常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)
+[相关正文：24：常微分方程、Kepler 定律与变分法](./01-math-analysis-i/24-ode-variation.md)
 
 #### 数学修正
 
@@ -4840,7 +4840,7 @@
 
 **理由：** [最速降线与积分第一中值定理](./01-math-analysis-i/25-brachistochrone/25-01-p0262-0266.md)定理只给区间[a,b]，这里I未绑定，需在同一区间取函数上下界，积分夹逼才适用。
 
-[相关正文：25.1 作业:可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)
+[相关正文：25.1：作业：可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)
 
 #### 数学修正
 
@@ -4852,9 +4852,9 @@
 
 > Darboux 上下和
 
-**理由：** [25.1 作业:可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)提示源图上下颌为同音错字，所用概念Darboux上下和，修正不增习题解答。
+**理由：** [25.1：作业：可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)提示源图上下颌为同音错字，所用概念Darboux上下和，修正不增习题解答。
 
-[相关正文：25.1 作业:可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)
+[相关正文：25.1：作业：可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)
 
 #### 数学修正
 
@@ -4866,7 +4866,7 @@
 
 > $\int_1^\infty f'(x)$
 
-**理由：** [25.1 作业:可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)f仅定义在[1,∞)，下限0的f′反常积分没有定义；同命题f积分下限1且原函数极限从1起算，恢复1。
+**理由：** [25.1：作业：可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)f仅定义在[1,∞)，下限0的f′反常积分没有定义；同命题f积分下限1且原函数极限从1起算，恢复1。
 
 **原文：**
 
@@ -4906,7 +4906,7 @@
 > &(27)\; \int_0^{+\infty} e^{-x^2}\, dx
 > \end{aligned}$$
 
-**理由：** [25.1 作业:可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)实分析练习在π至2π上sin x<0，实log未定义。以|sin x|为正输入只留有限零点的可积对数奇点，恢复全周期反常积分实定义，不提供求值答案。
+**理由：** [25.1：作业：可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)实分析练习在π至2π上sin x<0，实log未定义。以|sin x|为正输入只留有限零点的可积对数奇点，恢复全周期反常积分实定义，不提供求值答案。
 
 #### 未决数学问题
 
@@ -4929,9 +4929,9 @@
 > &(27)\; \int_0^{+\infty} e^{-x^2}\, dx
 > \end{aligned}$$
 
-**问题：** [25.1 作业:可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)习题D7,D18未给a非零；a=0导致D7发散、D18在0附近发散，可能题目意图包含判敛，无法假定a>0。D20未给n整数/正数，ac-b²>0允许a,c<0，非整数n时负底幂不实。保留条件疑点，不额外替用户作练习答案。
+**问题：** [25.1：作业：可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)习题D7,D18未给a非零；a=0导致D7发散、D18在0附近发散，可能题目意图包含判敛，无法假定a>0。D20未给n整数/正数，ac-b²>0允许a,c<0，非整数n时负底幂不实。保留条件疑点，不额外替用户作练习答案。
 
-[相关正文：25.1 作业:可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)
+[相关正文：25.1：作业：可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)
 
 #### 数学修正
 
@@ -4943,9 +4943,9 @@
 
 > $$f_A(x) = \sum_{n\geqslant 0} a_n e^{-nx}.$$
 
-**理由：** [25.1 作业:可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)源图离散指标n≥0后误带极限用的+，应包括n=0，与同页IA、指示序列及下一页E15恒等式一致。a0若为1则漏首项会令恒等式错误。
+**理由：** [25.1：作业：可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)源图离散指标n≥0后误带极限用的+，应包括n=0，与同页IA、指示序列及下一页E15恒等式一致。a0若为1则漏首项会令恒等式错误。
 
-[相关正文：25.1 作业:可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)
+[相关正文：25.1：作业：可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)
 
 #### 数学修正
 
@@ -4957,9 +4957,9 @@
 
 > 令 $F$ 为 $(0,+\infty)$ 上的全体实值函数的所构成的线性空间
 
-**理由：** [25.1 作业:可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)源图目标F域写[0,1]，下一页Lψ的变量为x>0且在0可能发散，譬如an=1、ψ=1。必须将目标函数域设正半轴，ψ本身的E仍是[0,1]上的函数，区分输入函数与输出函数域。
+**理由：** [25.1：作业：可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)源图目标F域写[0,1]，下一页Lψ的变量为x>0且在0可能发散，譬如an=1、ψ=1。必须将目标函数域设正半轴，ψ本身的E仍是[0,1]上的函数，区分输入函数与输出函数域。
 
-[相关正文：25.1 作业:可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)
+[相关正文：25.1：作业：可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)
 
 #### 数学修正
 
@@ -4971,11 +4971,11 @@
 
 > 那么对任意的 $x>0$，证明
 
-**理由：** [25.1 作业:可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)Lψ只定义于正半轴，原序比较的输出变量包含0（可能发散）；输入ψ1≤ψ2仍在[0,1]，输出比较应x>0，因各权重非负。
+**理由：** [25.1：作业：可写成两个完全平方数的和的整数的密度](./01-math-analysis-i/25-brachistochrone/25-02-p0267-0274.md)Lψ只定义于正半轴，原序比较的输出变量包含0（可能发散）；输入ψ1≤ψ2仍在[0,1]，输出比较应x>0，因各权重非负。
 
 ### 26 第二积分中值定理与 Stieltjes 积分
 
-[相关正文：第二积分中值定理与 Stieltjes 积分](./01-math-analysis-i/26-stieltjes-integral.md)
+[相关正文：26：第二积分中值定理与 Stieltjes 积分](./01-math-analysis-i/26-stieltjes-integral.md)
 
 #### 数学修正
 
@@ -4999,7 +4999,7 @@
 
 **理由：** [第二积分中值定理与 Stieltjes 积分](./01-math-analysis-i/26-stieltjes-integral.md)连续函数G在ξ和b之间取前式凸组合值，不能保证a至ξ。原区间与前面的两个取值不符，修成ξ至b，仍包含于定理[a,b]。
 
-[相关正文：第二积分中值定理与 Stieltjes 积分](./01-math-analysis-i/26-stieltjes-integral.md)
+[相关正文：26：第二积分中值定理与 Stieltjes 积分](./01-math-analysis-i/26-stieltjes-integral.md)
 
 #### 数学修正
 
@@ -5013,7 +5013,7 @@
 
 **理由：** [第二积分中值定理与 Stieltjes 积分](./01-math-analysis-i/26-stieltjes-integral.md)源图否则说明有左括号缺右括号，恢复条件分支解释范围，不改f(a)=0蕴含f≡0（非负递减）。
 
-[相关正文：第二积分中值定理与 Stieltjes 积分](./01-math-analysis-i/26-stieltjes-integral.md)
+[相关正文：26：第二积分中值定理与 Stieltjes 积分](./01-math-analysis-i/26-stieltjes-integral.md)
 
 #### 数学修正
 
@@ -5057,7 +5057,7 @@
 
 **理由：** [第二积分中值定理与 Stieltjes 积分](./01-math-analysis-i/26-stieltjes-integral.md)原图“我们j记”误入孤立拉丁字j，j在此不充当数学变量，删除。
 
-[相关正文：第二积分中值定理与 Stieltjes 积分](./01-math-analysis-i/26-stieltjes-integral.md)
+[相关正文：26：第二积分中值定理与 Stieltjes 积分](./01-math-analysis-i/26-stieltjes-integral.md)
 
 #### 数学修正
 
@@ -5081,7 +5081,7 @@
 
 **理由：** [第二积分中值定理与 Stieltjes 积分](./01-math-analysis-i/26-stieltjes-integral.md)源式区间端点下标误i1，且权重必须是重新定义的长度ell_mu=μ(ai)-μ(ai-1)，不能用普通长度。该式近似Stieltjes积分，从Darboux权重唯一确定。
 
-[相关正文：第二积分中值定理与 Stieltjes 积分](./01-math-analysis-i/26-stieltjes-integral.md)
+[相关正文：26：第二积分中值定理与 Stieltjes 积分](./01-math-analysis-i/26-stieltjes-integral.md)
 
 #### 数学修正
 
@@ -5115,7 +5115,7 @@
 
 **理由：** [第二积分中值定理与 Stieltjes 积分](./01-math-analysis-i/26-stieltjes-integral.md)已选择μ(ai)-μ(ai-1)恰等于(μb-μa)/n，替换得到等号，源严格小于错误（f或μ常函数时0<0）。
 
-[相关正文：第二积分中值定理与 Stieltjes 积分](./01-math-analysis-i/26-stieltjes-integral.md)
+[相关正文：26：第二积分中值定理与 Stieltjes 积分](./01-math-analysis-i/26-stieltjes-integral.md)
 
 #### 数学修正
 
@@ -5129,7 +5129,7 @@
 
 **理由：** [第二积分中值定理与 Stieltjes 积分](./01-math-analysis-i/26-stieltjes-integral.md)源句多对于导致命题谓语不通，保持绝对值可积结论。
 
-[相关正文：第二积分中值定理与 Stieltjes 积分](./01-math-analysis-i/26-stieltjes-integral.md)
+[相关正文：26：第二积分中值定理与 Stieltjes 积分](./01-math-analysis-i/26-stieltjes-integral.md)
 
 #### 数学修正
 
@@ -5383,7 +5383,7 @@
 
 **理由：** [Stieltjes 积分的中值定理](./01-math-analysis-i/27-stieltjes-mean-value/27-01-p0283-0289.md)既代就错字，恢复解释连接词。
 
-[相关正文：27.1 作业:振荡积分](./01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295.md)
+[相关正文：27.1：作业：振荡积分](./01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295.md)
 
 #### 数学修正
 
@@ -5395,7 +5395,7 @@
 
 > $$\int_0^\infty f d\mu = \sum_{n=1}^\infty \alpha_n f(n).$$
 
-**理由：** [27.1 作业:振荡积分](./01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295.md)A7重复[Stieltjes 积分的中值定理](./01-math-analysis-i/27-stieltjes-mean-value/27-01-p0283-0289.md)原子首项错误，Stieltjes下限1排除α1原子，题目明在[0,∞)定义，应0至∞才包括所有n≥1。
+**理由：** [27.1：作业：振荡积分](./01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295.md)A7重复[Stieltjes 积分的中值定理](./01-math-analysis-i/27-stieltjes-mean-value/27-01-p0283-0289.md)原子首项错误，Stieltjes下限1排除α1原子，题目明在[0,∞)定义，应0至∞才包括所有n≥1。
 
 **原文：**
 
@@ -5405,7 +5405,7 @@
 
 > 使得对任意 $b(\varepsilon)<b', b''<b$
 
-**理由：** [27.1 作业:振荡积分](./01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295.md)Cauchy准则必须b′、b″属于f域[a,b)，当b有限原条件只下界允许越出定义域，补上b使尾积分定义完整。
+**理由：** [27.1：作业：振荡积分](./01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295.md)Cauchy准则必须b′、b″属于f域[a,b)，当b有限原条件只下界允许越出定义域，补上b使尾积分定义完整。
 
 #### 未决数学问题
 
@@ -5413,9 +5413,9 @@
 
 > 证明，如果 $|f(x)| \leqslant F(x)$
 
-**问题：** [27.1 作业:振荡积分](./01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295.md)比较准则未明写f在每个截断闭区间Riemann可积，仅|f|≤可积F不蕴含局部可积（可取Dirichlet函数乘正可积包络）。可能沿用B1默认条件，但原文字未明确；需补局部可积前提方能直接断言反常积分存在，保留条件疑点。
+**问题：** [27.1：作业：振荡积分](./01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295.md)比较准则未明写f在每个截断闭区间Riemann可积，仅|f|≤可积F不蕴含局部可积（可取Dirichlet函数乘正可积包络）。可能沿用B1默认条件，但原文字未明确；需补局部可积前提方能直接断言反常积分存在，保留条件疑点。
 
-[相关正文：27.1 作业:振荡积分](./01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295.md)
+[相关正文：27.1：作业：振荡积分](./01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295.md)
 
 #### 未决数学问题
 
@@ -5425,9 +5425,9 @@
 > (4)\int_0^{+\infty}\frac{\sin^2 x}{x}dx \qquad (5)\int_0^{2\pi}\frac{dx}{\cos^p x\cos^q x},\ p,q>0 \qquad (6)\int_0^{+\infty}x^p\sin(x^q)dx
 > $$
 
-**问题：** [27.1 作业:振荡积分](./01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295.md)例(5)两因子同为cos且p,q任意正实数，半周负cos的非整数幂不实。可能想写sin/cos并限制第一象限，或保留全周期加绝对值；源图就是cos cos，不能唯一替换，保留uncertain。本章均阶定义另仅允许趋0，但[27.1 作业:振荡积分](./01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295.md)相位φ(a)可负使比较函数指数增长，与后面~记号用途冲突，需扩展均阶定义或补相位条件。
+**问题：** [27.1：作业：振荡积分](./01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295.md)例(5)两因子同为cos且p,q任意正实数，半周负cos的非整数幂不实。可能想写sin/cos并限制第一象限，或保留全周期加绝对值；源图就是cos cos，不能唯一替换，保留uncertain。本章均阶定义另仅允许趋0，但[27.1：作业：振荡积分](./01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295.md)相位φ(a)可负使比较函数指数增长，与后面~记号用途冲突，需扩展均阶定义或补相位条件。
 
-[相关正文：27.1 作业:振荡积分](./01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295.md)
+[相关正文：27.1：作业：振荡积分](./01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295.md)
 
 #### 数学修正
 
@@ -5439,9 +5439,9 @@
 
 > C5) 假设 $\varphi \in C^1([a, b])$，并且对任意 $x \in [a, b]$，$\varphi'(x) > 0$。
 
-**理由：** [27.1 作业:振荡积分](./01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295.md)C5沿用C4左端Laplace渐近式必须φ递增；仅φ′非零也允许递减，f≡1、φ=-x时主贡献在b而原式在a。补φ′>0与C4换元提示一致，保持题目，不提供答案。
+**理由：** [27.1：作业：振荡积分](./01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295.md)C5沿用C4左端Laplace渐近式必须φ递增；仅φ′非零也允许递减，f≡1、φ=-x时主贡献在b而原式在a。补φ′>0与C4换元提示一致，保持题目，不提供答案。
 
-[相关正文：27.1 作业:振荡积分](./01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295.md)
+[相关正文：27.1：作业：振荡积分](./01-math-analysis-i/27-stieltjes-mean-value/27-03-p0290-0295.md)
 
 #### 数学修正
 
@@ -5457,7 +5457,7 @@
 
 ### 28 Baire 纲定理与 Liouville 定理
 
-[相关正文：Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)
+[相关正文：28：Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)
 
 #### 数学修正
 
@@ -5539,7 +5539,7 @@
 
 **理由：** 实际每步距离受εn+k控制，且εn+k≤2^-(n+k)ε0。有限几何和小于2^(1−n)ε0；源图正负幂与等号均错误。
 
-[相关正文：Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)
+[相关正文：28：Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)
 
 #### 数学修正
 
@@ -5571,7 +5571,7 @@
 
 **理由：** 源图右端点截断差商fn(b)恒为0，通常不等于f′(b)，例如f(x)=x；内点逐点收敛正确，b处仍然有界且不影响Baire证明。
 
-[相关正文：Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)
+[相关正文：28：Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)
 
 #### 数学修正
 
@@ -5605,7 +5605,7 @@
 
 **理由：** 源图把函数序列整体写为单个函数空间的元素；这里每个fn属于C([0,1])，故用子集符号。
 
-[相关正文：Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)
+[相关正文：28：Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)
 
 #### 数学修正
 
@@ -5629,7 +5629,7 @@
 
 **理由：** 至少一点可微的连续函数集合不对加法封闭；可将一个处处不可微函数用互补光滑截断分成两个在不同开区间恒零的函数，二者各属于D但和不属于D。源图“子空间”错误。
 
-[相关正文：Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)
+[相关正文：28：Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)
 
 #### 数学修正
 
@@ -5673,7 +5673,7 @@
 
 **理由：** 归纳步应证明导数属于新扩张域；指数例f1=ex导数ex不属于C(x)，源图K漏掉新元素fn+1。
 
-[相关正文：Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)
+[相关正文：28：Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)
 
 #### 数学修正
 
@@ -5787,7 +5787,7 @@
 
 **理由：** 源图推论漏了g非常数条件，而[Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)证明明确用到它。若g=0、f=1/x，则原函数log x初等但有理R的导数不可能有简单极点，因此原推论不成立。
 
-[相关正文：Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)
+[相关正文：28：Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)
 
 #### 数学修正
 
@@ -5869,7 +5869,7 @@
 
 **问题：** 一般互素分子分母可以可约，乘系数不能使其不可约。完整证明还需处理Rk=Y的可约对数导数和吸收系数导数项；这些步骤互相依赖，需重整302–304证明，不宜局部强改。
 
-[相关正文：Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)
+[相关正文：28：Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)
 
 #### 数学修正
 
@@ -5961,7 +5961,7 @@
 
 **问题：** 源图漏例外Rk=Y：D(Y)=g′Y可约为g′，不贡献Y极点。相同因子的对数导数也可先合并抵消。须重整302–304论证，才能安全处理所有对数导数项。
 
-[相关正文：Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)
+[相关正文：28：Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)
 
 #### 数学修正
 
@@ -5993,7 +5993,7 @@
 
 **问题：** 303不可约分断言存在Y例外；例如R0=1/Y时D(R0)=−g′/Y，需另析Laurent负幂排除Y，当前“同理”不能直接推出。
 
-[相关正文：Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)
+[相关正文：28：Baire 纲定理与 Liouville 定理](./01-math-analysis-i/28-baire-liouville.md)
 
 #### 数学修正
 
@@ -6325,7 +6325,7 @@
 
 **问题：** 常数沿用172的2√3，但310–311给出的证明只达4√3。振幅估计结构正确，具体常数需跟随172单独核验，当前不确定。
 
-[相关正文：29.1–29.2 建议阅读与数学分析一期末考试](./01-math-analysis-i/29-oscillation-decay/29-03-p0313-0319.md)
+[相关正文：29.1–29.2：建议阅读与数学分析一期末考试](./01-math-analysis-i/29-oscillation-decay/29-03-p0313-0319.md)
 
 #### 数学修正
 
@@ -6339,7 +6339,7 @@
 
 **理由：** 源图余弦和恒等式在0处右侧为0/0，需限制x不为0；此题后续积分可在端点按连续延拓理解。
 
-[相关正文：29.3 寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
+[相关正文：29.3：寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
 
 #### 数学修正
 
@@ -6353,7 +6353,7 @@
 
 **理由：** 该显示式ab≤a^p/p+b^q/q是题目A本身的Young不等式，Hölder是范数/积分乘积估计；源图误称Hölder。
 
-[相关正文：29.3 寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
+[相关正文：29.3：寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
 
 #### 数学修正
 
@@ -6407,7 +6407,7 @@
 
 **理由：** 源图从1求和缺P0=1，所有n≥1的Legendre多项式积分为0，故不可能一致逼近非零常数；下限应0。
 
-[相关正文：29.3 寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
+[相关正文：29.3：寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
 
 #### 数学修正
 
@@ -6425,7 +6425,7 @@
 
 **理由：** 统计前n个数的命中次数必须计指标，源图值集合会将重复项去重，例如xk恒为1/2则原集合基数始终1而非n。
 
-[相关正文：29.3 寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
+[相关正文：29.3：寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
 
 #### 数学修正
 
@@ -6443,7 +6443,7 @@
 
 **理由：** Weyl判据为振荡的复指数，源图漏虚数i；原实指数对xk∈[0,1]恒≥1，平均不可能趋0。
 
-[相关正文：29.3 寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
+[相关正文：29.3：寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
 
 #### 数学修正
 
@@ -6497,7 +6497,7 @@
 
 **理由：** 限制k<3^n以修正越界后，需单独保持右端点值，此为源图第一条原本合法的k=3^n情形，保留原构造。
 
-[相关正文：29.3 寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
+[相关正文：29.3：寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
 
 #### 数学修正
 
@@ -6511,7 +6511,7 @@
 
 **理由：** 该定义用实对数log x，负实数及0无定义；源图误写所有实数，后续Euler求和实际仅在正半轴。
 
-[相关正文：29.3 寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
+[相关正文：29.3：寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
 
 #### 数学修正
 
@@ -6555,7 +6555,7 @@
 
 **理由：** 这组题属于题目I第二部分，源图漏写字母I为数字1；统一到前文I-2-1、I-2-2的编号。
 
-[相关正文：29.3 寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
+[相关正文：29.3：寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
 
 #### 数学修正
 
@@ -6589,7 +6589,7 @@
 
 **理由：** 源图“维”应“为”，且C(R)包含x等无穷sup范数函数，不能配成该赋范空间；三角多项式及其一致极限均有界，实际闭包在Cb(R)中。
 
-[相关正文：29.3 寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
+[相关正文：29.3：寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
 
 #### 数学修正
 
@@ -6633,7 +6633,7 @@
 
 **理由：** f仅定义在[0,1]，水平弦两端都须在定义域；源图x∈[0,1]允许x+σ越界，应限制x≤1−σ。
 
-[相关正文：29.3 寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
+[相关正文：29.3：寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
 
 #### 数学修正
 
@@ -6647,7 +6647,7 @@
 
 **理由：** 源图N2量词为每个固定f存在ε，却将结论写全体f的交；这与N3所求离散集合直接矛盾。正确应属于该固定函数Λ(f)。
 
-[相关正文：29.3 寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
+[相关正文：29.3：寒假作业](./01-math-analysis-i/29-oscillation-decay/29-05-p0320-0333.md)
 
 #### 数学修正
 
@@ -6695,7 +6695,7 @@
 
 ### 30 方向导数、偏导数与微分
 
-[相关正文：方向导数、偏导数与微分](./02-math-analysis-ii/30-multivariable-derivatives.md)
+[相关正文：30：方向导数、偏导数与微分](./02-math-analysis-ii/30-multivariable-derivatives.md)
 
 #### 数学修正
 
@@ -6723,7 +6723,7 @@
 
 **理由：** 仅所有方向导数存在可得齐次性，[方向导数、偏导数与微分](./02-math-analysis-ii/30-multivariable-derivatives.md)明确加法性还需要额外条件，[方向导数、偏导数与微分](./02-math-analysis-ii/30-multivariable-derivatives.md)给出方向导数v2²/v1的非线性反例。将提前断言改成这里正在探讨的希望，与后页实际结论一致。
 
-[相关正文：方向导数、偏导数与微分](./02-math-analysis-ii/30-multivariable-derivatives.md)
+[相关正文：30：方向导数、偏导数与微分](./02-math-analysis-ii/30-multivariable-derivatives.md)
 
 #### 数学修正
 
@@ -6747,7 +6747,7 @@
 
 **理由：** 该段及上一行直线映射定义域为(-a,a)，下一页限制f到L再与同一映射复合；未定义的ε将使L和该映射的像不一定一致。统一为已经给定的整个参数域。
 
-[相关正文：方向导数、偏导数与微分](./02-math-analysis-ii/30-multivariable-derivatives.md)
+[相关正文：30：方向导数、偏导数与微分](./02-math-analysis-ii/30-multivariable-derivatives.md)
 
 #### 数学修正
 
@@ -6785,7 +6785,7 @@
 
 **理由：** 下一段称函数图像为超曲面、[方向导数、偏导数与微分](./02-math-analysis-ii/30-multivariable-derivatives.md)赋予由坐标曲线张成的切空间，需要C1正则性。仅偏导存在允许[方向导数、偏导数与微分](./02-math-analysis-ii/30-multivariable-derivatives.md)y²/x一类不连续函数，图像未必是该光滑几何对象。连续偏导保证C1，且不添加图像以外的结论。
 
-[相关正文：方向导数、偏导数与微分](./02-math-analysis-ii/30-multivariable-derivatives.md)
+[相关正文：30：方向导数、偏导数与微分](./02-math-analysis-ii/30-multivariable-derivatives.md)
 
 #### 数学修正
 
@@ -6813,7 +6813,7 @@
 
 **理由：** 本段函数和值域始终是R，R没有与实标量相容的复向量空间结构，不能称到R的映射为复线性微分。以复空间的实化定义实值函数微分，保持原函数和值域不变；一般赋范空间还需连续线性条件，[映射的微分与 Jacobi 矩阵](./02-math-analysis-ii/31-differential-maps/31-01-p0344-0351.md)已明确补充该要求。
 
-[相关正文：方向导数、偏导数与微分](./02-math-analysis-ii/30-multivariable-derivatives.md)
+[相关正文：30：方向导数、偏导数与微分](./02-math-analysis-ii/30-multivariable-derivatives.md)
 
 #### 数学修正
 
@@ -6837,7 +6837,7 @@
 
 **理由：** 原图把坐标投影的微分取值写成向量；A:R^n→R的值必须是标量，紧随的Kronecker公式明确dπ_i(e_j)=δ_j^i，i=j时唯一为1。
 
-[相关正文：方向导数、偏导数与微分](./02-math-analysis-ii/30-multivariable-derivatives.md)
+[相关正文：30：方向导数、偏导数与微分](./02-math-analysis-ii/30-multivariable-derivatives.md)
 
 #### 数学修正
 
@@ -6901,7 +6901,7 @@
 
 **理由：** 命题178基点为x0，本页全部公式也使用x0；p在本证明中没有定义，开头回顾假设微分存在时的形式应采用同一x0。
 
-[相关正文：方向导数、偏导数与微分](./02-math-analysis-ii/30-multivariable-derivatives.md)
+[相关正文：30：方向导数、偏导数与微分](./02-math-analysis-ii/30-multivariable-derivatives.md)
 
 #### 数学修正
 
@@ -7259,7 +7259,7 @@
 
 **理由：** [映射的微分与 Jacobi 矩阵](./02-math-analysis-ii/31-differential-maps/31-01-p0344-0351.md)Ω2是极坐标(r,θ)域，Ω1是去正轴的平面点域；值(r cosθ,r sinθ)落在Ω1，原图误写Ω2，比如r=1、θ=π时输出(-1,0)不在Ω2。
 
-[相关正文：31.1 作业:齐次函数与Euler公式](./02-math-analysis-ii/31-differential-maps/31-03-p0352-0356.md)
+[相关正文：31.1：作业：齐次函数与Euler公式](./02-math-analysis-ii/31-differential-maps/31-03-p0352-0356.md)
 
 #### 数学修正
 
@@ -7317,7 +7317,7 @@
 
 **理由：** 同段齐次函数定义域明确是Rn去原点，D1第四题商函数只假设h(x)在x非0时非零，原点可能为0/0。统一题目列表到已有的非零定义域，不改变四个题目的齐次断言。
 
-[相关正文：31.1 作业:齐次函数与Euler公式](./02-math-analysis-ii/31-differential-maps/31-03-p0352-0356.md)
+[相关正文：31.1：作业：齐次函数与Euler公式](./02-math-analysis-ii/31-differential-maps/31-03-p0352-0356.md)
 
 #### 数学修正
 
@@ -7341,7 +7341,7 @@
 
 **理由：** 习题T定义的开集只有Ω，曲线类C(p)就在Ω中，Ω1未在该题定义；T4及后续也均用TpΩ，故删误加的下标1。
 
-[相关正文：31.1 作业:齐次函数与Euler公式](./02-math-analysis-ii/31-differential-maps/31-03-p0352-0356.md)
+[相关正文：31.1：作业：齐次函数与Euler公式](./02-math-analysis-ii/31-differential-maps/31-03-p0352-0356.md)
 
 #### 数学修正
 
@@ -7425,7 +7425,7 @@
 
 ### 32 坐标变换、多元 Taylor 展开与子流形
 
-[相关正文：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
+[相关正文：32：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
 
 #### 数学修正
 
@@ -7439,7 +7439,7 @@
 
 **理由：** 本组三条性质的函数域均为Ω1，f∈C∞(Ω1)，原图条件误用未在该段指定的Ω；非零量词必须遍历f的同一域。
 
-[相关正文：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
+[相关正文：32：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
 
 #### 数学修正
 
@@ -7477,7 +7477,7 @@
 
 **理由：** 原图给n维参数坐标后写Phi的最后变量x2，紧随同页第二次用xn且地图定义为n维。canonical已有xn，保留正确输入数。
 
-[相关正文：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
+[相关正文：32：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
 
 #### 数学修正
 
@@ -7491,7 +7491,7 @@
 
 **理由：** 该句用的是f与Φ的复合函数连续性，原图数学操作名称误写符合，统一为前后一直使用的复合。
 
-[相关正文：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
+[相关正文：32：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
 
 #### 未决数学问题
 
@@ -7501,7 +7501,7 @@
 
 **问题：** 二阶微分对称通常称Hesse/Hessian，原图用Hasse；仅专名拼写差异暂不强改数学正文。
 
-[相关正文：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
+[相关正文：32：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
 
 #### 数学修正
 
@@ -7581,7 +7581,7 @@
 
 **理由：** 定理假设没有提前给出反向混合偏导，固定ℓ后的h极限来自fx存在，外层极限则由已证联合差商极限及引理保证。显式写存在性来源，避免在证明中提前假设待证偏导存在。
 
-[相关正文：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
+[相关正文：32：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
 
 #### 数学修正
 
@@ -7599,7 +7599,7 @@
 
 **理由：** 此处定义任意非负多重指标的总阶数，k没有在本段定义；其阶数不应受未指定的上界约束，阶数上界在下一页Taylor求和中才给出。
 
-[相关正文：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
+[相关正文：32：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
 
 #### 数学修正
 
@@ -7665,7 +7665,7 @@
 
 **理由：** 与前一句非负多重指标修复联动，系数等式只对βm>0求和；每项等于(k−1)!βm/β!，和为k!/β!，零βm不贡献且不定义负阶乘。
 
-[相关正文：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
+[相关正文：32：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
 
 #### 数学修正
 
@@ -7727,7 +7727,7 @@
 
 **理由：** 本页允许C1曲线，而[坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)光滑微分同胚定义为双向C∞；C1输入只保证构造双向C1。明确类别可保留原C1条件和局部拉直结论，避免无根据提升正则性。
 
-[相关正文：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
+[相关正文：32：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
 
 #### 数学修正
 
@@ -7809,7 +7809,7 @@
 
 **理由：** 原图逆映射使用未在本例定义的维数m，Φ的环境和最后坐标都是n。canonical已经正确录为yn及yn−1，保留同一全局图像逆公式。
 
-[相关正文：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
+[相关正文：32：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
 
 #### 数学修正
 
@@ -7871,7 +7871,7 @@
 
 **理由：** Phi及拉回坐标函数仅在U定义，所刻画零点集为M∩U。不能一般宣称整个M是全局连续函数零点集，例如Rn中非闭的开线段子流形就无法作为全空间连续函数零点集。
 
-[相关正文：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
+[相关正文：32：坐标变换、多元 Taylor 展开与子流形](./02-math-analysis-ii/32-coordinate-changes.md)
 
 #### 数学修正
 
@@ -8229,7 +8229,7 @@
 
 **理由：** 前页及图中的U坐标为(x1,…,xn)，原图本页漏首个下标1；x若指整向量不能与x2,…,xn组成坐标系。
 
-[相关正文：33.1 习题课:拓扑空间](./02-math-analysis-ii/33-inverse-function/33-03-p0375-0377.md)
+[相关正文：33.1：习题课：拓扑空间](./02-math-analysis-ii/33-inverse-function/33-03-p0375-0377.md)
 
 #### 数学修正
 
@@ -8243,7 +8243,7 @@
 
 **理由：** 原图等号把T固定为全部子集即离散拓扑，却说是某些子集并随后讨论一般拓扑；初始条件应T是幂集的子集，公理再决定哪些子集为开集。
 
-[相关正文：33.1 习题课:拓扑空间](./02-math-analysis-ii/33-inverse-function/33-03-p0375-0377.md)
+[相关正文：33.1：习题课：拓扑空间](./02-math-analysis-ii/33-inverse-function/33-03-p0375-0377.md)
 
 #### 数学修正
 
@@ -8261,7 +8261,7 @@
 
 **理由：** 等距同构定义取定的双射为f，iota是前页子集包含映射且这里没有到目标空间的iota；距离保持条件应作用于同一双射f。
 
-[相关正文：33.2 作业:反函数和隐函数定理](./02-math-analysis-ii/33-inverse-function/33-04-p0378-0383.md)
+[相关正文：33.2：作业：反函数和隐函数定理](./02-math-analysis-ii/33-inverse-function/33-04-p0378-0383.md)
 
 #### 数学修正
 
@@ -8305,7 +8305,7 @@
 
 **理由：** 该题唯一给定的映射是varphi，前两问均检验它的Jacobi矩阵。原图本条复制反函数定理时误用f，改回varphi并保留同一局部结论。
 
-[相关正文：33.2 作业:反函数和隐函数定理](./02-math-analysis-ii/33-inverse-function/33-04-p0378-0383.md)
+[相关正文：33.2：作业：反函数和隐函数定理](./02-math-analysis-ii/33-inverse-function/33-04-p0378-0383.md)
 
 #### 数学修正
 
@@ -8343,7 +8343,7 @@
 
 **理由：** C(A)=A³的微分是X↦A²X+AXA+XA²，在A=I时为3X。原图用Id作差，在A=I使左边2、右边0，直接矛盾；将基准改为3Id后，令E=A−I，差算子为3EX+3XE+E²X+EXE+XE²，恰给出题中的6||E||+3||E||²。只修题中公式，不添加公开解答。
 
-[相关正文：33.2 作业:反函数和隐函数定理](./02-math-analysis-ii/33-inverse-function/33-04-p0378-0383.md)
+[相关正文：33.2：作业：反函数和隐函数定理](./02-math-analysis-ii/33-inverse-function/33-04-p0378-0383.md)
 
 #### 数学修正
 
@@ -8367,7 +8367,7 @@
 
 ### 34 隐函数定理与子流形参数化
 
-[相关正文：隐函数定理与子流形参数化](./02-math-analysis-ii/34-implicit-function.md)
+[相关正文：34：隐函数定理与子流形参数化](./02-math-analysis-ii/34-implicit-function.md)
 
 #### 数学修正
 
@@ -8401,7 +8401,7 @@
 
 **理由：** 由f(x,phi(x))=0求微分，dy和dx须在图像点(x,phi(x))求值。原图自由y没有绑定，也不保证dy在图像外可逆，需明确同一求值点。
 
-[相关正文：隐函数定理与子流形参数化](./02-math-analysis-ii/34-implicit-function.md)
+[相关正文：34：隐函数定理与子流形参数化](./02-math-analysis-ii/34-implicit-function.md)
 
 #### 数学修正
 
@@ -8455,7 +8455,7 @@
 
 **理由：** 前述f只定义在Ω，零点集只能从Ω取点，原图写全部乘积可能包含f没有定义的点。
 
-[相关正文：隐函数定理与子流形参数化](./02-math-analysis-ii/34-implicit-function.md)
+[相关正文：34：隐函数定理与子流形参数化](./02-math-analysis-ii/34-implicit-function.md)
 
 #### 数学修正
 
@@ -8549,7 +8549,7 @@
 
 **理由：** p个独立方程在n维空间的零集维数为n减p，定理199自由坐标维数及本页最后线性代数类比均确认这一结果。
 
-[相关正文：隐函数定理与子流形参数化](./02-math-analysis-ii/34-implicit-function.md)
+[相关正文：34：隐函数定理与子流形参数化](./02-math-analysis-ii/34-implicit-function.md)
 
 #### 数学修正
 
@@ -8603,7 +8603,7 @@
 
 **问题：** 紧的正则纤维只使其附近有统一满秩邻域，不能排除远处临界点逃向无穷而临界值趋近c。原书没有proper或对附近纤维局部限制的确切条件，需作者意图裁定，保留疑点。
 
-[相关正文：隐函数定理与子流形参数化](./02-math-analysis-ii/34-implicit-function.md)
+[相关正文：34：隐函数定理与子流形参数化](./02-math-analysis-ii/34-implicit-function.md)
 
 #### 数学修正
 
@@ -8641,7 +8641,7 @@
 
 **理由：** 任意局部定义函数仅在M上满秩，较少方程在其他点未必满秩；刚构造的坐标拉回在整个U独立，故使用这组选定函数及合法整数范围保证注记成立。
 
-[相关正文：隐函数定理与子流形参数化](./02-math-analysis-ii/34-implicit-function.md)
+[相关正文：34：隐函数定理与子流形参数化](./02-math-analysis-ii/34-implicit-function.md)
 
 #### 数学修正
 
@@ -8719,7 +8719,7 @@
 
 **理由：** f有n加p个分量，源图n加1只对p等于1成立；正文已按本定理一般p修正。
 
-[相关正文：隐函数定理与子流形参数化](./02-math-analysis-ii/34-implicit-function.md)
+[相关正文：34：隐函数定理与子流形参数化](./02-math-analysis-ii/34-implicit-function.md)
 
 #### 数学修正
 
@@ -9127,7 +9127,7 @@
 
 **理由：** 源图所给向量与柱面法向量(2x,2y,0)一般不正交；正文已正确改为(-y,x,0)，内积恒为0。
 
-[相关正文：35.1 作业:隐函数与反函数定理,隐函数定理在多项式和矩阵上的一个重要应用,经典群的子流形结构](./02-math-analysis-ii/35-tangent-spaces/35-03-p0401-0405.md)
+[相关正文：35.1：作业：隐函数与反函数定理，隐函数定理在多项式和矩阵上的一个重要应用，经典群的子流形结构](./02-math-analysis-ii/35-tangent-spaces/35-03-p0401-0405.md)
 
 #### 数学修正
 
@@ -9151,7 +9151,7 @@
 
 **理由：** f只定义在Ω，图像的第一坐标须属于Ω，原图对全部Rn取值超出定义域。
 
-[相关正文：35.1 作业:隐函数与反函数定理,隐函数定理在多项式和矩阵上的一个重要应用,经典群的子流形结构](./02-math-analysis-ii/35-tangent-spaces/35-03-p0401-0405.md)
+[相关正文：35.1：作业：隐函数与反函数定理，隐函数定理在多项式和矩阵上的一个重要应用，经典群的子流形结构](./02-math-analysis-ii/35-tangent-spaces/35-03-p0401-0405.md)
 
 #### 数学修正
 
@@ -9189,7 +9189,7 @@
 
 **理由：** 源标点使区间端点多出逗号，题目压缩参数应为绝对值小于0.5，正文已按唯一实数区间修正。
 
-[相关正文：35.1 作业:隐函数与反函数定理,隐函数定理在多项式和矩阵上的一个重要应用,经典群的子流形结构](./02-math-analysis-ii/35-tangent-spaces/35-03-p0401-0405.md)
+[相关正文：35.1：作业：隐函数与反函数定理，隐函数定理在多项式和矩阵上的一个重要应用，经典群的子流形结构](./02-math-analysis-ii/35-tangent-spaces/35-03-p0401-0405.md)
 
 #### 数学修正
 
@@ -9211,7 +9211,7 @@
 
 **问题：** 原题B6后直接B8且B9延续，无法仅从编号判定是否漏印B7，保留源编号，不凭空补题。
 
-[相关正文：35.1 作业:隐函数与反函数定理,隐函数定理在多项式和矩阵上的一个重要应用,经典群的子流形结构](./02-math-analysis-ii/35-tangent-spaces/35-03-p0401-0405.md)
+[相关正文：35.1：作业：隐函数与反函数定理，隐函数定理在多项式和矩阵上的一个重要应用，经典群的子流形结构](./02-math-analysis-ii/35-tangent-spaces/35-03-p0401-0405.md)
 
 #### 数学修正
 
@@ -9261,7 +9261,7 @@
 
 ### 36 切丛与 Lagrange 乘子法
 
-[相关正文：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
+[相关正文：36：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
 
 #### 数学修正
 
@@ -9275,7 +9275,7 @@
 
 **理由：** 本注记给的是环境光滑映射F，再限制到M得到f，原图小写f已经以M为域，不能作为构造前的环境映射。
 
-[相关正文：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
+[相关正文：36：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
 
 #### 数学修正
 
@@ -9334,7 +9334,7 @@
 
 **理由：** 源图组合顺序和各映射域均不相容，正文已选从旧坐标到新坐标的转换Phi撇复合Phi逆，后文需用其逆进行函数换坐标。
 
-[相关正文：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
+[相关正文：36：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
 
 #### 数学修正
 
@@ -9424,7 +9424,7 @@
 
 **理由：** 正文已将源固定二维误字改为通用d维切向平面，符合定义212。
 
-[相关正文：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
+[相关正文：36：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
 
 #### 数学修正
 
@@ -9448,7 +9448,7 @@
 
 **理由：** 子流形映射为f，环境延拓为F，原图此处把两个不同域的映射用了同一个大写名称。
 
-[相关正文：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
+[相关正文：36：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
 
 #### 数学修正
 
@@ -9462,7 +9462,7 @@
 
 **理由：** 定义212只保证局部延拓到目标背景Rn，不保证全Rm延拓，更不保证延拓值都在N；证明线性只需要基点附近一个环境延拓。
 
-[相关正文：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
+[相关正文：36：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
 
 #### 数学修正
 
@@ -9538,7 +9538,7 @@
 
 **理由：** 源图两处末定义函数下标误写n减i，正文已用独立函数个数n减d纠正。
 
-[相关正文：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
+[相关正文：36：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
 
 #### 数学修正
 
@@ -9552,7 +9552,7 @@
 
 **理由：** M在Rm而非Rn，定义只保证逐点局部延拓；非闭子流形光滑函数未必全空间可延拓。局部延拓足以逐点验证方向导数光滑，用Y区分环境函数与原切场。
 
-[相关正文：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
+[相关正文：36：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
 
 #### 数学修正
 
@@ -9598,7 +9598,7 @@
 
 **理由：** g定义约束且在约束集恒为0，待求目标是f，正文已纠正源目标函数名。
 
-[相关正文：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
+[相关正文：36：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
 
 #### 数学修正
 
@@ -9644,7 +9644,7 @@
 
 **理由：** L的第二组自变量为乘子lambda，不是函数自身L，正文已正确修正。
 
-[相关正文：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
+[相关正文：36：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
 
 #### 数学修正
 
@@ -9668,7 +9668,7 @@
 
 **理由：** 三块面积相等给三条重心坐标均为三分之一，点为重心；距离分别等于对应高的三分之一，不等边三角形距离不相等，内心结论错误。
 
-[相关正文：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
+[相关正文：36：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
 
 #### 数学修正
 
@@ -9742,7 +9742,7 @@
 
 **理由：** 目标子流形N位于Rn，目标环境坐标图两端维数须为n，源图误沿用源M的m。
 
-[相关正文：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
+[相关正文：36：切丛与 Lagrange 乘子法](./02-math-analysis-ii/36-tangent-bundles.md)
 
 #### 原讲义笔误（正文已订正）
 
@@ -10141,7 +10141,7 @@
 
 **理由：** 二阶Lagrange余项是函数减同点x的一阶线性化，前页L定义已包含减x0，源重复平移。
 
-[相关正文：37.1 习题课:球极投影](./02-math-analysis-ii/37-hessian-convexity/37-03-p0425-0427.md)
+[相关正文：37.1：习题课：球极投影](./02-math-analysis-ii/37-hessian-convexity/37-03-p0425-0427.md)
 
 #### 数学修正
 
@@ -10183,7 +10183,7 @@
 
 **理由：** 单变量Pc的n个根应分别代入得到零，原图把所有根作为多元参数一起代入，和395及404重复题面同一错误。
 
-[相关正文：37.1 习题课:球极投影](./02-math-analysis-ii/37-hessian-convexity/37-03-p0425-0427.md)
+[相关正文：37.1：习题课：球极投影](./02-math-analysis-ii/37-hessian-convexity/37-03-p0425-0427.md)
 
 #### 数学修正
 
@@ -10261,7 +10261,7 @@
 
 **理由：** 此处点在球面S2而S是单个南极，正文已经纠正源省略平方上标。
 
-[相关正文：37.1 习题课:球极投影](./02-math-analysis-ii/37-hessian-convexity/37-03-p0425-0427.md)
+[相关正文：37.1：习题课：球极投影](./02-math-analysis-ii/37-hessian-convexity/37-03-p0425-0427.md)
 
 #### 数学修正
 
@@ -10275,7 +10275,7 @@
 
 **理由：** 夹角公式分母含两向量长度，零向量使表达式未定义；微分同构保持非零，明确非零量词。
 
-[相关正文：37.2 作业:Lagrange乘子法,Morse引理,横截相交性](./02-math-analysis-ii/37-hessian-convexity/37-04-p0428-0432.md)
+[相关正文：37.2：作业：Lagrange乘子法，Morse引理，横截相交性](./02-math-analysis-ii/37-hessian-convexity/37-04-p0428-0432.md)
 
 #### 数学修正
 
@@ -10311,7 +10311,7 @@
 
 **理由：** 该集合公式原图是数学式，转录漏掉行内数学界定符使TeX命令直接显示，补齐数学渲染而不改变集合内容。
 
-[相关正文：37.2 作业:Lagrange乘子法,Morse引理,横截相交性](./02-math-analysis-ii/37-hessian-convexity/37-04-p0428-0432.md)
+[相关正文：37.2：作业：Lagrange乘子法，Morse引理，横截相交性](./02-math-analysis-ii/37-hessian-convexity/37-04-p0428-0432.md)
 
 #### 数学修正
 
@@ -10353,7 +10353,7 @@
 
 **问题：** 实log要求各x正；n大于1时开单纯形上只有上确界，没有最大值。若允许0需规定0log0的连续延拓，若原题应求最小值又是另一题意；不能唯一选取，保留疑点。
 
-[相关正文：37.2 作业:Lagrange乘子法,Morse引理,横截相交性](./02-math-analysis-ii/37-hessian-convexity/37-04-p0428-0432.md)
+[相关正文：37.2：作业：Lagrange乘子法，Morse引理，横截相交性](./02-math-analysis-ii/37-hessian-convexity/37-04-p0428-0432.md)
 
 #### 数学修正
 
@@ -10367,7 +10367,7 @@
 
 **理由：** 二阶Taylor须二分之一及全部矩阵分量求和，源公式遗漏系数且i、j未绑定，简单f等于x平方即可验证源系数错误。
 
-[相关正文：37.2 作业:Lagrange乘子法,Morse引理,横截相交性](./02-math-analysis-ii/37-hessian-convexity/37-04-p0428-0432.md)
+[相关正文：37.2：作业：Lagrange乘子法，Morse引理，横截相交性](./02-math-analysis-ii/37-hessian-convexity/37-04-p0428-0432.md)
 
 #### 数学修正
 
@@ -10411,7 +10411,7 @@
 
 **理由：** phir从Vr到Ur，复合f(phir(u))只有当u属于Vr才按定义成立，源域写反。
 
-[相关正文：37.2 作业:Lagrange乘子法,Morse引理,横截相交性](./02-math-analysis-ii/37-hessian-convexity/37-04-p0428-0432.md)
+[相关正文：37.2：作业：Lagrange乘子法，Morse引理，横截相交性](./02-math-analysis-ii/37-hessian-convexity/37-04-p0428-0432.md)
 
 #### 数学修正
 
@@ -10447,7 +10447,7 @@
 
 ### 38 σ-代数与可测映射
 
-[相关正文：σ-代数与可测映射](./02-math-analysis-ii/38-measurability.md)
+[相关正文：38：σ-代数与可测映射](./02-math-analysis-ii/38-measurability.md)
 
 #### 数学修正
 
@@ -10461,7 +10461,7 @@
 
 **理由：** 单点生成可数集合全部子集的条件应覆盖X中每个点，源A既未定义也不能替代整个X。
 
-[相关正文：σ-代数与可测映射](./02-math-analysis-ii/38-measurability.md)
+[相关正文：38：σ-代数与可测映射](./02-math-analysis-ii/38-measurability.md)
 
 #### 数学修正
 
@@ -10495,7 +10495,7 @@
 
 **理由：** sigma代数的集合操作是可数交、可数并及补集，开操作和取逆未定义，源文字应与定义229一致。
 
-[相关正文：σ-代数与可测映射](./02-math-analysis-ii/38-measurability.md)
+[相关正文：38：σ-代数与可测映射](./02-math-analysis-ii/38-measurability.md)
 
 #### 数学修正
 
@@ -10561,7 +10561,7 @@
 
 **理由：** 原文不同i、j组的矩形可能相交，不能直接据此称不交并；有限坐标集合取交及补产生共同分割，各乘积格子不交并仍在坐标代数中，补齐源证明的独立化步骤。
 
-[相关正文：σ-代数与可测映射](./02-math-analysis-ii/38-measurability.md)
+[相关正文：38：σ-代数与可测映射](./02-math-analysis-ii/38-measurability.md)
 
 #### 数学修正
 
@@ -10579,7 +10579,7 @@
 
 **理由：** 该定义要求A、B是实线上Borel集合，源subset后没有集合，去掉错误包含符号保留集合类别。
 
-[相关正文：σ-代数与可测映射](./02-math-analysis-ii/38-measurability.md)
+[相关正文：38：σ-代数与可测映射](./02-math-analysis-ii/38-measurability.md)
 
 #### 数学修正
 
@@ -10603,7 +10603,7 @@
 
 **理由：** 第二辅助类为A，按其定义证明补集仍属于A，源误沿用第一类B。
 
-[相关正文：σ-代数与可测映射](./02-math-analysis-ii/38-measurability.md)
+[相关正文：38：σ-代数与可测映射](./02-math-analysis-ii/38-measurability.md)
 
 #### 数学修正
 
@@ -10617,7 +10617,7 @@
 
 **理由：** 单调类定理需要生成族本身是代数，R仅单矩形族一般不闭于并，R波浪为有限不交矩形并代数；sigmaR自身为代数是恒真，不能据此证明由R波浪生成的单调类等式。
 
-[相关正文：σ-代数与可测映射](./02-math-analysis-ii/38-measurability.md)
+[相关正文：38：σ-代数与可测映射](./02-math-analysis-ii/38-measurability.md)
 
 #### 数学修正
 
@@ -10631,7 +10631,7 @@
 
 **理由：** 尚未给定任何测度，此处只有sigma代数的可测空间乘积，不宜误称含测度结构的测度空间。
 
-[相关正文：σ-代数与可测映射](./02-math-analysis-ii/38-measurability.md)
+[相关正文：38：σ-代数与可测映射](./02-math-analysis-ii/38-measurability.md)
 
 #### 数学修正
 
@@ -10665,7 +10665,7 @@
 
 **理由：** 乘积距离由两个不同因子的d1及d2构成，统一d尚未在单个因子定义，原图漏下标。
 
-[相关正文：σ-代数与可测映射](./02-math-analysis-ii/38-measurability.md)
+[相关正文：38：σ-代数与可测映射](./02-math-analysis-ii/38-measurability.md)
 
 #### 数学修正
 
@@ -10739,7 +10739,7 @@
 
 **理由：** 投影的逆像为对应柱集，i等于2时Ui位于第二坐标，另一因子分别X2或X1；源Ui乘整个X既多一组维数且第二投影次序错误。
 
-[相关正文：σ-代数与可测映射](./02-math-analysis-ii/38-measurability.md)
+[相关正文：38：σ-代数与可测映射](./02-math-analysis-ii/38-measurability.md)
 
 #### 数学修正
 
@@ -10765,7 +10765,7 @@
 
 ### 39 测度与 Carathéodory 扩张定理
 
-[相关正文：测度与 Carathéodory 扩张定理](./02-math-analysis-ii/39-measure-extension.md)
+[相关正文：39：测度与 Carathéodory 扩张定理](./02-math-analysis-ii/39-measure-extension.md)
 
 #### 数学修正
 
@@ -10789,7 +10789,7 @@
 
 **理由：** 该项所列为可数次可加性的上界不等式，重叠集合时一般不能取等号。
 
-[相关正文：测度与 Carathéodory 扩张定理](./02-math-analysis-ii/39-measure-extension.md)
+[相关正文：39：测度与 Carathéodory 扩张定理](./02-math-analysis-ii/39-measure-extension.md)
 
 #### 数学修正
 
@@ -10815,7 +10815,7 @@
 
 **理由：** 原图下标排版将前一项写成An后再减一，canonical已准确采用前一集合A下标n减一，保留该正确数学表达。
 
-[相关正文：测度与 Carathéodory 扩张定理](./02-math-analysis-ii/39-measure-extension.md)
+[相关正文：39：测度与 Carathéodory 扩张定理](./02-math-analysis-ii/39-measure-extension.md)
 
 #### 数学修正
 
@@ -10861,7 +10861,7 @@
 
 **理由：** 原图结尾误以原代数A包含它生成的sigma代数，canonical已正确采用单调类M包含sigmaA，保留该正确证明。
 
-[相关正文：测度与 Carathéodory 扩张定理](./02-math-analysis-ii/39-measure-extension.md)
+[相关正文：39：测度与 Carathéodory 扩张定理](./02-math-analysis-ii/39-measure-extension.md)
 
 #### 数学修正
 
@@ -10885,7 +10885,7 @@
 
 **理由：** 该极限同样取有限并上界n趋于无穷，不能使用并号内已绑定的i作为极限变量。
 
-[相关正文：测度与 Carathéodory 扩张定理](./02-math-analysis-ii/39-measure-extension.md)
+[相关正文：39：测度与 Carathéodory 扩张定理](./02-math-analysis-ii/39-measure-extension.md)
 
 #### 数学修正
 
@@ -10939,7 +10939,7 @@
 
 **理由：** 原mu未定义在任意Ei的并上，必须用外测度mu星；重叠集合的并外测度可小于各项和，不能断言差非负。由覆盖代价上界直接得到需要的不等式。
 
-[相关正文：测度与 Carathéodory 扩张定理](./02-math-analysis-ii/39-measure-extension.md)
+[相关正文：39：测度与 Carathéodory 扩张定理](./02-math-analysis-ii/39-measure-extension.md)
 
 #### 数学修正
 
@@ -10953,7 +10953,7 @@
 
 **理由：** 此处使用Caratheodory外测度分割判据，尚未把mu定义到可测集合族，必须保留外测度上标星。
 
-[相关正文：测度与 Carathéodory 扩张定理](./02-math-analysis-ii/39-measure-extension.md)
+[相关正文：39：测度与 Carathéodory 扩张定理](./02-math-analysis-ii/39-measure-extension.md)
 
 #### 数学修正
 
@@ -10969,7 +10969,7 @@
 
 ### 40 Lebesgue 测度与测度空间的完备化
 
-[相关正文：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
+[相关正文：40：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
 
 #### 数学修正
 
@@ -10993,7 +10993,7 @@
 
 **理由：** 扩张测度作用于sigma代数中的集合，E应为该族的元素，原包含关系错误地把E当作一族可测集合。
 
-[相关正文：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
+[相关正文：40：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
 
 #### 数学修正
 
@@ -11017,7 +11017,7 @@
 
 **理由：** 本段仅定义了P的区间Ii，并未定义Ai；去掉端点后讨论I与各组成区间的分离。
 
-[相关正文：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
+[相关正文：40：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
 
 #### 数学修正
 
@@ -11095,7 +11095,7 @@
 
 **理由：** 这里只求j不超过i的有限几何和，严格小于从一到无穷的和a二分之一，原等号遗漏有限截断。
 
-[相关正文：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
+[相关正文：40：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
 
 #### 数学修正
 
@@ -11139,7 +11139,7 @@
 
 **理由：** 所列边长符号下标j应指对应第j个坐标区间，原i与j不一致。
 
-[相关正文：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
+[相关正文：40：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
 
 #### 数学修正
 
@@ -11193,7 +11193,7 @@
 
 **理由：** S为n维方块的有限并，C无穷条件的代数维数必须与Rn一致。
 
-[相关正文：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
+[相关正文：40：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
 
 #### 数学修正
 
@@ -11279,7 +11279,7 @@
 
 **理由：** 该定理构造Rn上的Lebesgue测度，覆盖由n维方块构成，E须为Rn中的Borel集合。
 
-[相关正文：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
+[相关正文：40：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
 
 #### 数学修正
 
@@ -11293,7 +11293,7 @@
 
 **理由：** 归一化应在n维单位正方体上取值一，最后一边若为单点则零体积，不符合Lebesgue测度。
 
-[相关正文：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
+[相关正文：40：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
 
 #### 数学修正
 
@@ -11347,7 +11347,7 @@
 
 **理由：** 第四步只证明有理边长方块相同，不能直接断言在任意实端点方块代数上相同；改用有理方块代数生成Borel且sigma有限，唯一性定理即可推出结论。
 
-[相关正文：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
+[相关正文：40：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
 
 #### 数学修正
 
@@ -11383,7 +11383,7 @@
 
 **理由：** 原图中间元素漏撇，完备化要求夹住新的A撇；canonical已正确，保持此规范化。
 
-[相关正文：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
+[相关正文：40：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
 
 #### 数学修正
 
@@ -11439,7 +11439,7 @@
 
 **理由：** 原图末段两处漏撇，新完备空间的零集子集应属于A撇；canonical正确使用A撇和A双撇，保持此修复。
 
-[相关正文：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
+[相关正文：40：Lebesgue 测度与测度空间的完备化](./02-math-analysis-ii/40-lebesgue-measure.md)
 
 #### 数学修正
 
@@ -11881,7 +11881,7 @@
 
 **理由：** 无限方块下和不一定有限取值，闭方块在边界重叠会重复取值而破坏逐点上升比较；限定零边界之外并取有限截断，保留Darboux类比的正确内容。
 
-[相关正文：41.1 作业:子流形与零测集,Stieltjies 测度的构造,Borel-Cantelli 定理和无理数的逼近](./02-math-analysis-ii/41-abstract-integrals/41-03-p0478-0483.md)
+[相关正文：41.1：作业：子流形与零测集，Stieltjies 测度的构造，Borel-Cantelli 定理和无理数的逼近](./02-math-analysis-ii/41-abstract-integrals/41-03-p0478-0483.md)
 
 #### 数学修正
 
@@ -11905,7 +11905,7 @@
 
 **理由：** 闭集同样应为实空间子集，乘积集合结论需要该正确类型。
 
-[相关正文：41.1 作业:子流形与零测集,Stieltjies 测度的构造,Borel-Cantelli 定理和无理数的逼近](./02-math-analysis-ii/41-abstract-integrals/41-03-p0478-0483.md)
+[相关正文：41.1：作业：子流形与零测集，Stieltjies 测度的构造，Borel-Cantelli 定理和无理数的逼近](./02-math-analysis-ii/41-abstract-integrals/41-03-p0478-0483.md)
 
 #### 数学修正
 
@@ -11931,7 +11931,7 @@
 
 **理由：** 原图等值集合最后误写加号，canonical已正确采用等号下标，保持正确引用。
 
-[相关正文：41.1 作业:子流形与零测集,Stieltjies 测度的构造,Borel-Cantelli 定理和无理数的逼近](./02-math-analysis-ii/41-abstract-integrals/41-03-p0478-0483.md)
+[相关正文：41.1：作业：子流形与零测集，Stieltjies 测度的构造，Borel-Cantelli 定理和无理数的逼近](./02-math-analysis-ii/41-abstract-integrals/41-03-p0478-0483.md)
 
 #### 数学修正
 
@@ -11945,7 +11945,7 @@
 
 **理由：** 测度只由F的增量确定，任意加常数给出同一测度；D2所定义F已经以F零等于零归一化，加入归一化后才是空间一一对应。
 
-[相关正文：41.1 作业:子流形与零测集,Stieltjies 测度的构造,Borel-Cantelli 定理和无理数的逼近](./02-math-analysis-ii/41-abstract-integrals/41-03-p0478-0483.md)
+[相关正文：41.1：作业：子流形与零测集，Stieltjies 测度的构造，Borel-Cantelli 定理和无理数的逼近](./02-math-analysis-ii/41-abstract-integrals/41-03-p0478-0483.md)
 
 #### 数学修正
 
@@ -11961,7 +11961,7 @@
 
 ### 42 Lebesgue 积分与控制收敛定理
 
-[相关正文：Lebesgue 积分与控制收敛定理](./02-math-analysis-ii/42-dominated-convergence.md)
+[相关正文：42：Lebesgue 积分与控制收敛定理](./02-math-analysis-ii/42-dominated-convergence.md)
 
 #### 数学修正
 
@@ -12005,7 +12005,7 @@
 
 **理由：** 原测度空间三元组括号把mu误放入幂集，canonical已正确将其作为第三项，保持排版规范化。
 
-[相关正文：Lebesgue 积分与控制收敛定理](./02-math-analysis-ii/42-dominated-convergence.md)
+[相关正文：42：Lebesgue 积分与控制收敛定理](./02-math-analysis-ii/42-dominated-convergence.md)
 
 #### 数学修正
 
@@ -12055,7 +12055,7 @@
 
 **理由：** 原证明首行比较的g未定义且f可为复值，canonical已正确以模f超过给定h作为异常集，保留该修复。
 
-[相关正文：Lebesgue 积分与控制收敛定理](./02-math-analysis-ii/42-dominated-convergence.md)
+[相关正文：42：Lebesgue 积分与控制收敛定理](./02-math-analysis-ii/42-dominated-convergence.md)
 
 #### 数学修正
 
@@ -12145,7 +12145,7 @@
 
 **理由：** 按统一的第一环及内半径修复积分计算，系数和体积指数共同减一，最后几何级数仍因epsilon正而收敛。
 
-[相关正文：Lebesgue 积分与控制收敛定理](./02-math-analysis-ii/42-dominated-convergence.md)
+[相关正文：42：Lebesgue 积分与控制收敛定理](./02-math-analysis-ii/42-dominated-convergence.md)
 
 #### 数学修正
 
@@ -12183,7 +12183,7 @@
 
 **理由：** 上下和使用不交分划的示性函数，避免分点有两个区间时重复两次f值，保证全点上下界和单调性。
 
-[相关正文：Lebesgue 积分与控制收敛定理](./02-math-analysis-ii/42-dominated-convergence.md)
+[相关正文：42：Lebesgue 积分与控制收敛定理](./02-math-analysis-ii/42-dominated-convergence.md)
 
 #### 数学修正
 
@@ -12209,7 +12209,7 @@
 
 **理由：** 原图此处用等号替代两函数差，canonical正确使用非负差推积分零，保持正确表达。
 
-[相关正文：Lebesgue 积分与控制收敛定理](./02-math-analysis-ii/42-dominated-convergence.md)
+[相关正文：42：Lebesgue 积分与控制收敛定理](./02-math-analysis-ii/42-dominated-convergence.md)
 
 #### 数学修正
 
@@ -12243,7 +12243,7 @@
 
 **理由：** 原f作为函数可在非空零测集上非零，积分零只能推出商空间等价类零，不能推出处处零函数。
 
-[相关正文：Lebesgue 积分与控制收敛定理](./02-math-analysis-ii/42-dominated-convergence.md)
+[相关正文：42：Lebesgue 积分与控制收敛定理](./02-math-analysis-ii/42-dominated-convergence.md)
 
 #### 数学修正
 
@@ -12269,7 +12269,7 @@
 
 **理由：** 原图开头漏负号且正负部方向错误，canonical已正确采用负函数与负部减正部，保留该规范化；剩余括号方向另修。
 
-[相关正文：Lebesgue 积分与控制收敛定理](./02-math-analysis-ii/42-dominated-convergence.md)
+[相关正文：42：Lebesgue 积分与控制收敛定理](./02-math-analysis-ii/42-dominated-convergence.md)
 
 #### 数学修正
 
@@ -12325,7 +12325,7 @@
 
 **理由：** 原范数证明把函数f、g误写为标量a、b，canonical已正确采用函数变量，保持正确参数。
 
-[相关正文：Lebesgue 积分与控制收敛定理](./02-math-analysis-ii/42-dominated-convergence.md)
+[相关正文：42：Lebesgue 积分与控制收敛定理](./02-math-analysis-ii/42-dominated-convergence.md)
 
 #### 数学修正
 
@@ -12603,7 +12603,7 @@
 
 **理由：** 函数序列从一开始，f0未定义；上条证明f1可积且在下降列中逐项控制fi。
 
-[相关正文：43.1 作业:Lebesgue 控制收敛,十进制小数的研究](./02-math-analysis-ii/43-product-measures/43-03-p0503-0508.md)
+[相关正文：43.1：作业：Lebesgue 控制收敛，十进制小数的研究](./02-math-analysis-ii/43-product-measures/43-03-p0503-0508.md)
 
 #### 原讲义笔误（正文已订正）
 
@@ -12617,7 +12617,7 @@
 
 **理由：** 原图限制代数的交集误用包含符号，canonical已经采用正确成员关系，保持正确修复。
 
-[相关正文：43.1 作业:Lebesgue 控制收敛,十进制小数的研究](./02-math-analysis-ii/43-product-measures/43-03-p0503-0508.md)
+[相关正文：43.1：作业：Lebesgue 控制收敛，十进制小数的研究](./02-math-analysis-ii/43-product-measures/43-03-p0503-0508.md)
 
 #### 数学修正
 
@@ -12631,7 +12631,7 @@
 
 **理由：** 一般测度空间未假定sigma有限，单点无限测度时此前有限非零支撑阶梯函数只有零，无法逼近常数一；不限制支撑的有限取值可测函数可以点态量化逼近。
 
-[相关正文：43.1 作业:Lebesgue 控制收敛,十进制小数的研究](./02-math-analysis-ii/43-product-measures/43-03-p0503-0508.md)
+[相关正文：43.1：作业：Lebesgue 控制收敛，十进制小数的研究](./02-math-analysis-ii/43-product-measures/43-03-p0503-0508.md)
 
 #### 数学修正
 
@@ -12655,7 +12655,7 @@
 
 **理由：** 可积函数可以在全部整数处非零但积分为零，此时周期求和在零处发散。Tonelli仅保证几乎处处绝对收敛，需指定例外零集上的补值。
 
-[相关正文：43.1 作业:Lebesgue 控制收敛,十进制小数的研究](./02-math-analysis-ii/43-product-measures/43-03-p0503-0508.md)
+[相关正文：43.1：作业：Lebesgue 控制收敛，十进制小数的研究](./02-math-analysis-ii/43-product-measures/43-03-p0503-0508.md)
 
 #### 数学修正
 
@@ -12669,7 +12669,7 @@
 
 **理由：** 零只有全零小数展开，没有全九尾的第二种非负小数展开；四项等价须排除零端点。
 
-[相关正文：43.1 作业:Lebesgue 控制收敛,十进制小数的研究](./02-math-analysis-ii/43-product-measures/43-03-p0503-0508.md)
+[相关正文：43.1：作业：Lebesgue 控制收敛，十进制小数的研究](./02-math-analysis-ii/43-product-measures/43-03-p0503-0508.md)
 
 #### 数学修正
 
@@ -12683,7 +12683,7 @@
 
 **理由：** 所禁止的字符串必须由十进制数字构成；若包含十，则禁串集为全区间，下一问计数减少一的不等式为假。
 
-[相关正文：43.2 习题课:硬币空间的测度理论](./02-math-analysis-ii/43-product-measures/43-05-p0509-0511.md)
+[相关正文：43.2：习题课：硬币空间的测度理论](./02-math-analysis-ii/43-product-measures/43-05-p0509-0511.md)
 
 #### 数学修正
 
@@ -12707,7 +12707,7 @@
 
 **理由：** k必须计数不同的柱集，重复字符串不会增加并集却会增加k，导致所定义概率不唯一。
 
-[相关正文：43.2 习题课:硬币空间的测度理论](./02-math-analysis-ii/43-product-measures/43-05-p0509-0511.md)
+[相关正文：43.2：习题课：硬币空间的测度理论](./02-math-analysis-ii/43-product-measures/43-05-p0509-0511.md)
 
 #### 数学修正
 
@@ -12743,7 +12743,7 @@
 
 **理由：** 推前测度在硬币空间上等于P，末尾再等于实区间Lebesgue测度类型不一致，canonical已删除错误等号。
 
-[相关正文：43.2 习题课:硬币空间的测度理论](./02-math-analysis-ii/43-product-measures/43-05-p0509-0511.md)
+[相关正文：43.2：习题课：硬币空间的测度理论](./02-math-analysis-ii/43-product-measures/43-05-p0509-0511.md)
 
 #### 数学修正
 
@@ -13089,7 +13089,7 @@
 
 **理由：** 截面面积是z的函数，外积分必须对z积分。
 
-[相关正文：44.1 作业:Archimedes对抛物线面积的计算,Gauss积分](./02-math-analysis-ii/44-fubini/44-03-p0520-0523.md)
+[相关正文：44.1：作业：Archimedes对抛物线面积的计算，Gauss积分](./02-math-analysis-ii/44-fubini/44-03-p0520-0523.md)
 
 #### 数学修正
 
@@ -13111,7 +13111,7 @@
 
 **理由：** 这个反例的y测度是计数测度，x测度是Lebesgue测度，统一写dxdy会误作两个Lebesgue积分而都为零，必须写明两个测度。
 
-[相关正文：44.1 作业:Archimedes对抛物线面积的计算,Gauss积分](./02-math-analysis-ii/44-fubini/44-03-p0520-0523.md)
+[相关正文：44.1：作业：Archimedes对抛物线面积的计算，Gauss积分](./02-math-analysis-ii/44-fubini/44-03-p0520-0523.md)
 
 #### 数学修正
 
@@ -13135,7 +13135,7 @@
 
 **理由：** 同一点时弦的方向未定义，唯一平行切线与三角形面积比均需两个端点不同。
 
-[相关正文：44.1 作业:Archimedes对抛物线面积的计算,Gauss积分](./02-math-analysis-ii/44-fubini/44-03-p0520-0523.md)
+[相关正文：44.1：作业：Archimedes对抛物线面积的计算，Gauss积分](./02-math-analysis-ii/44-fubini/44-03-p0520-0523.md)
 
 #### 数学修正
 
@@ -13151,7 +13151,7 @@
 
 ### 45 换元积分公式
 
-[相关正文：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
+[相关正文：45：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
 
 #### 数学修正
 
@@ -13187,7 +13187,7 @@
 
 **理由：** NewtonLeibniz的内积分变量是s，导数应在s点求值，x一般甚至不属于实数域。
 
-[相关正文：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
+[相关正文：45：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
 
 #### 数学修正
 
@@ -13243,7 +13243,7 @@
 
 **理由：** sigma有限密度分层只要求几乎处处有限，不要求统一本性上界，与定义的逐点小于无穷条件一致。
 
-[相关正文：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
+[相关正文：45：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
 
 #### 数学修正
 
@@ -13297,7 +13297,7 @@
 
 **理由：** 推前在给定可测代数上定义，任意非可测子集不能直接代入测度。
 
-[相关正文：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
+[相关正文：45：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
 
 #### 原讲义笔误（正文已订正）
 
@@ -13317,7 +13317,7 @@
 
 **理由：** 原图单调收敛右端漏下标i，canonical已正确以逼近列fi积分。
 
-[相关正文：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
+[相关正文：45：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
 
 #### 原讲义笔误（正文已订正）
 
@@ -13333,7 +13333,7 @@
 
 **理由：** 微分同胚定义域为Omega1，canonical已将源图未定义X替换为正确区域。
 
-[相关正文：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
+[相关正文：45：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
 
 #### 数学修正
 
@@ -13367,7 +13367,7 @@
 
 **理由：** 正定平方根唯一，若仅要求对称则例如单位矩阵的正负单位平方根都满足方程，原脚注唯一性不成立。
 
-[相关正文：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
+[相关正文：45：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
 
 #### 数学修正
 
@@ -13381,7 +13381,7 @@
 
 **理由：** 正则性定理量词是任意Borel集A，K仅出现在测度局部有限假设中，包围对象须为A。
 
-[相关正文：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
+[相关正文：45：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
 
 #### 数学修正
 
@@ -13451,7 +13451,7 @@
 
 **理由：** 原Fj既是给定闭集族的第j项又被重定义为前j项并，产生自指及符号冲突；新Ej表示有限并并用于穷尽与最后选择。
 
-[相关正文：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
+[相关正文：45：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
 
 #### 数学修正
 
@@ -13485,7 +13485,7 @@
 
 **理由：** 微分同胚仅在Omega1定义，正方体须完整包含其中才能对任意点、中心及线段使用映射和导数。
 
-[相关正文：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
+[相关正文：45：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
 
 #### 数学修正
 
@@ -13519,7 +13519,7 @@
 
 **理由：** 矩阵乘积范数多出一个未闭合左括号；用矩阵乘法点号明确复合导数并使括号成对。
 
-[相关正文：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
+[相关正文：45：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
 
 #### 数学修正
 
@@ -13543,7 +13543,7 @@
 
 **理由：** 同一正方体与自身的交有正体积，零测边界交只对不同分块成立。
 
-[相关正文：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
+[相关正文：45：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
 
 #### 数学修正
 
@@ -13597,7 +13597,7 @@
 
 **理由：** 左积分在Omega2且右边复合Phi，f必须在像空间定义。
 
-[相关正文：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
+[相关正文：45：换元积分公式](./02-math-analysis-ii/45-change-of-variables.md)
 
 #### 数学修正
 
@@ -14309,7 +14309,7 @@
 
 **理由：** 左边为矩阵右边为标量，前文明确计算行列式，须补det；秩一矩阵行列式公式给一加梯度模平方。
 
-[相关正文：46.1 期中考试:非Borel集的构造](./02-math-analysis-ii/46-submanifold-integrals/46-03-p0547-0552.md)
+[相关正文：46.1：期中考试：非Borel集的构造](./02-math-analysis-ii/46-submanifold-integrals/46-03-p0547-0552.md)
 
 #### 数学修正
 
@@ -14333,7 +14333,7 @@
 
 **理由：** 等价条件量词针对新参数和新根xprime，旧根x固定，不能等于所有新参数下的根。
 
-[相关正文：46.1 期中考试:非Borel集的构造](./02-math-analysis-ii/46-submanifold-integrals/46-03-p0547-0552.md)
+[相关正文：46.1：期中考试：非Borel集的构造](./02-math-analysis-ii/46-submanifold-integrals/46-03-p0547-0552.md)
 
 #### 数学修正
 
@@ -14369,7 +14369,7 @@
 
 **理由：** 源图E1连续性域与函数定义和零点说明相冲突，canonical已正确包括闭象限边界。
 
-[相关正文：46.1 期中考试:非Borel集的构造](./02-math-analysis-ii/46-submanifold-integrals/46-03-p0547-0552.md)
+[相关正文：46.1：期中考试：非Borel集的构造](./02-math-analysis-ii/46-submanifold-integrals/46-03-p0547-0552.md)
 
 #### 原讲义笔误（正文已订正）
 
@@ -14383,7 +14383,7 @@
 
 **理由：** Hopf映射输出三分量，canonical已修正源陪域二维误写为三维。
 
-[相关正文：46.1 期中考试:非Borel集的构造](./02-math-analysis-ii/46-submanifold-integrals/46-03-p0547-0552.md)
+[相关正文：46.1：期中考试：非Borel集的构造](./02-math-analysis-ii/46-submanifold-integrals/46-03-p0547-0552.md)
 
 #### 数学修正
 
@@ -14405,7 +14405,7 @@
 
 **问题：** 原文两个不同小问都标H2，后续H3和H4顺接。保留原编号，重复编号属于版式问题，若统一重编号需同时核对所有引用。
 
-[相关正文：46.1 期中考试:非Borel集的构造](./02-math-analysis-ii/46-submanifold-integrals/46-03-p0547-0552.md)
+[相关正文：46.1：期中考试：非Borel集的构造](./02-math-analysis-ii/46-submanifold-integrals/46-03-p0547-0552.md)
 
 #### 原讲义笔误（正文已订正）
 
@@ -14421,7 +14421,7 @@
 
 ### 47 球体积与 Stokes 公式的第一个证明
 
-[相关正文：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
+[相关正文：47：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
 
 #### 数学修正
 
@@ -14475,7 +14475,7 @@
 
 **理由：** 截面半径为sqrt一减高度平方，n减一维体积缩放指数应为其半次，canonical已修复源图漏二分母。
 
-[相关正文：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
+[相关正文：47：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
 
 #### 数学修正
 
@@ -14491,7 +14491,7 @@
 
 **理由：** 后文面积公式为二pi乘b减a，必须规定上下界顺序，反序的带状区域为空而公式为负。
 
-[相关正文：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
+[相关正文：47：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
 
 #### 数学修正
 
@@ -14517,7 +14517,7 @@
 
 **理由：** 此处计算一般a到b的球带，角度须限制在两个高度对应区间，原全角度积分是整球面积且左下界误写零。
 
-[相关正文：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
+[相关正文：47：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
 
 #### 数学修正
 
@@ -14561,7 +14561,7 @@
 
 **理由：** 求和项chi(x+k)非零要求k接近负x，原将格点中心误写为正x。
 
-[相关正文：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
+[相关正文：47：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
 
 #### 数学修正
 
@@ -14605,7 +14605,7 @@
 
 **理由：** 引理声明两个条件，应依次编号一和二，第三项编号为源排版误号。
 
-[相关正文：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
+[相关正文：47：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
 
 #### 数学修正
 
@@ -14639,7 +14639,7 @@
 
 **理由：** V上的坐标约定为y，标准半空间限制应在目标y坐标上。
 
-[相关正文：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
+[相关正文：47：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
 
 #### 数学修正
 
@@ -14673,7 +14673,7 @@
 
 **理由：** 区域允许仅C1坐标，一级Taylor余项为o(t)，二阶有界余项需更多光滑性；o(t)足以维持线性主项正号。
 
-[相关正文：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
+[相关正文：47：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
 
 #### 数学修正
 
@@ -14707,7 +14707,7 @@
 
 **理由：** 非零微分只保证至少一个偏导非零，单纯缩小邻域不能让指定末坐标偏导从零变非零，须先置换坐标。
 
-[相关正文：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
+[相关正文：47：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
 
 #### 数学修正
 
@@ -14721,7 +14721,7 @@
 
 **理由：** 开邻域并包含紧边界，不能等于余维一闭子流形，紧性结论是有限子覆盖。
 
-[相关正文：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
+[相关正文：47：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
 
 #### 数学修正
 
@@ -14780,7 +14780,7 @@
 
 **理由：** 图像下方区域须用交边界条件与局部一侧定义，rho正侧是外部；明确此方向后统一采用一减theta逼近内部，消除后页整体符号矛盾。
 
-[相关正文：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
+[相关正文：47：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
 
 #### 数学修正
 
@@ -14920,7 +14920,7 @@
 
 **理由：** 原图该行漏导数，canonical已恢复与前后分部积分对应的偏导，但示性函数方向和变换域的结构性错误另列整段修复。
 
-[相关正文：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
+[相关正文：47：球体积与 Stokes 公式的第一个证明](./02-math-analysis-ii/47-stokes-first-proof.md)
 
 #### 数学修正
 
@@ -15473,7 +15473,7 @@
 
 **理由：** 被排除的A中含有正则点，须利用局部图像密度和临界值零测证明额外部分曲面零测，才能恢复全边界积分。
 
-[相关正文：48.1 作业:曲面曲线积分的计算](./02-math-analysis-ii/48-stokes-topological-proof/48-03-p0573-0577.md)
+[相关正文：48.1：作业：曲面曲线积分的计算](./02-math-analysis-ii/48-stokes-topological-proof/48-03-p0573-0577.md)
 
 #### 数学修正
 
@@ -15507,7 +15507,7 @@
 
 **理由：** 普通同维换元公式和Jacobian的可微定义需要给定同维欧氏开域，补回已知公式沿用的条件。
 
-[相关正文：48.1 作业:曲面曲线积分的计算](./02-math-analysis-ii/48-stokes-topological-proof/48-03-p0573-0577.md)
+[相关正文：48.1：作业：曲面曲线积分的计算](./02-math-analysis-ii/48-stokes-topological-proof/48-03-p0573-0577.md)
 
 #### 数学修正
 
@@ -15551,7 +15551,7 @@
 
 **理由：** 被积函数可积性须在左端积分域Omega上假定，消除未定义U。
 
-[相关正文：48.1 作业:曲面曲线积分的计算](./02-math-analysis-ii/48-stokes-topological-proof/48-03-p0573-0577.md)
+[相关正文：48.1：作业：曲面曲线积分的计算](./02-math-analysis-ii/48-stokes-topological-proof/48-03-p0573-0577.md)
 
 #### 数学修正
 
@@ -15589,7 +15589,7 @@
 
 **理由：** 所称二维椭圆坐标须有两分量，源图第二分量中多余逗号导致三分量，canonical已恢复乘积。
 
-[相关正文：48.1 作业:曲面曲线积分的计算](./02-math-analysis-ii/48-stokes-topological-proof/48-03-p0573-0577.md)
+[相关正文：48.1：作业：曲面曲线积分的计算](./02-math-analysis-ii/48-stokes-topological-proof/48-03-p0573-0577.md)
 
 #### 数学修正
 
@@ -15637,7 +15637,7 @@
 
 **问题：** 原图C2(b)第二分量半径为b加a乘sin theta，canonical改成cos形成标准环面。题目只说参数曲面而未指定环面，原参数可另定义曲面，不能只凭习惯题型改题；需作者意图或最终人工裁定。
 
-[相关正文：48.2 习题课:Riemann积分的定义1](./02-math-analysis-ii/48-stokes-topological-proof/48-04-p0578-0584.md)
+[相关正文：48.2：习题课：Riemann积分的定义1](./02-math-analysis-ii/48-stokes-topological-proof/48-04-p0578-0584.md)
 
 #### 数学修正
 
@@ -15691,7 +15691,7 @@
 
 **理由：** 体积定义的矩形仍是笛卡尔积，补回末区间前遗漏的乘积运算。
 
-[相关正文：48.2 习题课:Riemann积分的定义1](./02-math-analysis-ii/48-stokes-topological-proof/48-04-p0578-0584.md)
+[相关正文：48.2：习题课：Riemann积分的定义1](./02-math-analysis-ii/48-stokes-topological-proof/48-04-p0578-0584.md)
 
 #### 数学修正
 
@@ -15705,7 +15705,7 @@
 
 **理由：** 可铺集对交封闭须包含低维交界及空集，A减B内部也可能只剩边界；允许退化闭矩形及空族才能使随后R3与R4成立。
 
-[相关正文：48.2 习题课:Riemann积分的定义1](./02-math-analysis-ii/48-stokes-topological-proof/48-04-p0578-0584.md)
+[相关正文：48.2：习题课：Riemann积分的定义1](./02-math-analysis-ii/48-stokes-topological-proof/48-04-p0578-0584.md)
 
 #### 数学修正
 
@@ -15729,7 +15729,7 @@
 
 **理由：** 序列条件也必须明确实值非负误差控制函数，原允许复值的E(P)不能直接比较大小。
 
-[相关正文：48.2 习题课:Riemann积分的定义1](./02-math-analysis-ii/48-stokes-topological-proof/48-04-p0578-0584.md)
+[相关正文：48.2：习题课：Riemann积分的定义1](./02-math-analysis-ii/48-stokes-topological-proof/48-04-p0578-0584.md)
 
 #### 数学修正
 
@@ -15773,7 +15773,7 @@
 
 **理由：** 原图在表达两函数可积这一假设时误用同音字德，改为结构助词的。
 
-[相关正文：48.2 习题课:Riemann积分的定义1](./02-math-analysis-ii/48-stokes-topological-proof/48-04-p0578-0584.md)
+[相关正文：48.2：习题课：Riemann积分的定义1](./02-math-analysis-ii/48-stokes-topological-proof/48-04-p0578-0584.md)
 
 #### 数学修正
 
@@ -15789,7 +15789,7 @@
 
 ### 49 散度定理与 Green 公式
 
-[相关正文：散度定理与 Green 公式](./02-math-analysis-ii/49-vector-calculus.md)
+[相关正文：49：散度定理与 Green 公式](./02-math-analysis-ii/49-vector-calculus.md)
 
 #### 数学修正
 
@@ -15872,7 +15872,7 @@
 
 **理由：** 被积函数写作φ(x,f(x))且积分变量为x，因此积分上限应为横坐标终点2πa；与本页其他x积分限一起修正。
 
-[相关正文：散度定理与 Green 公式](./02-math-analysis-ii/49-vector-calculus.md)
+[相关正文：49：散度定理与 Green 公式](./02-math-analysis-ii/49-vector-calculus.md)
 
 #### 数学修正
 
@@ -15926,7 +15926,7 @@
 
 **理由：** 本段研究带边区域Ω并把它的边界上的积分分解为图像积分，所以应以标准球为Ω、以标准球面为其边界；若Ω本身是球面，则不符合这里的区域及边界维数。
 
-[相关正文：散度定理与 Green 公式](./02-math-analysis-ii/49-vector-calculus.md)
+[相关正文：49：散度定理与 Green 公式](./02-math-analysis-ii/49-vector-calculus.md)
 
 #### 数学修正
 
@@ -15950,7 +15950,7 @@
 
 **理由：** 原图这一句话遗漏假设两字，补全后明确本定义采用给定曲线的光滑参数化，后面的积分定义保持不变。
 
-[相关正文：散度定理与 Green 公式](./02-math-analysis-ii/49-vector-calculus.md)
+[相关正文：49：散度定理与 Green 公式](./02-math-analysis-ii/49-vector-calculus.md)
 
 #### 数学修正
 
@@ -15964,7 +15964,7 @@
 
 **理由：** 原图求和指标写i而被求和项使用k，导致k自由且i未出现在项中。向量场坐标展开应对分量指标k求和。
 
-[相关正文：散度定理与 Green 公式](./02-math-analysis-ii/49-vector-calculus.md)
+[相关正文：49：散度定理与 Green 公式](./02-math-analysis-ii/49-vector-calculus.md)
 
 #### 数学修正
 
@@ -15978,7 +15978,7 @@
 
 **理由：** 沿X的方向导数应为向量场Y的方向导数，逐分量结果是ΣX_i∂Y_j/∂x_i。原图误把Y加上求和指标i而得到标量，去掉此下标才与左侧及后续旋度恒等式类型一致。
 
-[相关正文：散度定理与 Green 公式](./02-math-analysis-ii/49-vector-calculus.md)
+[相关正文：49：散度定理与 Green 公式](./02-math-analysis-ii/49-vector-calculus.md)
 
 #### 数学修正
 
@@ -16002,7 +16002,7 @@
 
 **理由：** 本页已经给出正向单位切向量为(−ν₂,ν₁)，与(P,Q)的内积应为−Pν₂+Qν₁。原图下标互换，修正后才与下一页散度(Q,−P)的边界通量一致。
 
-[相关正文：散度定理与 Green 公式](./02-math-analysis-ii/49-vector-calculus.md)
+[相关正文：49：散度定理与 Green 公式](./02-math-analysis-ii/49-vector-calculus.md)
 
 #### 数学修正
 
@@ -16084,7 +16084,7 @@
 
 **问题：** 本段用X(p)切于M说明最后一个导数为零，但这只能在γ(t)已属于M时使用，恰好又是本段待证的结论；而X起初只在M上定义。若从环境空间求解，需先选局部延拓并用唯一性证明M不变；若在M的坐标图内求解，则需明确该构造。现有文字不足以唯一确定作者采用哪一种构造，保留为证明缺口。
 
-[相关正文：散度定理与 Green 公式](./02-math-analysis-ii/49-vector-calculus.md)
+[相关正文：49：散度定理与 Green 公式](./02-math-analysis-ii/49-vector-calculus.md)
 
 #### 数学修正
 
@@ -16098,7 +16098,7 @@
 
 **理由：** 推前测度在像点x处的密度是逆流Φ_−t的Jacobian，所以积分时间应为−t，被积函数应为(div X)(Φ_τ(x))。取X(x)=x时Φ_t(x)=e^t x，推前Lebesgue测度的密度为e^−nt，可直接检验此符号。下一页对固定区域计算也给出了相应负号。
 
-[相关正文：散度定理与 Green 公式](./02-math-analysis-ii/49-vector-calculus.md)
+[相关正文：49：散度定理与 Green 公式](./02-math-analysis-ii/49-vector-calculus.md)
 
 #### 数学修正
 
@@ -16118,7 +16118,7 @@
 
 ### 50 Brouwer 不动点定理与 Hilbert 空间
 
-[相关正文：Brouwer 不动点定理与 Hilbert 空间](./02-math-analysis-ii/50-hilbert-spaces.md)
+[相关正文：50：Brouwer 不动点定理与 Hilbert 空间](./02-math-analysis-ii/50-hilbert-spaces.md)
 
 #### 数学修正
 
@@ -16146,7 +16146,7 @@
 
 **理由：** 源图在Green公式第二步把二维面积积分误标为沿一维边界的积分；Markdown已给正确的D上面积积分，保持正确式。
 
-[相关正文：Brouwer 不动点定理与 Hilbert 空间](./02-math-analysis-ii/50-hilbert-spaces.md)
+[相关正文：50：Brouwer 不动点定理与 Hilbert 空间](./02-math-analysis-ii/50-hilbert-spaces.md)
 
 #### 数学修正
 
@@ -16160,7 +16160,7 @@
 
 **理由：** 原图重复学期词组，删去重复后保留函数空间分析的数学说明。
 
-[相关正文：Brouwer 不动点定理与 Hilbert 空间](./02-math-analysis-ii/50-hilbert-spaces.md)
+[相关正文：50：Brouwer 不动点定理与 Hilbert 空间](./02-math-analysis-ii/50-hilbert-spaces.md)
 
 #### 数学修正
 
@@ -16194,7 +16194,7 @@
 
 **理由：** 本质有界函数空间必须由可测函数构成，否则在不完备的测度空间上可能出现不可测但几乎处处为零的函数，零半范数核与前面定义的N不一致。补齐可测条件，和𝓛¹、𝓛²的定义相容。
 
-[相关正文：Brouwer 不动点定理与 Hilbert 空间](./02-math-analysis-ii/50-hilbert-spaces.md)
+[相关正文：50：Brouwer 不动点定理与 Hilbert 空间](./02-math-analysis-ii/50-hilbert-spaces.md)
 
 #### 数学修正
 
@@ -16208,7 +16208,7 @@
 
 **理由：** 后面称x_Np为子列并使用未定义的N₀，需显式递增选取指标并给出N₀。Cauchy条件的阈值可以任意增大，递归如此选取合法；首项有限，其余差项以2^(−p+1)界定，级数绝对收敛。
 
-[相关正文：Brouwer 不动点定理与 Hilbert 空间](./02-math-analysis-ii/50-hilbert-spaces.md)
+[相关正文：50：Brouwer 不动点定理与 Hilbert 空间](./02-math-analysis-ii/50-hilbert-spaces.md)
 
 #### 数学修正
 
@@ -16866,7 +16866,7 @@
 
 **理由：** 原注记承接p=1、2、∞三个情形，但g属于L²或L∞时A|g|通常不在全空间可积，例如g恒为1。φ的紧支集将积分限定在x−K内，有限测度集上由Hölder不等式可得局部可积，从而每个点的卷积都有定义。
 
-[相关正文：51.1 作业:Stokes公式的应用](./02-math-analysis-ii/51-convolution-approximation/51-03-p0612-0617.md)
+[相关正文：51.1：作业：Stokes公式的应用](./02-math-analysis-ii/51-convolution-approximation/51-03-p0612-0617.md)
 
 #### 数学修正
 
@@ -16924,7 +16924,7 @@
 
 **理由：** Green边界积分域应为已定义区域Ω的边界，原图该题改用了未定义Σ，Markdown已一致为∂Ω。
 
-[相关正文：51.1 作业:Stokes公式的应用](./02-math-analysis-ii/51-convolution-approximation/51-03-p0612-0617.md)
+[相关正文：51.1：作业：Stokes公式的应用](./02-math-analysis-ii/51-convolution-approximation/51-03-p0612-0617.md)
 
 #### 数学修正
 
@@ -16938,7 +16938,7 @@
 
 **理由：** 有心力场F(x)=f(|x|)x是三维向量，随后也与三维曲线切向量作内积；原图把值域误写成标量实数，改为R³。
 
-[相关正文：51.1 作业:Stokes公式的应用](./02-math-analysis-ii/51-convolution-approximation/51-03-p0612-0617.md)
+[相关正文：51.1：作业：Stokes公式的应用](./02-math-analysis-ii/51-convolution-approximation/51-03-p0612-0617.md)
 
 #### 数学修正
 
@@ -16972,7 +16972,7 @@
 
 **理由：** 闭曲线满足γ(a)=γ(b)，因此在整个闭区间上不可能单射。除去最后一个重复端点后单射才表达不自交的简单闭曲线。
 
-[相关正文：51.1 作业:Stokes公式的应用](./02-math-analysis-ii/51-convolution-approximation/51-03-p0612-0617.md)
+[相关正文：51.1：作业：Stokes公式的应用](./02-math-analysis-ii/51-convolution-approximation/51-03-p0612-0617.md)
 
 #### 数学修正
 
@@ -17006,7 +17006,7 @@
 
 **理由：** Green公式给出的面积是有向边界积分的绝对值。一般非星形区域或原点在区域外时行列式会变号，不能逐点取绝对值后积分；绝对值应放到整个积分外。原图位置错误，修正后任意一次遍历方向均给同样面积。
 
-[相关正文：51.2 习题课:Riemann积分的定义2](./02-math-analysis-ii/51-convolution-approximation/51-05-p0618-0622.md)
+[相关正文：51.2：习题课：Riemann积分的定义2](./02-math-analysis-ii/51-convolution-approximation/51-05-p0618-0622.md)
 
 #### 数学修正
 
@@ -17030,7 +17030,7 @@
 
 **理由：** 本页明确f为复值函数，零延拓保留f在A上的复数取值，所以延拓函数的值域仍为C。原图误写R。
 
-[相关正文：51.2 习题课:Riemann积分的定义2](./02-math-analysis-ii/51-convolution-approximation/51-05-p0618-0622.md)
+[相关正文：51.2：习题课：Riemann积分的定义2](./02-math-analysis-ii/51-convolution-approximation/51-05-p0618-0622.md)
 
 #### 数学修正
 
@@ -17044,7 +17044,7 @@
 
 **理由：** 积分内积估计的名称是Cauchy-Schwarz不等式，原图Schwarz姓名漏掉字母c；数学公式保留。
 
-[相关正文：51.2 习题课:Riemann积分的定义2](./02-math-analysis-ii/51-convolution-approximation/51-05-p0618-0622.md)
+[相关正文：51.2：习题课：Riemann积分的定义2](./02-math-analysis-ii/51-convolution-approximation/51-05-p0618-0622.md)
 
 #### 原讲义笔误（正文已订正）
 
@@ -17058,7 +17058,7 @@
 
 **理由：** 此处C包含于B，误差应为大集合测度减小集合测度，原图顺序反转；Markdown已给非负差m(B)−m(C)。
 
-[相关正文：51.2 习题课:Riemann积分的定义2](./02-math-analysis-ii/51-convolution-approximation/51-05-p0618-0622.md)
+[相关正文：51.2：习题课：Riemann积分的定义2](./02-math-analysis-ii/51-convolution-approximation/51-05-p0618-0622.md)
 
 #### 数学修正
 
@@ -17074,7 +17074,7 @@
 
 ### 52 Hilbert 基与 Fourier 级数
 
-[相关正文：Hilbert 基与 Fourier 级数](./02-math-analysis-ii/52-fourier-series.md)
+[相关正文：52：Hilbert 基与 Fourier 级数](./02-math-analysis-ii/52-fourier-series.md)
 
 #### 数学修正
 
@@ -17100,7 +17100,7 @@
 
 **理由：** 测度空间上的积分应写dμ，原图两处在被积函数后直接乘μ，漏掉测度积分的微分记号。
 
-[相关正文：Hilbert 基与 Fourier 级数](./02-math-analysis-ii/52-fourier-series.md)
+[相关正文：52：Hilbert 基与 Fourier 级数](./02-math-analysis-ii/52-fourier-series.md)
 
 #### 数学修正
 
@@ -17124,7 +17124,7 @@
 
 **理由：** 原图我嗯是我们一词的输入笔误，改正后保留δ精度的简单函数选择。
 
-[相关正文：Hilbert 基与 Fourier 级数](./02-math-analysis-ii/52-fourier-series.md)
+[相关正文：52：Hilbert 基与 Fourier 级数](./02-math-analysis-ii/52-fourier-series.md)
 
 #### 数学修正
 
@@ -17222,7 +17222,7 @@
 
 **理由：** 量化练习所在空间为n维，原图将维数n误写b，Markdown已用Rn。
 
-[相关正文：Hilbert 基与 Fourier 级数](./02-math-analysis-ii/52-fourier-series.md)
+[相关正文：52：Hilbert 基与 Fourier 级数](./02-math-analysis-ii/52-fourier-series.md)
 
 #### 数学修正
 
@@ -17296,7 +17296,7 @@
 
 **理由：** 此处控制用于逼近紧集的正方体边长，变长为边长的笔误。
 
-[相关正文：Hilbert 基与 Fourier 级数](./02-math-analysis-ii/52-fourier-series.md)
+[相关正文：52：Hilbert 基与 Fourier 级数](./02-math-analysis-ii/52-fourier-series.md)
 
 #### 数学修正
 
@@ -17334,7 +17334,7 @@
 
 **理由：** 正交投影应保持x沿子空间正交基的坐标；源图把等式两边都写y成为恒等式，Markdown已写正确的x坐标。
 
-[相关正文：Hilbert 基与 Fourier 级数](./02-math-analysis-ii/52-fourier-series.md)
+[相关正文：52：Hilbert 基与 Fourier 级数](./02-math-analysis-ii/52-fourier-series.md)
 
 #### 数学修正
 
@@ -17348,7 +17348,7 @@
 
 **理由：** q的定义域是实数轴，圆周上函数经q拉回后定义在实数轴；原图把拉回函数的定义域仍写成T。
 
-[相关正文：Hilbert 基与 Fourier 级数](./02-math-analysis-ii/52-fourier-series.md)
+[相关正文：52：Hilbert 基与 Fourier 级数](./02-math-analysis-ii/52-fourier-series.md)
 
 #### 数学修正
 
@@ -17412,7 +17412,7 @@
 
 **理由：** 卷积可以作用于L∞与光滑函数的L∞稠密性是不同结论；原文注记紧接错误范围，补明适用范围，避免把存在卷积误读为L∞范数逼近。
 
-[相关正文：Hilbert 基与 Fourier 级数](./02-math-analysis-ii/52-fourier-series.md)
+[相关正文：52：Hilbert 基与 Fourier 级数](./02-math-analysis-ii/52-fourier-series.md)
 
 #### 数学修正
 
@@ -17792,7 +17792,7 @@
 
 **理由：** Fourier系数按归一化测度dx/(2π)定义，原图计算中的三行漏掉归一化；补回后正交积分才等于δ而非2πδ。第一行指数还多出右括号。
 
-[相关正文：53.1 作业:波动方程的局部能量估计](./02-math-analysis-ii/53-fourier-l2/53-03-p0640-0643.md)
+[相关正文：53.1：作业：波动方程的局部能量估计](./02-math-analysis-ii/53-fourier-l2/53-03-p0640-0643.md)
 
 #### 数学修正
 
@@ -17832,7 +17832,7 @@
 
 **理由：** 本题在L²范数中假设收敛，原图箭头误标L¹，Markdown已和上下文一致。
 
-[相关正文：53.1 作业:波动方程的局部能量估计](./02-math-analysis-ii/53-fourier-l2/53-03-p0640-0643.md)
+[相关正文：53.1：作业：波动方程的局部能量估计](./02-math-analysis-ii/53-fourier-l2/53-03-p0640-0643.md)
 
 #### 数学修正
 
@@ -17846,7 +17846,7 @@
 
 **理由：** 随后用时间区间[0,r]定义圆台，截断时刻必须非负。原图只给出上界，漏掉下界。
 
-[相关正文：53.1 作业:波动方程的局部能量估计](./02-math-analysis-ii/53-fourier-l2/53-03-p0640-0643.md)
+[相关正文：53.1：作业：波动方程的局部能量估计](./02-math-analysis-ii/53-fourier-l2/53-03-p0640-0643.md)
 
 #### 数学修正
 
@@ -17916,7 +17916,7 @@
 
 **理由：** 有限传播速度是波动方程解的性质，光滑函数本身不保证有限传播。此题放宽的是先前每时刻紧支集的假设，需要保留波动方程条件。
 
-[相关正文：53.2 习题课:Riemann积分的定义3](./02-math-analysis-ii/53-fourier-l2/53-04-p0644-0646.md)
+[相关正文：53.2：习题课：Riemann积分的定义3](./02-math-analysis-ii/53-fourier-l2/53-04-p0644-0646.md)
 
 #### 数学修正
 
@@ -17930,7 +17930,7 @@
 
 **理由：** 有界集合未必紧，连续函数未必有界。例如(0,1)上1/x连续但非Riemann可积。补充有界性后，零延拓只可能在零测边界上不连续，从而可用Lebesgue判据。
 
-[相关正文：53.2 习题课:Riemann积分的定义3](./02-math-analysis-ii/53-fourier-l2/53-04-p0644-0646.md)
+[相关正文：53.2：习题课：Riemann积分的定义3](./02-math-analysis-ii/53-fourier-l2/53-04-p0644-0646.md)
 
 #### 数学修正
 
@@ -17946,7 +17946,7 @@
 
 ### 54 光滑性、Dirichlet 核与 Fejer 核
 
-[相关正文：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
+[相关正文：54：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
 
 #### 数学修正
 
@@ -17988,7 +17988,7 @@
 
 **理由：** 前一绝对收敛定理假设原函数连续，而此处只假设L¹。应先用一致收敛级数构造连续g，再由相同Fourier系数及连续测试函数稠密性得f=g几乎处处；此后才能对这个代表求导。
 
-[相关正文：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
+[相关正文：54：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
 
 #### 数学修正
 
@@ -18036,7 +18036,7 @@
 
 **理由：** 原图解释对角化时多出重复的成字，删除这个输入错误。
 
-[相关正文：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
+[相关正文：54：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
 
 #### 数学修正
 
@@ -18078,7 +18078,7 @@
 
 **理由：** 本章环面卷积按照μ=dy/(2π)归一化，原图这一行漏掉归一化。用dμ明确采用此前同一个测度。
 
-[相关正文：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
+[相关正文：54：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
 
 #### 数学修正
 
@@ -18092,7 +18092,7 @@
 
 **理由：** 该卷积的函数定义域是环面，上下文的Young不等式也在T上；原图错沿用Rn。
 
-[相关正文：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
+[相关正文：54：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
 
 #### 数学修正
 
@@ -18120,7 +18120,7 @@
 
 **理由：** Cesàro求和保证连续函数的一致收敛，但不能对任意连续函数宣称统一的快速收敛，速率还需要连续模等额外条件。用后续实际证明的结论替换原图笼统速度断言。
 
-[相关正文：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
+[相关正文：54：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
 
 #### 数学修正
 
@@ -18168,7 +18168,7 @@
 
 **理由：** 控制Fejer核分母需要正弦的下界；所用sin(x/2)≥|x|/π由凹性得出。源图给的上界不能用于随后倒数估计，Markdown已使用正确下界。
 
-[相关正文：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
+[相关正文：54：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
 
 #### 数学修正
 
@@ -18182,7 +18182,7 @@
 
 **理由：** 证明只用归一化积分及L¹有界性，不用非负性；配套修正好的核未必是概率密度的称呼。
 
-[相关正文：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
+[相关正文：54：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
 
 #### 数学修正
 
@@ -18230,7 +18230,7 @@
 
 **理由：** Riemann–Lebesgue结论是Fourier系数趋零，通常不会逐项等于零；Markdown已给正确极限。
 
-[相关正文：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
+[相关正文：54：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
 
 #### 数学修正
 
@@ -18264,7 +18264,7 @@
 
 **理由：** 本行计算截断部分和S_N，右边也必须截断到N；原图把有限部分和写成无穷级数。
 
-[相关正文：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
+[相关正文：54：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
 
 #### 数学修正
 
@@ -18308,7 +18308,7 @@
 
 **理由：** 下面不等式含2/x与1/sin(x/2)，x=0时未定义；原图端点应排除。
 
-[相关正文：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
+[相关正文：54：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
 
 #### 数学修正
 
@@ -18322,7 +18322,7 @@
 
 **理由：** 调和级数求和下标需要声明变量k及起点1，原图只写下标1，补齐求和指标。
 
-[相关正文：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
+[相关正文：54：光滑性、Dirichlet 核与 Fejer 核](./02-math-analysis-ii/54-fourier-kernels.md)
 
 #### 数学修正
 
@@ -18686,7 +18686,7 @@
 
 **理由：** Riemann–Lebesgue收敛到零给出的是绝对值小，最终证明需要这个界；原图漏掉绝对值。
 
-[相关正文：55.1 作业:Fourier级数的计算,三角函数与球谐函数](./02-math-analysis-ii/55-fourier-convergence/55-03-p0667-0673.md)
+[相关正文：55.1：作业：Fourier级数的计算，三角函数与球谐函数](./02-math-analysis-ii/55-fourier-convergence/55-03-p0667-0673.md)
 
 #### 数学修正
 
@@ -18700,7 +18700,7 @@
 
 **理由：** α非整数时该指数函数在0与2π的值不同，不能在闭区间两端按公式赋值同时保持2π周期。用半开基本区间定义再周期延拓即可。
 
-[相关正文：55.1 作业:Fourier级数的计算,三角函数与球谐函数](./02-math-analysis-ii/55-fourier-convergence/55-03-p0667-0673.md)
+[相关正文：55.1：作业：Fourier级数的计算，三角函数与球谐函数](./02-math-analysis-ii/55-fourier-convergence/55-03-p0667-0673.md)
 
 #### 数学修正
 
@@ -18734,7 +18734,7 @@
 
 **理由：** 自伴性公式中的函数为f1、f2，与前面量词统一，避免未定义的函数变量。
 
-[相关正文：55.1 作业:Fourier级数的计算,三角函数与球谐函数](./02-math-analysis-ii/55-fourier-convergence/55-03-p0667-0673.md)
+[相关正文：55.1：作业：Fourier级数的计算，三角函数与球谐函数](./02-math-analysis-ii/55-fourier-convergence/55-03-p0667-0673.md)
 
 #### 数学修正
 
@@ -18768,7 +18768,7 @@
 
 **理由：** 球面内积公式使用f1、f2，修正前面量词中的变量名称使其对应同一对函数。
 
-[相关正文：55.1 作业:Fourier级数的计算,三角函数与球谐函数](./02-math-analysis-ii/55-fourier-convergence/55-03-p0667-0673.md)
+[相关正文：55.1：作业：Fourier级数的计算，三角函数与球谐函数](./02-math-analysis-ii/55-fourier-convergence/55-03-p0667-0673.md)
 
 #### 数学修正
 
@@ -18782,7 +18782,7 @@
 
 **理由：** 球面自伴性公式使用f1、f2，将量词所指定的函数名称与公式统一。
 
-[相关正文：55.1 作业:Fourier级数的计算,三角函数与球谐函数](./02-math-analysis-ii/55-fourier-convergence/55-03-p0667-0673.md)
+[相关正文：55.1：作业：Fourier级数的计算，三角函数与球谐函数](./02-math-analysis-ii/55-fourier-convergence/55-03-p0667-0673.md)
 
 #### 数学修正
 
@@ -18810,7 +18810,7 @@
 
 **理由：** 紧接着要求证明D_i作用于P^ell，定义必须先对所有P^ell给出，再限制到其调和子空间H^ell。原图将初始定义域写窄了。
 
-[相关正文：55.1 作业:Fourier级数的计算,三角函数与球谐函数](./02-math-analysis-ii/55-fourier-convergence/55-03-p0667-0673.md)
+[相关正文：55.1：作业：Fourier级数的计算，三角函数与球谐函数](./02-math-analysis-ii/55-fourier-convergence/55-03-p0667-0673.md)
 
 #### 数学修正
 
@@ -18844,7 +18844,7 @@
 
 **理由：** 球谐次数ell的特征空间维数为2ell+1，前页S8已证明；ell(ell+1)是特征值。原图混淆维数与特征值。
 
-[相关正文：55.1 作业:Fourier级数的计算,三角函数与球谐函数](./02-math-analysis-ii/55-fourier-convergence/55-03-p0667-0673.md)
+[相关正文：55.1：作业：Fourier级数的计算，三角函数与球谐函数](./02-math-analysis-ii/55-fourier-convergence/55-03-p0667-0673.md)
 
 #### 数学修正
 
@@ -18874,7 +18874,7 @@
 
 ### 56 Bernstein 定理与等分布
 
-[相关正文：Bernstein 定理与等分布](./02-math-analysis-ii/56-bernstein-equidistribution.md)
+[相关正文：56：Bernstein 定理与等分布](./02-math-analysis-ii/56-bernstein-equidistribution.md)
 
 #### 数学修正
 
@@ -18928,7 +18928,7 @@
 
 **理由：** 上一行是原函数积分减去平移函数积分，合并后也必须是f(x)−f(x+π/k)；原图合并时倒置了差值，等式差一个负号。后续绝对值估计不受影响。
 
-[相关正文：Bernstein 定理与等分布](./02-math-analysis-ii/56-bernstein-equidistribution.md)
+[相关正文：56：Bernstein 定理与等分布](./02-math-analysis-ii/56-bernstein-equidistribution.md)
 
 #### 数学修正
 
@@ -18952,7 +18952,7 @@
 
 **理由：** 该级数只在正的二进制频率2^k有项，其他整数频率的Fourier系数为零；原图把稀疏频率的公式误写成所有l都成立。
 
-[相关正文：Bernstein 定理与等分布](./02-math-analysis-ii/56-bernstein-equidistribution.md)
+[相关正文：56：Bernstein 定理与等分布](./02-math-analysis-ii/56-bernstein-equidistribution.md)
 
 #### 数学修正
 
@@ -19026,7 +19026,7 @@
 
 **理由：** 对f乘任意大常数会把系数平方界相应放大，常数不可能与f无关。此证明需要的只是常数对二进制块指标p统一。
 
-[相关正文：Bernstein 定理与等分布](./02-math-analysis-ii/56-bernstein-equidistribution.md)
+[相关正文：56：Bernstein 定理与等分布](./02-math-analysis-ii/56-bernstein-equidistribution.md)
 
 #### 数学修正
 
@@ -19090,7 +19090,7 @@
 
 **理由：** 原图只知道开区间内无点，却马上把闭区间的计数设为零，端点可能有点。先缩小到不含原端点的闭子区间，才能使用后面的零计数。
 
-[相关正文：Bernstein 定理与等分布](./02-math-analysis-ii/56-bernstein-equidistribution.md)
+[相关正文：56：Bernstein 定理与等分布](./02-math-analysis-ii/56-bernstein-equidistribution.md)
 
 #### 数学修正
 
@@ -19192,7 +19192,7 @@
 
 **理由：** 下面先用三角多项式逼近周期连续函数，C[0,1)会容许无界或端点不一致的函数，不能用该一致逼近。明确这一阶段的周期连续范围，后文再推广到Riemann可积函数。
 
-[相关正文：Bernstein 定理与等分布](./02-math-analysis-ii/56-bernstein-equidistribution.md)
+[相关正文：56：Bernstein 定理与等分布](./02-math-analysis-ii/56-bernstein-equidistribution.md)
 
 #### 数学修正
 
@@ -19344,7 +19344,7 @@
 
 **理由：** 上逼近函数在左侧a−δ到a应从0升到1，原图负斜率使其从2降到1。改为正斜率。
 
-[相关正文：Bernstein 定理与等分布](./02-math-analysis-ii/56-bernstein-equidistribution.md)
+[相关正文：56：Bernstein 定理与等分布](./02-math-analysis-ii/56-bernstein-equidistribution.md)
 
 #### 数学修正
 
@@ -19442,7 +19442,7 @@
 
 **理由：** 阶梯函数应以互不重叠的半开分割区间定义；闭区间会在节点重复计数，任意等分布序列可命中节点而破坏逐点上下界。改为半开区间后对[0,1)所有点均有正确夹逼。
 
-[相关正文：Bernstein 定理与等分布](./02-math-analysis-ii/56-bernstein-equidistribution.md)
+[相关正文：56：Bernstein 定理与等分布](./02-math-analysis-ii/56-bernstein-equidistribution.md)
 
 #### 数学修正
 
@@ -19484,7 +19484,7 @@
 
 **理由：** 与上式前n−1个单位区间匹配，积分上端应为n，原图错误写为n−1。
 
-[相关正文：Bernstein 定理与等分布](./02-math-analysis-ii/56-bernstein-equidistribution.md)
+[相关正文：56：Bernstein 定理与等分布](./02-math-analysis-ii/56-bernstein-equidistribution.md)
 
 #### 数学修正
 
@@ -19582,7 +19582,7 @@
 
 **理由：** 此例已经改为a log k，没有参数σ；导数估计的常数依赖固定的b即可，原图沿用上一例的多余参数。
 
-[相关正文：Bernstein 定理与等分布](./02-math-analysis-ii/56-bernstein-equidistribution.md)
+[相关正文：56：Bernstein 定理与等分布](./02-math-analysis-ii/56-bernstein-equidistribution.md)
 
 #### 数学修正
 
@@ -20022,7 +20022,7 @@
 
 **问题：** 调和性在旋转下不变，并不意味着一个非径向函数只需在一条半径上验证Laplace算子为零；Poisson核依赖θ，原第二种捷径缺乏推论。前面按局部一致收敛的幂级数逐项求导已能证明调和性；此处额外捷径保留为论证疑点，不能宣称已被证实。
 
-[相关正文：57.1 作业:Fourier级数几乎处处发散的L1-函数](./02-math-analysis-ii/57-roth-theorem/57-04-p0698-0703.md)
+[相关正文：57.1：作业：Fourier级数几乎处处发散的L1-函数](./02-math-analysis-ii/57-roth-theorem/57-04-p0698-0703.md)
 
 #### 数学修正
 
@@ -20046,7 +20046,7 @@
 
 **理由：** 锯齿函数分段定义第二支需注明0<x<2π，才能与x=0的单独取值及周期延拓区分。
 
-[相关正文：57.1 作业:Fourier级数几乎处处发散的L1-函数](./02-math-analysis-ii/57-roth-theorem/57-04-p0698-0703.md)
+[相关正文：57.1：作业：Fourier级数几乎处处发散的L1-函数](./02-math-analysis-ii/57-roth-theorem/57-04-p0698-0703.md)
 
 #### 数学修正
 
@@ -20090,7 +20090,7 @@
 
 **理由：** k=0使分母为零，必须排除；对其余频率由Parseval与Σk^−2有限、Cauchy–Schwarz即得绝对收敛。
 
-[相关正文：57.1 作业:Fourier级数几乎处处发散的L1-函数](./02-math-analysis-ii/57-roth-theorem/57-04-p0698-0703.md)
+[相关正文：57.1：作业：Fourier级数几乎处处发散的L1-函数](./02-math-analysis-ii/57-roth-theorem/57-04-p0698-0703.md)
 
 #### 数学修正
 
@@ -20104,7 +20104,7 @@
 
 **理由：** 下一页同时规定m1=n和2m_k+1=λ_k(2n+1)，这强制λ1=1，不能任意取第一个正奇数。其余频率可归纳选大。
 
-[相关正文：57.1 作业:Fourier级数几乎处处发散的L1-函数](./02-math-analysis-ii/57-roth-theorem/57-04-p0698-0703.md)
+[相关正文：57.1：作业：Fourier级数几乎处处发散的L1-函数](./02-math-analysis-ii/57-roth-theorem/57-04-p0698-0703.md)
 
 #### 数学修正
 
@@ -20138,7 +20138,7 @@
 
 **理由：** σ在开头定义为σ2到σn，原图索引写到n−1并隐含未定义σ1；区间族应覆盖实际全部σ和Δ。
 
-[相关正文：57.1 作业:Fourier级数几乎处处发散的L1-函数](./02-math-analysis-ii/57-roth-theorem/57-04-p0698-0703.md)
+[相关正文：57.1：作业：Fourier级数几乎处处发散的L1-函数](./02-math-analysis-ii/57-roth-theorem/57-04-p0698-0703.md)
 
 #### 数学修正
 
@@ -20182,7 +20182,7 @@
 
 **理由：** M序列从1起，递推与M_{n−1}比较仅可从n=2起；原图对n=1引用未定义M0。M1≥2已另行给定。
 
-[相关正文：57.1 作业:Fourier级数几乎处处发散的L1-函数](./02-math-analysis-ii/57-roth-theorem/57-04-p0698-0703.md)
+[相关正文：57.1：作业：Fourier级数几乎处处发散的L1-函数](./02-math-analysis-ii/57-roth-theorem/57-04-p0698-0703.md)
 
 #### 数学修正
 
@@ -20226,7 +20226,7 @@
 
 **理由：** 此处S_N是周期函数Fourier级数的截断和，原图误称Fourier变换的部分和。
 
-[相关正文：57.2 期末考试:Maass波函数的展开](./02-math-analysis-ii/57-roth-theorem/57-06-p0704-0708.md)
+[相关正文：57.2：期末考试：Maass波函数的展开](./02-math-analysis-ii/57-roth-theorem/57-06-p0704-0708.md)
 
 #### 数学修正
 
@@ -20250,7 +20250,7 @@
 
 **理由：** M8展开的系数和指数均用k，应对k求和，原图误把求和指标写为n。
 
-[相关正文：57.2 期末考试:Maass波函数的展开](./02-math-analysis-ii/57-roth-theorem/57-06-p0704-0708.md)
+[相关正文：57.2：期末考试：Maass波函数的展开](./02-math-analysis-ii/57-roth-theorem/57-06-p0704-0708.md)
 
 #### 数学修正
 
@@ -20294,7 +20294,7 @@
 
 ### 58 分布的定义与基本例子
 
-[相关正文：分布的定义与基本例子](./03-math-analysis-iii/58-distributions.md)
+[相关正文：58：分布的定义与基本例子](./03-math-analysis-iii/58-distributions.md)
 
 #### 数学修正
 
@@ -20308,7 +20308,7 @@
 
 **理由：** 此句描述任意试验函数φ的支集，源图却在结论突然写未定义f，应统一为φ。
 
-[相关正文：分布的定义与基本例子](./03-math-analysis-iii/58-distributions.md)
+[相关正文：58：分布的定义与基本例子](./03-math-analysis-iii/58-distributions.md)
 
 #### 数学修正
 
@@ -20334,7 +20334,7 @@
 
 **理由：** 定义390阶参数为p；源图写q而canonical已统一p，保留正确规范化。
 
-[相关正文：分布的定义与基本例子](./03-math-analysis-iii/58-distributions.md)
+[相关正文：58：分布的定义与基本例子](./03-math-analysis-iii/58-distributions.md)
 
 #### 数学修正
 
@@ -20434,7 +20434,7 @@
 
 **理由：** 任意复试验函数的配对需取模，再将两个已各小于η的项相加，完成原收敛证明；源图漏模且容差参数错误。
 
-[相关正文：分布的定义与基本例子](./03-math-analysis-iii/58-distributions.md)
+[相关正文：58：分布的定义与基本例子](./03-math-analysis-iii/58-distributions.md)
 
 #### 数学修正
 
@@ -20468,7 +20468,7 @@
 
 **理由：** 分布定义为复线性泛函，而前面Radon测度为非负测度，例如−δ0和iδ0阶0却不来自非负测度。Riesz表示对应局部有限全变差的复测度，源图漏复及全变差条件。
 
-[相关正文：分布的定义与基本例子](./03-math-analysis-iii/58-distributions.md)
+[相关正文：58：分布的定义与基本例子](./03-math-analysis-iii/58-distributions.md)
 
 #### 数学修正
 
@@ -20496,7 +20496,7 @@
 
 **理由：** 源图此证明使用支集到K距离≤ε及交换χε(x−y)为χε(y−x)，需要单位球支集和偶核；命题391任意χ不保证这两条。本证明可自由选取具有两性质的核，补其选取不改变命题391。
 
-[相关正文：分布的定义与基本例子](./03-math-analysis-iii/58-distributions.md)
+[相关正文：58：分布的定义与基本例子](./03-math-analysis-iii/58-distributions.md)
 
 #### 数学修正
 
@@ -20526,7 +20526,7 @@
 
 ### 59 分布的操作与 Stokes 公式
 
-[相关正文：分布的操作与 Stokes 公式](./03-math-analysis-iii/59-distribution-operations.md)
+[相关正文：59：分布的操作与 Stokes 公式](./03-math-analysis-iii/59-distribution-operations.md)
 
 #### 数学修正
 
@@ -20558,7 +20558,7 @@
 
 **理由：** 由⟨H′,φ⟩=−⟨H,φ′⟩，积分前必须有负号才得φ(0)；源图漏负。
 
-[相关正文：分布的操作与 Stokes 公式](./03-math-analysis-iii/59-distribution-operations.md)
+[相关正文：59：分布的操作与 Stokes 公式](./03-math-analysis-iii/59-distribution-operations.md)
 
 #### 数学修正
 
@@ -20645,7 +20645,7 @@
 
 **理由：** 原图两处正半轴本应成为∫φ/x而误留φ′log；canonical已正确转录，不虚构修正候选。
 
-[相关正文：分布的操作与 Stokes 公式](./03-math-analysis-iii/59-distribution-operations.md)
+[相关正文：59：分布的操作与 Stokes 公式](./03-math-analysis-iii/59-distribution-operations.md)
 
 #### 数学修正
 
@@ -20695,7 +20695,7 @@
 
 **理由：** 方向向量为v，差商抵消项源图误写未定义aj，应vj以衔接Taylor式。
 
-[相关正文：分布的操作与 Stokes 公式](./03-math-analysis-iii/59-distribution-operations.md)
+[相关正文：59：分布的操作与 Stokes 公式](./03-math-analysis-iii/59-distribution-operations.md)
 
 #### 数学修正
 
@@ -20781,7 +20781,7 @@
 
 **理由：** 被估计函数变量y∈Ω2，支集在H=Φ(K)，不能取x空间K上范数，源图混淆两紧集。
 
-[相关正文：分布的操作与 Stokes 公式](./03-math-analysis-iii/59-distribution-operations.md)
+[相关正文：59：分布的操作与 Stokes 公式](./03-math-analysis-iii/59-distribution-operations.md)
 
 #### 数学修正
 
@@ -20795,7 +20795,7 @@
 
 **理由：** 求导对象φ∘Φ^-1乘Jac逆，其系数由逆映射和Jac逆的导数构成，并在y域H紧集上有界，源图用Φ(y)及K均错。
 
-[相关正文：分布的操作与 Stokes 公式](./03-math-analysis-iii/59-distribution-operations.md)
+[相关正文：59：分布的操作与 Stokes 公式](./03-math-analysis-iii/59-distribution-operations.md)
 
 #### 数学修正
 
@@ -20841,7 +20841,7 @@
 
 **理由：** Σk(∂jΦk∘Ψ)∂yk(φ∘Ψ)=∂jφ∘Ψ，前一行负号必须保留；源图中间行漏负，与下一行不一致。
 
-[相关正文：分布的操作与 Stokes 公式](./03-math-analysis-iii/59-distribution-operations.md)
+[相关正文：59：分布的操作与 Stokes 公式](./03-math-analysis-iii/59-distribution-operations.md)
 
 #### 数学修正
 
@@ -20855,7 +20855,7 @@
 
 **理由：** xk从左趋x时x处指示值不趋1，只有几乎处处收敛；单点零测集不影响DCT，源图逐点声称过强。
 
-[相关正文：分布的操作与 Stokes 公式](./03-math-analysis-iii/59-distribution-operations.md)
+[相关正文：59：分布的操作与 Stokes 公式](./03-math-analysis-iii/59-distribution-operations.md)
 
 #### 数学修正
 
@@ -20931,7 +20931,7 @@
 
 ### 60 跳跃公式、Cauchy 积分与单位分解
 
-[相关正文：跳跃公式、Cauchy 积分与单位分解](./03-math-analysis-iii/60-jump-cauchy.md)
+[相关正文：60：跳跃公式、Cauchy 积分与单位分解](./03-math-analysis-iii/60-jump-cauchy.md)
 
 #### 数学修正
 
@@ -20951,7 +20951,7 @@
 
 **理由：** 源图展开负配对时丢负号；线性展开−〈u,φ−(∫φ)χ〉为−〈u,φ〉+c∫φ。
 
-[相关正文：跳跃公式、Cauchy 积分与单位分解](./03-math-analysis-iii/60-jump-cauchy.md)
+[相关正文：60：跳跃公式、Cauchy 积分与单位分解](./03-math-analysis-iii/60-jump-cauchy.md)
 
 #### 数学修正
 
@@ -20965,7 +20965,7 @@
 
 **理由：** 源图缺可字，C1意为连续可微。；已逐页核对原图，所改片段由上下文唯一确定。
 
-[相关正文：跳跃公式、Cauchy 积分与单位分解](./03-math-analysis-iii/60-jump-cauchy.md)
+[相关正文：60：跳跃公式、Cauchy 积分与单位分解](./03-math-analysis-iii/60-jump-cauchy.md)
 
 #### 数学修正
 
@@ -20989,7 +20989,7 @@
 
 **理由：** 源图另为令的笔误。；已逐页核对原图，所改片段由上下文唯一确定。
 
-[相关正文：跳跃公式、Cauchy 积分与单位分解](./03-math-analysis-iii/60-jump-cauchy.md)
+[相关正文：60：跳跃公式、Cauchy 积分与单位分解](./03-math-analysis-iii/60-jump-cauchy.md)
 
 #### 数学修正
 
@@ -21055,7 +21055,7 @@
 
 **理由：** 源图函数z→1/2，后文明确为1/z且导数为δ的Cauchy基本解；canonical已正确。
 
-[相关正文：跳跃公式、Cauchy 积分与单位分解](./03-math-analysis-iii/60-jump-cauchy.md)
+[相关正文：60：跳跃公式、Cauchy 积分与单位分解](./03-math-analysis-iii/60-jump-cauchy.md)
 
 #### 数学修正
 
@@ -21105,7 +21105,7 @@
 
 **理由：** 源图人名漏s。；已逐页核对原图，所改片段由上下文唯一确定。
 
-[相关正文：跳跃公式、Cauchy 积分与单位分解](./03-math-analysis-iii/60-jump-cauchy.md)
+[相关正文：60：跳跃公式、Cauchy 积分与单位分解](./03-math-analysis-iii/60-jump-cauchy.md)
 
 #### 数学修正
 
@@ -21139,7 +21139,7 @@
 
 **问题：** 源图仅要求分段开区间上C1和整曲线连续，无法保证有限长度或端点导数可积，例如s sin(1/s²)在0附近可有无限变差。通常分段C1要求每一闭段C1延拓；是否约定此含义未明，不能悄改定义。
 
-[相关正文：跳跃公式、Cauchy 积分与单位分解](./03-math-analysis-iii/60-jump-cauchy.md)
+[相关正文：60：跳跃公式、Cauchy 积分与单位分解](./03-math-analysis-iii/60-jump-cauchy.md)
 
 #### 数学修正
 
@@ -21173,7 +21173,7 @@
 
 **理由：** 源图示例整指数变量印成z，canonical已按z^k正确写k。
 
-[相关正文：跳跃公式、Cauchy 积分与单位分解](./03-math-analysis-iii/60-jump-cauchy.md)
+[相关正文：60：跳跃公式、Cauchy 积分与单位分解](./03-math-analysis-iii/60-jump-cauchy.md)
 
 #### 数学修正
 
@@ -21227,7 +21227,7 @@
 
 **理由：** 源图引理407只有单一函数φ，无φ_i，故删除下标i。
 
-[相关正文：跳跃公式、Cauchy 积分与单位分解](./03-math-analysis-iii/60-jump-cauchy.md)
+[相关正文：60：跳跃公式、Cauchy 积分与单位分解](./03-math-analysis-iii/60-jump-cauchy.md)
 
 #### 数学修正
 
@@ -21531,7 +21531,7 @@
 
 **理由：** 源图近为多余误字，所指明确为多项式乘截断的试验函数。
 
-[相关正文：61.1 作业:齐次分布,Hadamard有限部分,分布除以多项式](./03-math-analysis-iii/61-distribution-support/61-03-p0742-0746.md)
+[相关正文：61.1：作业：齐次分布，Hadamard有限部分，分布除以多项式](./03-math-analysis-iii/61-distribution-support/61-03-p0742-0746.md)
 
 #### 数学修正
 
@@ -21549,7 +21549,7 @@
 
 **理由：** 源图A7积分省掉微分dx，需补全积分变量以匹配配对定义。
 
-[相关正文：61.1 作业:齐次分布,Hadamard有限部分,分布除以多项式](./03-math-analysis-iii/61-distribution-support/61-03-p0742-0746.md)
+[相关正文：61.1：作业：齐次分布，Hadamard有限部分，分布除以多项式](./03-math-analysis-iii/61-distribution-support/61-03-p0742-0746.md)
 
 #### 数学修正
 
@@ -21563,7 +21563,7 @@
 
 **理由：** 源图C1句法缺是，−1<α<0保证0附近可积，改后命题准确。
 
-[相关正文：61.1 作业:齐次分布,Hadamard有限部分,分布除以多项式](./03-math-analysis-iii/61-distribution-support/61-03-p0742-0746.md)
+[相关正文：61.1：作业：齐次分布，Hadamard有限部分，分布除以多项式](./03-math-analysis-iii/61-distribution-support/61-03-p0742-0746.md)
 
 #### 数学修正
 
@@ -21581,7 +21581,7 @@
 
 **理由：** 源图C4公式漏积分微分dx，与引入它的句子及C2一致。
 
-[相关正文：61.1 作业:齐次分布,Hadamard有限部分,分布除以多项式](./03-math-analysis-iii/61-distribution-support/61-03-p0742-0746.md)
+[相关正文：61.1：作业：齐次分布，Hadamard有限部分，分布除以多项式](./03-math-analysis-iii/61-distribution-support/61-03-p0742-0746.md)
 
 #### 数学修正
 
@@ -21607,7 +21607,7 @@
 
 ### 62 分布的卷积
 
-[相关正文：分布的卷积](./03-math-analysis-iii/62-distribution-convolution.md)
+[相关正文：62：分布的卷积](./03-math-analysis-iii/62-distribution-convolution.md)
 
 #### 数学修正
 
@@ -21673,7 +21673,7 @@
 
 **理由：** 源图已设bj→b，一般平移极限应φ(y+b)，只在b=0时才是φ(y)。
 
-[相关正文：分布的卷积](./03-math-analysis-iii/62-distribution-convolution.md)
+[相关正文：62：分布的卷积](./03-math-analysis-iii/62-distribution-convolution.md)
 
 #### 数学修正
 
@@ -21763,7 +21763,7 @@
 
 **理由：** 源图将先取φ方向导数再在x0卷积取值误括成卷积一个常数，应先卷积函数∇aφ后在x0求值。
 
-[相关正文：分布的卷积](./03-math-analysis-iii/62-distribution-convolution.md)
+[相关正文：62：分布的卷积](./03-math-analysis-iii/62-distribution-convolution.md)
 
 #### 数学修正
 
@@ -21801,7 +21801,7 @@
 
 **理由：** 源图Riemann分割漏最左小区间[−A,−A+1/k]，完整分割应j=−kA,…,kA−1；端点φ(x,A)=0使原部分和一致。
 
-[相关正文：分布的卷积](./03-math-analysis-iii/62-distribution-convolution.md)
+[相关正文：62：分布的卷积](./03-math-analysis-iii/62-distribution-convolution.md)
 
 #### 数学修正
 
@@ -21909,7 +21909,7 @@
 
 **理由：** 源图末行微分顺序需与外Rp−1、内R的积分顺序一致，内yp外y′。
 
-[相关正文：分布的卷积](./03-math-analysis-iii/62-distribution-convolution.md)
+[相关正文：62：分布的卷积](./03-math-analysis-iii/62-distribution-convolution.md)
 
 #### 数学修正
 
@@ -21923,7 +21923,7 @@
 
 **理由：** 源图领域应为邻域，闭集外点具有不与闭集相交的开邻域。
 
-[相关正文：分布的卷积](./03-math-analysis-iii/62-distribution-convolution.md)
+[相关正文：62：分布的卷积](./03-math-analysis-iii/62-distribution-convolution.md)
 
 #### 数学修正
 
@@ -21947,7 +21947,7 @@
 
 **理由：** 源图把试验函数写入分布空间D′，测试分布收敛所需的是D中的试验函数。
 
-[相关正文：分布的卷积](./03-math-analysis-iii/62-distribution-convolution.md)
+[相关正文：62：分布的卷积](./03-math-analysis-iii/62-distribution-convolution.md)
 
 #### 数学修正
 
@@ -21961,7 +21961,7 @@
 
 **理由：** 源图定理418前后所有对象定义在Rn，d未定义，为n的笔误。
 
-[相关正文：分布的卷积](./03-math-analysis-iii/62-distribution-convolution.md)
+[相关正文：62：分布的卷积](./03-math-analysis-iii/62-distribution-convolution.md)
 
 #### 数学修正
 
@@ -21997,7 +21997,7 @@
 
 **理由：** 源图卷积左边漏check，canonical已正确恢复，与δ−a一致。
 
-[相关正文：分布的卷积](./03-math-analysis-iii/62-distribution-convolution.md)
+[相关正文：62：分布的卷积](./03-math-analysis-iii/62-distribution-convolution.md)
 
 #### 数学修正
 
@@ -22343,7 +22343,7 @@
 
 **理由：** 原句语法不完整，两个Gaussian积分均有限，此处应写都是有限的。
 
-[相关正文：63.1 作业:分布的例子,Laplace算子、位势方程与分布](./03-math-analysis-iii/63-fundamental-solutions/63-03-p0765-0771.md)
+[相关正文：63.1：作业：分布的例子，Laplace算子、位势方程与分布](./03-math-analysis-iii/63-fundamental-solutions/63-03-p0765-0771.md)
 
 #### 数学修正
 
@@ -22361,7 +22361,7 @@
 
 **理由：** 源图A0的U未定义，假设给定开集为Ω，截断邻域应包含在Ω内。
 
-[相关正文：63.1 作业:分布的例子,Laplace算子、位势方程与分布](./03-math-analysis-iii/63-fundamental-solutions/63-03-p0765-0771.md)
+[相关正文：63.1：作业：分布的例子，Laplace算子、位势方程与分布](./03-math-analysis-iii/63-fundamental-solutions/63-03-p0765-0771.md)
 
 #### 数学修正
 
@@ -22399,7 +22399,7 @@
 
 **理由：** 源图增量第二项重复x0+εa，canonical已正确改为x0。
 
-[相关正文：63.1 作业:分布的例子,Laplace算子、位势方程与分布](./03-math-analysis-iii/63-fundamental-solutions/63-03-p0765-0771.md)
+[相关正文：63.1：作业：分布的例子，Laplace算子、位势方程与分布](./03-math-analysis-iii/63-fundamental-solutions/63-03-p0765-0771.md)
 
 #### 数学修正
 
@@ -22425,7 +22425,7 @@
 
 **理由：** 源图A7试验函数域Rb中的b未定义，canonical已正确写Rn。
 
-[相关正文：63.1 作业:分布的例子,Laplace算子、位势方程与分布](./03-math-analysis-iii/63-fundamental-solutions/63-03-p0765-0771.md)
+[相关正文：63.1：作业：分布的例子，Laplace算子、位势方程与分布](./03-math-analysis-iii/63-fundamental-solutions/63-03-p0765-0771.md)
 
 #### 数学修正
 
@@ -22443,7 +22443,7 @@
 
 **理由：** 源图Poisson核分母漏平方，现式总质量为√ε趋0；应ε/(π(x²+ε²))总质量1，且ε→0+，负侧质量−1不趋δ。
 
-[相关正文：63.1 作业:分布的例子,Laplace算子、位势方程与分布](./03-math-analysis-iii/63-fundamental-solutions/63-03-p0765-0771.md)
+[相关正文：63.1：作业：分布的例子，Laplace算子、位势方程与分布](./03-math-analysis-iii/63-fundamental-solutions/63-03-p0765-0771.md)
 
 #### 数学修正
 
@@ -22477,7 +22477,7 @@
 
 **理由：** 源图题目自指C6，当前结论继续使用C5定义的n≥3基本解，故应接C5。
 
-[相关正文：63.1 作业:分布的例子,Laplace算子、位势方程与分布](./03-math-analysis-iii/63-fundamental-solutions/63-03-p0765-0771.md)
+[相关正文：63.1：作业：分布的例子，Laplace算子、位势方程与分布](./03-math-analysis-iii/63-fundamental-solutions/63-03-p0765-0771.md)
 
 #### 数学修正
 
@@ -22501,7 +22501,7 @@
 
 **理由：** 源图〈f,1〉是源分布f的总质量/电量，u是其位势且通常无有限积分。
 
-[相关正文：63.1 作业:分布的例子,Laplace算子、位势方程与分布](./03-math-analysis-iii/63-fundamental-solutions/63-03-p0765-0771.md)
+[相关正文：63.1：作业：分布的例子，Laplace算子、位势方程与分布](./03-math-analysis-iii/63-fundamental-solutions/63-03-p0765-0771.md)
 
 #### 数学修正
 
@@ -22525,7 +22525,7 @@
 
 ### 64 可卷集与三维波动方程
 
-[相关正文：可卷集与三维波动方程](./03-math-analysis-iii/64-wave-equation.md)
+[相关正文：64：可卷集与三维波动方程](./03-math-analysis-iii/64-wave-equation.md)
 
 #### 原讲义笔误（正文已订正）
 
@@ -22559,7 +22559,7 @@
 
 **问题：** 源图可数J任意选择xj未保证Σj xj收敛，表达式无法定义；通常可卷有限族/有限子族条件足以定义有限卷积。一般无限族的作者意图和级数收敛条件不明，暂保留疑点。
 
-[相关正文：可卷集与三维波动方程](./03-math-analysis-iii/64-wave-equation.md)
+[相关正文：64：可卷集与三维波动方程](./03-math-analysis-iii/64-wave-equation.md)
 
 #### 数学修正
 
@@ -22591,7 +22591,7 @@
 
 **理由：** 源图声称稳定的等式右边也写k，恒等式不能说明稳定；canonical已正确写N。
 
-[相关正文：可卷集与三维波动方程](./03-math-analysis-iii/64-wave-equation.md)
+[相关正文：64：可卷集与三维波动方程](./03-math-analysis-iii/64-wave-equation.md)
 
 #### 数学修正
 
@@ -22651,7 +22651,7 @@
 
 **理由：** 源图分布连续性应固定试验函数支集界，不应假设一般u紧支；canonical已正确写φ。
 
-[相关正文：可卷集与三维波动方程](./03-math-analysis-iii/64-wave-equation.md)
+[相关正文：64：可卷集与三维波动方程](./03-math-analysis-iii/64-wave-equation.md)
 
 #### 数学修正
 
@@ -22675,7 +22675,7 @@
 
 **理由：** 源图此节指定R^(1+3)波动算子，n无另定义，应为3。
 
-[相关正文：可卷集与三维波动方程](./03-math-analysis-iii/64-wave-equation.md)
+[相关正文：64：可卷集与三维波动方程](./03-math-analysis-iii/64-wave-equation.md)
 
 #### 数学修正
 
@@ -22746,7 +22746,7 @@
 
 **理由：** 源图此处径向2/r及角向1/r²均漏一r，canonical此前第一处已正确，后续两处另有真实候选。
 
-[相关正文：可卷集与三维波动方程](./03-math-analysis-iii/64-wave-equation.md)
+[相关正文：64：可卷集与三维波动方程](./03-math-analysis-iii/64-wave-equation.md)
 
 #### 数学修正
 
@@ -22788,7 +22788,7 @@
 
 **理由：** 源图underlineLψ在顶点极限应−φ0，球面面积4π故其边界极限为−4πφ0；前式额外负边界后得到+4πφ0。
 
-[相关正文：可卷集与三维波动方程](./03-math-analysis-iii/64-wave-equation.md)
+[相关正文：64：可卷集与三维波动方程](./03-math-analysis-iii/64-wave-equation.md)
 
 #### 数学修正
 
@@ -23342,7 +23342,7 @@
 
 **理由：** 源图只有逐x极限不能单独推出整个周期条带有界；sin项随|y|指数衰减，Σn1/((x−n)²+y²)=O(1/|y|)在x∈[0,1]一致，故F极限一致为0。
 
-[相关正文：65.1 L1 Fourier 变换与逆变换](./03-math-analysis-iii/65-complex-fourier/65-03-p0790-0797.md)
+[相关正文：65.1：L1 Fourier 变换与逆变换](./03-math-analysis-iii/65-complex-fourier/65-03-p0790-0797.md)
 
 #### 数学修正
 
@@ -23366,7 +23366,7 @@
 
 **理由：** 源图证明C圈闭性时序列需取其中，而非任意连续函数；否则后文fN∈C圈不成立（常数列1反例）。
 
-[相关正文：65.1 L1 Fourier 变换与逆变换](./03-math-analysis-iii/65-complex-fourier/65-03-p0790-0797.md)
+[相关正文：65.1：L1 Fourier 变换与逆变换](./03-math-analysis-iii/65-complex-fourier/65-03-p0790-0797.md)
 
 #### 数学修正
 
@@ -23410,7 +23410,7 @@
 
 **理由：** 源图句尾缺谓语一致，补全与前面分部积分想法的比较。
 
-[相关正文：65.1 L1 Fourier 变换与逆变换](./03-math-analysis-iii/65-complex-fourier/65-03-p0790-0797.md)
+[相关正文：65.1：L1 Fourier 变换与逆变换](./03-math-analysis-iii/65-complex-fourier/65-03-p0790-0797.md)
 
 #### 数学修正
 
@@ -23444,7 +23444,7 @@
 
 **理由：** 源图此命题n维积分，x与ξ需取欧氏内积，不能把两个向量并置相乘。
 
-[相关正文：65.1 L1 Fourier 变换与逆变换](./03-math-analysis-iii/65-complex-fourier/65-03-p0790-0797.md)
+[相关正文：65.1：L1 Fourier 变换与逆变换](./03-math-analysis-iii/65-complex-fourier/65-03-p0790-0797.md)
 
 #### 数学修正
 
@@ -23458,7 +23458,7 @@
 
 **理由：** 源图断言试验函数Fourier变换不在D需排除φ=0，零函数及其变换都有紧支集。
 
-[相关正文：65.1 L1 Fourier 变换与逆变换](./03-math-analysis-iii/65-complex-fourier/65-03-p0790-0797.md)
+[相关正文：65.1：L1 Fourier 变换与逆变换](./03-math-analysis-iii/65-complex-fourier/65-03-p0790-0797.md)
 
 #### 数学修正
 
@@ -23487,7 +23487,7 @@
 
 **理由：** 源图ODE初值误写Fξ=常数，canonical已正确改为F0，与Gaussian积分一致。
 
-[相关正文：65.1 L1 Fourier 变换与逆变换](./03-math-analysis-iii/65-complex-fourier/65-03-p0790-0797.md)
+[相关正文：65.1：L1 Fourier 变换与逆变换](./03-math-analysis-iii/65-complex-fourier/65-03-p0790-0797.md)
 
 #### 数学修正
 
@@ -23533,7 +23533,7 @@
 
 **理由：** 源图左边指数负号漏、右边相位负号漏；canonical已正确完成平方，沿竖边实部指数衰减。
 
-[相关正文：65.1 L1 Fourier 变换与逆变换](./03-math-analysis-iii/65-complex-fourier/65-03-p0790-0797.md)
+[相关正文：65.1：L1 Fourier 变换与逆变换](./03-math-analysis-iii/65-complex-fourier/65-03-p0790-0797.md)
 
 #### 数学修正
 
@@ -23986,7 +23986,7 @@
 
 **理由：** 待扩张泛函以给定缓增分布u为下标，本段没有μ。原图把Tu误写Tμ。
 
-[相关正文：66.1 作业:Fourier逆变换的另一个计算,一个分布扩张的问题,分布的张量积](./03-math-analysis-iii/66-schwartz-tempered/66-03-p0805-0810.md)
+[相关正文：66.1：作业：Fourier逆变换的另一个计算，一个分布扩张的问题，分布的张量积](./03-math-analysis-iii/66-schwartz-tempered/66-03-p0805-0810.md)
 
 #### 数学修正
 
@@ -24020,7 +24020,7 @@
 
 **理由：** 卷积结合律要求三者联合的求和映射固有；仅任意两者可卷不能保证迭代卷积存在。三条方向两两不反向但相加为0的射线给成对可卷而三者不固有的反例，需说明本题是联合可卷条件。
 
-[相关正文：66.1 作业:Fourier逆变换的另一个计算,一个分布扩张的问题,分布的张量积](./03-math-analysis-iii/66-schwartz-tempered/66-03-p0805-0810.md)
+[相关正文：66.1：作业：Fourier逆变换的另一个计算，一个分布扩张的问题，分布的张量积](./03-math-analysis-iii/66-schwartz-tempered/66-03-p0805-0810.md)
 
 #### 数学修正
 
@@ -24044,7 +24044,7 @@
 
 **理由：** 由定义xuλ=x^(λ+1)·1_(0,1)，其平方在0可积恰当2(λ+1)>−1。原题对所有λ>−2声称L²，λ=−7/4反例；精确阈值为−3/2。
 
-[相关正文：66.1 作业:Fourier逆变换的另一个计算,一个分布扩张的问题,分布的张量积](./03-math-analysis-iii/66-schwartz-tempered/66-03-p0805-0810.md)
+[相关正文：66.1：作业：Fourier逆变换的另一个计算，一个分布扩张的问题，分布的张量积](./03-math-analysis-iii/66-schwartz-tempered/66-03-p0805-0810.md)
 
 #### 数学修正
 
@@ -24068,7 +24068,7 @@
 
 **理由：** L¹逼近只能选子列得到几乎处处收敛，本题已选εk；结论须沿该子列，不能据此断言所有ε趋于0的逐点极限。
 
-[相关正文：66.1 作业:Fourier逆变换的另一个计算,一个分布扩张的问题,分布的张量积](./03-math-analysis-iii/66-schwartz-tempered/66-03-p0805-0810.md)
+[相关正文：66.1：作业：Fourier逆变换的另一个计算，一个分布扩张的问题，分布的张量积](./03-math-analysis-iii/66-schwartz-tempered/66-03-p0805-0810.md)
 
 #### 数学修正
 
@@ -24082,7 +24082,7 @@
 
 **理由：** 只减常数时取φ在0附近等于x，各项为1/k，原题级数发散。再减一次Taylor项后余项O(k^−2)，和绝对收敛且由二阶半范数控制，才能定义分布。
 
-[相关正文：66.1 作业:Fourier逆变换的另一个计算,一个分布扩张的问题,分布的张量积](./03-math-analysis-iii/66-schwartz-tempered/66-03-p0805-0810.md)
+[相关正文：66.1：作业：Fourier逆变换的另一个计算，一个分布扩张的问题，分布的张量积](./03-math-analysis-iii/66-schwartz-tempered/66-03-p0805-0810.md)
 
 #### 数学修正
 
@@ -24098,7 +24098,7 @@
 
 ### 67 缓增分布的 Fourier 变换
 
-[相关正文：缓增分布的 Fourier 变换](./03-math-analysis-iii/67-tempered-fourier.md)
+[相关正文：67：缓增分布的 Fourier 变换](./03-math-analysis-iii/67-tempered-fourier.md)
 
 #### 数学修正
 
@@ -24148,7 +24148,7 @@
 
 **理由：** 导数转移到测试函数一次后右侧应配对u，原图再次保留∂αu会重复求导；Markdown已用u。
 
-[相关正文：缓增分布的 Fourier 变换](./03-math-analysis-iii/67-tempered-fourier.md)
+[相关正文：67：缓增分布的 Fourier 变换](./03-math-analysis-iii/67-tempered-fourier.md)
 
 #### 数学修正
 
@@ -24226,7 +24226,7 @@
 
 **理由：** 指数增长反例的测试列定义为χn，源图积分末步换成未定义φn，Markdown已一致使用χn。
 
-[相关正文：缓增分布的 Fourier 变换](./03-math-analysis-iii/67-tempered-fourier.md)
+[相关正文：67：缓增分布的 Fourier 变换](./03-math-analysis-iii/67-tempered-fourier.md)
 
 #### 数学修正
 
@@ -24240,7 +24240,7 @@
 
 **理由：** 链式导数为i e^x e^(ie^x)=iu，故u是1/i倍导数，原图漏1/i。缓增性仍由有界函数的导数推出。
 
-[相关正文：缓增分布的 Fourier 变换](./03-math-analysis-iii/67-tempered-fourier.md)
+[相关正文：67：缓增分布的 Fourier 变换](./03-math-analysis-iii/67-tempered-fourier.md)
 
 #### 数学修正
 
@@ -24274,7 +24274,7 @@
 
 **理由：** F^−1(∂ξ^αδ0)=(-ix)^α/(2π)^n。物理变量应x而非ξ，且原图沿用同一组系数cα时必须保留逆变换的归一化因子。
 
-[相关正文：缓增分布的 Fourier 变换](./03-math-analysis-iii/67-tempered-fourier.md)
+[相关正文：67：缓增分布的 Fourier 变换](./03-math-analysis-iii/67-tempered-fourier.md)
 
 #### 数学修正
 
@@ -24308,7 +24308,7 @@
 
 **理由：** 2)的齐次性只对λ>0成立，不能选−1；奇偶性应直接用1)对可逆反射矩阵−Id的Fourier协变公式，原图引用了错误条目。
 
-[相关正文：缓增分布的 Fourier 变换](./03-math-analysis-iii/67-tempered-fourier.md)
+[相关正文：67：缓增分布的 Fourier 变换](./03-math-analysis-iii/67-tempered-fourier.md)
 
 #### 数学修正
 
@@ -24342,7 +24342,7 @@
 
 **理由：** −|ξ|²hat u=1只给一个可能解，还能加零点支持且被|ξ|²消去的分布；原图⇒像是在唯一确定全部基本解，下一页已承认多项式差。改为选取这个特解以保持构造。
 
-[相关正文：缓增分布的 Fourier 变换](./03-math-analysis-iii/67-tempered-fourier.md)
+[相关正文：67：缓增分布的 Fourier 变换](./03-math-analysis-iii/67-tempered-fourier.md)
 
 #### 数学修正
 
@@ -24368,7 +24368,7 @@
 
 ### 68 缓增分布的 Fourier 变换与卷积
 
-[相关正文：缓增分布的 Fourier 变换与卷积](./03-math-analysis-iii/68-fourier-convolution.md)
+[相关正文：68：缓增分布的 Fourier 变换与卷积](./03-math-analysis-iii/68-fourier-convolution.md)
 
 #### 数学修正
 
@@ -24409,7 +24409,7 @@
 
 **理由：** 原商在零频率分母为零，必须用可去奇点值R延拓，才能给全频率上光滑的球面测度Fourier变换及hatσR(0)=4πR²。
 
-[相关正文：缓增分布的 Fourier 变换与卷积](./03-math-analysis-iii/68-fourier-convolution.md)
+[相关正文：68：缓增分布的 Fourier 变换与卷积](./03-math-analysis-iii/68-fourier-convolution.md)
 
 #### 数学修正
 
@@ -24447,7 +24447,7 @@
 
 **理由：** 本段在L²中截断并作Fourier逼近，源图误写L¹收敛，Markdown已写对应L²收敛。
 
-[相关正文：缓增分布的 Fourier 变换与卷积](./03-math-analysis-iii/68-fourier-convolution.md)
+[相关正文：68：缓增分布的 Fourier 变换与卷积](./03-math-analysis-iii/68-fourier-convolution.md)
 
 #### 数学修正
 
@@ -24533,7 +24533,7 @@
 
 **理由：** 本命题的紧支集分布为c，u未定义。取包含支集邻域的紧集后才能直接使用分布的有限阶半范数估计，原图还多一个右括号。
 
-[相关正文：缓增分布的 Fourier 变换与卷积](./03-math-analysis-iii/68-fourier-convolution.md)
+[相关正文：68：缓增分布的 Fourier 变换与卷积](./03-math-analysis-iii/68-fourier-convolution.md)
 
 #### 数学修正
 
@@ -24675,7 +24675,7 @@
 
 **理由：** 紧支集分布的变换一般不衰减，例如δ0变换1、δ0′变换iξ。它及各阶导数为多项式增长才是乘任意缓增分布的正确条件。
 
-[相关正文：缓增分布的 Fourier 变换与卷积](./03-math-analysis-iii/68-fourier-convolution.md)
+[相关正文：68：缓增分布的 Fourier 变换与卷积](./03-math-analysis-iii/68-fourier-convolution.md)
 
 #### 数学修正
 
@@ -24747,7 +24747,7 @@
 
 ### 69 数学物理方程与 Sobolev 空间
 
-[相关正文：数学物理方程与 Sobolev 空间](./03-math-analysis-iii/69-sobolev-introduction.md)
+[相关正文：69：数学物理方程与 Sobolev 空间](./03-math-analysis-iii/69-sobolev-introduction.md)
 
 #### 数学修正
 
@@ -24771,7 +24771,7 @@
 
 **理由：** 本例正在计算δ_(0,0)的部分Fourier变换，配对分布应为δ_(0,0)，原图误写未定义u。
 
-[相关正文：数学物理方程与 Sobolev 空间](./03-math-analysis-iii/69-sobolev-introduction.md)
+[相关正文：69：数学物理方程与 Sobolev 空间](./03-math-analysis-iii/69-sobolev-introduction.md)
 
 #### 数学修正
 
@@ -24789,7 +24789,7 @@
 
 **理由：** 原方程是算子∂t²+|ξ|²作用于W，不能把|ξ|²加到W中再对t求二阶导，否则该项被消去。修正算子括号才与δ源项一致。
 
-[相关正文：数学物理方程与 Sobolev 空间](./03-math-analysis-iii/69-sobolev-introduction.md)
+[相关正文：69：数学物理方程与 Sobolev 空间](./03-math-analysis-iii/69-sobolev-introduction.md)
 
 #### 数学修正
 
@@ -24895,7 +24895,7 @@
 
 **理由：** 正在刻画整数阶Hm，积分权指数应m；s是上一段任意阶符号，原图此处误沿用s。
 
-[相关正文：数学物理方程与 Sobolev 空间](./03-math-analysis-iii/69-sobolev-introduction.md)
+[相关正文：69：数学物理方程与 Sobolev 空间](./03-math-analysis-iii/69-sobolev-introduction.md)
 
 #### 数学修正
 
@@ -25223,7 +25223,7 @@
 
 **理由：** 前页拆分两项时因(A+B)²≤2(A²+B²)多一个2；Young估计的C1C2在卷积范数平方后也必须平方。原图最终不等式两处常数未正确延续。
 
-[相关正文：70.1 作业:Fourier变换的计算,Heisenberg测不准原理,分数次Sobolev空间的物理空间刻画,1维的等](./03-math-analysis-iii/70-sobolev-embedding/70-03-p0837-0841.md)
+[相关正文：70.1：作业：Fourier变换的计算，Heisenberg测不准原理，分数次Sobolev空间的物理空间刻画，1维的等](./03-math-analysis-iii/70-sobolev-embedding/70-03-p0837-0841.md)
 
 #### 数学修正
 
@@ -25261,7 +25261,7 @@
 
 **理由：** 该重复列出的公式同样需校正点a的指数与多项式变换的频率导数，保证正文和习题全部版本一致。
 
-[相关正文：70.1 作业:Fourier变换的计算,Heisenberg测不准原理,分数次Sobolev空间的物理空间刻画,1维的等](./03-math-analysis-iii/70-sobolev-embedding/70-03-p0837-0841.md)
+[相关正文：70.1：作业：Fourier变换的计算，Heisenberg测不准原理，分数次Sobolev空间的物理空间刻画，1维的等](./03-math-analysis-iii/70-sobolev-embedding/70-03-p0837-0841.md)
 
 #### 数学修正
 
@@ -25285,7 +25285,7 @@
 
 **理由：** 部分变换沿用正文t有m维、x有n维的统一标号，并与紧接的S′公式一致；频率输出的下标随后仍视作ξ。
 
-[相关正文：70.1 作业:Fourier变换的计算,Heisenberg测不准原理,分数次Sobolev空间的物理空间刻画,1维的等](./03-math-analysis-iii/70-sobolev-embedding/70-03-p0837-0841.md)
+[相关正文：70.1：作业：Fourier变换的计算，Heisenberg测不准原理，分数次Sobolev空间的物理空间刻画，1维的等](./03-math-analysis-iii/70-sobolev-embedding/70-03-p0837-0841.md)
 
 #### 数学修正
 
@@ -25319,7 +25319,7 @@
 
 **理由：** Gamma积分在0可积要求Rez>0，原图脚注省域会误把积分式作为所有复数的定义。其他复数处须用解析延拓，非本积分。
 
-[相关正文：70.1 作业:Fourier变换的计算,Heisenberg测不准原理,分数次Sobolev空间的物理空间刻画,1维的等](./03-math-analysis-iii/70-sobolev-embedding/70-03-p0837-0841.md)
+[相关正文：70.1：作业：Fourier变换的计算，Heisenberg测不准原理，分数次Sobolev空间的物理空间刻画，1维的等](./03-math-analysis-iii/70-sobolev-embedding/70-03-p0837-0841.md)
 
 #### 数学修正
 
@@ -25333,7 +25333,7 @@
 
 **理由：** 该小题n≥2且fk为Rn函数，两个积分均在Rn，Parseval的频率测度为dξ/(2π)^n。原图仍沿用一维R和2π归一化，需同步改维数。
 
-[相关正文：70.1 作业:Fourier变换的计算,Heisenberg测不准原理,分数次Sobolev空间的物理空间刻画,1维的等](./03-math-analysis-iii/70-sobolev-embedding/70-03-p0837-0841.md)
+[相关正文：70.1：作业：Fourier变换的计算，Heisenberg测不准原理，分数次Sobolev空间的物理空间刻画，1维的等](./03-math-analysis-iii/70-sobolev-embedding/70-03-p0837-0841.md)
 
 #### 数学修正
 
@@ -25363,7 +25363,7 @@
 
 ### 71 Riesz 表示、Sobolev 对偶与迹定理
 
-[相关正文：Riesz 表示、Sobolev 对偶与迹定理](./03-math-analysis-iii/71-riesz-duality.md)
+[相关正文：71：Riesz 表示、Sobolev 对偶与迹定理](./03-math-analysis-iii/71-riesz-duality.md)
 
 #### 数学修正
 
@@ -25381,7 +25381,7 @@
 
 **理由：** 中点属于闭线性子空间F，距x至少I；结合已有上界才可证明中点距离趋于I，并由平行四边形等式得Cauchy。原图只列上界而未写用于趋零的下界，补明确该条件。
 
-[相关正文：Riesz 表示、Sobolev 对偶与迹定理](./03-math-analysis-iii/71-riesz-duality.md)
+[相关正文：71：Riesz 表示、Sobolev 对偶与迹定理](./03-math-analysis-iii/71-riesz-duality.md)
 
 #### 原讲义笔误（正文已订正）
 
@@ -25399,7 +25399,7 @@
 
 **理由：** 向量同时属于F和F的正交补，和自身内积为0，不能为1；源图等式右边误印1，Markdown已为0。
 
-[相关正文：Riesz 表示、Sobolev 对偶与迹定理](./03-math-analysis-iii/71-riesz-duality.md)
+[相关正文：71：Riesz 表示、Sobolev 对偶与迹定理](./03-math-analysis-iii/71-riesz-duality.md)
 
 #### 数学修正
 
@@ -25423,7 +25423,7 @@
 
 **理由：** ℓ(v)>0，w=0时不能取λ使ℓ(λw)=ℓ(v)。非零w∈Fperp才有ℓ(w)≠0（否则属于F交Fperp），原证明漏这一分支。
 
-[相关正文：Riesz 表示、Sobolev 对偶与迹定理](./03-math-analysis-iii/71-riesz-duality.md)
+[相关正文：71：Riesz 表示、Sobolev 对偶与迹定理](./03-math-analysis-iii/71-riesz-duality.md)
 
 #### 数学修正
 
@@ -25465,7 +25465,7 @@
 
 **理由：** 两处缓增性估计均采用定义好的非负整数Ps，避免把非整数或负指数当Schwartz范数指标。
 
-[相关正文：Riesz 表示、Sobolev 对偶与迹定理](./03-math-analysis-iii/71-riesz-duality.md)
+[相关正文：71：Riesz 表示、Sobolev 对偶与迹定理](./03-math-analysis-iii/71-riesz-duality.md)
 
 #### 数学修正
 
@@ -25590,7 +25590,7 @@
 
 **理由：** 此处估计的是线性泛函的绝对值，需由函数的一次范数控制；源图在中间改为平方范数，缩放φ即否证全式。Markdown已保持一次范数。
 
-[相关正文：Riesz 表示、Sobolev 对偶与迹定理](./03-math-analysis-iii/71-riesz-duality.md)
+[相关正文：71：Riesz 表示、Sobolev 对偶与迹定理](./03-math-analysis-iii/71-riesz-duality.md)
 
 #### 数学修正
 
@@ -25604,7 +25604,7 @@
 
 **理由：** 待扩张边界函数在n−1维超平面，不是n维Rn；原图空间维数漏减1。
 
-[相关正文：Riesz 表示、Sobolev 对偶与迹定理](./03-math-analysis-iii/71-riesz-duality.md)
+[相关正文：71：Riesz 表示、Sobolev 对偶与迹定理](./03-math-analysis-iii/71-riesz-duality.md)
 
 #### 数学修正
 
@@ -26076,7 +26076,7 @@
 
 ### 73 Dirichlet 问题与半空间扩张
 
-[相关正文：Dirichlet 问题与半空间扩张](./03-math-analysis-iii/73-dirichlet.md)
+[相关正文：73：Dirichlet 问题与半空间扩张](./03-math-analysis-iii/73-dirichlet.md)
 
 #### 数学修正
 
@@ -26136,7 +26136,7 @@
 
 **理由：** 源图缺偏导的v，canonical已补。
 
-[相关正文：Dirichlet 问题与半空间扩张](./03-math-analysis-iii/73-dirichlet.md)
+[相关正文：73：Dirichlet 问题与半空间扩张](./03-math-analysis-iii/73-dirichlet.md)
 
 #### 数学修正
 
@@ -26176,7 +26176,7 @@
 
 **理由：** 源图f作为泛函的域在Ω位于上标且漏1，canonical已规范为H01Ω。
 
-[相关正文：Dirichlet 问题与半空间扩张](./03-math-analysis-iii/73-dirichlet.md)
+[相关正文：73：Dirichlet 问题与半空间扩张](./03-math-analysis-iii/73-dirichlet.md)
 
 #### 数学修正
 
@@ -26220,7 +26220,7 @@
 
 **理由：** 同一解算子上界需Ω依赖C2，连续性结论不变。
 
-[相关正文：Dirichlet 问题与半空间扩张](./03-math-analysis-iii/73-dirichlet.md)
+[相关正文：73：Dirichlet 问题与半空间扩张](./03-math-analysis-iii/73-dirichlet.md)
 
 #### 数学修正
 
@@ -26234,7 +26234,7 @@
 
 **理由：** 总结Dirichlet零边界，原图缺等号及0，补命题已经确定的边界条件。
 
-[相关正文：Dirichlet 问题与半空间扩张](./03-math-analysis-iii/73-dirichlet.md)
+[相关正文：73：Dirichlet 问题与半空间扩张](./03-math-analysis-iii/73-dirichlet.md)
 
 #### 数学修正
 
@@ -26280,7 +26280,7 @@
 
 **理由：** 限制函数的收敛空间应上半空间，原图最后箭头错全空间Rn。
 
-[相关正文：Dirichlet 问题与半空间扩张](./03-math-analysis-iii/73-dirichlet.md)
+[相关正文：73：Dirichlet 问题与半空间扩张](./03-math-analysis-iii/73-dirichlet.md)
 
 #### 数学修正
 
@@ -26310,7 +26310,7 @@
 
 **理由：** 原图多击字，canonical已去叠字。
 
-[相关正文：Dirichlet 问题与半空间扩张](./03-math-analysis-iii/73-dirichlet.md)
+[相关正文：73：Dirichlet 问题与半空间扩张](./03-math-analysis-iii/73-dirichlet.md)
 
 #### 数学修正
 
@@ -26364,7 +26364,7 @@
 
 **理由：** 反射分支位于下半空间，链式导数有负号，第二个示性集合应xn<0，原重复xn>0。
 
-[相关正文：Dirichlet 问题与半空间扩张](./03-math-analysis-iii/73-dirichlet.md)
+[相关正文：73：Dirichlet 问题与半空间扩张](./03-math-analysis-iii/73-dirichlet.md)
 
 #### 数学修正
 
@@ -26470,7 +26470,7 @@
 
 **理由：** 原图右侧id从上方H1(Hn)曲线通往下方H1(Hn)，canonical布局误把id标成H1(Rn)到H1(Hn)，改变映射类型。保留同一稠密延拓交换关系，并将源图右逆关系明确写为Res∘Ext=idH1(Hn)，同时写清光滑函数先限制半空间。
 
-[相关正文：Dirichlet 问题与半空间扩张](./03-math-analysis-iii/73-dirichlet.md)
+[相关正文：73：Dirichlet 问题与半空间扩张](./03-math-analysis-iii/73-dirichlet.md)
 
 #### 数学修正
 
@@ -26512,7 +26512,7 @@
 
 **理由：** 三竖线为对函数取sup的范数，绝对收敛要求Σ|||uk|||而非值范数。
 
-[相关正文：Dirichlet 问题与半空间扩张](./03-math-analysis-iii/73-dirichlet.md)
+[相关正文：73：Dirichlet 问题与半空间扩张](./03-math-analysis-iii/73-dirichlet.md)
 
 #### 数学修正
 
@@ -26538,7 +26538,7 @@
 
 ### 74 半空间的迹定理与限制正合列
 
-[相关正文：半空间的迹定理与限制正合列](./03-math-analysis-iii/74-trace-theorem.md)
+[相关正文：74：半空间的迹定理与限制正合列](./03-math-analysis-iii/74-trace-theorem.md)
 
 #### 数学修正
 
@@ -26582,7 +26582,7 @@
 
 **理由：** Cb三竖线范数施于函数u而非u(xn)，积分后不得仍留自由xn；统一前式非负Np阶及C0并由∫(1+xn²)^−1=π合并C。
 
-[相关正文：半空间的迹定理与限制正合列](./03-math-analysis-iii/74-trace-theorem.md)
+[相关正文：74：半空间的迹定理与限制正合列](./03-math-analysis-iii/74-trace-theorem.md)
 
 #### 数学修正
 
@@ -26596,7 +26596,7 @@
 
 **理由：** 独立定理声明明确紧前已给s>1/2，原省略条件使按任意s理解则假。
 
-[相关正文：半空间的迹定理与限制正合列](./03-math-analysis-iii/74-trace-theorem.md)
+[相关正文：74：半空间的迹定理与限制正合列](./03-math-analysis-iii/74-trace-theorem.md)
 
 #### 数学修正
 
@@ -26658,7 +26658,7 @@
 
 **理由：** 原图第二项指数误带dξn而非ξn，canonical已改为正确变量，不恢复源错。
 
-[相关正文：半空间的迹定理与限制正合列](./03-math-analysis-iii/74-trace-theorem.md)
+[相关正文：74：半空间的迹定理与限制正合列](./03-math-analysis-iii/74-trace-theorem.md)
 
 #### 数学修正
 
@@ -26702,7 +26702,7 @@
 
 **理由：** 原u只在上半空间，Rn积分须零延拓u下划线；紧后换Hn恢复u。
 
-[相关正文：半空间的迹定理与限制正合列](./03-math-analysis-iii/74-trace-theorem.md)
+[相关正文：74：半空间的迹定理与限制正合列](./03-math-analysis-iii/74-trace-theorem.md)
 
 #### 数学修正
 
@@ -26766,7 +26766,7 @@
 
 **理由：** 固定δ的导数极限沿同一链式法则需2/δ，虽该乘uδ项因支集消失为0仍须写正确。
 
-[相关正文：半空间的迹定理与限制正合列](./03-math-analysis-iii/74-trace-theorem.md)
+[相关正文：74：半空间的迹定理与限制正合列](./03-math-analysis-iii/74-trace-theorem.md)
 
 #### 数学修正
 
@@ -27284,7 +27284,7 @@
 
 **理由：** 两范数都定义在∂Ω上的函数，需与本页最终坐标H1/2边界范数和定义506保持一致。
 
-[相关正文：75.1 作业:二维波动方程的基本解,Airy函数与线性KdV方程](./03-math-analysis-iii/75-sobolev-extension/75-03-p0885-0888.md)
+[相关正文：75.1：作业：二维波动方程的基本解，Airy函数与线性KdV方程](./03-math-analysis-iii/75-sobolev-extension/75-03-p0885-0888.md)
 
 #### 数学修正
 
@@ -27324,7 +27324,7 @@
 
 **理由：** A3源图空间维数错写1+3；canonical已与题意二维空间保持1+2，后续修复只补坐标与未来条件。
 
-[相关正文：75.1 作业:二维波动方程的基本解,Airy函数与线性KdV方程](./03-math-analysis-iii/75-sobolev-extension/75-03-p0885-0888.md)
+[相关正文：75.1：作业：二维波动方程的基本解，Airy函数与线性KdV方程](./03-math-analysis-iii/75-sobolev-extension/75-03-p0885-0888.md)
 
 #### 数学修正
 
@@ -27392,7 +27392,7 @@
 
 **理由：** A4与A6原图分母错写t²；变量变换t=√(s+r²)的Jacobian确定为2√(s+r²)，canonical两处已纠正。
 
-[相关正文：75.1 作业:二维波动方程的基本解,Airy函数与线性KdV方程](./03-math-analysis-iii/75-sobolev-extension/75-03-p0885-0888.md)
+[相关正文：75.1：作业：二维波动方程的基本解，Airy函数与线性KdV方程](./03-math-analysis-iii/75-sobolev-extension/75-03-p0885-0888.md)
 
 #### 数学修正
 
@@ -28079,7 +28079,7 @@
 
 **理由：** 从895弱式的散度强方程和897成组修复孤立bnnvnn，低阶Σ(∂lbkl)vk与右−F必须一致，避免源图Φ误评价及额外l重复求和。
 
-[相关正文：76.1 习题(利用变分与Riesz表示定理解微分方程):一个弹性力学的模型](./03-math-analysis-iii/76-elliptic-boundary/76-03-p0899-0899.md)
+[相关正文：76.1：习题（利用变分与Riesz表示定理解微分方程）：一个弹性力学的模型](./03-math-analysis-iii/76-elliptic-boundary/76-03-p0899-0899.md)
 
 #### 数学修正
 
@@ -28133,7 +28133,7 @@
 
 ### 77 紧算子、自伴算子与弱收敛
 
-[相关正文：紧算子、自伴算子与弱收敛](./03-math-analysis-iii/77-compact-operators.md)
+[相关正文：77：紧算子、自伴算子与弱收敛](./03-math-analysis-iii/77-compact-operators.md)
 
 #### 数学修正
 
@@ -28147,7 +28147,7 @@
 
 **理由：** 原图只有存在一列，非空集合的常值列会使任何有界算子满足。902的无限正交基反例和906的任意子序列证明唯一确定任意点列、收敛子列量词。空集下新全称条件自然成立。
 
-[相关正文：紧算子、自伴算子与弱收敛](./03-math-analysis-iii/77-compact-operators.md)
+[相关正文：77：紧算子、自伴算子与弱收敛](./03-math-analysis-iii/77-compact-operators.md)
 
 #### 数学修正
 
@@ -28231,7 +28231,7 @@
 
 **理由：** 原图为ell_4，前句仅选ell_1与ell_2，后文也只用i=1,2，所以索引可唯一修正。
 
-[相关正文：紧算子、自伴算子与弱收敛](./03-math-analysis-iii/77-compact-operators.md)
+[相关正文：77：紧算子、自伴算子与弱收敛](./03-math-analysis-iii/77-compact-operators.md)
 
 #### 数学修正
 
@@ -28245,7 +28245,7 @@
 
 **理由：** 原图第二例确实拼写Hiblert，本页第一例与邻页904均为Hilbert，同一正交完备基名称可唯一确定。仅纠正英文姓名字序，不改变基、弱收敛叙述或其证明。
 
-[相关正文：紧算子、自伴算子与弱收敛](./03-math-analysis-iii/77-compact-operators.md)
+[相关正文：77：紧算子、自伴算子与弱收敛](./03-math-analysis-iii/77-compact-operators.md)
 
 #### 原讲义笔误（正文已订正）
 
@@ -28259,7 +28259,7 @@
 
 **理由：** 原图范数为x_n-k，前面内积(x_k-x,y)及Cauchy-Schwarz唯一确定应为x_k-x。canonical已有正确内容，不能恢复原书错误。
 
-[相关正文：紧算子、自伴算子与弱收敛](./03-math-analysis-iii/77-compact-operators.md)
+[相关正文：77：紧算子、自伴算子与弱收敛](./03-math-analysis-iii/77-compact-operators.md)
 
 #### 数学修正
 
@@ -28287,7 +28287,7 @@
 
 **理由：** 原图Fatou右侧求和出现未定义h，指标应为j。canonical已有j，仅透明记录，不重复修正。
 
-[相关正文：紧算子、自伴算子与弱收敛](./03-math-analysis-iii/77-compact-operators.md)
+[相关正文：77：紧算子、自伴算子与弱收敛](./03-math-analysis-iii/77-compact-operators.md)
 
 #### 数学修正
 
@@ -28357,7 +28357,7 @@
 
 **理由：** 原图有限项界错误追加=epsilon；一般N不等于1/2。canonical已删除错误等号，禁止恢复。
 
-[相关正文：紧算子、自伴算子与弱收敛](./03-math-analysis-iii/77-compact-operators.md)
+[相关正文：77：紧算子、自伴算子与弱收敛](./03-math-analysis-iii/77-compact-operators.md)
 
 #### 数学修正
 
@@ -28373,7 +28373,7 @@
 
 ### 78 紧算子谱理论与 Laplace 算子
 
-[相关正文：紧算子谱理论与 Laplace 算子](./03-math-analysis-iii/78-spectral-decomposition.md)
+[相关正文：78：紧算子谱理论与 Laplace 算子](./03-math-analysis-iii/78-spectral-decomposition.md)
 
 #### 数学修正
 
@@ -28478,7 +28478,7 @@
 
 **理由：** A=-Id说明非负sup绝对值不能直接作特征值。选绝对极值处的带符号R值，正是910按|lambda_k|递减所要求的结论。
 
-[相关正文：紧算子谱理论与 Laplace 算子](./03-math-analysis-iii/78-spectral-decomposition.md)
+[相关正文：78：紧算子谱理论与 Laplace 算子](./03-math-analysis-iii/78-spectral-decomposition.md)
 
 #### 数学修正
 
@@ -28606,7 +28606,7 @@
 
 **理由：** 原图908先选取极值点u_1，909直接改用u而未交代；R在非零数倍下不变。明确u为u_1的单位化，后续Au-lambda_1u与前页极值点一致，和signed-Rayleigh组共同应用。
 
-[相关正文：紧算子谱理论与 Laplace 算子](./03-math-analysis-iii/78-spectral-decomposition.md)
+[相关正文：78：紧算子谱理论与 Laplace 算子](./03-math-analysis-iii/78-spectral-decomposition.md)
 
 #### 数学修正
 
@@ -28620,7 +28620,7 @@
 
 **理由：** 原图后文明确按|lambda_1|>=|lambda_2|>=...排序，须每次取绝对极值处的带符号R值，不能只取R的最大值。
 
-[相关正文：紧算子谱理论与 Laplace 算子](./03-math-analysis-iii/78-spectral-decomposition.md)
+[相关正文：78：紧算子谱理论与 Laplace 算子](./03-math-analysis-iii/78-spectral-decomposition.md)
 
 #### 数学修正
 
@@ -28642,7 +28642,7 @@
 
 **理由：** 原图前项|k|≤N，尾项也含|k|=N，重复频率使分解恒等式错误。保留前项≤N，将尾项统一改>N。
 
-[相关正文：紧算子谱理论与 Laplace 算子](./03-math-analysis-iii/78-spectral-decomposition.md)
+[相关正文：78：紧算子谱理论与 Laplace 算子](./03-math-analysis-iii/78-spectral-decomposition.md)
 
 #### 数学修正
 
@@ -28742,7 +28742,7 @@
 
 **问题：** 原图平方范数上界遗漏平方，Parseval常数(2π)^n，χ也未声明0≤χ≤1；更根本地911系数取一般f在立方体上的Fourier展开，f未具有周期匹配边界，不能直接用∇f控制Σ|k|²|c_k|²。n=1取f在[0,2π]等于x则跳跃周期延拓系数~1/k，加权和发散。可先取ψ∈C0∞立方体且ψ=1于suppχ，把系数改为ψf，最终估计≤C/N²||f||H¹²；也可将中间域限制为Ω零延拓的像。原作者意图无法唯一确定，整段留具体证明缺口，先不猜写新证明。
 
-[相关正文：紧算子谱理论与 Laplace 算子](./03-math-analysis-iii/78-spectral-decomposition.md)
+[相关正文：78：紧算子谱理论与 Laplace 算子](./03-math-analysis-iii/78-spectral-decomposition.md)
 
 #### 数学修正
 
@@ -28766,7 +28766,7 @@
 
 **理由：** 本页原图重复L²而未表达由Dirichlet逆算子得到的正则性；φ_k=λ_k(-Δ)^-1φ_k，逆算子像为H0¹，紧接定理526也明确该空间。
 
-[相关正文：紧算子谱理论与 Laplace 算子](./03-math-analysis-iii/78-spectral-decomposition.md)
+[相关正文：78：紧算子谱理论与 Laplace 算子](./03-math-analysis-iii/78-spectral-decomposition.md)
 
 #### 原讲义笔误（正文已订正）
 
@@ -28782,7 +28782,7 @@
 
 **理由：** 原图多维产品、Laplace等式和正交积分全含πi，canonical已去除i。若保留i则sin(iπk)=i sinh(πk)边界不为零，且-Δ特征值为负；一维前半页和915目标H0¹唯一确定实正弦。保留canonical正确公式。
 
-[相关正文：紧算子谱理论与 Laplace 算子](./03-math-analysis-iii/78-spectral-decomposition.md)
+[相关正文：78：紧算子谱理论与 Laplace 算子](./03-math-analysis-iii/78-spectral-decomposition.md)
 
 #### 数学修正
 
@@ -28896,7 +28896,7 @@
 
 **理由：** 同页明确c_n=|B_n(1)|d^n/(2π)^n，故原称仅依赖维数遗漏边长d；仅纠正参数依赖。
 
-[相关正文：紧算子谱理论与 Laplace 算子](./03-math-analysis-iii/78-spectral-decomposition.md)
+[相关正文：78：紧算子谱理论与 Laplace 算子](./03-math-analysis-iii/78-spectral-decomposition.md)
 
 #### 数学修正
 
@@ -28916,7 +28916,7 @@
 
 ### 79 特征函数、变分原理与特征值增长
 
-[相关正文：特征函数、变分原理与特征值增长](./03-math-analysis-iii/79-spectral-asymptotics.md)
+[相关正文：79：特征函数、变分原理与特征值增长](./03-math-analysis-iii/79-spectral-asymptotics.md)
 
 #### 数学修正
 
@@ -28940,7 +28940,7 @@
 
 **理由：** f2=-Δu2并且零边界，分部积分给正梯度内积；原图重复912同一符号错误，须与912–913正算子修复一致。
 
-[相关正文：特征函数、变分原理与特征值增长](./03-math-analysis-iii/79-spectral-asymptotics.md)
+[相关正文：79：特征函数、变分原理与特征值增长](./03-math-analysis-iii/79-spectral-asymptotics.md)
 
 #### 数学修正
 
@@ -29044,7 +29044,7 @@
 
 **问题：** 此页先取常函数f=1∈H¹\H0¹，第二注记又将u1=f代入要求u1∈H0¹的分部积分；应显式切回f∈H0¹，否则Δ1=0与-λ_k c_k矛盾。918–919对任意H0¹写(Δu1,u2)L²也只是形式记法，Δu1一般仅H^-1。可将整个第二注记改为H^-1/H0¹对偶配对，但作者未明确该f换域，需整段澄清；当前不扩写。
 
-[相关正文：特征函数、变分原理与特征值增长](./03-math-analysis-iii/79-spectral-asymptotics.md)
+[相关正文：79：特征函数、变分原理与特征值增长](./03-math-analysis-iii/79-spectral-asymptotics.md)
 
 #### 数学修正
 
@@ -29088,7 +29088,7 @@
 
 **理由：** 前述2)与紧接展开从j≥k一致，原图末k误多1；改为k-1，k=1时条件为空。
 
-[相关正文：特征函数、变分原理与特征值增长](./03-math-analysis-iii/79-spectral-asymptotics.md)
+[相关正文：79：特征函数、变分原理与特征值增长](./03-math-analysis-iii/79-spectral-asymptotics.md)
 
 #### 数学修正
 
@@ -29148,7 +29148,7 @@
 
 **理由：** 原图μ用于(k-1)维P的inf，本处k维Q的sup应ν，canonical已正确修复，保持。
 
-[相关正文：特征函数、变分原理与特征值增长](./03-math-analysis-iii/79-spectral-asymptotics.md)
+[相关正文：79：特征函数、变分原理与特征值增长](./03-math-analysis-iii/79-spectral-asymptotics.md)
 
 #### 数学修正
 
@@ -29198,7 +29198,7 @@
 
 ### 80 边界正则性与热核的谱构造
 
-[相关正文：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
+[相关正文：80：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
 
 #### 数学修正
 
@@ -29212,7 +29212,7 @@
 
 **理由：** 标题称必要，但定理531只给λ_k^m加权可和⇒H0¹∩H^m（m=2等价；m>2高阶Dirichlet边界兼容未必必要）。只将标题与实际单向论断一致。
 
-[相关正文：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
+[相关正文：80：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
 
 #### 数学修正
 
@@ -29246,7 +29246,7 @@
 
 **理由：** Hilbert空间弱收敛序列必有界，原图说明句的箭头→未明确拓扑而canonical加⇀造成错。这里伪证只得D′收敛，明确该拓扑即可恢复正确反驳理由；不更改故意错误的伪证。
 
-[相关正文：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
+[相关正文：80：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
 
 #### 数学修正
 
@@ -29294,7 +29294,7 @@
 
 **理由：** 原图第二处零下标印为右括号，前句和解唯一性需H0¹，canonical已正确恢复。
 
-[相关正文：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
+[相关正文：80：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
 
 #### 数学修正
 
@@ -29308,7 +29308,7 @@
 
 **理由：** 原图估计范数域错为Ω，但g定义在∂Ω且上句已设H^{k+1/2}(∂Ω)；补边界符号。
 
-[相关正文：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
+[相关正文：80：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
 
 #### 数学修正
 
@@ -29338,7 +29338,7 @@
 
 **理由：** 原图把微分dx放入函数范数，canonical已去除，Cauchy-Schwarz只对函数取范数，保持。
 
-[相关正文：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
+[相关正文：80：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
 
 #### 数学修正
 
@@ -29412,7 +29412,7 @@
 
 **理由：** 原图把K上的L²范数直接用导数sup控制而漏常数；体积sqrt|K|和Δ^N展开有限系数需C_K，随后t积分多|J|。同时将未定义2N_0改总导数阶4N，和分布连续性估计一致。
 
-[相关正文：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
+[相关正文：80：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
 
 #### 数学修正
 
@@ -29500,7 +29500,7 @@
 
 **理由：** 原图两项多乘lambda_k，canonical已按Δφ_k=-λ_kφ_k纠正；热方程项正确抵消，保持。
 
-[相关正文：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
+[相关正文：80：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
 
 #### 数学修正
 
@@ -29548,7 +29548,7 @@
 
 **理由：** 原图上界把绝对值置于整个带符号和外，一般不成立；canonical已恢复逐项三角不等式，控制收敛论证正确，保持。
 
-[相关正文：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
+[相关正文：80：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
 
 #### 数学修正
 
@@ -29562,7 +29562,7 @@
 
 **理由：** 本页用χ²代|χ|²且丢弃y因子||χ(y)φ_k(y)||，需要实值0≤χ≤1的通常截断函数；该限定可与任意局部compact support一起选取，补明确本来计算必要条件。
 
-[相关正文：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
+[相关正文：80：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
 
 #### 未决数学问题
 
@@ -29572,7 +29572,7 @@
 
 **问题：** 局部高阶估计本身可成立，但原一层χ递推右边含∇χ·∇^mφ而非χ加权项，须在支集间选嵌套cutoffs或调用局部椭圆估计，不能直接按同χ迭代。末C_m也与前面固定的sup导数C_m复用而非新的估计常数。缺嵌套支集和常数依赖说明，连同934展开列证明缺口，不扩写整段。
 
-[相关正文：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
+[相关正文：80：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
 
 #### 数学修正
 
@@ -29629,7 +29629,7 @@
 
 **问题：** 原图左边已含p完整谱级数却又外乘Σe^{-λt}；右边Leibniz少组合系数，未定义m与m1+m2关系，切分最高阶项用χ(x)^2误替χ(x)χ(y)，第一极端项还额外∇φ_k(y)，总阶不一致。正确展开需明确具体多重指标α,β与binomial、两截断及混合阶估计；作者意图缺失，保留此完整推导为疑点，不猜写整页。
 
-[相关正文：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
+[相关正文：80：边界正则性与热核的谱构造](./03-math-analysis-iii/80-heat-kernel-spectral.md)
 
 #### 数学修正
 
@@ -29689,7 +29689,7 @@
 
 ### 81 热核、极大值原理与比较定理
 
-[相关正文：热核、极大值原理与比较定理](./03-math-analysis-iii/81-heat-kernel-pde.md)
+[相关正文：81：热核、极大值原理与比较定理](./03-math-analysis-iii/81-heat-kernel-pde.md)
 
 #### 数学修正
 
@@ -29757,7 +29757,7 @@
 
 **理由：** 原图三处λ_k(y)误代φ_k(y)，用此前热核p定义和初值Hilbert展开唯一确定；λ_k指数位置仍保持特征值。
 
-[相关正文：热核、极大值原理与比较定理](./03-math-analysis-iii/81-heat-kernel-pde.md)
+[相关正文：81：热核、极大值原理与比较定理](./03-math-analysis-iii/81-heat-kernel-pde.md)
 
 #### 数学修正
 
@@ -29851,7 +29851,7 @@
 
 **理由：** c_k一般复数/负数，原图右端未取绝对值不能作为非负模上界。用|c_k|≤||u0||L²和指数衰减确可和。
 
-[相关正文：热核、极大值原理与比较定理](./03-math-analysis-iii/81-heat-kernel-pde.md)
+[相关正文：81：热核、极大值原理与比较定理](./03-math-analysis-iii/81-heat-kernel-pde.md)
 
 #### 数学修正
 
@@ -29877,7 +29877,7 @@
 
 **理由：** 原图姓名多g，canonical已正确拼写；控制收敛应用由Σ|c_k|²可和支持，保持。
 
-[相关正文：热核、极大值原理与比较定理](./03-math-analysis-iii/81-heat-kernel-pde.md)
+[相关正文：81：热核、极大值原理与比较定理](./03-math-analysis-iii/81-heat-kernel-pde.md)
 
 #### 数学修正
 
@@ -29933,7 +29933,7 @@
 
 **理由：** x为输出变量，积分需y；原图u0(x)dx误占输出x并留下free y，同页开头和936定义明确dy。
 
-[相关正文：热核、极大值原理与比较定理](./03-math-analysis-iii/81-heat-kernel-pde.md)
+[相关正文：81：热核、极大值原理与比较定理](./03-math-analysis-iii/81-heat-kernel-pde.md)
 
 #### 数学修正
 
@@ -29985,7 +29985,7 @@
 
 **理由：** 命题目标u≤0，原图却先要证明uε≥0；ε→0所需为uε≤0，与后文假设存在正点和取正最大值一致。
 
-[相关正文：热核、极大值原理与比较定理](./03-math-analysis-iii/81-heat-kernel-pde.md)
+[相关正文：81：热核、极大值原理与比较定理](./03-math-analysis-iii/81-heat-kernel-pde.md)
 
 #### 数学修正
 
@@ -30013,7 +30013,7 @@
 
 **理由：** 原图遗漏y函数的k下标，核须同一特征模两变量乘积，此前定义唯一确定。
 
-[相关正文：热核、极大值原理与比较定理](./03-math-analysis-iii/81-heat-kernel-pde.md)
+[相关正文：81：热核、极大值原理与比较定理](./03-math-analysis-iii/81-heat-kernel-pde.md)
 
 #### 数学修正
 
@@ -30069,7 +30069,7 @@
 
 **理由：** 全空间heat卷积的输出为x，积分变量必须y；下一行PDE积分和卷积(E*u0)(x)已给同一正确形式。
 
-[相关正文：热核、极大值原理与比较定理](./03-math-analysis-iii/81-heat-kernel-pde.md)
+[相关正文：81：热核、极大值原理与比较定理](./03-math-analysis-iii/81-heat-kernel-pde.md)
 
 #### 数学修正
 
@@ -30107,7 +30107,7 @@
 
 **理由：** p1只定义在Ω1×Ω1，y∈Ω2\Ω1时p1未定义；原图练习陈述的共同核比较域必须Ω1×Ω1（未给零延拓）。只修域，不添加题解。
 
-[相关正文：热核、极大值原理与比较定理](./03-math-analysis-iii/81-heat-kernel-pde.md)
+[相关正文：81：热核、极大值原理与比较定理](./03-math-analysis-iii/81-heat-kernel-pde.md)
 
 #### 数学修正
 
@@ -30147,7 +30147,7 @@
 
 ### 82 热核渐近、Weyl 公式与波前集
 
-[相关正文：热核渐近、Weyl 公式与波前集](./03-math-analysis-iii/82-weyl-wavefront.md)
+[相关正文：82：热核渐近、Weyl 公式与波前集](./03-math-analysis-iii/82-weyl-wavefront.md)
 
 #### 数学修正
 
@@ -30171,7 +30171,7 @@
 
 **理由：** Ω1内d≥sqrt(2nt)意味着t≤d²/(2n)，正是上面第一分支且后行用t而非t0；源第二序号错误。
 
-[相关正文：热核渐近、Weyl 公式与波前集](./03-math-analysis-iii/82-weyl-wavefront.md)
+[相关正文：82：热核渐近、Weyl 公式与波前集](./03-math-analysis-iii/82-weyl-wavefront.md)
 
 #### 数学修正
 
@@ -30223,7 +30223,7 @@
 
 **理由：** 由I1+I2得到的空间积分，原图漏括号与dx；补明对x积分。
 
-[相关正文：热核渐近、Weyl 公式与波前集](./03-math-analysis-iii/82-weyl-wavefront.md)
+[相关正文：82：热核渐近、Weyl 公式与波前集](./03-math-analysis-iii/82-weyl-wavefront.md)
 
 #### 数学修正
 
@@ -30265,7 +30265,7 @@
 
 **问题：** 有限个半径eps_i/2球覆盖边界，不能仅凭min(eps_i)/2确保整个该宽度内的边界层落入球并继承局部光滑性；还需取此有限覆盖的Lebesgue数或足够小的管状邻域宽度。结论正确，但此定量覆盖步骤需补条件，保留原文并注明。
 
-[相关正文：热核渐近、Weyl 公式与波前集](./03-math-analysis-iii/82-weyl-wavefront.md)
+[相关正文：82：热核渐近、Weyl 公式与波前集](./03-math-analysis-iii/82-weyl-wavefront.md)
 
 #### 数学修正
 
@@ -30319,7 +30319,7 @@
 
 **理由：** alpha≥alpha0仅给后一≤，非等号；系数应Omega面积，与上式选择C联动。
 
-[相关正文：热核渐近、Weyl 公式与波前集](./03-math-analysis-iii/82-weyl-wavefront.md)
+[相关正文：82：热核渐近、Weyl 公式与波前集](./03-math-analysis-iii/82-weyl-wavefront.md)
 
 #### 数学修正
 
@@ -30333,7 +30333,7 @@
 
 **理由：** 原图把≤与=重复，面积上界只有≤。
 
-[相关正文：热核渐近、Weyl 公式与波前集](./03-math-analysis-iii/82-weyl-wavefront.md)
+[相关正文：82：热核渐近、Weyl 公式与波前集](./03-math-analysis-iii/82-weyl-wavefront.md)
 
 #### 数学修正
 
@@ -30357,7 +30357,7 @@
 
 **理由：** 正要证明f左侧极限存在，原图提前写两个lim相减存在循环；紧前一致误差上界直接给limsup绝对误差≤C0||fk-f||，结合fk已有极限就推出f的极限，保留原观察证明。
 
-[相关正文：热核渐近、Weyl 公式与波前集](./03-math-analysis-iii/82-weyl-wavefront.md)
+[相关正文：82：热核渐近、Weyl 公式与波前集](./03-math-analysis-iii/82-weyl-wavefront.md)
 
 #### 数学修正
 
@@ -30411,7 +30411,7 @@
 
 **理由：** 952的正测度sum_k delta_lambda_k按重数计数；原图特征值的集合会删除重特征值，应改索引k的集合，与Weyl计数定义一致。
 
-[相关正文：热核渐近、Weyl 公式与波前集](./03-math-analysis-iii/82-weyl-wavefront.md)
+[相关正文：82：热核渐近、Weyl 公式与波前集](./03-math-analysis-iii/82-weyl-wavefront.md)
 
 #### 数学修正
 
@@ -30441,7 +30441,7 @@
 
 ### 83 波前集与非驻相法
 
-[相关正文：波前集与非驻相法](./03-math-analysis-iii/83-wavefront.md)
+[相关正文：83：波前集与非驻相法](./03-math-analysis-iii/83-wavefront.md)
 
 #### 数学修正
 
@@ -30531,7 +30531,7 @@
 
 **理由：** 827定义H^-s0的平方权重(1+|eta|²)^−s0，改用1+|eta|时应为−2s0平方权重，Cauchy之前为−s0。Schwartz衰减任意阶，增此指数合法。
 
-[相关正文：波前集与非驻相法](./03-math-analysis-iii/83-wavefront.md)
+[相关正文：83：波前集与非驻相法](./03-math-analysis-iii/83-wavefront.md)
 
 #### 数学修正
 
@@ -30637,7 +30637,7 @@
 
 **理由：** lemma544的乘子要求紧支集，psi仅C∞。插一个在supp f邻域为1的chi，使chi psi紧支且chi psi fu=psi fu，后续公式保持。
 
-[相关正文：波前集与非驻相法](./03-math-analysis-iii/83-wavefront.md)
+[相关正文：83：波前集与非驻相法](./03-math-analysis-iii/83-wavefront.md)
 
 #### 数学修正
 
@@ -30671,7 +30671,7 @@
 
 **理由：** 锥覆盖证明仅覆盖非零频率，0不必在各锥；fu紧支分布Fourier在0连续，紧后衰减不等式可用连续性延到0。
 
-[相关正文：波前集与非驻相法](./03-math-analysis-iii/83-wavefront.md)
+[相关正文：83：波前集与非驻相法](./03-math-analysis-iii/83-wavefront.md)
 
 #### 数学修正
 
@@ -30703,7 +30703,7 @@
 
 **理由：** 与上Z(p2)零截面联动，WF在非零余切丛所以仍为空。
 
-[相关正文：波前集与非驻相法](./03-math-analysis-iii/83-wavefront.md)
+[相关正文：83：波前集与非驻相法](./03-math-analysis-iii/83-wavefront.md)
 
 #### 数学修正
 
@@ -30779,7 +30779,7 @@
 
 **理由：** 紧支分布可含delta导数，仅K上值1不能保证psi u=u；邻域恒1保证所有分布阶的乘积保持。
 
-[相关正文：波前集与非驻相法](./03-math-analysis-iii/83-wavefront.md)
+[相关正文：83：波前集与非驻相法](./03-math-analysis-iii/83-wavefront.md)
 
 #### 数学修正
 
@@ -30803,7 +30803,7 @@
 
 **问题：** Omega1定义依赖尚未量化的x，后续却按eta固定域拆双积分并对x分部积分。要保证远区域每个支集x都非驻相，应采用全supp(a~)上统一union或光滑分区；当前x依赖域的指示函数会在x求导产生边界项。需核查续页，不凭单页猜改整个非驻相分拆证明。
 
-[相关正文：波前集与非驻相法](./03-math-analysis-iii/83-wavefront.md)
+[相关正文：83：波前集与非驻相法](./03-math-analysis-iii/83-wavefront.md)
 
 #### 数学修正
 
@@ -30845,7 +30845,7 @@
 
 **理由：** 承接上方绝对值估计，原图末结论同样应对复值积分取模。
 
-[相关正文：波前集与非驻相法](./03-math-analysis-iii/83-wavefront.md)
+[相关正文：83：波前集与非驻相法](./03-math-analysis-iii/83-wavefront.md)
 
 #### 数学修正
 
@@ -30887,7 +30887,7 @@
 
 **理由：** 补明刚修正下界常数的来源，保持原只讨论大频率的论证。
 
-[相关正文：波前集与非驻相法](./03-math-analysis-iii/83-wavefront.md)
+[相关正文：83：波前集与非驻相法](./03-math-analysis-iii/83-wavefront.md)
 
 #### 数学修正
 
@@ -31143,7 +31143,7 @@
 
 **理由：** Iε→I但两部分单独极限未证明；用三角不等式与一致上界给limsup模和即可。
 
-[相关正文：波前集与非驻相法](./03-math-analysis-iii/83-wavefront.md)
+[相关正文：83：波前集与非驻相法](./03-math-analysis-iii/83-wavefront.md)
 
 #### 数学修正
 
@@ -31231,7 +31231,7 @@
 
 ### 84 微局部椭圆正则性与奇性传播
 
-[相关正文：微局部椭圆正则性与奇性传播](./03-math-analysis-iii/84-microlocal-ellipticity.md)
+[相关正文：84：微局部椭圆正则性与奇性传播](./03-math-analysis-iii/84-microlocal-ellipticity.md)
 
 #### 数学修正
 
@@ -31265,7 +31265,7 @@
 
 **理由：** 原图重复主语它与P，保留P已定义后的它指代。
 
-[相关正文：微局部椭圆正则性与奇性传播](./03-math-analysis-iii/84-microlocal-ellipticity.md)
+[相关正文：84：微局部椭圆正则性与奇性传播](./03-math-analysis-iii/84-microlocal-ellipticity.md)
 
 #### 数学修正
 
@@ -31279,7 +31279,7 @@
 
 **理由：** lemma550定义振荡因子e^-iφ，此页e^-ix·xi对应φ=x·xi，原负号会反转WF方向。
 
-[相关正文：微局部椭圆正则性与奇性传播](./03-math-analysis-iii/84-microlocal-ellipticity.md)
+[相关正文：84：微局部椭圆正则性与奇性传播](./03-math-analysis-iii/84-microlocal-ellipticity.md)
 
 #### 数学修正
 
@@ -31451,7 +31451,7 @@
 
 **理由：** 原图lemma552首尾余项漏i，canonical已按整个振荡计算恢复i。
 
-[相关正文：微局部椭圆正则性与奇性传播](./03-math-analysis-iii/84-microlocal-ellipticity.md)
+[相关正文：84：微局部椭圆正则性与奇性传播](./03-math-analysis-iii/84-microlocal-ellipticity.md)
 
 #### 数学修正
 
@@ -31519,7 +31519,7 @@
 
 **理由：** 原图写d=m，canonical已正确以1/p_m齐次次数−m改正。
 
-[相关正文：微局部椭圆正则性与奇性传播](./03-math-analysis-iii/84-microlocal-ellipticity.md)
+[相关正文：84：微局部椭圆正则性与奇性传播](./03-math-analysis-iii/84-microlocal-ellipticity.md)
 
 #### 数学修正
 
@@ -31613,7 +31613,7 @@
 
 **理由：** 上界由分布阶M和固定的拟解编号k决定，紧后sup式同用C_Mk，与已修独立阶M一致。
 
-[相关正文：微局部椭圆正则性与奇性传播](./03-math-analysis-iii/84-microlocal-ellipticity.md)
+[相关正文：84：微局部椭圆正则性与奇性传播](./03-math-analysis-iii/84-microlocal-ellipticity.md)
 
 #### 数学修正
 
@@ -31667,7 +31667,7 @@
 
 **理由：** 原图重复量词尾语，删除多余都有，数学全称条件保持。
 
-[相关正文：微局部椭圆正则性与奇性传播](./03-math-analysis-iii/84-microlocal-ellipticity.md)
+[相关正文：84：微局部椭圆正则性与奇性传播](./03-math-analysis-iii/84-microlocal-ellipticity.md)
 
 #### 数学修正
 
@@ -31701,7 +31701,7 @@
 
 **理由：** WF仅定义于非零余切；若Char包含xi0=0，则(ξ0,0)为零向量不可能与梯度线性无关，没有任何P满足后述简单特征。排除零截面与奇性传播整章条件一致。
 
-[相关正文：微局部椭圆正则性与奇性传播](./03-math-analysis-iii/84-microlocal-ellipticity.md)
+[相关正文：84：微局部椭圆正则性与奇性传播](./03-math-analysis-iii/84-microlocal-ellipticity.md)
 
 #### 数学修正
 
@@ -31741,7 +31741,7 @@
 
 ### 85 奇性传播定理的证明
 
-[相关正文：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
+[相关正文：85：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
 
 #### 数学修正
 
@@ -31763,7 +31763,7 @@
 
 **问题：** Hamilton–Jacobi经典光滑相函数只能在局部时间/空间和非零频率构造，可出现caustic，原文全R×T*Omega不存在一般保证；须说明分段局部构造及连接，不擅自添加全局解。
 
-[相关正文：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
+[相关正文：85：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
 
 #### 未决数学问题
 
@@ -31773,7 +31773,7 @@
 
 **问题：** 相函数时间方程带固定输入|xi0|^(m−1)，原公式∇φ(t,x(t),xi0)=xi(t)仅在|xi0|=1并有局部光滑相函数时由本证明成立；一般初值需用时间|xi0|^(m−1)t，且t应限于曲线与相函数共同定义范围。全文多页沿用此参数，不能只改孤立等式。
 
-[相关正文：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
+[相关正文：85：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
 
 #### 数学修正
 
@@ -31805,7 +31805,7 @@
 
 **问题：** 978实际给∇φ(t,x(t),xi0)=xi(t)，本推论输入却取靠xi(t)的锥，证据只支持输入靠固定xi0的锥；加上978的时间归一化和局部相函数限制需跨页统一。简单改半径无法解决，保留具体疑点。
 
-[相关正文：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
+[相关正文：85：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
 
 #### 数学修正
 
@@ -31839,7 +31839,7 @@
 
 **理由：** 原图先在为同音字笔误，应为先来翻译这个条件。
 
-[相关正文：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
+[相关正文：85：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
 
 #### 数学修正
 
@@ -31869,7 +31869,7 @@
 
 **问题：** 968明确∂为普通偏导且symbol为Σpα(-iξ)^α；974仅把p_m改记Σpαξ^α，并未重定义∂为D。故e^{iφ}tP(e^{-iφ}c)的d+m项应i^m p_m c，981却写p_m c。977实相位方程与982的i∂ξp_m输运项可通过改Q=(-i)^m tP统一，但也能改算子/象征约定及相位系数；原作者选哪套归一化无法由局部文本唯一确定，需981–985整体审订。
 
-[相关正文：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
+[相关正文：85：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
 
 #### 未决数学问题
 
@@ -31881,7 +31881,7 @@
 
 **问题：** 原图M展开缺少981链式法则相应的(-i)幂和多重组合系数；例如m=3单变量二阶φ导数项应有系数3。并且随后把|α|=m-1项合并进M，需区分合并前后定义。正确B可由归一化Q的symbol二阶ξ导数Hessianφ式给出；由于981–985归一化未定，不孤立改此M。
 
-[相关正文：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
+[相关正文：85：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
 
 #### 未决数学问题
 
@@ -31893,7 +31893,7 @@
 
 **问题：** 本页连续等式出现-Mc、+Mc和(1/i)Mc三种互不相等的次高阶项；同一个低阶余项从+又变-且无重定义。若982系数定义为B，则负共轭为(1/i)L-B+余项，定义M=-iB可得引理形式(1/i)(L+M)c；需同时明确重新定义和修984递推，不能凭某一行猜定整组。
 
-[相关正文：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
+[相关正文：85：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
 
 #### 数学修正
 
@@ -31924,7 +31924,7 @@
 
 **问题：** 按983引理所写A=(1/i)(L+M)+余项，本行L+M缺1/i，下一行抵消R_k需要(L+M)b=-i R_k而非-R_k；但983本身M有符号与倍数矛盾，整体归一化未定，故联动列疑点而保留。
 
-[相关正文：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
+[相关正文：85：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
 
 #### 数学修正
 
@@ -31946,7 +31946,7 @@
 
 **问题：** χ应为光滑紧支截断且支持在终点已有微局部衰减的球内，同时在ak的统一空间支集邻域恒1。原文只要求χ在整个Br0恒1，未说明更大的衰减邻域或支集裕量，紧后986直接令χu有锥衰减需这一条件。981–984归一化和相函数局部存在缺口亦影响本页整组，保留具体疑点。
 
-[相关正文：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
+[相关正文：85：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
 
 #### 数学修正
 
@@ -32078,7 +32078,7 @@
 
 **问题：** 561应把初始ξ参数ξ(0)映至终点ξ(1)，此处却要求相函数输入ξ属于终点锥而下文输出估计在初始锥。978的非单位ξ时间缩放和相函数局部域未交代，无法仅靠此页独立确定所有锥范围及统一t条件；与979已记录缺口联动。
 
-[相关正文：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
+[相关正文：85：奇性传播定理的证明](./03-math-analysis-iii/85-propagation.md)
 
 #### 数学修正
 
@@ -32094,7 +32094,7 @@
 
 ### 86 分布理论期末复习题
 
-[相关正文：86.1 分布理论期末复习题第一套](./03-math-analysis-iii/86-revision/86-01-p0988-0991.md)
+[相关正文：86.1：分布理论期末复习题第一套](./03-math-analysis-iii/86-revision/86-01-p0988-0991.md)
 
 #### 数学修正
 
@@ -32132,7 +32132,7 @@
 
 **理由：** 990原图“定义分布R上的分布”重复“分布”，删叠词。
 
-[相关正文：86.1 分布理论期末复习题第一套](./03-math-analysis-iii/86-revision/86-01-p0988-0991.md)
+[相关正文：86.1：分布理论期末复习题第一套](./03-math-analysis-iii/86-revision/86-01-p0988-0991.md)
 
 #### 未决数学问题
 
@@ -32142,7 +32142,7 @@
 
 **问题：** 991源图连续两题均编号D6，后续D7/D8。问题正文数学可成立；保留源题号以便引用，重复编号需作为源排版问题报告，重新编号属于跨题标识调整。
 
-[相关正文：86.2 分布理论期末复习题第二套](./03-math-analysis-iii/86-revision/86-02-p0992-0993.md)
+[相关正文：86.2：分布理论期末复习题第二套](./03-math-analysis-iii/86-revision/86-02-p0992-0993.md)
 
 #### 数学修正
 
@@ -32160,7 +32160,7 @@
 
 **理由：** 993原图用tan x导致已给定域内x=π/2无定义。乘cos后的等价形式在唯一被排除的π/4外均有定义，π/2给0；与C1连续分支和C2复对数的辐角完全吻合，最小补齐一个点，不增加习题解答。
 
-[相关正文：86.3 分布理论期末复习题第三套](./03-math-analysis-iii/86-revision/86-03-p0994-1001.md)
+[相关正文：86.3：分布理论期末复习题第三套](./03-math-analysis-iii/86-revision/86-03-p0994-1001.md)
 
 #### 未决数学问题
 
@@ -32170,7 +32170,7 @@
 
 **问题：** 994 A1–A9定义u=e^{-|x|}和P·u而从未定义T；原图995确写T*U。T=u和T=P·u两者均有上下文依据且均产生连续1周期函数、每周期有初等表示，题意无法唯一恢复。保留原文并报告未定义记号。
 
-[相关正文：86.3 分布理论期末复习题第三套](./03-math-analysis-iii/86-revision/86-03-p0994-1001.md)
+[相关正文：86.3：分布理论期末复习题第三套](./03-math-analysis-iii/86-revision/86-03-p0994-1001.md)
 
 #### 数学修正
 
@@ -32194,7 +32194,7 @@
 
 **理由：** 996原图“无定点”且定义明确去除(0,0,0)，所说为去顶点的锥；定→顶为确定用字笔误。
 
-[相关正文：86.3 分布理论期末复习题第三套](./03-math-analysis-iii/86-revision/86-03-p0994-1001.md)
+[相关正文：86.3：分布理论期末复习题第三套](./03-math-analysis-iii/86-revision/86-03-p0994-1001.md)
 
 #### 数学修正
 
@@ -32208,7 +32208,7 @@
 
 **理由：** 原图B17漏不变性，任意分布不能只由每个双曲面平均值决定，非不变点Dirac可区别平均值相同的试验函数。B18明确不变函数，B19–B21及1000 B23对应区域均要求不变性，局部意图唯一确定为不变分布。
 
-[相关正文：86.3 分布理论期末复习题第三套](./03-math-analysis-iii/86-revision/86-03-p0994-1001.md)
+[相关正文：86.3：分布理论期末复习题第三套](./03-math-analysis-iii/86-revision/86-03-p0994-1001.md)
 
 #### 数学修正
 

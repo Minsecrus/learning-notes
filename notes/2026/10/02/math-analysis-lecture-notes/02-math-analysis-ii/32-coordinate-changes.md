@@ -1,13 +1,12 @@
-# 32 坐标变换、多元 Taylor 展开与子流形
+# 32：坐标变换、多元 Taylor 展开与子流形
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../02-math-analysis-ii.md) · [校勘记录](../errata.md) · [上一篇：31.1 作业:齐次函数与Euler公式](31-differential-maps/31-03-p0352-0356.md) · [下一篇：子流形与反函数定理](33-inverse-function/33-01-p0368-0374.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../02-math-analysis-ii.md) · [校勘记录](../errata.md) · [上一篇：31.1：作业：齐次函数与Euler公式](31-differential-maps/31-03-p0352-0356.md) · [下一篇：子流形与反函数定理](33-inverse-function/33-01-p0368-0374.md)
 
 <!-- source: PDF 357; printed: 357; transcription: first-pass; proofreading: applied -->
 
-## 32 微分同胚，坐标变换，Clairaut-Schwarz 定理（偏导数可交换），多元函数的 Taylor 展开，$\mathbb{R}^n$ 中光滑子流形的定义
 
 
-### 微分同胚与坐标变换
+## 微分同胚与坐标变换
 
 给定映射 $f: \Omega_1 \to \mathbb{R}^{n_2}$，其中开区域 $\Omega_1 \subset \mathbb{R}^{n_1}$，用坐标分量表示，我们有
 
@@ -23,7 +22,7 @@ $$
 
 都存在并且是连续的，那么我们就称 $f$ 是**光滑的**。如果 $n_2 = 1$，我们就称之为**光滑函数**，并记为 $C^\infty(\Omega_1)$。
 
-**练习.** 证明以下三个关于光滑函数的基本性质：
+**练习。** 证明以下三个关于光滑函数的基本性质：
 
 1) $C^\infty(\Omega_1)$ 是一个 $\mathbb{R}$-代数，即对任意的 $f, g \in C^\infty(\Omega_1)$，它们的任意实线性组合以及乘积都是光滑函数。
 
@@ -41,7 +40,7 @@ $$
 
 我们把 $\Omega_1$ 到 $\Omega_2$ 之间的光滑映射的全体记作是 $C^\infty(\Omega_1, \Omega_2)$。当然，光滑的映射不见得是光滑的同胚。
 
-**例子.** 考虑如下映射
+**例子。** 考虑如下映射
 
 $$
 f: \mathbb{R} \to \mathbb{R}, \quad x \mapsto x^3.
@@ -51,7 +50,7 @@ $$
 
 根据上次课逆映射微分的命题，我们一定有 $n_1 = n_2$（维数相同）。
 
-**注记.**
+**注记。**
 
 <!-- source: PDF 358; printed: 358; transcription: first-pass; proofreading: applied -->
 
@@ -91,7 +90,7 @@ $$
 \end{array}
 $$
 
-<span id="ma-lemma-185" class="lecture-anchor"></span>**引理 185.** 假设 $f \in C^\infty(\Omega_2)$（即 $f$ 是 $\Omega_2$ 上的光滑函数），那么 $\Phi^* f \in C^\infty(\Omega_1)$。
+<span id="ma-lemma-185" class="lecture-anchor"></span>**引理 185。** 假设 $f \in C^\infty(\Omega_2)$（即 $f$ 是 $\Omega_2$ 上的光滑函数），那么 $\Phi^* f \in C^\infty(\Omega_1)$。
 
 **证明：** 我们只需证明对任意的 $\Omega_2$ 上的光滑函数，对任意的 $N$，$\Phi^* f$ 的各阶偏导数
 
@@ -109,7 +108,9 @@ $$
 
 此时，每一个 $\frac{\partial \Phi^k}{\partial x_i}$ 都是光滑函数，对 $\frac{\partial f}{\partial y_k}$ 利用归纳假设（这是那个被拉回的函数），对上述函数再求 $N$ 次偏导数也连续，所以命题成立。 $\square$
 
-**注记.** 上面的证明仅仅用到了 $\Phi$ 的光滑性，换句话说，我们证明了如下的命题，如果 $f$ 是光滑函数，$\Phi$ 是光滑映射，那么它们的复合 $f \circ \Phi$ 是光滑函数，其中，我们假设 $f: \Omega_2 \to \mathbb{R}$，$\Phi: \Omega_1 \to \Omega_2$。
+**注记。** 上面的证明仅仅用到了 $\Phi$ 的光滑性，换句话说，我们证明了如下的命题，如果 $f$ 是光滑函数，$\Phi$ 是光滑映射，那么它们的复合 $f \circ \Phi$ 是光滑函数，其中，我们假设 $f: \Omega_2 \to \mathbb{R}$，$\Phi: \Omega_1 \to \Omega_2$。
+
+### 偏导数在坐标变换下的关系
 
 最终，我们考虑常见的但是容易产生混淆的一种情形：我们假设有两个坐标系统 $(x_i)$ 和 $(y_i)$ 来描述 $\Omega$ 中的点。此时，我们把每一个坐标函数都理解为 $\Omega$ 上的函数，那么，如果用第一个坐标系统来描述第二个坐标系统的坐标函数，我们就可以写成
 
@@ -147,7 +148,7 @@ $$
 
 <!-- source: PDF 360; printed: 360; transcription: first-pass; proofreading: applied -->
 
-**练习 (重要).** 利用链式法则证明：
+**练习（重要）。** 利用链式法则证明：
 
 $$
 \frac{\partial f}{\partial x_i} = \sum_{j=1}^n \frac{\partial y_j}{\partial x_i}(x_1, \cdots, x_n) \frac{\partial f}{\partial y_j}(y_1(x_1, \cdots, x_n), \cdots, y_n(x_1, \cdots, x_n)).
@@ -155,11 +156,13 @@ $$
 
 据此可知，由偏导数的定义是依赖于坐标系的选取的。特别地，在不同的坐标系之间它们的差别由坐标变换（即上述的 $\Phi$）的 Jacobi 矩阵决定。
 
-**注记.** 偏导数的定义不是内蕴的，它依赖于具体坐标系的选取。然而，微分 $df$（按定义）不依赖于坐标系统的选取，是内蕴的。
+**注记。** 偏导数的定义不是内蕴的，它依赖于具体坐标系的选取。然而，微分 $df$（按定义）不依赖于坐标系统的选取，是内蕴的。
+
+## 偏导数的可交换性
 
 我们现在回到学习的主线上来。我们现在证明偏导数运算具有可交换性（这个定理的几何表述是函数的 Hasse 算子是对称的）：
 
-<span id="ma-theorem-186" class="lecture-anchor"></span>**定理 186 (Clairaut-Schwarz).** 给定 $\mathbb{R}^n$ 上的开集 $\Omega$（$n \geqslant 2$）和函数 $f : \Omega \to \mathbb{R}$ 是函数，$i, j \in \{1, 2, \cdots, n\}$ 是两个不同的指标。假设在 $\Omega$ 上，函数 $\frac{\partial f}{\partial x_i}(x)$，$\frac{\partial f}{\partial x_j}(x)$ 和 $\frac{\partial}{\partial x_i}\Big(\frac{\partial f}{\partial x_j}\Big)(x)$ 存在并且连续。那么，$\frac{\partial}{\partial x_j}\Big(\frac{\partial f}{\partial x_i}\Big)(x)$ 也存在并且对任意的 $x \in \Omega$，我们有
+<span id="ma-theorem-186" class="lecture-anchor"></span>**定理 186（Clairaut-Schwarz）。** 给定 $\mathbb{R}^n$ 上的开集 $\Omega$（$n \geqslant 2$）和函数 $f : \Omega \to \mathbb{R}$ 是函数，$i, j \in \{1, 2, \cdots, n\}$ 是两个不同的指标。假设在 $\Omega$ 上，函数 $\frac{\partial f}{\partial x_i}(x)$，$\frac{\partial f}{\partial x_j}(x)$ 和 $\frac{\partial}{\partial x_i}\Big(\frac{\partial f}{\partial x_j}\Big)(x)$ 存在并且连续。那么，$\frac{\partial}{\partial x_j}\Big(\frac{\partial f}{\partial x_i}\Big)(x)$ 也存在并且对任意的 $x \in \Omega$，我们有
 
 $$
 \frac{\partial}{\partial x_i}\Big(\frac{\partial f}{\partial x_j}\Big)(x) = \frac{\partial}{\partial x_j}\Big(\frac{\partial f}{\partial x_i}\Big)(x).
@@ -167,13 +170,13 @@ $$
 
 为了证明这个命题，我们从一个引理开始：
 
-<span id="ma-lemma-187" class="lecture-anchor"></span>**引理 187.** 假设函数 $f : \mathbb{R}^2 - \{(0, 0)\} \to \mathbb{R}$ 在 $(0, 0) \in \mathbb{R}^2$ 处的极限 $\lim_{(x, y) \to (0, 0)} f(x, y)$ 存在。如果存在 $\varepsilon_0 > 0$，使得对于任意给定的 $y_0 \in (-\varepsilon_0, \varepsilon_0)$，极限 $\lim_{x \to 0} f(x, y_0)$ 都存在。那么，极限 $\lim_{y \to 0} \big(\lim_{x \to 0} f(x, y)\big)$ 存在并且
+<span id="ma-lemma-187" class="lecture-anchor"></span>**引理 187。** 假设函数 $f : \mathbb{R}^2 - \{(0, 0)\} \to \mathbb{R}$ 在 $(0, 0) \in \mathbb{R}^2$ 处的极限 $\lim_{(x, y) \to (0, 0)} f(x, y)$ 存在。如果存在 $\varepsilon_0 > 0$，使得对于任意给定的 $y_0 \in (-\varepsilon_0, \varepsilon_0)$，极限 $\lim_{x \to 0} f(x, y_0)$ 都存在。那么，极限 $\lim_{y \to 0} \big(\lim_{x \to 0} f(x, y)\big)$ 存在并且
 
 $$
 \lim_{y \to 0} \big(\lim_{x \to 0} f(x, y)\big) = \lim_{(x, y) \to (0, 0)} f(x, y).
 $$
 
-*引理的证明.* 按照距离空间中函数极限存在的定义，$\lim_{(x, y) \to (0, 0)} f(x, y)$ 存在指的是存在 $L$，使得对任意的 $\varepsilon > 0$，存在 $\delta > 0$，当 $\sqrt{x^2 + y^2} < \delta$ 时，有 $|f(x, y) - L| < \varepsilon$。
+*引理的证明。* 按照距离空间中函数极限存在的定义，$\lim_{(x, y) \to (0, 0)} f(x, y)$ 存在指的是存在 $L$，使得对任意的 $\varepsilon > 0$，存在 $\delta > 0$，当 $\sqrt{x^2 + y^2} < \delta$ 时，有 $|f(x, y) - L| < \varepsilon$。
 
 任意固定 $\varepsilon > 0$。在上述极限的定义中，我们现在选取 $\delta$ 使得 $\delta \leqslant \varepsilon_0$。考虑任意一个 $y$，其中 $|y| < \delta$。下面认为 $y$ 是固定的。
 
@@ -187,7 +190,7 @@ $$
 
 <!-- source: PDF 361; printed: 361; transcription: first-pass; proofreading: applied -->
 
-*Clairaut-Schwarz 定理的证明.* 不妨假设 $i = 1$，$j = 2$。为了简单期间，我们将函数 $f$ 记为
+*Clairaut-Schwarz 定理的证明。* 不妨假设 $i = 1$，$j = 2$。为了简单期间，我们将函数 $f$ 记为
 
 $$
 f(x_1, x_2, \cdots, x_n) = f(x, y, Z),
@@ -250,7 +253,7 @@ $$
 
 <!-- source: PDF 362; printed: 362; transcription: first-pass; proofreading: applied -->
 
-**注记.** 基于这个命题，我们可以引入一个方便的记号来记多重的偏导数：令 $\alpha = (\alpha_1, \cdots, \alpha_n)$ 为一个多重指标，也就是说对于每个 $i \leqslant n$，有 $\alpha_i \in \mathbb{Z}_{\geqslant 0}$，我们用 $\partial^\alpha f$ 表示 $\alpha_1$ 个 $\frac{\partial}{\partial x_1}$，$\alpha_2$ 个 $\frac{\partial}{\partial x_2}$，$\cdots$，$\alpha_n$ 个 $\frac{\partial}{\partial x_n}$ 作用在 $f$ 上，即
+**注记。** 基于这个命题，我们可以引入一个方便的记号来记多重的偏导数：令 $\alpha = (\alpha_1, \cdots, \alpha_n)$ 为一个多重指标，也就是说对于每个 $i \leqslant n$，有 $\alpha_i \in \mathbb{Z}_{\geqslant 0}$，我们用 $\partial^\alpha f$ 表示 $\alpha_1$ 个 $\frac{\partial}{\partial x_1}$，$\alpha_2$ 个 $\frac{\partial}{\partial x_2}$，$\cdots$，$\alpha_n$ 个 $\frac{\partial}{\partial x_n}$ 作用在 $f$ 上，即
 
 $$
 \partial^\alpha f = \left(\frac{\partial}{\partial x_n}\right)^{\alpha_n} \circ \left(\frac{\partial}{\partial x_{n-1}}\right)^{\alpha_{n-1}} \circ \cdots \circ \left(\frac{\partial}{\partial x_1}\right)^{\alpha_1} (f).
@@ -274,7 +277,7 @@ $$
 \frac{\partial^2 f}{\partial x^2}, \ \ \frac{\partial^2 f}{\partial x \partial y}.
 $$
 
-**例子 (Clairaut-Schwarz 的反例).** 如果 Clairaut-Schwarz 定理中的连续性不成立，那么命题可能并不成立。考察函数
+**例子（Clairaut-Schwarz 的反例）。** 如果 Clairaut-Schwarz 定理中的连续性不成立，那么命题可能并不成立。考察函数
 
 $$
 f(x, y) = \begin{cases}
@@ -303,13 +306,13 @@ $$
 
 这表明 Clairaut-Schwarz 定理并不成立。请思考定理中的哪个条件没有被满足。
 
-### 多元函数的 Taylor 展开
+## 多元函数的 Taylor 展开
 
 我们现在来证明高维空间 Lagrange 余项 Taylor 公式，也就是在一个点附近用高次的多项式函数来逼近函数。证明的想法很直接：将问题沿不同的方向化为 1 维的情形。其余余项的 Taylor 公式证明是类似的。
 
 <!-- source: PDF 363; printed: 363; transcription: first-pass; proofreading: applied -->
 
-<span id="ma-theorem-188" class="lecture-anchor"></span>**定理 188.** 假设 $\Omega \subset \mathbb{R}^n$ 是凸的开集，$f$ 在 $\Omega$ 上 $k + 1$ 次可微分（我们通常要求更多的条件：$f$ 不超过 $k + 1$ 阶的偏导数存在并且连续，这对于应用来说是足够的）。那么，对于任意的 $x, y \in \Omega$，其中 $x = (x_1, \cdots, x_n)$，$y = (y_1, \cdots, y_n)$，存在 $\vartheta \in [0, 1]$（可能依赖于 $x$ 和 $y$），使得
+<span id="ma-theorem-188" class="lecture-anchor"></span>**定理 188。** 假设 $\Omega \subset \mathbb{R}^n$ 是凸的开集，$f$ 在 $\Omega$ 上 $k + 1$ 次可微分（我们通常要求更多的条件：$f$ 不超过 $k + 1$ 阶的偏导数存在并且连续，这对于应用来说是足够的）。那么，对于任意的 $x, y \in \Omega$，其中 $x = (x_1, \cdots, x_n)$，$y = (y_1, \cdots, y_n)$，存在 $\vartheta \in [0, 1]$（可能依赖于 $x$ 和 $y$），使得
 
 $$
 f(y_1, \cdots, y_n) = \sum_{|\alpha| \leqslant k} \frac{\partial^\alpha f(x)}{\alpha!} (y - x)^\alpha + \sum_{|\alpha| = k + 1} \frac{\partial^\alpha f(x + \vartheta(y - x))}{\alpha!} (y - x)^\alpha,
@@ -437,7 +440,7 @@ $$
 $$
 其中，函数 $f$ 定义在 $(x, z)$ 平面的一个单位圆盘的内部。所以说，$\mathbf{S}^2$ 在局部上来看是一个微分子流形。
 
-**练习.** 证明，$\mathbf{S}^2 \subset \mathbb{R}^3$ 在如下的意义下永远都不是一个函数的图像：不存在微分同胚
+**练习。** 证明，$\mathbf{S}^2 \subset \mathbb{R}^3$ 在如下的意义下永远都不是一个函数的图像：不存在微分同胚
 $$
 \Phi : \mathbb{R}^3 \to \mathbb{R}^2_{y_1, y_2} \times \mathbb{R}^1_{y_3},
 $$
@@ -448,9 +451,11 @@ $$
 
 <!-- source: PDF 366; printed: 366; transcription: first-pass; proofreading: applied -->
 
+### 子流形的定义与维数
+
 将这些例子作为基本的图像，我们就可想办法定义 $\mathbb{R}^n$ 中的子流形了，这是所有的那些在局部上复合一个微分同胚（换一下坐标系）之后就变成了线性子空间的一部分的那样的子集合。[^p0366-8]
 
-<span id="ma-definition-189" class="lecture-anchor"></span>**定义 189** ($d$-维子流形). 假设 $M \subset \mathbb{R}^n$ 是非空子集，这个 $\mathbb{R}^n$ 中的坐标用 $(x_i)$ 表示。如果存在整数 $0\leqslant d\leqslant n$，使得对任意的 $x \in M$，存在开集 $U \subset \mathbb{R}^n$，$x \in U$ 以及（可能是另外一个）$\mathbb{R}^n$ 中的开集（这个 $\mathbb{R}^n$ 中的坐标用 $(y_i)$ 表示）$V$ 以及微分同胚
+<span id="ma-definition-189" class="lecture-anchor"></span>**定义 189**（$d$-维子流形）。假设 $M \subset \mathbb{R}^n$ 是非空子集，这个 $\mathbb{R}^n$ 中的坐标用 $(x_i)$ 表示。如果存在整数 $0\leqslant d\leqslant n$，使得对任意的 $x \in M$，存在开集 $U \subset \mathbb{R}^n$，$x \in U$ 以及（可能是另外一个）$\mathbb{R}^n$ 中的开集（这个 $\mathbb{R}^n$ 中的坐标用 $(y_i)$ 表示）$V$ 以及微分同胚
 $$
 \Phi : U \to V
 $$
@@ -462,7 +467,7 @@ $$
 
 ![子流形局部坐标变换](../assets/p0366-figure-1.webp)
 
-**注记.** 我们还把 $\operatorname{codim} M = n - \dim M$ 称作是 $M$ 的余维数，它有着如下局部的含义：在 $U$ 上存在 $\operatorname{codim} M$ 个函数，使得 $M\cap U$ 恰好是这些函数的公共零点集合。实际上，我们可以取 $f_j = \Phi^* y_j$，其中 $j = d+1, d+2, \cdots, n$。
+**注记。** 我们还把 $\operatorname{codim} M = n - \dim M$ 称作是 $M$ 的余维数，它有着如下局部的含义：在 $U$ 上存在 $\operatorname{codim} M$ 个函数，使得 $M\cap U$ 恰好是这些函数的公共零点集合。实际上，我们可以取 $f_j = \Phi^* y_j$，其中 $j = d+1, d+2, \cdots, n$。
 
 我们需要说明维数 $d$ 是良好的定义。换句话说，把 $M$ 局部上看成是某个 $d$ 维的线性子空间中的集合的方式又可能不唯一。按照定义，对于给定的 $x$，我们有可能有（很明显有很多）另外的 $0\leqslant d'\leqslant n$ 和开集 $U'$，$x \in U'$ 以及（可能是另外一个）$\mathbb{R}^n$ 中的开集（这个 $\mathbb{R}^n$ 中的坐标用 $(z_i)$ 表示）$V'$ 以及微分同胚
 $$
@@ -490,6 +495,6 @@ $$
 $$
 这是 $\mathbb{R}^d$ 和 $\mathbb{R}^{d'}$ 中的两个开集之间的微分同胚，我们上周已经利用复合映射的链式法则证明了 $d = d'$。
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../02-math-analysis-ii.md) · [校勘记录](../errata.md) · [上一篇：31.1 作业:齐次函数与Euler公式](31-differential-maps/31-03-p0352-0356.md) · [下一篇：子流形与反函数定理](33-inverse-function/33-01-p0368-0374.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../02-math-analysis-ii.md) · [校勘记录](../errata.md) · [上一篇：31.1：作业：齐次函数与Euler公式](31-differential-maps/31-03-p0352-0356.md) · [下一篇：子流形与反函数定理](33-inverse-function/33-01-p0368-0374.md)
 
 [^p0366-8]: 根据 Whitney 的定理，这个定义实际上包含了所有的微分流形。

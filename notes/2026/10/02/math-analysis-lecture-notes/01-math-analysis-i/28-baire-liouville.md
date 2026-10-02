@@ -1,15 +1,14 @@
-# 28 Baire 纲定理与 Liouville 定理
+# 28：Baire 纲定理与 Liouville 定理
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：27.1 作业:振荡积分](27-stieltjes-mean-value/27-03-p0290-0295.md) · [下一篇：振荡与衰减、期末考试与寒假作业](29-oscillation-decay/29-01-p0306-0312.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：27.1：作业：振荡积分](27-stieltjes-mean-value/27-03-p0290-0295.md) · [下一篇：振荡与衰减、期末考试与寒假作业](29-oscillation-decay/29-01-p0306-0312.md)
 
 <!-- source: PDF 296; printed: 296; transcription: first-pass; proofreading: applied -->
 
-## 28 一元微积分拾遗：Baire 纲定理及其应用，原函数的初等函数表示定理：Liouville 定理
 
 
-### Baire 定理以及应用
+## Baire 定理以及应用
 
-<span id="ma-theorem-160" class="lecture-anchor"></span>**定理 160** (Baire). $(X, d)$ 是完备的距离空间，那么任意可数个稠密的开集的交仍然是稠密的，即若 $\{U_n\}_{n \geqslant 1}$ 是可数个稠密的开集，那么 $U_\infty = \displaystyle\bigcap_{n \geqslant 1} U_n$ 是稠密的。
+<span id="ma-theorem-160" class="lecture-anchor"></span>**定理 160**（Baire）。$(X, d)$ 是完备的距离空间，那么任意可数个稠密的开集的交仍然是稠密的，即若 $\{U_n\}_{n \geqslant 1}$ 是可数个稠密的开集，那么 $U_\infty = \displaystyle\bigcap_{n \geqslant 1} U_n$ 是稠密的。
 
 在第二课中，我们就已经给出了稠密性的定义：$U \subset X$ 是子集。如果对任意的 $x \in X$ 和任意的 $\varepsilon > 0$，都存在 $y \in U$，使得 $d(y, x) < \varepsilon$，我们就称 $U$ 在 $X$ 中是稠密的。我们注意到，$U_\infty$ 未必是开集，因为开集只在有限的交的操作下封闭。
 
@@ -53,15 +52,17 @@ $$d(x_\infty, x) \leqslant d(x_\infty, x_1) + d(x_1, x) < 2\varepsilon_1 + \vare
 
 对于任意的集合 $Y \subset X$，如果对 $y \in Y$，存在 $\varepsilon > 0$，使得 $B(y, \varepsilon) \subset Y$，我们就称 $y$ 是 $Y$ 的一个**内点**。我们用 $\mathring{Y}$ 表示 $Y$ 的内点所组成的集合并称之为 $Y$ 的**内部**。
 
-**练习.** 假设 $Y, Z \subset X$ 互为补集，那么 $\mathring{Y} = \emptyset$ 等价于 $Z$ 在 $X$ 中稠密。
+**练习。** 假设 $Y, Z \subset X$ 互为补集，那么 $\mathring{Y} = \emptyset$ 等价于 $Z$ 在 $X$ 中稠密。
 
-<span id="ma-corollary-161" class="lecture-anchor"></span>**推论 161.** $(X, d)$ 是完备的距离空间，若 $\{F_n\}_{n \geqslant 1}$ 是可数个闭集并且对每个 $n \geqslant 1$，其内部 $\mathring{F}_n = \emptyset$，那么 $F_\infty = \displaystyle\bigcup_{n \geqslant 1} F_n$ 的内部为空集，即 $\mathring{F}_\infty = \emptyset$。
+<span id="ma-corollary-161" class="lecture-anchor"></span>**推论 161。** $(X, d)$ 是完备的距离空间，若 $\{F_n\}_{n \geqslant 1}$ 是可数个闭集并且对每个 $n \geqslant 1$，其内部 $\mathring{F}_n = \emptyset$，那么 $F_\infty = \displaystyle\bigcup_{n \geqslant 1} F_n$ 的内部为空集，即 $\mathring{F}_\infty = \emptyset$。
 
 **证明：** 令 $U_n = X - F_n$，这是开集。那么，$\mathring{F}_n = \emptyset$ 意味着 $U_n$ 是稠密的。根据 Baire 的定理，$U_\infty = \displaystyle\bigcap_{n \geqslant 1} U_n$ 是稠密的，从而 $X - U_\infty$ 的内部为空集。最后，我们注意到 $F = \displaystyle\bigcup_{n \geqslant 1} F_n$ 的补集恰好为 $U_\infty$，所以命题成立。$\square$
 
+### 纲定理的应用
+
 我们给出 Baire 纲定理的几个应用。
 
-<span id="ma-proposition-162" class="lecture-anchor"></span>**命题 162.** 不存在可微函数 $f \in C([a, b])$，使得对任意的开区间 $(c, d) \subset [a, b]$，$f'$ 在 $(c, d)$ 上无界。
+<span id="ma-proposition-162" class="lecture-anchor"></span>**命题 162。** 不存在可微函数 $f \in C([a, b])$，使得对任意的开区间 $(c, d) \subset [a, b]$，$f'$ 在 $(c, d)$ 上无界。
 
 **证明：** 假设 $f$ 是 $[a, b]$ 上的可微函数，对任意的 $n \geqslant 1$，定义
 
@@ -79,91 +80,91 @@ $$[a, b] = \bigcup_{k \geqslant 1} F_k.$$
 
 <!-- source: PDF 298; printed: 298; transcription: first-pass; proofreading: applied -->
 
-根据Baire 定理的推论,不可能每一个 $F_k$ 的内部都是空集,所以存在 $k_0 \geqslant 1$,使得
+根据Baire 定理的推论，不可能每一个 $F_k$ 的内部都是空集，所以存在 $k_0 \geqslant 1$，使得
 
 $$\mathring{F}_{k_0} \neq \emptyset.$$
 
-所以,存在开区间 $(c, d) \subset [a, b]$,使得 $(c, d) \subset \left\{x \in [a, b] \mid M(x) \leqslant k_0\right\}$,即对任意的 $x \in (c, d)$,当 $n$ 足够大以使 $x+1/n \leqslant b$ 时,我们都有
+所以，存在开区间 $(c, d) \subset [a, b]$，使得 $(c, d) \subset \left\{x \in [a, b] \mid M(x) \leqslant k_0\right\}$，即对任意的 $x \in (c, d)$，当 $n$ 足够大以使 $x+1/n \leqslant b$ 时，我们都有
 
 $$|f_n(x)| = \left|\frac{f(x + \frac{1}{n}) - f(x)}{\frac{1}{n}}\right| \leqslant k_0.$$
 
-令 $n \to \infty$,这表明在 $(c, d)$ 上,我们有 $f'$ 有界。$\square$
+令 $n \to \infty$，这表明在 $(c, d)$ 上，我们有 $f'$ 有界。$\square$
 
-<span id="ma-proposition-163" class="lecture-anchor"></span>**命题 163.** 不存在 $[0, 1]$ 上的连续函数序列 $\{f_n\}_{n \geqslant 1} \subset C([0, 1])$,使得 $f_n$ 逐点收敛到 $\mathbf{1}_{\mathbb{Q}}$（即有理数的示性函数）。
+<span id="ma-proposition-163" class="lecture-anchor"></span>**命题 163。** 不存在 $[0, 1]$ 上的连续函数序列 $\{f_n\}_{n \geqslant 1} \subset C([0, 1])$，使得 $f_n$ 逐点收敛到 $\mathbf{1}_{\mathbb{Q}}$（即有理数的示性函数）。
 
-**证明:** 如若不然,我们假设存在 $\{f_n\}_{n \geqslant 1} \subset C([0, 1])$,使得对任意的 $x \in [0, 1]$,我们都有
+**证明：** 如若不然，我们假设存在 $\{f_n\}_{n \geqslant 1} \subset C([0, 1])$，使得对任意的 $x \in [0, 1]$，我们都有
 
 $$\lim_{n \to \infty} f_n(x) = \begin{cases} 1, & x \in \mathbb{Q}; \\ 0, & x \notin \mathbb{Q} \end{cases}$$
 
-对于每个 $k \geqslant 1$,我们令
+对于每个 $k \geqslant 1$，我们令
 
 $$F_k = \bigcap_{n \geqslant k} f_n^{-1}\!\left(\left[-\frac{1}{2}, \frac{1}{2}\right]\right).$$
 
-由于 $f_n$ 连续,所以
+由于 $f_n$ 连续，所以
 
 $$f_n^{-1}\!\left(\left[-\frac{1}{2}, \frac{1}{2}\right]\right) = \left\{x \in [0, 1] \mid -\frac{1}{2} \leqslant f_n(x) \leqslant \frac{1}{2}\right\}$$
 
-是闭集,从而 $F_k$ 是闭集。根据定义,我们知道对任意的 $x \in F_k$,
+是闭集，从而 $F_k$ 是闭集。根据定义，我们知道对任意的 $x \in F_k$，
 
 $$\lim_{n \to \infty} f_n(x) = 0.$$
 
-从而,对于任意的 $x \in F_k$,$x$ 是无理数。特别地,$\mathbb{Q} \cap F_k = \emptyset$,所以 $\mathring{F}_k = \emptyset$。
+从而，对于任意的 $x \in F_k$，$x$ 是无理数。特别地，$\mathbb{Q} \cap F_k = \emptyset$，所以 $\mathring{F}_k = \emptyset$。
 
-类似地,对于每个 $k \geqslant 1$,我们令
+类似地，对于每个 $k \geqslant 1$，我们令
 
 $$G_k = \bigcap_{n \geqslant k} f_n^{-1}\!\left(\left[\frac{1}{2}, \frac{3}{2}\right]\right).$$
 
-这也是闭集。根据定义,我们知道对任意的 $x \in G_k$,
+这也是闭集。根据定义，我们知道对任意的 $x \in G_k$，
 
 $$\lim_{n \to \infty} f_n(x) = 1.$$
 
-从而,对于任意的 $x \in G_k$,$x$ 是有理数,所以 $\mathring{G}_k = \emptyset$。
+从而，对于任意的 $x \in G_k$，$x$ 是有理数，所以 $\mathring{G}_k = \emptyset$。
 
-然而,根据 $f_n$ 逐点收敛到 $\mathbf{1}_{\mathbb{Q}}$,我们知道
+然而，根据 $f_n$ 逐点收敛到 $\mathbf{1}_{\mathbb{Q}}$，我们知道
 
 $$[0, 1] = \bigcup_{k \geqslant 1} (F_k \cup G_k) = F_1 \cup G_1 \cup F_2 \cup G_2 \cup \cdots.$$
 
-上式左边的集合的内部非空,这和 Baire 定理矛盾。$\square$
+上式左边的集合的内部非空，这和 Baire 定理矛盾。$\square$
 
 <!-- source: PDF 299; printed: 299; transcription: first-pass; proofreading: applied -->
 
-**练习.** 试构造函数 $\{f_{m,n}\}_{m,n \geqslant 1}$,使得对任意的 $x \in [0, 1]$,我们有
+**练习。** 试构造函数 $\{f_{m,n}\}_{m,n \geqslant 1}$，使得对任意的 $x \in [0, 1]$，我们有
 
 $$\lim_{m \to \infty} \left(\lim_{n \to \infty} f_{m,n}(x)\right) = \mathbf{1}_{\mathbb{Q}}(x).$$
 
 Baire 定理在线性代数上有如下的应用：
 
-<span id="ma-proposition-164" class="lecture-anchor"></span>**命题 164.** 假设 $(V, \|\cdot\|)$ 是完备的赋范线性空间（不妨假设是实数域上的线性空间）,如果 $\dim V = \infty$,那么 $V$ 的任意一组（代数）基 $\{e_i\}_{i \in I}$ 都是不可数集。
+<span id="ma-proposition-164" class="lecture-anchor"></span>**命题 164。** 假设 $(V, \|\cdot\|)$ 是完备的赋范线性空间（不妨假设是实数域上的线性空间），如果 $\dim V = \infty$，那么 $V$ 的任意一组（代数）基 $\{e_i\}_{i \in I}$ 都是不可数集。
 
-我们回忆一下,如果 $\{e_i\}_{i \in I}$ 是 $V$ 的一组（代数）基,那么对任意的 $v \in V$,存在有限个指标 $i_1, i_2, \cdots, i_m \in I$ 以及有限个实数 $\lambda_{i_1}, \lambda_{i_2}, \cdots, \lambda_{i_m}$,使得
+我们回忆一下，如果 $\{e_i\}_{i \in I}$ 是 $V$ 的一组（代数）基，那么对任意的 $v \in V$，存在有限个指标 $i_1, i_2, \cdots, i_m \in I$ 以及有限个实数 $\lambda_{i_1}, \lambda_{i_2}, \cdots, \lambda_{i_m}$，使得
 
 $$v = \lambda_{i_1} e_{i_1} + \lambda_{i_2} e_{i_2} + \cdots + \lambda_{i_m} e_{i_m}.$$
 
-为了证明这个命题,我们不加证明地接受如下的事实：
+为了证明这个命题，我们不加证明地接受如下的事实：
 
 **有限维的赋范线性空间是完备的。**
 
-上面的陈述是泛函分析中的标准事实,证明实际上很简单,我们在下个学期学起多元微积分的时候（应该）会证明。
+上面的陈述是泛函分析中的标准事实，证明实际上很简单，我们在下个学期学起多元微积分的时候（应该）会证明。
 
-**证明:** 如若不然,存在 $\{e_i\}_{i=1,2,\cdots}$ 是 $V$ 的一组可数的基,那么对任意的 $k \geqslant 1$,定义 $V$ 的子空间
+**证明：** 如若不然，存在 $\{e_i\}_{i=1,2,\cdots}$ 是 $V$ 的一组可数的基，那么对任意的 $k \geqslant 1$，定义 $V$ 的子空间
 
 $$V_k = \operatorname{span}\{e_1, e_2, \cdots, e_k\}.$$
 
-我们在 $V_k$ 上用 $\|\cdot\|$ 所诱导的度量,从而 $(V_k, \|\cdot\|)$ 是完备的。特别地,我们知道 $V_k \subset V$ 是闭集,这是因为 $V_k$ 中的收敛的序列都在 $V_k$ 中收敛（连续性）。我们现在说明对任意的 $k$,$V_k$ 的内部为空集,实际上,假设 $v \in V_k$,那么任意选取 $\varepsilon > 0$,我们有 $v + \varepsilon e_{k+1} \notin V_k$,这表明 $v$ 不是 $V_k$ 的内点。根据基的定义,我们自然有
+我们在 $V_k$ 上用 $\|\cdot\|$ 所诱导的度量，从而 $(V_k, \|\cdot\|)$ 是完备的。特别地，我们知道 $V_k \subset V$ 是闭集，这是因为 $V_k$ 中的收敛的序列都在 $V_k$ 中收敛（连续性）。我们现在说明对任意的 $k$，$V_k$ 的内部为空集，实际上，假设 $v \in V_k$，那么任意选取 $\varepsilon > 0$，我们有 $v + \varepsilon e_{k+1} \notin V_k$，这表明 $v$ 不是 $V_k$ 的内点。根据基的定义，我们自然有
 
 $$V = \bigcup_{k \geqslant 1} V_k.$$
 
-然而 $V$ 的内部非空,这和 Baire 的定理矛盾。$\square$
+然而 $V$ 的内部非空，这和 Baire 的定理矛盾。$\square$
 
-**注记.** 考虑 $\left(C\left([a, b]\right), \|\cdot\|_\infty\right)$ 的子集 $D$,它是由在至少一点处可微的函数构成的,即
+**注记。** 考虑 $\left(C\left([a, b]\right), \|\cdot\|_\infty\right)$ 的子集 $D$，它是由在至少一点处可微的函数构成的，即
 
 $$D = \left\{f \in C([a, b]) \mid \text{存在} x \in [a, b],\, f \text{ 在 } x \text{ 处可微}\right\}.$$
 
-那么,利用稍微精细一点的分析,我们可以证明 $\mathring{D} = \emptyset$。这说明我们有很多的处处连续处处不可微分的函数。请有兴趣的同学自己参考网络或者有关的文献。
+那么，利用稍微精细一点的分析，我们可以证明 $\mathring{D} = \emptyset$。这说明我们有很多的处处连续处处不可微分的函数。请有兴趣的同学自己参考网络或者有关的文献。
 
 <!-- source: PDF 300; printed: 300; transcription: first-pass; proofreading: applied -->
 
-### 原函数的初等表示
+## 原函数的初等表示
 
 我们现在来说明不能找到一个初等函数 $f$，使得 $f' = e^{x^2}$。为此，我们先引入一些记号，当然，如果同学们学习了代数学中的域理论，这里的很多定义就会很自然。任意给定函数 $f_1, \cdots, f_n$，我们令
 
@@ -187,7 +188,7 @@ $$\alpha_m (f_{k+1})^m + \alpha_{m-1}(f_{k+1})^{m-1} + \cdots + \alpha_1 f_{k+1}
 
 我们就称 $\mathbb{C}(f_1, \cdots, f_n)$ 中的元素是**初等函数**，称 $\mathbb{C}(x, f_1, \cdots, f_n)$ 是一个**初等函数域**。很明显，从函数 $1$ 和 $x$ 出发，由指数函数，对数函数，取多项式函数的根以及四则运算进行有限次复合所得到的函数都是初等函数。比如说，$e^{x^2}$ 和 $\left(\log x\right)^{-1}$ 这两个函数很明显是初等函数，我们想知道是否它们的原函数是否可以用初等函数表达。
 
-<span id="ma-proposition-165" class="lecture-anchor"></span>**命题 165.** 假设 $K = \mathbb{C}(x, f_1, \cdots, f_n)$ 是初等函数域，那么求导数运算 $\dfrac{d}{dx}$ 将 $K$ 中的元素映射成 $K$ 中的元素，即
+<span id="ma-proposition-165" class="lecture-anchor"></span>**命题 165。** 假设 $K = \mathbb{C}(x, f_1, \cdots, f_n)$ 是初等函数域，那么求导数运算 $\dfrac{d}{dx}$ 将 $K$ 中的元素映射成 $K$ 中的元素，即
 
 $$\frac{d}{dx} : K \to K.$$
 
@@ -215,9 +216,11 @@ $$= - \underbrace{\left(m\alpha_m(f_{n+1})^{m-1} + (m-1)\alpha_{m-1}(f_{n+1})^{m
 
 一般的 $f \in K$ 的导数通过 Leibniz 法则立即可以得到。$\square$
 
+### 刘维尔定理与初等原函数的判别
+
 我们现在承认如下 Liouville 定理（这是纯代数的结果，请参见初等的介绍：M. Rosenlicht, *Integration in finite terms*, American Math. Monthly 79 (1972), 963–972）：
 
-<span id="ma-theorem-166" class="lecture-anchor"></span>**定理 166** (Liouville). 假设 $K$ 是一个初等函数域，$f \in K$，那么存在初等函数 $F$ 使得 $F' = f$ 当且仅当存在常数 $c_1, \cdots, c_m \in \mathbb{C}$，存在函数 $R_0, R_1, \cdots, R_m \in K$，使得
+<span id="ma-theorem-166" class="lecture-anchor"></span>**定理 166**（Liouville）。假设 $K$ 是一个初等函数域，$f \in K$，那么存在初等函数 $F$ 使得 $F' = f$ 当且仅当存在常数 $c_1, \cdots, c_m \in \mathbb{C}$，存在函数 $R_0, R_1, \cdots, R_m \in K$，使得
 
 $$f = R_0' + \sum_{k=1}^{m} c_k \frac{R_k'}{R_k}.$$
 
@@ -227,7 +230,7 @@ $$f = \left(R_0 + \sum_{k=1}^{m} c_k \log(R_k)\right)'.$$
 
 必要性的证明请参见上述 Rosenlicht 的短文。Liouville 定理有如下的有用推论：
 
-<span id="ma-corollary-167" class="lecture-anchor"></span>**推论 167.** 假设 $f, g \in \mathbb{C}(X)$ 是有理函数且 $g$ 不是常数，那么函数 $f(x)e^{g(x)}$ 具有初等的原函数当且仅当存在有理函数 $R \in \mathbb{C}(X)$ 使得
+<span id="ma-corollary-167" class="lecture-anchor"></span>**推论 167。** 假设 $f, g \in \mathbb{C}(X)$ 是有理函数且 $g$ 不是常数，那么函数 $f(x)e^{g(x)}$ 具有初等的原函数当且仅当存在有理函数 $R \in \mathbb{C}(X)$ 使得
 
 $$R' + g'R = f.$$
 
@@ -369,6 +372,6 @@ $$xP' +(x-m)P=x^m.$$
 
 令 $x=0$，得到 $-mP(0)=0$，所以 $x$ 整除 $P$。这和 $P(x)$ 与 $Q(x)=x^m$ 互素相矛盾。
 
-**练习.** 证明，$\displaystyle\int \frac{\sin x}{x}$ 不是初等函数。
+**练习。** 证明，$\displaystyle\int \frac{\sin x}{x}$ 不是初等函数。
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：27.1 作业:振荡积分](27-stieltjes-mean-value/27-03-p0290-0295.md) · [下一篇：振荡与衰减、期末考试与寒假作业](29-oscillation-decay/29-01-p0306-0312.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：27.1：作业：振荡积分](27-stieltjes-mean-value/27-03-p0290-0295.md) · [下一篇：振荡与衰减、期末考试与寒假作业](29-oscillation-decay/29-01-p0306-0312.md)

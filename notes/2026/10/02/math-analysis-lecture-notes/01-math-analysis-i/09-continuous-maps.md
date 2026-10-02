@@ -1,17 +1,18 @@
-# 9 连续映射与介值定理
+# 9：连续映射与介值定理
 
 [返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：函数的连续性](08-continuity.md) · [下一篇：开闭集、紧集与连续性](10-topology/10-01-p0102-0106.md)
 
 <!-- source: PDF 92; printed: 92; transcription: first-pass; proofreading: applied -->
 
-## 9 距离空间之间的连续映射，介值定理，初等函数的构造
 
+
+## 度量空间之间的连续映射
 
 我们首先来复习/学习一下连续性的定义：
 
-<span id="ma-definition-48" class="lecture-anchor"></span>**定义 48** (距离空间之间的连续映射). 假设 $(X, d)$ 和 $(Y, d_Y)$ 是两个距离空间，$f : X \to Y$ 是这两个距离空间之间的映射。假设 $x_0 \in X$，$y_0 = f(x_0) \in Y$。如果对任意的 $\varepsilon > 0$，总存在 $\delta > 0$，使得对任意满足 $d(x, x_0) < \delta$ 的 $x \in X$，都有 $d_Y(f(x), f(x_0)) < \varepsilon$，我们就称 $f$ 在 $x_0$ 处连续。如果 $f$ 在 $X$ 的每个点处都连续，那么我们就称 $f$ 是**连续映射**。
+<span id="ma-definition-48" class="lecture-anchor"></span>**定义 48**（距离空间之间的连续映射）。假设 $(X, d)$ 和 $(Y, d_Y)$ 是两个距离空间，$f : X \to Y$ 是这两个距离空间之间的映射。假设 $x_0 \in X$，$y_0 = f(x_0) \in Y$。如果对任意的 $\varepsilon > 0$，总存在 $\delta > 0$，使得对任意满足 $d(x, x_0) < \delta$ 的 $x \in X$，都有 $d_Y(f(x), f(x_0)) < \varepsilon$，我们就称 $f$ 在 $x_0$ 处连续。如果 $f$ 在 $X$ 的每个点处都连续，那么我们就称 $f$ 是**连续映射**。
 
-**注记.** 当 $Y$ 为 $\mathbb{R}$ 或者 $\mathbb{C}$ 的时候，我们就称 $f$ 为连续函数。另外，我们有
+**注记。** 当 $Y$ 为 $\mathbb{R}$ 或者 $\mathbb{C}$ 的时候，我们就称 $f$ 为连续函数。另外，我们有
 
 1) 第三次作业中我们用点列的方式定义了连续映射，我们可以仿照 Heine 定理的证明，说明这两个定义方式是等价的。我们将在第四次作业题中证明这个结论。
 
@@ -21,7 +22,7 @@ $$ f\big|_{X'} : X' \to Y, \ \ x' \in X' \mapsto f(x'). $$
 
 那么，$f\big|_{X'}$ 是 $(X', d')$ 和 $(Y, d_Y)$ 之间的连续映射。简而言之，连续映射的限制仍是连续映射。
 
-3) (距离空间的乘积与连续映射) 假设 $(Y, d_Y)$ 和 $(Z, d_Z)$ 是距离空间，我们定义 $Y \times Z$ 上的距离函数
+3) （距离空间的乘积与连续映射）假设 $(Y, d_Y)$ 和 $(Z, d_Z)$ 是距离空间，我们定义 $Y \times Z$ 上的距离函数
 
 $$ d_{Y \times Z} : (Y \times Z) \times (Y \times Z) \to \mathbb{R}_{\geqslant 0}, \ \ \big((y_1, z_1), (y_2, z_2)\big) \mapsto \sqrt{d(y_1, y_2)^2 + d(z_1, z_2)^2}. $$
 
@@ -53,7 +54,9 @@ $$ f : \mathbb{R}^2 \to \mathbb{R}, \ \ (x, y) \mapsto f(x, y) = \begin{cases} \
 
 作为例子，我们研究矩阵空间上的映射：
 
-**例子.** 映射 $\exp : \mathbf{M}_n(\mathbb{C}) \to \mathbf{M}_n(\mathbb{C})$。
+### 矩阵指数映射的连续性
+
+**例子。** 映射 $\exp : \mathbf{M}_n(\mathbb{C}) \to \mathbf{M}_n(\mathbb{C})$。
 
 首先回忆一下，$\mathbf{M}_n(\mathbb{C})$ 可以看成是一个 $2n^2$-维的 $\mathbb{R}$-线性空间，对于 $A = (A_{ij}) \in \mathbf{M}_n(\mathbb{C})$，我们有范数
 
@@ -95,9 +98,11 @@ $$ \begin{aligned} \|e^A - e^{A_0}\|_2 &\leqslant \sum_{k=1}^\infty \frac{\|(A_0
 
 现在根据在实数上指数函数的连续性，我们就知道当 $\|B\|_2 \to 0$ 时，右边是连续的，从而 $\exp$ 在 $A_0$ 处连续。
 
+### 连续性与不连续性的例子
+
 我们再研究几个有代表性的例子（请同学们自己把细节写清楚，借此可以练习一下 $\varepsilon - \delta$ 语言）：
 
-**例子** (连续函数和不连续函数的例子). 先从不连续的例子开始：
+**例子**（连续函数和不连续函数的例子）。先从不连续的例子开始：
 
 1) $X \subset \mathbb{R}$ 是一个子集，由这个子集所定义的**示性函数** $\mathbf{1}_X : \mathbb{R} \to \mathbb{R}$ 指的是：
 
@@ -119,11 +124,11 @@ $$ f(x) = \begin{cases} \frac{1}{q}, & \text{如果 } x = \frac{p}{q} \text{ 是
 
 我们在第 3 次的作业中已经证明了 $f$ 在有理数上不连续但是在无理数上连续！
 
-**练习.** 是否存在 $\mathbb{R}$ 上的函数 $f$，它在任何一个点处都不连续，但是 $|f|$ 是连续的？
+**练习。** 是否存在 $\mathbb{R}$ 上的函数 $f$，它在任何一个点处都不连续，但是 $|f|$ 是连续的？
 
 我们现在给出两个最具有代表性的例子，建议大家将课堂笔记整理清楚并搞懂细节，通过这样的方式，也可以加深对连续性的认识。
 
-**例子.** 下面的两个函数在 $0$ 处都是连续的：
+**例子。** 下面的两个函数在 $0$ 处都是连续的：
 
 1) 我们定义函数
 
@@ -149,16 +154,16 @@ $$ f(x) = \begin{cases} e^{-\frac{1}{|x|}}, & x \neq 0; \\ 0, & x = 0. \end{case
 
 <!-- source: PDF 96; printed: 96; transcription: first-pass; proofreading: applied -->
 
-<span id="ma-proposition-49" class="lecture-anchor"></span>**命题 49.** $g_1$ 和 $g_2$ 是区间 $I$ 上定义的 $\mathbb{R}$-值函数，它们在 $x_0$ 处有极限并且 $\lim_{x\to x_0} g_1(x) = \lim_{x\to x_0} g_2(x)$。如果 $f: I \to \mathbb{R}$ 使得对任意的 $x \in I$，都有 $g_1(x) \leqslant f(x) \leqslant g_2(x)$，那么，$f$ 在 $x_0$ 处有极限并且
+<span id="ma-proposition-49" class="lecture-anchor"></span>**命题 49。** $g_1$ 和 $g_2$ 是区间 $I$ 上定义的 $\mathbb{R}$-值函数，它们在 $x_0$ 处有极限并且 $\lim_{x\to x_0} g_1(x) = \lim_{x\to x_0} g_2(x)$。如果 $f: I \to \mathbb{R}$ 使得对任意的 $x \in I$，都有 $g_1(x) \leqslant f(x) \leqslant g_2(x)$，那么，$f$ 在 $x_0$ 处有极限并且
 $$ \lim_{x\to x_0} f(x) = \lim_{x\to x_0} g_1(x) = \lim_{x\to x_0} g_2(x). $$
 
 利用函数收敛的数列版本的定义（根据不同的情形选择需要的形式），这个性质的证明显而易见的。我们只要看到这一点，这个命题也容易记住了。另外，我们指出，这样的命题可能在某些场合（比如说解题目）有用，但是就本身而言，（我觉得）可能不是很有价值。
 
-### 连续函数的基本性质
+## 连续函数的基本性质
 
 我们现在来了解连续函数的一些基本性质并利用它们做两件基本的事情：第一，研究 $e^x$ 的性质并定义所有的初等函数；第二，利用连续函数来研究空间的几何性质。
 
-<span id="ma-theorem-50" class="lecture-anchor"></span>**定理 50.** $I$ 是区间（可开可闭），$f: I \to \mathbb{R}$ 是 $I$ 上的单调函数，那么
+<span id="ma-theorem-50" class="lecture-anchor"></span>**定理 50。** $I$ 是区间（可开可闭），$f: I \to \mathbb{R}$ 是 $I$ 上的单调函数，那么
 
 1) 对任意 $x_0 \in I$，$f$ 在 $x_0$ 处的左极限 $\lim_{x\to x_0^-} f(x)$ 和右极限 $\lim_{x\to x_0^+} f(x)$ 都存在。
 
@@ -168,7 +173,7 @@ $$ \lim_{x\to x_0} f(x) = \lim_{x\to x_0} g_1(x) = \lim_{x\to x_0} g_2(x). $$
 
 1) 只证明左极限的情况即可，因为右极限可以类似地证明。我们要说明存在 $y_0$，使得对任意的数列 $\{x_n\}_{n\geqslant 1}$，$x_n < x_0$，$x_n \to x_0$，$\lim_{n\to\infty} f(x_n) = y_0$。实际上，我们令 $y_0 = \sup_{x\in(-\infty, x_0)} f(x)$。根据 $y_0$ 的定义，我们有 $f(x_n) \leqslant y_0$。另外，根据上确界的性质，对任意的 $\varepsilon > 0$，存在 $x' < x_0$，使得 $0 \leqslant y_0 - f(x') < \varepsilon$。由于 $x_n \to x_0$，所以存在 $N$，使得当 $n \geqslant N$ 时，有 $x_n > x'$，从而 $f(x_n) \geqslant f(x') \geqslant y_0 - \varepsilon$。综合上述，对任意的 $\varepsilon > 0$，存在 $N$，使得当 $n \geqslant N$ 时，$y_0 \geqslant f(x_n) \geqslant y_0 - \varepsilon$，所以 $\lim_{n\to\infty} f(x_n) = y_0$。作为证明的推论，我们有
 
-<span id="ma-corollary-51" class="lecture-anchor"></span>**推论 51.** 假设 $f: I \to \mathbb{R}$ 是区间 $I$ 上的单调递增的函数，对于 $x_0 \in I$，$f$ 在 $x_0$ 处的左右极限由下面的公式给出：
+<span id="ma-corollary-51" class="lecture-anchor"></span>**推论 51。** 假设 $f: I \to \mathbb{R}$ 是区间 $I$ 上的单调递增的函数，对于 $x_0 \in I$，$f$ 在 $x_0$ 处的左右极限由下面的公式给出：
 $$ \lim_{x\to x_0^-} f(x) = \sup_{x\in(-\infty, x_0)} f(x), \quad \lim_{x\to x_0^+} f(x) = \inf_{x\in(x_0, +\infty)} f(x). $$
 特别地，$\lim_{x\to x_0^-} f(x) \leqslant \lim_{x\to x_0^+} f(x)$。
 
@@ -193,9 +198,11 @@ $$Y \to \mathbb{Q}, \quad y \mapsto q_y.$$
 
 由于有理数是可数的，所以 $Y$ 可数。 $\square$
 
+### 介值定理
+
 我们下面证明著名的介值定理，这个定理有很多其它的证明，都比较有启发性，建议大家查阅资料，比如陈天权，Zorich 或者科大的教材。
 
-<span id="ma-theorem-52" class="lecture-anchor"></span>**定理 52** (介值定理). $a < b$，$f : [a, b] \to \mathbb{R}$ 是连续函数。
+<span id="ma-theorem-52" class="lecture-anchor"></span>**定理 52**（介值定理）。$a < b$，$f : [a, b] \to \mathbb{R}$ 是连续函数。
 
 1) 如果 $f(a) < 0$，$f(b) > 0$，那么一定存在 $c \in [a, b]$，使得 $f(c) = 0$。
 
@@ -214,7 +221,7 @@ $$Y \to \mathbb{Q}, \quad y \mapsto q_y.$$
 连续性的 $\varepsilon-\delta$ 语言的定义，对于 $\varepsilon = \frac{f(c)}{2}$，存在 $\delta > 0$，使得对任意 $x \in (c - \delta, c + \delta) \cap I$，
 $|f(x) - f(c)| < \frac{1}{2} f(c)$。特别地，对于任意的 $x \in (c - \delta, c + \delta) \cap I$，$f(x) > 0$。然而，根据 $c \in I_k$，当 $k$ 很大的时候，必然有 $I_k \subset (c - \delta, c + \delta) \cap I$，但是 $f$ 在 $I_k$ 的左端点处的取值是负的，矛盾。 $\square$
 
-**注记.** 直观连续函数的图像是不会断掉的，这是我们对连续性最朴素的理解。介值定理就是这个直观的数学表达。
+**注记。** 直观连续函数的图像是不会断掉的，这是我们对连续性最朴素的理解。介值定理就是这个直观的数学表达。
 
 另外，我们要指出一个值得注意和讨论的例子：假设函数 $f : I_1 \cup I_2 \to \mathbb{R}$ 定义在两个不相交的开区间的并集上，按照定义，如果 $f$ 在每个点上都连续，$f$ 就是在 $I_1 \cup I_2$ 上连续的。尽管函数图像在 $I_1 \cup I_2$ 是“断开的”，这个函数仍然是连续的（因为连续性本质上是个局部性质，在 $I_1$ 和 $I_2$ 上分别连续即可）。此时，介值定理可能并不成立，因为我们要求 $f$ 的定义域不是断掉的（“连通的”，这是一个拓扑学的概念）。
 
@@ -226,7 +233,7 @@ $$f : \mathbb{Q} \cap [0, 3] \to \mathbb{R}, \ x \mapsto f(x) = x - e.$$
 
 连续函数的介值定理有很多经典的应用，特别是在证明方程解的存在性方面。我们给出几个有代表性的例子，在第 4 次作业中有相应的练习。
 
-**例子 (经典应用).**
+**例子（经典应用）。**
 
 1) $f : [0, 1] \to [0, 1]$ 是连续映射，那么，$f$ 有不动点，即存在 $x \in [0, 1]$，使得 $f(x) = x$。（请比较压缩映像定理）
 
@@ -250,9 +257,11 @@ $$f : \mathbb{Q} \cap [0, 3] \to \mathbb{R}, \ x \mapsto f(x) = x - e.$$
 
 再者，我们还关心函数 $\sqrt{x}$ 的连续性，我们有更一般性的定理来处理这一点。
 
-<span id="ma-theorem-53" class="lecture-anchor"></span>**定理 53.** $f : [a, b] \to \mathbb{R}$ 是在闭区间上定义的连续函数，那么 $f$ 有界的并且能取到最大最小值，即存在 $x_1, x_2 \in [a, b]$，使得 $f(x_1) = \inf_{x \in [a, b]} f(x)$，$f(x_2) = \sup_{x \in [a, b]} f(x)$。
+### 最值与反函数
 
-**练习.** 定理叙述中的两个条件“闭区间”和“连续”缺一不可，试举出反例。
+<span id="ma-theorem-53" class="lecture-anchor"></span>**定理 53。** $f : [a, b] \to \mathbb{R}$ 是在闭区间上定义的连续函数，那么 $f$ 有界的并且能取到最大最小值，即存在 $x_1, x_2 \in [a, b]$，使得 $f(x_1) = \inf_{x \in [a, b]} f(x)$，$f(x_2) = \sup_{x \in [a, b]} f(x)$。
+
+**练习。** 定理叙述中的两个条件“闭区间”和“连续”缺一不可，试举出反例。
 
 **证明：** 用 $I$ 表示闭区间 $[a, b]$。我们用反证法证明 $f$ 是有界的：如若不然，那么存在数列 $\{x_n\}_{n \geqslant 1} \subset I$，使得 $f(x_n) \to +\infty$（不妨设是正无穷）。通过选取 $\{x_n\}_{n \geqslant 1}$ 的子列，我们可以进一步假设 $x_n \to x$。证明的关键点在于 $x \in I$，这是由 $I$ 是闭区间保证的：因为 $x_n \in I \Leftrightarrow a \leqslant x_n \leqslant b$，所以通过取极限（极限和 $\leqslant$ 以及 $\geqslant$ 交换），$a \leqslant x \leqslant b \Leftrightarrow x \in I$。（这是对词语“闭”的基本理解，极限点不能跑到外面去，被封闭在里面了），根据 $f$ 在 $x$ 处的连续性，所以 $f(x_n) \to f(x) \neq \infty$，这不可能。
 
@@ -262,11 +271,11 @@ $$g(x) = \frac{1}{A - f(x)}.$$
 
 这个函数自然是良好定义的（因为分母不是零）并且是连续的。然而，由于 $A$ 是 $f(x)$ 取值的上确界，所以存在 $x \in I$，使得 $f(x)$ 可以无限地接近 $A$，从而 $g(x)$ 是无界的：对任意的 $M > 0$，存在 $x \in I$，使得 $A - f(x) < \frac{1}{M}$，从而 $g(x) > M$。这和已经证明的有界性矛盾。 $\square$
 
-**注记.** 上面用来证明最大值能被某个 $x_2$ 实现的方法（在复变函数课程中学习 Liouville 定理的应用时）也可以用来证明代数基本定理。
+**注记。** 上面用来证明最大值能被某个 $x_2$ 实现的方法（在复变函数课程中学习 Liouville 定理的应用时）也可以用来证明代数基本定理。
 
-<span id="ma-theorem-54" class="lecture-anchor"></span>**定理 54.** $f : [a, b] \to \mathbb{R}$ 是严格递增（或者递减）的连续函数，那么 $f$ 是从 $[a, b]$ 到 $[f(a), f(b)]$ 的双射并且其逆映射 $f^{-1} : [f(a), f(b)] \to [a, b]$ 是连续的。
+<span id="ma-theorem-54" class="lecture-anchor"></span>**定理 54。** $f : [a, b] \to \mathbb{R}$ 是严格递增（或者递减）的连续函数，那么 $f$ 是从 $[a, b]$ 到 $[f(a), f(b)]$ 的双射并且其逆映射 $f^{-1} : [f(a), f(b)] \to [a, b]$ 是连续的。
 
-**注记.** 这是 1-元函数的特殊性质，究其根本，是因为 1 维空间上面 $\mathbb{R}$ 有序关系 $\leqslant$ 而在 $\mathbb{R}^n$ 上是没有的。
+**注记。** 这是 1-元函数的特殊性质，究其根本，是因为 1 维空间上面 $\mathbb{R}$ 有序关系 $\leqslant$ 而在 $\mathbb{R}^n$ 上是没有的。
 
 **证明：** 首先，我们知道 $f$ 是单射（因为严格递增）并且对任意的 $x \in [a, b]$，$f(x) \in [f(a), f(b)]$。另外，根据介值定理，$f$ 是满射。所以，我们可以定义其逆 $f^{-1} : [f(a), f(b)] \to [a, b]$。我们注意到，$f^{-1}$ 也是严格递增的（否则假设存在 $[f(a), f(b)]$ 中两个点 $y_1 < y_2$，使得 $x_1 = f^{-1}(y_1) \geqslant x_2 = f^{-1}(y_2)$，根据 $f$ 是递增的，$f(x_1) = y_1 \geqslant f(x_2) = y_2$，矛盾）。
 
@@ -280,11 +289,11 @@ $$I_{y_0} = (x_1, x_2), \ \ x_1 = \sup_{z < y_0} f^{-1}(z) = \lim_{z \to y_0^-} 
 
 第 4 次作业中我们将会解答一个很有意思的问题：
 
-**练习.** 假设连续函数 $f : [a, b] \to \mathbb{R}$ 是单射。如果 $f(a) < f(b)$，证明，$f$ 是严格递增的。
+**练习。** 假设连续函数 $f : [a, b] \to \mathbb{R}$ 是单射。如果 $f(a) < f(b)$，证明，$f$ 是严格递增的。
 
-### 连续函数性质的应用：初等函数的构造
+## 连续函数性质的应用：初等函数的构造
 
-<span id="ma-theorem-55" class="lecture-anchor"></span>**定理 55.** 指数函数 $\exp : \mathbb{R} \to \mathbb{R}_{>0}, \ x \mapsto e^x$ 是双射。我们用 $\log : \mathbb{R}_{>0} \to \mathbb{R}$ 表示 $\exp$ 的反函数并称其为以 $e$ 为底的对数函数，它满足：
+<span id="ma-theorem-55" class="lecture-anchor"></span>**定理 55。** 指数函数 $\exp : \mathbb{R} \to \mathbb{R}_{>0}, \ x \mapsto e^x$ 是双射。我们用 $\log : \mathbb{R}_{>0} \to \mathbb{R}$ 表示 $\exp$ 的反函数并称其为以 $e$ 为底的对数函数，它满足：
 
 1) 对任意 $x, y > 0$，我们有 $\log(xy) = \log(x) + \log(y)$。
 
@@ -300,7 +309,7 @@ $$I_{y_0} = (x_1, x_2), \ \ x_1 = \sup_{z < y_0} f^{-1}(z) = \lim_{z \to y_0^-} 
 
 利用 $\exp$ 和 $\log$，我们终于可以定义一般的对数函数和幂函数了：
 
-<span id="ma-theorem-56" class="lecture-anchor"></span>**定理 56.** 对于 $\alpha \in \mathbb{R}$ 和 $x \in \mathbb{R}_{>0}$，我们定义幂函数 $x^\alpha = e^{\alpha \log(x)}$，那么 $x^\alpha$ 满足
+<span id="ma-theorem-56" class="lecture-anchor"></span>**定理 56。** 对于 $\alpha \in \mathbb{R}$ 和 $x \in \mathbb{R}_{>0}$，我们定义幂函数 $x^\alpha = e^{\alpha \log(x)}$，那么 $x^\alpha$ 满足
 
 1) 对任意 $x, y > 0$ 和 $\alpha, \beta$，我们有 $(xy)^\alpha = x^\alpha y^\alpha$，$(x^\alpha)^\beta = x^{\alpha\beta}$。
 

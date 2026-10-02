@@ -1,11 +1,12 @@
-# 21 振幅、零测集与 Lebesgue 定理
+# 21：振幅、零测集与 Lebesgue 定理
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：20.1 作业:Dini定理,多项式逼近与Weierstrass-Stone定理](20-fundamental-theorem/20-03-p0219-0223.md) · [下一篇：反常积分、Euler 常数与 Stirling 公式](22-improper-integrals.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：20.1：作业：Dini定理，多项式逼近与Weierstrass-Stone定理](20-fundamental-theorem/20-03-p0219-0223.md) · [下一篇：反常积分、Euler 常数与 Stirling 公式](22-improper-integrals.md)
 
 <!-- source: PDF 224; printed: 224; transcription: first-pass; proofreading: applied -->
 
-## 21 振幅，零测集，Lebesgue 定理
 
+
+## 函数的振幅与连续性
 
 我们这一次给出 Riemann 积分的最后一个刻画，这就是所谓的 Lebesgue 定理。
 
@@ -19,7 +20,7 @@ $$\omega(f, x_0) = \inf_{\substack{x_0 \in U \\ U\text{是开集}}} \operatornam
 
 其中 $\operatorname{diam} V = \sup_{y_1, y_2 \in V} d_Y(y_1, y_2)$ 为 $V$ 的**直径**。
 
-**例子.** 我们有一个在一点处振幅很大的函数：
+**例子。** 我们有一个在一点处振幅很大的函数：
 
 $$f(x) = \begin{cases} \sin\!\left(\dfrac{1}{x}\right), & x \neq 0; \\ 0, & x = 0. \end{cases}$$
 
@@ -27,7 +28,7 @@ $$f(x) = \begin{cases} \sin\!\left(\dfrac{1}{x}\right), & x \neq 0; \\ 0, & x = 
 
 振幅消失实际上是连续性的刻画：
 
-<span id="ma-lemma-131" class="lecture-anchor"></span>**引理 131.** $f : X \to Y$ 是距离空间 $(X, d_X)$ 和 $(Y, d_Y)$ 之间的映射。$f$ 在 $x_0$ 处连续当且仅当 $\omega(f, x_0) = 0$。
+<span id="ma-lemma-131" class="lecture-anchor"></span>**引理 131。** $f : X \to Y$ 是距离空间 $(X, d_X)$ 和 $(Y, d_Y)$ 之间的映射。$f$ 在 $x_0$ 处连续当且仅当 $\omega(f, x_0) = 0$。
 
 **证明：** 假设 $f$ 在 $x_0$ 处连续，那么，对任意的 $\varepsilon > 0$，存在 $\delta > 0$，当 $d(x, x_0) < \delta$ 时（$\Leftrightarrow x \in B(x_0, \delta) \subset X$），我们有 $d\bigl(f(x), f(x_0)\bigr) < \varepsilon$（$\Leftrightarrow f(x) \in B\bigl(f(x_0), \varepsilon\bigr) \subset Y$）。所以，对于开集合 $U = B(x_0, \delta)$ 而言，$f(U) \subset B\bigl(f(x_0), \varepsilon\bigr) \subset Y$，从而 $\operatorname{diam} f(U) \leqslant 2\varepsilon$。由于 $\varepsilon$ 是任意选取的，所以 $\omega(f, x_0) = 0$。
 
@@ -41,7 +42,7 @@ $$\operatorname{diam}\bigl(f(U)\bigr) < \varepsilon.$$
 
 <!-- source: PDF 225; printed: 225; transcription: first-pass; proofreading: applied -->
 
-<span id="ma-lemma-132" class="lecture-anchor"></span>**引理 132.** $f : X \to Y$ 是距离空间 $(X, d_X)$ 和 $(Y, d_Y)$ 之间的（任意）映射。对任意 $\varepsilon > 0$，集合
+<span id="ma-lemma-132" class="lecture-anchor"></span>**引理 132。** $f : X \to Y$ 是距离空间 $(X, d_X)$ 和 $(Y, d_Y)$ 之间的（任意）映射。对任意 $\varepsilon > 0$，集合
 
 $$\Omega_\varepsilon(f) = \left\{ x \in X \mid \omega(f, x) \geqslant \varepsilon \right\}$$
 
@@ -49,13 +50,15 @@ $$\Omega_\varepsilon(f) = \left\{ x \in X \mid \omega(f, x) \geqslant \varepsilo
 
 **证明：** 按照闭集的定义，只需要说明它的补集 $X - \Omega_\varepsilon(f) = \left\{ x \in X \mid \omega(f, x) < \varepsilon \right\}$ 为开集即可。首先，我们注意到 $x_0 \in X - \Omega_\varepsilon(f)$ 等价于存在包含 $x_0$ 的开集 $U$，使得 $\operatorname{diam} f(U) < \varepsilon$。据此，我们知道，对于任意的 $x \in U$，利用 $\operatorname{diam} f(U) < \varepsilon$，所以 $x \in X - \Omega_\varepsilon(f)$，即 $U \subset X - \Omega_\varepsilon(f)$。这说明 $X - \Omega_\varepsilon(f)$ 是开集。$\square$
 
+## 零测集
+
 我们现在在 $\mathbb{R}$ 上定义所谓的**测度为零**的集合（你可以认为这是所谓的长度为零的集合）。首先，给定一个有限区间 $I$，我们定义 $|I|$ 为其长度，即右端点减掉左端点的值。
 
-<span id="ma-definition-133" class="lecture-anchor"></span>**定义 133.** $X \subset \mathbb{R}$ 是子集，如果对任意的 $\varepsilon > 0$，总存在**可数个**有界闭区间 $\{I_k\}_{k \geqslant 1}$，使得 $X \subset \bigcup_{k \geqslant 1} I_k$
+<span id="ma-definition-133" class="lecture-anchor"></span>**定义 133。** $X \subset \mathbb{R}$ 是子集，如果对任意的 $\varepsilon > 0$，总存在**可数个**有界闭区间 $\{I_k\}_{k \geqslant 1}$，使得 $X \subset \bigcup_{k \geqslant 1} I_k$
 
 并且 $\displaystyle\sum_{k=1}^{\infty} |I_k| < \varepsilon$，我们就称 $X$ 是一个**零测集**。
 
-**注记.** 我们可以将定义中的有界闭区间换成有界开区间，这样定义出的零测集与上述定义的是一致的。实际上，如果接受第二种定义，假设对任意的 $\varepsilon > 0$，存在开区间 $\{I_k\}_{k \geqslant 1}$，使得
+**注记。** 我们可以将定义中的有界闭区间换成有界开区间，这样定义出的零测集与上述定义的是一致的。实际上，如果接受第二种定义，假设对任意的 $\varepsilon > 0$，存在开区间 $\{I_k\}_{k \geqslant 1}$，使得
 
 $$X \subset \bigcup_{k \geqslant 1} I_k, \quad \sum_{k=1}^{\infty} |I_k| < \varepsilon.$$
 
@@ -73,7 +76,7 @@ $$\sum_{k=1}^{\infty} |I_k| < \sum_{k=1}^{\infty} |K_k| + \sum_{k=1}^{\infty} \f
 
 所以，我们可以选取开区间 $\{I_k\}_{k \geqslant 1}$ 来覆盖 $X$。
 
-<span id="ma-proposition-134" class="lecture-anchor"></span>**命题 134.** 可数个零测集的并集仍然是零测集。特别地，可数集是零测集。
+<span id="ma-proposition-134" class="lecture-anchor"></span>**命题 134。** 可数个零测集的并集仍然是零测集。特别地，可数集是零测集。
 
 **证明：** 假设 $\{X_k\}_{k \geqslant 1}$ 是零测集，按照定义，对于每个 $X_k$ 而言，对任意的 $\dfrac{\varepsilon}{2^k}$，存在有界闭区间的集合 $\{I_{k,i}\}_{i \geqslant 1}$，使得
 
@@ -91,9 +94,11 @@ $$\sum_{i,k=1}^{\infty} |I_{k,i}| < \sum_{k=1}^{\infty} \frac{\varepsilon}{2^k} 
 
 所以，$\bigcup_{k \geqslant 1} X_k$ 是零测集。$\square$
 
+## 黎曼可积性的勒贝格判别
+
 我们用上面的工具来研究 Riemann 可积函数（$f$ 可以在一个赋范线性空间中取值）：
 
-<span id="ma-lemma-135" class="lecture-anchor"></span>**引理 135.** （关键的引理）假设 $f \in \mathcal{R}([a, b])$，对任意的 $\varepsilon > 0$，
+<span id="ma-lemma-135" class="lecture-anchor"></span>**引理 135。** （关键的引理）假设 $f \in \mathcal{R}([a, b])$，对任意的 $\varepsilon > 0$，
 
 $$\Omega_\varepsilon(f) = \left\{ x \in X \mid \omega(f, x) \geqslant \varepsilon \right\}$$
 
@@ -183,4 +188,4 @@ $$\leqslant \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.$$
 
 这就证明了 $f$ 是 Riemann 可积的。$\square$
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：20.1 作业:Dini定理,多项式逼近与Weierstrass-Stone定理](20-fundamental-theorem/20-03-p0219-0223.md) · [下一篇：反常积分、Euler 常数与 Stirling 公式](22-improper-integrals.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：20.1：作业：Dini定理，多项式逼近与Weierstrass-Stone定理](20-fundamental-theorem/20-03-p0219-0223.md) · [下一篇：反常积分、Euler 常数与 Stirling 公式](22-improper-integrals.md)

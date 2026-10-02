@@ -1,11 +1,12 @@
-# 5 收敛判别与常数 e
+# 5：收敛判别与常数 e
 
 [返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：极限、级数与 Cauchy 列](04-limits.md) · [下一篇：指数函数与三角函数](06-exponential-trigonometric/06-01-p0059-0064.md)
 
 <!-- source: PDF 48; printed: 48; transcription: first-pass; proofreading: applied -->
 
-## 5 Cauchy 判别准则，向量序列的收敛，Bolzano-Weierstrass 的列紧性定理，数列和级数收敛的 Cauchy 判断，$e$ 的定义，绝对收敛，收敛的控制判别法
 
+
+## 级数运算与向量序列的收敛
 
 我先对前面的课程做适当的补充：
 
@@ -17,7 +18,7 @@ $$
 
 这两个事实的证明是极限四则运算法则的直接应用（用部分和来表示级数）。
 
-2) (向量值序列的极限问题) 对于 $\mathbb{R}^n = \{ (x_1, \cdots, x_n) \mid x_1 \in \mathbb{R}, \cdots, x_n \in \mathbb{R} \}$，我们采取如下定义的距离函数
+2) （向量值序列的极限问题）对于 $\mathbb{R}^n = \{ (x_1, \cdots, x_n) \mid x_1 \in \mathbb{R}, \cdots, x_n \in \mathbb{R} \}$，我们采取如下定义的距离函数
 
 $$
 d(x, y) = \sqrt{(x_1 - y_1)^2 + \cdots + (x_n - y_n)^2}, \quad x = (x_1, \cdots, x_n), \ y = (y_1, \cdots, y_n).
@@ -92,13 +93,15 @@ $$
 
 <!-- source: PDF 50; printed: 50; transcription: first-pass; proofreading: applied -->
 
-上次课的最后我们证明了单调上升并且有界的实数序列有极限,这个极限恰好是它的上确界。当然,如果 $\{x_n\}_{n\geqslant 1}$ 单调上升的但是无界,我们有 $\lim_{n\to\infty} x_n = +\infty$。利用这个结果,我们可以证明
+## 列紧性与柯西判别准则
 
-<span id="ma-theorem-17" class="lecture-anchor"></span>**定理 17** (Bolzano-Weierstrass 的列紧性定理). 任意有界的实数序列 $\{x_n\}_{n\geqslant 1}$ 必有收敛的子列。
+上次课的最后我们证明了单调上升并且有界的实数序列有极限，这个极限恰好是它的上确界。当然，如果 $\{x_n\}_{n\geqslant 1}$ 单调上升的但是无界，我们有 $\lim_{n\to\infty} x_n = +\infty$。利用这个结果，我们可以证明
+
+<span id="ma-theorem-17" class="lecture-anchor"></span>**定理 17**（Bolzano-Weierstrass 的列紧性定理）。任意有界的实数序列 $\{x_n\}_{n\geqslant 1}$ 必有收敛的子列。
 
 我们只要证明如下引理即可：
 
-<span id="ma-lemma-18" class="lecture-anchor"></span>**引理 18.** 对任意实数数列 $\{x_n\}_{n\geqslant 1}$，我们总能找到一个单调的（上升或下降）子序列。
+<span id="ma-lemma-18" class="lecture-anchor"></span>**引理 18。** 对任意实数数列 $\{x_n\}_{n\geqslant 1}$，我们总能找到一个单调的（上升或下降）子序列。
 
 **证明：** 考虑下面的集合 $X \subset \{x_1, x_2, \cdots, x_n, \cdots\}$：
 
@@ -114,7 +117,7 @@ $$X = \left\{x_k \mid \text{对任意的 } \ell \geqslant k,\text{ 都有 } x_k 
 
 在证明 Cauchy 判别准则之前，我们先回忆一下 Cauchy 列的定义：一个距离空间 $(X, d)$ 中的点列被称作是 **Cauchy 列**，指的是对任意的 $\varepsilon > 0$，存在 $N > 0$，使得对任意的 $m, n > N$，都有 $d(x_n, x_m) < \varepsilon$。
 
-**定理**（Cauchy 判别准则）. $\{x_n\}_{n\geqslant 1}$ 是实数的数列。那么，$\{x_n\}_{n\geqslant 1}$ 收敛当且仅当 $\{x_n\}_{n\geqslant 1}$ 是 *Cauchy* 列。
+**定理**（Cauchy 判别准则）。$\{x_n\}_{n\geqslant 1}$ 是实数的数列。那么，$\{x_n\}_{n\geqslant 1}$ 收敛当且仅当 $\{x_n\}_{n\geqslant 1}$ 是 *Cauchy* 列。
 
 **证明：** 如果 $\{x_n\}_{n\geqslant 1}$ 收敛，我们假设 $x_n \to x$。此时，根据极限的定义，对于 $\frac{1}{2}\varepsilon$ 而言，存在 $N$，使得对于任意的 $n, m \geqslant N$，我们都有 $d(x, x_n) < \frac{1}{2}\varepsilon$，$d(x, x_m) < \frac{1}{2}\varepsilon$。所以，利用三角不等式，我们就有
 
@@ -124,13 +127,13 @@ $$d(x_n, x_m) \leqslant d(x, x_n) + d(x, x_m) < \frac{1}{2}\varepsilon + \frac{1
 
 为了说明 Cauchy 列必然收敛，我们先证明两个有用的引理：
 
-<span id="ma-lemma-19" class="lecture-anchor"></span>**引理 19.** *Cauchy 列必有界。*
+<span id="ma-lemma-19" class="lecture-anchor"></span>**引理 19。** *Cauchy 列必有界。*
 
 **证明：** 假设 $\{x_n\}_{n\geqslant 1}$ 是 Cauchy 列，我们先说明它是有界的。令 $\varepsilon = 1$，那么存在 $N$，使得对任意的 $m, n \geqslant N$，我们都有 $|x_n - x_m| < 1$。特别地，我们令 $m = N$，这表明对所有的 $n \geqslant N$，都有 $|x_n - x_N| \leqslant 1$，所以 $\{x_n\}_{n\geqslant N}$ 是有界的。再加上前面的 $x_1, \cdots, x_{N-1}$，这还是一个有界集合。$\square$
 
 <!-- source: PDF 51; printed: 51; transcription: first-pass; proofreading: applied -->
 
-<span id="ma-lemma-20" class="lecture-anchor"></span>**引理 20.** 如果一个 Cauchy 列的子列收敛，那么这个 Cauchy 列也收敛。
+<span id="ma-lemma-20" class="lecture-anchor"></span>**引理 20。** 如果一个 Cauchy 列的子列收敛，那么这个 Cauchy 列也收敛。
 
 **证明：** 假设 $\{x_n\}_{n \geqslant 1}$ 是 Cauchy 列，$\{x_{i_k}\}_{k \geqslant 1}$ 是其子列并且 $\lim\limits_{k \to \infty} x_{i_k} = x$，我们要证明在 $(X, d)$ 中，$x_n \to x$。任意选取 $\varepsilon > 0$。首先，根据 $x_{i_k} \to x$，我们可以找到 $N_1 > 0$，使得对任意的 $k > N_1$，我们都有 $|x_{i_k} - x| < \frac{\varepsilon}{2}$；另外，根据 Cauchy 列的定义，我们有 $N_2 > 0$，使得对任意的 $n, m > N_2$，我们都有 $|x_n - x_m| < \frac{\varepsilon}{2}$。令 $N = \max\big(\min\limits_{i_k \geqslant N_1}\{i_k\}, N_2\big)$，所以当 $n \geqslant N$ 时，我们有
 
@@ -142,7 +145,7 @@ $$
 
 根据上面第二个引理，我们只要构造一个收敛的子列即可。根据第一个引理，我们能找到一个有界的子列，再利用 Bolzano-Weierstrass 的列紧性，这个有界子列有一个收敛的子列。证毕。 $\square$
 
-**注记.** *1) 相比于极限定义本身，利用 Cauchy 判别准则证明极限存在的优势在于不需要先验地知道极限的值。*
+**注记。** *1) 相比于极限定义本身，利用 Cauchy 判别准则证明极限存在的优势在于不需要先验地知道极限的值。*
 
 比如说，我们有
 
@@ -178,7 +181,7 @@ $$
 
 <!-- source: PDF 52; printed: 52; transcription: first-pass; proofreading: applied -->
 
-**练习.** 假设 $\{a_n\}_{n \geqslant 1}$ 是递减的正实数的数列并且 $\lim\limits_{n \to \infty} a_n = 0$，那么，级数
+**练习。** 假设 $\{a_n\}_{n \geqslant 1}$ 是递减的正实数的数列并且 $\lim\limits_{n \to \infty} a_n = 0$，那么，级数
 
 $$
 a_1 - a_2 + a_3 - a_4 + \cdots + (-1)^{n-1} a_n + \cdots
@@ -188,7 +191,7 @@ $$
 
 我们把这个练习留做本次的作业。有一个和这个习题相关联的有趣的姊妹问题，证明和结论都值得大家研究：
 
-<span id="ma-proposition-21" class="lecture-anchor"></span>**命题 21.** $\{a_n\}_{n \geqslant 1}$ 是递减的正实数的数列并且 $\lim\limits_{n \to \infty} a_n = 0$。假设级数 $\sum\limits_{k=1}^{\infty} a_k$ 发散。那么，对任意 $x \in \mathbb{R}$，我们可以选取一组正负号 $\iota_k \in \{\pm 1\}$，使得级数 $\sum\limits_{k=1}^{\infty} \iota_k a_k$ 收敛并且
+<span id="ma-proposition-21" class="lecture-anchor"></span>**命题 21。** $\{a_n\}_{n \geqslant 1}$ 是递减的正实数的数列并且 $\lim\limits_{n \to \infty} a_n = 0$。假设级数 $\sum\limits_{k=1}^{\infty} a_k$ 发散。那么，对任意 $x \in \mathbb{R}$，我们可以选取一组正负号 $\iota_k \in \{\pm 1\}$，使得级数 $\sum\limits_{k=1}^{\infty} \iota_k a_k$ 收敛并且
 
 $$
 \sum_{k=1}^{\infty} \iota_k a_k = x.
@@ -250,7 +253,7 @@ $$
 
 *3) 对复数和 $\mathbb{R}^n$ 也成立。*
 
-<span id="ma-corollary-22" class="lecture-anchor"></span>**推论 22** (级数收敛的 Cauchy 判别准则). 实数项的级数 $\sum\limits_{k=0}^{\infty} a_k$ 收敛的充分必要条件是对任意 $\varepsilon > 0$，存在 $N > 0$，对任意自然数 $n \geqslant N$ 和任意自然数 $p \geqslant 0$，我们都有
+<span id="ma-corollary-22" class="lecture-anchor"></span>**推论 22**（级数收敛的 Cauchy 判别准则）。实数项的级数 $\sum\limits_{k=0}^{\infty} a_k$ 收敛的充分必要条件是对任意 $\varepsilon > 0$，存在 $N > 0$，对任意自然数 $n \geqslant N$ 和任意自然数 $p \geqslant 0$，我们都有
 
 $$
 \Big| \sum_{n \leqslant k \leqslant n+p} a_k \Big| < \varepsilon.
@@ -258,7 +261,9 @@ $$
 
 **证明：** 对任意的 $n$，令 $S_n = a_1 + \cdots + a_n$ 为部分和。级数收敛等价于说 $\{S_n\}_{n \geqslant 1}$ 收敛。根据 Cauchy 判别准则，对任意的 $\varepsilon > 0$，存在 $N > 0$，对任意自然数 $n \geqslant N$ 和 $m \geqslant N$，我们都有 $|S_n - S_m| < \varepsilon$。我们不妨假设 $m \geqslant n$，令 $m = n + p$ 即得到了推论所要求的形式。 $\square$
 
-**注记.** *（复数或 $\mathbb{R}^n$ 中也成立）。* 另外，假设 $\sum\limits_{k=0}^{\infty} a_k$ 收敛，取 $p = 0$，上述判别法说明 $a_n \to 0$。反之则未必成立，比如考虑调和级数。
+**注记。** *（复数或 $\mathbb{R}^n$ 中也成立）。* 另外，假设 $\sum\limits_{k=0}^{\infty} a_k$ 收敛，取 $p = 0$，上述判别法说明 $a_n \to 0$。反之则未必成立，比如考虑调和级数。
+
+## 上极限与下极限
 
 对于一般的实数数列，尽管极限不一定存在，但是我们总能定义它的**上极限和下极限**：任意给定实数数列 $\{x_n\}_{n \geqslant 1}$，对任意 $n \geqslant 1$，我们令
 
@@ -278,15 +283,17 @@ $$
 
 根据定义以及极限保持不等号的性质，我们有 $\limsup\limits_{n \to \infty} x_n \geqslant \liminf\limits_{n \to \infty} x_n$。我们如下命题：
 
-<span id="ma-proposition-23" class="lecture-anchor"></span>**命题 23.** $\{x_n\}_{n \geqslant 1}$ 是实数数列。那么，$\{x_n\}_{n \geqslant 1}$ 收敛的充分必要条件是 $\limsup\limits_{n \to \infty} x_n = \liminf\limits_{n \to \infty} x_n$。
+<span id="ma-proposition-23" class="lecture-anchor"></span>**命题 23。** $\{x_n\}_{n \geqslant 1}$ 是实数数列。那么，$\{x_n\}_{n \geqslant 1}$ 收敛的充分必要条件是 $\limsup\limits_{n \to \infty} x_n = \liminf\limits_{n \to \infty} x_n$。
 
 我们会在作业中证明这个命题。
+
+## 重要极限与常数的构造
 
 在进一步讨论如何判断极限是否存在之前，我们再研究两个极为重要的极限：
 
 <!-- source: PDF 54; printed: 54; transcription: first-pass; proofreading: applied -->
 
-**例子.** $\lim\limits_{n \to \infty} n^{\frac{1}{n}} = 1$。（开 $n$ 次方目前并未定义，我们先假设自己懂（按照中学的理解））
+**例子。** $\lim\limits_{n \to \infty} n^{\frac{1}{n}} = 1$。（开 $n$ 次方目前并未定义，我们先假设自己懂（按照中学的理解））
 
 **证明：** 首先，我们显然有 $n^{\frac{1}{n}} \geqslant 1$。其次，根据算术-几何平均值不等式[^p0054-6]（我们课程后面会严格证明这个不等式）可以得到
 
@@ -296,7 +303,7 @@ $$
 
 从而，$0 \leqslant n^{\frac{1}{n}} - 1 \leqslant \frac{2}{n} + \frac{2}{\sqrt{n}}$。只需要选择比较大的 $N$，就可以使得对 $n \geqslant N$ 的自然数 $n$，有 $\frac{2}{n} + \frac{2}{\sqrt{n}} < \varepsilon$。 $\square$
 
-**例子** (Euler 常数 $e$ 的构造). 极限 $\lim\limits_{n \to \infty} (1 + \frac{1}{n})^n$ 是存在的，我们把它记做是 $e$。$e$ 还有如下的级数表达式：
+**例子**（Euler 常数 $e$ 的构造）。极限 $\lim\limits_{n \to \infty} (1 + \frac{1}{n})^n$ 是存在的，我们把它记做是 $e$。$e$ 还有如下的级数表达式：
 
 $$
 e = \sum_{k=0}^{\infty} \frac{1}{k!}.
@@ -318,7 +325,7 @@ $$
 = \sum_{k=0}^n \frac{1}{k!} (1 - \frac{1}{n})(1 - \frac{2}{n}) \cdots (1 - \frac{k-1}{n}) \leqslant \sum_{k=0}^n \frac{1}{k!}.
 $$
 
-根据 $k! \geqslant 2^{k-1}$ ($k \geqslant 2$)，我们就有
+根据 $k! \geqslant 2^{k-1}$（$k \geqslant 2$），我们就有
 
 $$
 x_n = (1 + \frac{1}{n})^n \leqslant 1 + 1 + \sum_{k=1}^n \frac{1}{2^k} < 3.
@@ -390,7 +397,7 @@ $$
 e = \lim_{n\to\infty} (1+\frac{1}{n})^n = \sum_{k=0}^{\infty} \frac{1}{k!}.
 $$
 
-**注记.** 1) 利用 $e$ 的级数表达式很容易相对精确的计算 $e$ 的大小。$7!$ 是一个 5 位数，$8!$ 是一个 6 位数，所以只要算 6 项（前两项整数部分不算）就已经可以精确到小数点后 5 位了：
+**注记。** 1) 利用 $e$ 的级数表达式很容易相对精确的计算 $e$ 的大小。$7!$ 是一个 5 位数，$8!$ 是一个 6 位数，所以只要算 6 项（前两项整数部分不算）就已经可以精确到小数点后 5 位了：
 $e = 2.71828\cdots!$
 
 2) $e$ 是一个无理数。如若不然，我们假设 $e = \frac{m}{n}$，其中 $m$ 和 $n$ 都是正整数，那么 $n! \times (e - \sum_{k=0}^n \frac{1}{k!})$ 应该是整数，然而
@@ -411,9 +418,11 @@ $$
 
 <!-- source: PDF 57; printed: 57; transcription: first-pass; proofreading: applied -->
 
+## 控制收敛与绝对收敛
+
 我们现在列举出极限收敛的几种常见的判别方式。尽管它们的形式并不统一，但是背后的想法却是一致的：我们需要找一个所谓的控制序列！
 
-<span id="ma-proposition-24" class="lecture-anchor"></span>**命题 24.** 我们有如下的判断收敛的方法：
+<span id="ma-proposition-24" class="lecture-anchor"></span>**命题 24。** 我们有如下的判断收敛的方法：
 
 1) （双边控制）假设有三个实数序列 $\{a_n\}_{n\geqslant 1}$，$\{x_n\}_{n\geqslant 1}$ 和 $\{b_n\}_{n\geqslant 1}$，对任意的 $n \geqslant 1$，都有 $a_n \leqslant x_n \leqslant b_n$（即 $x_n$ 在左右两边分别被 $a_n$ 和 $b_n$ 控制）。如果 $\{a_n\}_{n\geqslant 1}$ 和 $\{b_n\}_{n\geqslant 1}$ 都收敛并且 $\lim_{n\to\infty} a_n = \lim_{n\to\infty} b_n$，那么 $\{x_n\}_{n\geqslant 1}$ 收敛并且
 
@@ -445,7 +454,7 @@ $$
 
 数学中很多的极限都以级数的形式出现，我们给出上述命题的级数版本：
 
-<span id="ma-proposition-25" class="lecture-anchor"></span>**命题 25 (控制收敛定理与绝对收敛的概念).** （重要！）
+<span id="ma-proposition-25" class="lecture-anchor"></span>**命题 25（控制收敛定理与绝对收敛的概念）。** （重要！）
 
 1) $\sum_{k=0}^{\infty} a_k$ 是正项级数（即 $a_k \geqslant 0$，其中 $k \geqslant 1$），那么 $\sum_{k=0}^{\infty} a_k$ 收敛当且仅当存在常数 $M$，使得每个部分和 $S_n = \sum_{k=0}^n a_k \leqslant M$。
 
@@ -463,13 +472,13 @@ $$
 
 所以，$\sum_{k=0}^{\infty} a_k$ 收敛。 $\square$
 
-**注记.** 上面的 2) 和 3) 结合在一起非常好用：为了证明一个级数 $\sum_{k=0}^{\infty} a_k$ 收敛，很多情况下只要说明它绝对收敛就可以了，此时，再找一个收敛的正项级数 $\sum_{k=0}^{\infty} b_k$ 控制 $\sum_{k=0}^{\infty} |a_k|$ 即可。
+**注记。** 上面的 2) 和 3) 结合在一起非常好用：为了证明一个级数 $\sum_{k=0}^{\infty} a_k$ 收敛，很多情况下只要说明它绝对收敛就可以了，此时，再找一个收敛的正项级数 $\sum_{k=0}^{\infty} b_k$ 控制 $\sum_{k=0}^{\infty} |a_k|$ 即可。
 
 **用较大的收敛级数来控制较小的级数从而证明较小级数是收敛的，这是分析中最基本一个技术和想法。**
 
 然而，这个想法貌似存在着不合理的地方：直观上，证明更大的级数收敛是比证明原来的小一点的级数收敛更难的事情。真正的解释是理解这个想法的核心（这在定理叙述中无法看出来）：通过适当选取较大的级数应容易计算。
 
-**例子.** 我们给出上述命题的几个简单应用：
+**例子。** 我们给出上述命题的几个简单应用：
 
 1) 交错项的调和级数 $\sum_{k=1}^{\infty} \frac{(-1)^k}{k}$ 是收敛的但是不绝对收敛。
 
@@ -477,7 +486,7 @@ $$
 
 3) 级数 $(e = ) \sum_{k=0}^{\infty} \frac{1}{k!}$ 收敛：我们可以用 $\sum_{k=2}^{\infty} \frac{1}{2^k}$ 作为控制级数，因为等比数列更容易求和。
 
-**练习.** 绝对收敛的概念对于复数项的级数或者在线性空间中（包括矩阵）取值的级数也成立，我们这里只考虑复数的情形，其余的我们会有更为一般的讨论：
+**练习。** 绝对收敛的概念对于复数项的级数或者在线性空间中（包括矩阵）取值的级数也成立，我们这里只考虑复数的情形，其余的我们会有更为一般的讨论：
 
 考虑复数项的级数 $\sum_{k=0}^{\infty} a_k$。如果 $\sum_{k=0}^{\infty} |a_k|$ 收敛，证明，$\sum_{k=0}^{\infty} a_k$ 也收敛，其中 $|\cdot|$ 是取复数的模长。
 

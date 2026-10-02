@@ -4,7 +4,8 @@
 
 <!-- source: PDF 17; printed: 17; transcription: first-pass; proofreading: applied -->
 
-## 简介
+
+## 课程内容
 
 数学分析一这门课程的内容包含五个部分：
 
@@ -43,10 +44,12 @@
 
 
 
-<!-- source: PDF 18; printed: 18; transcription: first-pass; proofreading: applied -->
+     <!-- source: PDF 18; printed: 18; transcription: first-pass; proofreading: applied -->
 
    - 积分的性质：中值公式与 Lebesgue 定理等；
    - Stieltjes 积分。
+
+## 课程目标
 
 除了理论部分，课程的真正核心是围绕着所谓的 Euler 公式展开的：
 

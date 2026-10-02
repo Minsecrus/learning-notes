@@ -1,13 +1,12 @@
-# 18 Riemann 积分的定义
+# 18：Riemann 积分的定义
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：17.1 作业:Émile Borel引理,Peano的证明](17-convexity/17-03-p0183-0188.md) · [下一篇：Riemann 和与 Darboux 上下和](19-darboux-sums/19-01-p0199-0203.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：17.1：作业：Émile Borel引理，Peano的证明](17-convexity/17-03-p0183-0188.md) · [下一篇：Riemann 和与 Darboux 上下和](19-darboux-sums/19-01-p0199-0203.md)
 
 <!-- source: PDF 189; printed: 189; transcription: first-pass; proofreading: applied -->
 
-## 18 Riemann 积分的定义：区间的分划，简单函数，Riemann 可积函数
 
 
-### 一维的 Riemann 积分
+## 分划与阶梯函数
 
 假设 $a < b$ 是实数，$I = [a, b]$ 是一个闭区间，我们定义所谓的分划的概念：选取 $n + 1$ 个实数 $a_0, a_1, a_2, \cdots, a_n$，使得 $a = a_0 < a_1 < \cdots < a_{n-1} < a_n = b$。这些有序的数将 $I$ 分成了 $n$ 份，
 
@@ -19,7 +18,7 @@ $$|\sigma| = \max_{0 \leqslant i \leqslant n-1} |a_i - a_{i+1}|.$$
 
 我们把 $\{a_0, a_1, a_2, \cdots, a_n\}$ 称作是分划 $\sigma$ 的**分割点**。很明显，给定 $I$ 的一个分划 $\sigma \in \mathcal{S}$ 等价于给定包含 $I$ 两个端点的（$I$ 的）有限子集（$=$ 分割点的集合）。
 
-**例子.** 我们可以将 $I$ 均分为 $n$ 份：$a_k = a + \dfrac{k}{n}(b - a)$，其中 $k = 0, 1, \cdots, n$。这是 $I$ 的一个步长为 $\dfrac{b - a}{n}$ 的分划。
+**例子。** 我们可以将 $I$ 均分为 $n$ 份：$a_k = a + \dfrac{k}{n}(b - a)$，其中 $k = 0, 1, \cdots, n$。这是 $I$ 的一个步长为 $\dfrac{b - a}{n}$ 的分划。
 
 考虑 $I$ 的两个分划 $\sigma, \sigma' \in \mathcal{S}$，如果 $\sigma$ 的分割点的集合是 $\sigma'$ 的分割点的集合的子集，我们就称 $\sigma'$ **比 $\sigma$ 细**并记作 $\sigma' \prec \sigma$。对于 $\sigma' \prec \sigma$，我们还说 $\sigma'$ 是 $\sigma$ 的**加细**。特别地，任给两个 $\sigma_1$ 和 $\sigma_2$，我们用 $\sigma_1 \cup \sigma_2$ 表示把它们两个分割点放到一起所对应的分划，这是 $\sigma_1$ 和 $\sigma_2$ 共同的加细。很明显，$(\mathcal{S}, \prec)$ 满足下面的三条性质：
 
@@ -31,17 +30,19 @@ $$|\sigma| = \max_{0 \leqslant i \leqslant n-1} |a_i - a_{i+1}|.$$
 
 在定义积分之前，我们先做如下的注解：
 
-**注记.** 在下面关于积分的构造过程中，尽管我们只考虑实值函数，但是大部分的理论对函数 $f : I \to V$ 都成立，其中 $V$ 是一个赋范线性空间。在应用的时候，$V = \mathbb{C}$ 或者 $\mathbf{M}_n(\mathbb{R})$ 是重要的。另外，我们注意到 $\mathbf{M}_n(\mathbb{R})$ 的时候两个函数还可以相乘，此时和乘积有关的定理也都成立。
+**注记。** 在下面关于积分的构造过程中，尽管我们只考虑实值函数，但是大部分的理论对函数 $f : I \to V$ 都成立，其中 $V$ 是一个赋范线性空间。在应用的时候，$V = \mathbb{C}$ 或者 $\mathbf{M}_n(\mathbb{R})$ 是重要的。另外，我们注意到 $\mathbf{M}_n(\mathbb{R})$ 的时候两个函数还可以相乘，此时和乘积有关的定理也都成立。
 
-<span id="ma-definition-113" class="lecture-anchor"></span>**定义 113.** 给定函数 $f : I \to \mathbb{R}$，如果存在一个分划 $\sigma = \{a = a_0 < a_1 < \cdots < a_{n-1} < a_n = b\}$，使得 $f$ 在每个开区间 $(a_i, a_{i+1})$ 上面都是常值，我们就称 $f$ 是**阶梯函数**或者**简单函数**。我们将 $I$ 上阶梯函数的全体记作 $\mathcal{E}(I)$。
+### 阶梯函数
+
+<span id="ma-definition-113" class="lecture-anchor"></span>**定义 113。** 给定函数 $f : I \to \mathbb{R}$，如果存在一个分划 $\sigma = \{a = a_0 < a_1 < \cdots < a_{n-1} < a_n = b\}$，使得 $f$ 在每个开区间 $(a_i, a_{i+1})$ 上面都是常值，我们就称 $f$ 是**阶梯函数**或者**简单函数**。我们将 $I$ 上阶梯函数的全体记作 $\mathcal{E}(I)$。
 
 <!-- source: PDF 190; printed: 190; transcription: first-pass; proofreading: applied -->
 
-**注记.** 首先，函数在分割点 $a_i$ 的值可以任意选取，这对于后面定义积分是无关紧要的。
+**注记。** 首先，函数在分割点 $a_i$ 的值可以任意选取，这对于后面定义积分是无关紧要的。
 
 其次，对给定的 $f \in \mathcal{E}(I)$，可能存在另一个分划 $\sigma' = \{a = a'_0 < a'_1 < \cdots < a'_{m-1} < a'_m = b\}$，使得 $f$ 在每个开区间 $(a'_j, a'_{j+1})$ 上面都是常值。
 
-<span id="ma-lemma-114" class="lecture-anchor"></span>**引理 114.** 给定有界闭区间 $I$，它上面的阶梯函数空间 $\mathcal{E}(I)$ 满足如下的性质：
+<span id="ma-lemma-114" class="lecture-anchor"></span>**引理 114。** 给定有界闭区间 $I$，它上面的阶梯函数空间 $\mathcal{E}(I)$ 满足如下的性质：
 
 1) $\mathcal{E}(I)$ 是 $\mathbb{R}$-线性空间。（如果 $f$ 在一个 $\mathbb{C}$-线性空间中取值，那么 $\mathcal{E}(I)$ 是 $\mathbb{C}$-线性空间）
 
@@ -55,9 +56,11 @@ $$|\sigma| = \max_{0 \leqslant i \leqslant n-1} |a_i - a_{i+1}|.$$
 
 为了证明 $\mathcal{E}(I)$ 是 $\mathbb{R}$-线性空间，我们说明如果 $f_1, f_2 \in \mathcal{E}(I)$，那么 $f_1 + f_2 \in \mathcal{E}(I)$，其余的关于线性空间的公理类似可以证明：假设 $\sigma_1$ 和 $\sigma_2$ 是和 $f_1$ 以及 $f_2$ 相对应的分划，我们用 $\sigma = \sigma_1 \cup \sigma_2$ 表示把它们两个分割点放到一起所对应的分划并假设 $\sigma = \{a = a_0 < a_1 < \cdots < a_{n-1} < a_n = b\}$。很明显，$f_1$ 和 $f_2$ 在每一个 $(a_i, a_{i+1})$ 上都是常数，所以 $f_1 + f_2$ 在每一个 $(a_i, a_{i+1})$ 上都是常数，其中 $i = 0, 1, \cdots, n - 1$。$\square$
 
+### 阶梯函数的积分
+
 我们现在来定义 $f \in \mathcal{E}(I)$ 的函数图像所围出的面积（可以有符号）：
 
-![阶梯函数 y=f(x) 的函数图像示意图，横轴为 x，纵轴为 y，分割点为 a_0, a_1, a_2, ..., a_n=b，图中画出各小矩形面积（可有符号）](../assets/p0190-figure-1.webp)
+![阶梯函数 y=f(x) 的函数图像示意图，横轴为 x，纵轴为 y，分割点为 a_0，a_1，a_2，...，a_n=b，图中画出各小矩形面积（可有符号）](../assets/p0190-figure-1.webp)
 
 假设 $f$ 是与 $\sigma \in \mathcal{S}$ 相容的阶梯函数，其中 $\sigma = \{a = a_0 < a_1 < \cdots < a_{n-1} < a_n = b\}$，令 $f\big|_{(a_i, a_{i+1})} \equiv f_i$，我们按照直观来定义：
 
@@ -69,49 +72,49 @@ $$S_{\sigma'}(f) = (a'_1 - a'_0)f'_1 + (a'_2 - a'_1)f'_2 + \cdots + (a'_m - a'_{
 
 <!-- source: PDF 191; printed: 191; transcription: first-pass; proofreading: applied -->
 
-为了说明我们的面积是良好定义的,就需要说明 $S_\sigma(f) = S_{\sigma'}(f)$。实际上,考虑这两个分划共同的加细 $\sigma \cup \sigma'$,$f$ 与这个新的分划也相容,所以只要说明当 $\bar{\sigma} \prec \sigma$ 时,$S(f) = S'(f)$ 即可:因为 $\sigma \cup \sigma' \prec \sigma$,$\sigma \cup \sigma' \prec \sigma'$,所以
+为了说明我们的面积是良好定义的，就需要说明 $S_\sigma(f) = S_{\sigma'}(f)$。实际上，考虑这两个分划共同的加细 $\sigma \cup \sigma'$，$f$ 与这个新的分划也相容，所以只要说明当 $\bar{\sigma} \prec \sigma$ 时，$S(f) = S'(f)$ 即可：因为 $\sigma \cup \sigma' \prec \sigma$，$\sigma \cup \sigma' \prec \sigma'$，所以
 
 $$S_\sigma(f) = S_{\sigma \cup \sigma'}(f) = S_{\sigma'}(f).$$
 
 这个简单的推理在之后会重复出现。
 
-<span id="ma-lemma-115" class="lecture-anchor"></span>**引理 115.** 对于给定的阶梯函数 $f \in \mathcal{E}(I)$,假设 $\sigma$ 和 $\sigma'$ 都是与 $f$ 相容的分划并且 $\sigma' \prec \sigma$,那么 $S_\sigma(f) = S_{\sigma'}(f)$。
+<span id="ma-lemma-115" class="lecture-anchor"></span>**引理 115。** 对于给定的阶梯函数 $f \in \mathcal{E}(I)$，假设 $\sigma$ 和 $\sigma'$ 都是与 $f$ 相容的分划并且 $\sigma' \prec \sigma$，那么 $S_\sigma(f) = S_{\sigma'}(f)$。
 
 **证明：** 我们为 $\sigma'$ 的分割点按照如下的方式从小到大编号：
 
 $$a_{0,0}, a_{0,1}, \cdots, a_{0,m_0-1}; a_{1,0}, a_{1,1}, \cdots, a_{1,m_1-1}; \cdots; a_{n-1,0}, a_{n-1,1}, \cdots, a_{n-1,m_{n-1}-1}; a_{n,0},$$
 
-其中,$a_{0,0}, a_{1,0}, \cdots, a_{n,0}$ 恰好是 $\sigma$ 的分割点。我们假设 $f\big|_{(a_{k,0}, a_{k+1,0})} = f_k$,其中 $k = 0, 1, \cdots, n-1$,那么
+其中，$a_{0,0}, a_{1,0}, \cdots, a_{n,0}$ 恰好是 $\sigma$ 的分割点。我们假设 $f\big|_{(a_{k,0}, a_{k+1,0})} = f_k$，其中 $k = 0, 1, \cdots, n-1$，那么
 
 $$S_{\sigma'}(f) = \sum_{k=0}^{n-1} \sum_{l=0}^{m_k-1} f_k(a_{k,l+1} - a_{k,l}) = \sum_{k=0}^{n-1} f_k(a_{k+1,0} - a_{k,0}) = S_\sigma(f).$$
 
 这就完成了证明。$\square$
 
-上面的讨论,表明映射
+上面的讨论，表明映射
 
 $$\int_a^b : \mathcal{E}(I) \to \mathbb{R}, \quad f \mapsto S(f),$$
 
-是良好定义的。我们将 $S(f)$ 记作 $\displaystyle\int_I f$ 或者 $\displaystyle\int_a^b f$ 并称它为 $f$ 的**积分**,其中 $f$ 是阶梯函数。
+是良好定义的。我们将 $S(f)$ 记作 $\displaystyle\int_I f$ 或者 $\displaystyle\int_a^b f$ 并称它为 $f$ 的**积分**，其中 $f$ 是阶梯函数。
 
-关于阶梯函数的积分,我们有如下的性质：
+关于阶梯函数的积分，我们有如下的性质：
 
-<span id="ma-theorem-116" class="lecture-anchor"></span>**定理 116.** 积分 $\displaystyle\int_a^b : \mathcal{E}(I) \to \mathbb{R}$ 是 $\mathbb{R}$-线性映射。进一步,它满足
+<span id="ma-theorem-116" class="lecture-anchor"></span>**定理 116。** 积分 $\displaystyle\int_a^b : \mathcal{E}(I) \to \mathbb{R}$ 是 $\mathbb{R}$-线性映射。进一步，它满足
 
-1) 对于 $f \in \mathcal{E}(I)$,我们有
+1) 对于 $f \in \mathcal{E}(I)$，我们有
 
 $$\left| \int_a^b f \right| \leqslant \int_a^b |f|.$$
 
-2)（区间可加性）假设 $a < c < b$,那么对于任意的 $f \in \mathcal{E}(I)$,我们有 $f$ 在 $[a, c]$ 和 $[c, b]$ 上的限制都是阶梯函数,并且
+2)（区间可加性）假设 $a < c < b$，那么对于任意的 $f \in \mathcal{E}(I)$，我们有 $f$ 在 $[a, c]$ 和 $[c, b]$ 上的限制都是阶梯函数，并且
 
 $$\int_a^b f = \int_a^c f + \int_c^b f.$$
 
-**证明：** 我们先证明积分的线性,只需要证明如果 $f, g \in \mathcal{E}(I)$,那么
+**证明：** 我们先证明积分的线性，只需要证明如果 $f, g \in \mathcal{E}(I)$，那么
 
 $$\int_a^b f + g = \int_a^b f + \int_a^b g$$
 
 <!-- source: PDF 192; printed: 192; transcription: first-pass; proofreading: applied -->
 
-即可,其余性质可以类似地验证。为此,我们取 $\sigma \in \mathcal{S}$,使得 $\sigma$ 与 $f$ 和 $g$ 都相容。假设 $\sigma = \{a = a_0 < a_1 < \cdots < a_{n-1} < a_n = b\}$,$f\big|_{(a_i, a_{i+1})} \equiv f_i$,$g\big|_{(a_i, a_{i+1})} \equiv g_i$,其中 $0 \leqslant i \leqslant n-1$,那么,
+即可，其余性质可以类似地验证。为此，我们取 $\sigma \in \mathcal{S}$，使得 $\sigma$ 与 $f$ 和 $g$ 都相容。假设 $\sigma = \{a = a_0 < a_1 < \cdots < a_{n-1} < a_n = b\}$，$f\big|_{(a_i, a_{i+1})} \equiv f_i$，$g\big|_{(a_i, a_{i+1})} \equiv g_i$，其中 $0 \leqslant i \leqslant n-1$，那么，
 
 $$S_\sigma(f + g) = \sum_{i=0}^{n-1} (f_i + g_i)(a_{i+1} - a_i) = \sum_{i=0}^{n-1} f_i(a_{i+1} - a_i) + \sum_{i=0}^{n-1} g_i(a_{i+1} - a_i)$$
 
@@ -119,11 +122,11 @@ $$= S_\sigma(f) + S_\sigma(g)$$
 
 这就证明了线性。
 
-为了证明 1),我们利用距离的三角不等式：
+为了证明 1)，我们利用距离的三角不等式：
 
 $$\left| S_\sigma(f) \right| = \left| \sum_{i=0}^{n-1} (a_{i+1} - a_i) f_i \right| \leqslant \sum_{i=0}^{n-1} (a_{i+1} - a_i) |f_i| = S_\sigma(|f|).$$
 
-为了证明 2),我们可以选取分划 $\sigma = \{a = a_0 < a_1 < \cdots < a_{n-1} < a_n = b\}$,使得 $c = a_{i_0}$ 为某一个分割点,此时,
+为了证明 2)，我们可以选取分划 $\sigma = \{a = a_0 < a_1 < \cdots < a_{n-1} < a_n = b\}$，使得 $c = a_{i_0}$ 为某一个分割点，此时，
 
 $$S_\sigma(f) = \sum_{i=0}^{n-1} f_i(a_{i+1} - a_i) = \sum_{i=0}^{i_0-1} f_i(a_{i+1} - a_i) + \sum_{i=i_0}^{n-1} f_i(a_{i+1} - a_i)$$
 
@@ -131,27 +134,27 @@ $$= \int_a^c f + \int_c^b f.$$
 
 命题成立。$\square$
 
-关于阶梯函数的积分,我们还有如下的性质：
+关于阶梯函数的积分，我们还有如下的性质：
 
-<span id="ma-proposition-117" class="lecture-anchor"></span>**命题 117.** 对于 $f \in \mathcal{E}(I)$,如果除去有限个点之外,$f \geqslant 0$,我们就称 $f$ 是正的阶梯函数。我们有如下的性质：
+<span id="ma-proposition-117" class="lecture-anchor"></span>**命题 117。** 对于 $f \in \mathcal{E}(I)$，如果除去有限个点之外，$f \geqslant 0$，我们就称 $f$ 是正的阶梯函数。我们有如下的性质：
 
-1) 假设 $f \in \mathcal{E}(I)$ 是正的阶梯函数,那么 $\displaystyle\int_a^b f \geqslant 0$。
+1) 假设 $f \in \mathcal{E}(I)$ 是正的阶梯函数，那么 $\displaystyle\int_a^b f \geqslant 0$。
 
-2) 假设 $f, g \in \mathcal{E}(I)$ 使得 $f \geqslant g$,那么 $\displaystyle\int_a^b f \geqslant \int_a^b g$。
+2) 假设 $f, g \in \mathcal{E}(I)$ 使得 $f \geqslant g$，那么 $\displaystyle\int_a^b f \geqslant \int_a^b g$。
 
-3) 对任意的 $f \in \mathcal{E}(I)$,我们有如下的估计：
+3) 对任意的 $f \in \mathcal{E}(I)$，我们有如下的估计：
 
 $$\left\| \int_a^b f \right\| \leqslant |b - a| \|f\|_{L^\infty(I)},$$
 
-其中任取与 $f$ 相容的分划 $\sigma = \{a = a_0 < a_1 < \cdots < a_{n-1} < a_n = b\}$,假设 $f\big|_{(a_{i-1}, a_i)} = f_i$,$i = 1, \cdots, n$,我们定义
+其中任取与 $f$ 相容的分划 $\sigma = \{a = a_0 < a_1 < \cdots < a_{n-1} < a_n = b\}$，假设 $f\big|_{(a_{i-1}, a_i)} = f_i$，$i = 1, \cdots, n$，我们定义
 
 $$\|f\|_{L^\infty(I)} = \sup_{1 \leqslant i \leqslant n} |f_i|.$$
 
-特别地,如果我们只改动 $f$ 在有限个点处的值,那么 $\|f\|_{L^\infty(I)}$ 不发生变化。
+特别地，如果我们只改动 $f$ 在有限个点处的值，那么 $\|f\|_{L^\infty(I)}$ 不发生变化。
 
 <!-- source: PDF 193; printed: 193; transcription: first-pass; proofreading: applied -->
 
-**证明**: 按照定义，1) 是显然的；2) 是 1) 和积分线性的推论。为了证明 3)，我们可以选取分划
+**证明**：按照定义，1) 是显然的；2) 是 1) 和积分线性的推论。为了证明 3)，我们可以选取分划
 $\sigma = \{a = a_0 < a_1 < \cdots < a_{n-1} < a_n = b\}$ 与 $f$ 相容，那么
 
 $$|S_\sigma(f)| = \left|\sum_{i=0}^{n-1} f_i(a_{i+1} - a_i)\right| \leqslant \sum_{i=0}^{n-1} \|f\|_{L^\infty(I)}(a_{i+1} - a_i)$$
@@ -160,11 +163,13 @@ $$= \|f\|_{L^\infty(I)}(b - a).$$
 
 证明完毕。$\square$
 
+## 阶梯函数逼近与黎曼可积性
+
 我们对阶梯函数这一类函数定义了积分。这样的函数比较特殊，我们想尽量扩大可以定义积分的函数的类，比如说，要包含连续函数类，使得我们仍然能够定义它们图像下的面积。最基本的想法是利用阶梯函数来逼近这些可以积分的函数。能够被阶梯函数在好的意义下逼近的函数将会被称作是 Riemann 可积的函数。我们的处理方式和传统的直接用 Riemann 和或 Darboux 上下和的定义方式有所差别（我们会证明两者的等价性），然而，整个套路上和我们下学期要定义的抽象积分可以一一对应，很容易做推广。实际上，如果我们允许分划更一般一些（不仅仅是分成若干个闭区间的并），这些更一般的分划所对应的阶梯函数也会更一般一些，同样的处理方式（逼近）就给出了 Lebesgue 的积分理论。另外，我们指出，上面关于阶梯函数的定义并不依赖于所谓的面积（目前我们还没有定义什么叫做面积）。
 
 为了定义 Riemann 积分，我们需要一个技术性的引理（定义）：
 
-<span id="ma-lemma-118" class="lecture-anchor"></span>**引理 118.** $I = [a, b]$ 是有界闭区间，$f : I \to \mathbb{R}$ 是函数，如下命题是等价的：
+<span id="ma-lemma-118" class="lecture-anchor"></span>**引理 118。** $I = [a, b]$ 是有界闭区间，$f : I \to \mathbb{R}$ 是函数，如下命题是等价的：
 
 *1)* 对任意的 $\varepsilon > 0$，存在两个阶梯函数 $F_\varepsilon : I \to \mathbb{R}$ 和 $\Psi_\varepsilon : I \to \mathbb{R}$，使得对任意的 $x \in I$，都有
 
@@ -184,7 +189,7 @@ $$\lim_{n \to \infty} \int_I \psi_n = 0.$$
 
 用 $\varepsilon - \delta$ 语言描述函数在一点的连续性与用序列来描述函数在一点的连续性是等价的，这个引理的描述与此相似。
 
-**证明**: 1)$\Rightarrow$ 2) 是显然的，因为对每个 $\varepsilon = \dfrac{1}{n}$，我们可以选取阶梯函数 $f_n = F_\varepsilon : I \to \mathbb{R}$ 和 $\psi_n = \Psi_\varepsilon : I \to \mathbb{R}$，使得对任意的 $x \in I$，都有
+**证明**：1)$\Rightarrow$ 2) 是显然的，因为对每个 $\varepsilon = \dfrac{1}{n}$，我们可以选取阶梯函数 $f_n = F_\varepsilon : I \to \mathbb{R}$ 和 $\psi_n = \Psi_\varepsilon : I \to \mathbb{R}$，使得对任意的 $x \in I$，都有
 
 $$\left|f(x) - f_n(x)\right| < \Psi_\varepsilon(x)$$
 
@@ -200,9 +205,9 @@ $$\int_I \psi_n < \varepsilon.$$
 
 我们就选取 $F_\varepsilon = f_N$，$\Psi_\varepsilon = \psi_N$。$\square$
 
-<span id="ma-definition-119" class="lecture-anchor"></span>**定义 119.** 如果函数 $f$ 满足上述引理中的条件之一，我们通常称它可以被阶梯函数或简单函数逼近，我们就说 $f$ 是**区间 $I$ 上 Riemann 可积的函数**。我们用 $\mathcal{R}(I)$ 表示区间 $I$ 上 Riemann 可积函数的全体。
+<span id="ma-definition-119" class="lecture-anchor"></span>**定义 119。** 如果函数 $f$ 满足上述引理中的条件之一，我们通常称它可以被阶梯函数或简单函数逼近，我们就说 $f$ 是**区间 $I$ 上 Riemann 可积的函数**。我们用 $\mathcal{R}(I)$ 表示区间 $I$ 上 Riemann 可积函数的全体。
 
-**注记.** 如果我们在这里考虑向量值的函数 $f : I \to V$，我们通常需要假设 $V$ 是完备的赋范线性空间以避免各种不收敛的因素。
+**注记。** 如果我们在这里考虑向量值的函数 $f : I \to V$，我们通常需要假设 $V$ 是完备的赋范线性空间以避免各种不收敛的因素。
 
 对于 $f \in \mathcal{R}(I)$，根据定义，我们任意选取上述引理中的一列逼近函数 $\{f_n\}_{n \geqslant 1}$。我们定义它的积分为：
 
@@ -226,11 +231,13 @@ $$|f_n(x) - f'_n(x)| \leqslant |f(x) - f_n(x)| + |f(x) - f_{n}'(x)| \leqslant \p
 
 $$\left| \lim_{n \to \infty} \int_a^b f_n - \lim_{n \to \infty} \int_a^b f'_n \right| \leqslant \lim_{n \to \infty} \int_a^b \psi_n + \int_a^b \psi'_n = 0.$$
 
-<span id="ma-definition-120" class="lecture-anchor"></span>**定义 120** (Riemann 积分的定义)**.** 根据上面的证明，我们可以定义积分：
+<span id="ma-definition-120" class="lecture-anchor"></span>**定义 120**（Riemann 积分的定义）**。** 根据上面的证明，我们可以定义积分：
 
 $$\int_I = \int_a^b : \mathcal{R}(I) \to V, \quad f \mapsto \lim_{n \to \infty} \int_a^b f_n.$$
 
 <!-- source: PDF 195; printed: 195; transcription: first-pass; proofreading: applied -->
+
+### 可积函数空间与积分的性质
 
 我们来研究 Riemann 可积函数空间 $\mathcal{R}(I)$ 的基本性质：
 
@@ -342,7 +349,7 @@ $$\int_a^b f = \int_a^b \Re f + i \int_a^b \Im f,$$
 
 其中 $\Re f$ 和 $\Im f$ 分别为 $f$ 的实部和虚部。
 
-<span id="ma-theorem-121" class="lecture-anchor"></span>**定理 121.** 积分 $\displaystyle\int_a^b : \mathcal{R}(I) \to \mathbb{R}$ 满足下面的性质：
+<span id="ma-theorem-121" class="lecture-anchor"></span>**定理 121。** 积分 $\displaystyle\int_a^b : \mathcal{R}(I) \to \mathbb{R}$ 满足下面的性质：
 
 1) $\displaystyle\int_a^b : \mathcal{R}(I) \to V$ 是线性映射。（显然，直接对逼近序列进行线性操作即可）
 
@@ -356,8 +363,8 @@ $$\int_a^b f = \int_a^c f + \int_c^b f.$$
 
 <!-- source: PDF 198; printed: 198; transcription: first-pass; proofreading: applied -->
 
-**证明:** 2) 目前我们可以假设 $V$ 和 $V'$ 都是有限维的，$\varphi$ 是线性映射，那么对于任意的 $v \in V$，我们都有 $\|\varphi(v)\| \leqslant M\|v\|$（为什么？）。此时，假设 $(f_n, \psi_n)$ 是 $f$ 的逼近序列，我们只要取 $(\varphi \circ f_n, M\psi_n)$ 即可。$\square$
+**证明：** 2) 目前我们可以假设 $V$ 和 $V'$ 都是有限维的，$\varphi$ 是线性映射，那么对于任意的 $v \in V$，我们都有 $\|\varphi(v)\| \leqslant M\|v\|$（为什么？）。此时，假设 $(f_n, \psi_n)$ 是 $f$ 的逼近序列，我们只要取 $(\varphi \circ f_n, M\psi_n)$ 即可。$\square$
 
 最后，大家可以通过设想如何定义高维的积分仔细体会 Riemann 积分的定义。我们首先要定义所谓的阶梯函数，这个依赖于如何定义最基本的分划：1 维的时候我们用闭区间来分割区域，2 维的时候，我们可能可以用小长方体来分割整个区域。下一步，我们要求阶梯函数在这样的长方体上面是常数（在 Lebesgue 积分的理论中，长方体将会被换成是可测集合）。然而，在 2 维的时候，没有几个区域可以被分解为有限个方体的并，这是和 1 维积分不一样的。高维几何的复杂程度导致了积分理论的困难。
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：17.1 作业:Émile Borel引理,Peano的证明](17-convexity/17-03-p0183-0188.md) · [下一篇：Riemann 和与 Darboux 上下和](19-darboux-sums/19-01-p0199-0203.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：17.1：作业：Émile Borel引理，Peano的证明](17-convexity/17-03-p0183-0188.md) · [下一篇：Riemann 和与 Darboux 上下和](19-darboux-sums/19-01-p0199-0203.md)

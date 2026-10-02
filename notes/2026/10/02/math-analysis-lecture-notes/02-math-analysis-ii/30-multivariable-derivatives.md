@@ -1,13 +1,12 @@
-# 30 方向导数、偏导数与微分
+# 30：方向导数、偏导数与微分
 
 [返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../02-math-analysis-ii.md) · [校勘记录](../errata.md) · [上一篇：数学分析二课程简介](30-00-course-overview.md) · [下一篇：映射的微分与 Jacobi 矩阵](31-differential-maps/31-01-p0344-0351.md)
 
 <!-- source: PDF 335; printed: 335; transcription: first-pass; proofreading: applied -->
 
-## 30 数学分析二：方向导数，偏导数和微分，利用偏导数连续判断微分存在，导数与极值
 
 
-### 高维的微分学
+## 高维的微分学
 
 在人们谈论高维的 $\mathbb{R}^n$ 的时候，经常会有如下感觉：
 
@@ -26,7 +25,7 @@ $$
 \pi_i : \mathbb{R}^n \to \mathbb{R}, \quad (x_1, \cdots, x_n) \mapsto x_i.
 $$
 
-**注记.** 微分学的一个核心话题是如何利用其它的坐标系统 $(y_1, \cdots, y_n)$ 来描述 $\mathbb{R}^n$ 上的光滑/可微函数。其中，所谓一个新的坐标系统 $(y_1, \cdots, y_n)$ 目前可以简单地想象为 $n$ 个函数
+**注记。** 微分学的一个核心话题是如何利用其它的坐标系统 $(y_1, \cdots, y_n)$ 来描述 $\mathbb{R}^n$ 上的光滑/可微函数。其中，所谓一个新的坐标系统 $(y_1, \cdots, y_n)$ 目前可以简单地想象为 $n$ 个函数
 $$
 y_i : \mathbb{R}^n \to \mathbb{R}, \quad (x_1, x_2, \cdots, x_n) \mapsto y_i(x_1, x_2, \cdots, x_n),
 $$
@@ -47,9 +46,11 @@ $$
 
 存在，我们就用 $f'(x_0)$ 表示这个极限并称它为 $f$ 的导数。我们还定义了 $f$ 在点 $x_0$ 处的微分 $df(x_0)$，这是一个线性映射（我们暂且不管它定义）。这两个概念都可以对 $\Omega \subset \mathbb{R}^n$ 上的函数来定义。在给出推广之前，我们必须要指出：$df(x_0)$ 是比 $f'(x_0)$ 更好的概念，因为它不依赖于坐标系统的选取。
 
+## 方向导数与偏导数
+
 导数在高维正确的推广是方向导数：
 
-<span id="ma-definition-175" class="lecture-anchor"></span>**定义 175** (方向导数). 给定函数 $f : \Omega \to \mathbb{R}$，$x_0 \in \Omega$，$v \in \mathbb{R}^n$。如果下面的极限
+<span id="ma-definition-175" class="lecture-anchor"></span>**定义 175**（方向导数）。给定函数 $f : \Omega \to \mathbb{R}$，$x_0 \in \Omega$，$v \in \mathbb{R}^n$。如果下面的极限
 $$
 \lim_{h \to 0} \frac{f(x_0 + hv) - f(x_0)}{h}
 $$
@@ -59,7 +60,7 @@ $$
 $$
 习惯上，我们还把 $\nabla_v f$ 写成 $\frac{\partial f}{\partial v}$。
 
-**注记**. 在这个定义中，我们并没有使用 $\mathbb{R}^n$ 上的坐标系。特别地，如果 $f : V \to \mathbb{R}$ 是一个赋范线性空间上的函数，我们可以同样的对 $v \in V$ 定义方向导数。
+**注记**。在这个定义中，我们并没有使用 $\mathbb{R}^n$ 上的坐标系。特别地，如果 $f : V \to \mathbb{R}$ 是一个赋范线性空间上的函数，我们可以同样的对 $v \in V$ 定义方向导数。
 
 如果使用坐标系，我们就有几个特殊的向量，比如说 $e_i = (0, \cdots, 0, 1, 0, \cdots, 0)$（第 $i$ 个位置为 $1$），我们约定用如下的符号代表这个向量
 $$
@@ -73,7 +74,7 @@ $$
 
 习惯上，我们称它为偏导数。
 
-**注记**. 我们假设对任意的 $v \in \mathbb{R}^n$，$f$ 在 $x_0$ 处的方向导数都存在。此时，我们有映射（这个“几乎”就是微分的定义）：
+**注记**。我们假设对任意的 $v \in \mathbb{R}^n$，$f$ 在 $x_0$ 处的方向导数都存在。此时，我们有映射（这个“几乎”就是微分的定义）：
 $$
 \mathbb{R}^n \to \mathbb{R}, \quad v \mapsto (\nabla_v f)(x_0).
 $$
@@ -97,7 +98,7 @@ $$
 
 这个命题需要多一点的条件才可以证明，仅仅用每个方向导数存在是不够的。这个性质对我们将要证明的可微函数总是成立的。
 
-**例子**. 我们有两个基本的例子
+**例子**。我们有两个基本的例子
 
 1) 假设函数 $f : \mathbb{R}^2 \to \mathbb{R}$ 只依赖于 $x$-坐标，我们习惯上将它写成 $f(x, y) = f(x)$，那么，
 $$
@@ -123,7 +124,9 @@ $$
 $$
 是不存在的。由此可见，偏导数存在不能保证其它的方向导数存在。
 
-**注记** (方向导数的几何解释). 方向导数本质上是一维的导数，这个从定义的写法本身就不难看出。假设 $I = (-a, a)$ ($a > 0$) 是一个区间，假设
+### 方向导数的几何解释
+
+**注记**（方向导数的几何解释）。方向导数本质上是一维的导数，这个从定义的写法本身就不难看出。假设 $I = (-a, a)$（$a > 0$）是一个区间，假设
 $$
 \gamma : I \to \mathbb{R}^n, \quad t \mapsto \gamma(t) = (\gamma_1(t), \gamma_2(t), \cdots, \gamma_n(t)),
 $$
@@ -188,9 +191,11 @@ $$E_k = \frac{\partial}{\partial x_k} + \frac{\partial f}{\partial x_k}(p) \frac
 
 这里，我们通过曲线提升的方式，计算了一个曲面的切空间（利用了偏导数）。这类作为函数的图像出现的超曲面是多元微积分中最基本的几何对象，我们在后面的课程中会无限次见到它们。
 
+## 函数的微分
+
 我们现在来定义函数的微分：
 
-<span id="ma-definition-176" class="lecture-anchor"></span>**定义 176** (函数的微分). 给定函数 $f : \Omega \to \mathbb{R}$ 和 $x_0 \in \Omega$。如果存在 $\mathbb{R}$-线性映射 $A : \mathbb{R}^n \to \mathbb{R}$，使得对于 $v \to 0$ 时，其中 $v \in \mathbb{R}^n$，我们有
+<span id="ma-definition-176" class="lecture-anchor"></span>**定义 176**（函数的微分）。给定函数 $f : \Omega \to \mathbb{R}$ 和 $x_0 \in \Omega$。如果存在 $\mathbb{R}$-线性映射 $A : \mathbb{R}^n \to \mathbb{R}$，使得对于 $v \to 0$ 时，其中 $v \in \mathbb{R}^n$，我们有
 
 $$f(x_0 + v) = f(x_0) + A(v) + o(v),$$
 
@@ -216,7 +221,7 @@ $$f(x_0 + v) - f(x_0) = A(v) + o(v) = o(1).$$
 
 <!-- source: PDF 340; printed: 340; transcription: first-pass; proofreading: applied -->
 
-**注记.** 在微分的定义中，我们根本就没有用到 $\mathbb{R}^n$ 上的坐标系：我们只用到了 $v$ 的长度的概念。所以，可以自然地对在一个赋范线性空间 $(V,\|\cdot\|)$ 上定义的函数来定义其微分：给定函数 $f:V\to\mathbb{R}$ 和 $x_0\in V$，其中 $(V,\|\cdot\|)$ 是一个（$\mathbb{R}$ 或者 $\mathbb{C}$ 上的）赋范线性空间；复赋范空间在此视为实赋范空间。如果存在连续的 $\mathbb{R}$-线性映射 $A:V\to\mathbb{R}$，使得
+**注记。** 在微分的定义中，我们根本就没有用到 $\mathbb{R}^n$ 上的坐标系：我们只用到了 $v$ 的长度的概念。所以，可以自然地对在一个赋范线性空间 $(V,\|\cdot\|)$ 上定义的函数来定义其微分：给定函数 $f:V\to\mathbb{R}$ 和 $x_0\in V$，其中 $(V,\|\cdot\|)$ 是一个（$\mathbb{R}$ 或者 $\mathbb{C}$ 上的）赋范线性空间；复赋范空间在此视为实赋范空间。如果存在连续的 $\mathbb{R}$-线性映射 $A:V\to\mathbb{R}$，使得
 
 $$
 \lim_{v\to0}\frac{|f(x_0+v)-f(x_0)-A(v)|}{\|v\|}=0,
@@ -224,7 +229,9 @@ $$
 
 我们就称 $f$ 在 $x_0$ 处可微并且称 $A$ 是 $f$ 在 $x_0$ 的微分，我们还把 $A$ 记作 $df|_{x=x_0}=df(x_0)$。
 
-<span id="ma-proposition-177" class="lecture-anchor"></span>**命题 177**（微分的计算：微分与方向导数之间的关系）. 假设 $f:\Omega\to\mathbb{R}$ 在 $x_0$ 处可微，那么 $f$ 在 $x_0$ 的任意方向导数都存在。特别地，对于 $v=(v_1,\cdots,v_n)=\sum_{i=1}^n v_i\frac{\partial}{\partial x_i}$（请回忆：我们约定 $\frac{\partial}{\partial x_i}$ 代表向量 $\underbrace{(0,\cdots,1,\cdots,0)}_{\text{第 }i\text{ 个位置上为 }1}$），那么
+### 微分的坐标表示
+
+<span id="ma-proposition-177" class="lecture-anchor"></span>**命题 177**（微分的计算：微分与方向导数之间的关系）。假设 $f:\Omega\to\mathbb{R}$ 在 $x_0$ 处可微，那么 $f$ 在 $x_0$ 的任意方向导数都存在。特别地，对于 $v=(v_1,\cdots,v_n)=\sum_{i=1}^n v_i\frac{\partial}{\partial x_i}$（请回忆：我们约定 $\frac{\partial}{\partial x_i}$ 代表向量 $\underbrace{(0,\cdots,1,\cdots,0)}_{\text{第 }i\text{ 个位置上为 }1}$），那么
 
 $$
 df(x_0)(v)=(\nabla_v f)(x_0)=\sum_{j=1}^n\frac{\partial f}{\partial x_j}(x_0)v_j.
@@ -258,7 +265,7 @@ $$
 
 命题得证。$\square$
 
-**注记.** 在微积分学习中，最有歧义的一个数学符号是所谓的 $dx$。现在我们用微分的语言定义 $dx_i$。假定在 $\mathbb{R}^n$ 上我们事先选好了坐标系 $(x_1,\cdots,x_n)$。此时，
+**注记。** 在微积分学习中，最有歧义的一个数学符号是所谓的 $dx$。现在我们用微分的语言定义 $dx_i$。假定在 $\mathbb{R}^n$ 上我们事先选好了坐标系 $(x_1,\cdots,x_n)$。此时，
 
 $$
 \pi_i:\mathbb{R}^n\to\mathbb{R},\quad(x_1,\cdots,x_n)\mapsto x_i
@@ -283,9 +290,11 @@ $$
 ((dx_i)(p))\left(\frac{\partial}{\partial x_j}\right)=\delta_j^i.
 $$
 
+### 可微性与偏导数连续的判据
+
 我们之前证明了如果函数的微分存在，那么方向导数也存在。反过来并不成立，实际上，下面的例子表明 $f$ 甚至可以不连续，尽管其方向导数都存在：
 
-**例子.** 考虑函数在 $\mathbb{R}^2$ 定义函数：
+**例子。** 考虑函数在 $\mathbb{R}^2$ 定义函数：
 
 $$
 f(x,y)=\begin{cases}
@@ -314,7 +323,7 @@ $$
 
 然而，如果方向导数的具有连续性，情况就大不相同。直观上，连续性允许我们从一点的信息出发理解这点附近的情况。
 
-<span id="ma-proposition-178" class="lecture-anchor"></span>**命题 178.** 给定开区域 $\Omega\subset\mathbb{R}^n$ 和 $x_0\in\Omega$，$f$ 是在 $\Omega$ 上定义的函数。假设 $f$ 的所有偏导数 $\frac{\partial f}{\partial x_i}$ 在 $x_0$ 的附近（不妨设在 $\Omega$ 上）存在并且 $\frac{\partial f}{\partial x_i}$ 均为连续函数，其中 $i=1,2,\cdots,n$，那么 $f$ 在 $x_0$ 处可微。
+<span id="ma-proposition-178" class="lecture-anchor"></span>**命题 178。** 给定开区域 $\Omega\subset\mathbb{R}^n$ 和 $x_0\in\Omega$，$f$ 是在 $\Omega$ 上定义的函数。假设 $f$ 的所有偏导数 $\frac{\partial f}{\partial x_i}$ 在 $x_0$ 的附近（不妨设在 $\Omega$ 上）存在并且 $\frac{\partial f}{\partial x_i}$ 均为连续函数，其中 $i=1,2,\cdots,n$，那么 $f$ 在 $x_0$ 处可微。
 
 这个命题可以非常方便地用来判断一个函数的可微性，比如说，考虑 $\mathbb{R}^3$ 上的函数
 
@@ -366,13 +375,15 @@ $$
 
 根据连续性，$r(v)=o(v)$。$\square$
 
-**注记.** 上面证明的关键想法是把问题转化成在某条直线或者曲线上讨论（维数 $=1$，当然，我们还没有定义什么是维数），从而可以利用一元微分学的结论，这是处理多变量函数最基本的想法之一。上个学期我们证明两点之间线段最短的时候就是用的这个想法，那个场合研究的空间是所有曲线的空间，维数甚至是无穷！
+**注记。** 上面证明的关键想法是把问题转化成在某条直线或者曲线上讨论（维数 $=1$，当然，我们还没有定义什么是维数），从而可以利用一元微分学的结论，这是处理多变量函数最基本的想法之一。上个学期我们证明两点之间线段最短的时候就是用的这个想法，那个场合研究的空间是所有曲线的空间，维数甚至是无穷！
 
 <!-- source: PDF 343; printed: 343; transcription: first-pass; proofreading: applied -->
 
+## 微分与函数极值
+
 我们再看上面想法的一个应用：这个例子对于实际应用非常的重要，因为我们可以用来计算多元函数的最大最小值：
 
-<span id="ma-proposition-179" class="lecture-anchor"></span>**命题 179.** 假设 $f:\Omega\to\mathbb{R}$ 在 $x_0$ 处可微并且 $x_0$ 是 $f$ 在 $\Omega$ 上的最大，那么 $df(x_0)=0$。
+<span id="ma-proposition-179" class="lecture-anchor"></span>**命题 179。** 假设 $f:\Omega\to\mathbb{R}$ 在 $x_0$ 处可微并且 $x_0$ 是 $f$ 在 $\Omega$ 上的最大，那么 $df(x_0)=0$。
 
 **证明：** 任意给定方向 $v\in\mathbb{R}^n$，我们考虑通过 $x_0$ 的直线段
 
@@ -390,13 +401,13 @@ $$
 
 另一个有趣的应用如下：
 
-<span id="ma-proposition-180" class="lecture-anchor"></span>**命题 180.** 假设 $\Omega$ 是一个开的凸集[^p0343-7]（可以替换为连通性），$f:\Omega\to\mathbb{R}$ 是可微函数。如果对任意的 $x\in\Omega$，我们都有 $df(x)=0$，那么 $f$ 是常数。
+<span id="ma-proposition-180" class="lecture-anchor"></span>**命题 180。** 假设 $\Omega$ 是一个开的凸集[^p0343-7]（可以替换为连通性），$f:\Omega\to\mathbb{R}$ 是可微函数。如果对任意的 $x\in\Omega$，我们都有 $df(x)=0$，那么 $f$ 是常数。
 
 **证明：** 证明我们留作作业。基本想法如下：固定 $x_0\in\Omega$，对任意的 $x\in\Omega$，我们考虑 $x_0$ 到 $x$ 的线段并将 $f$ 限制在这条线段上。这就可以帮助我们走到 $1$ 维的情况。$\square$
 
 我们引入一些符号来结束本次的课程：
 
-**注记.** 给定可微 $f:\Omega\to\mathbb{R}$，对于任意的 $x\in\Omega$，$df(x)$ 都是 $\mathbb{R}^n$ 上的一个线性函数，即
+**注记。** 给定可微 $f:\Omega\to\mathbb{R}$，对于任意的 $x\in\Omega$，$df(x)$ 都是 $\mathbb{R}^n$ 上的一个线性函数，即
 
 $$
 df(x):\mathbb{R}^n\to\mathbb{R}.

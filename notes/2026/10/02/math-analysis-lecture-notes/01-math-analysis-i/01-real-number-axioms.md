@@ -1,4 +1,4 @@
-# 1 实数的公理化描述
+# 1：实数的公理化描述
 
 [返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：数学分析一课程简介](00-09-course-overview.md) · [下一篇：区间套、确界与距离空间](02-nested-intervals.md)
 
@@ -7,52 +7,60 @@
 <!-- math-analysis-layout: document-title-normalized -->
 
 
-## 实数的公理体系
+## 集合、运算与序关系
 
 实数理论这一章节的目标是从基本的集合论出发（只假设同学们熟知有理数和自然数），通过严格和完备的推理，证明若干论题作为基本的工具。这些通过严格论证得来的工具将会支撑着我们直观的图像，使得我们可以形象地思考和解决问题。
 
 $\mathbb{R}$ 是一个集合，我们假设 $x$，$y$，$z$ 等都是它的元素。
 
 - $\mathbb{R}$ 上面配有两个操作：
-  - 加法. $+ : \mathbb{R} \times \mathbb{R} \to \mathbb{R}, (x, y) \mapsto x + y$；
-  - 乘法. $\cdot : \mathbb{R} \times \mathbb{R} \to \mathbb{R}, (x, y) \mapsto x \cdot y$。
+  - 加法。$+ : \mathbb{R} \times \mathbb{R} \to \mathbb{R}, (x, y) \mapsto x + y$；
+  - 乘法。$\cdot : \mathbb{R} \times \mathbb{R} \to \mathbb{R}, (x, y) \mapsto x \cdot y$。
 - $\mathbb{R}$ 上面还有一个序关系 $\leqslant$：$x \leqslant y$（也记为 $y \geqslant x$）。
 
 我们要求四元组 $(\mathbb{R}, +, \cdot, \leqslant)$ 表示满足下面四套公理：
 
-**(F) 域公理：$\mathbb{R}$ 是一个域**
+## 域公理（F）
 
-(F1) 加法结合律：$x + (y + z) = (x + y) + z$。
+$\mathbb{R}$ 是一个域。
 
-(F2) 加法交换律：$x + y = y + x$。
+### 加法结构
 
-(F3) 存在加法单位元：存在 $0 \in \mathbb{R}$，使得对任意 $x \in \mathbb{R}$，$0 + x = x$ 成立。
+- **(F1)** 加法结合律：$x + (y + z) = (x + y) + z$。
 
-(F4) 加法逆元的存在性：对任意 $x \in \mathbb{R}$，存在 $-x \in \mathbb{R}$，使得 $x + (-x) = 0$。
+- **(F2)** 加法交换律：$x + y = y + x$。
 
-**练习.** 证明，加法逆元 $-x$ 是唯一的，即如果 $x' \in \mathbb{R}$ 也满足 $x + x' = 0$，那么 $x' = -x$。
+- **(F3)** 存在加法单位元：存在 $0 \in \mathbb{R}$，使得对任意 $x \in \mathbb{R}$，$0 + x = x$ 成立。
 
-**注记.** 如果假定 (F1)-(F4) 成立，按照通行的代数学的概念，$(\mathbb{R}, +)$ 被称作是一个（交换）群。我们强调 $-x$ 目前只是一个记号。根据俗套的约定，我们把 $x + (-y)$ 简写成 $x - y$。
+- **(F4)** 加法逆元的存在性：对任意 $x \in \mathbb{R}$，存在 $-x \in \mathbb{R}$，使得 $x + (-x) = 0$。
 
-(F5) 乘法结合律：$x \cdot (y \cdot z) = (x \cdot y) \cdot z$。
+  **练习。** 证明，加法逆元 $-x$ 是唯一的，即如果 $x' \in \mathbb{R}$ 也满足 $x + x' = 0$，那么 $x' = -x$。
 
-(F6) 乘法交换律：$x \cdot y = y \cdot x$。
+**注记。** 如果假定 (F1)-(F4) 成立，按照通行的代数学的概念，$(\mathbb{R}, +)$ 被称作是一个（交换）群。我们强调 $-x$ 目前只是一个记号。根据俗套的约定，我们把 $x + (-y)$ 简写成 $x - y$。
 
-(F7) 存在乘法单位元：存在 $1 \in \mathbb{R}$，使得 $1 \neq 0$ 并且对任意 $x \in \mathbb{R}$，$1 \cdot x = x$ 成立。我们还要求 $1 \neq 0$，从而 $\mathbb{R}$ 中至少有两个元素。
+### 乘法结构与分配律
 
-(F8) 乘法逆元的存在性：对任意 $x \in \mathbb{R} - \{0\}$，存在 $x^{-1} \in \mathbb{R}$，使得 $x \cdot x^{-1} = 1$。
+- **(F5)** 乘法结合律：$x \cdot (y \cdot z) = (x \cdot y) \cdot z$。
 
-**练习.** 证明，$x \neq 0$ 的乘法逆元 $x^{-1}$ 是唯一的，即若 $x' \in \mathbb{R}$ 也满足 $x \cdot x' = 1$，那么 $x' = x^{-1}$。
+- **(F6)** 乘法交换律：$x \cdot y = y \cdot x$。
+
+- **(F7)** 存在乘法单位元：存在 $1 \in \mathbb{R}$，使得 $1 \neq 0$ 并且对任意 $x \in \mathbb{R}$，$1 \cdot x = x$ 成立。我们还要求 $1 \neq 0$，从而 $\mathbb{R}$ 中至少有两个元素。
+
+- **(F8)** 乘法逆元的存在性：对任意 $x \in \mathbb{R} - \{0\}$，存在 $x^{-1} \in \mathbb{R}$，使得 $x \cdot x^{-1} = 1$。
+
+  **练习。** 证明，$x \neq 0$ 的乘法逆元 $x^{-1}$ 是唯一的，即若 $x' \in \mathbb{R}$ 也满足 $x \cdot x' = 1$，那么 $x' = x^{-1}$。
 
 <!-- source: PDF 20; printed: 20; transcription: first-pass; proofreading: applied -->
 
-**注记.** (F5)-(F8) 这四条公理表明 $(\mathbb{R}^{\times} := \mathbb{R} - \{0\}, \cdot)$ 是一个（交换）群。我们强调 $x^{-1}$ 只是一个记号。根据约定，我们把 $x \cdot y^{-1}$ 也记作 $\frac{x}{y}$。另外，有时候我们还省略掉 $\cdot$ 把 $x \cdot y$ 写成 $xy$。
+**注记。** (F5)-(F8) 这四条公理表明 $(\mathbb{R}^{\times} := \mathbb{R} - \{0\}, \cdot)$ 是一个（交换）群。我们强调 $x^{-1}$ 只是一个记号。根据约定，我们把 $x \cdot y^{-1}$ 也记作 $\frac{x}{y}$。另外，有时候我们还省略掉 $\cdot$ 把 $x \cdot y$ 写成 $xy$。
 
-(F9) 乘法分配律：$x \cdot (y + z) = x \cdot y + x \cdot z$。
+- **(F9)** 乘法分配律：$x \cdot (y + z) = x \cdot y + x \cdot z$。
 
-**注记.** 假定 (F1)-(F7) 以及 (F9) 这八条，我们就称 $(\mathbb{R}, +, \cdot)$ 是一个（交换）环；满足这九条公理的 $(\mathbb{R}, +, \cdot)$ 被称作是一个域。
+**注记。** 假定 (F1)-(F7) 以及 (F9) 这八条，我们就称 $(\mathbb{R}, +, \cdot)$ 是一个（交换）环；满足这九条公理的 $(\mathbb{R}, +, \cdot)$ 被称作是一个域。
 
-**注记（空间的概念.）.** 上面的定义具有下述的模式，首先固定一个集合 $X = \mathbb{R}$，然后在 $X$ 上加上额外的结构，比如说加法结构 $+ : X \times X \to X$，当然，我们对这个额外的加法结构也可以做一些要求，比如说满足 (F1)-(F4) 等；我们还可以加更多的结构，比如还要求 $X$ 上有乘法结构 $\cdot : X \times X \to X$ 并且对这些结构之间的关系也有限定（比如说 (F9)）。在数学中，所谓的空间通常指的是一个配备了某些结构的集合 $X$。
+**注记（空间的概念。）。** 上面的定义具有下述的模式，首先固定一个集合 $X = \mathbb{R}$，然后在 $X$ 上加上额外的结构，比如说加法结构 $+ : X \times X \to X$，当然，我们对这个额外的加法结构也可以做一些要求，比如说满足 (F1)-(F4) 等；我们还可以加更多的结构，比如还要求 $X$ 上有乘法结构 $\cdot : X \times X \to X$ 并且对这些结构之间的关系也有限定（比如说 (F9)）。在数学中，所谓的空间通常指的是一个配备了某些结构的集合 $X$。
+
+### 整数倍与整数幂
 
 对于正整数 $n$，我们还约定 $x^n = \underbrace{x \cdot x \cdot \cdots \cdot x}_{n\text{个}}$，$nx = \underbrace{x + x + \cdots + x}_{n\text{个}}$。类似的，对于 $n \in \mathbb{Z}_{<0}$，我们约定 $x^n = \underbrace{x^{-1} \cdot x^{-1} \cdot \cdots \cdot x^{-1}}_{|n|\text{个}}$，$nx = \underbrace{(-x) + (-x) + \cdots + (-x)}_{|n|\text{个}}$。我们规定 $0x = 0$，$x^0 = 1$。特别地，我们定义了以整数 $n \in \mathbb{Z}$ 为幂的幂函数：
 
@@ -62,7 +70,9 @@ $$
 
 不难验证，对任意的 $m, n \in \mathbb{Z}$，$(n+m)x = nx+mx$，$x^{n+m} = x^n \cdot x^m$（涉及负整数幂时要求 $x \neq 0$）。特别地，$nx+(-n)x = 0$；当 $x \neq 0$ 时，$x^n \cdot x^{-n} = 1$。
 
-**练习.** 
+### 运算法则的练习
+
+**练习。** 
 
 1) 证明，对任意的 $x, y$，如果 $b \neq 0$，我们有
 
@@ -87,17 +97,23 @@ $$
 
 从此之后，我们可以不计后果地使用这些公式（熟知的公式是所谓的直观的一部分）。
 
-**(O) 序公理：$\mathbb{R}$ 是有序域**
+## 序公理（O）
+
+$\mathbb{R}$ 是有序域。
+
+### 全序关系
 
 <!-- source: PDF 21; printed: 21; transcription: first-pass; proofreading: applied -->
 
-(O1) 序的传递性：$x \leqslant y, y \leqslant z \Rightarrow x \leqslant z$。
+- **(O1)** 序的传递性：$x \leqslant y, y \leqslant z \Rightarrow x \leqslant z$。
 
-(O2) 序可以决定元素：$x \leqslant y, y \leqslant x \Rightarrow x = y$。
+- **(O2)** 序可以决定元素：$x \leqslant y, y \leqslant x \Rightarrow x = y$。
 
-(O3) 全序关系：对任意的 $x$ 和 $y$，$x \leqslant y$ 或者 $y \leqslant x$，二者必居其一（可以都成立）。
+- **(O3)** 全序关系：对任意的 $x$ 和 $y$，$x \leqslant y$ 或者 $y \leqslant x$，二者必居其一（可以都成立）。
 
-**注记.** 我们给出大于号和小于号的定义：如果 $x \leqslant y$ 且 $x \neq y$，我们就说 $x < y$；类似地，可以定义 $y < x$。所以任意给定 $x, y \in \mathbb{Q}$，那么如下三种情形（这三种情形是互斥的）必居其一：
+### 比较关系、正负号与区间
+
+**注记。** 我们给出大于号和小于号的定义：如果 $x \leqslant y$ 且 $x \neq y$，我们就说 $x < y$；类似地，可以定义 $y < x$。所以任意给定 $x, y \in \mathbb{Q}$，那么如下三种情形（这三种情形是互斥的）必居其一：
 
 $$
 x < y, \quad x = y, \quad x > y.
@@ -113,7 +129,7 @@ $$
 
 我们在课程中会强调集合之间的映射这个概念。习惯上我们把正实数，记作 $\mathbb{R}_{>0}$，我们还将 $\geqslant 0$ 的实数称作非负实数，记作 $\mathbb{R}_{\geqslant 0}$；类似地，我们可以定义非正或者负实数并且“望文生义”地定义符号 $\mathbb{R}_{<0}$ 和 $\mathbb{R}_{\leqslant 0}$。
 
-**注记（区间的定义（也请参见之后所谓的几何定义））.** 假设 $a, b \in \mathbb{R}$，满足 $a < b$。我们定义开区间，闭区间和半开半闭的区间如下
+**注记（区间的定义（也请参见之后所谓的几何定义））。** 假设 $a, b \in \mathbb{R}$，满足 $a < b$。我们定义开区间，闭区间和半开半闭的区间如下
 
 $$
 [a, b] := \{x \in \mathbb{R} \mid a \leqslant x \leqslant b\}, \quad (a, b) := \{x \in \mathbb{R} \mid a < x < b\},
@@ -137,19 +153,25 @@ $$
 
 用数学分析中的黑话来说，符号 $\infty$ 被称作是无穷，$\pm\infty$ 被称作是正/负无穷，它们目前完全不具有具体的含义。
 
-(O4) 与加法相容：$x \leqslant y \Rightarrow x + z \leqslant y + z$。
+### 序与运算的相容性
 
-(O5) 与乘法相容：$x \geqslant 0, y \geqslant 0 \Rightarrow xy \geqslant 0$。
+- **(O4)** 与加法相容：$x \leqslant y \Rightarrow x + z \leqslant y + z$。
 
-**(A) Achimedes 公理：$\mathbb{R}$ 是 Archimedes 有序域，即**
+- **(O5)** 与乘法相容：$x \geqslant 0, y \geqslant 0 \Rightarrow xy \geqslant 0$。
+
+## Archimedes 公理（A）
+
+$\mathbb{R}$ 是 Archimedes 有序域，即
 
 对任意 $x > 0$ 和 $y$，总存在正整数 $n$，使得 $n \cdot x \geqslant y$。
 
 <!-- source: PDF 22; printed: 22; transcription: first-pass; proofreading: applied -->
 
-**思考题.** 假设 $a > 0$，你是否能证明开区间 $(0, a)$ 是非空的。通过反证法，你就可以看到所谓的 Dedekind 分割的影子。Dedekind 分割是构造实数的一种手段，我们在后面的课程会讨论。在思考的过程中你也会发现，真正的困难在于，基于目前的公理，我们不清楚 $\mathbb{R}$ 中都有什么样子的元素（目前我们只知道 $0, 1, -1 \in \mathbb{R}$），所以，能否大量的构造实数是一个很重要的问题。我们课程的一个关键点就是构造 $\sqrt{2}$，$e$ 和 $\pi$，这听起来有些无聊，但是中学数学教学从来都没有给出这些数的具体定义（只要求大家必须接受它们的某些性质）。
+## 公理的推论与练习
 
-**练习.**
+**思考题。** 假设 $a > 0$，你是否能证明开区间 $(0, a)$ 是非空的。通过反证法，你就可以看到所谓的 Dedekind 分割的影子。Dedekind 分割是构造实数的一种手段，我们在后面的课程会讨论。在思考的过程中你也会发现，真正的困难在于，基于目前的公理，我们不清楚 $\mathbb{R}$ 中都有什么样子的元素（目前我们只知道 $0, 1, -1 \in \mathbb{R}$），所以，能否大量的构造实数是一个很重要的问题。我们课程的一个关键点就是构造 $\sqrt{2}$，$e$ 和 $\pi$，这听起来有些无聊，但是中学数学教学从来都没有给出这些数的具体定义（只要求大家必须接受它们的某些性质）。
+
+**练习。**
 
 1) 证明，$x \geqslant 0$ 等价于 $-x \leqslant 0$；$y > 1$ 可以推出 $0 < \frac{1}{y} < 1$。进一步证明，$x \geqslant y$ 等价于 $-x \leqslant -y$。
 2) 证明，$1 > 0$，$-1 \neq 1$。（提示：如若不然，那么，$-1 > 0$，利用 (O5) 就得到了矛盾）
@@ -160,7 +182,9 @@ $$
 7) 证明，如果 $a^2 < a$，那么 $0 < a < 1$。
 8) 如果非零实数 $x$ 和 $y$ 的符号相同，证明，$(x + y)^2 > (x - y)^2$。
 
-<span id="ma-proposition-1" class="lecture-anchor"></span>**命题 1.** $\mathbb{R}$ 包含所有有理数，即存在单射 $\iota : \mathbb{Q} \to \mathbb{R}$，使得对任意的 $x, y \in \mathbb{Q}$，我们有
+## 有理数的嵌入
+
+<span id="ma-proposition-1" class="lecture-anchor"></span>**命题 1。** $\mathbb{R}$ 包含所有有理数，即存在单射 $\iota : \mathbb{Q} \to \mathbb{R}$，使得对任意的 $x, y \in \mathbb{Q}$，我们有
 $$
 \iota(x +_{\mathbb{Q}} y) = \iota(x) + \iota(y), \quad \iota(x \cdot_{\mathbb{Q}} y) = \iota(x) \cdot \iota(y),
 $$
@@ -218,9 +242,11 @@ $$
 
 后者是显然的，因为 $pt - qs > 0$。 $\square$
 
-**注记.** 我们之后将 $\mathbb{Q}$ 和 $\iota$ 的像等同。自此往后，我们就在这个意义下认为有理数 $\mathbb{Q}$ 是 $\mathbb{R}$ 的子集。换句话说，我们用 $n$ 来表示 $\mathbb{R}$ 中的 $\overbrace{1 + 1 + \cdots + 1}^{n\text{个}}$，$\frac{p}{q}$ 表示 $\frac{\overbrace{1 + 1 + \cdots + 1}^{p\text{个}}}{\underbrace{1 + 1 + \cdots + 1}_{q\text{个}}}$ 等。习惯上，我们将 $\mathbb{R} - \mathbb{Q}$ 的元素称为是**无理数**（这是一个在中文世界里被广泛接受的“无理的”术语）。
+**注记。** 我们之后将 $\mathbb{Q}$ 和 $\iota$ 的像等同。自此往后，我们就在这个意义下认为有理数 $\mathbb{Q}$ 是 $\mathbb{R}$ 的子集。换句话说，我们用 $n$ 来表示 $\mathbb{R}$ 中的 $\overbrace{1 + 1 + \cdots + 1}^{n\text{个}}$，$\frac{p}{q}$ 表示 $\frac{\overbrace{1 + 1 + \cdots + 1}^{p\text{个}}}{\underbrace{1 + 1 + \cdots + 1}_{q\text{个}}}$ 等。习惯上，我们将 $\mathbb{R} - \mathbb{Q}$ 的元素称为是**无理数**（这是一个在中文世界里被广泛接受的“无理的”术语）。
 
-**练习.** 有了以上的各种准备和经验，我们就不难证明
+### 嵌入的应用练习
+
+**练习。** 有了以上的各种准备和经验，我们就不难证明
 
 1) 证明，利用 $\mathbb{R}$ 中的 $n$ 的定义，我们有 $n \cdot x = nx, n \cdot x = nx$。（先证明在 $\mathbb{R}$ 中，我们有 $n \cdot x = \overbrace{x + x + \cdots + x}^{n\text{个}}$，其中 $n > 0$ 是 $\mathbb{R}$ 中的一个自然数）。
 
@@ -229,16 +255,18 @@ $$
 2) 证明，对于任意的 $a < b$，$(a, b)$ 有无限多个元素。（提示：我们可以考虑 $\frac{1}{2}(a + b)$ 并利用 $0 < \frac{1}{2} < 1$ 这个事实）
 3) 如果 $\mathbb{R}$ 中存在元素 $o > 0$，使得对任意的 $x > 0$，我们都有 $o < x$，我们就称 $o$ 是无穷小元。证明，$\mathbb{R}$ 中没有无穷小元。（有一种专门研究含有无穷小的数的分析，叫做非标准分析）
 
-**(I) 区间套公理**
+## 区间套公理（I）
 
 给定有限（即要求下面的 $a_n$ 和 $b_n$ 均为实数）闭区间的序列 $\{I_n = [a_n, b_n]\}_{n=1,2,\cdots}$，如果这个序列是下降的，即 $I_1 \supset I_2 \supset I_3 \supset \cdots$（等价于对任意的 $n \geqslant 1$ 都有 $a_n \leqslant a_{n+1}$ 并且 $b_{n+1} \leqslant b_n$），那么它们的交集非空，即
 $$
 \lim_{n \to \infty} I_n := \bigcap_{n \geqslant 1} I_n \neq \emptyset.
 $$
 
-<span id="ma-definition-2" class="lecture-anchor"></span>**定义 2.** 我们将满足上述四条公理系统 **(F)**，**(O)**，**(A)**，**(I)** 的四元组 $(\mathbb{R}, +, \cdot, \leqslant)$ 称作是**实数**。
+## 实数的公理化定义
 
-**注记.** 这个定义目前并不是良好定义的：我们完全不知道这样的实数理论是不是唯一的；我们甚至没有证明满足四条的四元组 $(\mathbb{R}, +, \cdot, \leqslant)$ 是存在的。另外，除了有理数之外，我们并没有证明无理数（比如说 $\sqrt{2}$）是存在的。
+<span id="ma-definition-2" class="lecture-anchor"></span>**定义 2。** 我们将满足上述四条公理系统 **(F)**，**(O)**，**(A)**，**(I)** 的四元组 $(\mathbb{R}, +, \cdot, \leqslant)$ 称作是**实数**。
+
+**注记。** 这个定义目前并不是良好定义的：我们完全不知道这样的实数理论是不是唯一的；我们甚至没有证明满足四条的四元组 $(\mathbb{R}, +, \cdot, \leqslant)$ 是存在的。另外，除了有理数之外，我们并没有证明无理数（比如说 $\sqrt{2}$）是存在的。
 
 我们注意到，如果就强行要求 $\mathbb{R}$ 是全体有理数的集合并且配备了 $+$，$\cdot$ 和 $\leqslant$ 这几种有理数上的结构，我们所得到的四元组是满足 **(F)**，**(O)**，**(A)** 这三条公理系统的，所以，要想真的得到我们中学所熟悉的实数（比如说存在 $\sqrt{2}$），区间套公理是必不可缺的。
 

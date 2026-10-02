@@ -4,7 +4,6 @@
 
 <!-- source: PDF 334; printed: 334; transcription: first-pass; proofreading: applied -->
 
-## 简介
 
 数学分析二的内容分三部分：
 

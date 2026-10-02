@@ -1,40 +1,44 @@
-# 85 奇性传播定理的证明
+# 85：奇性传播定理的证明
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../03-math-analysis-iii.md) · [校勘记录](../errata.md) · [上一篇：微局部椭圆正则性与奇性传播](84-microlocal-ellipticity.md) · [下一篇：86.1 分布理论期末复习题第一套](86-revision/86-01-p0988-0991.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../03-math-analysis-iii.md) · [校勘记录](../errata.md) · [上一篇：微局部椭圆正则性与奇性传播](84-microlocal-ellipticity.md) · [下一篇：86.1：分布理论期末复习题第一套](86-revision/86-01-p0988-0991.md)
 
 <!-- source: PDF 977; printed: 977; transcription: first-pass; proofreading: applied -->
 
 <!-- math-analysis-layout: document-title-normalized -->
 
 
-我们上次课陈述了如下的定理:
+## 定理陈述与证明准备
 
-<span id="ma-theorem-559" class="lecture-anchor"></span>**定理 559** (奇性传播定理). 给定区域 $\Omega$ 上的 $m$-次微分算子 $P$，我们假设 $P$ 具有简单的特征簇。如果 $\gamma$ 是 $P$ 的一条双特征曲线并且
+我们上次课陈述了如下的定理：
+
+<span id="ma-theorem-559" class="lecture-anchor"></span>**定理 559**（奇性传播定理）。给定区域 $\Omega$ 上的 $m$-次微分算子 $P$，我们假设 $P$ 具有简单的特征簇。如果 $\gamma$ 是 $P$ 的一条双特征曲线并且
 $$\gamma \cap WF(Pu) = \emptyset,$$
-其中 $u \in \mathcal{D}'(\Omega)$ 是分布，那么如下两种情形必居（且只居）其一:
+其中 $u \in \mathcal{D}'(\Omega)$ 是分布，那么如下两种情形必居（且只居）其一：
 
-- $\gamma \subset WF(u)$;
-- $\gamma \cap WF(u) = \emptyset$.
+- $\gamma \subset WF(u)$；
+- $\gamma \cap WF(u) = \emptyset$。
 
-我们回忆一下其中出现的几个定义:
+我们回忆一下其中出现的几个定义：
 
-给定区域 $\Omega$ 上的 $m$-次微分算子 $P$，$P$ 的特征簇 $\operatorname{Char}(P)$ 是它的主象征的零点集合。我们假设 $P$ 具有简单的特征簇，特别地，$\operatorname{Char}(P) \subset T^*\Omega$ 是光滑子流形。利用 $P$ 的主特征 $p_m(x, \xi)$，我们可以定义它的 Hamilton 向量场:
+给定区域 $\Omega$ 上的 $m$-次微分算子 $P$，$P$ 的特征簇 $\operatorname{Char}(P)$ 是它的主象征的零点集合。我们假设 $P$ 具有简单的特征簇，特别地，$\operatorname{Char}(P) \subset T^*\Omega$ 是光滑子流形。利用 $P$ 的主特征 $p_m(x, \xi)$，我们可以定义它的 Hamilton 向量场：
 $$H_P = \left( \frac{\partial p_m}{\partial \xi}, -\frac{\partial p_m}{\partial x} \right).$$
 我们把落在 $\operatorname{Char}(P)$ 中的 $H_P$ 的极大积分曲线称作是双特征曲线。
 
+### 相函数与双特征曲线
+
 为了证明这个定理，我们先做一番准备。我们定义相函数
 $$\phi(s, x, \xi) : \mathbb{R} \times T^*\Omega \to \mathbb{R}.$$
-这是一个对于 $\xi$ 是 $1$ 次齐次的函数，它由如下的一阶偏微分方程所定义:
+这是一个对于 $\xi$ 是 $1$ 次齐次的函数，它由如下的一阶偏微分方程所定义：
 $$\begin{cases} |\xi|^{m-1} \dfrac{\partial \phi}{\partial s}(s, x, \xi) = -p_m(x, \nabla_x \phi(s, x, \xi)), \\ \phi(0, x, \xi) = x \cdot \xi. \end{cases}$$
-其中，$m$ 为 $P$ 的次数。特别地，由于 $\phi$ 对于 $\xi$ 的次数为 $1$，所以，$\phi$ 可以被下面的方程刻画:
+其中，$m$ 为 $P$ 的次数。特别地，由于 $\phi$ 对于 $\xi$ 的次数为 $1$，所以，$\phi$ 可以被下面的方程刻画：
 $$\begin{cases} \dfrac{\partial \phi}{\partial s}(s, x, \xi) = -p_m(x, \nabla_x \phi(s, x, \xi)), \\ \phi(0, x, \xi) = x \cdot \xi, \end{cases}$$
 其中，$\xi \in S^{n-1}$。这是因为
 $$p_m(x, \nabla_x \phi(s, x, \xi)) = p_m\left(x, \nabla_x \phi\left(s, x, \frac{\xi}{|\xi|}\right) |\xi|\right) = |\xi|^m p_m\left(x, \nabla_x \phi\left(s, x, \frac{\xi}{|\xi|}\right)\right).$$
-利用相函数 $\phi(s, x, \xi)$，我们可以刻画双特征曲线:
+利用相函数 $\phi(s, x, \xi)$，我们可以刻画双特征曲线：
 
 <!-- source: PDF 978; printed: 978; transcription: first-pass; proofreading: applied -->
 
-<span id="ma-lemma-560" class="lecture-anchor"></span>**引理 560**. 假设 $\gamma(t) = (x(t), \xi(t))$ 是 $P$ 的一条双特征曲线，那么，对任意的 $t \in \mathbb{R}$，我们有
+<span id="ma-lemma-560" class="lecture-anchor"></span>**引理 560**。假设 $\gamma(t) = (x(t), \xi(t))$ 是 $P$ 的一条双特征曲线，那么，对任意的 $t \in \mathbb{R}$，我们有
 $$\xi(t) = (\nabla_x \phi)(t, x(t), \xi_0),$$
 其中，$\gamma(0) = (x_0, \xi_0)$。
 
@@ -45,7 +49,7 @@ $$\zeta(0) = \nabla_x (x \cdot \xi_0) = \xi_0 = \xi(0).$$
 我们将证明，对任意的 $t$，我们都有
 $$\xi(t) = \zeta(t).$$
 
-**证明:** 假设 $|\xi| = 1$，我们考虑 $\zeta(t)$ 所满足的微分方程:
+**证明：** 假设 $|\xi| = 1$，我们考虑 $\zeta(t)$ 所满足的微分方程：
 $$\zeta'(t) = \frac{\partial^2 \phi}{\partial t \partial x}(t, x(t), \xi_0) + \frac{\partial^2 \phi}{\partial x^2}(t, x(t), \xi_0) x'(t).$$
 利用方程，我们有
 $$\frac{\partial^2 \phi}{\partial t \partial x}(t, x(t), \xi_0) = -\frac{\partial p_m}{\partial x}\left(x, \frac{\partial \phi}{\partial x}(t, x(t), \xi_0)\right) - \frac{\partial p_m}{\partial \xi}\left(x, \frac{\partial \phi}{\partial x}(t, x(t), \xi_0)\right) \frac{\partial^2 \phi}{\partial x^2}(t, x(t), \xi_0).$$
@@ -67,16 +71,16 @@ $$\zeta(t) \equiv \xi(t).$$
 
 ![双特征曲线及其邻域在相空间中的几何示意图](../assets/p0979-figure-1.webp)
 
-利用微分方程的解对初始值的光滑依赖性以及紧性，我们有如下的推论:
+利用微分方程的解对初始值的光滑依赖性以及紧性，我们有如下的推论：
 
-<span id="ma-corollary-561" class="lecture-anchor"></span>**推论 561**. 我们考虑一段双特征曲线
+<span id="ma-corollary-561" class="lecture-anchor"></span>**推论 561**。我们考虑一段双特征曲线
 $$\gamma : [0, t_0] \to T^*\Omega.$$
 对任意给定 $\alpha_0 > 0$，存在 $r_0 > 0$ 和 $\beta > 0$，使得对任意的 $t \in [0, t_0]$，对任意的 $(x, \xi) \in B_{r_0}(x(t)) \times \Gamma(\xi(t), \beta)$，我们都有
 $$\frac{\partial \phi}{\partial x}(t, x, \xi) \in \Gamma(\xi(t), \alpha_0).$$
 
-**证明:** 对任意的 $t \in [0, t_0]$，根据定理，上述关系对于 $(x(t), \xi(t)) \in B_{r_0}(x(t)) \times \Gamma(\xi(t), \beta)$ 成立，利用连续性，就对 $B_{r_0}(x(t)) \times \Gamma(\xi(t), \beta)$ 中所有的点都成立。由于所有可能的 $t$ 所给出的 $\{B_{r_0}(x(t)) \times \Gamma(\xi(t), \beta)\}$ 是 $\gamma$ 的开覆盖，利用紧性，我们就得到了结论。 $\square$
+**证明：** 对任意的 $t \in [0, t_0]$，根据定理，上述关系对于 $(x(t), \xi(t)) \in B_{r_0}(x(t)) \times \Gamma(\xi(t), \beta)$ 成立，利用连续性，就对 $B_{r_0}(x(t)) \times \Gamma(\xi(t), \beta)$ 中所有的点都成立。由于所有可能的 $t$ 所给出的 $\{B_{r_0}(x(t)) \times \Gamma(\xi(t), \beta)\}$ 是 $\gamma$ 的开覆盖，利用紧性，我们就得到了结论。 $\square$
 
-## 奇性传播定理的证明: 条件
+## 证明所需的局部条件
 
 我们首先把条件
 $$\gamma \cap WF(Pu) = \emptyset,$$
@@ -92,15 +96,15 @@ $\Gamma(\xi(t), \alpha(t))$，我们有
 $$\left| \widehat{\varphi \cdot Pu}(\xi) \right| = |\mathcal{F}(\varphi \cdot \psi_0 Pu)(\xi)| \leqslant \frac{C_N'}{(1 + |\xi|)^N} \sup_{|\mu| \leqslant M(N)} \|\partial^\mu \varphi\|_{L^\infty}.$$
 最后的一步，我们用了[引理 544](83-wavefront.md#ma-lemma-544)，其中，$M(N)$ 是依赖于 $N$ 的常数。当 $t$ 遍历 $[0, t_0]$ 时（我们可以假设 $t_0 = 1$），我们知道 $B_{r(t)}(x(t)) \times \Gamma(\xi(t), \alpha(t))$ 覆盖了 $\gamma([0, 1])$，所以，我们可以选出有限个 $t_1, \cdots, t_l$，使得
 $$\gamma \subset \bigcup_{j \leqslant l} B_{r(t_j)}(x(t_j)) \times \Gamma(\xi(t_j), \alpha(t_j)) := \Gamma(\gamma).$$
-所以，存在 $r_0 > 0$ 和 $\alpha_0 > 0$，对任意的 $t \in [0, 1]$，$B_{r_0}(x(t)) \times \Gamma(\xi(t), \alpha_0) \subset \Gamma(\gamma)$。特别地，根据 Lebesgue 数的存在性（第一学期第 11 次课），对任意的 $t$，$B_{r_0}(x(t)) \times \Gamma(\xi(t), \alpha_0)$ 必然落在某个 $B_{r(t_j)}(x(t_j)) \times \Gamma(\xi(t_j), \alpha(t_j))$ 中（这里我们可以先在 $\Omega \times S^{n-1}$ 中的归一化曲线像这个紧集上考虑）。通过选取最大的 $C_N$ 和最大的 $M(N)$，我们就得到了如下的结论:
+所以，存在 $r_0 > 0$ 和 $\alpha_0 > 0$，对任意的 $t \in [0, 1]$，$B_{r_0}(x(t)) \times \Gamma(\xi(t), \alpha_0) \subset \Gamma(\gamma)$。特别地，根据 Lebesgue 数的存在性（第一学期第 11 次课），对任意的 $t$，$B_{r_0}(x(t)) \times \Gamma(\xi(t), \alpha_0)$ 必然落在某个 $B_{r(t_j)}(x(t_j)) \times \Gamma(\xi(t_j), \alpha(t_j))$ 中（这里我们可以先在 $\Omega \times S^{n-1}$ 中的归一化曲线像这个紧集上考虑）。通过选取最大的 $C_N$ 和最大的 $M(N)$，我们就得到了如下的结论：
 
-<span id="ma-lemma-562" class="lecture-anchor"></span>**引理 562**. 存在 $r_0 > 0$ 和 $\alpha_0 > 0$，对任意的 $t \in [0, 1]$，使得对任意的 $N > 0$，存在常数 $C_N$ 和 $M_N$，使得对任意的 $\varphi \in C_0^\infty(B_{r_0}(x(t)))$，对任意的 $\xi \in \Gamma(\xi(t), \alpha_0)$，我们有
+<span id="ma-lemma-562" class="lecture-anchor"></span>**引理 562**。存在 $r_0 > 0$ 和 $\alpha_0 > 0$，对任意的 $t \in [0, 1]$，使得对任意的 $N > 0$，存在常数 $C_N$ 和 $M_N$，使得对任意的 $\varphi \in C_0^\infty(B_{r_0}(x(t)))$，对任意的 $\xi \in \Gamma(\xi(t), \alpha_0)$，我们有
 $$\left| \widehat{\varphi \cdot Pu}(\xi) \right| \leqslant \frac{C_N}{(1 + |\xi|)^N} \sup_{|\mu| \leqslant M_N} \|\partial^\mu \varphi\|_{L^\infty}.$$
 
-我们不妨假设 $\gamma(1) \notin WF(u)$，我们只要说明在另一个端点处 $\gamma(0) \notin WF(u)$ 即可。我们先来翻译 $\gamma(1) \notin WF(u)$ 这个条件: 存在 $r_1 > 0$ 和 $\alpha_1 > 0$，对任意的 $N > 0$，存在常数 $C_N$ 和 $M_N$，使得对任意的 $\varphi \in C_0^\infty(B_{r_1}(x(1)))$，对任意的 $\xi \in \Gamma(\xi(1), \alpha_1)$，我们有
+我们不妨假设 $\gamma(1) \notin WF(u)$，我们只要说明在另一个端点处 $\gamma(0) \notin WF(u)$ 即可。我们先来翻译 $\gamma(1) \notin WF(u)$ 这个条件：存在 $r_1 > 0$ 和 $\alpha_1 > 0$，对任意的 $N > 0$，存在常数 $C_N$ 和 $M_N$，使得对任意的 $\varphi \in C_0^\infty(B_{r_1}(x(1)))$，对任意的 $\xi \in \Gamma(\xi(1), \alpha_1)$，我们有
 $$\left| \widehat{\varphi \cdot u}(\xi) \right| \leqslant \frac{C_N}{(1 + |\xi|)^N} \sup_{|\mu| \leqslant M_N} \|\partial^\mu \varphi\|_{L^\infty}.$$
 
-作为总结（缩小 $r_0$ 和 $r_1$ 等），我们把奇性传播定理的条件总结如下:
+作为总结（缩小 $r_0$ 和 $r_1$ 等），我们把奇性传播定理的条件总结如下：
 
 存在 $r_0 > 0$ 和 $\alpha_0 > 0$，对任意的 $t \in [0, 1]$，使得对任意的 $N > 0$，存在常数 $C_N$ 和 $M_N$，使得
 
@@ -112,7 +116,7 @@ $$\left| \widehat{\varphi \cdot u}(\xi) \right| \leqslant \frac{C_N}{(1 + |\xi|)
 
 <!-- source: PDF 981; printed: 981; transcription: first-pass; proofreading: applied -->
 
-## 奇性传播定理的证明：拟解的构造
+## 拟解的构造
 
 我们需要计算如下形式的导数：
 
@@ -236,7 +240,7 @@ $$
 
 作为总结，我们有
 
-<span id="ma-lemma-563" class="lecture-anchor"></span>**引理 563.** 假设 $c(t,x,\xi)$ 是关于 $\xi$ 为 $d$ 次齐次的光滑函数，那么，我们有
+<span id="ma-lemma-563" class="lecture-anchor"></span>**引理 563。** 假设 $c(t,x,\xi)$ 是关于 $\xi$ 为 $d$ 次齐次的光滑函数，那么，我们有
 
 $$
 -e^{i\phi}\left(|\xi|^{m-1}i\frac{\partial}{\partial t}+{}^tP\right)\left(e^{-i\phi}c\right)=\frac1i L(c)+\frac1i M_{\phi,P}\cdot c+c_{\leqslant d+m-2},
@@ -244,9 +248,9 @@ $$
 
 其中，$L(c)$ 是 $d+m-1$ 次的，$M_{\phi,P}$ 是次数为 $m-1$ 的齐次函数（只依赖于 $\phi$ 和 $P$）。
 
-**注记.** 我们注意到 $\phi$ 的构造方式恰好消去了上面可能出现的 $d+m$ 次的项。
+**注记。** 我们注意到 $\phi$ 的构造方式恰好消去了上面可能出现的 $d+m$ 次的项。
 
-<span id="ma-lemma-564" class="lecture-anchor"></span>**引理 564**（拟解的构造）. 对给定的正数 $(r_0,\alpha_0)$，存在 $\rho_0>0$，使得 $\rho_0<r_0$ 并且如下成立：对任意的 $\varphi\in C_0^\infty(B_{\rho_0}(x(0)))$，存在函数序列
+<span id="ma-lemma-564" class="lecture-anchor"></span>**引理 564**（拟解的构造）。对给定的正数 $(r_0,\alpha_0)$，存在 $\rho_0>0$，使得 $\rho_0<r_0$ 并且如下成立：对任意的 $\varphi\in C_0^\infty(B_{\rho_0}(x(0)))$，存在函数序列
 
 $$
 \{b_k(t,x,\xi)\}_{k\geqslant0},\quad\{R_k(t,x,\xi)\}_{k\geqslant0}\subset C^\infty([0,1]\times B(x(t),r_0)\times\Gamma(\xi(t),\alpha_0)),
@@ -305,7 +309,7 @@ $$
 
 那么，$d=-(k+1)$，从而 $c_{d+m-2}$ 的次数不超过 $m-k-3$。这就完成了证明。$\square$
 
-## 奇性传播定理的证明：完成
+## 利用拟解完成奇性传播的证明
 
 我们对方程
 
@@ -448,4 +452,4 @@ $$
 
 这说明 $(x_0,\xi_0)\notin WF(u)$，从而完成了奇性传播定理的证明。
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../03-math-analysis-iii.md) · [校勘记录](../errata.md) · [上一篇：微局部椭圆正则性与奇性传播](84-microlocal-ellipticity.md) · [下一篇：86.1 分布理论期末复习题第一套](86-revision/86-01-p0988-0991.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../03-math-analysis-iii.md) · [校勘记录](../errata.md) · [上一篇：微局部椭圆正则性与奇性传播](84-microlocal-ellipticity.md) · [下一篇：86.1：分布理论期末复习题第一套](86-revision/86-01-p0988-0991.md)

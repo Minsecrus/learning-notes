@@ -1,13 +1,14 @@
-# 8 函数的连续性
+# 8：函数的连续性
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：7.1 作业:素数的倒数和,Basel问题的Euler“证明”](07-complete-spaces/07-03-p0081-0085.md) · [下一篇：连续映射与介值定理](09-continuous-maps.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：7.1：作业：素数的倒数和，Basel问题的Euler“证明”](07-complete-spaces/07-03-p0081-0085.md) · [下一篇：连续映射与介值定理](09-continuous-maps.md)
 
 <!-- source: PDF 86; printed: 86; transcription: first-pass; proofreading: applied -->
 
 <!-- math-analysis-layout: document-title-normalized -->
 
 
-## 函数的连续性
+
+## 函数的概念与记号
 
 在开始讨论函数之前，我们先澄清和回忆几个概念：
 
@@ -25,7 +26,9 @@ $$
 
 函数的连续性有两个等价的定义，一种用数列的语言的来描述，一种用所谓的 $\varepsilon-\delta$ 语言（在数学分析中，$\varepsilon$ 和 $\delta$ 通常代表两个很小（任意小）的正数）。
 
-<span id="ma-definition-40" class="lecture-anchor"></span>**定义 40** (函数的左右极限，左右连续性和连续性；数列的语言). 假设 $a < b$ 是实数，$I = (a, b) \subset \mathbb{R}$ 是开区间，$x_0 \in I$。
+## 极限与连续性的定义
+
+<span id="ma-definition-40" class="lecture-anchor"></span>**定义 40**（函数的左右极限，左右连续性和连续性；数列的语言）。假设 $a < b$ 是实数，$I = (a, b) \subset \mathbb{R}$ 是开区间，$x_0 \in I$。
 
 1) 给定函数 $f: (a, x_0) \cup (x_0, b) \to \mathbb{R}$。
 如果存在 $y_0 \in \mathbb{R}$，使得对**任意的**序列 $\{x_n^-\}_{n \geqslant 1} \subset (a, x_0)$，$\lim\limits_{n \to \infty} x_n^- = x_0$，都有 $\lim\limits_{n \to \infty} f(x_n^-) = y_0$，我们就称 $f$ 在 $x_0$ 处有**左极限** $y_0$，并记作 $\lim\limits_{x \to x_0^-} f(x) = y_0$。（我们注意到 $y_0$ 不依赖于序列 $\{x_n^-\}_{n \geqslant 1}$ 的选取）
@@ -36,9 +39,9 @@ $$
 
 <!-- source: PDF 87; printed: 87; transcription: first-pass; proofreading: applied -->
 
-**注记**. 我们还可以“望文生义地”定义左连续或者右连续的概念：给定函数 $f: I \to \mathbb{R}$，如果 $f$ 在 $x_0$ 处有左极限并且左极限为 $f(x_0)$，那么我们称 $f$ 在 $x_0$ 处是**左连续**的。右连续性可以类似定义。
+**注记**。我们还可以“望文生义地”定义左连续或者右连续的概念：给定函数 $f: I \to \mathbb{R}$，如果 $f$ 在 $x_0$ 处有左极限并且左极限为 $f(x_0)$，那么我们称 $f$ 在 $x_0$ 处是**左连续**的。右连续性可以类似定义。
 
-**练习**.
+**练习**。
 
 1) 给定函数 $f: (a, x_0) \cup (x_0, b) \to \mathbb{R}$。证明，$f$ 在 $x_0$ 有极限当且仅当 $f$ 在 $x_0$ 处的左右极限都存在并且相等。
 
@@ -46,22 +49,24 @@ $$
 
 我们可以用这个练习来熟悉一下连续性的第一种定义，证明只需要用数列收敛的概念即可。
 
-<span id="ma-definition-41" class="lecture-anchor"></span>**定义 41** (函数的极限和连续性；$\varepsilon-\delta$-语言). 假设 $a < b$ 是实数，$I = (a, b) \subset \mathbb{R}$ 是开区间，$x_0 \in I$。考虑在 $I - \{x_0\}$ 上定义的实数（可以是复数）值函数 $f$，即 $f: (a, x_0) \cup (x_0, b) \to \mathbb{R}$，如果存在 $y_0 \in \mathbb{R}$，使得对**任意的** $\varepsilon > 0$（我们总是默认 $\varepsilon$ 很小），存在 $\delta > 0$（通常 $\varepsilon$ 总是取的很小），使得对任意满足 $|x - x_0| < \delta$ 的 $x$，都有 $|f(x) - y_0| < \varepsilon$，我们就称 $f$ 在 $x_0$ 处有极限 $y_0$，并记作 $\lim\limits_{x \to x_0} f(x) = y_0$。如果假设 $f: I \to \mathbb{R}$ 在 $x_0$ 处有极限并且 $\lim\limits_{x \to x_0} f(x) = f(x_0)$，我们就称 $f$ 在 $x_0$ 处连续。
+<span id="ma-definition-41" class="lecture-anchor"></span>**定义 41**（函数的极限和连续性；$\varepsilon-\delta$-语言）。假设 $a < b$ 是实数，$I = (a, b) \subset \mathbb{R}$ 是开区间，$x_0 \in I$。考虑在 $I - \{x_0\}$ 上定义的实数（可以是复数）值函数 $f$，即 $f: (a, x_0) \cup (x_0, b) \to \mathbb{R}$，如果存在 $y_0 \in \mathbb{R}$，使得对**任意的** $\varepsilon > 0$（我们总是默认 $\varepsilon$ 很小），存在 $\delta > 0$（通常 $\varepsilon$ 总是取的很小），使得对任意满足 $|x - x_0| < \delta$ 的 $x$，都有 $|f(x) - y_0| < \varepsilon$，我们就称 $f$ 在 $x_0$ 处有极限 $y_0$，并记作 $\lim\limits_{x \to x_0} f(x) = y_0$。如果假设 $f: I \to \mathbb{R}$ 在 $x_0$ 处有极限并且 $\lim\limits_{x \to x_0} f(x) = f(x_0)$，我们就称 $f$ 在 $x_0$ 处连续。
 
-**注记**. 我们类似地可以用 $\varepsilon-\delta$ 语言定义左右极限以及左右连续性，同学们应该自己尝试着来做这一点（基本是语言的游戏）或者查阅任何一本数学分析的参考书，这里不再赘述。
+**注记**。我们类似地可以用 $\varepsilon-\delta$ 语言定义左右极限以及左右连续性，同学们应该自己尝试着来做这一点（基本是语言的游戏）或者查阅任何一本数学分析的参考书，这里不再赘述。
 
-<span id="ma-theorem-42" class="lecture-anchor"></span>**定理 42** (Heine). 上述两种连续性的定义是等价的。
+<span id="ma-theorem-42" class="lecture-anchor"></span>**定理 42**（Heine）。上述两种连续性的定义是等价的。
 
 **证明：** 首先，假设 $f$ 在 $x_0$ 是在 $\varepsilon-\delta$-语言意义下连续的，我们现在证明，对任意的 $\{x_n\}_{n \geqslant 1} \subset I$，$x_n \to x_0$，我们都有 $f(x_n) \to f(x_0)$：事实上，对任意的 $\varepsilon > 0$，根据定义，存在 $\delta > 0$，使得当 $|x - x_0| < \delta$ 时，我们有 $|f(x) - f(x_0)| < \varepsilon$；根据 $x_n \to x_0$ 的定义，对于这个 $\delta$，存在 $N$，使得当 $n \geqslant N$ 时，我们有 $|x_n - x_0| < \delta$。所以，当 $n \geqslant N$ 时，$|f(x_n) - f(x_0)| < \varepsilon$，从而 $f(x_n) \to f(x_0)$。
 反过来，我们假设 $f$ 在 $x_0$ 在点列语言的意义下是连续的，即假设对任意的序列 $\{x_n\}_{n \geqslant 1} \subset I$，$x_n \to x_0$，都有 $\lim\limits_{n \to \infty} f(x_n) = f(x_0)$。我们用反证法来证明 $f$ 在 $x_0$ 是在 $\varepsilon-\delta$-语言意义下连续的，即考虑逆否命题：如果不然，那么存在某个 $\varepsilon > 0$，对任意的 $\delta$，特别地对于 $\delta = \frac{1}{n}$，存在 $|x_n - x_0| < \frac{1}{n}$，使得 $|f(x_n) - f(x_0)| \geqslant \varepsilon$。这样，我们就得到一个序列 $\{x_n\}$，使得 $x_n \to x_0$ 但是 $f(x_n) \not\to f(x_0)$，矛盾。 $\square$
 
+### 函数极限的判别
+
 另外，关于函数在一点处的极限的存在性也有 $\varepsilon-\delta$ 版本的 Cauchy 判别准则：
 
-<span id="ma-theorem-43" class="lecture-anchor"></span>**定理 43** (Cauchy 判别准则). 给定函数 $f: (a, x_0) \cup (x_0, b) \to \mathbb{R}$。那么，$f$ 在 $x_0$ 处有极限当且仅当对任意的 $\varepsilon > 0$，存在 $\delta > 0$，使得对任意的 $x_1, x_2 \in (x_0 - \delta, x_0 + \delta)$，都有 $|f(x_1) - f(x_2)| < \varepsilon$。
+<span id="ma-theorem-43" class="lecture-anchor"></span>**定理 43**（Cauchy 判别准则）。给定函数 $f: (a, x_0) \cup (x_0, b) \to \mathbb{R}$。那么，$f$ 在 $x_0$ 处有极限当且仅当对任意的 $\varepsilon > 0$，存在 $\delta > 0$，使得对任意的 $x_1, x_2 \in (x_0 - \delta, x_0 + \delta)$，都有 $|f(x_1) - f(x_2)| < \varepsilon$。
 
 **证明：** 证明是例行公事，只需要利用定义！我们将它留作本次的作业题之一。 $\square$
 
-**注记**. 我们还可以模拟上面的定义来定义函数 $f$ 在 $x \to \pm\infty$ 时的极限：给定函数 $f: (a, +\infty) \to \mathbb{R}$，如果存在 $y_0 \in \mathbb{R}$，使得对任意的 $\varepsilon > 0$，存在 $M > 0$，使得对任意的 $x \in (M, +\infty)$，都有
+**注记**。我们还可以模拟上面的定义来定义函数 $f$ 在 $x \to \pm\infty$ 时的极限：给定函数 $f: (a, +\infty) \to \mathbb{R}$，如果存在 $y_0 \in \mathbb{R}$，使得对任意的 $\varepsilon > 0$，存在 $M > 0$，使得对任意的 $x \in (M, +\infty)$，都有
 
 <!-- source: PDF 88; printed: 88; transcription: first-pass; proofreading: applied -->
 
@@ -69,7 +74,7 @@ $|f(x) - y_0| < \varepsilon$，我们就称 $f$ 在 $+\infty$ 处的极限是 $y
 
 有了连续函数这个对象，我们就可以讨论数学（分析）中很重要的一个观点：
 
-**注记** (局部与整体). 局部，整体和一个点在连续函数的定义中是要分清楚的：
+**注记**（局部与整体）。局部，整体和一个点在连续函数的定义中是要分清楚的：
 
 - 连续性是一个**局部**的概念：要搞清楚 $f$ 在 $x_0$ 处是否连续，只需要对任意小的 $\varepsilon$，理解 $f$ 在 $x_0$ 的一个小邻域（局部）$(x_0 - \varepsilon, x_0 + \varepsilon)$ 上的行为就足够了。这里，$\varepsilon$ 可以任意得小，但不能是 $0$。
 
@@ -81,13 +86,13 @@ $|f(x) - y_0| < \varepsilon$，我们就称 $f$ 在 $+\infty$ 处的极限是 $y
 
 通过上面局部与整体的讨论，我们可以很自然地引出所谓的开覆盖的概念：
 
-1) (整体连续性意味着局部连续性) 假设 $J \subset I$ 是子区间，那么，如果 $f: I \to \mathbb{R}$ 在 $I$ 上连续，$f$ 在 $J$ 上的限制 $f|_J$ 也连续，其中
+1) （整体连续性意味着局部连续性）假设 $J \subset I$ 是子区间，那么，如果 $f: I \to \mathbb{R}$ 在 $I$ 上连续，$f$ 在 $J$ 上的限制 $f|_J$ 也连续，其中
 
 $$
 f|_J: J \to \mathbb{R}, \ \ x \mapsto f(x).
 $$
 
-2) (局部决定了整体) 假设 $\{I_k\}_{k \in K}$ 一族**开区间**，其中 $K$ 是指标的集合，如果 $I \subset \bigcup\limits_{k \in K} I_k$，我们就称开区间族 $\{I_k\}_{k \in K}$ 覆盖了 $I$，我们也说 $\{I_k\}_{k \in K}$ 是 $I$ 的一族**开覆盖**。假设对每个 $k \in K$，函数 $f_k$ 在 $I_k$ 上都有定义并且取实数值，如果任意的 $j, k \in K$，都有相容性条件：
+2) （局部决定了整体）假设 $\{I_k\}_{k \in K}$ 一族**开区间**，其中 $K$ 是指标的集合，如果 $I \subset \bigcup\limits_{k \in K} I_k$，我们就称开区间族 $\{I_k\}_{k \in K}$ 覆盖了 $I$，我们也说 $\{I_k\}_{k \in K}$ 是 $I$ 的一族**开覆盖**。假设对每个 $k \in K$，函数 $f_k$ 在 $I_k$ 上都有定义并且取实数值，如果任意的 $j, k \in K$，都有相容性条件：
 
 $$
 f_k|_{I_j \cap I_k} = f_j|_{I_j \cap I_k},
@@ -103,7 +108,9 @@ $$
 
 最简单的连续函数的例子如下（请验证定义）：
 
-**例子**.
+### 连续与不连续的例子
+
+**例子**。
 
 1) 常值函数 $f(x) = c$ 和 $f(x) = x$ 是连续函数。
 
@@ -130,7 +137,9 @@ $$
 
 要想构造更多的连续函数，我们就要利用关于连续函数的代数运算：
 
-<span id="ma-proposition-44" class="lecture-anchor"></span>**命题 44** (四则运算与序关系的交换性). 假设实（复）值函数 $f$ 和 $g$ 在 $x_0$ 附近定义（比方说在 $(x_0 - \delta, x_0) \cup (x_0, x_0 + \delta)$ 上定义）在 $x_0 \in I$ 处有极限，那么
+## 极限运算与连续函数的代数结构
+
+<span id="ma-proposition-44" class="lecture-anchor"></span>**命题 44**（四则运算与序关系的交换性）。假设实（复）值函数 $f$ 和 $g$ 在 $x_0$ 附近定义（比方说在 $(x_0 - \delta, x_0) \cup (x_0, x_0 + \delta)$ 上定义）在 $x_0 \in I$ 处有极限，那么
 
 1) $f \pm g$ 在 $x_0 \in I$ 处有极限并且 $\lim\limits_{x \to x_0} (f \pm g)(x) = \lim\limits_{x \to x_0} f(x) \pm \lim\limits_{x \to x_0} g(x)$。
 
@@ -142,25 +151,27 @@ $$
 
 **证明：** 连续性的表述有两种，我们这里选用连续性的数列语言，从而上面的性质只是数列相应性质的重新表述。 $\square$
 
-<span id="ma-corollary-45" class="lecture-anchor"></span>**推论 45** (连续函数的四则运算). 用 $C(I)$ 表示区间 $I$ 上的连续函数的全体所构成的集合，那么 $(C(I), +, \cdot)$ 是一个环（连续函数环），即对任意的 $f, g \in C(I)$，我们有 $f \pm g, f \cdot g \in C(I)$。特别地，$C(I)$ 是 $\mathbb{R}$-线性空间（用常数函数 $f(x) \equiv c$ 作为数乘）。另外，如果对任意 $x \in I$，$g(x) \neq 0$，那么 $\frac{f}{g} \in C(I)$。
+<span id="ma-corollary-45" class="lecture-anchor"></span>**推论 45**（连续函数的四则运算）。用 $C(I)$ 表示区间 $I$ 上的连续函数的全体所构成的集合，那么 $(C(I), +, \cdot)$ 是一个环（连续函数环），即对任意的 $f, g \in C(I)$，我们有 $f \pm g, f \cdot g \in C(I)$。特别地，$C(I)$ 是 $\mathbb{R}$-线性空间（用常数函数 $f(x) \equiv c$ 作为数乘）。另外，如果对任意 $x \in I$，$g(x) \neq 0$，那么 $\frac{f}{g} \in C(I)$。
 
 <!-- source: PDF 90; printed: 90; transcription: first-pass; proofreading: applied -->
 
-**注记.** 我们注意到 $(C(I), +, \cdot)$ 与实数 $(\mathbb{R}, +, \cdot)$ 有很多相似的地方（代数结构）。另外，除非 $I$ 是一个点，$C(I)$ 是无限维的 $\mathbb{R}$-线性空间，我们把证明留成做本次的作业。
+**注记。** 我们注意到 $(C(I), +, \cdot)$ 与实数 $(\mathbb{R}, +, \cdot)$ 有很多相似的地方（代数结构）。另外，除非 $I$ 是一个点，$C(I)$ 是无限维的 $\mathbb{R}$-线性空间，我们把证明留成做本次的作业。
 
-<span id="ma-corollary-46" class="lecture-anchor"></span>**推论 46** (绝对值). 如果 $f \in C(I)$，那么 $|f| \in C(I)$，其中 $|f| : I \to \mathbb{R}_{\geqslant 0}$， $x \mapsto |f(x)|$。
+<span id="ma-corollary-46" class="lecture-anchor"></span>**推论 46**（绝对值）。如果 $f \in C(I)$，那么 $|f| \in C(I)$，其中 $|f| : I \to \mathbb{R}_{\geqslant 0}$， $x \mapsto |f(x)|$。
 
 **证明：** 利用连续性的数列的描述立得。 $\square$
 
-<span id="ma-theorem-47" class="lecture-anchor"></span>**定理 47** (函数的复合). 给定 $f \in C(I; J)$（即 $f : I \to \mathbb{R}$ 是连续函数并且 $f$ 的值域落在区间 $J$ 中）和 $g \in C(J)$，那么复合函数 $(g \circ f)(x) = g(f(x)) \in C(I)$。
+<span id="ma-theorem-47" class="lecture-anchor"></span>**定理 47**（函数的复合）。给定 $f \in C(I; J)$（即 $f : I \to \mathbb{R}$ 是连续函数并且 $f$ 的值域落在区间 $J$ 中）和 $g \in C(J)$，那么复合函数 $(g \circ f)(x) = g(f(x)) \in C(I)$。
 
 **证明：** 我们利用数列的语言来证明，即证明当 $n \to \infty$ 时，对任意的 $x_n \to x_0$，我们有 $(g \circ f)(x_n) = g(f(x_n)) \to g(f(x_0))$。令 $y_n = f(x_n) \in J$，其中 $n \geqslant 0$，由于 $f$ 在 $x_0$ 处连续，所以 $y_n \to y_0$；由于 $g$ 在 $y_0$ 处连续，所以 $g(y_n) \to g(y_0)$，这就是要证明的结论。 $\square$
 
-**注记.** 利用数列的语言进行证明是最直接最简单的，然而我们后来会意识到简单干净的证明可能未必是最好的。
+**注记。** 利用数列的语言进行证明是最直接最简单的，然而我们后来会意识到简单干净的证明可能未必是最好的。
 
 利用上述四则运算以及函数的复合，我们可以构造一大类的连续函数：
 
-**例子.** 假设 $I \subset \mathbb{R}$ 是一个给定的非空的区间，其中 $|I| \neq 0$，即它不是一个点。那么
+## 连续函数空间
+
+**例子。** 假设 $I \subset \mathbb{R}$ 是一个给定的非空的区间，其中 $|I| \neq 0$，即它不是一个点。那么
 
 1) 对任意的多项式 $P \in \mathbb{R}[X]$，即 $P(X) = a_d X^d + a_{d-1} X^{d-1} + \cdots + a_0$，其中 $a_i \in \mathbb{R}$，$0 \leqslant i \leqslant d$，$a_d \neq 0$，$d$ 是它的次数（我们要强调多项式 $\neq$ 多项式函数），我们可以将 $P$ 视作是 $I$ 上的函数，即对任意的 $x \in I$，我们令 $P(x) = a_d x^d + a_{d-1} x^{d-1} + \cdots + a_0$。那么，多项式函数 $P \in C(I)$。另外，如果 $Q \neq P \in \mathbb{R}[X]$ 是另一个多项式，那么在 $C(I)$ 中，作为函数 $Q \neq P$。在这个意义下，我们可以将多项式的全体 $\mathbb{R}[X]$ 视作是连续函数的子空间，即有单射映射 $\iota : \mathbb{R}[X] \hookrightarrow C(I)$ 并且这个映射保持两边的四则运算（环结构）：比如说，如果我们用 $\bullet$ 表示多项式的乘法，那么 $\iota(P \bullet Q) = \iota(P) \cdot \iota(Q)$，其中此式右边的乘法是函数的乘法。
 
@@ -170,7 +181,7 @@ $$
 
 4) 利用复合函数保持连续性，我们知道函数 $e^{x^2}$ 是 $\mathbb{R}$（或者 $\mathbb{C}$）上的连续函数。
 
-**注记.** 不夸张的说，我们在数学中遇到（几乎）一切连续函数都是通过两种手段构造的：第一，通过连续函数的复合和四则运算；第二，通过逼近的方式，特别是级数的方式来定义，比如说 $\exp$ 的构造。这种逼近的方式是最值得我们注意的，我们很快会发现，$C(I)$ 这个空间和实数 $\mathbb{R}$ 很相似，构造无理数就是通过有理数逼近的方式。
+**注记。** 不夸张的说，我们在数学中遇到（几乎）一切连续函数都是通过两种手段构造的：第一，通过连续函数的复合和四则运算；第二，通过逼近的方式，特别是级数的方式来定义，比如说 $\exp$ 的构造。这种逼近的方式是最值得我们注意的，我们很快会发现，$C(I)$ 这个空间和实数 $\mathbb{R}$ 很相似，构造无理数就是通过有理数逼近的方式。
 
 更具体一点，我们会在 $C(I)$ 上面给定一个范数 $\| \cdot \|_\infty$ 并且证明这样得到的赋范线性空间是完备的。此时，任给 $f \in C(I)$，我们可以仿照实数的情况定义
 
@@ -184,4 +195,4 @@ $$
 
 在这种类比下，我们就可以利用对实数的直观来研究函数空间，从而得到很多关于函数的深刻结果。在课程后面的学习中，我们会遇到很具体的例子，比方说存在处处连续但是处处都不能微分的函数，我们就是通过构造函数的级数来实现的。
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：7.1 作业:素数的倒数和,Basel问题的Euler“证明”](07-complete-spaces/07-03-p0081-0085.md) · [下一篇：连续映射与介值定理](09-continuous-maps.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：7.1：作业：素数的倒数和，Basel问题的Euler“证明”](07-complete-spaces/07-03-p0081-0085.md) · [下一篇：连续映射与介值定理](09-continuous-maps.md)

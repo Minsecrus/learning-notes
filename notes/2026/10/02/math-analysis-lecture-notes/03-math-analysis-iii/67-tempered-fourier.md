@@ -1,11 +1,12 @@
-# 67 缓增分布的 Fourier 变换
+# 67：缓增分布的 Fourier 变换
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../03-math-analysis-iii.md) · [校勘记录](../errata.md) · [上一篇：66.1 作业:Fourier逆变换的另一个计算,一个分布扩张的问题,分布的张量积](66-schwartz-tempered/66-03-p0805-0810.md) · [下一篇：缓增分布的 Fourier 变换与卷积](68-fourier-convolution.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../03-math-analysis-iii.md) · [校勘记录](../errata.md) · [上一篇：66.1：作业：Fourier逆变换的另一个计算，一个分布扩张的问题，分布的张量积](66-schwartz-tempered/66-03-p0805-0810.md) · [下一篇：缓增分布的 Fourier 变换与卷积](68-fourier-convolution.md)
 
 <!-- source: PDF 811; printed: 811; transcription: first-pass; proofreading: applied -->
 
-## 67 缓增分布的 Fourier 变换：定义与基本例子的计算
 
+
+## 缓增分布的操作与收敛
 
 我们先补充一个关于 Schwartz 函数的命题：任意的多重指标 $\alpha, \beta$，我们有连续映射
 $$x^\alpha : \mathcal{S}(\mathbb{R}^n) \to \mathcal{S}(\mathbb{R}^n),$$
@@ -50,10 +51,10 @@ $$\langle f u, \varphi \rangle_{\mathcal{S}' \times \mathcal{S}} = \langle u, f 
 
 我们现在规定 $\mathcal{S}'(\mathbb{R}^n)$ 中序列的收敛性：
 
-<span id="ma-definition-461" class="lecture-anchor"></span>**定义 461** (收敛性). 给定缓增分布的序列 $\{u_k\}_{k \geqslant 1} \subset \mathcal S'(\mathbb R^n)$，我们说它在 $\mathcal{S}'(\mathbb{R}^n)$ 的意义下收敛到 $u \in \mathcal S'(\mathbb R^n)$，记作 $u_k \xrightarrow{\mathcal{S}'} u$，指的是对每个 Schwartz 函数 $\varphi \in \mathcal{S}(\mathbb{R}^n)$，都有
+<span id="ma-definition-461" class="lecture-anchor"></span>**定义 461**（收敛性）。给定缓增分布的序列 $\{u_k\}_{k \geqslant 1} \subset \mathcal S'(\mathbb R^n)$，我们说它在 $\mathcal{S}'(\mathbb{R}^n)$ 的意义下收敛到 $u \in \mathcal S'(\mathbb R^n)$，记作 $u_k \xrightarrow{\mathcal{S}'} u$，指的是对每个 Schwartz 函数 $\varphi \in \mathcal{S}(\mathbb{R}^n)$，都有
 $$\lim_{k \to \infty} \langle u_k, \varphi \rangle = \langle u, \varphi \rangle.$$
 
-<span id="ma-proposition-462" class="lecture-anchor"></span>**命题 462**. 对任意的多重指标 $\alpha$ 和 $\beta$，我们有如下的连续映射
+<span id="ma-proposition-462" class="lecture-anchor"></span>**命题 462**。对任意的多重指标 $\alpha$ 和 $\beta$，我们有如下的连续映射
 $$x^\alpha : \mathcal{S}'(\mathbb{R}^n) \to \mathcal{S}'(\mathbb{R}^n),$$
 $$\partial^\beta : \mathcal{S}'(\mathbb{R}^n) \to \mathcal{S}'(\mathbb{R}^n).$$
 换而言之，我们有
@@ -62,11 +63,13 @@ $$\partial^\beta : \mathcal{S}'(\mathbb{R}^n) \to \mathcal{S}'(\mathbb{R}^n).$$
 2) 如果我们有缓增分布的收敛序列 $u_k \xrightarrow{\mathcal{S}'} u$，那么，它在求导数和乘多项式下被保持：
 $$\partial^\alpha u_k \xrightarrow{\mathcal{S}'} \partial^\alpha u, \quad x^\beta u_k \xrightarrow{\mathcal{S}'} x^\beta u.$$
 
-**证明:** 证明是简单（乏味）的：我们已经说明了 $\partial^\alpha u, x^\beta u \in \mathcal{S}'(\mathbb{R}^n)$。为了说明连续性，我们有
+**证明：** 证明是简单（乏味）的：我们已经说明了 $\partial^\alpha u, x^\beta u \in \mathcal{S}'(\mathbb{R}^n)$。为了说明连续性，我们有
 $$\lim_{k\to\infty}\langle\partial^\alpha u_k,\varphi\rangle=\lim_{k\to\infty} \langle u_k, (-1)^{|\alpha|} \partial^\alpha \varphi \rangle = \langle u, (-1)^{|\alpha|} \partial^\alpha \varphi \rangle = \langle \partial^\alpha u, \varphi \rangle.$$
 关于乘法的证明是类似的。 \hfill $\square$
 
 <!-- source: PDF 813; printed: 813; transcription: first-pass; proofreading: applied -->
+
+## 缓增性的典型例子
 
 我们现在看一些缓增的分布的例子：
 
@@ -101,7 +104,9 @@ $$\int_{\mathbb{R}} e^x \chi_n(x) dx = \int_{\mathbb{R}} e^x \chi(x-n) dx \geqsl
 6) 指数增长速度的函数也可以是缓增的分布。
 我们令 $u = e^x e^{i e^x}$，这个函数是在 $\mathbb{R}$ 上是指数增长的，但是它所定义的分布是缓增的：因为 $u=\frac1i(e^{ie^x})'$，而 $e^{i e^x} \in L^\infty(\mathbb{R})$ 所定义的分布是缓增的。
 
-<span id="ma-definition-463" class="lecture-anchor"></span>**定义 463** (缓增分布的 Fourier 变换). 对任意的 $u \in \mathcal{S}'(\mathbb{R}^n)$，我们用以下的公式来定义其 Fourier 变换（记作 $\mathcal{F}u$ 或者 $\widehat{u}$）：对任意的 $\varphi \in \mathcal{S}(\mathbb{R}^n)$，令
+## 傅里叶变换的定义与可逆性
+
+<span id="ma-definition-463" class="lecture-anchor"></span>**定义 463**（缓增分布的 Fourier 变换）。对任意的 $u \in \mathcal{S}'(\mathbb{R}^n)$，我们用以下的公式来定义其 Fourier 变换（记作 $\mathcal{F}u$ 或者 $\widehat{u}$）：对任意的 $\varphi \in \mathcal{S}(\mathbb{R}^n)$，令
 $$\langle \widehat{u}, \varphi \rangle = \langle u, \widehat{\varphi} \rangle.$$
 我们可以类似地定义 Fourier 逆变换 $\mathcal{F}^{-1}$。实际上，我们只要定义
 $$\langle \mathcal{F}^{-1}(u), \varphi \rangle = \langle u, \mathcal{F}^{-1}(\varphi) \rangle.$$
@@ -116,12 +121,12 @@ $$N_p(\widehat{\varphi}) \leqslant C_p N_{p+n+1}(\varphi).$$
 $$\left| \langle \widehat{u}, \varphi \rangle \right| = \left| \langle u, \widehat{\varphi} \rangle \right| \leqslant C N_p(\widehat{\varphi}) \leqslant C C_p N_{p+n+1}(\varphi).$$
 这就验证了 $\widehat{u} \in \mathcal{S}'(\mathbb{R}^n)$。
 
-<span id="ma-theorem-464" class="lecture-anchor"></span>**定理 464**. *Fourier 变换*
+<span id="ma-theorem-464" class="lecture-anchor"></span>**定理 464**。*Fourier 变换*
 $$\mathcal{F} : \mathcal{S}'(\mathbb{R}^n) \longrightarrow \mathcal{S}'(\mathbb{R}^n),$$
 是连续线性同构，这里连续性指的是对任意的在 $\mathcal{S}'(\mathbb{R}^n)$ 中收敛的缓增分布的序列 $u_k \xrightarrow{\mathcal{S}'} u$，我们都有 $\widehat{u}_k \xrightarrow{\mathcal{S}'} \widehat{u}$。进一步，对每个 $u \in \mathcal{S}'(\mathbb{R}^n)$，如下的公式成立：
 $$\widehat{\partial_k u} = i \xi_k \widehat{u}, \quad \widehat{x_k u} = i \partial_k \widehat{u}, \quad \mathcal{F}^{-1}(u) = \frac{1}{(2\pi)^n} \mathcal{F}(u)^\check{}.$$
 
-**证明:** 先验证连续性：假设 $u_k \xrightarrow{\mathcal{S}'} u$，那么，对任意的 Schwartz 函数 $\varphi$，我们都有
+**证明：** 先验证连续性：假设 $u_k \xrightarrow{\mathcal{S}'} u$，那么，对任意的 Schwartz 函数 $\varphi$，我们都有
 $$\langle \widehat{u}_k, \varphi \rangle = \langle u_k, \widehat{\varphi} \rangle \to \langle u, \widehat{\varphi} \rangle = \langle \widehat{u}, \varphi \rangle.$$
 所以，$\widehat{u}_k \xrightarrow{\mathcal{S}'} \widehat{u}$。另外，由于
 $$\langle \mathcal{F}^{-1}(\mathcal{F}(u)), \varphi \rangle = \langle u, \mathcal{F}^{-1}(\mathcal{F}(\varphi)) \rangle = \langle u, \varphi \rangle.$$
@@ -131,11 +136,11 @@ $$\langle \mathcal{F}^{-1}(\mathcal{F}(u)), \varphi \rangle = \langle u, \mathca
 
 <!-- source: PDF 815; printed: 815; transcription: first-pass; proofreading: applied -->
 
-### Fourier 变换的几个例子
+## Fourier 变换的几个例子
 
-我们计算一些常见函数的 Fourier 变换:
+我们计算一些常见函数的 Fourier 变换：
 
-**例子.**
+**例子。**
 
 1) *Dirac 函数 $\delta_0$*。我们有
 $$\widehat{\delta}_0 = 1.$$
@@ -156,7 +161,7 @@ $$\widehat{1} = (2\pi)^n \delta_0.$$
 作为应用，我们研究 $\mathbb{R}^n$ 上的调和的缓增分布，即 $u \in \mathcal{S}'(\mathbb{R}^n)$ 并且满足
 $$\Delta u = 0.$$
 
-<span id="ma-proposition-465" class="lecture-anchor"></span>**命题 465.** 假设 $u \in \mathcal{S}'(\mathbb{R}^n)$ 是调和的缓增分布，那么，$u$ 必然是（$x_1, \cdots, x_n$ 的）多项式函数。
+<span id="ma-proposition-465" class="lecture-anchor"></span>**命题 465。** 假设 $u \in \mathcal{S}'(\mathbb{R}^n)$ 是调和的缓增分布，那么，$u$ 必然是（$x_1, \cdots, x_n$ 的）多项式函数。
 
 **证明：** 由于 $u \in \mathcal{S}'(\mathbb{R}^n)$，所以我们可以对它做 Fourier 变换。从而，
 $$\Delta u = 0 \quad \Rightarrow \quad -|\xi|^2 \widehat{u} = 0.$$
@@ -169,15 +174,15 @@ $$u(x)=\frac1{(2\pi)^n}\sum_{|\alpha|\leqslant m}c_\alpha(-ix)^\alpha.$$
 
 这就得到了要证明的结论。 $\square$
 
-**注记.** 由于众所周知的原因，我们通常把 $\operatorname{supp}(\widehat{u})$ 称作是 $u$ 的谱并记作 $\operatorname{spec}(u)$。
+**注记。** 由于众所周知的原因，我们通常把 $\operatorname{supp}(\widehat{u})$ 称作是 $u$ 的谱并记作 $\operatorname{spec}(u)$。
 
-**注记.** 要求 $u$ 是缓增的分布是非常重要条件：如果不对 $u$ 在无穷远处的增长加以限制，那么调和的分布是很多的。比如说，在 $\mathbb{R}^2 = \mathbb{C}$ 上，任何一个在整个 $\mathbb{C}$ 上定义的复解析函数都是调和的。比如说，$e^z$，它就不是多项式函数，它在 $\infty$ 附近增长的很快，所以它所定义的分布不是缓增的。
+**注记。** 要求 $u$ 是缓增的分布是非常重要条件：如果不对 $u$ 在无穷远处的增长加以限制，那么调和的分布是很多的。比如说，在 $\mathbb{R}^2 = \mathbb{C}$ 上，任何一个在整个 $\mathbb{C}$ 上定义的复解析函数都是调和的。比如说，$e^z$，它就不是多项式函数，它在 $\infty$ 附近增长的很快，所以它所定义的分布不是缓增的。
 
 <!-- source: PDF 816; printed: 816; transcription: first-pass; proofreading: applied -->
 
 为了计算一些特殊的分布的 Fourier 变换，我们经常用到如下两个技巧：
 
-<span id="ma-proposition-466" class="lecture-anchor"></span>**命题 466.** 假设 $u \in \mathcal{S}'(\mathbb{R}^n)$ 是缓增的分布。我们有：
+<span id="ma-proposition-466" class="lecture-anchor"></span>**命题 466。** 假设 $u \in \mathcal{S}'(\mathbb{R}^n)$ 是缓增的分布。我们有：
 
 1) 给定可逆的 $n \times n$ 的实系数矩阵 $A$，我们把它看作是 $\mathbb{R}^n$ 到自身的线性变换，那么，$A^* u$ 也是缓增的分布（证明几乎是显然的）并且
 $$\widehat{A^* u} = |\det(A)|^{-1} ({^t}A^{-1})^* \widehat{u}.$$
@@ -220,9 +225,9 @@ $$\widehat{u(Ax)}(\xi) = \widehat{u}(A\xi).$$
 
 <!-- source: PDF 817; printed: 817; transcription: first-pass; proofreading: applied -->
 
-**例子.** Dirac 函数 $\delta_0$ 是次数为 $-n$ 的齐次分布，因为它的 Fourier 变换 $1$ 是次数为 $0$ 的齐次分布。
+**例子。** Dirac 函数 $\delta_0$ 是次数为 $-n$ 的齐次分布，因为它的 Fourier 变换 $1$ 是次数为 $0$ 的齐次分布。
 
-**例子.** 3) 我们计算 $\operatorname{vp} \frac{1}{x}$ 的 Fourier 变换：
+**例子。** 3) 我们计算 $\operatorname{vp} \frac{1}{x}$ 的 Fourier 变换：
 $$\widehat{\operatorname{vp} \frac{1}{x}} = -2\pi i H(x) + \pi i,$$
 
 我们注意到
@@ -280,6 +285,6 @@ $$\mathcal{F}\left( -\frac{1}{|\xi|^2} \right) = \left( (2\pi)^n \mathcal{F}^{-1
 即
 $$\widehat{|x|^{-2}}(\xi) = \frac{(2\pi)^n}{(n-2) |S^{n-1}|} |\xi|^{2-n}.$$
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../03-math-analysis-iii.md) · [校勘记录](../errata.md) · [上一篇：66.1 作业:Fourier逆变换的另一个计算,一个分布扩张的问题,分布的张量积](66-schwartz-tempered/66-03-p0805-0810.md) · [下一篇：缓增分布的 Fourier 变换与卷积](68-fourier-convolution.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../03-math-analysis-iii.md) · [校勘记录](../errata.md) · [上一篇：66.1：作业：Fourier逆变换的另一个计算，一个分布扩张的问题，分布的张量积](66-schwartz-tempered/66-03-p0805-0810.md) · [下一篇：缓增分布的 Fourier 变换与卷积](68-fourier-convolution.md)
 
 [^p0817-20]: 在找到问题的解答之前，我们总是可以做各种（相对合理的）假设。这些额外的假设可能给出问题的一类解。通过做这样的假设得到的解有时候恰好是问题的所有解，也有可能不是所有的解，但是总是比没有找到解更令人欣慰。在英文的文献中，这种假设叫做 ansatz。在分析问题中，所谓的分离变量法就是这样的一种方法。我们将会看到，利用另一种预设，我们也可以得到 $\Delta$ 的基本解。

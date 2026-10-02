@@ -1,11 +1,12 @@
-# 22 反常积分、Euler 常数与 Stirling 公式
+# 22：反常积分、Euler 常数与 Stirling 公式
 
 [返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：振幅、零测集与 Lebesgue 定理](21-lebesgue-criterion.md) · [下一篇：微积分历史与含参积分](23-parameter-integrals/23-01-p0239-0245.md)
 
 <!-- source: PDF 229; printed: 229; transcription: first-pass; proofreading: applied -->
 
-## 22 积分的基本性质，积分余项的 Taylor 公式，反常积分，反常积分的收敛性：控制收敛，面积法，Euler 常数，Wallis 积分与 Stirling 公式
 
+
+## 积分与极限的交换
 
 给定有界闭区间 $[a, b]$，我们知道连续函数的空间 $C\bigl([a, b]\bigr)$ 是 $\mathcal{R}\bigl([a, b]\bigr)$ 的线性子空间。我们在 $C\bigl([a, b]\bigr)$ 上配备范数 $\|\cdot\|_\infty$，即
 
@@ -23,13 +24,15 @@ $$\left| \int_a^b f - \int_a^b g \right| \leqslant \int_a^b |f - g| \leqslant \i
 
 $$\lim_{n \to \infty} \int_a^b f_n = \int_a^b f.$$
 
-**练习.** 存在 $f_n, f \in C\bigl([a, b]\bigr)$，使得对任意的 $x \in [a, b]$，当 $n \to \infty$ 时，$f_n(x) \to f(x)$，但是
+**练习。** 存在 $f_n, f \in C\bigl([a, b]\bigr)$，使得对任意的 $x \in [a, b]$，当 $n \to \infty$ 时，$f_n(x) \to f(x)$，但是
 
 $$\lim_{n \to \infty} \int_a^b f_n \neq \int_a^b f.$$
 
+## 可积函数的基本性质
+
 我们上一次课证明了关于 Riemann 积分的 Lebesgue 定理：$f \in \mathcal{R}\bigl([a, b]\bigr)$ 当且仅当 $f$ 有界并且其不连续点所构成的集合是零测集。作为应用，我们有
 
-<span id="ma-corollary-137" class="lecture-anchor"></span>**推论 137**（对值域进行复合）. $f : I \to J \subset \mathbb{R}$ 是可积的，$g : J \to \mathbb{R}$（或某个赋范线性空间 $V$）是连续映射，那么 $g \circ f$ 是可积的。特别地，$f : I \to \mathbb{C}$ 是可积的并且 $|f(x)| \geqslant \delta > 0$，那么 $\dfrac{1}{f}$ 是可积的。
+<span id="ma-corollary-137" class="lecture-anchor"></span>**推论 137**（对值域进行复合）。$f : I \to J \subset \mathbb{R}$ 是可积的，$g : J \to \mathbb{R}$（或某个赋范线性空间 $V$）是连续映射，那么 $g \circ f$ 是可积的。特别地，$f : I \to \mathbb{C}$ 是可积的并且 $|f(x)| \geqslant \delta > 0$，那么 $\dfrac{1}{f}$ 是可积的。
 
 **证明：** 这是因为如果 $f$ 在 $x_0$ 处连续，那么 $g \circ f$ 在 $x_0$ 处连续。所以，$g \circ f$ 的不连续点的集合是 $f$ 的不连续点的子集，所以仍然是零测集。
 
@@ -41,7 +44,7 @@ $$\frac{1}{f} = \frac{f_1}{(f_1)^2 + (f_2)^2} - i \frac{f_2}{(f_1)^2 + (f_2)^2},
 
 <!-- source: PDF 230; printed: 230; transcription: first-pass; proofreading: applied -->
 
-<span id="ma-corollary-138" class="lecture-anchor"></span>**推论 138.** $f : [a, b] \to \mathbb{R}_{\geqslant 0}$ 是 Riemann 可积的。那么，$\displaystyle\int_a^b f = 0$ 当且仅当 $\{x \in [a, b] \mid f(x) \neq 0\}$ 是零测集。
+<span id="ma-corollary-138" class="lecture-anchor"></span>**推论 138。** $f : [a, b] \to \mathbb{R}_{\geqslant 0}$ 是 Riemann 可积的。那么，$\displaystyle\int_a^b f = 0$ 当且仅当 $\{x \in [a, b] \mid f(x) \neq 0\}$ 是零测集。
 
 **证明：** 如果 $\displaystyle\int_a^b f = 0$，为了说明 $\left\{x \in [a, b] \mid f(x) \neq 0\right\}$ 是零测集，我们证明在任意连续点 $x_0$ 处，$f(x_0) = 0$：因为 Lebesgue 定理，$\left\{x \in [a, b] \mid f(x) \neq 0\right\}$ 只能是不连续点，所以测度为零。我们用反证法：假设 $f$ 在 $x_0$ 处连续，但是 $f(x_0) \neq 0$，所以 $f(x_0) > 0$。特别地，存在正数 $\delta$ 和 $\varepsilon$，使得对任意的 $x \in (x_0 - \delta, x_0 + \delta)$，$f(x) \geqslant \varepsilon$。我们现在构造阶梯函数 $\varphi(x)$ 使得
 
@@ -59,7 +62,7 @@ $$\int_a^b f = \int_a^b (f - \varphi) + \int_a^b \varphi \leqslant \varepsilon +
 
 另外一个推论讲的是在一个零测集上改变一个函数的值不会改变这个函数的积分：
 
-<span id="ma-corollary-139" class="lecture-anchor"></span>**推论 139.** $f, g \in \mathcal{R}\bigl([a, b]\bigr)$ 是 Riemann 可积的，除去可数个点之外，它们是相同的，即
+<span id="ma-corollary-139" class="lecture-anchor"></span>**推论 139。** $f, g \in \mathcal{R}\bigl([a, b]\bigr)$ 是 Riemann 可积的，除去可数个点之外，它们是相同的，即
 
 $$\{x \in [a, b] \mid f(x) \neq g(x)\}$$
 
@@ -81,9 +84,11 @@ $$
 
 令 $\varepsilon \to 0$，我们就得到 $\int_a^b f \geqslant 0$；同理，我们有 $\int_a^b f \leqslant 0$。这就证明了命题。$\square$
 
+## 积分余项的泰勒公式
+
 我们现在离开 Lebesgue，再回到 Newton-Leibniz 公式的场合。利用这个公式，我们可以给出积分余项的 Taylor 展开公式：
 
-<span id="ma-proposition-140" class="lecture-anchor"></span>**命题 140**（积分余项的 Taylor 公式）. 考虑区间 $I = [a, b]$ 上的 $m+1$ 次连续可微函数 $f \in C^{m+1}(I)$，其中 $m \in \mathbb{Z}_{\geqslant 0}$（函数可以在赋范线性空间中取值），我们有
+<span id="ma-proposition-140" class="lecture-anchor"></span>**命题 140**（积分余项的 Taylor 公式）。考虑区间 $I = [a, b]$ 上的 $m+1$ 次连续可微函数 $f \in C^{m+1}(I)$，其中 $m \in \mathbb{Z}_{\geqslant 0}$（函数可以在赋范线性空间中取值），我们有
 
 $$
 f(b) = \sum_{k=0}^{m} \frac{(b-a)^k}{k!} f^{(k)}(a) + \int_a^b \frac{(b-x)^m}{m!} f^{(m+1)}(x)dx.
@@ -143,7 +148,7 @@ $$
 
 在开区间 $(a, b)$ 上定义反常积分需要额外的小心（其中 $a$ 和 $b$ 可以取正负无穷）：假设对任意的 $c \in (a, b)$，使得 $f$ 在 $(a, c]$ 和 $[c, b)$ 都反常可积，那么我们就称 $f$ 在开区间 $(a, b)$ 上**反常可积**。
 
-**注记.** 根据极限的线性，我们知道在一个区间 $I$ 上的反常可积的函数构成一个 $\mathbb{R}$-线性空间。
+**注记。** 根据极限的线性，我们知道在一个区间 $I$ 上的反常可积的函数构成一个 $\mathbb{R}$-线性空间。
 
 我们对定义用如下的几个例子加以解释：
 
@@ -169,11 +174,13 @@ $$
 
 所以，在开区间上定义积分时 $(a, b)$ 采取类似于 $\lim_{\varepsilon \to 0^+} \int_{a+\varepsilon}^{b-\varepsilon} f(x)dx$ 的方式是不可取的。
 
+### 反常积分的例子与控制收敛
+
 我们来研究几个最为经典的例子，它们展现了函数衰减／增长的速度对（反常）积分收敛性的影响。大家应该熟记这些计算和结论：
 
 <!-- source: PDF 233; printed: 233; transcription: first-pass; proofreading: applied -->
 
-**例子.**
+**例子。**
 
 1) $\displaystyle\int_1^{\infty} \frac{1}{x^\alpha}$，讨论 $\alpha$ 的范围。
 
@@ -227,23 +234,23 @@ $$\int_0^{\infty} f = \sum_{n=1}^{\infty} \frac{1}{n^2} \text{ 是收敛的。}$
 
 <!-- source: PDF 234; printed: 234; transcription: first-pass; proofreading: applied -->
 
-关于不定积分,我们有如下的收敛判别法(不令人惊讶):
+关于不定积分，我们有如下的收敛判别法（不令人惊讶）：
 
-<span id="ma-lemma-141" class="lecture-anchor"></span>**引理 141.** $f$ 和 $F$ 在区间 $I$ 上定义,即 $f : I \to \mathbb{R}$,$F : I \to \mathbb{R}$ 并且对任意的有界闭区间 $J \subset I$,$f$ 和 $F$ 均为 $J$ 上的 Riemann 可积函数。假设对任意的 $x \in I$,我们都有
+<span id="ma-lemma-141" class="lecture-anchor"></span>**引理 141。** $f$ 和 $F$ 在区间 $I$ 上定义，即 $f : I \to \mathbb{R}$，$F : I \to \mathbb{R}$ 并且对任意的有界闭区间 $J \subset I$，$f$ 和 $F$ 均为 $J$ 上的 Riemann 可积函数。假设对任意的 $x \in I$，我们都有
 
 $$\left| f(x) \right| \leqslant F(x).$$
 
-如果 $F$ 在区间 $I$ 上的反常积分收敛,那么 $f$ 在区间 $I$ 上的反常积分也收敛。
+如果 $F$ 在区间 $I$ 上的反常积分收敛，那么 $f$ 在区间 $I$ 上的反常积分也收敛。
 
 *证明*：我们把它留成作业题。$\square$
 
 ### 面积法
 
-作为积分的基本应用,我们用所谓的面积方法来研究级数的大小。我们大多假设 $f(x)$ 是一个单调的函数(有时候它不单调,我们就需要更细致地分析,但是思路是一致的),比如说是递增的,我们考虑 $f$ 在区间 $[1, n]$ 上的积分。我们可以构造两个阶梯函数:
+作为积分的基本应用，我们用所谓的面积方法来研究级数的大小。我们大多假设 $f(x)$ 是一个单调的函数（有时候它不单调，我们就需要更细致地分析，但是思路是一致的），比如说是递增的，我们考虑 $f$ 在区间 $[1, n]$ 上的积分。我们可以构造两个阶梯函数：
 
 $$\underline{f} = \sum_{k=1}^{n-1} f(k) \mathbf{1}_{[k,k+1]}(x), \quad \overline{f} = \sum_{k=1}^{n-1} f(k+1) \mathbf{1}_{[k,k+1]}(x).$$
 
-很明显,$\underline{f} \leqslant f \leqslant \overline{f}$,所以
+很明显，$\underline{f} \leqslant f \leqslant \overline{f}$，所以
 
 $$\int_1^n \underline{f} \leqslant \int_1^n f \leqslant \int_1^n \overline{f}.$$
 
@@ -251,19 +258,19 @@ $$\int_1^n \underline{f} \leqslant \int_1^n f \leqslant \int_1^n \overline{f}.$$
 
 $$\sum_{k=1}^{n-1} f(k) \leqslant \int_1^n f, \quad \sum_{k=2}^{n} f(k) \geqslant \int_1^n f.$$
 
-这就可以用积分 $\displaystyle\int_1^n$ 给出级数 $\displaystyle\sum_{k=1}^{\infty} f(k)$ 的部分和的一个估计。由于上面两个阶梯函数的积分我们形象地将它们看成是直方图下的面积,所以我们也称这个方法为面积法。
+这就可以用积分 $\displaystyle\int_1^n$ 给出级数 $\displaystyle\sum_{k=1}^{\infty} f(k)$ 的部分和的一个估计。由于上面两个阶梯函数的积分我们形象地将它们看成是直方图下的面积，所以我们也称这个方法为面积法。
 
-**注记.** 这个方法的核心是**用一个方便计算的积分来逼近级数**。
+**注记。** 这个方法的核心是**用一个方便计算的积分来逼近级数**。
 
-我们来看几个经典的例子:
+我们来看几个经典的例子：
 
-**例子.**
+**例子。**
 
-1) $\displaystyle\sum_{1 \leqslant n \leqslant N} n^\alpha = \dfrac{N^{\alpha+1} - 1}{\alpha + 1} + O(N^\alpha)$,其中 $\alpha > 0$。也就是说,存在常数 $M > 0$,使得
+1) $\displaystyle\sum_{1 \leqslant n \leqslant N} n^\alpha = \dfrac{N^{\alpha+1} - 1}{\alpha + 1} + O(N^\alpha)$，其中 $\alpha > 0$。也就是说，存在常数 $M > 0$，使得
 
 $$\left| \frac{\displaystyle\sum_{1 \leqslant n \leqslant N} n^\alpha - \dfrac{N^{\alpha+1}-1}{\alpha+1}}{N^\alpha} \right| \leqslant M.$$
 
-我们用 $f(x) = x^\alpha$ 的积分来控制 $\displaystyle\sum_{1 \leqslant n \leqslant N} n^\alpha$:
+我们用 $f(x) = x^\alpha$ 的积分来控制 $\displaystyle\sum_{1 \leqslant n \leqslant N} n^\alpha$：
 
 $$\sum_{1 \leqslant n \leqslant N} n^\alpha \leqslant \int_1^{N+1} x^\alpha dx = \frac{(N+1)^{\alpha+1} - 1}{\alpha + 1}.$$
 
@@ -273,7 +280,7 @@ $$\sum_{1 \leqslant n \leqslant N} n^\alpha \leqslant \int_1^{N+1} x^\alpha dx =
 
 $$\sum_{1 \leqslant n \leqslant N} n^\alpha - \frac{N^{\alpha+1} - 1}{\alpha + 1} \leqslant (N+1)^{\alpha+1} - N^{\alpha+1} + O(1).$$
 
-根据 Lagrange 中值定理,我们有 $(N+1)^{\alpha+1} - N^{\alpha+1} \leqslant CN^\alpha$,其中 $C$ 是一个常数。我们还有
+根据 Lagrange 中值定理，我们有 $(N+1)^{\alpha+1} - N^{\alpha+1} \leqslant CN^\alpha$，其中 $C$ 是一个常数。我们还有
 
 $$1 + \sum_{2 \leqslant n \leqslant N} n^\alpha \geqslant 1 + \int_1^N x^\alpha dx = 1 + \frac{N^{\alpha+1} - 1}{\alpha + 1}.$$
 
@@ -293,7 +300,7 @@ $$\sum_{k=1}^{n} \log k \geqslant \int_1^n \log x = n \log n - n + 1.$$
 
 $$\sum_{k=1}^{n} \log k \leqslant \int_2^{n+1} \log x = (n+1)\log(n+1) - n + 1 - 2\log 2.$$
 
-我们现在说明 $(n+1)\log(n+1) - n + 1 - \log 4 \leqslant n \log n - n + 1 + \log n$,通过代数变形,这等价于 $\left(1 + \dfrac{1}{n}\right)^{n+1} \leqslant 4$,这对于比较大的 $n$ 自然成立(对所有的 $n$ 其实都成立)。综上所述,我们有
+我们现在说明 $(n+1)\log(n+1) - n + 1 - \log 4 \leqslant n \log n - n + 1 + \log n$，通过代数变形，这等价于 $\left(1 + \dfrac{1}{n}\right)^{n+1} \leqslant 4$，这对于比较大的 $n$ 自然成立（对所有的 $n$ 其实都成立）。综上所述，我们有
 
 $$n \log n - n + 1 \leqslant \sum_{k=1}^{n} \log k \leqslant n \log n - n + 1 + \log n.$$
 
@@ -301,15 +308,15 @@ $$n \log n - n + 1 \leqslant \sum_{k=1}^{n} \log k \leqslant n \log n - n + 1 + 
 
 $$e \leqslant \frac{e^n n!}{n^n} \leqslant en.$$
 
-我们马上就证明所谓的 Stirling 公式,这将给出更精细的估计。
+我们马上就证明所谓的 Stirling 公式，这将给出更精细的估计。
 
 3) Euler 常数 $\gamma$。
 
-定义数列 $a_n = 1 + \dfrac{1}{2} + \dfrac{1}{3} + \cdots + \dfrac{1}{n} - \log n$,一个不平凡的事实是这个数列的极限是存在的,我们把这个极限定义为 Euler 常数:
+定义数列 $a_n = 1 + \dfrac{1}{2} + \dfrac{1}{3} + \cdots + \dfrac{1}{n} - \log n$，一个不平凡的事实是这个数列的极限是存在的，我们把这个极限定义为 Euler 常数：
 
 $$\gamma = \lim_{n \to \infty} \left( 1 + \frac{1}{2} + \frac{1}{3} + \cdots + \frac{1}{n} - \log n \right).$$
 
-对 $x^{-1}$ 这个函数用面积法,我们有
+对 $x^{-1}$ 这个函数用面积法，我们有
 
 $$1 + \frac{1}{2} + \frac{1}{3} + \cdots + \frac{1}{n} \geqslant \int_1^{n+1} \frac{dx}{x} = \log(n+1).$$
 
@@ -337,9 +344,11 @@ $$a_n - \gamma = O\!\left(\frac{1}{n}\right).$$
 
 $$1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \cdots + (-1)^{n-1}\frac{1}{n} + \cdots = \log 2.$$
 
-**注记.** 人们猜想 $\gamma$ 应该是无理数（超越数），这个猜想到今天还没有被证明。$\log 2$ 是无理数？历史。
+**注记。** 人们猜想 $\gamma$ 应该是无理数（超越数），这个猜想到今天还没有被证明。$\log 2$ 是无理数？历史。
 
 ## Wallis 积分与 Stirling 公式：三角函数积分的一个应用
+
+### 瓦利斯积分
 
 历史上，Wallis 研究过如下的定积分
 
@@ -383,6 +392,8 @@ $$I_n \sim \sqrt{\frac{\pi}{2n}}, \quad \text{即} \quad \lim_{n\to\infty} \frac
 
 这就是所谓的 **Wallis 积分的渐进公式**。
 
+### 斯特林公式
+
 我们现在用 Wallis 积分的计算来推导 Stirling 公式：考虑数列 $\{a_n\}_{n\geqslant 1}$，其中
 
 $$a_n = \frac{e^n n!}{n^{n+\frac{1}{2}}}.$$
@@ -397,7 +408,7 @@ $$\log \frac{a_n}{a_{n+1}} = \log\left(\frac{1}{e}\left(1 + \frac{1}{n}\right)^{
 
 <!-- source: PDF 238; printed: 238; transcription: first-pass; proofreading: applied -->
 
-通过观察面积,我们知道
+通过观察面积，我们知道
 
 $$\frac{1}{2}\left(\frac{1}{a} + \frac{1}{b}\right)(b-a) > \int_a^b \frac{1}{x} > \frac{1}{\frac{a+b}{2}}(b-a).$$
 

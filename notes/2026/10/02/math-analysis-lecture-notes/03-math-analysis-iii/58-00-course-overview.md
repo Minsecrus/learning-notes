@@ -4,7 +4,6 @@
 
 <!-- source: PDF 709; printed: 709; transcription: first-pass; proofreading: applied -->
 
-## 简介
 
 数学分析三课程主要涵盖如下的内容：
 

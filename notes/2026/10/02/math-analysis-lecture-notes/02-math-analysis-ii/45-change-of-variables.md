@@ -1,11 +1,12 @@
-# 45 换元积分公式
+# 45：换元积分公式
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../02-math-analysis-ii.md) · [校勘记录](../errata.md) · [上一篇：44.1 作业:Archimedes对抛物线面积的计算,Gauss积分](44-fubini/44-03-p0520-0523.md) · [下一篇：常用换元与子流形上的积分](46-submanifold-integrals/46-01-p0537-0546.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../02-math-analysis-ii.md) · [校勘记录](../errata.md) · [上一篇：44.1：作业：Archimedes对抛物线面积的计算，Gauss积分](44-fubini/44-03-p0520-0523.md) · [下一篇：常用换元与子流形上的积分](46-submanifold-integrals/46-01-p0537-0546.md)
 
 <!-- source: PDF 524; printed: 524; transcription: first-pass; proofreading: applied -->
 
-## 45 抽象换元积分公式, Borel 测度的正则性引理, 微分同胚下换元积分公式的证明
 
+
+## 积分顺序交换与分布函数
 
 我们上一周证明了 Fubini 定理，它讲的是，给定 $\sigma$-有限的测度空间 $(X, \mathcal{A}, \mu)$ 和 $(Y, \mathcal{B}, \nu)$，$X \times Y$ 上的函数 $f$ 是正可测的或者是复值可积函数，那么 $f$ 在 $X \times Y$ 上的积分可以通过每个分量的积分来计算：
 $$
@@ -15,13 +16,13 @@ $$
 \end{aligned}
 $$
 
-**注记** (Fubini 用来交换积分顺序). 除了在计算积分时可以降维之外，Fubini 定理还有其它的应用：它表明在 $X$ 上的积分运算与在 $Y$ 上的积分运算是可交换的，即
+**注记**（Fubini 用来交换积分顺序）。除了在计算积分时可以降维之外，Fubini 定理还有其它的应用：它表明在 $X$ 上的积分运算与在 $Y$ 上的积分运算是可交换的，即
 $$
 \int_X \left( \int_Y f(x,y) d\nu(y) \right) d\mu(x) = \int_Y \left( \int_X f(x,y) d\mu(x) \right) d\nu(y),
 $$
 这个可以把在某些空间上积分运算转化为在另一个空间上的积分运算（可能更简单），下面的命题是一个典型的（重要）例子，它在基本的调和分析理论中有很多应用。
 
-<span id="ma-corollary-304" class="lecture-anchor"></span>**推论 304**. $f$ 是测度空间 $(X, \mathcal{A}, \mu)$ 上的正可测函数，其中
+<span id="ma-corollary-304" class="lecture-anchor"></span>**推论 304**。$f$ 是测度空间 $(X, \mathcal{A}, \mu)$ 上的正可测函数，其中
 $$
 f : X \to [0, \infty)
 $$
@@ -34,7 +35,7 @@ $$
 \int_X f d\mu = \int_{[0, \infty)} \mu(\{x \mid f(x) \geqslant t\}) dt.
 $$
 
-**证明:** 根据 Newton-Leibniz 公式，我们有
+**证明：** 根据 Newton-Leibniz 公式，我们有
 $$
 \begin{aligned}
 \int_X g \circ f d\mu &= \int_X (g(f(x)) - g(0)) d\mu \\
@@ -55,9 +56,11 @@ $$
 $$
 特别地，当 $g(s) = s$ 时，我们就得到了第二个等式。 $\square$
 
-## 换元积分公式
+## 测度的密度与像测度
 
 换元积分公式是计算积分的另一个重要手段，为了给出一个相对漂亮的表述，我们先进行一些抽象的表述。
+
+### 用密度定义测度
 
 给定测度空间 $(X, \mathcal{A}, \mu)$，我们总是假设 $\mu$ 是 $\sigma$-有限的。我们考虑 $X$ 上的正可测函数
 $$
@@ -104,13 +107,15 @@ $$
 $$
 总结上面的证明，我们有如下的结论：
 
-<span id="ma-definition-305" class="lecture-anchor"></span>**定义 305**. 给定 $\sigma$-有限的测度空间 $(X, \mathcal{A}, \mu)$，正可测函数 $\rho$ 几乎处处取有限值，那么 $\nu = \rho\mu$ 是 $(X, \mathcal{A})$ 上 $\sigma$-有限的测度。我们将 $\nu$ 称作是 $(X, \mathcal{A}, \mu)$ 上以 $\rho$ 为**密度的测度**。
+<span id="ma-definition-305" class="lecture-anchor"></span>**定义 305**。给定 $\sigma$-有限的测度空间 $(X, \mathcal{A}, \mu)$，正可测函数 $\rho$ 几乎处处取有限值，那么 $\nu = \rho\mu$ 是 $(X, \mathcal{A})$ 上 $\sigma$-有限的测度。我们将 $\nu$ 称作是 $(X, \mathcal{A}, \mu)$ 上以 $\rho$ 为**密度的测度**。
 
 对于以 $\rho$ 为密度的测度的测度 $\nu$ 以及 $(X, \mathcal{A}, \mu)$ 上的可测函数。我们可以证明 $f\rho$ 对于测度 $\mu$ 可积当且仅当 $f$ 对于测度 $\nu$ 可积，并且此时有
 $$
 \int_X f(x) d\nu(x) = \int_X f(x)\rho(x) d\mu(x).
 $$
 我们把这个性质的证明留作习题。
+
+### 像测度与抽象换元公式
 
 我们先证明一个抽象版本的换元积分公式（漂亮但是用途不大）。给定测度空间 $(X, \mathcal{A}, \mu)$ 和可测空间 $(Y, \mathcal{B})$，考虑可测映射
 $$
@@ -126,7 +131,7 @@ $$
 $$
 那么，$\mathbb R^1$ 上由二维 Lebesgue 测度推前得到的测度 $\Phi_*m_2$ 就不是 $\sigma$-有限的，因为对任意的 Borel 集 $A\subset\mathbb R^1$，如果 $m_1(A) > 0$，那么 $(\Phi_*\mu)(A) = +\infty$，同学们会在本次作业中完成这个证明。抽象的换元积分公式如下：
 
-<span id="ma-theorem-306" class="lecture-anchor"></span>**定理 306**. 给定测度空间 $(X, \mathcal{A}, \mu)$，可测空间 $(Y, \mathcal{B})$，$(Y, \mathcal{B})$ 上可测函数 $f$ 以及这两个空间之间的可测映射
+<span id="ma-theorem-306" class="lecture-anchor"></span>**定理 306**。给定测度空间 $(X, \mathcal{A}, \mu)$，可测空间 $(Y, \mathcal{B})$，$(Y, \mathcal{B})$ 上可测函数 $f$ 以及这两个空间之间的可测映射
 $$
 \Phi : (X, \mathcal{A}, \mu) \to (Y, \mathcal{B}).
 $$
@@ -138,7 +143,7 @@ $$
 
 <!-- source: PDF 527; printed: 527; transcription: first-pass; proofreading: applied -->
 
-**证明:** 这个证明过程只需要照章办事：首先，如果 $f = \mathbf{1}_B$ 是示性函数，其中 $B \in \mathcal{B}$，那么，
+**证明：** 这个证明过程只需要照章办事：首先，如果 $f = \mathbf{1}_B$ 是示性函数，其中 $B \in \mathcal{B}$，那么，
 $$
 \begin{aligned}
 \int_Y \mathbf{1}_B d\nu &= \nu(B) = \mu(\Phi^{-1}(B)) \\
@@ -155,6 +160,8 @@ $$
 $$
 从而，该定理对正函数也成立。特别地，由于 $|f \circ \Phi| = |f| \circ \Phi$，从而 $f$ 在 $(Y, \mathcal{B}, \Phi_*(\mu))$ 上可积当且仅当 $(f \circ \Phi)(x)$ 在 $(X, \mathcal{A}, \mu)$ 上可积。为了验证可积函数的等式，我们只要将函数分解为正负部分或这实虚部利用线性即可，我们略去冗长无聊的细节。 $\square$
 
+## 微分同胚下的换元积分
+
 我们现在正式进入 $\mathbb{R}^n$ 上的换元积分公式（对 Lebesgue 测度而言）。首先，我们引入必要的记号。
 
 假定 $\Omega_1$ 和 $\Omega_2$ 是 $\mathbb{R}^n$ 中的两个开集，映射
@@ -170,7 +177,7 @@ $$
 J_\Phi(x_1, \cdots, x_n) = |\operatorname{Jac}(\Phi)(x_1, \cdots, x_n)| = \det \left( \frac{\partial \Phi_i}{\partial x_j} \right) \bigg|_{x=(x_1, \cdots, x_n)}.
 $$
 
-<span id="ma-theorem-307" class="lecture-anchor"></span>**定理 307** (换元积分公式). 假定 $\Omega_1$ 和 $\Omega_2$ 是 $\mathbb{R}^n$ 中的两个开集，映射
+<span id="ma-theorem-307" class="lecture-anchor"></span>**定理 307**（换元积分公式）。假定 $\Omega_1$ 和 $\Omega_2$ 是 $\mathbb{R}^n$ 中的两个开集，映射
 $$
 \Phi : \Omega_1 \to \Omega_2
 $$
@@ -197,7 +204,9 @@ $$
 
 ![换元积分公式示意图](../assets/p0528-figure-1.webp)
 
-**注记.** 记住（不是证明）上面的公式可以用如下的窍门：将 $y = \Phi(x)$ 直接代入左边，$f(y)$ 就变成了 $(f \circ \Phi)(x)$；另外，对于微分而言，我们有 $dy = d\Phi \circ dx$，我们然后将 $d\Phi$ 替换成它的行列式的绝对值 $|J_\Phi(x)|$ 即可。
+**注记。** 记住（不是证明）上面的公式可以用如下的窍门：将 $y = \Phi(x)$ 直接代入左边，$f(y)$ 就变成了 $(f \circ \Phi)(x)$；另外，对于微分而言，我们有 $dy = d\Phi \circ dx$，我们然后将 $d\Phi$ 替换成它的行列式的绝对值 $|J_\Phi(x)|$ 即可。
+
+### 换元公式的证明
 
 换元积分公式是本学期最困难的证明之一，我们要分若干步骤来完成。在考察一般的微分同胚之前，我们先研究比较特殊的一种微分同胚：仿射变换。
 
@@ -296,7 +305,7 @@ $$
 
 综上所述，当 $\Phi$ 为仿射变换时，我们就证明了换元积分公式。为了证明一般的情况，需要一个关于证明 $\mathbb{R}^n$ 中 Borel-集上的正则性（对于 Lebesgue 测度而言），这是一个技术性的引理，本身也很有意义：
 
-<span id="ma-theorem-308" class="lecture-anchor"></span>**定理 308** (正则性定理). 我们在 $\mathbb{R}^n$ 上的 Borel-代数 $\mathcal{B}(\mathbb{R}^n)$ 上给定满足如下条件的测度 $\mu$：
+<span id="ma-theorem-308" class="lecture-anchor"></span>**定理 308**（正则性定理）。我们在 $\mathbb{R}^n$ 上的 Borel-代数 $\mathcal{B}(\mathbb{R}^n)$ 上给定满足如下条件的测度 $\mu$：
 
 - 如果 $K \subset \mathbb{R}^n$ 是紧集，我们有 $\mu(K) < \infty$。
 
@@ -306,7 +315,7 @@ $$
 \mu(U - F) < \varepsilon.
 $$
 
-**证明:** 我们定义
+**证明：** 我们定义
 
 $$
 \mathcal{A} = \left\{ A \in \mathcal{B}(\mathbb{R}^n) \;\middle|\; \text{对任意 } \varepsilon > 0, \text{存在开集 } U \supset A \text{ 和闭集 } F \subset A, \text{使得 } \mu(U - F) < \varepsilon \right\}.
@@ -373,7 +382,7 @@ $$
 
 $U$ 显然是开集。但是，我们并不能保证 $\tilde{F}$ 为闭集。为了对 $\tilde{F}$ 进行一定的改造，我们只要能证明下述引理，并对 $G=\tilde F$ 以误差 $\varepsilon/2$ 选取闭集 $F\subset\tilde F$ 即可：此时 $\mu(U-F)\leqslant\mu(U-\tilde F)+\mu(\tilde F-F)<\varepsilon$，从而完成正则性定理的证明：
 
-<span id="ma-lemma-309" class="lecture-anchor"></span>**引理 309.** 测度 $\mu$ 在 $\mathcal{B}(\mathbb{R}^n)$ 上定义，它在任意的紧集上取值有限。集合 $G = \bigcup_{i \geqslant 1} F_i$ 是可数个闭集的并，那么对任意的 $\varepsilon > 0$，存在闭集 $F \subset G$，使得
+<span id="ma-lemma-309" class="lecture-anchor"></span>**引理 309。** 测度 $\mu$ 在 $\mathcal{B}(\mathbb{R}^n)$ 上定义，它在任意的紧集上取值有限。集合 $G = \bigcup_{i \geqslant 1} F_i$ 是可数个闭集的并，那么对任意的 $\varepsilon > 0$，存在闭集 $F \subset G$，使得
 
 $$
 \mu(G - F) < \varepsilon.
@@ -393,14 +402,14 @@ $$
 
 <!-- source: PDF 532; printed: 532; transcription: first-pass; proofreading: applied -->
 
-2) $G$ 的测度无限, 即 $\mu(G) = \infty$。
+2) $G$ 的测度无限，即 $\mu(G) = \infty$。
 
 我们考虑 $G$ 和环面的交
 $$
 G_k = G \cap \{ x \in \mathbb{R}^n \mid k - 1 \leqslant |x| \leqslant k \}.
 $$
 
-我们注意到 $\mu(G_k) < \infty$ 并且 $G_k$ 也是可数个闭集的并: $G_k = \bigcup_{i \geqslant 1} G_k \cap F_i$。根据上一情形, 对任意的 $k \geqslant 1$, 存在闭集 $H_k \subset G_k$, 使得
+我们注意到 $\mu(G_k) < \infty$ 并且 $G_k$ 也是可数个闭集的并：$G_k = \bigcup_{i \geqslant 1} G_k \cap F_i$。根据上一情形，对任意的 $k \geqslant 1$，存在闭集 $H_k \subset G_k$，使得
 $$
 \mu(G_k - H_k) < \frac{\varepsilon}{2^k}.
 $$
@@ -415,19 +424,19 @@ $$
 \mu(G - F) \leqslant \sum_{k \geqslant 1} \mu(G_k - H_k) < \varepsilon.
 $$
 
-为了说明 $F$ 为闭集, 我们现在利用分解 $G = \bigcup_{k \geqslant 1} G_k$ 的最重要的性质: 对任意的 $k, k'$, 如果 $|k - k'| \geqslant 2$, 那么 $G_k \cap G_{k'} = \emptyset$。任意一个 $F$ 中的收敛点列的充分靠后的各项一定会落在某个 $G_k \cup G_{k+1}$ 中, 从而落在 $H_k \cup H_{k+1}$ 中 (这是闭集), 所以 $F$ 是闭集。
+为了说明 $F$ 为闭集，我们现在利用分解 $G = \bigcup_{k \geqslant 1} G_k$ 的最重要的性质：对任意的 $k, k'$，如果 $|k - k'| \geqslant 2$，那么 $G_k \cap G_{k'} = \emptyset$。任意一个 $F$ 中的收敛点列的充分靠后的各项一定会落在某个 $G_k \cup G_{k+1}$ 中，从而落在 $H_k \cup H_{k+1}$ 中（这是闭集），所以 $F$ 是闭集。
 
 这就完成了正则性定理的证明。 \hfill $\square$
 
 我们现在正式开始换元积分公式的证明。
 
-**换元积分公式的证明.** 我们分成六个步骤来完成这一任务:
+**换元积分公式的证明。** 我们分成六个步骤来完成这一任务：
 
-**第一步**, 正方体的体积在 $\Phi$ 下变换的控制: 假定 $Q\subset\Omega_1$ 是一个边长为 $h>0$ 的闭正方体, 那么
+**第一步**，正方体的体积在 $\Phi$ 下变换的控制：假定 $Q\subset\Omega_1$ 是一个边长为 $h>0$ 的闭正方体，那么
 $$
 m(\Phi(Q)) \leqslant \left( \sup_{x \in Q} \|\operatorname{Jac}(\Phi)(x)\| \right)^n m(Q),
 $$
-其中, 对任意 $x = (x_1, \cdots, x_n) \in \mathbb{R}^n$ 和 $n \times n$ 的矩阵 $A = (A_{ij})$, 我们用如下的范数:
+其中，对任意 $x = (x_1, \cdots, x_n) \in \mathbb{R}^n$ 和 $n \times n$ 的矩阵 $A = (A_{ij})$，我们用如下的范数：
 $$
 \|x\| = \sup_{i \leqslant n} |x_i|, \quad \|A\| = \sup_{i \leqslant n} \left( \sum_{j=1}^n |A_{ij}| \right).
 $$
@@ -507,12 +516,12 @@ $$ \begin{aligned} \int_{\Omega_1} (f \circ \Phi)(x) |\mathbf{J}_{\Phi}(x)| dx &
 
 **第六步**，对于一般可积函数换元积分公式也成立。我们只需要把函数拆为正负和实部虚部的和，利用线性即可。这就完成了定理的证明。 $\hfill \square$
 
-**注记**. 在 1 维 Riemann 积分情形下，换元积分公式的表达有所不同。假设 $\varphi : [a, b] \to [c, d]$ 是微分同胚（双射的 $C^1$ 函数且 $\varphi\prime$ 处处非零），那么我们有
+**注记**。在 1 维 Riemann 积分情形下，换元积分公式的表达有所不同。假设 $\varphi : [a, b] \to [c, d]$ 是微分同胚（双射的 $C^1$ 函数且 $\varphi\prime$ 处处非零），那么我们有
 $$ \int_{\varphi(a)}^{\varphi(b)} f(y) dy = \int_a^b f(\varphi(x)) \varphi'(x) dx. $$
 我们注意到，$\varphi$ 的 Jacobi 行列式是没有加绝对值符号的。这当然和积分的区域相关，因为我们要求了
 $$ \int_{\varphi(a)}^{\varphi(b)} f(y) dy = - \int_{\varphi(b)}^{\varphi(a)} f(y) dy. $$
 这和我们刚证明的换元积分公式是一致的。
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../02-math-analysis-ii.md) · [校勘记录](../errata.md) · [上一篇：44.1 作业:Archimedes对抛物线面积的计算,Gauss积分](44-fubini/44-03-p0520-0523.md) · [下一篇：常用换元与子流形上的积分](46-submanifold-integrals/46-01-p0537-0546.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../02-math-analysis-ii.md) · [校勘记录](../errata.md) · [上一篇：44.1：作业：Archimedes对抛物线面积的计算，Gauss积分](44-fubini/44-03-p0520-0523.md) · [下一篇：常用换元与子流形上的积分](46-submanifold-integrals/46-01-p0537-0546.md)
 
 [^p0529-11]: 实际上，由于 ${^t A} \cdot A$ 为正定矩阵，我们可以取正定对称矩阵 $S$ 使得 $S^2 = {^t A} \cdot A$，此时 $O = A \cdot S^{-1}$。这个分解是唯一的，称作是可逆矩阵的极分解

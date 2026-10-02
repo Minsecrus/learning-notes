@@ -1,13 +1,12 @@
-# 16 空间填充曲线、L’Hôpital 法则与 Taylor 展开
+# 16：空间填充曲线、L’Hôpital 法则与 Taylor 展开
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：15.1 作业:高木贞治函数](15-derivative-applications/15-03-p0158-0165.md) · [下一篇：凸函数与 Jensen 不等式](17-convexity/17-01-p0175-0182.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：15.1：作业：高木贞治函数](15-derivative-applications/15-03-p0158-0165.md) · [下一篇：凸函数与 Jensen 不等式](17-convexity/17-01-p0175-0182.md)
 
 <!-- source: PDF 166; printed: 166; transcription: first-pass; proofreading: applied -->
 
-## 16 空间填充曲线，L'Hôpital 法则，Taylor 展开
 
 
-### 空间填充曲线
+## 空间填充曲线
 
 利用一致收敛的想法，我们可以构造一个很有趣的（很重要的反例）例子：令 $I = \left\{ x \in \mathbb{R} \mid 0 \leqslant x \leqslant 1 \right\}$，$C = \left\{ (x, y) \in \mathbb{R}^2 \mid 0 \leqslant x \leqslant 1, 0 \leqslant y \leqslant 1 \right\}$，我们按照如下的图像来定义映射
 
@@ -49,13 +48,15 @@ $$f_\infty : I \to C,$$
 
 $$f_\infty : I \to C.$$
 
+## 洛必达法则
+
 我们回到导数的学习，上次课证明了 Cauchy 中值定理：实值函数 $f, g \in C^0([a, b])$ 并且 $f$ 和 $g$ 均在 $(a, b)$ 上可微，若对任意的 $x \in (a, b)$，$g'(x) \neq 0$。那么，存在 $x_0 \in (a, b)$，使得
 
 $$\frac{f'(x_0)}{g'(x_0)} = \frac{f(b) - f(a)}{g(b) - g(a)}.$$
 
 Cauchy 中值定理的重要应用是用来证明 L'Hôpital 法则：
 
-<span id="ma-proposition-99" class="lecture-anchor"></span>**命题 99** (L'Hôpital 法则). 假设 $f$ 和 $g$ 是区间 $(a, b)$ 上的可微实值函数，我们假设即 $f(x), g(x) = o(x - a)$，即
+<span id="ma-proposition-99" class="lecture-anchor"></span>**命题 99**（L'Hôpital 法则）。假设 $f$ 和 $g$ 是区间 $(a, b)$ 上的可微实值函数，我们假设即 $f(x), g(x) = o(x - a)$，即
 
 $$\lim_{x \to a^+} f(x) = 0, \quad \lim_{x \to a^+} g(x) = 0.$$
 
@@ -77,7 +78,7 @@ $$\lim_{x \to a^+} \frac{f(x)}{g(x)} = \frac{f(x) - f(a)}{g(x) - g(a)} = \lim_{x
 
 我们还有一个版本 L'Hôpital 法则：
 
-<span id="ma-corollary-100" class="lecture-anchor"></span>**推论 100** (L'Hôpital 法则). 实值函数 $f$ 和 $g$ 在区间 $(a, +\infty)$ 上可微并且
+<span id="ma-corollary-100" class="lecture-anchor"></span>**推论 100**（L'Hôpital 法则）。实值函数 $f$ 和 $g$ 在区间 $(a, +\infty)$ 上可微并且
 
 $$\lim_{x \to +\infty} f(x) = 0, \quad \lim_{x \to +\infty} g(x) = 0.$$
 
@@ -103,7 +104,7 @@ $$\lim_{x \to +\infty} \frac{f(x)}{g(x)} = \lim_{x \to 0^+} \frac{\widetilde{f}(
 
 这就证明了命题。$\square$
 
-<span id="ma-corollary-101" class="lecture-anchor"></span>**推论 101.** $n \geqslant 1$ 是整数，$f$ 和 $g$ 是区间 $(a, b)$ 上 $n$-次可微的实值函数。假设对任意的 $0 \leqslant k \leqslant n-1$，都有
+<span id="ma-corollary-101" class="lecture-anchor"></span>**推论 101。** $n \geqslant 1$ 是整数，$f$ 和 $g$ 是区间 $(a, b)$ 上 $n$-次可微的实值函数。假设对任意的 $0 \leqslant k \leqslant n-1$，都有
 
 $$\lim_{x \to a^+} f^{(k)}(x) = 0, \quad \lim_{x \to a^+} g^{(k)}(x) = 0,$$
 
@@ -117,7 +118,7 @@ $$\lim_{x \to a^+} \frac{f(x)}{g(x)} = \lim_{x \to a^+} \frac{f^{(n)}(x)}{g^{(n)
 
 <!-- source: PDF 169; printed: 169; transcription: first-pass; proofreading: applied -->
 
-<span id="ma-corollary-102" class="lecture-anchor"></span>**推论 102** (L'Hôpital 法则). 假设 $f$ 和 $g$ 是区间 $(a, b)$ 上的可微实值函数，我们假设
+<span id="ma-corollary-102" class="lecture-anchor"></span>**推论 102**（L'Hôpital 法则）。假设 $f$ 和 $g$ 是区间 $(a, b)$ 上的可微实值函数，我们假设
 
 $$\lim_{x \to a^+} |f(x)| = \infty, \quad \lim_{x \to a^+} |g(x)| = \infty.$$
 
@@ -125,7 +126,7 @@ $$\lim_{x \to a^+} |f(x)| = \infty, \quad \lim_{x \to a^+} |g(x)| = \infty.$$
 
 $$\lim_{x \to a^+} \frac{f(x)}{g(x)} = \lim_{x \to a^+} \frac{f'(x)}{g'(x)}.$$
 
-<span id="ma-corollary-103" class="lecture-anchor"></span>**推论 103** (L'Hôpital 法则). 实值函数 $f$ 和 $g$ 在区间 $(a, +\infty)$ 上可微并且
+<span id="ma-corollary-103" class="lecture-anchor"></span>**推论 103**（L'Hôpital 法则）。实值函数 $f$ 和 $g$ 在区间 $(a, +\infty)$ 上可微并且
 
 $$\lim_{x \to +\infty} |f(x)| = 0, \quad \lim_{x \to +\infty} |g(x)| = 0.$$
 
@@ -137,7 +138,7 @@ $$\lim_{x \to +\infty} \frac{f(x)}{g(x)} = \lim_{x \to +\infty} \frac{f'(x)}{g'(
 
 L'Hôpital 法则可以用来计算极限：
 
-**例子.** 我们举几个例子：
+**例子。** 我们举几个例子：
 
 *1)* 计算 $\displaystyle\lim_{x \to 0} \frac{\sin x}{x}$：
 
@@ -181,17 +182,19 @@ $$
 
 这个结论自然是错误的！
 
+## 泰勒展开与多项式逼近
+
 L'Hôpital 法则只是一种计算极限的方法，它之所以有用（更多是做习题的时候）主要因为它可以把求极限这种分析上的操作转化为求导数的问题，而求导数的操作一般而言都是代数操作（因为我们可以背过很多导数）。然而，对于微积分的学习，这个法则似乎无关主旨，我们应该尽量早的学习 Taylor 展开的技术，这才是真正要紧的东西：
 
-<span id="ma-theorem-104" class="lecture-anchor"></span>**定理 104** (Taylor 展开公式：用多项式逼近). 我们给出 Taylor 展开的三种不同余项的叙述：
+<span id="ma-theorem-104" class="lecture-anchor"></span>**定理 104**（Taylor 展开公式：用多项式逼近）。我们给出 Taylor 展开的三种不同余项的叙述：
 
-1) **Peano 余项**. 假设函数 $f:[a,b]\to\mathbb{R}$ (或者 $\mathbb{C}$) 在 $a$ 处的一直到 $n$-次导数 $f'(a), \cdots, f^{(n)}(a)$ 都存在。那么，当 $x\to a^+$ 时，我们有
+1) **Peano 余项**。假设函数 $f:[a,b]\to\mathbb{R}$（或者 $\mathbb{C}$）在 $a$ 处的一直到 $n$-次导数 $f'(a), \cdots, f^{(n)}(a)$ 都存在。那么，当 $x\to a^+$ 时，我们有
 
 $$
 f(x) = \sum_{k=0}^n \frac{f^{(k)}(a)}{k!}(x-a)^k + o((x-a)^n).
 $$
 
-2) **Lagrange 余项**. 假设函数 $f\in C^n([a,b])$ （在 $\mathbb{R}$ 或 $\mathbb{C}$ 中取值），特别地，$f$ 在 $a$ 处的 $n$-次导数 $f'(a), \cdots, f^{(n)}(a)$ 都存在。如果 $f$ 在 $(a,b)$ 上 $n+1$ 次可导。那么，我们有
+2) **Lagrange 余项**。假设函数 $f\in C^n([a,b])$ （在 $\mathbb{R}$ 或 $\mathbb{C}$ 中取值），特别地，$f$ 在 $a$ 处的 $n$-次导数 $f'(a), \cdots, f^{(n)}(a)$ 都存在。如果 $f$ 在 $(a,b)$ 上 $n+1$ 次可导。那么，我们有
 
 $$
 f(x) = \sum_{k=0}^n \frac{f^{(k)}(a)}{k!}(x-a)^k + R_n(x),
@@ -199,7 +202,7 @@ $$
 
 其中 $R_n(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}(x-a)^{n+1}$，$\xi\in[a,x]$ 由 $x$ 决定（未必唯一）。
 
-3) **Cauchy 余项**. 假设函数 $f\in C^n([a,b])$ （在 $\mathbb{R}$ 或 $\mathbb{C}$ 中取值），特别地，$f$ 在 $a$ 处的 $n$-次导数 $f'(a), \cdots, f^{(n)}(a)$ 都存在。如果 $f$ 在 $(a,b)$ 上 $n+1$ 次可导。那么，我们有
+3) **Cauchy 余项**。假设函数 $f\in C^n([a,b])$ （在 $\mathbb{R}$ 或 $\mathbb{C}$ 中取值），特别地，$f$ 在 $a$ 处的 $n$-次导数 $f'(a), \cdots, f^{(n)}(a)$ 都存在。如果 $f$ 在 $(a,b)$ 上 $n+1$ 次可导。那么，我们有
 
 $$
 f(x) = \sum_{k=0}^n \frac{f^{(k)}(a)}{k!}(x-a)^k + \overline{R}_n(x),
@@ -209,7 +212,7 @@ $$
 
 <!-- source: PDF 171; printed: 171; transcription: first-pass; proofreading: applied -->
 
-**注记.** *Peano* 余项的公式只在 $a$ 的附近成立，而 *Lagrange* 和 *Taylor* 的情况是整体的公式。
+**注记。** *Peano* 余项的公式只在 $a$ 的附近成立，而 *Lagrange* 和 *Taylor* 的情况是整体的公式。
 
 我们注意到当 $n = 1$ 时，*Peano* 余项的公式就是导数的定义。
 
@@ -279,7 +282,7 @@ $\square$
 
 上面 Lagrange 余项的证明很有技巧性，（我）很难理解。如果有了积分作工具，我们可以给出一个最自然的证明。我们现在给出另一个证明：我们知道，当 $n = 1$ 时 Lagrange 余项的公式是 Lagrange 中值定理，我们下面利用中值定理证明的方法，来给出一个相对自然的（容易记住）证明。为此，首先推广 Rolle 定理到高阶导数的情形：
 
-<span id="ma-lemma-105" class="lecture-anchor"></span>**引理 105.** 假设 $f \in C^n([a, b])$ 并且在 $(a, b)$ 上 $n + 1$ 次可导。如果 $f$ 在 $a$ 处的 $n$-次导数全为零，即 $f'(a) = 0, \cdots, f^{(n)}(a) = 0$ 并且 $f(a) = f(b)$，那么存在 $x_0 \in (a, b)$，使得 $f^{(n+1)}(c) = 0$。
+<span id="ma-lemma-105" class="lecture-anchor"></span>**引理 105。** 假设 $f \in C^n([a, b])$ 并且在 $(a, b)$ 上 $n + 1$ 次可导。如果 $f$ 在 $a$ 处的 $n$-次导数全为零，即 $f'(a) = 0, \cdots, f^{(n)}(a) = 0$ 并且 $f(a) = f(b)$，那么存在 $x_0 \in (a, b)$，使得 $f^{(n+1)}(c) = 0$。
 
 **证明：** 我们只要不停地用 Rolle 中值定理即可：由于 $f(a) = f(b)$，根据 Rolle 中值定理，存在 $x_1 \in (a, b)$，使得 $f'(x_1) = 0$；由于 $f'(a) = f'(x_1) = 0$，再用 Rolle 中值定理，我们就找到 $x_2 \in (a, x_1)$，使得 $f''(x_2) = 0$；如此下去，我们得到 $f''(x_2) = f'''(x_3) = \cdots = 0$。最后一步，就得到了 $f^{(n+1)}(x_{n+1}) = 0$。选取 $x_0 = x_{n+1}$ 即可。$\square$
 
@@ -287,7 +290,7 @@ $\square$
 
 $$P_n(x) = \sum_{k=0}^{n} \frac{f^{(k)}(a)}{k!}(x-a)^k.$$
 
-**练习.** 证明，如果多项式 $P(x)$ 的次数 $\leqslant n$，那么满足上面条件的多项式是唯一的。
+**练习。** 证明，如果多项式 $P(x)$ 的次数 $\leqslant n$，那么满足上面条件的多项式是唯一的。
 
 <!-- source: PDF 173; printed: 173; transcription: first-pass; proofreading: applied -->
 
@@ -301,7 +304,7 @@ $$f^{(n+1)}(c) - (n+1)! \frac{f(b) - P_n(b)}{(b-a)^{n+1}} = 0.$$
 
 如果改写为 $c = \xi$，$b = x$，这就是 Lagrange 余项的 Taylor 公式。
 
-**注记.** 满足 Peano 余项的 *Taylor* 展开公式是唯一的，即若假设函数 $f : [a, b] \to \mathbb{R}$（或者 $\mathbb{C}$）在 $a$ 处的一直到 $n$-次导数 $f'(a), \cdots, f^{(n)}(a)$ 都存在。那么，如果存在次数不超过 $n$ 的多项式 $P(x)$，使得当 $x \to a^+$ 时，我们有
+**注记。** 满足 Peano 余项的 *Taylor* 展开公式是唯一的，即若假设函数 $f : [a, b] \to \mathbb{R}$（或者 $\mathbb{C}$）在 $a$ 处的一直到 $n$-次导数 $f'(a), \cdots, f^{(n)}(a)$ 都存在。那么，如果存在次数不超过 $n$ 的多项式 $P(x)$，使得当 $x \to a^+$ 时，我们有
 
 $$f(x) = P(x) + o\!\left((x-a)^n\right).$$
 
@@ -317,7 +320,9 @@ $$\lim_{x \to a^+} \frac{Q(x)}{(x-a)^n} = \lim_{x \to a^+} \frac{P(x) - \sum_{k=
 
 由此可见，如果限定的多项式的次数 $\leqslant n$，那么 $\displaystyle\sum_{k=0}^{n} \frac{f^{(k)}(a)}{k!}(x-a)^k$ 是在 $a$ 附近对 $f(x)$ 最佳的逼近。
 
-**例子.** 我们有两个比较极端的例子：
+### 泰勒展开的局限与例子
+
+**例子。** 我们有两个比较极端的例子：
 
 1) 正弦函数 $\sin x$：我们可以在 $x = 0$ 处计算其导数（偶数次的导数都是零），从而得到它的 *Peano* 展开为：
 
@@ -337,4 +342,4 @@ $$f(x) = o(|x|^n).$$
 
 当然，$f(x)$ 不是零。
 
-[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：15.1 作业:高木贞治函数](15-derivative-applications/15-03-p0158-0165.md) · [下一篇：凸函数与 Jensen 不等式](17-convexity/17-01-p0175-0182.md)
+[返回讲义目录](../../math-analysis-lecture-notes.md) · [学期目录](../01-math-analysis-i.md) · [校勘记录](../errata.md) · [上一篇：15.1：作业：高木贞治函数](15-derivative-applications/15-03-p0158-0165.md) · [下一篇：凸函数与 Jensen 不等式](17-convexity/17-01-p0175-0182.md)
