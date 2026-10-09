@@ -83,6 +83,52 @@ export default withMermaid(defineConfig({
         ]
       },
       {
+        text: "2026-10-09",
+        items: [
+          {
+            text: "2026 生物信息学全景导论与研究地图",
+            link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026",
+            collapsed: true,
+            items: [
+              { text: "导读", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/00-guide" },
+              { text: "一、生物信息学是什么", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/01-what-is-bioinformatics" },
+              { text: "二、生物信息学发展史", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/02-history" },
+              { text: "三、序列分析基础：从精确比对到启发式索引", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/03-sequence-analysis" },
+              { text: "四、基因组学：从 raw reads 到变异与组装", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/04-genomics" },
+              { text: "五、转录组学：从 microarray 到 bulk RNA-seq 与单细胞", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/05-transcriptomics" },
+              { text: "六、单细胞生物信息学：从实验到计算", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/06-single-cell" },
+              { text: "七、空间组学（Spatial Omics）", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/07-spatial-omics" },
+              { text: "八、蛋白质生物信息学", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/08-protein-bioinformatics" },
+              { text: "九、结构生物信息学与计算药物发现", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/09-structural-bioinformatics-drug-discovery" },
+              { text: "十、系统生物学与网络生物学", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/10-systems-network-biology" },
+              { text: "十一、群体遗传学与 GWAS", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/11-population-genetics-gwas" },
+              { text: "十二、进化生物信息学", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/12-evolutionary-bioinformatics" },
+              { text: "十三、微生物组与宏基因组学", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/13-microbiome-metagenomics" },
+              { text: "十四、多组学整合", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/14-multiomics" },
+              { text: "十五、表观遗传生物信息学", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/15-epigenetics" },
+              { text: "十六、机器学习在生物信息学中的应用", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/16-machine-learning" },
+              { text: "十七、生物大模型与 Foundation Models", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/17-foundation-models" },
+              { text: "十八、AI for Science 与生成式生物学", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/18-ai-for-science-generative-biology" },
+              { text: "十九、精准医疗与临床生物信息学", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/19-clinical-bioinformatics" },
+              { text: "二十、生物信息学数据库生态：一张完整数据库地图", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/20-databases" },
+              { text: "二十一、生物信息学软件生态：工具分类表与现代科研基础设施", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/21-software-ecosystem" },
+              { text: "二十二、生物信息学中的数学基础", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/22-mathematics" },
+              { text: "二十三、算法与计算机科学", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/23-algorithms-computer-science" },
+              { text: "二十四、统计陷阱专章：每一个都曾让真实研究得出错误结论", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/24-statistical-pitfalls" },
+              { text: "二十五、经典论文：理解生信历史最值得读的论文清单", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/25-classic-papers" },
+              { text: "二十六、教材与学习资源", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/26-textbooks-learning-resources" },
+              { text: "二十七、领域地图：生物信息学的树状知识图谱", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/27-field-map" },
+              { text: "二十八、2026 年前沿雷达（重点章）", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/28-frontiers-2026" },
+              { text: "二十九、研究范式变化：八个深层问题", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/29-research-paradigms" },
+              { text: "三十、给本科生的学习路径：从生命科学新生到能做独立生信项目", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/30-learning-path" },
+              { text: "附录 A：100 个生物信息学必须知道的关键词", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/31-appendix-a-keywords" },
+              { text: "附录 B：50 个最重要的软件、数据库和在线资源", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/32-appendix-b-resources" },
+              { text: "附录 C：如果只读 20 篇论文，应该读哪些？（按年代排序）", link: "/notes/2026/10/09/bioinformatics-overview-research-map-2026/33-appendix-c-papers" }
+            ]
+          }
+        ]
+      },
+      {
         text: "2026-10-02",
         items: [
           {
