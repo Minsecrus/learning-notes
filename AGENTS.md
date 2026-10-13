@@ -2,6 +2,8 @@
 
 This directory is a personal learning space, not a production project. It serves as a workspace for exploring new concepts, technologies, and tools through conversation with Codex.
 
+`CLAUDE.md` holds the same rules for Claude. Keep the two files in sync when changing either one.
+
 ## Purpose
 
 - Ask questions, experiment with ideas, and build understanding
@@ -14,7 +16,8 @@ This directory is a personal learning space, not a production project. It serves
 - I save notes and summaries to this directory when the user asks or when insights worth preserving emerge
 - Learning notes go into `notes/YYYY/MM/DD/` subdirectories, organized by date
 - Maintain `notes/index.md` by running `.\scripts\generate-notes-index.ps1` after adding, moving, or renaming notes
-- Code experiments go into `experiments/` subdirectory
+- Reusable tooling (translation, transcription, proofreading, checks) goes into `scripts/`
+- One-off code experiments go into `experiments/YYYY-MM-DD-<topic>/` subdirectories, not the repository root
 - I use the memory system (`C:\Users\29728\.Codex\projects\D--Projects-Learning\memory\`) to track the user's learning goals and preferences across conversations
 
 ## Notes Format
