@@ -68,6 +68,38 @@ const texOptions: MathJaxTexInputOptions & {
   }
 }
 
+// Glyph outlines used by the page being rendered, keyed by MathJax cache id.
+// A 'local' font cache repeats every outline inside every formula, which made
+// glyph paths about half of all formula SVG. Formulas now reference shared
+// outlines with <use>, and configureMathjax appends one <defs> per page.
+let pageGlyphs: Map<string, string> | null = null
+
+// The plugin creates a MathDocument per formula and MathJax clears the global
+// cache whenever a document is created, so collect each formula's outlines
+// right after it is converted.
+function takeFormulaGlyphs(): string[] {
+  const outputJax = mathjaxInstance!.documentOptions.OutputJax
+
+  if (!('fontCache' in outputJax)) {
+    return []
+  }
+
+  const adaptor = mathjaxInstance!.adaptor
+  const glyphs: string[] = []
+
+  for (const path of adaptor.tags(outputJax.fontCache.getCache(), 'path')) {
+    const id = adaptor.getAttribute(path, 'id')
+
+    if (!pageGlyphs?.has(id)) {
+      const outline = adaptor.outerHTML(path)
+      pageGlyphs?.set(id, outline)
+      glyphs.push(outline)
+    }
+  }
+
+  return glyphs
+}
+
 const mathjaxInstance = createMathjaxInstance({
   a11y: true,
   allowInlineWithSpace: true,
@@ -76,18 +108,28 @@ const mathjaxInstance = createMathjaxInstance({
   output: 'svg',
   tex: texOptions,
   svg: {
-    fontCache: 'local',
+    fontCache: 'global',
     // Avoid NewCM fallback recursion while retaining MathJax 4 TeX coverage.
     fontData: MathJaxTexFont
   },
   transformer: (content, displayMode) => {
+    const glyphs = takeFormulaGlyphs()
     // MathJax uses an ASCII space in mjx-break to supply operator spacing and
     // permit inline wrapping. Vue removes a whitespace-only element child;
     // an explicit text interpolation keeps the original space in SSR and DOM.
-    const rendered = content.replace(
+    let rendered = content.replace(
       /(<mjx-break\b[^>]*>) (?=<\/mjx-break>)/g,
       "$1{{ ' ' }}"
     )
+
+    // Outside a page render there is no shared <defs>; keep the formula
+    // self-contained instead.
+    if (!pageGlyphs && glyphs.length > 0) {
+      rendered = rendered.replace(
+        /(<svg\b[^>]*>)/,
+        `$1<defs>${glyphs.join('')}</defs>`
+      )
+    }
 
     if (!displayMode) {
       return rendered
@@ -112,7 +154,22 @@ export function configureMathjax(md: MarkdownRenderer): void {
   md.render = (source, environment) => {
     // Labels and equation counters belong to one Markdown page.
     mathjaxInstance.reset()
-    return render(source, environment)
+    pageGlyphs = new Map()
+
+    try {
+      const html = render(source, environment)
+
+      if (pageGlyphs.size === 0) {
+        return html
+      }
+
+      // Hidden like MathJax's own global cache; <use> resolves across the page.
+      return html +
+        '<svg id="MJX-SVG-global-cache" xmlns="http://www.w3.org/2000/svg" style="display: none">' +
+        `<defs>${[...pageGlyphs.values()].join('')}</defs></svg>`
+    } finally {
+      pageGlyphs = null
+    }
   }
 
   md.use(mathjax, mathjaxInstance)

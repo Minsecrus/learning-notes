@@ -71,6 +71,18 @@ function findMathRenderingIssues(html) {
     issues.add('MathJax produced an unclassified merror element')
   }
 
+  // Formulas draw glyphs with <use> references into a page-level <defs>; a
+  // missing outline renders as a silent blank instead of an error.
+  const definedIds = new Set(
+    Array.from(html.matchAll(/<path\b[^>]*\bid="(MJX-[^"]+)"/g), (match) => match[1])
+  )
+
+  for (const match of html.matchAll(/<use\b[^>]*\bhref="#(MJX-[^"]+)"/g)) {
+    if (!definedIds.has(match[1])) {
+      issues.add(`MathJax glyph outline is missing: ${match[1]}`)
+    }
+  }
+
   return [...issues]
 }
 
