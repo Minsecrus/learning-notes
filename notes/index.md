@@ -8,6 +8,10 @@
 .\scripts\generate-notes-index.ps1
 ```
 
+## 2026-10-15
+
+- [XaaS 云服务模式全景：从 IaaS 到 MaaS](./2026/10/15/xaas-cloud-service-models.md)
+
 ## 2026-10-09
 
 - [2026 生物信息学全景导论与研究地图](./2026/10/09/bioinformatics-overview-research-map-2026.md)

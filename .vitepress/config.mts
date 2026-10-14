@@ -85,6 +85,12 @@ export default withMermaid(defineConfig({
         ]
       },
       {
+        text: "2026-10-15",
+        items: [
+          { text: "XaaS 云服务模式全景：从 IaaS 到 MaaS", link: "/notes/2026/10/15/xaas-cloud-service-models" }
+        ]
+      },
+      {
         text: "2026-10-09",
         items: [
           {
