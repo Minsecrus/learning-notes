@@ -85,8 +85,15 @@ export default withMermaid(defineConfig({
         ]
       },
       {
+        text: "2026-10-17",
+        items: [
+          { text: "计算机科学核心十本书：前置依赖图", link: "/notes/2026/10/17/cs-core-reading-list" }
+        ]
+      },
+      {
         text: "2026-10-15",
         items: [
+          { text: "Capture One 与 Adobe Lightroom 对比：定价、学习成本与专业功能", link: "/notes/2026/10/15/capture-one-vs-lightroom" },
           { text: "XaaS 云服务模式全景：从 IaaS 到 MaaS", link: "/notes/2026/10/15/xaas-cloud-service-models" }
         ]
       },

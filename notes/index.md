@@ -8,8 +8,13 @@
 .\scripts\generate-notes-index.ps1
 ```
 
+## 2026-10-17
+
+- [计算机科学核心十本书：前置依赖图](./2026/10/17/cs-core-reading-list.md)
+
 ## 2026-10-15
 
+- [Capture One 与 Adobe Lightroom 对比：定价、学习成本与专业功能](./2026/10/15/capture-one-vs-lightroom.md)
 - [XaaS 云服务模式全景：从 IaaS 到 MaaS](./2026/10/15/xaas-cloud-service-models.md)
 
 ## 2026-10-09
