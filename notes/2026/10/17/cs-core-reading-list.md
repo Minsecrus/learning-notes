@@ -1,24 +1,38 @@
+---
+aside: false
+---
+
 # 计算机科学核心十本书：前置依赖图
 
 ```mermaid
-flowchart LR
+---
+config:
+  htmlLabels: false
+  markdownAutoWrap: false
+  flowchart:
+    htmlLabels: false
+    wrappingWidth: 400
+    nodeSpacing: 24
+    rankSpacing: 48
+---
+flowchart TD
     %% 书单内的十本书
-    SICP["Structure and Interpretation of Computer Programs<br/>SICP<br/>计算机程序的构造和解释"]
-    N2T["The Elements of Computing Systems:<br/>Building a Modern Computer from First Principles<br/>Nand2Tetris<br/>计算机系统要素：从零开始构建现代计算机"]
-    ALGS["Algorithms (4th Edition)<br/>Algs4<br/>算法（第4版）"]
-    CSAPP["Computer Systems: A Programmer's Perspective<br/>CSAPP<br/>深入理解计算机系统"]
-    OSTEP["Operating Systems: Three Easy Pieces<br/>OSTEP<br/>操作系统导论"]
-    NET["Computer Networking: A Top-Down Approach<br/>Kurose<br/>计算机网络：自顶向下方法"]
-    SIPSER["Introduction to the Theory of Computation<br/>Sipser<br/>计算理论导引"]
-    DDIA["Designing Data-Intensive Applications:<br/>The Big Ideas Behind Reliable, Scalable,<br/>and Maintainable Systems<br/>DDIA<br/>数据密集型应用系统设计"]
-    APOSD["A Philosophy of Software Design<br/>APOSD<br/>软件设计的哲学"]
-    D2L["Dive into Deep Learning<br/>D2L<br/>动手学深度学习"]
+    SICP["Structure and Interpretation<br/>of Computer Programs<br/>(SICP)<br/>《计算机程序的构造和解释》"]
+    N2T["The Elements of Computing Systems:<br/>Building a Modern Computer<br/>from First Principles<br/>(Nand2Tetris)<br/>《计算机系统要素：<br/>从零开始构建现代计算机》"]
+    ALGS["Algorithms (4th Edition)<br/>(Algs4)<br/>《算法（第4版）》"]
+    CSAPP["Computer Systems:<br/>A Programmer's Perspective<br/>(CSAPP)<br/>《深入理解计算机系统》"]
+    OSTEP["Operating Systems:<br/>Three Easy Pieces<br/>(OSTEP)<br/>《操作系统导论》"]
+    NET["Computer Networking:<br/>A Top-Down Approach<br/>(Kurose)<br/>《计算机网络：自顶向下方法》"]
+    SIPSER["Introduction to the<br/>Theory of Computation<br/>(Sipser)<br/>《计算理论导引》"]
+    DDIA["Designing Data-Intensive Applications:<br/>The Big Ideas Behind Reliable,<br/>Scalable, and Maintainable Systems<br/>(DDIA)<br/>《数据密集型应用系统设计》"]
+    APOSD["A Philosophy of<br/>Software Design<br/>(APOSD)<br/>《软件设计的哲学》"]
+    D2L["Dive into Deep Learning<br/>(D2L)<br/>《动手学深度学习》"]
 
     %% 书单外的前置
     X_C(["C 语言"])
     X_JAVA(["Java 基础"])
     X_PY(["Python"])
-    X_DM(["离散数学与证明方法"])
+    X_DM(["离散数学<br/>与证明方法"])
     X_LA(["线性代数"])
     X_PROB(["概率论"])
     X_CALC(["微积分"])
